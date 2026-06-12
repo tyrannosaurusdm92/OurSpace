@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "created_utc": "2026-06-12T03:42:33Z",
+  "created_utc": "2026-06-12T03:43:02Z",
   "source": {
     "uploaded_file_name": "DBT Skills Workbook.pdf",
     "book_title": "DBT Skills Training Handouts and Worksheets, Second Edition",
@@ -530,7 +530,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "General Worksheet 1",
       "related_item_ids": [
-        "general_worksheet_General"
+        "general_worksheet_1"
       ],
       "summary": "Defines the aims of goals of skills training and helps users connect the skill area to personal behavior, emotion, relationship, or crisis goals.",
       "practice_steps": [],
@@ -830,7 +830,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "General Worksheets 2, 3",
       "related_item_ids": [
-        "general_worksheet_General"
+        "general_worksheet_2",
+        "general_worksheet_3"
       ],
       "summary": "Maps the handouts for analyzing behavior area in General Skills: Orientation and Analyzing Behavior; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -875,7 +876,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "General Worksheets 2, 2a",
       "related_item_ids": [
-        "general_worksheet_General"
+        "general_worksheet_2",
+        "general_worksheet_2a"
       ],
       "summary": "Breaks a problem behavior into vulnerability factors, prompting events, links, consequences, skill substitutions, prevention, and repair.",
       "practice_steps": [
@@ -934,7 +936,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "General Worksheets 2, 2a",
       "related_item_ids": [
-        "general_worksheet_General"
+        "general_worksheet_2",
+        "general_worksheet_2a"
       ],
       "summary": "Breaks a problem behavior into vulnerability factors, prompting events, links, consequences, skill substitutions, prevention, and repair.",
       "practice_steps": [
@@ -994,7 +997,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "General Worksheet 3",
       "related_item_ids": [
-        "general_worksheet_General"
+        "general_worksheet_3"
       ],
       "summary": "Helps identify why an intended effective behavior did not happen, then turns the missing step into a concrete plan.",
       "practice_steps": [
@@ -1051,7 +1054,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheet 1",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_1"
       ],
       "summary": "Defines the aims of goals of mindfulness practice and helps users connect the skill area to personal behavior, emotion, relationship, or crisis goals.",
       "practice_steps": [],
@@ -1139,7 +1142,11 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 3",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_3"
       ],
       "summary": "Maps the handouts for core mindfulness skills area in Mindfulness Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -1184,7 +1191,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheet 3",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_3"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -1239,7 +1246,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Worksheet 3",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_3"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -1294,7 +1301,13 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 4–4b",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_4",
+        "mindfulness_worksheet_4a",
+        "mindfulness_worksheet_4b"
       ],
       "summary": "Teaches the core mindfulness actions of observing, describing, and participating without forcing experience to change immediately.",
       "practice_steps": [],
@@ -1353,7 +1366,13 @@
       "page_count_estimate": 4,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 4–4b",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_4",
+        "mindfulness_worksheet_4a",
+        "mindfulness_worksheet_4b"
       ],
       "summary": "Covers ideas for practicing observing within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1402,7 +1421,13 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 4–4b",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_4",
+        "mindfulness_worksheet_4a",
+        "mindfulness_worksheet_4b"
       ],
       "summary": "Covers ideas for practicing describing within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1451,7 +1476,13 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 4–4b",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_4",
+        "mindfulness_worksheet_4a",
+        "mindfulness_worksheet_4b"
       ],
       "summary": "Covers ideas for practicing participating within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1499,7 +1530,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 5–5c",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_5",
+        "mindfulness_worksheet_5a",
+        "mindfulness_worksheet_5b",
+        "mindfulness_worksheet_5c"
       ],
       "summary": "Teaches the style of mindfulness practice: nonjudgmentally, one-mindfully, and effectively.",
       "practice_steps": [],
@@ -1558,7 +1596,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 5–5c",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_5",
+        "mindfulness_worksheet_5a",
+        "mindfulness_worksheet_5b",
+        "mindfulness_worksheet_5c"
       ],
       "summary": "Covers ideas for practicing nonjudgmentalness within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1605,7 +1650,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 5–5c",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_5",
+        "mindfulness_worksheet_5a",
+        "mindfulness_worksheet_5b",
+        "mindfulness_worksheet_5c"
       ],
       "summary": "Covers ideas for practicing one-mindfulness within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1653,7 +1705,14 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Worksheets 2–2c, 5–5c",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_2",
+        "mindfulness_worksheet_2a",
+        "mindfulness_worksheet_2b",
+        "mindfulness_worksheet_2c",
+        "mindfulness_worksheet_5",
+        "mindfulness_worksheet_5a",
+        "mindfulness_worksheet_5b",
+        "mindfulness_worksheet_5c"
       ],
       "summary": "Covers ideas for practicing effectiveness within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1701,7 +1760,11 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 6–10b",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_6",
+        "mindfulness_worksheet_7",
+        "mindfulness_worksheet_8",
+        "mindfulness_worksheet_9",
+        "mindfulness_worksheet_10"
       ],
       "summary": "Maps the handouts for other perspectives on mindfulness skills area in Mindfulness Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -1746,7 +1809,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheet 1",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_1"
       ],
       "summary": "Defines the aims of goals of mindfulness practice—a spiritual perspective and helps users connect the skill area to personal behavior, emotion, relationship, or crisis goals.",
       "practice_steps": [],
@@ -1844,7 +1907,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheet 6",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_6"
       ],
       "summary": "Guides compassion practice toward self, others, and wider life while noticing blocks and shifts in emotion.",
       "practice_steps": [],
@@ -1892,7 +1955,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 7–9",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_7",
+        "mindfulness_worksheet_8",
+        "mindfulness_worksheet_9"
       ],
       "summary": "Helps balance goal-directed effort with receptive presence so striving and letting go can both be practiced.",
       "practice_steps": [],
@@ -1937,7 +2002,9 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Worksheets 7–9",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_7",
+        "mindfulness_worksheet_8",
+        "mindfulness_worksheet_9"
       ],
       "summary": "Helps balance goal-directed effort with receptive presence so striving and letting go can both be practiced.",
       "practice_steps": [],
@@ -1982,7 +2049,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Worksheets 10–10b",
       "related_item_ids": [
-        "mindfulness_worksheet_Mindfulness"
+        "mindfulness_worksheet_10",
+        "mindfulness_worksheet_10a",
+        "mindfulness_worksheet_10b"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -2027,7 +2096,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 1",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_1"
       ],
       "summary": "Defines the aims of goals of interpersonal effectiveness and helps users connect the skill area to personal behavior, emotion, relationship, or crisis goals.",
       "practice_steps": [],
@@ -2121,7 +2190,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 2",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_2"
       ],
       "summary": "Covers myths in the way of interpersonal effectiveness within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2212,7 +2281,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 3",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_3"
       ],
       "summary": "Defines the aims of clarifying goals in interpersonal situations and helps users connect the skill area to personal behavior, emotion, relationship, or crisis goals.",
       "practice_steps": [],
@@ -2257,7 +2326,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 4, 5",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_4",
+        "interpersonal_effectiveness_worksheet_5"
       ],
       "summary": "Gives a structured way to ask, say no, or negotiate while staying focused on the objective.",
       "practice_steps": [
@@ -2407,7 +2477,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 4, 5",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_4",
+        "interpersonal_effectiveness_worksheet_5"
       ],
       "summary": "Protects relationship quality through gentleness, interest, validation, and an easy manner when appropriate.",
       "practice_steps": [
@@ -2540,7 +2611,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 4, 5",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_4",
+        "interpersonal_effectiveness_worksheet_5"
       ],
       "summary": "Protects self-respect by balancing fairness, values, truthfulness, and limits on unnecessary apology.",
       "practice_steps": [
@@ -2610,7 +2682,7 @@
       "page_count_estimate": 3,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 6",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_6"
       ],
       "summary": "Rates how strongly to ask or refuse by weighing relationship, capability, timing, authority, rights, and priorities.",
       "practice_steps": [],
@@ -2655,7 +2727,7 @@
       "page_count_estimate": 3,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 7",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_7"
       ],
       "summary": "Covers troubleshooting—when what you are doing isn’t working within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2743,7 +2815,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 8",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_8"
       ],
       "summary": "Covers finding and getting people to like you within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2831,7 +2903,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 9",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_9"
       ],
       "summary": "Covers mindfulness of others within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2919,7 +2991,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 10",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_10"
       ],
       "summary": "Covers ending relationships within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3007,7 +3079,11 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 11–15c",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_11",
+        "interpersonal_effectiveness_worksheet_12",
+        "interpersonal_effectiveness_worksheet_13",
+        "interpersonal_effectiveness_worksheet_14",
+        "interpersonal_effectiveness_worksheet_15"
       ],
       "summary": "Maps the handouts for walking the middle path area in Interpersonal Effectiveness Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -3052,7 +3128,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 11–11b",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_11",
+        "interpersonal_effectiveness_worksheet_11a",
+        "interpersonal_effectiveness_worksheet_11b"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -3101,7 +3179,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 11–11b",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_11",
+        "interpersonal_effectiveness_worksheet_11a",
+        "interpersonal_effectiveness_worksheet_11b"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -3279,7 +3359,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 12",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_12"
       ],
       "summary": "Teaches accurate acknowledgment of another person’s experience, or self-validation after invalidation, without necessarily agreeing with everything.",
       "practice_steps": [],
@@ -3328,7 +3408,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 12",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_12"
       ],
       "summary": "Teaches accurate acknowledgment of another person’s experience, or self-validation after invalidation, without necessarily agreeing with everything.",
       "practice_steps": [],
@@ -3424,7 +3504,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 13",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_13"
       ],
       "summary": "Teaches accurate acknowledgment of another person’s experience, or self-validation after invalidation, without necessarily agreeing with everything.",
       "practice_steps": [],
@@ -3520,7 +3600,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 14",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_14"
       ],
       "summary": "Covers strategies for increasingthe probability of behaviors you want within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3565,7 +3645,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheet 15",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_15"
       ],
       "summary": "Plans behavior-reduction strategies by changing consequences, removing payoffs, and using consequences carefully.",
       "practice_steps": [
@@ -3635,7 +3715,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Worksheets 14, 15",
       "related_item_ids": [
-        "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_worksheet_14",
+        "interpersonal_effectiveness_worksheet_15"
       ],
       "summary": "Uses safe body-based strategies to bring down acute physiological arousal quickly.",
       "practice_steps": [
@@ -3747,7 +3828,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Worksheet 1",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_1"
       ],
       "summary": "Defines the aims of goals of emotion regulation and helps users connect the skill area to personal behavior, emotion, relationship, or crisis goals.",
       "practice_steps": [],
@@ -3792,7 +3873,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 2–4a, 16",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_2",
+        "emotion_regulation_worksheet_3",
+        "emotion_regulation_worksheet_4",
+        "emotion_regulation_worksheet_16"
       ],
       "summary": "Maps the handouts for understanding and naming emotions area in Emotion Regulation Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -3837,7 +3921,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 2, 2a–c",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_2",
+        "emotion_regulation_worksheet_2a",
+        "emotion_regulation_worksheet_2b",
+        "emotion_regulation_worksheet_2c"
       ],
       "summary": "Explains the functions of emotions, including communication, motivation, and signaling information to self and others.",
       "practice_steps": [],
@@ -3882,7 +3969,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 3, 16",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_3",
+        "emotion_regulation_worksheet_16"
       ],
       "summary": "Identifies beliefs, biology, environment, and habits that interfere with emotion regulation and helps challenge them.",
       "practice_steps": [],
@@ -3927,7 +4015,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 3",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_3"
       ],
       "summary": "Identifies beliefs, biology, environment, and habits that interfere with emotion regulation and helps challenge them.",
       "practice_steps": [],
@@ -3972,7 +4060,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 4, 4a",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_4",
+        "emotion_regulation_worksheet_4a"
       ],
       "summary": "Organizes an emotion into prompting events, interpretations, body changes, expressions, action urges, actions, and aftereffects.",
       "practice_steps": [],
@@ -4021,7 +4110,8 @@
       "page_count_estimate": 11,
       "related_items_raw": "Emotion Regulation Worksheets 4, 4a",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_4",
+        "emotion_regulation_worksheet_4a"
       ],
       "summary": "Catalogs common emotion families and the elements that can identify each emotion pattern.",
       "practice_steps": [],
@@ -4095,7 +4185,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 5–8",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_5",
+        "emotion_regulation_worksheet_6",
+        "emotion_regulation_worksheet_7",
+        "emotion_regulation_worksheet_8"
       ],
       "summary": "Maps the handouts for changing emotional responses area in Emotion Regulation Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -4140,7 +4233,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 5",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_5"
       ],
       "summary": "Tests whether an emotion and its intensity fit the actual facts, not only interpretations, assumptions, or threat predictions.",
       "practice_steps": [
@@ -4195,7 +4288,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 5",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_5"
       ],
       "summary": "Covers examples of emotions that fit the facts within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -4240,7 +4333,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 6",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_6"
       ],
       "summary": "Changes an unjustified or unhelpfully intense emotion by identifying the urge and acting opposite to it all the way.",
       "practice_steps": [
@@ -4299,7 +4392,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 7",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_7"
       ],
       "summary": "Changes an unjustified or unhelpfully intense emotion by identifying the urge and acting opposite to it all the way.",
       "practice_steps": [
@@ -4354,7 +4447,7 @@
       "page_count_estimate": 9,
       "related_items_raw": "Emotion Regulation Worksheet 7",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_7"
       ],
       "summary": "Changes an unjustified or unhelpfully intense emotion by identifying the urge and acting opposite to it all the way.",
       "practice_steps": [
@@ -4431,7 +4524,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 8",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_8"
       ],
       "summary": "Changes the situation that is causing an emotion by defining the problem, brainstorming, selecting, trying, and evaluating solutions.",
       "practice_steps": [
@@ -4488,7 +4581,9 @@
       "page_count_estimate": 3,
       "related_items_raw": "Emotion Regulation Worksheets 6–8",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_6",
+        "emotion_regulation_worksheet_7",
+        "emotion_regulation_worksheet_8"
       ],
       "summary": "Changes an unjustified or unhelpfully intense emotion by identifying the urge and acting opposite to it all the way.",
       "practice_steps": [
@@ -4547,7 +4642,12 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 9–14b",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_9",
+        "emotion_regulation_worksheet_10",
+        "emotion_regulation_worksheet_11",
+        "emotion_regulation_worksheet_12",
+        "emotion_regulation_worksheet_13",
+        "emotion_regulation_worksheet_14"
       ],
       "summary": "Maps the handouts for reducing vulnerability to emotion mind area in Emotion Regulation Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -4592,7 +4692,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 9, 10, 13",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_9",
+        "emotion_regulation_worksheet_10",
+        "emotion_regulation_worksheet_13"
       ],
       "summary": "Increases resilience by intentionally adding positive experiences now and building a value-driven life over time.",
       "practice_steps": [],
@@ -4637,7 +4739,9 @@
       "page_count_estimate": 3,
       "related_items_raw": "Emotion Regulation Worksheets 9, 10, 13",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_9",
+        "emotion_regulation_worksheet_10",
+        "emotion_regulation_worksheet_13"
       ],
       "summary": "Increases resilience by intentionally adding positive experiences now and building a value-driven life over time.",
       "practice_steps": [],
@@ -4685,7 +4789,11 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 9, 11–11b, 13",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_9",
+        "emotion_regulation_worksheet_11",
+        "emotion_regulation_worksheet_11a",
+        "emotion_regulation_worksheet_11b",
+        "emotion_regulation_worksheet_13"
       ],
       "summary": "Increases resilience by intentionally adding positive experiences now and building a value-driven life over time.",
       "practice_steps": [],
@@ -4730,7 +4838,9 @@
       "page_count_estimate": 3,
       "related_items_raw": "Emotion Regulation Worksheets 10, 12, 13",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_10",
+        "emotion_regulation_worksheet_12",
+        "emotion_regulation_worksheet_13"
       ],
       "summary": "Connects long-term values to priorities, goals, and specific action steps that can be practiced.",
       "practice_steps": [],
@@ -4778,7 +4888,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 12, 13",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_12",
+        "emotion_regulation_worksheet_13"
       ],
       "summary": "Builds confidence through doable mastery tasks and rehearses skillful coping before difficult situations occur.",
       "practice_steps": [],
@@ -4829,7 +4940,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 9, 14",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_9",
+        "emotion_regulation_worksheet_14"
       ],
       "summary": "Reduces emotion vulnerability through body care, including illness care, eating, substance choices, sleep, and movement.",
       "practice_steps": [
@@ -4880,7 +4992,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 14a",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_14a"
       ],
       "summary": "Uses imagery rehearsal and planned dream changes to reduce nightmare distress and protect sleep.",
       "practice_steps": [],
@@ -4928,7 +5040,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Worksheet 14b",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_14b"
       ],
       "summary": "Structures sleep-supporting habits, routines, and environmental choices to reduce vulnerability to emotion mind.",
       "practice_steps": [],
@@ -4976,7 +5088,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheets 15–16",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_15",
+        "emotion_regulation_worksheet_16"
       ],
       "summary": "Maps the handouts for managing really difficult emotions area in Emotion Regulation Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -5021,7 +5134,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Worksheet 15",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_15"
       ],
       "summary": "Practices observing emotions as waves that can be noticed, allowed, and released without escalating suffering.",
       "practice_steps": [],
@@ -5112,7 +5225,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Worksheet 16",
       "related_item_ids": [
-        "emotion_regulation_worksheet_EmotionRegulation"
+        "emotion_regulation_worksheet_16"
       ],
       "summary": "Teaches the core mindfulness actions of observing, describing, and participating without forcing experience to change immediately.",
       "practice_steps": [],
@@ -5257,7 +5370,13 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 1–7b",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_1",
+        "distress_tolerance_worksheet_2",
+        "distress_tolerance_worksheet_3",
+        "distress_tolerance_worksheet_4",
+        "distress_tolerance_worksheet_5",
+        "distress_tolerance_worksheet_6",
+        "distress_tolerance_worksheet_7"
       ],
       "summary": "Maps the handouts for crisis survival skills area in Distress Tolerance Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -5345,7 +5464,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 2, 2a",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_2",
+        "distress_tolerance_worksheet_2a"
       ],
       "summary": "Creates a pause in crisis so the user can stop, step back, observe, and proceed mindfully.",
       "practice_steps": [
@@ -5414,7 +5534,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 3, 3a",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_3",
+        "distress_tolerance_worksheet_3a"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -5459,7 +5580,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 4",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_4"
       ],
       "summary": "Uses safe body-based strategies to bring down acute physiological arousal quickly.",
       "practice_steps": [
@@ -5528,7 +5649,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 4",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_4"
       ],
       "summary": "Uses safe body-based strategies to bring down acute physiological arousal quickly.",
       "practice_steps": [],
@@ -5573,7 +5694,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 4a",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_4a"
       ],
       "summary": "Pairs muscle release, breathing, and calming statements to reduce tension and arousal.",
       "practice_steps": [],
@@ -5618,7 +5739,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 4b",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_4b"
       ],
       "summary": "Pairs muscle release, breathing, and calming statements to reduce tension and arousal.",
       "practice_steps": [],
@@ -5663,7 +5784,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 5–5b",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_5",
+        "distress_tolerance_worksheet_5a",
+        "distress_tolerance_worksheet_5b"
       ],
       "summary": "Uses temporary, skillful distraction to survive crisis urges without worsening the situation.",
       "practice_steps": [],
@@ -5711,7 +5834,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 6–6b",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_6",
+        "distress_tolerance_worksheet_6a",
+        "distress_tolerance_worksheet_6b"
       ],
       "summary": "Uses senses and body awareness for grounding, comfort, and nervous-system calming.",
       "practice_steps": [],
@@ -5759,7 +5884,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 6c",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_6c"
       ],
       "summary": "Uses senses and body awareness for grounding, comfort, and nervous-system calming.",
       "practice_steps": [],
@@ -5804,7 +5929,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 7–7b",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_7",
+        "distress_tolerance_worksheet_7a",
+        "distress_tolerance_worksheet_7b"
       ],
       "summary": "Adds meaning, grounding, relaxation, encouragement, and one-moment focus when the external problem cannot be fixed immediately.",
       "practice_steps": [],
@@ -5896,7 +6023,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 8–15a",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_9",
+        "distress_tolerance_worksheet_10",
+        "distress_tolerance_worksheet_11",
+        "distress_tolerance_worksheet_12",
+        "distress_tolerance_worksheet_13",
+        "distress_tolerance_worksheet_14",
+        "distress_tolerance_worksheet_15"
       ],
       "summary": "Maps the handouts for reality acceptance skills area in Distress Tolerance Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -5941,7 +6075,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 8–9a",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_9"
       ],
       "summary": "Practices fully acknowledging reality as it is so pain does not turn into prolonged suffering.",
       "practice_steps": [
@@ -6047,7 +6182,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 9, 9a",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_9",
+        "distress_tolerance_worksheet_9a"
       ],
       "summary": "Practices fully acknowledging reality as it is so pain does not turn into prolonged suffering.",
       "practice_steps": [
@@ -6101,7 +6237,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 8, 8a, 10",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_8a",
+        "distress_tolerance_worksheet_10"
       ],
       "summary": "Chooses acceptance repeatedly when the mind drifts back into refusal, bitterness, or fighting reality.",
       "practice_steps": [],
@@ -6146,7 +6284,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 8, 8a, 10",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_8a",
+        "distress_tolerance_worksheet_10"
       ],
       "summary": "Builds openness to doing what works while reducing willfulness, avoidance, and rigid control.",
       "practice_steps": [
@@ -6200,7 +6340,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 8, 8a, 11",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_8a",
+        "distress_tolerance_worksheet_11"
       ],
       "summary": "Uses facial expression and body posture to gently support acceptance and willingness.",
       "practice_steps": [],
@@ -6248,7 +6390,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Distress Tolerance Worksheet 10",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_10"
       ],
       "summary": "Uses facial expression and body posture to gently support acceptance and willingness.",
       "practice_steps": [],
@@ -6296,7 +6438,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 8, 8a, 12",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_8a",
+        "distress_tolerance_worksheet_12"
       ],
       "summary": "Practices seeing thoughts as mental events rather than facts, commands, or the whole self.",
       "practice_steps": [
@@ -6350,7 +6494,9 @@
       "page_count_estimate": 2,
       "related_items_raw": "Distress Tolerance Worksheets 8, 8a, 12",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_8",
+        "distress_tolerance_worksheet_8a",
+        "distress_tolerance_worksheet_12"
       ],
       "summary": "Covers practicing mindfulness of thoughts within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -6395,7 +6541,12 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheets 13–18",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_13",
+        "distress_tolerance_worksheet_14",
+        "distress_tolerance_worksheet_15",
+        "distress_tolerance_worksheet_16",
+        "distress_tolerance_worksheet_17",
+        "distress_tolerance_worksheet_18"
       ],
       "summary": "Maps the handouts for skills when the crisis is addiction area in Distress Tolerance Skills; use it as a navigation/teaching entry that points users to the related practice forms and follow-up skills.",
       "practice_steps": [],
@@ -6483,7 +6634,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 14",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_14"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -6530,7 +6681,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 14",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_14"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -6577,7 +6728,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 15",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_15"
       ],
       "summary": "Applies distress tolerance to addictive or compulsive patterns by balancing abstinence, relapse planning, clear awareness, and supportive reinforcement.",
       "practice_steps": [],
@@ -6626,7 +6777,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 16",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_16"
       ],
       "summary": "Applies distress tolerance to addictive or compulsive patterns by balancing abstinence, relapse planning, clear awareness, and supportive reinforcement.",
       "practice_steps": [],
@@ -6671,7 +6822,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 16",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_16"
       ],
       "summary": "Uses consequences and rewards to make wanted behaviors more likely while keeping change respectful and specific.",
       "practice_steps": [],
@@ -6718,7 +6869,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Worksheet 17",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_17"
       ],
       "summary": "Covers burning bridges and building new ones within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -6766,7 +6917,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Distress Tolerance Worksheet 18",
       "related_item_ids": [
-        "distress_tolerance_worksheet_DistressTolerance"
+        "distress_tolerance_worksheet_18"
       ],
       "summary": "Covers alternate rebellion and adaptive denial within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7066,11 +7217,102 @@
       "distress_tolerance_handout_21": 125
     },
     "worksheet_reference_ids": [
-      "distress_tolerance_worksheet_DistressTolerance",
-      "emotion_regulation_worksheet_EmotionRegulation",
-      "general_worksheet_General",
-      "interpersonal_effectiveness_worksheet_InterpersonalEffectiveness",
-      "mindfulness_worksheet_Mindfulness"
+      "distress_tolerance_worksheet_1",
+      "distress_tolerance_worksheet_10",
+      "distress_tolerance_worksheet_11",
+      "distress_tolerance_worksheet_12",
+      "distress_tolerance_worksheet_13",
+      "distress_tolerance_worksheet_14",
+      "distress_tolerance_worksheet_15",
+      "distress_tolerance_worksheet_16",
+      "distress_tolerance_worksheet_17",
+      "distress_tolerance_worksheet_18",
+      "distress_tolerance_worksheet_2",
+      "distress_tolerance_worksheet_2a",
+      "distress_tolerance_worksheet_3",
+      "distress_tolerance_worksheet_3a",
+      "distress_tolerance_worksheet_4",
+      "distress_tolerance_worksheet_4a",
+      "distress_tolerance_worksheet_4b",
+      "distress_tolerance_worksheet_5",
+      "distress_tolerance_worksheet_5a",
+      "distress_tolerance_worksheet_5b",
+      "distress_tolerance_worksheet_6",
+      "distress_tolerance_worksheet_6a",
+      "distress_tolerance_worksheet_6b",
+      "distress_tolerance_worksheet_6c",
+      "distress_tolerance_worksheet_7",
+      "distress_tolerance_worksheet_7a",
+      "distress_tolerance_worksheet_7b",
+      "distress_tolerance_worksheet_8",
+      "distress_tolerance_worksheet_8a",
+      "distress_tolerance_worksheet_9",
+      "distress_tolerance_worksheet_9a",
+      "emotion_regulation_worksheet_1",
+      "emotion_regulation_worksheet_10",
+      "emotion_regulation_worksheet_11",
+      "emotion_regulation_worksheet_11a",
+      "emotion_regulation_worksheet_11b",
+      "emotion_regulation_worksheet_12",
+      "emotion_regulation_worksheet_13",
+      "emotion_regulation_worksheet_14",
+      "emotion_regulation_worksheet_14a",
+      "emotion_regulation_worksheet_14b",
+      "emotion_regulation_worksheet_15",
+      "emotion_regulation_worksheet_16",
+      "emotion_regulation_worksheet_2",
+      "emotion_regulation_worksheet_2a",
+      "emotion_regulation_worksheet_2b",
+      "emotion_regulation_worksheet_2c",
+      "emotion_regulation_worksheet_3",
+      "emotion_regulation_worksheet_4",
+      "emotion_regulation_worksheet_4a",
+      "emotion_regulation_worksheet_5",
+      "emotion_regulation_worksheet_6",
+      "emotion_regulation_worksheet_7",
+      "emotion_regulation_worksheet_8",
+      "emotion_regulation_worksheet_9",
+      "general_worksheet_1",
+      "general_worksheet_2",
+      "general_worksheet_2a",
+      "general_worksheet_3",
+      "interpersonal_effectiveness_worksheet_1",
+      "interpersonal_effectiveness_worksheet_10",
+      "interpersonal_effectiveness_worksheet_11",
+      "interpersonal_effectiveness_worksheet_11a",
+      "interpersonal_effectiveness_worksheet_11b",
+      "interpersonal_effectiveness_worksheet_12",
+      "interpersonal_effectiveness_worksheet_13",
+      "interpersonal_effectiveness_worksheet_14",
+      "interpersonal_effectiveness_worksheet_15",
+      "interpersonal_effectiveness_worksheet_2",
+      "interpersonal_effectiveness_worksheet_3",
+      "interpersonal_effectiveness_worksheet_4",
+      "interpersonal_effectiveness_worksheet_5",
+      "interpersonal_effectiveness_worksheet_6",
+      "interpersonal_effectiveness_worksheet_7",
+      "interpersonal_effectiveness_worksheet_8",
+      "interpersonal_effectiveness_worksheet_9",
+      "mindfulness_worksheet_1",
+      "mindfulness_worksheet_10",
+      "mindfulness_worksheet_10a",
+      "mindfulness_worksheet_10b",
+      "mindfulness_worksheet_2",
+      "mindfulness_worksheet_2a",
+      "mindfulness_worksheet_2b",
+      "mindfulness_worksheet_2c",
+      "mindfulness_worksheet_3",
+      "mindfulness_worksheet_4",
+      "mindfulness_worksheet_4a",
+      "mindfulness_worksheet_4b",
+      "mindfulness_worksheet_5",
+      "mindfulness_worksheet_5a",
+      "mindfulness_worksheet_5b",
+      "mindfulness_worksheet_5c",
+      "mindfulness_worksheet_6",
+      "mindfulness_worksheet_7",
+      "mindfulness_worksheet_8",
+      "mindfulness_worksheet_9"
     ]
   },
   "counts": {

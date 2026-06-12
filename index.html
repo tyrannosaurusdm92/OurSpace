@@ -6,8 +6,8 @@
   <title>Jasper's Squishy Care Cottage</title>
   <meta name="description" content="Mobile-first caregiver, self-care, DBT, schedule, calendar, and Squishy Store reward site for Jasper." />
   <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="stylesheet" href="./styles.css?v=20260612-mobile-first-v3" />
-  <script src="./js/onyx-personality-data.js"></script>
+  <link rel="stylesheet" href="styles.css?v=onyx-mobile-bubble-fix-20260612" />
+  <script src="js/onyx-personality-data.js?v=onyx-mobile-bubble-fix-20260612"></script>
 </head>
 <body>
   <div aria-label="Jasper's Care Cottage in-site navigation" id="bd-global-dropdown-nav">
@@ -19,8 +19,6 @@
         <div class="bdg-menu" role="menu" id="bdg-menu-links"></div>
       </details>
 
-      <button id="bdg-theme-toggle" type="button" aria-label="Toggle dark or light mode">🌙 Dark</button>
-      <button id="bdg-bubble-all" type="button" aria-pressed="false">🫧 Bubble Mode</button>
       <button id="bdg-hide-nav" type="button">Hide Nav</button>
 
       <div class="bdg-title">
@@ -35,10 +33,7 @@
   </div>
 
   <div aria-label="Jasper's Care Cottage time and currency tracker" id="jcc-persistent-tracker" class="bdg-time-panel">
-    <div class="bdg-tracker-head">
-      <h3>🏡 Jasper's Care Cottage</h3>
-      <button id="bdg-collapse-tracker" class="mini-button tracker-collapse-button" type="button" aria-expanded="true">🕒 Bubble Tracker</button>
-    </div>
+    <h3>🏡 Jasper's Care Cottage</h3>
 
     <div class="bdg-time-grid">
       <div class="bdg-time-card">
@@ -86,8 +81,8 @@
         <div class="branding">
           <div class="site-mark" aria-hidden="true">🐾</div>
           <div>
-            <h1 id="currentPageTitle">Welcome Home</h1>
-            <p id="pageSubtitle">A gentle landing space before tasks, DBT tools, games, serotonin, and the Squishy Store.</p>
+            <h1 id="currentPageTitle">Care Task Board</h1>
+            <p id="pageSubtitle">Every part counts, Jasper. Little tasks, hard tasks, body care, cat care, and rest all earn rewards.</p>
           </div>
         </div>
         <div class="controls" aria-label="Site controls">
@@ -100,51 +95,8 @@
     </header>
 
     <main id="pageHost">
-      <section class="page-panel active" id="home" data-title="Welcome Home" data-subtitle="A soft landing page so Jasper does not have to open directly into tasks.">
-        <div class="page-heading"><h2>Welcome Home</h2><span class="page-chip">gentle landing page</span></div>
-        <div class="module-grid landing-grid">
-          <section class="module movable wide landing-module" data-key="home-welcome" data-bubble="🏡">
-            <div class="module-header drag-handle"><span class="module-title">What this cottage is for</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
-            <div class="module-body">
-              <div class="landing-card">
-                <h3>Hi Jasper — you do not have to start with chores.</h3>
-                <p>This site is a private Squishy Care Cottage for self-care, caregiver support, DBT skills, daily cards, journaling, comfort images, mobile decompression games, and a reward store. It is meant to make care feel smaller, kinder, and more rewarding.</p>
-                <p>Tasks can wait until you choose them. You can start with Onyx, serotonin, games, journaling, or just checking your currency.</p>
-                <div class="landing-actions">
-                  <a class="soft-button" href="#chat-bot-dbt-skills">🐈‍⬛ Talk to Onyx</a>
-                  <a class="soft-button" href="#serotonin">🔮 Go to Serotonin</a>
-                  <a class="soft-button" href="#mobile-games">🎮 Play a game</a>
-                  <a class="soft-button" href="#task-board">📅 Open tasks when ready</a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="module movable" data-key="home-gentle-start" data-bubble="🌤️">
-            <div class="module-header drag-handle"><span class="module-title">Gentle start</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
-            <div class="module-body">
-              <p class="soft-note">Pick one tiny thing, not everything.</p>
-              <div class="landing-mini-list">
-                <a href="#todays-routine">🌅 See today gently</a>
-                <a href="#dbt-daily-cards">🃏 Fill a DBT card</a>
-                <a href="#dbt-journaling">📓 Journal a little</a>
-                <a href="#squishy-store">🛍️ Visit the store</a>
-              </div>
-            </div>
-          </section>
-
-          <section class="module movable" data-key="home-mobile-tools" data-bubble="📱">
-            <div class="module-header drag-handle"><span class="module-title">Mobile comfort controls</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
-            <div class="module-body">
-              <p>Use <strong>Bubble Mode</strong> when the screen feels too busy. Navigation, modules, menus, tracker, and game tools become simpler tap targets.</p>
-              <p>Use <strong>Dark/Light</strong> for comfort. Background images stay the same; the panels change.</p>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="page-panel" id="task-board" data-title="Calendar + Care Task Board" data-subtitle="Your calendar and task library live here. Add weekly, every-few-days, and monthly tasks to today when they are due.">
-        <div class="page-heading"><h2>Calendar + Care Task Board</h2><span class="page-chip">calendar + task library</span></div>
+      <section class="page-panel active" id="task-board" data-title="Care Task Board" data-subtitle="Your full task library lives here. Add weekly, every-few-days, and monthly tasks to today when they are due.">
+        <div class="page-heading"><h2>Care Task Board</h2><span class="page-chip">first page task library</span></div>
         <div class="module-grid">
           <section class="module movable wide" data-key="task-overview">
             <div class="module-header drag-handle"><span class="module-title">Jasper's Reward Overview</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
@@ -265,8 +217,20 @@
             <div class="module-header drag-handle"><span class="module-title">Lord Onyx Blepman, Emperor Of The Voidattude</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
             <div class="module-body">
               <div class="onyx-companion-card">
-                <div class="onyx-mood-stage"><img id="onyxMoodImage" src="assets/onyx-moods/onyx_judgmental.png" alt="Onyx mood" /></div>
-                <div><span class="eyebrow">Tiny void emperor support animal energy</span><h3>Onyx is supervising Momma and the snack economy.</h3><strong id="onyxMoodLabel">Judgmental but loving</strong><p id="onyxMoodNote">He has arrived to help Momma regulate, hydrate, and be cared for without apology.</p><div class="onyx-quick-row"><button class="ghost-button" type="button" data-onyx="comfort">Comfort</button><button class="ghost-button" type="button" data-onyx="dbt">DBT skill</button><button class="ghost-button" type="button" data-onyx="pep">Pep talk</button><button class="ghost-button" type="button" data-onyx="idle">Idle behavior</button></div></div>
+                <div class="onyx-mood-stage"><img id="onyxMoodImage" src="assets/onyx-moods/onyx_caring.png" alt="Onyx caring mood" /></div>
+                <div><span class="eyebrow">Tiny void emperor support animal energy</span><h3>Onyx is supervising Momma and the snack economy.</h3><strong id="onyxMoodLabel">Caring bookshelf supervisor</strong><p id="onyxMoodNote">He has arrived from the bookshelf, his pillow, Papa’s legs, or the ottoman to help Momma regulate without shame.</p><div class="onyx-quick-row onyx-mode-bubbles" aria-label="Onyx quick support modes">
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="comfort">🤎 Comfort</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="dbt_picker">🧠 DBT picker</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="tipp">🧊 TIPP panic</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="adhd_split">🐾 ADHD tiny steps</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="self_care_reset">🫧 Self-care reset</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="body_double">📚 Body double</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="attachment_alarm">🫂 Attachment alarm</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="diary_card">📓 Diary card</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="snuggly">🐈‍⬛ Snuggly</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="purring">💗 Purring</button>
+                  <button class="ghost-button onyx-mode-button" type="button" data-onyx="idle">💤 Idle</button>
+                </div></div>
               </div>
               <div id="chatMessages" class="chat-messages"></div>
               <form id="chatForm" class="chat-form"><textarea id="chatInput" rows="2" placeholder="Tell Onyx what is going on, ask for DBT help, or say what your nervous system is yelling."></textarea><button class="soft-button" type="submit">Send</button></form>
@@ -311,7 +275,7 @@
 
       <section class="page-panel" id="mobile-games" data-title="Mobile Games" data-subtitle="Pick a mobile-friendly mini-game when decompression would help.">
         <div class="page-heading"><h2>Mobile Games</h2><span class="page-chip">games earn decompression rewards</span></div>
-        <div class="module-grid"><section class="module movable full" data-key="games-module"><div class="module-header drag-handle"><span class="module-title">Stress-Reduction Game Selector</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div class="game-toolbar" aria-label="Game quick controls"><a class="ghost-button game-home-button" id="gameHomeButton" href="#home">🏡 Home</a><button class="soft-button" type="button" id="saveGameProgress">💾 Save Progress</button><button class="ghost-button" type="button" id="clearGameFrame">🫧 Close Game</button></div><div class="game-controls"><select id="gameSelect"></select><button class="soft-button" type="button" id="loadGame">Load game</button><span class="game-auto-reward-note">Squishy currency rewards auto-add from in-game actions — no play-time logging.</span></div><iframe id="gameFrame" title="Selected mobile game"></iframe></div></section></div>
+        <div class="module-grid"><section class="module movable full" data-key="games-module"><div class="module-header drag-handle"><span class="module-title">Stress-Reduction Game Selector</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div class="game-controls"><select id="gameSelect"></select><button class="soft-button" type="button" id="loadGame">Load game</button><button class="complete-button" type="button" data-complete="mini-game-decompress">Log decompression game</button></div><iframe id="gameFrame" title="Selected mobile game"></iframe></div></section></div>
       </section>
 
       <section class="page-panel" id="serotonin" data-title="Serotonin" data-subtitle="Upload comfort images and keep Onyx lore here for quick serotonin.">
@@ -330,9 +294,10 @@
     </main>
   </div>
 
+  <div class="onyx-mobile-dock" id="onyxMobileDock" aria-label="Onyx mobile quick dock"><button class="onyx-dock-pill" type="button" data-onyx="dbt_picker">🧠 DBT</button><button class="onyx-dock-pill" type="button" data-onyx="adhd_split">🐾 tiny step</button><button class="onyx-dock-pill" type="button" data-onyx="self_care_reset">🫧 reset</button></div>
   <button class="floating-bot-button" id="floatingBotButton" type="button" aria-label="Open Onyx"><img id="floatingBotButtonImage" src="assets/onyx-moods/onyx_sleepy.png" alt="Sleepy Onyx quick support" /><span class="floating-bot-zzz">Zzz</span></button>
-  <aside class="floating-bot" id="floatingBot"><div class="floating-bot-head"><div class="floating-onyx-title"><img id="floatingBotHeadImage" src="assets/onyx-moods/onyx_listening.png" alt="Onyx" /><strong>Onyx quick support</strong></div><button id="closeFloatingBot" type="button">×</button></div><div id="floatingChatMessages" class="chat-messages small"></div><form id="floatingChatForm" class="chat-form compact"><input class="text-input" id="floatingChatInput" placeholder="Ask Onyx for a tiny next step" /><button class="soft-button" type="submit">Send</button></form></aside>
+  <aside class="floating-bot" id="floatingBot"><div class="floating-bot-head"><div class="floating-onyx-title"><img id="floatingBotHeadImage" src="assets/onyx-moods/onyx_listening.png" alt="Onyx" /><strong>Onyx quick support</strong></div><button id="closeFloatingBot" type="button">×</button></div><div id="floatingChatMessages" class="chat-messages small"></div><form id="floatingChatForm" class="chat-form compact"><input class="text-input" id="floatingChatInput" placeholder="Ask Onyx for a tiny next step" /><button class="soft-button" type="submit">Send</button></form><div class="onyx-quick-row floating-onyx-quick" id="floatingOnyxQuickModes" aria-label="Quick Onyx help"><button class="ghost-button onyx-mode-button" type="button" data-onyx="comfort">🤎</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="dbt_picker">🧠</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="tipp">🧊</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="adhd_split">🐾</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="self_care_reset">🫧</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="snuggly">🐈‍⬛</button></div></aside>
   <div id="toastHost" class="toast-host" aria-live="polite"></div>
-  <script src="./app.js?v=20260612-mobile-first-v3"></script>
+  <script src="app.js?v=onyx-mobile-bubble-fix-20260612"></script>
 </body>
 </html>

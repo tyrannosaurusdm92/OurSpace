@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "created_utc": "2026-06-12T03:42:33Z",
+  "created_utc": "2026-06-12T03:43:02Z",
   "source": {
     "uploaded_file_name": "DBT Skills Workbook.pdf",
     "book_title": "DBT Skills Training Handouts and Worksheets, Second Edition",
@@ -35,7 +35,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "General Handout 1",
       "related_item_ids": [
-        "general_handout_General"
+        "general_handout_1"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -115,7 +115,8 @@
       "page_count_estimate": 4,
       "related_items_raw": "General Handouts 7, 7a",
       "related_item_ids": [
-        "general_handout_General"
+        "general_handout_7",
+        "general_handout_7a"
       ],
       "summary": "Breaks a problem behavior into vulnerability factors, prompting events, links, consequences, skill substitutions, prevention, and repair.",
       "practice_steps": [
@@ -224,7 +225,8 @@
       "page_count_estimate": 3,
       "related_items_raw": "General Handouts 7, 7a",
       "related_item_ids": [
-        "general_handout_General"
+        "general_handout_7",
+        "general_handout_7a"
       ],
       "summary": "Breaks a problem behavior into vulnerability factors, prompting events, links, consequences, skill substitutions, prevention, and repair.",
       "practice_steps": [
@@ -334,7 +336,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "General Handout 8",
       "related_item_ids": [
-        "general_handout_General"
+        "general_handout_8"
       ],
       "summary": "Helps identify why an intended effective behavior did not happen, then turns the missing step into a concrete plan.",
       "practice_steps": [
@@ -431,7 +433,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 1, 7",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_1",
+        "mindfulness_handout_7"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -511,7 +514,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 2–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_2",
+        "mindfulness_handout_3",
+        "mindfulness_handout_4",
+        "mindfulness_handout_5"
       ],
       "summary": "Covers mindfulness core skills practice within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -591,7 +597,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 2–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_2",
+        "mindfulness_handout_3",
+        "mindfulness_handout_4",
+        "mindfulness_handout_5"
       ],
       "summary": "Covers mindfulness core skills practice within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -671,7 +680,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 2–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_2",
+        "mindfulness_handout_3",
+        "mindfulness_handout_4",
+        "mindfulness_handout_5"
       ],
       "summary": "Covers mindfulness core skills practice within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -751,7 +763,10 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handouts 2–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_2",
+        "mindfulness_handout_3",
+        "mindfulness_handout_4",
+        "mindfulness_handout_5"
       ],
       "summary": "Covers mindfulness core skills calendar within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -826,7 +841,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 3, 3a",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_3",
+        "mindfulness_handout_3a"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -916,7 +932,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 4–4c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_4",
+        "mindfulness_handout_4a",
+        "mindfulness_handout_4b",
+        "mindfulness_handout_4c"
       ],
       "summary": "Teaches the core mindfulness actions of observing, describing, and participating without forcing experience to change immediately.",
       "practice_steps": [],
@@ -1004,7 +1023,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 4–4c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_4",
+        "mindfulness_handout_4a",
+        "mindfulness_handout_4b",
+        "mindfulness_handout_4c"
       ],
       "summary": "Covers observing, describing, participating checklist within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1082,7 +1104,10 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handouts 4–4c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_4",
+        "mindfulness_handout_4a",
+        "mindfulness_handout_4b",
+        "mindfulness_handout_4c"
       ],
       "summary": "Covers observing, describing, participating calendar within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1165,7 +1190,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 5–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_5",
+        "mindfulness_handout_5a",
+        "mindfulness_handout_5b",
+        "mindfulness_handout_5c"
       ],
       "summary": "Teaches the style of mindfulness practice: nonjudgmentally, one-mindfully, and effectively.",
       "practice_steps": [],
@@ -1253,7 +1281,10 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 5–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_5",
+        "mindfulness_handout_5a",
+        "mindfulness_handout_5b",
+        "mindfulness_handout_5c"
       ],
       "summary": "Covers nonjudgmentalness, one-mindfulness, effectiveness checklist within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1331,7 +1362,10 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handouts 5–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_5",
+        "mindfulness_handout_5a",
+        "mindfulness_handout_5b",
+        "mindfulness_handout_5c"
       ],
       "summary": "Covers nonjudgmentalness, one-mindfulness, effectiveness calendar within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1414,7 +1448,10 @@
       "page_count_estimate": 3,
       "related_items_raw": "Mindfulness Handouts 5–5c",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_5",
+        "mindfulness_handout_5a",
+        "mindfulness_handout_5b",
+        "mindfulness_handout_5c"
       ],
       "summary": "Covers nonjudgmentalness calendar within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1492,7 +1529,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handout 8",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_8"
       ],
       "summary": "Guides compassion practice toward self, others, and wider life while noticing blocks and shifts in emotion.",
       "practice_steps": [],
@@ -1571,7 +1608,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 9, 9a",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_9",
+        "mindfulness_handout_9a"
       ],
       "summary": "Helps balance goal-directed effort with receptive presence so striving and letting go can both be practiced.",
       "practice_steps": [],
@@ -1646,7 +1684,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handouts 9, 9a",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_9",
+        "mindfulness_handout_9a"
       ],
       "summary": "Covers mindfulness of being and doing calendar within Mindfulness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -1721,7 +1760,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handouts 9, 9a",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_9",
+        "mindfulness_handout_9a"
       ],
       "summary": "Increases resilience by intentionally adding positive experiences now and building a value-driven life over time.",
       "practice_steps": [],
@@ -1799,7 +1839,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handouts 9, 9a",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_9",
+        "mindfulness_handout_9a"
       ],
       "summary": "Increases resilience by intentionally adding positive experiences now and building a value-driven life over time.",
       "practice_steps": [],
@@ -1877,7 +1918,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handouts 3, 10",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_3",
+        "mindfulness_handout_10"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -1967,7 +2009,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Mindfulness Handout 10",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_10"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -2042,7 +2084,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Mindfulness Handout 10",
       "related_item_ids": [
-        "mindfulness_handout_Mindfulness"
+        "mindfulness_handout_10"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -2117,7 +2159,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handout 1",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_1"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -2200,7 +2242,7 @@
       "page_count_estimate": 3,
       "related_items_raw": "Interpersonal Effectiveness Handout 2a",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_2a"
       ],
       "summary": "Covers challenging myths in the way of obtaining objectives within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2275,7 +2317,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handout 4",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_4"
       ],
       "summary": "Connects long-term values to priorities, goals, and specific action steps that can be practiced.",
       "practice_steps": [],
@@ -2355,7 +2397,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 5, 6, 7",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_5",
+        "interpersonal_effectiveness_handout_6",
+        "interpersonal_effectiveness_handout_7"
       ],
       "summary": "Covers writing out interpersonal effectiveness scripts within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2438,7 +2482,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 5, 6, 7",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_5",
+        "interpersonal_effectiveness_handout_6",
+        "interpersonal_effectiveness_handout_7"
       ],
       "summary": "Covers tracking interpersonal effectiveness skills use within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2521,7 +2567,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Handout 8",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_8"
       ],
       "summary": "Rates how strongly to ask or refuse by weighing relationship, capability, timing, authority, rights, and priorities.",
       "practice_steps": [],
@@ -2600,7 +2646,7 @@
       "page_count_estimate": 3,
       "related_items_raw": "Interpersonal Effectiveness Handout 9",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_9"
       ],
       "summary": "Covers troubleshooting interpersonal effectiveness skills within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2683,7 +2729,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handout 11",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_11"
       ],
       "summary": "Covers finding and getting people to like you within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2758,7 +2804,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handout 12",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_12"
       ],
       "summary": "Covers mindfulness of others within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2838,7 +2884,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Handout 13",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_13"
       ],
       "summary": "Covers ending relationships within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -2913,7 +2959,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 15, 16",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_15",
+        "interpersonal_effectiveness_handout_16"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -2992,7 +3039,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 15, 16",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_15",
+        "interpersonal_effectiveness_handout_16"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -3066,7 +3114,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 15, 16",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_15",
+        "interpersonal_effectiveness_handout_16"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -3141,7 +3190,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 17, 18",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_17",
+        "interpersonal_effectiveness_handout_18"
       ],
       "summary": "Covers validating others within Interpersonal Effectiveness Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3221,7 +3271,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handout 19",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_19"
       ],
       "summary": "Teaches accurate acknowledgment of another person’s experience, or self-validation after invalidation, without necessarily agreeing with everything.",
       "practice_steps": [],
@@ -3305,7 +3355,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Interpersonal Effectiveness Handouts 20, 22",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_20",
+        "interpersonal_effectiveness_handout_22"
       ],
       "summary": "Uses consequences and rewards to make wanted behaviors more likely while keeping change respectful and specific.",
       "practice_steps": [],
@@ -3380,7 +3431,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "Interpersonal Effectiveness Handouts 21–22",
       "related_item_ids": [
-        "interpersonal_effectiveness_handout_InterpersonalEffectiveness"
+        "interpersonal_effectiveness_handout_21",
+        "interpersonal_effectiveness_handout_22"
       ],
       "summary": "Plans behavior-reduction strategies by changing consequences, removing payoffs, and using consequences carefully.",
       "practice_steps": [],
@@ -3455,7 +3507,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Handout 1",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_1"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -3535,7 +3587,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 3",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_3"
       ],
       "summary": "Covers figuring out what my emotions are doing for me within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3615,7 +3667,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 3",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_3"
       ],
       "summary": "Covers example—figuring out what my emotions are doing for me within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3695,7 +3747,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 3",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_3"
       ],
       "summary": "Covers emotion diary within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3770,7 +3822,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 3",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_3"
       ],
       "summary": "Covers example—emotion diary within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -3845,7 +3897,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Handout 4a",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_4a"
       ],
       "summary": "Identifies beliefs, biology, environment, and habits that interfere with emotion regulation and helps challenge them.",
       "practice_steps": [],
@@ -3920,7 +3972,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 5, 6",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_5",
+        "emotion_regulation_handout_6"
       ],
       "summary": "Covers observing and describing emotions within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -4013,7 +4066,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 5, 6",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_5",
+        "emotion_regulation_handout_6"
       ],
       "summary": "Covers observing and describing emotions within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -4106,7 +4160,8 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Handouts 8, 8a",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_8",
+        "emotion_regulation_handout_8a"
       ],
       "summary": "Tests whether an emotion and its intensity fit the actual facts, not only interpretations, assumptions, or threat predictions.",
       "practice_steps": [
@@ -4202,7 +4257,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 9",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_9"
       ],
       "summary": "Covers figuring out how to change unwanted emotions within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -4287,7 +4342,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 10, 11",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_10",
+        "emotion_regulation_handout_11"
       ],
       "summary": "Changes an unjustified or unhelpfully intense emotion by identifying the urge and acting opposite to it all the way.",
       "practice_steps": [
@@ -4382,7 +4438,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Handout 12",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_12"
       ],
       "summary": "Changes the situation that is causing an emotion by defining the problem, brainstorming, selecting, trying, and evaluating solutions.",
       "practice_steps": [
@@ -4479,7 +4535,13 @@
       "page_count_estimate": 2,
       "related_items_raw": "Emotion Regulation Handouts 14–20",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_14",
+        "emotion_regulation_handout_15",
+        "emotion_regulation_handout_16",
+        "emotion_regulation_handout_17",
+        "emotion_regulation_handout_18",
+        "emotion_regulation_handout_19",
+        "emotion_regulation_handout_20"
       ],
       "summary": "Covers steps for reducing vulnerability to emotion mind within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -4554,7 +4616,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 15, 16",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_15",
+        "emotion_regulation_handout_16"
       ],
       "summary": "Increases resilience by intentionally adding positive experiences now and building a value-driven life over time.",
       "practice_steps": [],
@@ -4632,7 +4695,8 @@
       "page_count_estimate": 3,
       "related_items_raw": "Emotion Regulation Handouts 17–18",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_17",
+        "emotion_regulation_handout_18"
       ],
       "summary": "Connects long-term values to priorities, goals, and specific action steps that can be practiced.",
       "practice_steps": [],
@@ -4716,7 +4780,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 17–18",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_17",
+        "emotion_regulation_handout_18"
       ],
       "summary": "Connects long-term values to priorities, goals, and specific action steps that can be practiced.",
       "practice_steps": [],
@@ -4800,7 +4865,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 17–18",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_17",
+        "emotion_regulation_handout_18"
       ],
       "summary": "Connects long-term values to priorities, goals, and specific action steps that can be practiced.",
       "practice_steps": [],
@@ -4877,7 +4943,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 19",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_19"
       ],
       "summary": "Builds confidence through doable mastery tasks and rehearses skillful coping before difficult situations occur.",
       "practice_steps": [],
@@ -4963,7 +5029,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 19",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_19"
       ],
       "summary": "Covers putting abc skills together day by day within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -5047,7 +5113,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 20",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_20"
       ],
       "summary": "Reduces emotion vulnerability through body care, including illness care, eating, substance choices, sleep, and movement.",
       "practice_steps": [
@@ -5141,7 +5207,7 @@
       "page_count_estimate": 3,
       "related_items_raw": "Emotion Regulation Handout 20a",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_20a"
       ],
       "summary": "Uses imagery rehearsal and planned dream changes to reduce nightmare distress and protect sleep.",
       "practice_steps": [],
@@ -5292,7 +5358,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handouts 21, 22",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_21",
+        "emotion_regulation_handout_22"
       ],
       "summary": "Practices observing emotions as waves that can be noticed, allowed, and released without escalating suffering.",
       "practice_steps": [],
@@ -5375,7 +5442,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Emotion Regulation Handout 24",
       "related_item_ids": [
-        "emotion_regulation_handout_EmotionRegulation"
+        "emotion_regulation_handout_24"
       ],
       "summary": "Covers troubleshooting emotion regulation skills within Emotion Regulation Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -5455,7 +5522,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 2–9a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_2",
+        "distress_tolerance_handout_3",
+        "distress_tolerance_handout_4",
+        "distress_tolerance_handout_5",
+        "distress_tolerance_handout_6",
+        "distress_tolerance_handout_7",
+        "distress_tolerance_handout_8",
+        "distress_tolerance_handout_9"
       ],
       "summary": "Covers crisis survival skills within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -5530,7 +5604,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 2–9a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_2",
+        "distress_tolerance_handout_3",
+        "distress_tolerance_handout_4",
+        "distress_tolerance_handout_5",
+        "distress_tolerance_handout_6",
+        "distress_tolerance_handout_7",
+        "distress_tolerance_handout_8",
+        "distress_tolerance_handout_9"
       ],
       "summary": "Covers crisis survival skills within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -5605,7 +5686,14 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 2–9a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_2",
+        "distress_tolerance_handout_3",
+        "distress_tolerance_handout_4",
+        "distress_tolerance_handout_5",
+        "distress_tolerance_handout_6",
+        "distress_tolerance_handout_7",
+        "distress_tolerance_handout_8",
+        "distress_tolerance_handout_9"
       ],
       "summary": "Covers crisis survival skills within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -5680,7 +5768,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 4",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_4"
       ],
       "summary": "Creates a pause in crisis so the user can stop, step back, observe, and proceed mindfully.",
       "practice_steps": [
@@ -5771,7 +5859,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 4",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_4"
       ],
       "summary": "Creates a pause in crisis so the user can stop, step back, observe, and proceed mindfully.",
       "practice_steps": [
@@ -5863,7 +5951,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 5",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_5"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -5943,7 +6031,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 5",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_5"
       ],
       "summary": "Supports a Wise Mind decision by comparing short- and long-term effects of using skills versus following urges or avoiding skills.",
       "practice_steps": [],
@@ -6023,7 +6111,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 6–6b",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_6",
+        "distress_tolerance_handout_6a",
+        "distress_tolerance_handout_6b"
       ],
       "summary": "Uses safe body-based strategies to bring down acute physiological arousal quickly.",
       "practice_steps": [
@@ -6116,7 +6206,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 6b",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_6b"
       ],
       "summary": "Pairs muscle release, breathing, and calming statements to reduce tension and arousal.",
       "practice_steps": [],
@@ -6196,7 +6286,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 6c",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_6c"
       ],
       "summary": "Pairs muscle release, breathing, and calming statements to reduce tension and arousal.",
       "practice_steps": [],
@@ -6276,7 +6366,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 7",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_7"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -6370,7 +6460,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 7",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_7"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -6464,7 +6554,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 7",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_7"
       ],
       "summary": "Builds access to a balanced state of knowing that integrates emotion, reason, intuition, and values.",
       "practice_steps": [
@@ -6558,7 +6648,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 8",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_8"
       ],
       "summary": "Uses senses and body awareness for grounding, comfort, and nervous-system calming.",
       "practice_steps": [],
@@ -6641,7 +6731,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 8",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_8"
       ],
       "summary": "Uses senses and body awareness for grounding, comfort, and nervous-system calming.",
       "practice_steps": [],
@@ -6724,7 +6814,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 8",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_8"
       ],
       "summary": "Uses senses and body awareness for grounding, comfort, and nervous-system calming.",
       "practice_steps": [],
@@ -6807,7 +6897,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 8a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_8a"
       ],
       "summary": "Uses senses and body awareness for grounding, comfort, and nervous-system calming.",
       "practice_steps": [],
@@ -6887,7 +6977,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 9",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_9"
       ],
       "summary": "Covers improve the moment within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -6970,7 +7060,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 9",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_9"
       ],
       "summary": "Covers improve the moment within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7053,7 +7143,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 9",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_9"
       ],
       "summary": "Covers improve the moment within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7136,7 +7226,12 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 10–15a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_10",
+        "distress_tolerance_handout_11",
+        "distress_tolerance_handout_12",
+        "distress_tolerance_handout_13",
+        "distress_tolerance_handout_14",
+        "distress_tolerance_handout_15"
       ],
       "summary": "Covers reality acceptance skills within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7216,7 +7311,12 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 10–15a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_10",
+        "distress_tolerance_handout_11",
+        "distress_tolerance_handout_12",
+        "distress_tolerance_handout_13",
+        "distress_tolerance_handout_14",
+        "distress_tolerance_handout_15"
       ],
       "summary": "Covers reality acceptance skills within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7296,7 +7396,12 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 10–15a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_10",
+        "distress_tolerance_handout_11",
+        "distress_tolerance_handout_12",
+        "distress_tolerance_handout_13",
+        "distress_tolerance_handout_14",
+        "distress_tolerance_handout_15"
       ],
       "summary": "Covers reality acceptance skills within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7376,7 +7481,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 11–11b",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_11",
+        "distress_tolerance_handout_11a",
+        "distress_tolerance_handout_11b"
       ],
       "summary": "Practices fully acknowledging reality as it is so pain does not turn into prolonged suffering.",
       "practice_steps": [
@@ -7465,7 +7572,9 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 11–11b",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_11",
+        "distress_tolerance_handout_11a",
+        "distress_tolerance_handout_11b"
       ],
       "summary": "Practices fully acknowledging reality as it is so pain does not turn into prolonged suffering.",
       "practice_steps": [
@@ -7554,7 +7663,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 12, 13",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_12",
+        "distress_tolerance_handout_13"
       ],
       "summary": "Chooses acceptance repeatedly when the mind drifts back into refusal, bitterness, or fighting reality.",
       "practice_steps": [
@@ -7643,7 +7753,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 14, 14a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_14",
+        "distress_tolerance_handout_14a"
       ],
       "summary": "Uses facial expression and body posture to gently support acceptance and willingness.",
       "practice_steps": [],
@@ -7726,7 +7837,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 14, 14a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_14",
+        "distress_tolerance_handout_14a"
       ],
       "summary": "Uses facial expression and body posture to gently support acceptance and willingness.",
       "practice_steps": [],
@@ -7809,7 +7921,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 15, 15a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_15",
+        "distress_tolerance_handout_15a"
       ],
       "summary": "Practices seeing thoughts as mental events rather than facts, commands, or the whole self.",
       "practice_steps": [
@@ -7898,7 +8011,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 15, 15a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_15",
+        "distress_tolerance_handout_15a"
       ],
       "summary": "Covers practicing mindfulness of thoughts within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -7978,7 +8092,12 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 16–21",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_16",
+        "distress_tolerance_handout_17",
+        "distress_tolerance_handout_18",
+        "distress_tolerance_handout_19",
+        "distress_tolerance_handout_20",
+        "distress_tolerance_handout_21"
       ],
       "summary": "Applies distress tolerance to addictive or compulsive patterns by balancing abstinence, relapse planning, clear awareness, and supportive reinforcement.",
       "practice_steps": [],
@@ -8063,7 +8182,7 @@
       "page_count_estimate": 3,
       "related_items_raw": "Distress Tolerance Handout 17",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_17"
       ],
       "summary": "Develops both-and thinking by holding opposites together and searching for workable synthesis rather than extremes.",
       "practice_steps": [],
@@ -8150,7 +8269,8 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handouts 18, 18a",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_18",
+        "distress_tolerance_handout_18a"
       ],
       "summary": "Applies distress tolerance to addictive or compulsive patterns by balancing abstinence, relapse planning, clear awareness, and supportive reinforcement.",
       "practice_steps": [],
@@ -8239,7 +8359,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 19",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_19"
       ],
       "summary": "Covers reinforcing nonaddictive behaviors within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -8324,7 +8444,7 @@
       "page_count_estimate": 1,
       "related_items_raw": "Distress Tolerance Handout 20",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_20"
       ],
       "summary": "Covers burning bridges and building new ones within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -8412,7 +8532,7 @@
       "page_count_estimate": 2,
       "related_items_raw": "Distress Tolerance Handout 21",
       "related_item_ids": [
-        "distress_tolerance_handout_DistressTolerance"
+        "distress_tolerance_handout_21"
       ],
       "summary": "Covers practicing alternate rebellion and adaptive denial within Distress Tolerance Skills, with emphasis on practical skill use, reflection, and related worksheet practice.",
       "practice_steps": [],
@@ -8704,11 +8824,97 @@
       "distress_tolerance_worksheet_18": 101
     },
     "handout_reference_ids": [
-      "distress_tolerance_handout_DistressTolerance",
-      "emotion_regulation_handout_EmotionRegulation",
-      "general_handout_General",
-      "interpersonal_effectiveness_handout_InterpersonalEffectiveness",
-      "mindfulness_handout_Mindfulness"
+      "distress_tolerance_handout_10",
+      "distress_tolerance_handout_11",
+      "distress_tolerance_handout_11a",
+      "distress_tolerance_handout_11b",
+      "distress_tolerance_handout_12",
+      "distress_tolerance_handout_13",
+      "distress_tolerance_handout_14",
+      "distress_tolerance_handout_14a",
+      "distress_tolerance_handout_15",
+      "distress_tolerance_handout_15a",
+      "distress_tolerance_handout_16",
+      "distress_tolerance_handout_17",
+      "distress_tolerance_handout_18",
+      "distress_tolerance_handout_18a",
+      "distress_tolerance_handout_19",
+      "distress_tolerance_handout_2",
+      "distress_tolerance_handout_20",
+      "distress_tolerance_handout_21",
+      "distress_tolerance_handout_3",
+      "distress_tolerance_handout_4",
+      "distress_tolerance_handout_5",
+      "distress_tolerance_handout_6",
+      "distress_tolerance_handout_6a",
+      "distress_tolerance_handout_6b",
+      "distress_tolerance_handout_6c",
+      "distress_tolerance_handout_7",
+      "distress_tolerance_handout_8",
+      "distress_tolerance_handout_8a",
+      "distress_tolerance_handout_9",
+      "emotion_regulation_handout_1",
+      "emotion_regulation_handout_10",
+      "emotion_regulation_handout_11",
+      "emotion_regulation_handout_12",
+      "emotion_regulation_handout_14",
+      "emotion_regulation_handout_15",
+      "emotion_regulation_handout_16",
+      "emotion_regulation_handout_17",
+      "emotion_regulation_handout_18",
+      "emotion_regulation_handout_19",
+      "emotion_regulation_handout_20",
+      "emotion_regulation_handout_20a",
+      "emotion_regulation_handout_21",
+      "emotion_regulation_handout_22",
+      "emotion_regulation_handout_24",
+      "emotion_regulation_handout_3",
+      "emotion_regulation_handout_4a",
+      "emotion_regulation_handout_5",
+      "emotion_regulation_handout_6",
+      "emotion_regulation_handout_8",
+      "emotion_regulation_handout_8a",
+      "emotion_regulation_handout_9",
+      "general_handout_1",
+      "general_handout_7",
+      "general_handout_7a",
+      "general_handout_8",
+      "interpersonal_effectiveness_handout_1",
+      "interpersonal_effectiveness_handout_11",
+      "interpersonal_effectiveness_handout_12",
+      "interpersonal_effectiveness_handout_13",
+      "interpersonal_effectiveness_handout_15",
+      "interpersonal_effectiveness_handout_16",
+      "interpersonal_effectiveness_handout_17",
+      "interpersonal_effectiveness_handout_18",
+      "interpersonal_effectiveness_handout_19",
+      "interpersonal_effectiveness_handout_20",
+      "interpersonal_effectiveness_handout_21",
+      "interpersonal_effectiveness_handout_22",
+      "interpersonal_effectiveness_handout_2a",
+      "interpersonal_effectiveness_handout_4",
+      "interpersonal_effectiveness_handout_5",
+      "interpersonal_effectiveness_handout_6",
+      "interpersonal_effectiveness_handout_7",
+      "interpersonal_effectiveness_handout_8",
+      "interpersonal_effectiveness_handout_9",
+      "mindfulness_handout_1",
+      "mindfulness_handout_10",
+      "mindfulness_handout_2",
+      "mindfulness_handout_3",
+      "mindfulness_handout_3a",
+      "mindfulness_handout_4",
+      "mindfulness_handout_4a",
+      "mindfulness_handout_4b",
+      "mindfulness_handout_4c",
+      "mindfulness_handout_5",
+      "mindfulness_handout_5a",
+      "mindfulness_handout_5b",
+      "mindfulness_handout_5c",
+      "mindfulness_handout_7",
+      "mindfulness_handout_8",
+      "mindfulness_handout_9",
+      "mindfulness_handout_9a"
     ],
     "formats": [
       "addiction_crisis_plan",

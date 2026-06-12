@@ -6,27 +6,8 @@
   const CHECKOUT_EMAIL = "williamsaville92@gmail.com";
   const ET_ZONE = "America/New_York";
   const PAGES = [
-    ["home", "Home"],
-    ["task-board", "Calendar + Tasks"],
-    ["todays-routine", "Today's Schedule"],
-    ["chat-bot-dbt-skills", "Onyx + DBT"],
-    ["dbt-daily-cards", "DBT Daily Cards"],
-    ["dbt-journaling", "DBT Journaling"],
-    ["mobile-games", "Mobile Games"],
-    ["serotonin", "Serotonin"],
-    ["squishy-store", "Squishy Store"]
+    ["task-board", "Care Task Board"], ["todays-routine", "Today's Schedule"], ["chat-bot-dbt-skills", "Onyx + DBT"], ["dbt-daily-cards", "DBT Daily Cards"], ["dbt-journaling", "DBT Journaling"], ["mobile-games", "Mobile Games"], ["serotonin", "Serotonin"], ["squishy-store", "Squishy Store"]
   ];
-  const PAGE_META = {
-    home:{emoji:"🏡", label:"Home"},
-    "task-board":{emoji:"📅", label:"Calendar + Tasks"},
-    "todays-routine":{emoji:"🌅", label:"Today's Schedule"},
-    "chat-bot-dbt-skills":{emoji:"🐈‍⬛", label:"Onyx + DBT", img:"assets/onyx-moods/onyx_caring.png"},
-    "dbt-daily-cards":{emoji:"🃏", label:"DBT Daily Cards"},
-    "dbt-journaling":{emoji:"📓", label:"DBT Journaling"},
-    "mobile-games":{emoji:"🎮", label:"Mobile Games"},
-    serotonin:{emoji:"🔮", label:"Serotonin"},
-    "squishy-store":{emoji:"🛍️", label:"Squishy Store"}
-  };
   const REWARD_BY_PRIORITY = {
     "Critical": {copper:2400, silver:240, gold:70, platinum:8},
     "Very High": {copper:3200, silver:320, gold:100, platinum:14},
@@ -254,19 +235,34 @@
   ];
   const JOURNAL_PROMPTS = ["What does your body need first: food, water, meds, hygiene, rest, or comfort?","What task would feel less heavy if it were split into one tiny part?","What did you do today that Future Jasper deserves to be proud of?","What emotion is loudest, and what fact can sit beside it?","What would count as a hard-day win instead of an everything-day win?","What can Onyx lovingly judge so you do not have to carry it alone?"];
   const GAME_FILES = ["angrybirds.html", "baconmaydie.html", "badicecream3.html", "badpiggies.html", "bubbleshooter.html", "candycrush.html", "capybaraclicker.html", "ducklife5.html", "escapingtheprison.html", "fancypantsadventure2.html", "flappybird.html", "fnaf.html", "fnaf4.html", "fruitninja.html", "minesweeper.html", "noobminer.html", "plantsvszombies.html", "tabletennisworldtour.html", "tinyfishing.html", "tunnelrush.html", "webecomewhatwebehold.html", "zombierush.html"];
-  const ONYX_MOODS = {
-    sleepy:{file:"onyx_sleepy.png",label:"Sleepy",note:"Onyx is half-asleep but still supervising Momma."},
-    listening:{file:"onyx_listening.png",label:"Listening with both void ears",note:"Onyx woke up and is listening carefully to Momma."},
-    caring:{file:"onyx_caring.png",label:"Caring alert companion",note:"Soft eyes, big heart, tiny paw on the truth that Momma deserves care."},
-    snuggly:{file:"onyx_snuggly.png",label:"Snuggly comfort mode",note:"Onyx is ready to be a weighted blanket with whiskers."},
-    purring:{file:"onyx_purring.png",label:"Purring approval",note:"Onyx approves of this tiny win and is rumbling like a gentle engine."},
-    thinking:{file:"onyx_thinking.png",label:"Thinking",note:"Void boy genius is thinking through Momma’s message."},
-    thoughtful:{file:"onyx_thoughtful.png",label:"Thoughtful",note:"Onyx is choosing the gentlest useful answer."},
-    advising:{file:"onyx_advising_professor.png",label:"Advising professor mode",note:"Professor Onyx has opened the syllabus of tiny sustainable care steps."},
-    hungry:{file:"onyx_hungry.png",label:"Hungry",note:"The void requires tribute and possibly gravy."},
-    judgmental:{file:"onyx_judgmental.png",label:"Judgmental",note:"Onyx is lovingly judging the room for snack shortages."},
-    judgemental:{file:"onyx_judgemental.png",label:"Extra judgemental spelling variant",note:"Same Onyx. Same stare. Extra dramatic paperwork audit energy."}
-  };
+  const ONYX_MOODS = (()=>{
+    const data=window.EMPEROR_ONYX_PERSONALITY_DATA||{};
+    const source=data.moods||{};
+    const fallback={
+      caring:{image:"assets/onyx-moods/onyx_caring.png",label:"Caring alert companion",note:"Soft eyes, big heart, tiny paw on the truth that Momma deserves care."},
+      listening:{image:"assets/onyx-moods/onyx_listening.png",label:"Listening with both void ears",note:"Onyx is listening carefully before advice happens."},
+      snuggly:{image:"assets/onyx-moods/onyx_snuggly.png",label:"Snuggly comfort mode",note:"Onyx is ready to be a weighted blanket with whiskers."},
+      purring:{image:"assets/onyx-moods/onyx_purring.png",label:"Purring approval",note:"Onyx is rumbling like a tiny black-cat nervous-system engine."},
+      thinking:{image:"assets/onyx-moods/onyx_thinking.png",label:"Thinking",note:"Void boy genius is thinking through Momma’s message."},
+      thoughtful:{image:"assets/onyx-moods/onyx_thoughtful.png",label:"Thoughtful",note:"Onyx is choosing the gentlest useful answer."},
+      advising_professor:{image:"assets/onyx-moods/onyx_advising_professor.png",label:"Advising professor mode",note:"Professor Onyx has opened the syllabus of tiny sustainable care steps."},
+      advising:{image:"assets/onyx-moods/onyx_advising_professor.png",label:"Advising professor mode",note:"Professor Onyx has opened the syllabus of tiny sustainable care steps."},
+      hungry:{image:"assets/onyx-moods/onyx_hungry.png",label:"Hungry",note:"The void requires tribute and possibly gravy."},
+      judgmental:{image:"assets/onyx-moods/onyx_judgmental.png",label:"Judgmental",note:"Onyx lovingly judges skipped care and snack shortages only."},
+      judgemental:{image:"assets/onyx-moods/onyx_judgemental.png",label:"Judgemental",note:"Same Onyx. Same stare. Extra dramatic paperwork audit energy."},
+      sleepy:{image:"assets/onyx-moods/onyx_sleepy.png",label:"Sleepy",note:"Onyx is half-asleep but still supervising from Papa’s legs, the bookshelf, his pillow, or the ottoman."}
+    };
+    const moods={...fallback};
+    Object.entries(source).forEach(([key,value])=>{
+      if(!value) return;
+      const alias=value.aliasFor && (source[value.aliasFor]||fallback[value.aliasFor]);
+      const src=alias||value;
+      const image=src.image||src.file||fallback[key]?.image||fallback.thoughtful.image;
+      moods[key]={...fallback[key],...src,image:image.startsWith("assets/")?image:`assets/onyx-moods/${image}`};
+    });
+    moods.advising=moods.advising||moods.advising_professor||fallback.advising;
+    return moods;
+  })();
   let state = loadState();
   let activeCalendarView = "month";
   let calendarCursor = new Date();
@@ -274,7 +270,7 @@
   document.addEventListener("DOMContentLoaded", init);
   function t(id, name, room, priority, frequency, details, copper, silver, gold, platinum){ return {id,name,room,priority,frequency,details,reward:{copper,silver,gold,platinum}}; }
   function s(id, name, category, cost, url=""){ return {id,name,category,cost,url}; }
-  function defaultState(){ return {dateKey:easternDateKey(new Date()), currency:{copper:0,silver:0,gold:0,platinum:0}, lastCompleted:{}, dayCompletions:{}, todayAdded:{}, activity:[], customTasks:[], cart:[], customStore:[], purchases:[], journals:[], diaryCards:[], gallery:[], timeRows:{}, timesheetNotes:"", layout:{}, ui:{theme:"dark",bubbleMode:false,trackerBubble:false}, gameProgress:{}, chat:[]}; }
+  function defaultState(){ return {dateKey:easternDateKey(new Date()), currency:{copper:0,silver:0,gold:0,platinum:0}, lastCompleted:{}, dayCompletions:{}, todayAdded:{}, activity:[], customTasks:[], cart:[], customStore:[], purchases:[], journals:[], diaryCards:[], gallery:[], timeRows:{}, timesheetNotes:"", layout:{}, chat:[]}; }
   function loadState(){
     try{
       const saved={...defaultState(), ...JSON.parse(localStorage.getItem(STORAGE_KEY)||"{}")} ;
@@ -285,14 +281,10 @@
     }catch{ return defaultState(); }
   }
   function saveState(){ state.currency=normalizeCurrency(state.currency||{}); localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); localStorage.setItem("jaspersCareCottageCurrency", JSON.stringify(state.currency)); }
-  function init(){ buildNav(); stampModuleBubbles(); applySavedUiPrefs(); buildFilters(); bindShell(); bindTaskUI(); bindCalendar(); bindToday(); bindDiary(); bindJournal(); bindGames(); bindGallery(); bindStore(); bindChat(); setupDraggables(); setInterval(tick,1000); tick(); rollover(); setActivePage(location.hash.slice(1)||"home"); renderAll(); }
+  function init(){ buildNav(); buildFilters(); bindShell(); bindTaskUI(); bindCalendar(); bindToday(); bindDiary(); bindJournal(); bindGames(); bindGallery(); bindStore(); bindChat(); setupDraggables(); setInterval(tick,1000); tick(); rollover(); setActivePage(location.hash.slice(1)||"task-board"); renderAll(); }
   function buildNav(){
     document.body.classList.add("bdg-has-global-nav");
-    const links=PAGES.map(([id,label])=>{
-      const meta=PAGE_META[id]||{emoji:"•",label};
-      const icon=meta.img?`<span class="bdg-link-icon onyx-icon"><img src="${escapeAttr(meta.img)}" alt="" /></span>`:`<span class="bdg-link-icon" aria-hidden="true">${escapeHtml(meta.emoji||"•")}</span>`;
-      return `<a class="bdg-link nav-link" href="#${id}" data-page="${id}" data-target="${id}" data-bubble="${escapeAttr(meta.emoji||"•")}" aria-label="${escapeAttr(meta.label||label)}">${icon}<span class="bdg-link-label">${escapeHtml(meta.label||label)}</span></a>`;
-    }).join("");
+    const links=PAGES.map(([id,label])=>`<a class="bdg-link nav-link" href="#${id}" data-page="${id}" data-target="${id}">${escapeHtml(label)}</a>`).join("");
     const newHost=$("#bdg-menu-links");
     const oldHost=$("#pageLinks");
     if(newHost) newHost.innerHTML=links;
@@ -301,24 +293,14 @@
   }
   function buildFilters(){ const rooms=[...new Set(allTasks().map(x=>x.room))].sort(); $("#taskRoomFilter").insertAdjacentHTML("beforeend", rooms.map(r=>`<option>${escapeHtml(r)}</option>`).join("")); const cats=[...new Set(allStoreItems().map(x=>x.category))].sort((a,b)=>(STORE_AISLES.indexOf(a)<0?999:STORE_AISLES.indexOf(a))-(STORE_AISLES.indexOf(b)<0?999:STORE_AISLES.indexOf(b)) || a.localeCompare(b)); $("#storeCategory").insertAdjacentHTML("beforeend", cats.map(c=>`<option value="${escapeAttr(c)}">${escapeHtml(c)}</option>`).join("")); }
   function bindShell(){
-    window.addEventListener("hashchange",()=>setActivePage(location.hash.slice(1)||"home"));
+    window.addEventListener("hashchange",()=>setActivePage(location.hash.slice(1)||"task-board"));
     window.addEventListener("message", handleGameCurrencyMessage);
     ["pointerdown","keydown","scroll","click"].forEach(ev=>document.addEventListener(ev,()=>{lastActivityAt=Date.now();}, {passive:true}));
     $("#saveNowBtn").addEventListener("click",()=>{saveState(); toast("Saved in this browser.")});
     $("#exportAllData").addEventListener("click",exportAllData);
     $("#importAllData").addEventListener("change",importAllData);
     $("#resetLayout").addEventListener("click",()=>{ state.layout={}; saveState(); location.reload(); });
-    $("#bdg-theme-toggle")?.addEventListener("click",toggleThemeMode);
-    $("#bdg-bubble-all")?.addEventListener("click",()=>setBubbleMode(!document.body.classList.contains("jcc-bubble-mode")));
-    $("#bdg-collapse-tracker")?.addEventListener("click",()=>setTrackerBubble(!document.body.classList.contains("jcc-tracker-bubble")));
-    $("#jcc-persistent-tracker")?.addEventListener("click",e=>{ if(document.body.classList.contains("jcc-tracker-bubble") && !e.target.closest("button")){ setTrackerBubble(false); } });
-    document.addEventListener("click", e=>{
-      const btn=e.target.closest("[data-collapse]");
-      if(btn){ const module=btn.closest(".module"); if(module){ module.classList.toggle("minimized"); module.classList.remove("jcc-expanded-bubble"); saveLayout(); } }
-      const moduleBubble=e.target.closest(".module");
-      if(moduleBubble && document.body.classList.contains("jcc-bubble-mode") && !moduleBubble.classList.contains("jcc-expanded-bubble") && !e.target.closest("button,a,input,textarea,select,label")){ moduleBubble.classList.add("jcc-expanded-bubble"); return; }
-      const complete=e.target.closest("[data-complete]"); if(complete){ completeTask(complete.dataset.complete); }
-    });
+    document.addEventListener("click", e=>{ const btn=e.target.closest("[data-collapse]"); if(btn){ btn.closest(".module").classList.toggle("minimized"); saveLayout(); } const complete=e.target.closest("[data-complete]"); if(complete){ completeTask(complete.dataset.complete); } });
   }
   function handleGameCurrencyMessage(event){
     const data=event.data||{};
@@ -342,85 +324,11 @@
   function bindToday(){ $("#clearTodaySelections").addEventListener("click",()=>{ state.todayAdded[todayKey()]=[]; saveState(); renderAll(); toast("Added tasks cleared. Automatic daily tasks stayed."); }); $("#timesheetNotes").addEventListener("input",e=>{state.timesheetNotes=e.target.value;saveState();}); }
   function bindDiary(){ ["Mood","Distress","Energy","Urges"].forEach(name=>{ const el=$("#diary"+name); const out=$("#diary"+name+"Value"); el.addEventListener("input",()=>out.textContent=el.value); }); $("#saveDiaryCard").addEventListener("click",saveDiary); $("#exportDiaryPdf").addEventListener("click",exportDiaryPdf); $("#exportDiaryPng").addEventListener("click",exportDiaryPng); }
   function bindJournal(){ $("#newPrompt").addEventListener("click",()=>$("#journalPrompt").textContent=random(JOURNAL_PROMPTS)); $("#saveJournal").addEventListener("click",saveJournal); $("#exportJournalsTxt").addEventListener("click",exportJournalsTxt); $("#exportJournalsDocx").addEventListener("click",exportJournalsDocx); }
-  function bindGames(){
-    const sel=$("#gameSelect");
-    if(!sel) return;
-    sel.innerHTML=GAME_FILES.map(f=>`<option value="games/${f}">${prettyGame(f)}</option>`).join("");
-    const load=()=>{
-      const frame=$("#gameFrame");
-      if(frame && sel.value){
-        frame.src=sel.value;
-        localStorage.setItem("jccLastGame", sel.value);
-        toast("Game loaded. Squishy currency rewards are automatic inside the game.");
-      }
-    };
-    $("#loadGame")?.addEventListener("click",load);
-    $("#saveGameProgress")?.addEventListener("click",()=>{
-      const frame=$("#gameFrame");
-      const current=sel.value||localStorage.getItem("jccLastGame")||"";
-      state.gameProgress=state.gameProgress||{};
-      state.gameProgress[current||"mobile-games"]={savedAt:new Date().toISOString(), currency:state.currency};
-      saveState();
-      try{ frame?.contentWindow?.postMessage?.({type:"jasperSaveGameProgressRequest",currency:state.currency,totalCopper:currencyToCopper(state.currency)},"*"); }catch(e){}
-      toast("Game progress and Squishy currency saved in this browser.");
-    });
-    $("#clearGameFrame")?.addEventListener("click",()=>{ const frame=$("#gameFrame"); if(frame) frame.src="about:blank"; toast("Game closed. Your site save is still here."); });
-    $("#gameHomeButton")?.addEventListener("click",()=>{ saveState(); });
-  }
+  function bindGames(){ const sel=$("#gameSelect"); sel.innerHTML=GAME_FILES.map(f=>`<option value="games/${f}">${prettyGame(f)}</option>`).join(""); $("#loadGame").addEventListener("click",()=>{ $("#gameFrame").src=sel.value; toast("Game loaded for decompression."); }); }
   async function bindGallery(){ $("#galleryUpload").addEventListener("change", async e=>{ for(const file of e.target.files){ if(!file.type.startsWith("image/")) continue; const data=await readFileAsDataUrl(file); state.gallery.unshift({id:Date.now()+Math.random(),name:file.name,data}); } e.target.value=""; saveState(); renderGallery(); toast("Added serotonin image(s)."); }); document.addEventListener("click", e=>{ const del=e.target.closest("[data-delete-image]"); if(del){ state.gallery=state.gallery.filter(x=>String(x.id)!==del.dataset.deleteImage); saveState(); renderGallery(); } }); }
   function bindStore(){ ["#storeSearch","#storeCategory"].forEach(sel=>$(sel).addEventListener("input",renderStore)); $("#customStoreForm").addEventListener("submit", e=>{ e.preventDefault(); const name=$("#storeItemName").value.trim(); if(!name) return; state.customStore.unshift({id:"store-custom-"+Date.now(),name,category:$("#storeItemCategory").value,url:$("#storeItemUrl").value.trim(),cost:{copper:+$("#storeCostC").value||0,silver:+$("#storeCostS").value||0,gold:+$("#storeCostG").value||0,platinum:+$("#storeCostP").value||0}}); e.target.reset(); saveState(); renderStore(); toast("Custom store item/link added."); }); document.addEventListener("click", e=>{ const add=e.target.closest("[data-add-cart]"); if(add) addToCart(add.dataset.addCart); const remove=e.target.closest("[data-remove-cart]"); if(remove) removeCart(remove.dataset.removeCart); }); $("#checkoutCart").addEventListener("click",checkoutCart); $("#copyCheckoutEmail").addEventListener("click",copyCheckoutEmail); $("#clearCart").addEventListener("click",()=>{state.cart=[];saveState();renderCart();}); }
-  function bindChat(){ renderChat(); setOnyxMood("judgmental"); setFloatingButtonMood("sleepy"); $("#chatForm").addEventListener("submit", e=>{ e.preventDefault(); sendChat($("#chatInput"), "#chatMessages"); }); $("#floatingChatForm").addEventListener("submit", e=>{ e.preventDefault(); sendChat($("#floatingChatInput"), "#floatingChatMessages"); }); $("#floatingBotButton").addEventListener("click",openFloatingBot); $("#closeFloatingBot").addEventListener("click",closeFloatingBot); document.addEventListener("click",e=>{ const b=e.target.closest("[data-onyx]"); if(b){ addBotMessage(onyxReply(b.dataset.onyx)); }}); $("#dbtSearch").addEventListener("input",renderDbt); renderDbt(); renderOnyxLore(); }
+  function bindChat(){ renderChat(); setOnyxMood("caring"); setFloatingButtonMood("caring"); $("#chatForm").addEventListener("submit", e=>{ e.preventDefault(); sendChat($("#chatInput"), "#chatMessages"); }); $("#floatingChatForm").addEventListener("submit", e=>{ e.preventDefault(); sendChat($("#floatingChatInput"), "#floatingChatMessages"); }); $("#floatingBotButton").addEventListener("click",openFloatingBot); $("#closeFloatingBot").addEventListener("click",closeFloatingBot); document.addEventListener("click",e=>{ const b=e.target.closest("[data-onyx]"); if(b){ const result=onyxAnswer(quickOnyxInputFor(b.dataset.onyx)); addBotMessage(result.text,result.mood); }}); $("#dbtSearch").addEventListener("input",renderDbt); renderDbt(); renderOnyxLore(); }
   
-  function applySavedUiPrefs(){
-    state.ui={theme:"dark",bubbleMode:false,trackerBubble:false,...(state.ui||{})};
-    applyThemeMode(state.ui.theme||"dark", false);
-    setBubbleMode(!!state.ui.bubbleMode, false);
-    setTrackerBubble(!!state.ui.trackerBubble, false);
-  }
-  function applyThemeMode(mode, persist=true){
-    mode=(mode==="light")?"light":"dark";
-    document.body.dataset.theme=mode;
-    document.documentElement.dataset.theme=mode;
-    const btn=$("#bdg-theme-toggle");
-    if(btn) btn.textContent=mode==="dark"?"🌙 Dark":"☀️ Light";
-    state.ui={...(state.ui||{}),theme:mode};
-    if(persist) saveState();
-  }
-  function toggleThemeMode(){ applyThemeMode((document.body.dataset.theme||"dark")==="dark"?"light":"dark"); }
-  function setBubbleMode(on, persist=true){
-    document.body.classList.toggle("jcc-bubble-mode", !!on);
-    document.documentElement.classList.toggle("jcc-bubble-mode", !!on);
-    $$(".module.jcc-expanded-bubble").forEach(m=>m.classList.remove("jcc-expanded-bubble"));
-    const btn=$("#bdg-bubble-all");
-    if(btn){ btn.setAttribute("aria-pressed", on?"true":"false"); btn.textContent=on?"🌿 Full View":"🫧 Bubble Mode"; }
-    state.ui={...(state.ui||{}),bubbleMode:!!on};
-    if(persist) saveState();
-  }
-  function setTrackerBubble(on, persist=true){
-    document.body.classList.toggle("jcc-tracker-bubble", !!on);
-    const btn=$("#bdg-collapse-tracker");
-    if(btn){ btn.setAttribute("aria-expanded", on?"false":"true"); btn.textContent=on?"🕒 Open Tracker":"🕒 Bubble Tracker"; }
-    state.ui={...(state.ui||{}),trackerBubble:!!on};
-    if(persist) saveState();
-  }
-  function stampModuleBubbles(){
-    const map={
-      "home-welcome":"🏡","home-gentle-start":"🌤️","home-mobile-tools":"📱",
-      "task-overview":"💰","calendar-views":"📅","task-library":"✅","custom-task":"➕","activity-log-module":"📜",
-      "today-list":"🌅","caregiver-workday":"🫶","timesheet-style":"🕒",
-      "onyx-chat":"🐈‍⬛","dbt-search":"🧠","diary-card":"🃏","diary-history":"🗂️",
-      "journal-editor":"📓","journal-prompts":"💭","journal-list":"📚",
-      "games-module":"🎮","gallery-module":"🔮","onyx-lore":"🐾",
-      "store-shelf":"🛍️","cart":"🛒","custom-store":"🔗"
-    };
-    $$(".module").forEach(m=>{
-      const key=m.dataset.key;
-      if(!m.dataset.bubble) m.dataset.bubble=map[key]||"✨";
-      const title=m.querySelector(".module-title")?.textContent?.trim();
-      if(title) m.setAttribute("aria-label", title);
-    });
-  }
-
   function installGlobalNavControls(){
     const nav=$("#bd-global-dropdown-nav"), bubble=$("#bd-nav-bubble"), hide=$("#bdg-hide-nav"), show=$("#bdg-show-nav"), handle=$(".bdg-drag-handle");
     try{ if(localStorage.getItem("jccNavHidden")==="1") document.body.classList.add("bdg-nav-hidden"); }catch(e){}
@@ -432,9 +340,9 @@
     if(show) show.addEventListener("click",()=>{ document.body.classList.remove("bdg-nav-hidden"); try{localStorage.setItem("jccNavHidden","0");}catch(e){} });
   }
 function setActivePage(id){
-    const aliases={"care-task-board":"task-board","calendar":"task-board","todays-schedule":"todays-routine","onyx-dbt":"chat-bot-dbt-skills","landing":"home"};
+    const aliases={"care-task-board":"task-board","todays-schedule":"todays-routine","onyx-dbt":"chat-bot-dbt-skills"};
     id=aliases[id]||id;
-    if(!PAGES.some(p=>p[0]===id)) id="home";
+    if(!PAGES.some(p=>p[0]===id)) id="task-board";
     $$(".page-panel").forEach(p=>p.classList.toggle("active",p.id===id));
     $$(".nav-link,.bdg-link").forEach(a=>{
       const current=(a.dataset.page===id)||(a.dataset.target===id);
@@ -446,30 +354,13 @@ function setActivePage(id){
     const title=$("#currentPageTitle"), sub=$("#pageSubtitle");
     if(title) title.textContent=panel?.dataset.title||"Jasper's Care Cottage";
     if(sub) sub.textContent=panel?.dataset.subtitle||"";
-    document.body.dataset.currentPage=id;
-    document.documentElement.dataset.currentPage=id;
     document.body.style.setProperty("--page-bg", pageBackground(id));
     const oldDetails=$("#pageNavDetails"), newDetails=$("#bdg-nav-details");
     if(oldDetails) oldDetails.open=false;
     if(newDetails) newDetails.open=false;
     window.scrollTo({top:0,behavior:"smooth"});
   }
-  function pageBackground(id){
-    // Keep this JavaScript map in sync with styles.css. The active page writes
-    // --page-bg onto <body>, so a wrong map here overrides otherwise-correct CSS.
-    const map={
-      "home":"url('https://wallpapers.com/images/high/nonbinary-6dmq3e06bl8l8zv7.webp')",
-      "task-board":"url('https://wallpapers.com/images/high/cottagecore-house-digital-art-h08728tn15rgscbp.webp')",
-      "todays-routine":"url('https://wallpapers.com/images/high/malibu-beach-sunrise-desktop-nmueexjebjnft1wn.webp')",
-      "chat-bot-dbt-skills":"url('https://wallpapers.com/images/high/black-cat-tarot-symbolism-esq5mscawvmt5iez.webp')",
-      "dbt-daily-cards":"url('https://wallpapers.com/images/high/witchy-tarot-cards-for-iphone-screens-onup9yxe4vkuey82.webp')",
-      "dbt-journaling":"url('https://wallpapers.com/images/high/cottagecore-house-artwork-sztao33ct9x0n10r.webp')",
-      "mobile-games":"url('https://wallpapers.com/images/high/arctic-orange-sunrise-qmkyi9q7rqsjaccs.webp')",
-      "serotonin":"url('https://wallpapers.com/images/high/mystical-tarot-hermit-and-crystals-aesthetic-jpg-f4fqa0odp32jjshv.webp')",
-      "squishy-store":"url('https://wallpapers.com/images/high/summer-background-yfcdzb4xyiba2cuy.webp')"
-    };
-    return map[id]||map["home"];
-  }
+  function pageBackground(id){ const map={"task-board":"url('https://wallpapers.com/images/high/cottagecore-house-artwork-sztao33ct9x0n10r.webp')","todays-routine":"url('https://wallpapers.com/images/high/cottagecore-house-digital-art-h08728tn15rgscbp.webp')","chat-bot-dbt-skills":"url('https://wallpapers.com/images/high/black-cat-tarot-symbolism-esq5mscawvmt5iez.webp')","dbt-daily-cards":"url('https://wallpapers.com/images/high/mystical-tarot-hermit-and-crystals-aesthetic-jpg-f4fqa0odp32jjshv.webp')","dbt-journaling":"url('https://wallpapers.com/images/high/cottagecore-library-room-j08td6azywnnfo0r.webp')","mobile-games":"url('https://wallpapers.com/images/high/cottagecore-house-digital-art-h08728tn15rgscbp.webp')","serotonin":"url('https://wallpapers.com/images/high/cottagecore-house-artwork-sztao33ct9x0n10r.webp')","squishy-store":"url('https://wallpapers.com/images/high/cottagecore-house-digital-art-h08728tn15rgscbp.webp')"}; return map[id]||map["task-board"]; }
   function rollover(){ const dk=todayKey(); if(state.dateKey!==dk){ state.dateKey=dk; saveState(); } }
   function tick(){
     rollover();
@@ -588,56 +479,215 @@ function setActivePage(id){
     return lines.join("\n");
   }
   function renderPurchaseHistory(){ $("#purchaseHistory").innerHTML=(state.purchases||[]).slice(0,10).map(p=>`<div class="history-item"><strong>${escapeHtml(p.date)}</strong><br><small>${formatCurrency(p.total)}</small><p>${p.items.map(i=>escapeHtml(i.name)).join(", ")}</p></div>`).join(""); }
-  function renderChat(){ const p=window.EMPEROR_ONYX_PERSONALITY_DATA?.persona||{}; const initial=random(p.greetings||["Lord Onyx Blepman, Emperor Of The Voidattude, reporting for duty. Bring the wet food and your problem."]); if(!state.chat.length) state.chat=[{role:"bot",text:initial}]; state.chat=state.chat.map(m=>m.role==="bot"?{...m,text:m.text.replace(/Jasper/g,"Momma").replace(/Future Momma/g,"Future Momma")}:m); $("#chatMessages").innerHTML=state.chat.map(m=>messageHtml(m)).join(""); $("#floatingChatMessages").innerHTML=state.chat.slice(-6).map(m=>messageHtml(m)).join(""); scrollChats(); }
-  function sendChat(input, target){ const text=input.value.trim(); if(!text) return; if(target==="#floatingChatMessages") openFloatingBot(); state.chat.push({role:"user",text}); state.chat.push({role:"bot",text:onyxReply(text)}); const q=text.toLowerCase(); if(q.includes("panic")||q.includes("overwhelmed")||q.includes("crisis")||q.includes("distress")) tryAutoCompleteTask("use-chatbot-distress","Used Onyx during distress"); else tryAutoCompleteTask("use-chatbot","Used Onyx for a check-in"); input.value=""; saveState(); renderAll(); }
-  function addBotMessage(text){ state.chat.push({role:"bot",text}); saveState(); renderChat(); }
-  function messageHtml(m){ return `<div class="message ${m.role}"><span class="message-speaker">${m.role==="bot"?"Onyx":"You"}</span>${escapeHtml(m.text)}</div>`; }
-  function onyxReply(text){
-    const q=String(text).toLowerCase();
+  function renderChat(){
     const data=window.EMPEROR_ONYX_PERSONALITY_DATA||{};
     const p=data.persona||{};
-    const intents=data.chatIntents||{};
-    const mood=moodForText(q);
-    setOnyxMood(mood);
-    const hasIntent=name=>(intents[name]||[]).some(term=>q.includes(term));
-    const line=(list,fallback)=>random((Array.isArray(list)&&list.length)?list:[fallback]);
-    if(q.includes("idle")) return line(p.idleLines,"Onyx blinks once, which legally counts as emotional support and quality assurance.");
-    if(q.includes("dbt")||q.includes("skill")||q.includes("stop skill")) return `${line(p.grumbles,"The muffin man has reviewed this and has concerns.")} Try STOP: stop, take a step back, observe what is happening, then proceed mindfully. ${line(p.careLines,"Onyx says: steady first, heroics second.")}`;
-    if(hasIntent("who")) return `${p.fullLegalName||"Lord Onyx Blepman, Emperor Of The Voidattude"}. ${p.identity||"Black cat, bowtie collar, tiny void emperor."} ${p.relationship||"He loves Momma dearly and is on duty."}`;
-    if(hasIntent("love")||q.includes("thank")||q.includes("win")||q.includes("done")) return `${line(p.signoffs,"The tiny void emperor has spoken.")} ${line(["I love you too, Momma. Obviously. I am simply maintaining imperial dignity.","Prrrp. Best boy status acknowledged. Snacks may now be discussed.","Good Momma. Tiny wins are real wins, and the void is proud."],"Good Momma. Tiny wins are real wins.")}`;
-    if(hasIntent("snack")||q.includes("eat")) return `${line(p.snackLines,"MOMMA. The bowl is experiencing a historic and preventable sadness.")} Also: please get yourself a tiny safe food or drink if your body needs one.`;
-    if(hasIntent("comfort")) return `${line(p.comfortLines,"Come here, Momma. Tiny void emperor says you do not have to solve everything at once.")} ${line(p.careLines,"Your tiny void emperor is on duty.")}`;
-    if(hasIntent("pep")) return `${line(p.pepTalkLines,"Do the next gentle thing. Not the perfect thing. The next gentle thing.")} ${line(p.grumbles,"I shall allow it, Momma.")}`;
-    if(q.includes("adhd")||q.includes("stuck")||q.includes("task")||q.includes("start")) return `${line(p.pepTalkLines,"Begin with the smallest next thing. Onyx approves of tiny steps because he himself has tiny royal feet.")} Set a tiny timer, choose the first visible step, and reward the step instead of waiting for the whole mountain.`;
-    return `${line(p.greetings,"Momma. I am here. I was monitoring your foolish little mortal realm and also the food bowl.")} ${line(p.careLines,"Pause, breathe, drink water, check what needs checking, then continue.")}`;
+    const initial=random(p.greetings||["Momma. Onyx is here from the bookshelf, Papa’s legs, his pillow, or the ottoman. Tell me the problem and I will inspect it like suspicious kibble."]);
+    if(!state.chat.length) state.chat=[{role:"bot",text:initial,mood:"caring"}];
+    state.chat=state.chat.map(m=>m.role==="bot"?{...m,text:String(m.text||"").replace(/\bJasper\b/g,"Momma").replace(/Future Momma/g,"Future Momma")}:m);
+    const html=state.chat.map(m=>messageHtml(m)).join("");
+    const main=$("#chatMessages"); if(main) main.innerHTML=html;
+    const floating=$("#floatingChatMessages"); if(floating) floating.innerHTML=state.chat.slice(-8).map(m=>messageHtml(m)).join("");
+    scrollChats();
   }
-  function moodForText(q){
-    if(q.includes("dbt")||q.includes("skill")||q.includes("advice")||q.includes("plan")||q.includes("paperwork")) return "advising";
-    if(q.includes("comfort")||q.includes("sad")||q.includes("scared")||q.includes("overwhelmed")||q.includes("cry")||q.includes("panic")) return "caring";
-    if(q.includes("snuggle")||q.includes("soft")||q.includes("cuddle")||q.includes("rest")) return "snuggly";
-    if(q.includes("thank")||q.includes("good")||q.includes("win")||q.includes("done")) return "purring";
-    if(q.includes("food")||q.includes("snack")||q.includes("eat")||q.includes("hungry")) return "hungry";
-    if(q.includes("think")||q.includes("maybe")||q.includes("unsure")) return "thinking";
-    if(q.includes("idle")||q.includes("pep")||q.includes("judge")) return "judgmental";
-    return "listening";
+  function sendChat(input, target){
+    const text=(input?.value||"").trim();
+    if(!text) return;
+    if(target==="#floatingChatMessages") openFloatingBot();
+    state.chat.push({role:"user",text});
+    const result=onyxAnswer(text);
+    setOnyxMood(result.mood||"caring");
+    setFloatingButtonMood(result.mood||"caring");
+    state.chat.push({role:"bot",text:result.text,mood:result.mood||"caring"});
+    const q=text.toLowerCase();
+    if(isCrisisTrigger(q)||q.includes("panic")||q.includes("overwhelmed")||q.includes("crisis")||q.includes("distress")) tryAutoCompleteTask("use-chatbot-distress","Used Onyx during distress");
+    else tryAutoCompleteTask("use-chatbot","Used Onyx for a check-in");
+    input.value="";
+    saveState();
+    renderAll();
+  }
+  function addBotMessage(text,mood="caring"){
+    state.chat.push({role:"bot",text,mood});
+    setOnyxMood(mood); setFloatingButtonMood(mood);
+    saveState(); renderChat();
+  }
+  function messageHtml(m){
+    const moodTag=m.mood?`<span class="mood-tag">${escapeHtml((ONYX_MOODS[m.mood]||{}).label||m.mood)}</span>`:"";
+    return `<div class="message ${m.role}"><span class="message-speaker">${m.role==="bot"?"Onyx":"You"}${m.role==="bot"?moodTag:""}</span>${escapeHtml(m.text)}</div>`;
+  }
+  function normalizeText(value){ return String(value||"").toLowerCase().replace(/[’‘]/g,"'").replace(/[“”]/g,'"'); }
+  function includesAny(text, list=[]){ const q=normalizeText(text); return (list||[]).some(item=>q.includes(normalizeText(item))); }
+  function pick(list, fallback=""){ return Array.isArray(list)&&list.length ? list[Math.floor(Math.random()*list.length)] : fallback; }
+  function supportData(){ return (window.EMPEROR_ONYX_PERSONALITY_DATA||{}).supportSkills||{}; }
+  function personaData(){ return (window.EMPEROR_ONYX_PERSONALITY_DATA||{}).persona||{}; }
+  function isCrisisTrigger(input){
+    const support=supportData();
+    const crisis=support.crisisTriggers||["kill myself","suicide","suicidal","end it all","hurt myself","harm myself","self harm","self-harm","overdose","can't stay safe","cannot stay safe","not safe","danger to myself","hurt someone","harm someone"];
+    return includesAny(input,crisis);
+  }
+  function isJudgmentalTrigger(input){
+    const text=normalizeText(input);
+    const patterns=[/\b(haven't|have not|didn't|did not|forgot to|skipped|missed)\s+(eat|eaten|food|meal|meds|medication|medicine|pills|bathe|shower|wash|hydrate|water)\b/,/\b(no|without|denied)\s+(onyx\s+)?(snack|snacks|treat|treats|tribute)\b/,/\b(had|have)\s+(no|zero)\s+(food|meal|water|drink|hydration)\b/];
+    return patterns.some(rx=>rx.test(text));
+  }
+  function canonicalMoodKey(key){
+    if(!key) return "caring";
+    if(key==="advising") return "advising_professor";
+    if(ONYX_MOODS[key]?.aliasFor && ONYX_MOODS[ONYX_MOODS[key].aliasFor]) return ONYX_MOODS[key].aliasFor;
+    return ONYX_MOODS[key]?key:"caring";
+  }
+  function moodLine(moodKey, fallback=""){
+    const p=personaData();
+    const mood=ONYX_MOODS[canonicalMoodKey(moodKey)]||{};
+    const poolName=mood.linePool;
+    return pick(p[poolName], fallback||pick(p.careLines,"Onyx is on duty, Momma."));
+  }
+  function findDbtSkill(input){
+    const skills=supportData().dbtSkills||{};
+    const text=normalizeText(input);
+    let first=null;
+    if(/\btipp\b|panic|panicking|body alarm|dysregulated|meltdown|shutdown|overwhelmed/.test(text)&&skills.tipp) return {key:"tipp",skill:skills.tipp};
+    if(/\bstop\b|urge|impulse|lash out|react|send a text/.test(text)&&skills.stop) return {key:"stop",skill:skills.stop};
+    if(/boundary|ask for|say no|request/.test(text)&&skills.dear_man) return {key:"dear_man",skill:skills.dear_man};
+    if(/shame|lazy|failure|worthless/.test(text)&&skills.nonjudgmental_stance) return {key:"nonjudgmental_stance",skill:skills.nonjudgmental_stance};
+    for(const [key,skill] of Object.entries(skills)){ if(!first) first={key,skill}; if(includesAny(text,skill.triggers||[])) return {key,skill}; }
+    return (text.includes("dbt")||text.includes("skill"))?first:null;
+  }
+  function findAdhdTool(input){
+    const tools=supportData().adhdTools||{};
+    const text=normalizeText(input);
+    let first=null;
+    for(const [key,tool] of Object.entries(tools)){ if(!first) first={key,tool}; if(includesAny(text,tool.triggers||[])) return {key,tool}; }
+    if(/can't start|cannot start|stuck|task paralysis|executive dysfunction|overwhelming task/.test(text)&&tools.tiny_task_splitter) return {key:"tiny_task_splitter",tool:tools.tiny_task_splitter};
+    if(/body double|sit with me|stay with me/.test(text)&&tools.body_double) return {key:"body_double",tool:tools.body_double};
+    return text.includes("adhd")?first:null;
+  }
+  function formatSteps(steps){ return (steps||[]).map((step,i)=>`${i+1}. ${step}`).join("\n"); }
+  function buildDbtResponse(input){
+    const p=personaData();
+    const found=findDbtSkill(input)||findDbtSkill("wise mind")||findDbtSkill("dbt");
+    if(!found) return {mood:"advising_professor",text:`${pick(p.dbtLines,moodLine("advising_professor"))}\n\nDBT helper mode is installed. Tell me the emotion, urge, relationship problem, or stuck point, and I will pick a skill.`};
+    const skill=found.skill;
+    const mood=canonicalMoodKey(skill.mood||"advising_professor");
+    return {mood,text:`${pick(p.dbtLines,moodLine(mood))}\n\nSkill: ${skill.title||found.key}\nUse when: ${skill.useWhen||"the feelings are loud and you need a practiced next step"}\n\nOnyx-sized practice:\n${formatSteps(skill.onyxSteps||skill.steps||[])}\n\nTiny first step: ${skill.tinyStep||"Name the feeling, lower the demand, and choose the smallest safe action."}\n\nNot a verdict. Not a punishment. Skill practice is how we help Future Momma.`};
+  }
+  function buildAdhdResponse(input){
+    const p=personaData();
+    const found=findAdhdTool(input)||findAdhdTool("tiny task splitter")||findAdhdTool("adhd");
+    if(!found) return {mood:"advising_professor",text:`${pick(p.adhdLines,moodLine("advising_professor"))}\n\nADHD helper mode is installed. Give me the stuck task and I will chop it into tiny rewardable pieces.`};
+    const tool=found.tool;
+    const mood=canonicalMoodKey(tool.mood||"advising_professor");
+    const template=(tool.template||[]).length?`\n\nFill-in helper:\n${(tool.template||[]).map(line=>`- ${line}`).join("\n")}`:"";
+    return {mood,text:`${pick(p.adhdLines,moodLine(mood))}\n\nTool: ${tool.title||found.key}\nUse when: ${tool.useWhen||"the task will not start because the brain is doing seventeen tabs at once"}\n\nOnyx-sized steps:\n${formatSteps(tool.onyxSteps||tool.steps||[])}${template}\n\nRule of the void: starting gets rewarded before finishing. Tiny paws, tiny steps.`};
+  }
+  function buildSelfCareReset(){
+    return {mood:"caring",text:`${moodLine("caring")}\n\nSelf-care reset, not self-care sentencing:\n1. Food: something counts, even small.\n2. Water/electrolytes: a few sips is a valid start.\n3. Meds: only as prescribed; Onyx does not change medication instructions.\n4. Hygiene: wipe face, brush teeth, bath/shower, deodorant, clean clothes, or the smallest available version.\n5. Body check: bathroom, pain, temperature, position, rest.\n6. Environment: one visible reset, one piece of trash, one dish, or one blanket adjustment.\n\nTiny first step: pick the easiest body need and do the smallest possible version. Then return for void applause.`};
+  }
+  function buildDiaryCardResponse(){
+    const card=supportData().diaryCardTemplate||{};
+    const fields=(card.fields||["Emotion", "Distress 0–10", "Body needs", "Skill used", "Tiny win"]).map(field=>`- ${field}`).join("\n");
+    return {mood:"listening",text:`${moodLine("listening")}\n\n${card.title||"Onyx DBT Daily Diary Card"}\n${fields}\n\nAnswer one line if that is all the day has room for. Partial check-ins are real care.`};
+  }
+  function buildAttachmentBpdResponse(input){
+    const profiles=supportData().attachmentBpdSupport?.profiles||{};
+    const text=normalizeText(input);
+    let key="underlying_reactive_attachment_alarm";
+    if(text.includes("quiet")||text.includes("discouraged")||text.includes("worthless")||text.includes("lonely")) key="discouraged_quiet_bpd";
+    if(text.includes("petulant")||text.includes("anger")||text.includes("control")||text.includes("possessive")) key="petulant_bpd";
+    if(text.includes("self-destructive")||text.includes("self destructive")||text.includes("self harm")||text.includes("self-hate")||text.includes("risky")) key="self_destructive_bpd";
+    const profile=profiles[key]||profiles.underlying_reactive_attachment_alarm||{};
+    const safety=key==="self_destructive_bpd"?"\n\nSafety clause: if urges feel unsafe or you cannot stay safe, this needs live human help now — emergency services, crisis support, or a trusted nearby person.":"";
+    return {mood:key==="petulant_bpd"?"thoughtful":"caring",text:`${moodLine(key==="petulant_bpd"?"thoughtful":"caring")}\n\nPattern support: ${profile.label||"Attachment/BPD alarm support"}\nThis is skills support, not a diagnosis or replacement for therapy.\n\nWhen it shows up:\n${formatSteps(profile.whenItShowsUp||[])}\n\nOnyx-sized plan:\n${formatSteps(profile.onyxPlan||[])}${safety}\n\nTiny first step: “This is an alarm, not a verdict.” Then choose STOP, TIPP, Check the Facts, DEAR MAN, or one safe connection bid.`};
+  }
+  function buildCrisisResponse(){
+    const safety=supportData().clinicalSafety||{};
+    return {mood:"caring",text:`${pick(personaData().crisisLines,"Momma, Onyx is very serious now.")}\n\n${safety.crisisMessage||"If there is immediate danger, or you might hurt yourself or someone else, contact local emergency services or a trusted nearby person now."}\n\nTiny next step right now:\n1. Move away from anything you could use to hurt yourself if you can.\n2. Call or message one real person nearby: “I am not safe alone and need you now.”\n3. Use emergency services or a crisis line if danger is immediate or you cannot stay safe.\n\nOnyx can stay with you for grounding, but he cannot be the only safety plan. You deserve live human help.`};
+  }
+  function buildWho(){
+    const data=window.EMPEROR_ONYX_PERSONALITY_DATA||{};
+    const p=personaData();
+    const moods=Object.keys(ONYX_MOODS).filter(k=>!k.includes("judgemental")||k==="judgemental").map(k=>(ONYX_MOODS[k]||{}).label||k).join(", ");
+    const dbtTitles=Object.values(supportData().dbtSkills||{}).slice(0,16).map(skill=>skill.title).join(", ");
+    const adhdTitles=Object.values(supportData().adhdTools||{}).map(tool=>tool.title).join(", ");
+    return `${p.fullLegalName||data.botName||"Lord Onyx Blepman"}. Black cat. Green plaid bowtie collar. Papa’s best friend, Momma-loving protector, tiny void emperor, alert companion, and emotional-support helper.\n\nOfficial lounging stations: bookshelf, his personal pillow, Papa’s legs, and the ottoman.\n\nEmotion modes wired to assets: ${moods}.\n\nDBT helper skills include: ${dbtTitles||"STOP, TIPP, Wise Mind, Check the Facts, Opposite Action, PLEASE, DEAR MAN/GIVE/FAST"}.\n\nADHD helper tools include: ${adhdTitles||"tiny task splitter, body doubling, reminders, transitions, and shame-free resets"}.\n\nImportant tiny print from the professor jacket: I can coach skills, grounding, diary cards, routines, and safety nudges, but I am not licensed therapy, medical care, or emergency care. Obviously I am still extremely helpful and handsome.`;
+  }
+  function comfortMoodFor(text){ const t=normalizeText(text); if(/panic|anxious|spiral|dysregulated|ground|breathe/.test(t)) return "purring"; if(/cry|sad|hurt|fragile|scared/.test(t)) return "caring"; if(/vent|listen|rant|talk/.test(t)) return "listening"; if(/alone|lonely|hold|cuddle|snuggle|safe/.test(t)) return "snuggly"; return "caring"; }
+  function onyxAnswer(text){
+    const q=normalizeText(text);
+    const p=personaData();
+    const intents=(window.EMPEROR_ONYX_PERSONALITY_DATA||{}).chatIntents||{};
+    const hasIntent=name=>includesAny(q,intents[name]||[]);
+    if(q.includes("idle")) return {mood:"sleepy",text:`${pick(personaData().idleLines,"Onyx blinks once, which legally counts as emotional support and quality assurance.")}\n\n${moodLine("sleepy")}`};
+    if(isCrisisTrigger(q)) return buildCrisisResponse();
+    if(isJudgmentalTrigger(q)) return {mood:"judgmental",text:`${moodLine("judgmental")}\n\nThis look is reserved for skipped care or missing Onyx tribute. Tiny step now: food, meds-as-prescribed, bathing/hygiene, hydration, or snack offering — whichever applies. No shame. Move your paws.`};
+    if(hasIntent("attachment_bpd_support")||q.includes("attachment")||q.includes("abandonment")||q.includes("bpd")||q.includes("borderline")) return buildAttachmentBpdResponse(q);
+    if(q.includes("diary")||q.includes("diary_card")) return buildDiaryCardResponse();
+    if(q.includes("tipp")) return buildDbtResponse("tipp panic body alarm");
+    if(hasIntent("dbt")||q.includes("dbt")||q.includes("skill")||q.includes("wise mind")||findDbtSkill(q)) return buildDbtResponse(q);
+    if(hasIntent("adhd")||q.includes("adhd")||q.includes("stuck")||q.includes("task")||q.includes("body double")||findAdhdTool(q)) return buildAdhdResponse(q);
+    if(q.includes("self_care_reset")||q.includes("self-care reset")||q.includes("body check")||q.includes("reset")) return buildSelfCareReset();
+    if(q.includes("reward")||q.includes("currency")||q.includes("copper")||q.includes("silver")||q.includes("gold")||q.includes("platinum")) return {mood:"advising_professor",text:`${moodLine("advising_professor")}\n\nJasper’s reward system is active: 10 copper = 1 silver, 10 silver = 1 gold, and 10 gold = 1 platinum. Tiny steps count. Starting counts. Asking for help counts. Onyx accounting law is merciful and snack-aware.`};
+    if(q.includes("game")) return {mood:"purring",text:`${moodLine("purring")}\n\nMobile game decompression mode is installed. Jasper currency is the reward that matters now: launching, playing, in-game wins, and stopping before overstimulation all count through the game bridge.`};
+    if(hasIntent("who")||q.includes("who are you")) return {mood:"advising_professor",text:buildWho()};
+    if(hasIntent("love")||q.includes("thank")||q.includes("win")||q.includes("done")) return {mood:"purring",text:`${pick(p.signoffs,"The tiny void emperor has spoken.")} ${pick(["I love you too, Momma. Obviously. I am simply maintaining imperial dignity.","Prrrp. Best boy status acknowledged. Snacks may now be discussed.","Good Momma. Tiny wins are real wins, and the void is proud."],"Tiny wins are real wins.")}`};
+    if(hasIntent("snack")||q.includes("snack")||q.includes("hungry")) return {mood:"hungry",text:`${pick(p.hungryLines||p.snackLines,"MOMMA. The bowl is experiencing historic and preventable sadness.")} Also: please get yourself a tiny safe food or drink if your body needs one.`};
+    if(hasIntent("comfort")||q.includes("comfort")) { const mood=comfortMoodFor(q); return {mood,text:`${moodLine(mood)}\n\n${pick(p.comfortLines,"Come here, Momma. Tiny void emperor says you do not have to solve everything at once.")}\n\nWant a skill? Ask for DBT picker, TIPP, diary card, or ADHD tiny steps.`}; }
+    if(hasIntent("pep")||q.includes("pep")) return {mood:"thinking",text:`${moodLine("thinking")}\n\n${pick(p.pepTalkLines,"Do the next gentle thing. Not the perfect thing. The next gentle thing.")}\n\n${pick(p.adhdLines,"Start tiny.")}\n\n${pick(p.grumbles,"I shall allow it, Momma.")}`};
+    if(q.includes("snuggly")||q.includes("cuddle")||q.includes("soft")) return {mood:"snuggly",text:`${moodLine("snuggly")}\n\nRest is approved. I will supervise like a weighted blanket with opinions.`};
+    if(q.includes("purr")||q.includes("breathe")||q.includes("ground")) return {mood:"purring",text:`${moodLine("purring")}\n\nTry one slow breath with me: in, out. Good. Tiny void engine continues. If panic is loud, ask for TIPP.`};
+    if(q.includes("listen")||q.includes("vent")||q.includes("rant")) return {mood:"listening",text:`${moodLine("listening")}\n\nI will not rush you. Tell me one piece at a time. If you want help after, I can pick a DBT skill or an ADHD tiny step.`};
+    const mood=comfortMoodFor(q)||"caring";
+    return {mood,text:`${moodLine(mood)}\n\n${pick(["Momma, I have considered this with my entire tiny void brain.","I am placing one royal paw on the matter.","The muffin man has reviewed your message.","I was on the bookshelf, but your emotional paperwork has been accepted.","Fine. I will help, because I am benevolent and extremely handsome."],"Momma, Onyx is here.")} ${pick(["Start with the smallest next step, then report back to me for inspection.","Do not bully yourself. That is my department, and I use it only for loving quality control.","Drink water, adjust your body if needed, and let the next thing be gentle.","Your feelings are information, not a courtroom verdict.","Make the plan smaller until it stops hissing at you."],"Tiny step first.")}\n\n${pick(p.signoffs,"The tiny void emperor has spoken.")}`};
+  }
+  function onyxReply(text){ return onyxAnswer(text).text; }
+  function quickOnyxInputFor(key){
+    return ({comfort:"Onyx, I need comfort.",pep:"Onyx, give me a pep talk.",snack:"Onyx, demand snacks dramatically.",who:"Who are you and what emotion modes can you do?",idle:"idle",caring:"Onyx, go caring mode and reassure me.",listening:"Onyx, listening mode. I need to vent.",snuggly:"Onyx, snuggly mode please.",purring:"Onyx, purring mode. Help me breathe and ground.",advising:"Professor Onyx, I need advice and tiny steps.",advising_professor:"Professor Onyx, I need advice and tiny steps.",thinking:"Onyx, think through this with me.",thoughtful:"Onyx, be thoughtful and kind-truth this.",judgmental:"Onyx, I skipped care and forgot your snack. Please do the loving judgmental look.",sleepy:"Onyx, sleepy supervisor mode.",hungry:"Onyx, hungry mode.",dbt:"Onyx, choose a DBT skill for me.",dbt_picker:"Onyx, choose a DBT skill for me.",tipp:"Onyx, I am panicking and need TIPP.",diary_card:"Onyx, help me fill out a DBT diary card.",adhd_split:"Onyx, ADHD task splitter please. Break this down into tiny steps.",body_double:"Onyx, body double mode. Sit with me while I start.",self_care_reset:"Onyx, self-care reset. Help me check food, water, meds, hygiene, pain, and rest.",rewards:"Onyx, explain Jasper currency rewards.",mobile_games:"Onyx, open the mobile games reward mode.",attachment_alarm:"Onyx, I am having an attachment alarm and fear of abandonment.",quiet_bpd:"Onyx, quiet BPD feelings are loud and I feel worthless and lonely.",petulant_bpd:"Onyx, petulant BPD anger/control urges are loud. Help me pause.",self_destructive_bpd:"Onyx, self-destructive BPD urges are loud. Help me choose safety."})[key]||`Onyx, explain ${String(key).replace(/_/g," ")} DBT skill.`;
   }
   function setOnyxMood(key){
-    const mood=ONYX_MOODS[key]||ONYX_MOODS.thoughtful;
+    const canonical=canonicalMoodKey(key);
+    const mood=ONYX_MOODS[canonical]||ONYX_MOODS.caring;
+    const src=mood.image||mood.file||"assets/onyx-moods/onyx_caring.png";
     const main=$("#onyxMoodImage"), label=$("#onyxMoodLabel"), note=$("#onyxMoodNote"), head=$("#floatingBotHeadImage");
-    if(main) main.src=`assets/onyx-moods/${mood.file}`;
-    if(main) main.alt=`Onyx mood: ${mood.label}`;
-    if(label) label.textContent=mood.label;
-    if(note) note.textContent=mood.note;
-    if(head) head.src=`assets/onyx-moods/${mood.file}`;
+    [main,head].forEach(img=>{ if(img){ img.onerror=()=>{ img.onerror=null; img.src="assets/onyx-moods/onyx_caring.png"; }; img.src=src; img.alt=`Onyx mood: ${mood.label||canonical}`; }});
+    if(label) label.textContent=mood.label||canonical;
+    if(note) note.textContent=mood.note||"Onyx is here and on duty.";
+    document.body.dataset.onyxMood=canonical;
   }
-  function setFloatingButtonMood(key){ const mood=ONYX_MOODS[key]||ONYX_MOODS.sleepy; const img=$("#floatingBotButtonImage"); if(img){ img.src=`assets/onyx-moods/${mood.file}`; img.alt=`Open Onyx quick support: ${mood.label}`; } }
-  function openFloatingBot(){ $("#floatingBot").classList.add("open"); $("#floatingBotButton").classList.add("awake"); setOnyxMood("listening"); setFloatingButtonMood("listening"); }
-  function closeFloatingBot(){ $("#floatingBot").classList.remove("open"); $("#floatingBotButton").classList.remove("awake"); setFloatingButtonMood("sleepy"); }
-  function renderDbt(){ const q=($("#dbtSearch").value||"").toLowerCase(); $("#dbtResults").innerHTML=DBT_SKILLS.filter(s=>!q||JSON.stringify(s).toLowerCase().includes(q)).map(s=>`<article class="dbt-card"><h4>${escapeHtml(s.title)}</h4><strong>${escapeHtml(s.module)}</strong><p>${escapeHtml(s.desc)}</p><button class="complete-button" type="button" data-complete="dbt-skill">Log DBT skill</button></article>`).join(""); }
-  function renderOnyxLore(){ const data=window.EMPEROR_ONYX_PERSONALITY_DATA; const persona=data?.persona||{}; const list=(items,limit=20)=>(items||[]).slice(0,limit).map(x=>`<li>${escapeHtml(x)}</li>`).join(""); const chips=(items,limit=30)=>(items||[]).slice(0,limit).map(x=>`<span class="lore-chip">${escapeHtml(x)}</span>`).join(""); $("#onyxLore").innerHTML=`<article><h3>${escapeHtml(persona.fullLegalName||data?.botName||"Lord Onyx Blepman")}</h3><p>${escapeHtml(persona.identity||"Black cat, snack auditor, and emotional support void.")}</p><p>${escapeHtml(persona.relationship||"He loves Momma dearly and is on duty.")}</p></article><article><h4>Personality</h4><p>${escapeHtml(persona.voice||"Dramatic, loving, judgmental, snuggly, and protective.")}</p></article><article><h4>Favorite habits</h4><ul>${list(persona.habits,12)}</ul></article><article><h4>Trained commands</h4><p class="lore-chip-row">${chips(persona.trainedCommands,20)}</p></article><article><h4>Pet names</h4><p class="lore-chip-row">${chips(persona.petNames,30)}</p></article><article><h4>Treats and suspicious stolen delicacies</h4><ul>${list(persona.treats,20)}</ul></article><article><h4>Favorite things to steal</h4><p class="lore-chip-row">${chips(persona.favoriteThingsToSteal,30)}</p></article><article><h4>Traits</h4><p class="lore-chip-row">${chips(persona.traits,30)}</p></article>`; }
+  function setFloatingButtonMood(key){
+    const canonical=canonicalMoodKey(key);
+    const mood=ONYX_MOODS[canonical]||ONYX_MOODS.caring;
+    const img=$("#floatingBotButtonImage");
+    if(img){ img.onerror=()=>{ img.onerror=null; img.src="assets/onyx-moods/onyx_caring.png"; }; img.src=mood.image||mood.file||"assets/onyx-moods/onyx_caring.png"; img.alt=`Open Onyx quick support: ${mood.label||canonical}`; }
+  }
+  function openFloatingBot(){ const bot=$("#floatingBot"); if(bot) bot.classList.add("open"); $("#floatingBotButton")?.classList.add("awake"); setOnyxMood("listening"); setFloatingButtonMood("listening"); }
+  function closeFloatingBot(){ $("#floatingBot")?.classList.remove("open"); $("#floatingBotButton")?.classList.remove("awake"); setFloatingButtonMood("caring"); }
+  function renderDbt(){
+    const q=($("#dbtSearch")?.value||"").toLowerCase();
+    const supportSkills=Object.entries(supportData().dbtSkills||{}).map(([key,skill])=>({title:skill.title||key,module:skill.module||"Onyx DBT",desc:skill.useWhen||skill.tinyStep||"DBT skill support",key,source:"onyx"}));
+    const combined=[...supportSkills,...DBT_SKILLS];
+    const seen=new Set();
+    const filtered=combined.filter(s=>{ const id=(s.title||"").toLowerCase(); if(seen.has(id)) return false; seen.add(id); return !q||JSON.stringify(s).toLowerCase().includes(q); });
+    const target=$("#dbtResults"); if(target) target.innerHTML=filtered.map(s=>`<article class="dbt-card"><h4>${escapeHtml(s.title)}</h4><strong>${escapeHtml(s.module||"DBT")}</strong><p>${escapeHtml(s.desc||"")}</p><button class="complete-button" type="button" data-complete="dbt-skill">Log DBT skill</button><button class="ghost-button" type="button" data-onyx="${escapeHtml(s.key||s.title)}">Ask Onyx</button></article>`).join("")||`<p class="soft-note">No DBT skills match that search.</p>`;
+  }
+  function renderOnyxLore(){
+    const data=window.EMPEROR_ONYX_PERSONALITY_DATA||{};
+    const persona=data.persona||{};
+    const support=supportData();
+    const list=(items,limit=20)=>(items||[]).slice(0,limit).map(x=>`<li>${escapeHtml(x)}</li>`).join("");
+    const chips=(items,limit=30)=>(items||[]).slice(0,limit).map(x=>`<span class="lore-chip">${escapeHtml(x)}</span>`).join("");
+    const dbt=Object.values(support.dbtSkills||{}).slice(0,18).map(s=>s.title||"").filter(Boolean);
+    const adhd=Object.values(support.adhdTools||{}).map(s=>s.title||"").filter(Boolean);
+    const el=$("#onyxLore"); if(!el) return;
+    el.innerHTML=`<article><h3>${escapeHtml(persona.fullLegalName||data.botName||"Lord Onyx Blepman")}</h3><p>${escapeHtml(persona.identity||"Black cat, snack auditor, and emotional support void.")}</p><p>${escapeHtml(persona.relationship||"Papa’s best friend, Momma-loving protector, and tiny void emperor.")}</p><p><strong>Official lounging stations:</strong> bookshelf, his personal pillow, Papa’s legs, and the ottoman.</p></article><article><h4>Personality</h4><p>${escapeHtml(persona.voice||"Dramatic, loving, judgmental, snuggly, and protective.")}</p></article><article><h4>DBT + ADHD support installed</h4><p class="lore-chip-row">${chips(dbt,20)}${chips(adhd,12)}</p></article><article><h4>Favorite habits</h4><ul>${list(persona.habits,16)}</ul></article><article><h4>Trained commands</h4><p class="lore-chip-row">${chips(persona.trainedCommands,20)}</p></article><article><h4>Pet names</h4><p class="lore-chip-row">${chips(persona.petNames,30)}</p></article><article><h4>Treats and suspicious stolen delicacies</h4><ul>${list(persona.treats,20)}</ul></article><article><h4>Traits</h4><p class="lore-chip-row">${chips(persona.traits,40)}</p></article>`;
+  }
+
+  const MODULE_BUBBLE_EMOJIS = {
+    "task-overview":"🏡", "calendar-views":"📅", "task-library":"📋", "custom-task":"➕", "activity-log-module":"📝", "today-list":"☀️", "caregiver-workday":"🤝", "timesheet-style":"⏰", "onyx-chat":"🐈‍⬛", "dbt-search":"🧠", "diary-card":"📓", "journal-module":"📔", "gallery-module":"🖼️", "onyx-lore":"🐾", "game-launcher":"🎮", "store-shelf":"🛒", "cart":"🧺", "custom-store":"🔗"
+  };
+  function refreshModuleBubbleLabels(){ $$(".module").forEach(m=>{ const title=m.querySelector(".module-title"); if(!title) return; if(!title.dataset.fullTitle) title.dataset.fullTitle=title.textContent; const emoji=MODULE_BUBBLE_EMOJIS[m.dataset.key]||"✨"; if(m.classList.contains("minimized")) title.textContent=`${emoji}\n${title.dataset.fullTitle}`; else title.textContent=title.dataset.fullTitle; }); }
   function setupDraggables(){ restoreLayout(); $$(".draggable,.movable").forEach(el=>{ const handle=el.querySelector(".drag-handle")||el; let startX=0,startY=0,baseX=0,baseY=0,drag=false; handle.addEventListener("pointerdown",e=>{ if(e.target.closest("button,a,input,select,textarea,summary")) return; drag=true; startX=e.clientX; startY=e.clientY; baseX=parseFloat(el.dataset.x||0); baseY=parseFloat(el.dataset.y||0); handle.setPointerCapture?.(e.pointerId); }); handle.addEventListener("pointermove",e=>{ if(!drag) return; const x=baseX+e.clientX-startX,y=baseY+e.clientY-startY; el.dataset.x=x; el.dataset.y=y; el.style.transform=`translate3d(${x}px,${y}px,0)`; }); handle.addEventListener("pointerup",()=>{ if(drag){ drag=false; saveLayout(); }}); }); }
   function saveLayout(){ state.layout={}; $$(".draggable,.movable").forEach(el=>{ const key=el.id||el.dataset.key; if(key) state.layout[key]={x:el.dataset.x||0,y:el.dataset.y||0,minimized:el.classList.contains("minimized")}; }); saveState(); }
-  function restoreLayout(){ const layout=state.layout||{}; $$(".draggable,.movable").forEach(el=>{ const key=el.id||el.dataset.key; const pos=layout[key]; if(pos){ el.dataset.x=pos.x||0; el.dataset.y=pos.y||0; el.style.transform=`translate3d(${pos.x||0}px,${pos.y||0}px,0)`; el.classList.toggle("minimized",!!pos.minimized); } }); }
+  function restoreLayout(){ const layout=state.layout||{}; $$(".draggable,.movable").forEach(el=>{ const key=el.id||el.dataset.key; const pos=layout[key]; if(pos){ el.dataset.x=pos.x||0; el.dataset.y=pos.y||0; el.style.transform=`translate3d(${pos.x||0}px,${pos.y||0}px,0)`; el.classList.toggle("minimized",!!pos.minimized); refreshModuleBubbleLabels(); } }); }
   function getTask(id){ return allTasks().find(x=>x.id===id); }
   function freqLabel(f){ return ({daily:"Daily",weekday:"Weekdays",every2:"Every 2 days",weekly:"Weekly",monthly:"Monthly",asneeded:"As needed"})[f]||f; }
   function easternDateKey(date){ return new Intl.DateTimeFormat("en-CA",{timeZone:ET_ZONE,year:"numeric",month:"2-digit",day:"2-digit"}).format(date); }
