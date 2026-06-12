@@ -7,7 +7,11 @@
   <meta name="description" content="Mobile-first caregiver, self-care, DBT, schedule, calendar, and Squishy Store reward site for Jasper." />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css?v=onyx-mobile-bubble-fix-20260612" />
-  <script src="js/onyx-personality-data.js?v=onyx-mobile-bubble-fix-20260612"></script>
+
+  <!-- Squishy + Onyx merged data/support files. app.js stays at the site root. -->
+  <script src="./js/onyx-personality-data.js?v=squishy-onyx-js-merge-20260612"></script>
+  <script src="./js/emperor-onyx-rulebot-data.js?v=squishy-onyx-js-merge-20260612"></script>
+  <script src="./js/jasper-reward-catalog-data.js?v=squishy-onyx-js-merge-20260612"></script>
 </head>
 <body>
   <div aria-label="Jasper's Care Cottage in-site navigation" id="bd-global-dropdown-nav">
@@ -298,6 +302,7 @@
   <button class="floating-bot-button" id="floatingBotButton" type="button" aria-label="Open Onyx"><img id="floatingBotButtonImage" src="assets/onyx-moods/onyx_sleepy.png" alt="Sleepy Onyx quick support" /><span class="floating-bot-zzz">Zzz</span></button>
   <aside class="floating-bot" id="floatingBot"><div class="floating-bot-head"><div class="floating-onyx-title"><img id="floatingBotHeadImage" src="assets/onyx-moods/onyx_listening.png" alt="Onyx" /><strong>Onyx quick support</strong></div><button id="closeFloatingBot" type="button">×</button></div><div id="floatingChatMessages" class="chat-messages small"></div><form id="floatingChatForm" class="chat-form compact"><input class="text-input" id="floatingChatInput" placeholder="Ask Onyx for a tiny next step" /><button class="soft-button" type="submit">Send</button></form><div class="onyx-quick-row floating-onyx-quick" id="floatingOnyxQuickModes" aria-label="Quick Onyx help"><button class="ghost-button onyx-mode-button" type="button" data-onyx="comfort">🤎</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="dbt_picker">🧠</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="tipp">🧊</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="adhd_split">🐾</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="self_care_reset">🫧</button><button class="ghost-button onyx-mode-button" type="button" data-onyx="snuggly">🐈‍⬛</button></div></aside>
   <div id="toastHost" class="toast-host" aria-live="polite"></div>
-  <script src="app.js?v=onyx-mobile-bubble-fix-20260612"></script>
+  <!-- Optional helper files kept in /js/: emperor-onyx-rulebot.js, onyx-rewards-games.js, jasper-game-currency-bridge.js. -->
+  <script src="./app.js?v=squishy-onyx-js-merge-20260612"></script>
 </body>
 </html>
