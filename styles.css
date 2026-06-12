@@ -46,3 +46,342 @@ body{background:#120d18;color:var(--cream)}
 body::before{background:linear-gradient(135deg,rgba(59,36,72,.54),rgba(36,157,159,.28),rgba(255,176,92,.22)),var(--page-bg) center/cover no-repeat!important;filter:saturate(1.12) contrast(1.04)}
 body::after{background:radial-gradient(circle at 10% 8%,rgba(255,229,155,.34),transparent 24%),radial-gradient(circle at 88% 10%,rgba(111,231,245,.26),transparent 25%),radial-gradient(circle at 64% 92%,rgba(255,143,116,.25),transparent 34%),linear-gradient(180deg,rgba(12,8,18,.10),rgba(12,8,18,.82))!important}.hero-card,.module,#jcc-persistent-tracker,.floating-bot{background:linear-gradient(135deg,rgba(23,19,36,.86),rgba(36,157,159,.26),rgba(255,143,116,.16)) padding-box,var(--edge-image) center/cover border-box!important;border:2px solid transparent!important;box-shadow:var(--soft-shadow),var(--glow)!important}.bdg-bar,.site-nav{background:linear-gradient(90deg,rgba(23,19,36,.96),rgba(36,157,159,.86),rgba(242,138,61,.38)) padding-box,var(--edge-image) center/cover border-box!important;border:2px solid transparent!important}.bdg-menu,.dropdown-links{background:linear-gradient(180deg,rgba(27,14,36,.98),rgba(12,54,60,.96))!important;border-color:rgba(255,244,199,.28)!important}.bdg-link,.nav-link,.soft-button,.complete-button,.control-button,.ghost-button,#bdg-hide-nav,.mini-button{border:1px solid rgba(255,244,199,.22)!important}.soft-button,.control-button{background:linear-gradient(135deg,var(--aqua),var(--butter-yellow))!important;color:#201327!important}.complete-button,.bdg-link,.nav-link{background:linear-gradient(135deg,var(--butter-yellow),var(--starfish))!important;color:#201327!important}.complete-button.distress{background:linear-gradient(135deg,var(--starfish),var(--sunrise-orange))!important}.ghost-button,.mini-button{background:rgba(255,244,199,.10)!important;color:var(--cream)!important}.page-chip,.pill,.legend{background:rgba(124,245,223,.16)!important;border:1px solid rgba(124,245,223,.24)!important;color:var(--soft-yellow)!important}.text-input,textarea,select,input[type="number"],input[type="date"],input[type="time"]{background:rgba(12,10,18,.70)!important;color:var(--cream)!important;border:1px solid rgba(255,244,199,.26)!important;border-radius:14px!important}select option{background:#171324;color:#fff9df}.game-controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.game-controls select{min-width:min(100%,360px);flex:1}.game-auto-reward-note{display:inline-flex;align-items:center;min-height:42px;border-radius:999px;padding:9px 12px;background:linear-gradient(135deg,rgba(124,245,223,.18),rgba(255,229,155,.15));border:1px solid rgba(255,244,199,.24);color:var(--soft-yellow);font-weight:850}.bdg-time-card,.bdg-currency-card,.task-card,.dbt-card,.log-entry,.store-item,.break-item,.calendar-cell,.diary-card-preview{border-color:rgba(255,244,199,.20)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}#gameFrame{border:2px solid rgba(255,244,199,.26)!important;box-shadow:0 18px 48px rgba(12,8,18,.35),0 0 22px rgba(124,245,223,.16);background:#050508}.floating-bot-button{border:1px solid rgba(255,244,199,.36)!important;background:linear-gradient(135deg,var(--aqua),var(--starfish))!important}.toast{background:linear-gradient(135deg,rgba(27,14,36,.96),rgba(16,104,106,.84))!important;border-color:rgba(124,245,223,.38)!important}.onyx-mood-stage img,.floating-bot-button img,.floating-onyx-title img{object-fit:contain!important;background:transparent!important}.onyx-mood-stage{background:radial-gradient(circle,rgba(255,244,199,.14),rgba(12,8,18,.26))!important}
 @media(max-width:760px){.game-controls{display:grid;grid-template-columns:1fr}.game-auto-reward-note{border-radius:18px;justify-content:center;text-align:center}}
+
+/* Jasper Care Cottage CSS-only page backgrounds + sunrise/witchcore palette update — June 12, 2026
+   This block intentionally changes CSS only. HTML/JS/game files are untouched. */
+:root{
+  --sunset-orange:#f28a3d!important;
+  --sunrise-orange:#ffb05c!important;
+  --butter-yellow:#ffe59b!important;
+  --soft-yellow:#fff4c7!important;
+  --starfish:#ff8f74!important;
+  --cyan:#6fe7f5!important;
+  --teal:#249d9f!important;
+  --aqua:#7cf5df!important;
+  --moss:#8ba878!important;
+  --plum:#3b2448!important;
+  --midnight:#171324!important;
+  --ink:#0c0b12!important;
+  --cream:#fff9df!important;
+  --muted:#f7dca6!important;
+  --rose-glow:#ffb2a1!important;
+  --honey-glow:#ffd27a!important;
+  --deep-teal:#0f686a!important;
+  --glass:rgba(22,15,28,.84)!important;
+  --glass-deep:rgba(12,10,18,.94)!important;
+  --soft-shadow:0 18px 48px rgba(32,13,26,.44)!important;
+  --glow:0 0 34px rgba(124,245,223,.24),0 0 28px rgba(255,176,92,.18)!important;
+  --edge-image:url("https://wallpapers.com/images/high/orange-and-teal-5184-x-3456-tsdu6sksayhdnmqq.webp")!important;
+
+  --calendar-bg:url("https://wallpapers.com/images/high/cottagecore-house-digital-art-h08728tn15rgscbp.webp")!important;
+  --schedule-bg:url("https://wallpapers.com/images/high/malibu-beach-sunrise-desktop-nmueexjebjnft1wn.webp")!important;
+  --chat-bg:url("https://wallpapers.com/images/high/black-cat-tarot-symbolism-esq5mscawvmt5iez.webp")!important;
+  --daily-card-bg:url("https://wallpapers.com/images/high/witchy-tarot-cards-for-iphone-screens-onup9yxe4vkuey82.webp")!important;
+  --journal-bg:url("https://wallpapers.com/images/high/cottagecore-house-artwork-sztao33ct9x0n10r.webp")!important;
+  --games-bg:url("https://wallpapers.com/images/high/arctic-orange-sunrise-qmkyi9q7rqsjaccs.webp")!important;
+  --serotonin-bg:url("https://wallpapers.com/images/high/mystical-tarot-hermit-and-crystals-aesthetic-jpg-f4fqa0odp32jjshv.webp")!important;
+  --store-bg:url("https://wallpapers.com/images/high/summer-background-yfcdzb4xyiba2cuy.webp")!important;
+  --page-bg:var(--calendar-bg)!important;
+}
+
+/* Existing app IDs */
+body:has(#task-board.active),
+body:has(#calendar.active),
+body:has(#care-calendar.active),
+body:has(.page-panel[data-title*="Calendar"].active){--page-bg:var(--calendar-bg)!important;}
+
+body:has(#todays-routine.active),
+body:has(#today-s-schedule.active),
+body:has(#todays-schedule.active),
+body:has(.page-panel[data-title*="Today's Schedule"].active){--page-bg:var(--schedule-bg)!important;}
+
+body:has(#chat-bot-dbt-skills.active),
+body:has(#chatbot.active),
+body:has(#chat-bot.active),
+body:has(.page-panel[data-title*="Chat Bot"].active){--page-bg:var(--chat-bg)!important;}
+
+body:has(#dbt-daily-cards.active),
+body:has(#daily-cards.active),
+body:has(.page-panel[data-title*="Daily Cards"].active){--page-bg:var(--daily-card-bg)!important;}
+
+body:has(#dbt-journaling.active),
+body:has(#journaling.active),
+body:has(.page-panel[data-title*="Journaling"].active){--page-bg:var(--journal-bg)!important;}
+
+body:has(#mobile-games.active),
+body:has(#games.active),
+body:has(.page-panel[data-title*="Mobile Games"].active){--page-bg:var(--games-bg)!important;}
+
+body:has(#serotonin.active),
+body:has(#serotonin-gallery.active),
+body:has(.page-panel[data-title*="Serotonin"].active){--page-bg:var(--serotonin-bg)!important;}
+
+body:has(#squishy-store.active),
+body:has(#store.active),
+body:has(.page-panel[data-title*="Squishy Store"].active){--page-bg:var(--store-bg)!important;}
+
+body{
+  background:#120d18!important;
+  color:var(--cream)!important;
+}
+body::before{
+  background:
+    linear-gradient(135deg,rgba(23,11,30,.68),rgba(36,157,159,.30),rgba(255,176,92,.24)),
+    var(--page-bg) center/cover no-repeat!important;
+  background-attachment:fixed!important;
+  filter:saturate(1.14) contrast(1.05) brightness(.92)!important;
+}
+body::after{
+  background:
+    radial-gradient(circle at 9% 10%,rgba(255,229,155,.36),transparent 24%),
+    radial-gradient(circle at 88% 9%,rgba(111,231,245,.30),transparent 25%),
+    radial-gradient(circle at 58% 94%,rgba(255,143,116,.28),transparent 36%),
+    linear-gradient(180deg,rgba(12,8,18,.12),rgba(12,8,18,.84))!important;
+}
+
+/* Give the active page its own matching soft image veil, even if the browser ignores body:has(). */
+.page-panel.active{
+  position:relative;
+  isolation:isolate;
+  --panel-bg:var(--page-bg);
+}
+#task-board.active,#calendar.active,#care-calendar.active{--panel-bg:var(--calendar-bg)!important;}
+#todays-routine.active,#todays-schedule.active,#today-s-schedule.active{--panel-bg:var(--schedule-bg)!important;}
+#chat-bot-dbt-skills.active,#chatbot.active,#chat-bot.active{--panel-bg:var(--chat-bg)!important;}
+#dbt-daily-cards.active,#daily-cards.active{--panel-bg:var(--daily-card-bg)!important;}
+#dbt-journaling.active,#journaling.active{--panel-bg:var(--journal-bg)!important;}
+#mobile-games.active,#games.active{--panel-bg:var(--games-bg)!important;}
+#serotonin.active,#serotonin-gallery.active{--panel-bg:var(--serotonin-bg)!important;}
+#squishy-store.active,#store.active{--panel-bg:var(--store-bg)!important;}
+.page-panel.active::before{
+  content:"";
+  position:absolute;
+  inset:-14px;
+  z-index:-1;
+  border-radius:32px;
+  background:
+    linear-gradient(135deg,rgba(23,11,30,.46),rgba(36,157,159,.18),rgba(255,176,92,.12)),
+    var(--panel-bg) center/cover no-repeat;
+  opacity:.24;
+  pointer-events:none;
+  filter:saturate(1.08) blur(.2px);
+}
+
+/* Navigation and module borders use the requested orange/teal image. */
+.site-nav,
+#bd-global-dropdown-nav .bdg-bar,
+#jcc-persistent-tracker,
+.hero-card,
+.module,
+.floating-bot,
+.toast,
+.onyx-companion-card{
+  border:2px solid transparent!important;
+  background:
+    linear-gradient(135deg,rgba(23,19,36,.90),rgba(15,104,106,.42),rgba(255,143,116,.18)) padding-box,
+    var(--edge-image) center/cover border-box!important;
+  box-shadow:var(--soft-shadow),var(--glow)!important;
+}
+.module-header,
+.bdg-time-panel h3,
+.page-heading{
+  background:linear-gradient(90deg,rgba(255,176,92,.18),rgba(124,245,223,.16),rgba(255,143,116,.10))!important;
+  border-radius:18px!important;
+}
+.module-header{
+  border-bottom:1px solid rgba(255,244,199,.22)!important;
+}
+
+/* Page-specific module tinting, kept translucent so text remains readable. */
+#task-board.active .module,#calendar.active .module{background:linear-gradient(135deg,rgba(23,19,36,.88),rgba(255,176,92,.16),rgba(124,245,223,.12)) padding-box,var(--edge-image) center/cover border-box!important;}
+#todays-routine.active .module{background:linear-gradient(135deg,rgba(23,19,36,.88),rgba(255,176,92,.20),rgba(255,229,155,.12)) padding-box,var(--edge-image) center/cover border-box!important;}
+#chat-bot-dbt-skills.active .module{background:linear-gradient(135deg,rgba(10,8,18,.90),rgba(59,36,72,.35),rgba(124,245,223,.12)) padding-box,var(--edge-image) center/cover border-box!important;}
+#dbt-daily-cards.active .module{background:linear-gradient(135deg,rgba(23,19,36,.88),rgba(255,143,116,.20),rgba(124,245,223,.11)) padding-box,var(--edge-image) center/cover border-box!important;}
+#dbt-journaling.active .module{background:linear-gradient(135deg,rgba(23,19,36,.88),rgba(139,168,120,.18),rgba(255,176,92,.13)) padding-box,var(--edge-image) center/cover border-box!important;}
+#mobile-games.active .module{background:linear-gradient(135deg,rgba(23,19,36,.88),rgba(242,138,61,.20),rgba(111,231,245,.14)) padding-box,var(--edge-image) center/cover border-box!important;}
+#serotonin.active .module{background:linear-gradient(135deg,rgba(23,19,36,.90),rgba(59,36,72,.28),rgba(255,229,155,.12)) padding-box,var(--edge-image) center/cover border-box!important;}
+#squishy-store.active .module{background:linear-gradient(135deg,rgba(23,19,36,.88),rgba(255,229,155,.16),rgba(255,143,116,.14)) padding-box,var(--edge-image) center/cover border-box!important;}
+
+/* Full palette pass for buttons, cards, inputs, trackers, and dropdowns. */
+a{color:var(--aqua)!important;}
+.page-heading h2,
+h1,
+h2,
+h3,
+.module-title{
+  color:var(--butter-yellow)!important;
+  text-shadow:0 4px 22px rgba(12,8,18,.46),0 0 16px rgba(255,176,92,.12)!important;
+}
+.page-heading p,
+.hero-card p,
+.module-body,
+.soft-note,
+.task-card p,
+.store-item small{
+  color:rgba(255,249,223,.86)!important;
+}
+.nav-link,
+.bdg-link,
+.complete-button,
+.control-button.secondary{
+  background:linear-gradient(135deg,var(--butter-yellow),var(--starfish),var(--sunrise-orange))!important;
+  color:#201327!important;
+  border:1px solid rgba(255,244,199,.32)!important;
+}
+.nav-link.active,
+.bdg-current,
+.bdg-link.active,
+.view-tab.active,
+.filter-chip.active,
+.soft-button,
+.control-button,
+.page-chip{
+  background:linear-gradient(135deg,var(--aqua),var(--cyan),var(--butter-yellow))!important;
+  color:#201327!important;
+  border:1px solid rgba(255,244,199,.32)!important;
+}
+.ghost-button,
+.mini-button,
+.view-tab,
+.filter-chip,
+#bdg-hide-nav{
+  background:linear-gradient(135deg,rgba(255,244,199,.12),rgba(124,245,223,.08))!important;
+  color:var(--cream)!important;
+  border:1px solid rgba(255,244,199,.24)!important;
+}
+.complete-button.distress{
+  background:linear-gradient(135deg,var(--starfish),var(--sunrise-orange),var(--butter-yellow))!important;
+  color:#201327!important;
+}
+.dropdown-links,
+.bdg-menu,
+select option{
+  background:#171324!important;
+  color:var(--cream)!important;
+}
+.text-input,
+textarea,
+select,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="time"]{
+  background:linear-gradient(135deg,rgba(12,10,18,.78),rgba(15,104,106,.18))!important;
+  color:var(--cream)!important;
+  border:1px solid rgba(255,244,199,.30)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)!important;
+}
+.text-input:focus,
+textarea:focus,
+select:focus,
+input:focus{
+  border-color:rgba(124,245,223,.62)!important;
+  box-shadow:0 0 0 3px rgba(124,245,223,.20),0 0 18px rgba(255,176,92,.12)!important;
+}
+.tracker-cards article,
+.daily-bundle-card,
+.task-card,
+.store-item,
+.cart-item,
+.workday-card,
+.time-row,
+.calendar-cell,
+.history-item,
+.diary-card-preview,
+.prompt-card,
+.dbt-card,
+.log-entry,
+.break-item,
+.bdg-time-card,
+.bdg-currency-card,
+.store-aisle,
+.gallery-item{
+  background:linear-gradient(145deg,rgba(255,249,223,.12),rgba(124,245,223,.08),rgba(255,143,116,.07))!important;
+  border:1px solid rgba(255,244,199,.22)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 10px 26px rgba(12,8,18,.18)!important;
+}
+.tracker-cards strong,
+.weekly-total strong,
+.cart-total strong,
+.bdg-time-card span,
+.bdg-currency-card span,
+.reward-line{
+  color:var(--aqua)!important;
+  text-shadow:0 0 14px rgba(124,245,223,.16)!important;
+}
+.tracker-cards span,
+.workday-card span,
+.cart-total span,
+.weekly-total span,
+.bdg-time-card strong,
+.bdg-currency-card strong,
+.eyebrow,
+.message-speaker,
+label,
+.field-label{
+  color:var(--soft-yellow)!important;
+}
+.pill,
+.legend,
+.lore-chip,
+.calendar-dot,
+.game-auto-reward-note{
+  background:linear-gradient(135deg,rgba(124,245,223,.18),rgba(255,229,155,.14))!important;
+  border:1px solid rgba(124,245,223,.28)!important;
+  color:var(--soft-yellow)!important;
+}
+.pill.priority-Critical,
+.pill.priority-Very-High,
+.pill.priority-High{
+  background:linear-gradient(135deg,rgba(255,143,116,.26),rgba(255,176,92,.16))!important;
+  border-color:rgba(255,143,116,.48)!important;
+}
+.task-card.completed{
+  background:linear-gradient(145deg,rgba(124,245,223,.16),rgba(139,168,120,.16),rgba(12,10,18,.66))!important;
+  border-color:rgba(124,245,223,.42)!important;
+}
+.task-card.locked{
+  background:linear-gradient(145deg,rgba(255,143,116,.22),rgba(59,36,72,.28),rgba(12,10,18,.72))!important;
+  border-color:rgba(255,143,116,.48)!important;
+}
+.diary-card-preview{
+  color:#24112d!important;
+  background:linear-gradient(135deg,rgba(255,249,223,.96),rgba(255,244,199,.90),rgba(124,245,223,.20))!important;
+}
+.diary-card-preview h3,
+.diary-card-preview label{
+  color:#3b2448!important;
+  text-shadow:none!important;
+}
+.diary-card-preview textarea,
+.diary-card-preview input{
+  background:#fffef0!important;
+  color:#24112d!important;
+  border-color:rgba(59,36,72,.22)!important;
+}
+.message.bot{
+  background:linear-gradient(135deg,rgba(124,245,223,.14),rgba(59,36,72,.18))!important;
+  border:1px solid rgba(124,245,223,.30)!important;
+}
+.message.user{
+  background:linear-gradient(135deg,rgba(255,176,92,.20),rgba(255,143,116,.14))!important;
+  border:1px solid rgba(255,176,92,.30)!important;
+}
+#gameFrame{
+  border:2px solid rgba(255,244,199,.30)!important;
+  box-shadow:0 18px 48px rgba(12,8,18,.38),0 0 24px rgba(124,245,223,.18)!important;
+  background:#050508!important;
+}
+.floating-bot-button,
+.bdg-bubble-core,
+.site-mark{
+  background:radial-gradient(circle at 30% 28%,rgba(255,249,223,.82),rgba(255,229,155,.42) 18%,transparent 34%),linear-gradient(135deg,var(--aqua),var(--starfish),var(--sunrise-orange))!important;
+  border:1px solid rgba(255,244,199,.42)!important;
+}
+::selection{
+  background:rgba(124,245,223,.35);
+  color:var(--cream);
+}
