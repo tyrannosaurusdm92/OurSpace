@@ -1,0 +1,352 @@
+{
+  "generated_at_utc": "2026-06-13T06:41:01Z",
+  "static_references": {
+    "missing_html_refs": [],
+    "missing_css_refs": []
+  },
+  "node_syntax": [
+    {
+      "file": "js/app.bundle.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/app.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/desktop.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/emperor-onyx-rulebot-data.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/emperor-onyx-rulebot.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/health_scanner_bridge.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/health_scanner_data.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/jasper-game-currency-bridge.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/jasper-reward-catalog-data.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/jasper-support-data.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/jcc-full-functionality-upgrade.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/mobile.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/onyx-personality-data.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/onyx-rewards-games.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/scanner-core.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/tablet.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/unified-background-psychiatry-runtime.js",
+      "ok": true,
+      "stderr": ""
+    }
+  ],
+  "json_parse": [
+    {
+      "file": "json/a_to_z_disabilities_and_accommodations.life_impact.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 11
+    },
+    {
+      "file": "json/a_to_z_of_disabilities_and_accommodations.pdf.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 11
+    },
+    {
+      "file": "json/alphabetical_listing_of_mental_disorders.life_impact.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/alphabetical_listing_of_mental_disorders.pdf.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/autoimmune_diseases__types_symptoms_treatments.pdf.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 10
+    },
+    {
+      "file": "json/autoimmune_diseases_types_symptoms_treatments.life_impact.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 10
+    },
+    {
+      "file": "json/bot-data.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 12
+    },
+    {
+      "file": "json/dbt_adhd_support_catalog.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 15
+    },
+    {
+      "file": "json/dbt_combined_catalog.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/dbt_combined_catalog.sanitized.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/dbt_skills_catalog.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/dbt_worksheets_catalog.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 8
+    },
+    {
+      "file": "json/jasper_reward_system_catalog.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 4
+    },
+    {
+      "file": "json/manifest.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 3
+    },
+    {
+      "file": "json/merged_data_index.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 2
+    },
+    {
+      "file": "json/mobile_friendly_games_manifest.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 6
+    },
+    {
+      "file": "json/mobility_guide_mobility_aids.life_impact.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/onyx_dbt_adhd_support_catalog.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 20
+    },
+    {
+      "file": "json/onyx_mood_manifest.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 5
+    },
+    {
+      "file": "json/onyx_personality_reference.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 12
+    },
+    {
+      "file": "json/source-merge-report.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 2
+    },
+    {
+      "file": "json/types_of_endocrine_disorders.life_impact.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/types_of_endocrine_disorders___ui_health.pdf.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "json/what_is_spoon_theory.life_impact.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 9
+    },
+    {
+      "file": "docs/FILE_PRESERVATION_AND_SIZE_REPORT.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 8
+    },
+    {
+      "file": "docs/INTEGRATION_MAP.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 7
+    },
+    {
+      "file": "docs/MERGE_MANIFEST.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 11
+    },
+    {
+      "file": "docs/ONYX_FULL_SUPPORT_MERGE_REPORT.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 4
+    },
+    {
+      "file": "docs/RUNTIME_SOURCE_TREE_NOTE.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 3
+    },
+    {
+      "file": "docs/SPLIT_PART_MANIFEST_part_1.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 6
+    },
+    {
+      "file": "docs/SPLIT_PART_MANIFEST_part_2.json",
+      "ok": true,
+      "top_level_type": "dict",
+      "top_level_count": 6
+    }
+  ],
+  "browser_scanner_runtime_vm": {
+    "scannerExists": true,
+    "elevatedRisk": "elevated",
+    "criticalRisk": "critical",
+    "eventDispatched": true,
+    "hasPrompt": true,
+    "ok": true
+  },
+  "python_scanner": {
+    "ok": true,
+    "stdout": "{\n  \"status\": \"ok\",\n  \"checks\": [\n    {\n      \"file\": \"tools/psychiatry_merge/scanner.py\",\n      \"status\": \"compiled\"\n    },\n    {\n      \"scanner_refs_loaded\": 5707,\n      \"risk\": \"elevated\",\n      \"status\": \"ok\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  "app_integrity": {
+    "index_title_ok": true,
+    "page_panel_count": 8,
+    "page_ids": [
+      "task-board",
+      "todays-routine",
+      "chat-bot-dbt-skills",
+      "dbt-daily-cards",
+      "dbt-journaling",
+      "mobile-games",
+      "serotonin",
+      "squishy-store"
+    ],
+    "app_pages_count": 8,
+    "scanner_scripts_before_app": true,
+    "has_typeform_link": true,
+    "has_checkout_email": true,
+    "checkout_deducts_before_mailto": true,
+    "has_onyx_merged_panel": true,
+    "onyx_scanner_loaded": true,
+    "currency_conversion_10s": true,
+    "game_manifest_count": 22,
+    "game_manifest_missing_files": [
+      "angrybirds.html",
+      "baconmaydie.html",
+      "badicecream3.html",
+      "badpiggies.html",
+      "bubbleshooter.html",
+      "candycrush.html",
+      "capybaraclicker.html",
+      "ducklife5.html",
+      "escapingtheprison.html",
+      "fancypantsadventure2.html",
+      "flappybird.html",
+      "fnaf.html",
+      "fnaf4.html",
+      "fruitninja.html",
+      "minesweeper.html",
+      "noobminer.html",
+      "plantsvszombies.html",
+      "tabletennisworldtour.html",
+      "tinyfishing.html",
+      "tunnelrush.html",
+      "webecomewhatwebehold.html",
+      "zombierush.html"
+    ],
+    "games_without_bridge": [],
+    "games_omitted_external_ok": true,
+    "legacy_tabletennis_stub_exists": true,
+    "adult_reward_items_detected": 8,
+    "passive_scanner_status_element": true,
+    "scanner_report_stored": true
+  },
+  "file_stats": {
+    "file_count": 111,
+    "uncompressed_bytes": 22835859
+  }
+}

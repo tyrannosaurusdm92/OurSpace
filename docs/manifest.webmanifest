@@ -1,0 +1,9 @@
+{
+  "name": "Jasper's Squishy Care Tracker",
+  "short_name": "Care Cottage",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#171324",
+  "theme_color": "#249d9f",
+  "description": "Mobile-first self-care, DBT, journaling, serotonin gallery, mini-game, and reward tracker."
+}

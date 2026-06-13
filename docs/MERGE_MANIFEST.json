@@ -1,0 +1,278 @@
+{
+  "schema": "psychiatrist-bots-full-merge-manifest-v1",
+  "createdAt": "2026-06-13T00:28:42.321625+00:00",
+  "input_zips": [
+    {
+      "uploaded_name": "health_behavior_reference_scanner.zip",
+      "source_label": "health_behavior_reference_scanner",
+      "sha256": "df52189dfc3836a51d7b2e2c8303286ff85637a5d3d7585209239720757f3977",
+      "zip_bytes": 270526,
+      "file_count": 16,
+      "uncompressed_bytes": 3123615,
+      "compressed_bytes_inside_zip": 264714
+    },
+    {
+      "uploaded_name": "Virtual-Psychiatrist-master.zip",
+      "source_label": "Virtual-Psychiatrist-master",
+      "sha256": "2af5749e868b727f288dcba62d6096021196c74ebaccc77560ece40e56619081",
+      "zip_bytes": 21098500,
+      "file_count": 210,
+      "uncompressed_bytes": 35264650,
+      "compressed_bytes_inside_zip": 21030468
+    },
+    {
+      "uploaded_name": "Chatbot-master.zip",
+      "source_label": "Chatbot-master",
+      "sha256": "85cc8b63b634d0d9f61c39f46615d0ccd6687d71e8cf1a9ca3f2fc129d32b292",
+      "zip_bytes": 870337,
+      "file_count": 15,
+      "uncompressed_bytes": 961201,
+      "compressed_bytes_inside_zip": 866933
+    },
+    {
+      "uploaded_name": "ChatPsychiatrist-master.zip",
+      "source_label": "ChatPsychiatrist-master",
+      "sha256": "aa77f27231fe9b0f1afd7b25dc2e763c979e96b25793868e57bc00d85d41a2e7",
+      "zip_bytes": 5688402,
+      "file_count": 146,
+      "uncompressed_bytes": 7974634,
+      "compressed_bytes_inside_zip": 5651980
+    },
+    {
+      "uploaded_name": "dbt_json_catalogs.zip",
+      "source_label": "dbt_json_catalogs",
+      "sha256": "0f16d41768f76b2f253078aefd3ddbcf9c0179fa327574d3897357b3bba816cf",
+      "zip_bytes": 100493,
+      "file_count": 4,
+      "uncompressed_bytes": 1166326,
+      "compressed_bytes_inside_zip": 99999
+    },
+    {
+      "uploaded_name": "second-brain-adhd-n8n-main.zip",
+      "source_label": "second-brain-adhd-n8n-main",
+      "sha256": "54611b6173af2d8f23841eb003a122ba4b2284d90671a15d742697852fd5bb30",
+      "zip_bytes": 508837,
+      "file_count": 7,
+      "uncompressed_bytes": 591267,
+      "compressed_bytes_inside_zip": 506849
+    },
+    {
+      "uploaded_name": "sidejot-main.zip",
+      "source_label": "sidejot-main",
+      "sha256": "d1d4f5bbed337527fca2dbbc969a431a57737fa64140a3bf8c6a834ccef3ac67",
+      "zip_bytes": 830000,
+      "file_count": 77,
+      "uncompressed_bytes": 1051144,
+      "compressed_bytes_inside_zip": 814228
+    },
+    {
+      "uploaded_name": "ADHD-Manager-Bot-main.zip",
+      "source_label": "ADHD-Manager-Bot-main",
+      "sha256": "80e97d7f2075f2adfe54c9c8ec12ad167dcea01d413887e01af3360ebef1ac33",
+      "zip_bytes": 7417,
+      "file_count": 2,
+      "uncompressed_bytes": 22206,
+      "compressed_bytes_inside_zip": 6887
+    },
+    {
+      "uploaded_name": "actions-main.zip",
+      "source_label": "actions-main",
+      "sha256": "fb878914e582bb7ff75b7dcf21802a126b1eab115b1a6aa09b59e6b3a3c7df56",
+      "zip_bytes": 63072,
+      "file_count": 54,
+      "uncompressed_bytes": 148796,
+      "compressed_bytes_inside_zip": 51098
+    },
+    {
+      "uploaded_name": "dbt-agent-skills-main.zip",
+      "source_label": "dbt-agent-skills-main",
+      "sha256": "ca48f2fc1a958e997ac26e8741767ed9cbc08fb63a4cd88a0a7d86de47a66e7b",
+      "zip_bytes": 310229,
+      "file_count": 193,
+      "uncompressed_bytes": 741399,
+      "compressed_bytes_inside_zip": 243463
+    },
+    {
+      "uploaded_name": "dbt-assistant-main.zip",
+      "source_label": "dbt-assistant-main",
+      "sha256": "87cbaa786f8b660b02a5504fb0e31ac4140e10da89905b5561be895f2612eda4",
+      "zip_bytes": 112539,
+      "file_count": 47,
+      "uncompressed_bytes": 141112,
+      "compressed_bytes_inside_zip": 98429
+    },
+    {
+      "uploaded_name": "dbot-main.zip",
+      "source_label": "dbot-main",
+      "sha256": "b995b088d54281e7c7563bff5a5001ce1438c236eee946b7b38e182279ad7213",
+      "zip_bytes": 2987945,
+      "file_count": 744,
+      "uncompressed_bytes": 7850477,
+      "compressed_bytes_inside_zip": 2788927
+    },
+    {
+      "uploaded_name": "mindmate-wellbeing-chatbot-main.zip",
+      "source_label": "mindmate-wellbeing-chatbot-main",
+      "sha256": "e6a40a1f42180ef0cf11618016f354dfe000abfa3526c28a1047fa5a8ee1cc81",
+      "zip_bytes": 473336,
+      "file_count": 18,
+      "uncompressed_bytes": 484558,
+      "compressed_bytes_inside_zip": 469106
+    },
+    {
+      "uploaded_name": "Self-Care_Bot_Docs-Self-Care_Bot_Docs_Main-dev.zip",
+      "source_label": "Self-Care_Bot_Docs",
+      "sha256": "54022a3c6a51be735fc43a0bb19f7159b8cc9355e69cc8974cb1891d30e17c17",
+      "zip_bytes": 1903563,
+      "file_count": 143,
+      "uncompressed_bytes": 2683410,
+      "compressed_bytes_inside_zip": 1843917
+    },
+    {
+      "uploaded_name": "Self-Care_Bot-main.zip",
+      "source_label": "Self-Care_Bot-main",
+      "sha256": "48cf7837b8b97a881b16ba1eda70596db12ac80d7c1adf85a8127e191c4cfbcf",
+      "zip_bytes": 382097,
+      "file_count": 47,
+      "uncompressed_bytes": 767784,
+      "compressed_bytes_inside_zip": 363991
+    },
+    {
+      "uploaded_name": "health_life_impact_json_files.zip",
+      "source_label": "health_life_impact_json_files",
+      "sha256": "fb2926be46ce64c9cace74227e843a7733552496cefc61382333b692741f9766",
+      "zip_bytes": 82664,
+      "file_count": 7,
+      "uncompressed_bytes": 1099470,
+      "compressed_bytes_inside_zip": 81482
+    }
+  ],
+  "preservation": {
+    "exact_input_zips_preserved_at": "source_zips_original/",
+    "unmodified_extracted_sources_preserved_at": "sources_original_unmodified/",
+    "patched_working_sources_at": "merged_system/source_trees_linked_and_patched/",
+    "no_source_zip_deleted": true,
+    "original_trees_kept_unmodified": true
+  },
+  "systems_added": {
+    "primary": "safety, self-harm, harm-to-others, medical red flags, acute dysregulation",
+    "secondary": "DBT routing, ADHD/executive-function, trauma/attachment, shame, basic care, pain/mobility/fatigue",
+    "tertiary": "masked distress, caregiver/support context, longitudinal/pattern support, reference retrieval"
+  },
+  "patched_files": [
+    "merged_system/source_trees_linked_and_patched/ADHD-Manager-Bot-main/ADHD-Manager-Bot-main/lambda_function.py",
+    "merged_system/source_trees_linked_and_patched/Chatbot-master/Chatbot-master/Chatbot-GUI/main.py",
+    "merged_system/source_trees_linked_and_patched/Virtual-Psychiatrist-master/Virtual-Psychiatrist-master/Backend/app.py",
+    "merged_system/source_trees_linked_and_patched/dbot-main/dbot-main/app.py",
+    "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/apps/web/templates/application.html.erb",
+    "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/index.html",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/actions/actions.py",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/index.html",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/script.js",
+    "merged_system/source_trees_linked_and_patched/sidejot-main/sidejot-main/app/api/chat/route.ts"
+  ],
+  "added_files": [
+    "INTEGRATION_MAP.json",
+    "integration_patches_applied/ADHD Manager lambda passive scanner helper.patch-note.md",
+    "integration_patches_applied/DBT Assistant Hanami layout passive scanner runtime.patch-note.md",
+    "integration_patches_applied/Dialogflow Chatbot GUI passive scanner.patch-note.md",
+    "integration_patches_applied/Health behavior scanner demo background runtime.patch-note.md",
+    "integration_patches_applied/MindMate HTML passive scanner runtime.patch-note.md",
+    "integration_patches_applied/MindMate Rasa actions scanner helper.patch-note.md",
+    "integration_patches_applied/MindMate browser JS background scanner payload.patch-note.md",
+    "integration_patches_applied/SideJot Next chat route background scanner.patch-note.md",
+    "integration_patches_applied/Virtual-Psychiatrist Flask app background scanner.patch-note.md",
+    "integration_patches_applied/dbot FastAPI Slack background scanner.patch-note.md",
+    "merged_system/assets/js/health_scanner_bridge.js",
+    "merged_system/assets/js/health_scanner_data.js",
+    "merged_system/assets/js/scanner-core.js",
+    "merged_system/assets/js/unified-background-psychiatry-runtime.js",
+    "merged_system/assets/typescript/psychiatry-context.ts",
+    "merged_system/data/merged_data_index.json",
+    "merged_system/psychiatrist_support_hub.html",
+    "merged_system/psychiatry_merge/__init__.py",
+    "merged_system/psychiatry_merge/scanner.py",
+    "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/public/psychiatry_runtime/health_scanner_bridge.js",
+    "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/public/psychiatry_runtime/health_scanner_data.js",
+    "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/public/psychiatry_runtime/scanner-core.js",
+    "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/public/psychiatry_runtime/unified-background-psychiatry-runtime.js",
+    "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/assets/psychiatry_runtime/health_scanner_bridge.js",
+    "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/assets/psychiatry_runtime/health_scanner_data.js",
+    "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/assets/psychiatry_runtime/scanner-core.js",
+    "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/assets/psychiatry_runtime/unified-background-psychiatry-runtime.js",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/psychiatry_runtime/health_scanner_bridge.js",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/psychiatry_runtime/health_scanner_data.js",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/psychiatry_runtime/scanner-core.js",
+    "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/psychiatry_runtime/unified-background-psychiatry-runtime.js",
+    "merged_system/source_trees_linked_and_patched/sidejot-main/sidejot-main/lib/psychiatry-context.ts",
+    "merged_system/tools/validate_merged_scanner.py"
+  ],
+  "integration_map": {
+    "Virtual-Psychiatrist Flask backend": "merged_system/source_trees_linked_and_patched/Virtual-Psychiatrist-master/Virtual-Psychiatrist-master/Backend/app.py",
+    "Dialogflow Tkinter Chatbot": "merged_system/source_trees_linked_and_patched/Chatbot-master/Chatbot-master/Chatbot-GUI/main.py",
+    "dbot FastAPI Slack bot": "merged_system/source_trees_linked_and_patched/dbot-main/dbot-main/app.py",
+    "MindMate Rasa/browser bot": "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/",
+    "SideJot Next chat route": "merged_system/source_trees_linked_and_patched/sidejot-main/sidejot-main/app/api/chat/route.ts",
+    "DBT Assistant Hanami layout": "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/apps/web/templates/application.html.erb",
+    "Health behavior scanner original": "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/"
+  },
+  "validation": {
+    "python_compile": [
+      {
+        "file": "merged_system/psychiatry_merge/scanner.py",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/tools/validate_merged_scanner.py",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/source_trees_linked_and_patched/Virtual-Psychiatrist-master/Virtual-Psychiatrist-master/Backend/app.py",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/source_trees_linked_and_patched/Chatbot-master/Chatbot-master/Chatbot-GUI/main.py",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/source_trees_linked_and_patched/dbot-main/dbot-main/app.py",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/source_trees_linked_and_patched/ADHD-Manager-Bot-main/ADHD-Manager-Bot-main/lambda_function.py",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/actions/actions.py",
+        "status": "ok"
+      }
+    ],
+    "scanner_test": {
+      "status": "ok",
+      "checks": [
+        {
+          "file": "psychiatry_merge/scanner.py",
+          "status": "compiled"
+        },
+        {
+          "scanner_refs_loaded": 4896,
+          "risk": "elevated",
+          "status": "ok"
+        }
+      ]
+    },
+    "warnings": [],
+    "javascript_check": [
+      {
+        "file": "merged_system/assets/js/unified-background-psychiatry-runtime.js",
+        "status": "ok"
+      },
+      {
+        "file": "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/script.js",
+        "status": "ok"
+      }
+    ]
+  },
+  "output_file_count": 3539,
+  "output_total_bytes_before_zip": 175070984
+}

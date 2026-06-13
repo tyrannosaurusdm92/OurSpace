@@ -1,0 +1,9 @@
+{
+  "Virtual-Psychiatrist Flask backend": "merged_system/source_trees_linked_and_patched/Virtual-Psychiatrist-master/Virtual-Psychiatrist-master/Backend/app.py",
+  "Dialogflow Tkinter Chatbot": "merged_system/source_trees_linked_and_patched/Chatbot-master/Chatbot-master/Chatbot-GUI/main.py",
+  "dbot FastAPI Slack bot": "merged_system/source_trees_linked_and_patched/dbot-main/dbot-main/app.py",
+  "MindMate Rasa/browser bot": "merged_system/source_trees_linked_and_patched/mindmate-wellbeing-chatbot-main/mindmate-wellbeing-chatbot-main/",
+  "SideJot Next chat route": "merged_system/source_trees_linked_and_patched/sidejot-main/sidejot-main/app/api/chat/route.ts",
+  "DBT Assistant Hanami layout": "merged_system/source_trees_linked_and_patched/dbt-assistant-main/dbt-assistant-main/apps/web/templates/application.html.erb",
+  "Health behavior scanner original": "merged_system/source_trees_linked_and_patched/health_behavior_reference_scanner/health_behavior_scanner/"
+}

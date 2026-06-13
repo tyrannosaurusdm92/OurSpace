@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17201e" />
+  <title>Emperor Onyx</title>
+  <link rel="stylesheet" href="emperor_onyx.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="onyx-header" aria-label="Emperor Onyx header">
+      <div class="brand-lockup">
+        <div class="onyx-orb" aria-hidden="true"><img id="onyxAvatar" src="assets/onyx-moods/onyx_caring.png" alt="" onerror="this.style.display='none'; this.parentElement.textContent='🐈‍⬛';" /></div>
+        <div>
+          <h1>Emperor Onyx</h1>
+          <p id="onyxTagline">Voidattude support throne loading…</p>
+        </div>
+      </div>
+      <div class="status-stack" aria-live="polite">
+        <span id="profileBadge" class="pill quiet">Psychiatrist bot</span>
+        <span id="runtimeStatus" class="pill">Loading</span>
+        <span id="riskBadge" class="pill quiet">Scanner idle</span>
+      </div>
+    </header>
+
+    <main class="layout-grid">
+      <section class="chat-panel" aria-label="Chat with Emperor Onyx">
+        <div id="chatLog" class="chat-log" tabindex="0" aria-live="polite"></div>
+        <form id="chatForm" class="composer" autocomplete="off">
+          <label class="sr-only" for="userInput">Message Emperor Onyx</label>
+          <textarea id="userInput" name="message" rows="3" placeholder="Tell Onyx what is happening, even if all you can say is ‘I’m stuck.’"></textarea>
+          <div class="composer-actions">
+            <button type="button" id="tinyStepBtn">Tiny step</button>
+            <button type="button" id="dbtBtn">DBT skill</button>
+            <button type="submit" id="sendBtn">Send</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="support-panel" aria-label="Background support context">
+        <section class="card scanner-card">
+          <h2>Background scanner</h2>
+          <p>No scanner button: Onyx reads chat context passively before replying.</p>
+          <div id="signalList" class="signal-list"></div>
+        </section>
+        <section class="card">
+          <h2>Recommended next paw-step</h2>
+          <p id="nextStep">Start by typing what is loudest right now.</p>
+        </section>
+        <section class="card">
+          <h2>Matched supports</h2>
+          <div id="supportMatches" class="support-matches"></div>
+        </section>
+        <section class="card">
+          <h2>Onyx teaching notes</h2>
+          <div id="educationMatches" class="support-matches"></div>
+        </section>
+        <section id="safetyCard" class="card safety-card hidden" aria-live="assertive">
+          <h2>Safety first</h2>
+          <p>If there is immediate danger, call emergency services now. In the U.S., call or text 988 for crisis support.</p>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="js/onyx-config.js"></script>
+  <script src="js/onyx-data.js"></script>
+  <script src="js/onyx-scanner.js"></script>
+  <script src="js/onyx-dbt.js"></script>
+  <script src="js/onyx-memory.js"></script>
+  <script src="js/onyx-chat.js"></script>
+  <script src="js/onyx-app.js"></script>
+</body>
+</html>

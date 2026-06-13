@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-06-13T08:00:00Z",
+  "merge_target": "SquishyRewards one-index site",
+  "source_bot": "onyx_psychiatrist_momma.zip",
+  "one_html_rule": "Only index.html remains as a .html file in the output package.",
+  "live_integration": [
+    "Added js/onyx-momma-psychiatrist-bridge.js before js/app.bundle.js.",
+    "Patched app.bundle.js supportAnswer() to delegate to the upgraded Momma psychiatrist bridge.",
+    "Patched app.bundle.js runPassiveScanner() to use the Momma bridge scanner first.",
+    "Copied upgraded bot data into /data and mirrored active files into /json.",
+    "Replaced legacy Onyx personality/support JSON snapshots with Momma-specific upgraded versions.",
+    "Added scanner + teaching console module to the Onyx support page."
+  ],
+  "not_included": [
+    "Game HTML files were not added or changed. Existing GitHub games folder should remain in place."
+  ],
+  "safety_position": "Onyx provides DBT/ADHD/supportive psychoeducation, safety triage, and crisis escalation guidance; it is not licensed care or emergency service.",
+  "entrypoint": "index.html"
+}

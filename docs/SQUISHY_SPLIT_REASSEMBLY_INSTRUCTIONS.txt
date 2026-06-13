@@ -1,0 +1,7 @@
+SquishyRewards split archive instructions
+
+1. Download squishy_part_1.zip and squishy_part_2.zip.
+2. Extract BOTH archives into the same parent folder.
+3. Allow the SquishyRewards folders to merge.
+4. Real game files are intentionally not included; the games folder contains only a placeholder.
+5. Copy your existing game folders/files back into SquishyRewards/games/.
