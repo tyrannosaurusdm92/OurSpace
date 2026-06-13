@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+  - story: anxious user asks for breathing help
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: feel_anxious
+      - action: action_anxiety_response
+      - intent: mindfulness_exercise
+      - action: action_guided_breathing
+
+  - story: user journals and says thanks
+    steps:
+      - intent: journal
+      - action: action_journal
+      - intent: express_gratitude
+      - action: utter_gratitude_response
+
+  - story: user tracks mood and asks for self care
+    steps:
+      - intent: track_mood
+      - action: action_track_mood
+      - intent: self_care_tips
+      - action: action_self_care_tips
+
+  - story: crisis support flow
+    steps:
+      - intent: emergency_help
+      - action: action_emergency_help
+
+  - story: goodbye flow
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

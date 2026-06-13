@@ -1,0 +1,125 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - hey there
+      - let's go
+      - hey dude
+      - good afternoon
+      - hi MindMate
+
+  - intent: feel_anxious
+    examples: |
+      - I'm feeling anxious
+      - I feel stressed
+      - I'm overwhelmed
+      - I'm really worried
+      - I'm anxious about something
+      - I feel nervous
+      - I can't calm down
+      - I feel panicked
+      - I am overthinking everything
+      - My mind is racing
+      - I feel emotionally exhausted
+
+  - intent: journal
+    examples: |
+      - I want to journal
+      - I need to write down my thoughts
+      - Can I record my feelings?
+      - I'd like to keep a journal entry
+      - I want to write about my day
+      - Help me journal
+      - I want to express my feelings
+      - I need to get my thoughts out
+
+  - intent: emergency_help
+    examples: |
+      - I need help right now
+      - I'm in an emergency
+      - Contact emergency services
+      - I feel like I'm in danger
+      - I might hurt myself
+      - I want to harm myself
+      - I don't feel safe
+      - I need urgent help
+      - This is a crisis
+
+  - intent: express_gratitude
+    examples: |
+      - Thanks
+      - Thank you
+      - I appreciate it
+      - Thanks a lot
+      - I'm grateful
+      - That helped
+      - thank you so much
+
+  - intent: mindfulness_exercise
+    examples: |
+      - I want to do a breathing exercise
+      - Can we do a mindfulness exercise?
+      - I need a breathing exercise
+      - Help me with deep breathing
+      - Guide me through breathing
+      - I want to calm down
+      - Give me a grounding exercise
+      - Can you help me relax?
+
+  - intent: self_care_tips
+    examples: |
+      - Can you give me some self-care tips?
+      - I need self-care tips
+      - What are some self-care activities?
+      - How do I take care of myself?
+      - Give me advice on self-care
+      - Suggest self-care activities
+      - What can I do to feel better?
+      - Give me healthy coping ideas
+
+  - intent: track_mood
+    examples: |
+      - I want to track my mood
+      - I need to record my mood
+      - Help me track my mood
+      - Track my feelings
+      - I feel [sad](emotion) today
+      - I feel [happy](emotion)
+      - My mood is [low](mood_level)
+      - My mood is [7](mood_level) out of 10
+      - I am feeling [angry](emotion) because of work
+      - I feel [tired](emotion) because I didn't sleep
+
+  - intent: goodbye
+    examples: |
+      - goodbye
+      - see you later
+      - bye
+      - take care
+      - I'm done
+      - talk to you later
+      - see you soon
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you human?
+      - who are you?
+      - what are you?
+      - am I talking to a chatbot?
+
+  - intent: out_of_scope
+    examples: |
+      - book me a flight
+      - order food for me
+      - write my exam answers
+      - tell me the stock price
+      - open my email
+      - play a movie

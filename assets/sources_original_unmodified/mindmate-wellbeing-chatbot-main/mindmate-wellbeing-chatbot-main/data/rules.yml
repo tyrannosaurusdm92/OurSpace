@@ -1,0 +1,57 @@
+version: "3.1"
+
+rules:
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Handle anxiety support request
+    steps:
+      - intent: feel_anxious
+      - action: action_anxiety_response
+
+  - rule: Handle journal request
+    steps:
+      - intent: journal
+      - action: action_journal
+
+  - rule: Handle emergency or crisis request
+    steps:
+      - intent: emergency_help
+      - action: action_emergency_help
+
+  - rule: Respond to gratitude
+    steps:
+      - intent: express_gratitude
+      - action: utter_gratitude_response
+
+  - rule: Start guided breathing exercise
+    steps:
+      - intent: mindfulness_exercise
+      - action: action_guided_breathing
+
+  - rule: Provide self-care tips
+    steps:
+      - intent: self_care_tips
+      - action: action_self_care_tips
+
+  - rule: Track mood
+    steps:
+      - intent: track_mood
+      - action: action_track_mood
+
+  - rule: Respond to goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Answer bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Handle out-of-scope messages
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope

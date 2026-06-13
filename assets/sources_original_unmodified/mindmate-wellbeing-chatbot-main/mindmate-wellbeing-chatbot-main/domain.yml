@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - greet
+  - feel_anxious
+  - journal
+  - emergency_help
+  - express_gratitude
+  - mindfulness_exercise
+  - self_care_tips
+  - track_mood
+  - goodbye
+  - bot_challenge
+  - out_of_scope
+
+entities:
+  - emotion
+  - journal_entry
+  - mood_level
+  - mood_reason
+
+slots:
+  emotion:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: emotion
+
+  journal_entry:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: journal_entry
+
+  mood_level:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: mood_level
+
+  mood_reason:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: mood_reason
+
+actions:
+  - action_anxiety_response
+  - action_journal
+  - action_emergency_help
+  - action_guided_breathing
+  - action_self_care_tips
+  - action_track_mood
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm MindMate. I can help with simple anxiety support, journaling, breathing exercises, mood tracking, and self-care tips. How are you feeling today?"
+
+  utter_gratitude_response:
+    - text: "You're welcome. I'm glad I could help a little."
+
+  utter_goodbye:
+    - text: "Goodbye. Take care, and remember to reach out to someone you trust if things feel too heavy."
+
+  utter_iamabot:
+    - text: "I'm MindMate, a Rasa chatbot built to provide simple mental-wellness support. I am not a medical professional."
+
+  utter_out_of_scope:
+    - text: "I may not be able to help with that. I can support simple wellness topics like anxiety, journaling, mindfulness, mood tracking, and self-care."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

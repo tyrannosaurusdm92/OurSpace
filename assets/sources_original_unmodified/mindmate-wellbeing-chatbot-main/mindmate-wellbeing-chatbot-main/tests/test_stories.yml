@@ -1,0 +1,44 @@
+version: "3.1"
+
+stories:
+  - story: greet user
+    steps:
+      - user: |
+          hello
+        intent: greet
+      - action: utter_greet
+
+  - story: anxiety support
+    steps:
+      - user: |
+          I feel anxious
+        intent: feel_anxious
+      - action: action_anxiety_response
+
+  - story: breathing exercise
+    steps:
+      - user: |
+          help me with deep breathing
+        intent: mindfulness_exercise
+      - action: action_guided_breathing
+
+  - story: self care tips
+    steps:
+      - user: |
+          give me self care tips
+        intent: self_care_tips
+      - action: action_self_care_tips
+
+  - story: emergency support
+    steps:
+      - user: |
+          I don't feel safe
+        intent: emergency_help
+      - action: action_emergency_help
+
+  - story: goodbye
+    steps:
+      - user: |
+          bye
+        intent: goodbye
+      - action: utter_goodbye

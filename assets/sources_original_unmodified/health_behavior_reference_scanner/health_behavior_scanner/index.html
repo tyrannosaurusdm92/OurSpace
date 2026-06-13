@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health & Behavior Reference Scanner</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Local-first support scanner</p>
+      <h1>Health & Behavior Reference Scanner</h1>
+      <p class="subtitle">Scan chatbot conversations, app-owned files, and attached documents for direct needs, possible implied needs, DBT skill options, physical-health support notes, and citeable document references.</p>
+    </div>
+    <div class="privacy-card">
+      <strong>Privacy:</strong> this static version runs in your browser. Imported files and pasted conversations stay local unless you connect it to your own app backend.
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="panel span-2 safety-panel">
+      <h2>Safety boundaries</h2>
+      <p>This scanner is for organization, reflection, accessibility support, and chatbot reference assistance. It does not diagnose, prescribe, or replace medical, mental-health, emergency, or crisis care.</p>
+      <p class="crisis">If a scan suggests imminent danger, self-harm risk, violence risk, medical emergency, or inability to stay safe, use emergency services or a crisis line instead of relying on a chatbot.</p>
+    </section>
+
+    <section class="panel">
+      <h2>1. Attach program files or documents</h2>
+      <p class="muted">Add the files the attached program possesses. Text, JSON, Markdown, HTML, CSV, and plain logs work directly. For DOCX/PDF folders, use the included Python helper to create an import package.</p>
+      <div id="dropZone" class="drop-zone" tabindex="0">Drop files here or use the picker below.</div>
+      <label class="file-label">Choose files or a folder
+        <input id="fileInput" type="file" multiple webkitdirectory />
+      </label>
+      <label class="file-label">Import scanner package JSON
+        <input id="packageInput" type="file" accept=".json,application/json" />
+      </label>
+      <div class="button-row">
+        <button id="clearDocs" type="button" class="secondary">Clear imported docs</button>
+        <button id="downloadIndex" type="button">Export document index</button>
+      </div>
+      <div id="docStats" class="stat-box">Built-in catalog loading…</div>
+      <div id="docList" class="doc-list" aria-live="polite"></div>
+    </section>
+
+    <section class="panel">
+      <h2>2. Paste chatbot conversation</h2>
+      <p class="muted">Paste a transcript, message array, support chat, journaling text, or chatbot memory. The scanner looks for direct words and cautious “between the lines” signals.</p>
+      <textarea id="conversationInput" spellcheck="true" placeholder="Example: User: I keep saying I’m fine, but I haven’t showered in days and I’m too tired to stand long enough to cook..."></textarea>
+      <div class="settings-grid">
+        <label>Minimum signal confidence
+          <input id="threshold" type="range" min="20" max="90" value="55" />
+          <span id="thresholdLabel">55%</span>
+        </label>
+        <label>Reference style
+          <select id="referenceMode">
+            <option value="balanced">Built-in + attached documents</option>
+            <option value="attached">Attached documents only</option>
+            <option value="builtIn">Built-in catalogs only</option>
+          </select>
+        </label>
+        <label>Support focus
+          <select id="supportFocus">
+            <option value="both">Behavioral + physical health</option>
+            <option value="behavioral">Behavioral support first</option>
+            <option value="physical">Physical health support first</option>
+          </select>
+        </label>
+      </div>
+      <div class="button-row">
+        <button id="scanBtn" type="button">Scan conversation</button>
+        <button id="sampleBtn" type="button" class="secondary">Load gentle demo</button>
+        <button id="clearConversation" type="button" class="secondary">Clear text</button>
+      </div>
+    </section>
+
+    <section class="panel span-2">
+      <h2>3. Scan results</h2>
+      <div id="results" class="results empty">Run a scan to see signals, document references, and a chatbot-ready support prompt.</div>
+      <div class="button-row sticky-actions">
+        <button id="copyPrompt" type="button" disabled>Copy chatbot prompt</button>
+        <button id="downloadReport" type="button" disabled>Download scan report JSON</button>
+        <button id="downloadReferencePack" type="button" disabled>Download chatbot reference pack</button>
+      </div>
+    </section>
+
+    <section class="panel span-2">
+      <h2>4. Chatbot attachment instructions</h2>
+      <ol class="steps">
+        <li>Let the host app pass its owned files, attached documents, and conversation transcript into the scanner.</li>
+        <li>Run the scan before the chatbot answers, or as a helper panel beside the chat.</li>
+        <li>Send the generated prompt plus the citeable reference pack to the chatbot.</li>
+        <li>Tell the chatbot to label uncertain findings as “possible,” use citations, and never diagnose.</li>
+      </ol>
+      <p class="muted">See <code>examples/chatbot-integration.js</code> and <code>tools/document_reference_indexer.py</code> in this folder.</p>
+    </section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="result-card">
+      <h3></h3>
+      <div class="card-body"></div>
+    </article>
+  </template>
+
+  <script src="assets/data/health_scanner_data.js"></script>
+  <script src="assets/js/scanner-core.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
