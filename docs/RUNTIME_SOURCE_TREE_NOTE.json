@@ -1,5 +1,0 @@
-{
-  "runtime_required": false,
-  "source_folders": ["sources_original_unmodified", "assets/source_trees_linked_and_patched"],
-  "note": "These folders are archival/source-preservation material, not required by index.html at runtime. Keep the manifest/docs for provenance, but GitHub Pages does not need the full source trees for the care cottage to load."
-}
