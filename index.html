@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Jasper's Squishy Care Cottage</title>
+  <meta name="description" content="Mobile-first caregiver, self-care, DBT, schedule, calendar, and Squishy Store reward site for Jasper." />
+  <link rel="manifest" href="docs/manifest.webmanifest" />
+  <link rel="stylesheet" href="css/mobile.css?v=device-split-20260612" media="(max-width: 767px)" />
+  <link rel="stylesheet" href="css/tablet.css?v=device-split-20260612" media="(min-width: 768px) and (max-width: 1199px)" />
+  <link rel="stylesheet" href="css/desktop.css?v=device-split-20260612" media="(min-width: 1200px), print" />
+  <meta name="theme-color" content="#f28a3d" />
+  <!-- Squishy support data/reward files. app.js stays at the site root. -->
+  <script src="./js/jasper-support-data.js?v=squishy-support-clean-20260612"></script>
+  <script src="./js/jasper-reward-catalog-data.js?v=squishy-support-clean-20260612"></script>
+</head>
+<body>
+  <div aria-label="Jasper's Care Cottage in-site navigation" id="bd-global-dropdown-nav">
+    <div class="bdg-bar">
+      <div class="bdg-drag-handle" title="Drag navigation">✥</div>
+
+      <details id="bdg-nav-details">
+        <summary>☰ Cottage Navigation</summary>
+        <div class="bdg-menu" role="menu" id="bdg-menu-links"></div>
+      </details>
+
+      <button id="bdg-hide-nav" type="button">Hide Nav</button>
+
+      <div class="bdg-title">
+        <b>Jasper's Care Cottage</b>
+        <span>in-site navigation</span>
+      </div>
+    </div>
+  </div>
+
+  <div aria-label="Hidden Jasper's Care Cottage navigation bubble" id="bd-nav-bubble">
+    <button class="bdg-bubble-core" id="bdg-show-nav" title="Show navigation bar" type="button">☰</button>
+  </div>
+
+  <div aria-label="Jasper's Care Cottage time and currency tracker" id="jcc-persistent-tracker" class="bdg-time-panel">
+    <h3>🏡 Jasper's Care Cottage</h3>
+
+    <div class="bdg-time-grid">
+      <div class="bdg-time-card">
+        <strong>Eastern Time</strong>
+        <span id="bd-earth-time">Loading…</span>
+      </div>
+
+      <div class="bdg-time-card">
+        <strong>Current UTC Offset</strong>
+        <span id="bd-eastern-offset">Loading…</span>
+      </div>
+
+      <div class="bdg-currency-card">
+        <strong>Copper</strong>
+        <span id="bd-copper-count">0</span>
+      </div>
+
+      <div class="bdg-currency-card">
+        <strong>Silver</strong>
+        <span id="bd-silver-count">0</span>
+      </div>
+
+      <div class="bdg-currency-card">
+        <strong>Gold</strong>
+        <span id="bd-gold-count">0</span>
+      </div>
+
+      <div class="bdg-currency-card">
+        <strong>Platinum</strong>
+        <span id="bd-platinum-count">0</span>
+      </div>
+
+      <p class="bd-hint">
+        Currency conversion:
+        <code>10 copper = 1 silver</code>
+        <code>10 silver = 1 gold</code>
+        <code>10 gold = 1 platinum</code>
+      </p>
+    </div>
+  </div>
+
+  <div class="site-shell">
+    <header class="hero-card">
+      <div class="hero-row">
+        <div class="branding">
+          <div class="site-mark" aria-hidden="true">🐾</div>
+          <div>
+            <h1 id="currentPageTitle">Care Task Board</h1>
+            <p id="pageSubtitle">Every part counts, Jasper. Little tasks, hard tasks, body care, cat care, and rest all earn rewards.</p>
+          </div>
+        </div>
+        <div class="controls" aria-label="Site controls">
+          <button class="control-button" type="button" id="saveNowBtn">Save Now</button>
+          <button class="control-button" type="button" id="exportAllData">Export Save</button>
+          <label class="control-button file-label">Import Save<input type="file" id="importAllData" accept="application/json" /></label>
+          <button class="control-button secondary" type="button" id="resetLayout">Reset Layout</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="pageHost">
+      <section class="page-panel active" id="task-board" data-title="Care Task Board" data-subtitle="Your full task library lives here. Add weekly, every-few-days, and monthly tasks to today when they are due.">
+        <div class="page-heading"><h2>Care Task Board</h2><span class="page-chip">first page task library</span></div>
+        <div class="module-grid">
+          <section class="module movable wide" data-key="task-overview">
+            <div class="module-header drag-handle"><span class="module-title">Jasper's Reward Overview</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div class="tracker-cards">
+                <article><span>Due now</span><strong id="dueNowCount">0</strong><small>tasks ready to add or complete</small></article>
+                <article><span>Locked until due</span><strong id="lockedCount">0</strong><small>red cards are resting</small></article>
+                <article><span>Today selected</span><strong id="selectedTodayCount">0</strong><small>extra tasks on your routine</small></article>
+                <article><span>Next reset</span><strong id="nextReset">--</strong><small>midnight Eastern</small></article>
+              </div>
+              <div class="daily-bundle-card">
+                <div><h3>Self-care is high value here</h3><p>Your meds, eating, drinking, decompression, DBT, hygiene, cat care, and caregiver work are all rewarded like real effort.</p></div>
+                <strong id="bundleProgress">0 / 8</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="module movable tall" data-key="calendar-views">
+            <div class="module-header drag-handle"><span class="module-title">Calendar: Month / Week / Day</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div class="view-switch" role="tablist" aria-label="Calendar views">
+                <button class="view-tab active" type="button" data-calendar-view="month">Month</button>
+                <button class="view-tab" type="button" data-calendar-view="week">Week</button>
+                <button class="view-tab" type="button" data-calendar-view="day">Day</button>
+              </div>
+              <div class="calendar-actions">
+                <button class="ghost-button" type="button" id="prevCalendar">←</button>
+                <strong id="calendarTitle">This month</strong>
+                <button class="ghost-button" type="button" id="nextCalendar">→</button>
+                <button class="ghost-button" type="button" id="todayCalendar">Today</button>
+              </div>
+              <div id="calendarHost" class="calendar-host"></div>
+            </div>
+          </section>
+
+          <section class="module movable full" data-key="task-library">
+            <div class="module-header drag-handle"><span class="module-title">Task Library by Room, Priority, and Respawn</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div class="filter-row">
+                <input class="text-input search-input" id="taskSearch" placeholder="Search tasks: dishes, mopping, litter, phone call, bathroom..." />
+                <select id="taskRoomFilter"><option value="all">All rooms/areas</option></select>
+                <select id="taskPriorityFilter"><option value="all">All priorities</option><option>Critical</option><option>Very High</option><option>High</option><option>Medium</option><option>Gentle</option></select>
+                <select id="taskFrequencyFilter"><option value="all">All respawns</option><option value="daily">Daily</option><option value="weekday">Weekday</option><option value="every2">Every 2 days</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="asneeded">As needed / daily lock</option></select>
+              </div>
+              <div class="legend-row"><span class="legend due">ready</span><span class="legend done">done today</span><span class="legend locked">red = not due yet</span></div>
+              <div id="taskLibrary" class="task-list"></div>
+            </div>
+          </section>
+
+          <section class="module movable wide" data-key="custom-task">
+            <div class="module-header drag-handle"><span class="module-title">Add a Custom Reward Task</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <form id="customTaskForm" class="custom-grid">
+                <label>Task name<input class="text-input" id="customTaskName" required placeholder="Example: organize medicine basket" /></label>
+                <label>Area<select id="customTaskRoom"><option>Self-care</option><option>Bathroom</option><option>Bedroom</option><option>Living room</option><option>Kitchen</option><option>Cats</option><option>Caregiver support</option><option>Admin</option><option>Shopping</option></select></label>
+                <label>Priority<select id="customTaskPriority"><option>Medium</option><option>High</option><option>Very High</option><option>Critical</option><option>Gentle</option></select></label>
+                <label>Respawn<select id="customTaskFrequency"><option value="asneeded">As needed / daily lock</option><option value="daily">Daily</option><option value="every2">Every 2 days</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option></select></label>
+                <label>Copper<input type="number" id="customCopper" min="0" value="1200" /></label>
+                <label>Silver<input type="number" id="customSilver" min="0" value="120" /></label>
+                <label>Gold<input type="number" id="customGold" min="0" value="30" /></label>
+                <label>Platinum<input type="number" id="customPlatinum" min="0" value="3" /></label>
+                <button class="soft-button" type="submit">Add task</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="module movable" data-key="activity-log-module">
+            <div class="module-header drag-handle"><span class="module-title">Activity Log</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body"><div id="activityLog" class="activity-log"></div></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="page-panel" id="todays-routine" data-title="Today's Schedule" data-subtitle="Automatic daily tasks show here. Added weekly/monthly tasks become part of today’s routine.">
+        <div class="page-heading"><h2>Today's Schedule</h2><span class="page-chip">daily routine + break-safe work blocks</span></div>
+        <div class="module-grid">
+          <section class="module movable full" data-key="today-list">
+            <div class="module-header drag-handle"><span class="module-title">Today's Automatic + Added Tasks</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div class="today-summary"><strong id="todaySummaryText">No tasks yet.</strong><button class="ghost-button" type="button" id="clearTodaySelections">Clear only added tasks</button></div>
+              <div id="todayTaskList" class="task-list compact"></div>
+            </div>
+          </section>
+
+          <section class="module movable wide" data-key="caregiver-workday">
+            <div class="module-header drag-handle"><span class="module-title">Caregiver Workday + Required Breaks</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div class="workday-card">
+                <div><span>Expected weekday care block</span><strong id="expectedWorkday">--</strong><small>Monday is 7 hours 45 minutes. Tuesday-Friday are 5 hours.</small></div>
+                <div><span>Breaks are protected</span><strong>eat • hydrate • decompress</strong><small>Breaks have their own rewards because you matter too.</small></div>
+              </div>
+              <div id="breakPlan" class="break-plan"></div>
+              <div class="quick-complete-grid">
+                <button class="complete-button" type="button" data-complete="break-food">Log workday meal break</button>
+                <button class="complete-button" type="button" data-complete="break-hydrate">Log workday hydration break</button>
+                <button class="complete-button" type="button" data-complete="break-decompress">Log workday decompression break</button>
+                <button class="complete-button distress" type="button" data-complete="caregiver-shift-complete">Log caregiver work block</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="module movable tall" data-key="timesheet-style">
+            <div class="module-header drag-handle"><span class="module-title">Tempus-Style Weekly Time Notes</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <p class="soft-note">Use this as a local helper for start/end times, daily totals, notes, and weekly totals.</p>
+              <div id="timeRows" class="time-rows"></div>
+              <div class="weekly-total"><span>Weekly total</span><strong id="weeklyHoursTotal">0h 00m</strong></div>
+              <label class="field-label">Timesheet notes<textarea id="timesheetNotes" rows="4" placeholder="Notes, missed punches, EVV reminders, paperwork follow-up..."></textarea></label>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="page-panel" id="chat-bot-dbt-skills" data-title="DBT Support Chat" data-subtitle="Shame-free DBT, ADHD, grounding, attachment-alarm, self-care, and reward support.">
+        <div class="page-heading"><h2>DBT Support Chat</h2><span class="page-chip">chat support earns rewards</span></div>
+        <div class="module-grid">
+          <section class="module movable wide" data-key="support-chat">
+            <div class="module-header drag-handle"><span class="module-title">DBT + Self-Care Support Chat</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div class="support-companion-card">
+                <div><span class="eyebrow">Shame-free skill support</span><h3>Use this space for DBT, ADHD tiny steps, grounding, attachment alarms, self-care resets, and reward check-ins.</h3><strong id="supportMoodLabel">Care support</strong><p id="supportMoodNote">The helper keeps the focus on safety, tiny steps, practical care, and passive scanner context. Full Emperor Onyx companion mode is linked below.</p><div class="support-quick-row support-mode-bubbles" aria-label="Quick support modes">
+                  <button class="ghost-button support-mode-button" type="button" data-support="comfort">🤎 Comfort</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="dbt_picker">🧠 DBT picker</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="tipp">🧊 TIPP panic</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="adhd_split">🐾 ADHD tiny steps</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="self_care_reset">🫧 Self-care reset</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="body_double">📚 Body double</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="attachment_alarm">🫂 Attachment alarm</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="diary_card">📓 Diary card</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="grounding">💗 Grounding</button>
+                  <button class="ghost-button support-mode-button" type="button" data-support="listen">👂 Listen</button>
+                </div>
+                <div class="support-link-row" aria-label="Linked support systems">
+                  <a class="soft-button" href="Emperor_onyx.html">Open Emperor Onyx full companion</a>
+                  <span class="scanner-status-pill" id="backgroundScannerStatus">Passive scanner loading…</span>
+                </div>
+              </div>
+              </div>
+              <div id="chatMessages" class="chat-messages"></div>
+              <form id="chatForm" class="chat-form"><textarea id="chatInput" rows="2" placeholder="Write what is going on, ask for DBT help, or name what your nervous system is yelling."></textarea><button class="soft-button" type="submit">Send</button></form>
+              <div class="quick-complete-grid"><button class="complete-button" type="button" data-complete="use-chatbot">Log chatbot support</button><button class="complete-button distress" type="button" data-complete="use-chatbot-distress">Log distress chat support</button></div>
+            </div>
+          </section>
+          <section class="module movable tall" data-key="dbt-library">
+            <div class="module-header drag-handle"><span class="module-title">DBT Quick Skill Library</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body"><input class="text-input" id="dbtSearch" placeholder="Search: STOP, TIPP, wise mind, check facts..." /><div id="dbtResults" class="dbt-results"></div></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="page-panel" id="dbt-daily-cards" data-title="DBT Daily Cards" data-subtitle="Fill out a diary card, save it locally, and export it as PDF or PNG.">
+        <div class="page-heading"><h2>DBT Daily Cards</h2><span class="page-chip">PDF + PNG export</span></div>
+        <div class="module-grid">
+          <section class="module movable wide" data-key="diary-card">
+            <div class="module-header drag-handle"><span class="module-title">Daily Diary Card</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+            <div class="module-body">
+              <div id="diaryCardCanvas" class="diary-card-preview">
+                <h3>Jasper's DBT Daily Diary Card</h3>
+                <div class="diary-grid"><label>Mood<input type="range" min="0" max="10" value="5" id="diaryMood"><span id="diaryMoodValue">5</span></label><label>Distress<input type="range" min="0" max="10" value="3" id="diaryDistress"><span id="diaryDistressValue">3</span></label><label>Energy<input type="range" min="0" max="10" value="4" id="diaryEnergy"><span id="diaryEnergyValue">4</span></label><label>Urges<input type="range" min="0" max="10" value="0" id="diaryUrges"><span id="diaryUrgesValue">0</span></label></div>
+                <label class="field-label">Emotions noticed<textarea id="diaryEmotions" rows="3"></textarea></label>
+                <label class="field-label">DBT skills used<textarea id="diarySkills" rows="3"></textarea></label>
+                <label class="field-label">Care completed<textarea id="diaryCare" rows="3"></textarea></label>
+                <label class="field-label">Tiny win / hard-day grace<textarea id="diaryWin" rows="3"></textarea></label>
+              </div>
+              <div class="tiny-actions"><button class="soft-button" type="button" id="saveDiaryCard">Save diary card</button><button class="soft-button" type="button" id="exportDiaryPdf">Export PDF</button><button class="soft-button" type="button" id="exportDiaryPng">Export PNG</button><button class="complete-button" type="button" data-complete="daily-diary-card">Log diary card reward</button></div>
+            </div>
+          </section>
+          <section class="module movable" data-key="diary-history"><div class="module-header drag-handle"><span class="module-title">Saved Diary Cards</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div id="diaryHistory" class="history-list"></div></div></section>
+        </div>
+      </section>
+
+      <section class="page-panel" id="dbt-journaling" data-title="DBT Journaling" data-subtitle="Save journals in-browser and export them as TXT or DOCX.">
+        <div class="page-heading"><h2>DBT Journaling</h2><span class="page-chip">TXT + DOCX export</span></div>
+        <div class="module-grid">
+          <section class="module movable wide" data-key="journal-editor"><div class="module-header drag-handle"><span class="module-title">Journal Editor</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div class="prompt-card"><strong id="journalPrompt">What does your body need first?</strong><button class="ghost-button" type="button" id="newPrompt">New prompt</button></div><label class="field-label">Title<input class="text-input" id="journalTitle" placeholder="Today’s journal" /></label><label class="field-label">Entry<textarea id="journalText" rows="12" placeholder="Write here. Autosaves only when you press Save Journal."></textarea></label><div class="tiny-actions"><button class="soft-button" type="button" id="saveJournal">Save Journal</button><button class="soft-button" type="button" id="exportJournalsTxt">Export TXT</button><button class="soft-button" type="button" id="exportJournalsDocx">Export DOCX</button><button class="complete-button" type="button" data-complete="journal-entry">Log journaling reward</button></div></div></section>
+          <section class="module movable tall" data-key="journal-list"><div class="module-header drag-handle"><span class="module-title">Saved Journals</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div id="journalHistory" class="history-list"></div></div></section>
+        </div>
+      </section>
+
+      <section class="page-panel" id="mobile-games" data-title="Mobile Games" data-subtitle="Pick a mobile-friendly mini-game when decompression would help.">
+        <div class="page-heading"><h2>Mobile Games</h2><span class="page-chip">games earn decompression rewards</span></div>
+        <div class="module-grid"><section class="module movable full" data-key="games-module"><div class="module-header drag-handle"><span class="module-title">Stress-Reduction Game Selector</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div class="game-controls"><select id="gameSelect"></select><button class="soft-button" type="button" id="loadGame">Load game</button><button class="complete-button" type="button" data-complete="mini-game-decompress">Log decompression game</button></div><iframe id="gameFrame" title="Selected mobile game"></iframe></div></section></div>
+      </section>
+
+<section class="page-panel" id="serotonin" data-title="Serotonin" data-subtitle="Comfort images and mobile-first media connections for quick regulation.">
+  <div class="page-heading"><h2>Serotonin Gallery + Media</h2><span class="page-chip">comfort gallery + socials + music</span></div>
+  <div class="module-grid serotonin-grid">
+    <section class="module movable wide" data-key="gallery-module">
+      <div class="module-header drag-handle"><span class="module-title">Quick Serotonin Gallery</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+      <div class="module-body"><label class="upload-zone">Upload comfort images<input type="file" id="galleryUpload" accept="image/*" multiple /></label><div id="galleryFrame" class="gallery-frame"></div></div>
+    </section>
+
+    <section class="module movable" data-key="connect-tiktok">
+      <div class="module-header drag-handle"><span class="module-title">TikTok Content Watch</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+      <div class="module-body serotonin-connect-card">
+        <div class="connect-heading"><span>🎵</span><div><h3>TikTok sign-in + comfort feed</h3><p>Open TikTok, save a comfort profile/feed link, and keep notes for what feels regulating.</p></div></div>
+        <div class="connect-actions"><a class="soft-button" id="openTikTokLogin" href="https://www.tiktok.com/login" target="_blank" rel="noopener">Open TikTok sign-in</a><button class="ghost-button" type="button" data-open-media="tiktok">Open saved TikTok</button></div>
+        <label class="field-label">TikTok profile, search, or video URL<input class="text-input" id="tiktokProfileUrl" placeholder="https://www.tiktok.com/@comfort-account" /></label>
+        <label class="field-label">Comfort notes<textarea id="tiktokComfortNotes" rows="4" placeholder="Examples: animal videos, cozy cooking, cat rescues, avoid doomscrolling after 20 minutes."></textarea></label>
+        <button class="soft-button" type="button" id="saveTikTokConnection">Save TikTok connection</button>
+      </div>
+    </section>
+
+    <section class="module movable" data-key="connect-spotify">
+      <div class="module-header drag-handle"><span class="module-title">Spotify Connect</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+      <div class="module-body serotonin-connect-card">
+        <div class="connect-heading"><span>🎧</span><div><h3>Spotify music anchor</h3><p>Save a Spotify playlist, artist, album, or podcast link for one-tap regulation.</p></div></div>
+        <div class="connect-actions"><a class="soft-button" id="openSpotifyLogin" href="https://accounts.spotify.com/login" target="_blank" rel="noopener">Open Spotify sign-in</a><button class="ghost-button" type="button" data-open-media="spotify">Open saved Spotify</button></div>
+        <label class="field-label">Spotify URL<input class="text-input" id="spotifyUrl" placeholder="https://open.spotify.com/playlist/..." /></label>
+        <label class="field-label">Music notes<textarea id="spotifyNotes" rows="4" placeholder="Examples: grounding playlist, shower playlist, sleepy grounding playlist, no sad songs after midnight."></textarea></label>
+        <button class="soft-button" type="button" id="saveSpotifyConnection">Save Spotify connection</button>
+      </div>
+    </section>
+
+    <section class="module movable wide" data-key="connect-youtube">
+      <div class="module-header drag-handle"><span class="module-title">YouTube Playlist</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+      <div class="module-body serotonin-connect-card">
+        <div class="connect-heading"><span>▶️</span><div><h3>YouTube comfort playlist</h3><p>Paste a playlist or video link. Playlist links can be embedded when the URL includes a list ID.</p></div></div>
+        <div class="connect-actions"><a class="soft-button" id="openYouTubeLogin" href="https://www.youtube.com/account" target="_blank" rel="noopener">Open YouTube account</a><button class="ghost-button" type="button" data-open-media="youtube">Open saved YouTube</button></div>
+        <label class="field-label">YouTube playlist or video URL<input class="text-input" id="youtubePlaylistUrl" placeholder="https://www.youtube.com/playlist?list=..." /></label>
+        <label class="field-label">Playlist notes<textarea id="youtubeNotes" rows="3" placeholder="Examples: cozy shows, DBT videos, cat TV, safe decompression playlist."></textarea></label>
+        <button class="soft-button" type="button" id="saveYouTubeConnection">Save YouTube playlist</button>
+        <div id="youtubeEmbedHost" class="youtube-embed-host"><p class="soft-note">Paste and save a YouTube playlist URL to preview it here.</p></div>
+      </div>
+    </section>
+
+    <section class="module movable tall" data-key="support-resources">
+      <div class="module-header drag-handle"><span class="module-title">DBT + ADHD Support Resources</span><button class="mini-button" data-collapse type="button">Bubble</button></div>
+      <div class="module-body"><div id="supportResources" class="support-resource-panel"></div></div>
+    </section>
+  </div>
+</section>
+
+      <section class="page-panel" id="squishy-store" data-title="Squishy Store" data-subtitle="Shop by aisle with earned currency, add links from Walmart/TikTok/Amazon/Uber Eats, and check out by email.">
+        <div class="page-heading"><h2>Squishy Store</h2><span class="page-chip">cart + checkout + email request</span></div>
+        <p class="store-legal-note">Adult-only reward requests stay in caregiver review and are treated as legal-adult/medical-card items only. Checkout deducts Squishy currency and opens the caregiver email request.</p>
+        <div class="module-grid">
+          <section class="module movable full" data-key="store-shelf"><div class="module-header drag-handle"><span class="module-title">Shop by Aisle</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div class="shopping-links"><a href="https://www.walmart.com/lists" target="_blank" rel="noopener">Walmart Lists</a><a href="https://www.walmart.com/orders" target="_blank" rel="noopener">Walmart Purchase History</a><a href="https://www.tiktok.com/shop" target="_blank" rel="noopener">TikTok Shop</a><a href="https://www.amazon.com/gp/css/order-history" target="_blank" rel="noopener">Amazon Orders</a><a href="https://www.ubereats.com" target="_blank" rel="noopener">Uber Eats</a></div><div class="filter-row"><input class="text-input search-input" id="storeSearch" placeholder="Search aisles: pop, craft, clothes, meal, dispensary..." /><select id="storeCategory"><option value="all">All aisles</option></select></div><div id="storeList" class="store-list"></div></div></section>
+          <section class="module movable wide" data-key="cart"><div class="module-header drag-handle"><span class="module-title">Cart + Checkout</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><div id="cartList" class="cart-list"></div><div class="cart-total"><span>Cart total</span><strong id="cartTotal">0 C · 0 S · 0 G · 0 P</strong></div><div class="tiny-actions"><button class="soft-button" type="button" id="checkoutCart">Checkout and email request</button><button class="ghost-button" type="button" id="copyCheckoutEmail">Copy email text</button><button class="ghost-button" type="button" id="clearCart">Clear cart</button></div><textarea id="checkoutEmailPreview" rows="7" class="email-preview" readonly></textarea></div></section>
+          <section class="module movable" data-key="custom-store"><div class="module-header drag-handle"><span class="module-title">Add Link / Past Order / Favorite Store</span><button class="mini-button" data-collapse type="button">Bubble</button></div><div class="module-body"><form id="customStoreForm" class="custom-store-form"><label>Name<input class="text-input" id="storeItemName" required placeholder="Example: starfish hoodie" /></label><label>Aisle<select id="storeItemCategory"><option>Links + Custom Finds Aisle</option><option>Clothes Aisle</option><option>Craft + Music Aisle</option><option>Food Delivery + Meal Aisle</option><option>Gaming Aisle</option><option>Favorite stores</option></select></label><label>URL or notes<input class="text-input" id="storeItemUrl" placeholder="Paste TikTok/Walmart/Amazon/Uber Eats link or notes" /></label><div class="cost-row"><label>C<input type="number" id="storeCostC" value="5000" min="0" /></label><label>S<input type="number" id="storeCostS" value="500" min="0" /></label><label>G<input type="number" id="storeCostG" value="100" min="0" /></label><label>P<input type="number" id="storeCostP" value="10" min="0" /></label></div><button class="soft-button" type="submit">Add to store</button></form><div id="purchaseHistory" class="history-list"></div></div></section>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="support-mobile-dock" id="supportMobileDock" aria-label="Mobile quick support dock"><button class="support-dock-pill" type="button" data-support="dbt_picker">🧠 DBT</button><button class="support-dock-pill" type="button" data-support="adhd_split">🐾 tiny step</button><button class="support-dock-pill" type="button" data-support="self_care_reset">🫧 reset</button></div>
+  <button class="floating-bot-button" id="floatingBotButton" type="button" aria-label="Open quick support"><span class="floating-support-icon" id="floatingBotButtonIcon" aria-hidden="true">💬</span><span class="floating-bot-zzz">help</span></button>
+  <aside class="floating-bot" id="floatingBot"><div class="floating-bot-head"><div class="floating-support-title"><strong>Quick support</strong></div><button id="closeFloatingBot" type="button">×</button></div><div id="floatingChatMessages" class="chat-messages small"></div><form id="floatingChatForm" class="chat-form compact"><input class="text-input" id="floatingChatInput" placeholder="Ask for a tiny next step" /><button class="soft-button" type="submit">Send</button></form><div class="support-quick-row floating-support-quick" id="floatingSupportQuickModes" aria-label="Quick support help"><button class="ghost-button support-mode-button" type="button" data-support="comfort">🤎</button><button class="ghost-button support-mode-button" type="button" data-support="dbt_picker">🧠</button><button class="ghost-button support-mode-button" type="button" data-support="tipp">🧊</button><button class="ghost-button support-mode-button" type="button" data-support="adhd_split">🐾</button><button class="ghost-button support-mode-button" type="button" data-support="self_care_reset">🫧</button><button class="ghost-button support-mode-button" type="button" data-support="grounding">💗</button></div></aside>
+  <div id="toastHost" class="toast-host" aria-live="polite"></div>
+  <!-- Passive background scanner: loaded without a button and used by the support chat/form layer. -->
+  <script data-merge-role="passive-psychiatry-background-scanner" src="js/health_scanner_data.js?v=background-scanner-20260612"></script>
+  <script data-merge-role="passive-psychiatry-background-scanner" src="js/scanner-core.js?v=background-scanner-20260612"></script>
+  <script data-merge-role="passive-psychiatry-background-scanner" src="js/health_scanner_bridge.js?v=background-scanner-20260612"></script>
+  <script data-merge-role="passive-psychiatry-background-scanner" src="js/unified-background-psychiatry-runtime.js?v=background-scanner-20260612"></script>
+  <!-- Optional helper file kept in /js/: jasper-game-currency-bridge.js. -->
+  <script src="js/app.js?v=squishy-support-clean-20260612"></script>
+  <script src="js/desktop.js?v=device-split-20260612"></script>
+  <script src="js/tablet.js?v=device-split-20260612"></script>
+  <script src="js/mobile.js?v=device-split-20260612"></script>
+</body>
+</html>
