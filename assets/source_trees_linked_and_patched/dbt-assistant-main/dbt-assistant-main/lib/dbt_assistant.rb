@@ -1,0 +1,2 @@
+module DbtAssistant
+end
