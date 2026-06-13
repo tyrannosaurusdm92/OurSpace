@@ -1,0 +1,77 @@
+{
+  "createdAt": "2026-06-13T00:28:32.645375+00:00",
+  "files": [
+    {
+      "path": "data/dbt_skills_catalog.json",
+      "bytes": 284020
+    },
+    {
+      "path": "data/dbt_worksheets_catalog.json",
+      "bytes": 313887
+    },
+    {
+      "path": "data/dbt_combined_catalog.json",
+      "bytes": 567739
+    },
+    {
+      "path": "data/alphabetical_listing_of_mental_disorders.life_impact.json",
+      "bytes": 460378
+    },
+    {
+      "path": "data/autoimmune_diseases_types_symptoms_treatments.life_impact.json",
+      "bytes": 59080
+    },
+    {
+      "path": "data/what_is_spoon_theory.life_impact.json",
+      "bytes": 9066
+    },
+    {
+      "path": "data/a_to_z_disabilities_and_accommodations.life_impact.json",
+      "bytes": 471812
+    },
+    {
+      "path": "data/mobility_guide_mobility_aids.life_impact.json",
+      "bytes": 78608
+    },
+    {
+      "path": "data/types_of_endocrine_disorders.life_impact.json",
+      "bytes": 18743
+    },
+    {
+      "path": "data/manifest.json",
+      "bytes": 1783
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/health_scanner_data.js",
+      "bytes": 1402143
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/dbt_combined_catalog.sanitized.json",
+      "bytes": 567809
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/alphabetical_listing_of_mental_disorders.pdf.json",
+      "bytes": 460378
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/autoimmune_diseases__types_symptoms_treatments.pdf.json",
+      "bytes": 59080
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/what_is_spoon_theory___eric_k._fanaee_md__board_certified_in_pain_medicine_and_anesthesiology.pdf.json",
+      "bytes": 9066
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/a_to_z_of_disabilities_and_accommodations.pdf.json",
+      "bytes": 471812
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/your_complete_mobility_guide__a_simple_guide_to_mobility_aids___southern.pdf.json",
+      "bytes": 78806
+    },
+    {
+      "path": "data/health_behavior_scanner_assets/types_of_endocrine_disorders___ui_health.pdf.json",
+      "bytes": 18743
+    }
+  ]
+}

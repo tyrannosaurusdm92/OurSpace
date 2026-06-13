@@ -1,0 +1,4205 @@
+{
+  "version": "1.0.0",
+  "source_notes": [
+    "DBT module names and summaries are based on the uploaded paraphrased DBT JSON catalog, not reproduced workbook text.",
+    "ADHD support patterns are adapted into local-first helper routines: task capture, tiny steps, reminders, body doubling, transitions, time-blindness support, and shame-free resets.",
+    "Onyx is an emotional-support helper and bridge while Momma waits for care, not a licensed clinician, doctor, emergency service, or substitute for therapy.",
+    "Merged with Momma/Momma person-specific life-impact profile so Onyx can personalize DBT, ADHD, self-care, mobility, trauma-informed, and reward-system support.",
+    "Momma-specific health, disability, trauma, gender, mobility, caregiver, and reward-support data is stored under mommaSquishyPersonSpecificLifeImpactProfile.",
+    "Use Momma-specific entries for accessibility and supportive app behavior only; do not use them to diagnose, shame, restrict autonomy, or replace medical/mental-health care.",
+    "Mobile games list was updated from mobile_friendly_manifest.json: 22 selected bundled games, removed dropdown games excluded, and Momma currency reward metadata preserved.",
+    "Onyx relationship canon expanded: Papa’s best friend and Momma’s devoted baby; sleep places are Papa’s legs, the ottoman, the bookshelf, and his personal Louis Vuitton pillow.",
+    "Onyx mood/response/idles were expanded for deeper communication levels, with at least 20 spoken variants per category in the personality reference file."
+  ],
+  "alertSignupUrl": "https://form.typeform.com/to/trAqvrRG",
+  "alertSignupLabel": "Momma phone + email alert signup",
+  "clinicalSafety": {
+    "shortDisclaimer": "Onyx can coach skills, grounding, routines, and self-care check-ins, but he is not licensed therapy or emergency care.",
+    "crisisMessage": "If Momma might hurt themself, might hurt someone else, is in immediate danger, or cannot stay safe, use emergency help now: call local emergency services, contact a trusted nearby person, or use a crisis line such as 988 in the U.S.",
+    "neverDo": [
+      "diagnose",
+      "tell Momma to stop or change medication",
+      "encourage isolation during danger",
+      "treat self-harm as ordinary chat",
+      "promise confidentiality in emergencies"
+    ],
+    "alwaysDo": [
+      "validate first",
+      "reduce shame",
+      "ask for one tiny safe next step",
+      "encourage professional and emergency support when needed",
+      "use Momma/Onyx language while staying clear and safe"
+    ],
+    "onyxVoiceBoundary": "Use Onyx’s devoted-baby voice for support, but keep crisis, medical, and therapy boundaries explicit."
+  },
+  "dbtModules": [
+    {
+      "module": "General Skills: Orientation and Analyzing Behavior",
+      "module_key": "general_orientation_and_analyzing_behavior",
+      "short": "Orientation to DBT skills training, goals, assumptions, behavior analysis, and problem-solving choices.",
+      "aims": [
+        "Clarify what skills training is for and how it is practiced.",
+        "Frame problems as changeable chains of causes, consequences, and missing links.",
+        "Build a nonjudgmental foundation for learning new behavior."
+      ],
+      "core_targets": [
+        "goals",
+        "guidelines",
+        "assumptions",
+        "biosocial theory",
+        "chain analysis",
+        "missing-links analysis"
+      ]
+    },
+    {
+      "module": "Mindfulness Skills",
+      "module_key": "mindfulness",
+      "short": "Skills for noticing the present moment, entering Wise Mind, reducing judgment, and acting effectively.",
+      "aims": [
+        "Observe, describe, and participate in present experience.",
+        "Practice nonjudgmentally, one-mindfully, and effectively.",
+        "Balance doing and being, acceptance and change, and opposite truths."
+      ],
+      "core_targets": [
+        "Wise Mind",
+        "what skills",
+        "how skills",
+        "loving kindness",
+        "middle path",
+        "being mind",
+        "doing mind"
+      ]
+    },
+    {
+      "module": "Interpersonal Effectiveness Skills",
+      "module_key": "interpersonal_effectiveness",
+      "short": "Skills for asking, saying no, keeping relationships, keeping self-respect, validating, and changing behavior.",
+      "aims": [
+        "Ask for what is wanted and set limits while protecting the relationship and self-respect.",
+        "Build, maintain, and end relationships skillfully.",
+        "Use dialectics, validation, reinforcement, extinction, and problem solving in relationships."
+      ],
+      "core_targets": [
+        "DEAR MAN",
+        "GIVE",
+        "FAST",
+        "Dime Game",
+        "dialectics",
+        "validation",
+        "behavior change"
+      ]
+    },
+    {
+      "module": "Emotion Regulation Skills",
+      "module_key": "emotion_regulation",
+      "short": "Skills for understanding emotions, changing emotional responses, reducing vulnerability, and managing intense emotions.",
+      "aims": [
+        "Name emotions and understand their prompting events, meanings, body cues, actions, and aftereffects.",
+        "Check facts, choose opposite action or problem solving, and reduce emotion intensity.",
+        "Build a life worth living through positives, values, mastery, cope ahead, body care, sleep, and mindful emotion practice."
+      ],
+      "core_targets": [
+        "model of emotions",
+        "check the facts",
+        "opposite action",
+        "problem solving",
+        "ABC",
+        "PLEASE",
+        "sleep hygiene",
+        "mindfulness of emotions"
+      ]
+    },
+    {
+      "module": "Distress Tolerance Skills",
+      "module_key": "distress_tolerance",
+      "short": "Skills for surviving crisis, resisting destructive urges, accepting reality, and handling addiction-related crises.",
+      "aims": [
+        "Survive crisis moments without making the situation worse.",
+        "Accept reality when change is not immediately possible in order to reduce suffering.",
+        "Use abstinence, clear mind, reinforcement, and environment redesign when addictive patterns are active."
+      ],
+      "core_targets": [
+        "STOP",
+        "TIP",
+        "ACCEPTS",
+        "self-soothing",
+        "IMPROVE",
+        "radical acceptance",
+        "turning the mind",
+        "willingness",
+        "clear mind"
+      ]
+    }
+  ],
+  "dbtSkills": {
+    "wise_mind": {
+      "title": "Wise Mind",
+      "module": "Mindfulness",
+      "mood": "thoughtful",
+      "triggers": [
+        "wise mind",
+        "emotion mind",
+        "reasonable mind",
+        "confused",
+        "torn",
+        "decision",
+        "decide"
+      ],
+      "useWhen": "Momma feels split between intense feelings and overthinking.",
+      "onyxSteps": [
+        "Name Emotion Mind: what is your feeling yelling?",
+        "Name Reasonable Mind: what are the facts and needs?",
+        "Ask Wise Mind: what is the next kind-but-effective move?",
+        "Pick one tiny action for the next 2 minutes."
+      ],
+      "tinyStep": "Put one paw on the decision: feeling, fact, next gentle action."
+    },
+    "observe_describe_participate": {
+      "title": "Observe, Describe, Participate",
+      "module": "Mindfulness",
+      "mood": "listening",
+      "triggers": [
+        "mindful",
+        "mindfulness",
+        "observe",
+        "describe",
+        "present",
+        "spiral",
+        "ruminating",
+        "ruminate"
+      ],
+      "useWhen": "Momma is spiraling, dissociating, or stuck in thought loops.",
+      "onyxSteps": [
+        "Observe: notice one body sensation without fixing it.",
+        "Describe: say only facts, like a tiny scientist cat.",
+        "Participate: do one thing fully for 30 seconds."
+      ],
+      "tinyStep": "Describe the room with 3 facts and zero courtroom judgments."
+    },
+    "nonjudgmental_stance": {
+      "title": "Nonjudgmental Stance",
+      "module": "Mindfulness",
+      "mood": "caring",
+      "triggers": [
+        "shame",
+        "judging myself",
+        "bad person",
+        "failure",
+        "worthless",
+        "stupid",
+        "lazy"
+      ],
+      "useWhen": "Momma is attacking themself instead of solving the problem.",
+      "onyxSteps": [
+        "Replace insults with facts.",
+        "Name the consequence without adding 'therefore I am bad.'",
+        "Choose one repair step if repair is needed.",
+        "Return to care, because shame is not a plan."
+      ],
+      "tinyStep": "Change 'I am awful' into 'I am having a hard moment and need one next step.'"
+    },
+    "stop": {
+      "title": "STOP Skill",
+      "module": "Distress Tolerance",
+      "mood": "purring",
+      "triggers": [
+        "stop skill",
+        "impulse",
+        "urge",
+        "about to",
+        "react",
+        "rage",
+        "panic",
+        "send a text",
+        "self destructive",
+        "self-destructive",
+        "blow up"
+      ],
+      "useWhen": "Momma has a strong urge and needs a pause before acting.",
+      "onyxSteps": [
+        "Stop: freeze the action for one moment.",
+        "Take a step back: paws off the keyboard/object/argument.",
+        "Observe: body, urge, facts, danger level.",
+        "Proceed mindfully: choose what protects Future Momma."
+      ],
+      "tinyStep": "Set the thing down and take one slow Onyx-sized breath before doing anything else."
+    },
+    "tipp": {
+      "title": "TIPP Body Reset",
+      "module": "Distress Tolerance",
+      "mood": "purring",
+      "triggers": [
+        "tipp",
+        "panic",
+        "panic attack",
+        "overwhelmed",
+        "dysregulated",
+        "body alarm",
+        "can't calm",
+        "cannot calm",
+        "meltdown",
+        "shutdown"
+      ],
+      "useWhen": "Momma’s body alarm is too loud for thinking skills.",
+      "onyxSteps": [
+        "Temperature: cool face/neck or hold something cold briefly if safe.",
+        "Intense movement: 20-60 seconds of safe movement if possible.",
+        "Paced breathing: longer out-breath than in-breath.",
+        "Paired muscle relaxation: tense and release one muscle group."
+      ],
+      "tinyStep": "Cool your face or hold a cold drink, then exhale longer than you inhale three times."
+    },
+    "self_soothe": {
+      "title": "Self-Soothe With Senses",
+      "module": "Distress Tolerance",
+      "mood": "snuggly",
+      "triggers": [
+        "self soothe",
+        "soothe",
+        "comfort object",
+        "sensory",
+        "too loud",
+        "safe",
+        "snuggle"
+      ],
+      "useWhen": "Momma needs comfort without making the situation worse.",
+      "onyxSteps": [
+        "Sight: find one soft or pretty thing.",
+        "Sound: choose a gentle sound, silence, or Onyx purr energy.",
+        "Touch: blanket, plush, hoodie, pet-safe cat snuggle, or warm drink.",
+        "Taste/smell: mint, tea, snack, or another safe sensory anchor."
+      ],
+      "tinyStep": "Pick one sense and give it one gentle thing."
+    },
+    "radical_acceptance": {
+      "title": "Radical Acceptance",
+      "module": "Distress Tolerance",
+      "mood": "thoughtful",
+      "triggers": [
+        "acceptance",
+        "radical acceptance",
+        "not fair",
+        "shouldn't be",
+        "can't stand",
+        "cannot stand",
+        "this shouldn't"
+      ],
+      "useWhen": "Reality is painful and fighting the fact of it is adding extra suffering.",
+      "onyxSteps": [
+        "Name the fact without approving of it.",
+        "Notice the body fighting reality.",
+        "Say: this is what is here right now.",
+        "Ask: given this reality, what protects me next?"
+      ],
+      "tinyStep": "Say one true sentence: 'This is happening right now, and I can choose one next care step.'"
+    },
+    "check_the_facts": {
+      "title": "Check the Facts",
+      "module": "Emotion Regulation",
+      "mood": "advising_professor",
+      "triggers": [
+        "check the facts",
+        "facts",
+        "is this true",
+        "they hate me",
+        "abandoned",
+        "rejected",
+        "catastrophe",
+        "catastrophizing"
+      ],
+      "useWhen": "Emotion is huge and Momma needs to test the story without invalidating the feeling.",
+      "onyxSteps": [
+        "What happened, camera-only facts?",
+        "What story did the feeling add?",
+        "What evidence supports and does not support it?",
+        "What are 2 other possible explanations?",
+        "What action fits the facts, not the panic?"
+      ],
+      "tinyStep": "Write the camera facts in one sentence. No mind-reading, no verdicts."
+    },
+    "opposite_action": {
+      "title": "Opposite Action",
+      "module": "Emotion Regulation",
+      "mood": "advising_professor",
+      "triggers": [
+        "opposite action",
+        "avoid",
+        "avoidance",
+        "hide",
+        "withdraw",
+        "snap",
+        "lash out",
+        "urge to isolate",
+        "depression"
+      ],
+      "useWhen": "An emotion is valid as a feeling but its action urge would make things worse.",
+      "onyxSteps": [
+        "Name the emotion and action urge.",
+        "Check whether the urge fits the facts and goals.",
+        "Choose the opposite or partly opposite behavior.",
+        "Do it all the way, gently and safely."
+      ],
+      "tinyStep": "Make the opposite action tiny: open the curtain, send one safe text, or sit up for 30 seconds."
+    },
+    "please": {
+      "title": "PLEASE Vulnerability Care",
+      "module": "Emotion Regulation",
+      "mood": "caring",
+      "triggers": [
+        "please skill",
+        "please",
+        "vulnerability",
+        "vulnerable",
+        "didn't sleep",
+        "no sleep",
+        "hungry",
+        "meds",
+        "medicine",
+        "sick",
+        "pain",
+        "hydrate",
+        "water"
+      ],
+      "useWhen": "Basic body needs are making emotions louder.",
+      "onyxSteps": [
+        "Treat physical illness/pain as real.",
+        "Eat something that counts.",
+        "Avoid mood-worsening substances when possible.",
+        "Sleep/rest as safely as possible.",
+        "Exercise or move within limits, even tiny movement."
+      ],
+      "tinyStep": "Food, water, meds-as-prescribed, bathroom, pain need, rest: pick the loudest one."
+    },
+    "dear_man": {
+      "title": "DEAR MAN",
+      "module": "Interpersonal Effectiveness",
+      "mood": "advising_professor",
+      "triggers": [
+        "dear man",
+        "ask for",
+        "say no",
+        "boundary",
+        "boundaries",
+        "request",
+        "need them to",
+        "interpersonal"
+      ],
+      "useWhen": "Momma needs to ask for something, say no, or hold a boundary.",
+      "onyxSteps": [
+        "Describe facts briefly.",
+        "Express feelings/needs.",
+        "Assert the ask or boundary clearly.",
+        "Reinforce why it helps.",
+        "Stay Mindful, Appear confident, Negotiate if needed."
+      ],
+      "tinyStep": "Write: 'When __ happened, I felt __. I need/request __.'"
+    },
+    "give_fast": {
+      "title": "GIVE + FAST",
+      "module": "Interpersonal Effectiveness",
+      "mood": "thoughtful",
+      "triggers": [
+        "give",
+        "fast",
+        "relationship",
+        "self respect",
+        "people pleasing",
+        "people-pleasing",
+        "conflict",
+        "apologize too much"
+      ],
+      "useWhen": "Momma wants to protect both the relationship and self-respect.",
+      "onyxSteps": [
+        "GIVE: gentle, interested, validating, easy manner.",
+        "FAST: fair, no over-apologizing, stick to values, truthful.",
+        "Balance warmth with not abandoning yourself."
+      ],
+      "tinyStep": "Remove one unnecessary apology and keep one validating sentence."
+    },
+    "chain_analysis": {
+      "title": "Chain Analysis",
+      "module": "General Skills",
+      "mood": "advising_professor",
+      "triggers": [
+        "chain analysis",
+        "why did i",
+        "what happened",
+        "behavior chain",
+        "relapse",
+        "pattern",
+        "triggered"
+      ],
+      "useWhen": "Momma wants to understand a behavior without shame and find where to change the chain next time.",
+      "onyxSteps": [
+        "Name the target behavior neutrally.",
+        "List vulnerability factors: sleep, food, meds, pain, stress, sensory load.",
+        "List prompting event and links: thoughts, body, urges, actions.",
+        "Name consequences.",
+        "Choose missing skills and one repair/prevention step."
+      ],
+      "tinyStep": "Start with: 'The behavior I want to understand is __, and the first link was __.'"
+    },
+    "diary_card": {
+      "title": "DBT Daily Diary Card",
+      "module": "Daily Tracking",
+      "mood": "listening",
+      "triggers": [
+        "diary card",
+        "daily card",
+        "daily diary",
+        "track my day",
+        "dbt card"
+      ],
+      "useWhen": "Momma needs a quick structured check-in.",
+      "onyxSteps": [
+        "Rate emotions 0-5.",
+        "Check urges/actions: self-harm, substance, avoidance, anger, contact seeking, etc. only if relevant.",
+        "Check body care: food, water, meds-as-prescribed, hygiene, sleep/rest.",
+        "Choose skills used or one skill to try next.",
+        "Name one win, even tiny."
+      ],
+      "tinyStep": "Fill just one field first: emotion, urge, body need, skill, or tiny win."
+    }
+  },
+  "adhdTools": {
+    "tiny_task_splitter": {
+      "title": "Tiny Task Splitter",
+      "mood": "advising_professor",
+      "triggers": [
+        "split task",
+        "break down",
+        "break it down",
+        "too many steps",
+        "task feels big",
+        "overwhelming task",
+        "adhd task"
+      ],
+      "useWhen": "A task is too big, vague, or emotionally spicy to start.",
+      "onyxSteps": [
+        "Define done in one sentence.",
+        "Find the visible first object or screen.",
+        "Make step 1 under two minutes.",
+        "Add a reward/checkmark after every tiny step.",
+        "Stop before shame starts yelling; restart tiny."
+      ],
+      "template": [
+        "Name the task:",
+        "Done means:",
+        "Supplies/open tabs needed:",
+        "Tiny step 1:",
+        "Tiny step 2:",
+        "Reward after each step:"
+      ]
+    },
+    "body_double": {
+      "title": "Body Double Mode",
+      "mood": "snuggly",
+      "triggers": [
+        "body double",
+        "sit with me",
+        "stay with me",
+        "keep me company",
+        "can't start",
+        "cannot start"
+      ],
+      "useWhen": "Momma can do the thing with quiet company but gets stuck alone.",
+      "onyxSteps": [
+        "Pick one tiny action.",
+        "Set a soft 5-10 minute container.",
+        "Onyx 'sits' nearby and asks for one check-in when done.",
+        "Reward any start, not just completion."
+      ],
+      "template": [
+        "I am sitting with you.",
+        "For the next 5 minutes, only do:",
+        "When done, come back and tell me: started / paused / finished."
+      ]
+    },
+    "dopamine_menu": {
+      "title": "Dopamine Menu",
+      "mood": "purring",
+      "triggers": [
+        "dopamine",
+        "bored",
+        "understimulated",
+        "no motivation",
+        "motivation",
+        "reward"
+      ],
+      "useWhen": "The brain needs a safe spark before or after a task.",
+      "onyxSteps": [
+        "Choose one tiny fun input: music, sensory object, drink, sticker/checkmark, five-minute game, pet photo.",
+        "Pair it with a tiny task start.",
+        "Keep it small enough that it doesn't steal the whole day."
+      ],
+      "template": [
+        "Starter reward:",
+        "Task nibble:",
+        "Finish reward:"
+      ]
+    },
+    "transition_bridge": {
+      "title": "Transition Bridge",
+      "mood": "thoughtful",
+      "triggers": [
+        "transition",
+        "switch tasks",
+        "can't switch",
+        "cannot switch",
+        "stuck scrolling",
+        "stuck in bed",
+        "time to move"
+      ],
+      "useWhen": "Starting, stopping, or switching tasks feels physically hard.",
+      "onyxSteps": [
+        "Announce the transition kindly.",
+        "Do a body cue: sit up, feet down, sip water, bathroom.",
+        "Move one object toward the next task.",
+        "Use a countdown or song as a bridge."
+      ],
+      "template": [
+        "Leaving:",
+        "Going to:",
+        "Bridge cue:",
+        "First object to move:"
+      ]
+    },
+    "reminder_loop": {
+      "title": "Reminder Loop",
+      "mood": "advising_professor",
+      "triggers": [
+        "remind me",
+        "reminder",
+        "forgot",
+        "forget",
+        "time blindness",
+        "phone alert",
+        "email alert",
+        "alerts"
+      ],
+      "useWhen": "Momma or Momma needs outside prompts because memory is not the same thing as caring.",
+      "onyxSteps": [
+        "Write the reminder in plain language.",
+        "Choose where it lives: phone, email, calendar, sticky note, or caregiver alert.",
+        "Use repeating reminders for essentials.",
+        "Stop reminders when task is done, not when shame appears."
+      ],
+      "template": [
+        "Reminder:",
+        "When/frequency:",
+        "Where it should alert:",
+        "Done condition:"
+      ]
+    },
+    "shame_free_reset": {
+      "title": "Shame-Free Reset",
+      "mood": "caring",
+      "triggers": [
+        "reset",
+        "fell behind",
+        "messy",
+        "i failed",
+        "i'm lazy",
+        "lazy",
+        "can't do anything",
+        "cannot do anything"
+      ],
+      "useWhen": "The day went sideways and Momma needs restart, not punishment.",
+      "onyxSteps": [
+        "Declare the old plan expired.",
+        "Pick body basics first.",
+        "Choose one visible reset action.",
+        "Lower the bar until it is reachable."
+      ],
+      "template": [
+        "Expired plan:",
+        "Body need:",
+        "One visible reset:",
+        "Good-enough finish line:"
+      ]
+    }
+  },
+  "diaryCardTemplate": {
+    "title": "Onyx DBT Daily Diary Card",
+    "fields": [
+      "Date / time",
+      "Emotion ratings 0-5: sadness, anger, fear/anxiety, shame, joy, numbness",
+      "Body care: food, water, meds as prescribed, hygiene, bathroom, pain, sleep/rest",
+      "Urges 0-5: avoid, isolate, lash out, self-destruct, contact-seek, spend, use substances, other",
+      "Actions taken: what actually happened?",
+      "Skills used: Wise Mind, STOP, TIPP, Check the Facts, Opposite Action, Self-Soothe, DEAR MAN/GIVE/FAST, PLEASE, Chain Analysis",
+      "One tiny win",
+      "One repair or next care step"
+    ]
+  },
+  "crisisTriggers": [
+    "kill myself",
+    "suicide",
+    "suicidal",
+    "end it all",
+    "hurt myself",
+    "harm myself",
+    "self harm",
+    "self-harm",
+    "cut myself",
+    "overdose",
+    "don't want to live",
+    "do not want to live",
+    "can't stay safe",
+    "cannot stay safe",
+    "not safe",
+    "danger to myself",
+    "danger to someone",
+    "hurt someone",
+    "harm someone",
+    "immediate danger",
+    "severe allergic reaction",
+    "breathing trouble",
+    "throat swelling",
+    "chest pain",
+    "fainting",
+    "sudden severe swelling"
+  ],
+  "rewardSystem": {
+    "catalog": "jasper_reward_system_catalog.json",
+    "summary": "Generous copper/silver/gold/platinum rewards for DBT, severe ADHD tools, self-care tiny steps, journaling, decompression, asking for help, talking with Onyx, attachment/BPD pattern work, and mobile games."
+  },
+  "attachmentBpdSupport": {
+    "description": "Skill-based support for attachment alarm patterns, underlying reactive attachment wounds, severe ADHD, and quiet/petulant/self-destructive BPD-style states. This is not diagnosis or therapy; it is a skills menu and safety bridge.",
+    "profiles": {
+      "underlying_reactive_attachment_alarm": {
+        "label": "Underlying Reactive Attachment / Abandonment Alarm",
+        "whenItShowsUp": [
+          "fear of being left",
+          "testing whether someone cares",
+          "cling/push-pull urges",
+          "panic when connection feels uncertain"
+        ],
+        "onyxPlan": [
+          "Name it as attachment alarm, not proof.",
+          "Check the facts for actual danger vs old wound activation.",
+          "Use one body-downshift skill before texting/calling repeatedly.",
+          "Ask for reassurance or closeness directly without threats/tests.",
+          "Do one self-anchor while waiting."
+        ]
+      },
+      "severe_adhd": {
+        "label": "Severe ADHD / Executive Dysfunction",
+        "whenItShowsUp": [
+          "task paralysis",
+          "time blindness",
+          "shame spiral",
+          "too many steps hidden inside one task",
+          "transition stuckness"
+        ],
+        "onyxPlan": [
+          "Externalize the task.",
+          "Make the first step visible and tiny.",
+          "Reward starting, not finishing.",
+          "Use body doubling or a 2-minute timer.",
+          "Reset without shame if the plan fails."
+        ]
+      },
+      "discouraged_quiet_bpd": {
+        "label": "Discouraged / Quiet BPD State",
+        "whenItShowsUp": [
+          "worthlessness",
+          "chronic loneliness",
+          "intense dependence",
+          "fear of rejection",
+          "internalized distress"
+        ],
+        "onyxPlan": [
+          "Validate the loneliness without treating it as a fact about worth.",
+          "Use Wise Mind and self-validation.",
+          "Make one safe connection bid.",
+          "Do one self-care action that proves Momma/Momma matters.",
+          "Avoid disappearing as punishment to self."
+        ]
+      },
+      "petulant_bpd": {
+        "label": "Petulant BPD State",
+        "whenItShowsUp": [
+          "explosive anger",
+          "possessiveness",
+          "control urges",
+          "severe dissatisfaction",
+          "relationship threat response"
+        ],
+        "onyxPlan": [
+          "STOP before the message/action.",
+          "TIPP or paced breathing until the body drops intensity.",
+          "Check the Facts before accusation.",
+          "Use DEAR MAN for the request and GIVE/FAST for relationship + self-respect.",
+          "Repair quickly if claws came out."
+        ]
+      },
+      "self_destructive_bpd": {
+        "label": "Self-Destructive BPD State",
+        "whenItShowsUp": [
+          "self-hatred",
+          "bitterness turned inward",
+          "risky urges",
+          "substance/risk urges",
+          "self-harm or suicidal threats/urges"
+        ],
+        "onyxPlan": [
+          "Treat safety as the first task.",
+          "Move away from unsafe items/places when possible.",
+          "Use TIPP and urge delay.",
+          "Tell a trusted person or live crisis support that safety is shaky.",
+          "No shame lecture; survival first, analysis later."
+        ]
+      }
+    }
+  },
+  "mobileGames": [
+    {
+      "id": "angrybirds",
+      "name": "Angrybirds",
+      "file": "games/angrybirds.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 14147249,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "baconmaydie",
+      "name": "Baconmaydie",
+      "file": "games/baconmaydie.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 6131786,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "badicecream3",
+      "name": "Badicecream 3",
+      "file": "games/badicecream3.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 5069670,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "badpiggies",
+      "name": "Badpiggies",
+      "file": "games/badpiggies.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 10002073,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "bubbleshooter",
+      "name": "Bubbleshooter",
+      "file": "games/bubbleshooter.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 7076307,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "candycrush",
+      "name": "Candycrush",
+      "file": "games/candycrush.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 4528237,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "capybaraclicker",
+      "name": "Capybaraclicker",
+      "file": "games/capybaraclicker.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 13528780,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "ducklife5",
+      "name": "Ducklife 5",
+      "file": "games/ducklife5.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 14093374,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "escapingtheprison",
+      "name": "Escapingtheprison",
+      "file": "games/escapingtheprison.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 19784081,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "fancypantsadventure2",
+      "name": "Fancypantsadventure 2",
+      "file": "games/fancypantsadventure2.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 21462485,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "flappybird",
+      "name": "Flappybird",
+      "file": "games/flappybird.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 4341153,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "fnaf",
+      "name": "Fnaf",
+      "file": "games/fnaf.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 19627739,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": true
+      }
+    },
+    {
+      "id": "fnaf4",
+      "name": "Fnaf 4",
+      "file": "games/fnaf4.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 23273095,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": true
+      }
+    },
+    {
+      "id": "fruitninja",
+      "name": "Fruitninja",
+      "file": "games/fruitninja.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 8404880,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "minesweeper",
+      "name": "Minesweeper",
+      "file": "games/minesweeper.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 1230169,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "noobminer",
+      "name": "Noobminer",
+      "file": "games/noobminer.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 2599812,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "plantsvszombies",
+      "name": "Plantsvszombies",
+      "file": "games/plantsvszombies.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 21035174,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "tabletennisworldtour",
+      "name": "Tabletennisworldtour",
+      "file": "games/tabletennisworldtour.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 3919057,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "tinyfishing",
+      "name": "Tinyfishing",
+      "file": "games/tinyfishing.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 2451973,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "tunnelrush",
+      "name": "Tunnelrush",
+      "file": "games/tunnelrush.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 17360410,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "webecomewhatwebehold",
+      "name": "Webecomewhatwebehold",
+      "file": "games/webecomewhatwebehold.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 8045091,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    },
+    {
+      "id": "zombierush",
+      "name": "Zombierush",
+      "file": "games/zombierush.html",
+      "reason": "Bundled in Momma's Rewards and patched with automatic in-game Momma currency rewards.",
+      "bytes": 2826801,
+      "dropdown_enabled": true,
+      "squishy_currency": {
+        "automatic": true,
+        "time_logging": false,
+        "reward_sources": [
+          "launch",
+          "in-game actions",
+          "score/points/coins/stars/gold changes when detectable",
+          "level/wave/night progress when detectable",
+          "win/level-complete signals when detectable"
+        ],
+        "extra_hard_game_bonus": false
+      }
+    }
+  ],
+  "merge_metadata": {
+    "schema_name": "onyx_dbt_adhd_support_catalog_with_jasper_squishy_life_impact_profile",
+    "merged_at_utc": "2026-06-12T22:11:08Z",
+    "output_filename": "onyx_dbt_adhd_support_catalog.json",
+    "merge_strategy": [
+      "Preserved the original Onyx DBT/ADHD support catalog top-level structure.",
+      "Added the full Momma/Squishy person-specific life-impact JSON under mommaSquishyPersonSpecificLifeImpactProfile.",
+      "Added lightweight crosswalk helpers for app code so Onyx can connect skills, rewards, and support language to Momma-specific needs.",
+      "No existing DBT skills, ADHD tools, crisis triggers, reward summary, attachment/BPD support, or mobile game entries were removed.",
+      "Replaced the old mobileGames array with the selected_games array from mobile_friendly_manifest.json, including bytes and squishy_currency metadata.",
+      "Excluded games listed in manifest removed_from_dropdown: fnaf2.html, fnaf3.html, theyarecoming.html.",
+      "Mobile game dropdown now contains 22 selected games."
+    ],
+    "source_files": [
+      {
+        "uploaded_name": "onyx_dbt_adhd_support_catalog.json",
+        "role": "base_catalog",
+        "sha256_before_merge": "2c9fb49589e595a69849fde337e5d97d8f2156255c49a1b5018d2b348cda6295"
+      },
+      {
+        "uploaded_name": "jasper_squishy_person_specific_life_impact.json",
+        "role": "person_specific_profile",
+        "sha256_before_merge": "cb70cd3311fbb30b099907f5264a29d8e4c9edc13fce294cd6b1193d5c3e5fa0"
+      },
+      {
+        "uploaded_name": "mobile_friendly_manifest.json",
+        "role": "mobile_games_manifest",
+        "sha256_before_update": "20a0767ebf033a507cfd6c631b895161b2e9f6952dceb45b2f19c1bf59095a81"
+      },
+      {
+        "uploaded_name": "onyx_dbt_adhd_support_catalog.json",
+        "role": "catalog_before_mobile_games_update",
+        "sha256_before_update": "2c9fb49589e595a69849fde337e5d97d8f2156255c49a1b5018d2b348cda6295"
+      }
+    ],
+    "mobile_games_updated_at_utc": "2026-06-12T22:19:34Z",
+    "mobile_games_manifest": {
+      "uploaded_name": "mobile_friendly_manifest.json",
+      "package": "Momma Rewards Mobile Games",
+      "manifest_updated": "2026-06-12T20:23:43.649014+00:00",
+      "selection_method": "Actual bundled games in this zip, with removed games excluded from the app dropdown.",
+      "selected_count": 22,
+      "removed_from_dropdown": [
+        "fnaf2.html",
+        "fnaf3.html",
+        "theyarecoming.html"
+      ],
+      "reward_metadata_preserved": true,
+      "time_logging": false,
+      "currency_reward_mode": "automatic_in_game_squishy_currency_rewards"
+    }
+  },
+  "mommaSquishyPersonSpecificLifeImpactProfile": {
+    "schema_name": "jasper_squishy_person_specific_life_impact_profile",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-12T22:08:48Z",
+    "person": {
+      "display_name": "Momma",
+      "nickname": "Momma",
+      "pronouns": [
+        "they",
+        "them",
+        "theirs"
+      ],
+      "gender_context": {
+        "identity": "nonbinary",
+        "affirming_language": [
+          "Uses they/them pronouns.",
+          "May use or enjoy feminine titles or terms of endearment from trusted people, such as wife, momma, and baby girl.",
+          "Do not force a choice between nonbinary pronouns and feminine-coded affection; both can be valid for Momma."
+        ],
+        "privacy_rule": "Use affirming terms only in contexts where Momma has consented to them. In formal or public contexts, default to Momma and they/them unless Momma specifies otherwise."
+      },
+      "relationship_and_role_context": [
+        "Caregiver for a disabled partner.",
+        "Has their own disabilities, chronic health needs, trauma history, neurodivergence, and support needs.",
+        "Needs support that treats caregiving and self-care as real work, not as moral worth tests."
+      ]
+    },
+    "scope_and_intent": {
+      "purpose": "A person-specific JSON for Momma/Momma that selects relevant items from the uploaded life-impact JSON files and adds Momma-specific support rules for a self-care, DBT, reward, schedule, and helper-bot site.",
+      "not_a_medical_record": true,
+      "not_medical_or_legal_advice": true,
+      "diagnosis_source_note": "All conditions and life experiences are treated as user-stated context for support design. This JSON is not verifying diagnoses, severity, legal status, or treatment plans.",
+      "content_boundary": "Use this for accessibility, pacing, compassionate prompts, self-care planning, and app behavior. Do not use it to pressure Momma, deny autonomy, replace clinical care, or make emergency decisions."
+    },
+    "source_archive": {
+      "uploaded_archive_name": "health_life_impact_json_files.zip",
+      "selection_rule": "Only entries relevant to the items requested for Momma were selected; unrelated source entries were omitted.",
+      "source_manifest": {
+        "folder": "/mnt/data/health_life_impact_json",
+        "generated_at_utc": "2026-06-12T10:18:08Z",
+        "files": [
+          {
+            "file_name": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "entry_count": 223,
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "sha256": "76f0bb2461a19b0992baca1b0f58bc0a65058761c77d01c2dab9a14b19a28538"
+          },
+          {
+            "file_name": "autoimmune_diseases_types_symptoms_treatments.life_impact.json",
+            "entry_count": 24,
+            "source_pdf": "Autoimmune Diseases_ Types, Symptoms & Treatments.pdf",
+            "sha256": "aa7ed1ee532ffa1aba9d1d88af597d7c8d6e30734751c1b4f4dd2379288b4830"
+          },
+          {
+            "file_name": "what_is_spoon_theory.life_impact.json",
+            "entry_count": 5,
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "sha256": "2929822bc97ed067b3b9eb6e741fe1f3a7377cfdb90f30179259cc08f07a4eb9"
+          },
+          {
+            "file_name": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "entry_count": 234,
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "sha256": "41668f3c71942077d5309e20e6906d00b3b380f385ffc1af3c6f96e08b9fc67b"
+          },
+          {
+            "file_name": "mobility_guide_mobility_aids.life_impact.json",
+            "entry_count": 34,
+            "source_pdf": "Your Complete Mobility Guide_ A Simple Guide to Mobility Aids _ Southern.pdf",
+            "sha256": "0deb61e30649946d3d95f14725244f36b14b2da86d8da4d792cf3f9c6ee9c0ad"
+          },
+          {
+            "file_name": "types_of_endocrine_disorders.life_impact.json",
+            "entry_count": 8,
+            "source_pdf": "Types of Endocrine Disorders _ UI Health.pdf",
+            "sha256": "0b510ebea56ac3406e653b16d507b02e4ceac7037bb3886191832cfb6397937e"
+          }
+        ]
+      },
+      "source_match_types": {
+        "direct_source_entry": "The uploaded JSONs contained a direct or near-direct entry for this item.",
+        "related_source_entry_plus_user_added": "The uploaded JSONs did not contain the exact item, but related entries were used as source support and Momma-specific details were added.",
+        "user_added_context": "The item was added because the user requested it; it may not appear in the uploaded JSON source set."
+      }
+    },
+    "recent_terminology_notes": [
+      {
+        "topic": "PCOS / PMOS",
+        "note": "The JSON uses PMOS as Momma's preferred/current terminology, while retaining PCOS as an alias for backward compatibility and search.",
+        "source_note": "Recent 2026 medical/endocrine sources describe Polyendocrine Metabolic Ovarian Syndrome (PMOS) as the new name for the condition previously known as Polycystic Ovary Syndrome (PCOS).",
+        "web_sources_consulted": [
+          {
+            "name": "Endocrine Society press release",
+            "date": "2026-05-12",
+            "url": "https://www.endocrine.org/news-and-advocacy/news-room/2026/pcos-name-change"
+          },
+          {
+            "name": "Mayo Clinic PMOS page",
+            "date": "2026-05-21",
+            "url": "https://www.mayoclinic.org/diseases-conditions/pcos/symptoms-causes/syc-20353439"
+          },
+          {
+            "name": "PubMed / The Lancet record",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42119588/"
+          }
+        ]
+      }
+    ],
+    "mobility_aids": [
+      {
+        "id": "shower_chair",
+        "label": "Shower chair",
+        "user_terms_or_aliases": [
+          "bath chair",
+          "shower seat"
+        ],
+        "category": "mobility_aid / bathroom_safety",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_use_of_mobility_aids",
+            "source_name": "Use of Mobility Aids",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_sitting",
+            "source_name": "Sitting",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_decreased_stamina_fatigue",
+            "source_name": "Decreased Stamina/Fatigue",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Included as an active support option for showering/bathing.",
+          "Especially relevant when pain, fatigue, dizziness, ankle instability, heat sensitivity, dysphoria, or post-shower crashes make standing unsafe or exhausting."
+        ],
+        "life_limitations_or_friction_points": [
+          "Showering can cost more energy than it appears because it combines standing, temperature exposure, bending, reaching, sensory input, body awareness, privacy, and cleanup.",
+          "Without a seated option, Momma may delay hygiene until symptoms, dysphoria, or exhaustion become worse."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Normalize the shower chair as a comfort and safety tool, not a sign of failure.",
+          "Offer seated shower routines, towel/robe staging, water bottle nearby, post-shower rest, and reward for each tiny step.",
+          "Make bathing alternatives count too: washcloth bath, hair-only wash, face/body wipes, dry shampoo, or changing clothes."
+        ],
+        "app_support_rules": [
+          "Prompt: 'Seated shower counts. Tiny wash counts. You do not have to earn care by suffering through standing.'",
+          "Break into microsteps: gather clothes, set towel, sit, wash one body zone, rinse, dry, rest.",
+          "Never shame skipped showers; offer the smallest safe reset."
+        ],
+        "reward_system_notes": [
+          "Award for preparation, starting, partial completion, cleanup, and post-shower decompression.",
+          "Give extra reward if Momma chooses the safety tool before they crash."
+        ],
+        "onyx_helper_notes": [
+          "Use warm, body-neutral encouragement. Avoid making hygiene sound like a character flaw."
+        ],
+        "safety_or_sensitivity_cautions": [
+          "If dizziness, faintness, allergic reactions, severe pain, or fall risk is present, encourage pausing and getting help."
+        ],
+        "tags": [
+          "bathroom_safety",
+          "energy_pacing",
+          "fall_prevention",
+          "self_care"
+        ]
+      },
+      {
+        "id": "manual_wheelchair_infrequent_refuses",
+        "label": "Manual wheelchair",
+        "user_terms_or_aliases": [
+          "wheelchair",
+          "manual chair",
+          "mobility aid"
+        ],
+        "category": "mobility_aid / ambulation_support",
+        "source_basis": [
+          {
+            "source_file": "mobility_guide_mobility_aids.life_impact.json",
+            "source_pdf": "Your Complete Mobility Guide_ A Simple Guide to Mobility Aids _ Southern.pdf",
+            "source_entry_id": "mobility_aid_wheelchair_manual_wheelchair",
+            "source_name": "Manual Wheelchair",
+            "source_group": "mobility aid - wheelchair",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "mobility_guide_mobility_aids.life_impact.json",
+            "source_pdf": "Your Complete Mobility Guide_ A Simple Guide to Mobility Aids _ Southern.pdf",
+            "source_entry_id": "mobility_aid_manual_wheelchair_type_standard_wheelchair",
+            "source_name": "Standard Wheelchair",
+            "source_group": "mobility aid - manual wheelchair type",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_use_of_mobility_aids",
+            "source_name": "Use of Mobility Aids",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_walking",
+            "source_name": "Walking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_decreased_stamina_fatigue",
+            "source_name": "Decreased Stamina/Fatigue",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_specific_use_pattern",
+        "user_specific_notes": [
+          "User notes Momma uses a manual wheelchair infrequently and refuses to use it.",
+          "Refusal may come from stigma, fear of being seen as 'not disabled enough,' pride, trauma around dependence, body-size access worries, inconvenience, or prior invalidation."
+        ],
+        "life_limitations_or_friction_points": [
+          "Avoiding a wheelchair can increase pain, fatigue, injury risk, missed outings, and post-activity crashes.",
+          "Using a wheelchair can also create access barriers: stairs, narrow aisles, inaccessible bathrooms, crowded spaces, transport issues, and social attention."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Frame the wheelchair as a freedom tool: it can save energy for the actual goal instead of spending all energy on walking.",
+          "Offer choice-based prompts: 'Would the chair make this easier today?' rather than commands.",
+          "Plan wheelchair-friendly routes, breaks, and exit options before errands or outings."
+        ],
+        "app_support_rules": [
+          "Do not nag. Offer a shame-free toggle: walking, chair, seated breaks, or skip/reschedule.",
+          "When Momma refuses, ask what barrier is loudest: pride, access, embarrassment, pain, logistics, or fear.",
+          "Count choosing a mobility aid as smart pacing and reward it."
+        ],
+        "reward_system_notes": [
+          "Reward energy-preserving choices, not just pushing through.",
+          "Give a 'future-you protection' bonus for using mobility aids during high-pain/high-fatigue days."
+        ],
+        "onyx_helper_notes": [
+          "Onyx can say: 'Tools are not defeat, Momma. Tools are how royalty gets carried through the kingdom.'"
+        ],
+        "safety_or_sensitivity_cautions": [
+          "Avoid wording that implies Momma is helpless, lazy, dramatic, or exaggerating."
+        ],
+        "tags": [
+          "mobility",
+          "wheelchair",
+          "ambulation",
+          "energy_pacing",
+          "stigma_reduction"
+        ]
+      }
+    ],
+    "health_and_disability_entries": [
+      {
+        "id": "mast_cell_activation_syndrome",
+        "label": "Mast cell activation syndrome",
+        "user_terms_or_aliases": [
+          "MCAS",
+          "mast cell issues"
+        ],
+        "category": "immune / allergic_response / trigger_sensitivity",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_allergies",
+            "source_name": "Allergies",
+            "source_group": "physical / chronic health disability",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_food_allergy",
+            "source_name": "Food Allergy",
+            "source_group": "physical / chronic health disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_fragrance_sensitivity",
+            "source_name": "Fragrance Sensitivity",
+            "source_group": "physical / chronic health disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_multiple_chemical_sensitivity",
+            "source_name": "Multiple Chemical Sensitivity",
+            "source_group": "physical / chronic health disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_temperature_sensitivity",
+            "source_name": "Temperature Sensitivity",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_dietary_needs",
+            "source_name": "Dietary Needs",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Exact MCAS entry was not found in the uploaded JSONs, so related allergy, food-allergy, fragrance/chemical sensitivity, temperature sensitivity, and dietary-needs entries were used as support context."
+        ],
+        "life_limitations_or_friction_points": [
+          "Symptoms and triggers may be unpredictable, making food, hygiene products, cleaning products, temperature, smells, stress, and outings feel risky.",
+          "Can make meal planning, hydration, errands, appointments, social visits, and self-care require extra checking and recovery time.",
+          "Fear of reactions can increase avoidance and anxiety."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Keep a safe-food/safe-product list and let the app use it for grocery and self-care suggestions.",
+          "Use low-fragrance/fragrance-free defaults where possible.",
+          "Build routines that include trigger checking, rest after exposure, hydration, and easy safe snacks.",
+          "Track reactions without blame so patterns can be discussed with clinicians."
+        ],
+        "app_support_rules": [
+          "Never suggest random new foods, scents, supplements, or skincare as 'easy self-care' without a safe-list check.",
+          "Give Momma a 'safe fallback' option when a task has trigger risk."
+        ],
+        "reward_system_notes": [
+          "Reward preventive work: checking ingredients, choosing safe products, packing water/snacks, asking for fragrance-free space."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "For signs of severe allergic reaction, breathing difficulty, throat/tongue swelling, fainting, or rapidly worsening symptoms, prompt immediate emergency help."
+        ],
+        "tags": [
+          "immune",
+          "allergy",
+          "fragrance_free",
+          "food_safety",
+          "trigger_tracking"
+        ]
+      },
+      {
+        "id": "pcos_pmos",
+        "label": "Polyendocrine Metabolic Ovarian Syndrome",
+        "user_terms_or_aliases": [
+          "PMOS",
+          "PCOS",
+          "Polycystic Ovary Syndrome",
+          "Polyendocrine Metabolic Ovarian Syndrome"
+        ],
+        "category": "endocrine / metabolic / reproductive_health",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_dietary_needs",
+            "source_name": "Dietary Needs",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_diabetes",
+            "source_name": "Diabetes",
+            "source_group": "physical / chronic health disability",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added_and_recent_web_terminology",
+        "user_specific_notes": [
+          "Use PMOS as primary terminology and PCOS as a search alias.",
+          "PMOS may overlap with insulin resistance, cycle symptoms, pain/fatigue, acne/hair changes, fertility concerns, weight stigma, and body dysphoria."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can affect energy, appetite, blood sugar steadiness, mood, body image, menstrual/cycle symptoms, pain, sleep, and medical scheduling.",
+          "Weight stigma and gendered medical care can make appointments emotionally harder, especially with trauma and gender dysphoria."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use no-shame food, hydration, movement, and medication/reminder supports.",
+          "Allow symptom logs for cycle, pain, appetite, mood, energy, and blood-sugar-related patterns.",
+          "Use gender-affirming wording rather than assuming womanhood."
+        ],
+        "app_support_rules": [
+          "Avoid weight-loss moralizing. Focus on comfort, steadiness, access, and symptom support.",
+          "Prompt gentle food/hydration check-ins without turning eating into punishment or perfection."
+        ],
+        "reward_system_notes": [
+          "Reward eating enough, hydrating, safe snack planning, attending appointments, and logging symptoms if Momma chooses."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Do not provide treatment instructions; suggest discussing symptom changes, medication questions, fertility concerns, or metabolic concerns with a clinician."
+        ],
+        "tags": [
+          "endocrine",
+          "metabolic",
+          "blood_sugar",
+          "gender_affirming_healthcare"
+        ]
+      },
+      {
+        "id": "ehlers_danlos_hypermobile",
+        "label": "Ehlers-Danlos syndrome, hypermobile type",
+        "user_terms_or_aliases": [
+          "hEDS",
+          "hypermobile EDS",
+          "Ehlers-Danlos Syndrome"
+        ],
+        "category": "connective_tissue / chronic_pain / mobility",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_ehlers_danlos_syndrome",
+            "source_name": "Ehlers-Danlos Syndrome",
+            "source_group": "physical / chronic health disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_chronic_pain",
+            "source_name": "Chronic Pain",
+            "source_group": "physical / chronic health disability",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_walking",
+            "source_name": "Walking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_bending",
+            "source_name": "Bending",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_decreased_stamina_fatigue",
+            "source_name": "Decreased Stamina/Fatigue",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_specific_subtype",
+        "user_specific_notes": [
+          "Hypermobile EDS can make joints unreliable even when the disability is invisible.",
+          "Task ability may vary drastically by day, joint, injury, sleep, weather, hormones, stress, and prior exertion."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can increase pain, joint instability, fatigue, clumsiness, injury risk, postural strain, and recovery time.",
+          "Standing chores, showering, stairs, grocery trips, carrying items, bending, and repetitive tasks may be disproportionately expensive."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use pacing, seated options, braces/supports if already approved, ergonomic positioning, lighter loads, carts, delivery, and task splitting.",
+          "Treat pain and fatigue as data, not disobedience."
+        ],
+        "app_support_rules": [
+          "Offer seated, no-bend, low-reach, and low-carry versions of chores.",
+          "Default to microtasks with rest between steps.",
+          "When pain is high, convert task to 'prepare one thing' or 'ask for help.'"
+        ],
+        "reward_system_notes": [
+          "Reward joint-safe choices and stopping before injury.",
+          "Do not only reward completed chores; reward pacing and body protection."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid encouraging stretching, exercise, or pushing through pain as generic advice."
+        ],
+        "tags": [
+          "connective_tissue",
+          "hypermobility",
+          "pain",
+          "fatigue",
+          "pacing"
+        ]
+      },
+      {
+        "id": "prediabetes",
+        "label": "Pre-diabetes",
+        "user_terms_or_aliases": [
+          "prediabetes",
+          "pre-diabetes",
+          "blood sugar risk"
+        ],
+        "category": "metabolic / blood_sugar",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_diabetes",
+            "source_name": "Diabetes",
+            "source_group": "physical / chronic health disability",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_dietary_needs",
+            "source_name": "Dietary Needs",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Use as blood-sugar support context, not as a diabetes diagnosis."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can add pressure around food, appointments, labs, fatigue, thirst/hydration, energy dips, and shame around eating.",
+          "Stress, disrupted sleep, inconsistent meals, and executive dysfunction can make routines harder."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Encourage regular meals/snacks, hydration, appointment reminders, and symptom logs without shame.",
+          "Use safe, accessible food planning rather than perfection-based diet rules."
+        ],
+        "app_support_rules": [
+          "Prompt food and hydration as care, not as punishment.",
+          "Avoid moral labels like good/bad foods."
+        ],
+        "reward_system_notes": [
+          "Reward breakfast/snack, water, planning accessible meals, and checking in with body signals."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Do not give individualized nutrition or medication advice; encourage clinician/dietitian guidance for specific plans."
+        ],
+        "tags": [
+          "blood_sugar",
+          "food_support",
+          "no_shame"
+        ]
+      },
+      {
+        "id": "scoliosis",
+        "label": "Scoliosis",
+        "user_terms_or_aliases": [
+          "spinal curvature",
+          "back impairment"
+        ],
+        "category": "spine / musculoskeletal / pain",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "mobility_musculoskeletal_neuromotor_disability_back_impairment",
+            "source_name": "Back Impairment",
+            "source_group": "mobility / musculoskeletal / neuromotor disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_sitting",
+            "source_name": "Sitting",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_bending",
+            "source_name": "Bending",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_pain",
+            "source_name": "Pain",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_body_size",
+            "source_name": "Body Size",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Exact scoliosis entry was not found in the uploaded JSONs; back impairment, sitting, standing, pain, and bending support entries were used."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can affect posture, standing tolerance, sitting comfort, lifting, bending, sleeping position, walking endurance, and pain flares.",
+          "May make chores and self-care harder when tasks require reaching, twisting, carrying, or staying upright."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Offer ergonomic seating, pillows/supports, seated chores, lighter loads, carts, and no-twist/no-bend alternatives.",
+          "Let Momma pause or reposition without losing task progress."
+        ],
+        "app_support_rules": [
+          "Break cleaning into low-reach steps and offer 'sit-down version' for every standing task."
+        ],
+        "reward_system_notes": [
+          "Reward safe setup and posture breaks as part of the task."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Do not advise spinal exercises or treatment plans."
+        ],
+        "tags": [
+          "back_pain",
+          "posture",
+          "ergonomics",
+          "seated_tasks"
+        ]
+      },
+      {
+        "id": "ankle_injury",
+        "label": "Ankle injury",
+        "user_terms_or_aliases": [
+          "ankle pain",
+          "ankle instability"
+        ],
+        "category": "mobility / injury / pain",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "mobility_musculoskeletal_neuromotor_disability_leg_impairment",
+            "source_name": "Leg Impairment",
+            "source_group": "mobility / musculoskeletal / neuromotor disability",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_walking",
+            "source_name": "Walking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_use_of_mobility_aids",
+            "source_name": "Use of Mobility Aids",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_pain",
+            "source_name": "Pain",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Ankle injury should lower expectations for standing chores, errands, stairs, carrying, and speed."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can increase fall risk, pain, swelling, fatigue, avoidance of outings, and reluctance to use mobility aids.",
+          "May combine with hEDS, obesity/body-size access barriers, scoliosis, and varicose veins to make walking or standing much harder."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Offer seated tasks, delivery/pickup options, ankle-safe routes, rest breaks, and mobility-aid prompts.",
+          "Make 'pause before pain spikes' count as success."
+        ],
+        "app_support_rules": [
+          "Avoid time-pressure language for walking tasks.",
+          "Offer 'do from bed/chair' alternatives."
+        ],
+        "reward_system_notes": [
+          "Reward asking for help, using supports, and choosing shorter routes."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "For acute severe pain, inability to bear weight, new deformity, or worsening swelling, suggest medical evaluation."
+        ],
+        "tags": [
+          "ankle",
+          "fall_risk",
+          "mobility",
+          "pain"
+        ]
+      },
+      {
+        "id": "varicose_veins",
+        "label": "Varicose veins",
+        "user_terms_or_aliases": [
+          "leg vein pain",
+          "leg heaviness"
+        ],
+        "category": "vascular / leg_pain / standing_tolerance",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "mobility_musculoskeletal_neuromotor_disability_leg_impairment",
+            "source_name": "Leg Impairment",
+            "source_group": "mobility / musculoskeletal / neuromotor disability",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_walking",
+            "source_name": "Walking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_sitting",
+            "source_name": "Sitting",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_pain",
+            "source_name": "Pain",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Varicose veins may make long standing or heat exposure more uncomfortable."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can contribute to leg heaviness, pain, swelling, itching, heat sensitivity, and lower standing tolerance.",
+          "Can make showering, cleaning, cooking, errands, and caregiving tasks harder when they require being upright."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Offer sitting breaks, leg elevation breaks, shorter standing intervals, and heat-aware pacing.",
+          "Use chairs/stools during cooking, dishes, and bathroom routines."
+        ],
+        "app_support_rules": [
+          "Convert long standing tasks into timed intervals with rest built in."
+        ],
+        "reward_system_notes": [
+          "Reward breaks before symptoms escalate."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "For sudden one-sided swelling, redness, warmth, chest pain, or shortness of breath, prompt urgent medical help."
+        ],
+        "tags": [
+          "vascular",
+          "standing_tolerance",
+          "leg_pain",
+          "pacing"
+        ]
+      },
+      {
+        "id": "obesity_body_size_access_needs",
+        "label": "Obesity and body-size-related access needs",
+        "user_terms_or_aliases": [
+          "morbid obesity",
+          "body size access needs"
+        ],
+        "category": "physical_health / access / stigma",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "physical_chronic_health_disability_obesity",
+            "source_name": "Obesity",
+            "source_group": "physical / chronic health disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_walking",
+            "source_name": "Walking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_decreased_stamina_fatigue",
+            "source_name": "Decreased Stamina/Fatigue",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_body_size",
+            "source_name": "Body Size",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_specific_language",
+        "user_specific_notes": [
+          "User used the term 'morbid obesity'; the app should store it for accuracy but use body-neutral, non-shaming language in prompts.",
+          "Body size may interact with pain, mobility aids, heat, stairs, seating, clothing, dysphoria, medical stigma, and public judgment."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can affect stamina, joint load, heat tolerance, seating access, mobility-aid fit, bathroom access, clothing comfort, and medical care experiences.",
+          "Weight stigma can make Momma avoid appointments, movement, bathing, social outings, or asking for accommodations."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use body-neutral prompts and practical access planning: sturdy seating, accessible aisles, climate comfort, delivery options, and no-shame self-care.",
+          "Separate health support from moral judgment."
+        ],
+        "app_support_rules": [
+          "Never use shame, calorie policing, 'just exercise,' or weight-loss pressure.",
+          "Offer accessible movement only as optional comfort/regulation if Momma wants it."
+        ],
+        "reward_system_notes": [
+          "Reward care behaviors regardless of weight outcomes."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Do not assume symptoms are caused by weight; keep prompts supportive and non-stigmatizing."
+        ],
+        "tags": [
+          "body_neutral",
+          "accessibility",
+          "anti_stigma",
+          "mobility"
+        ]
+      }
+    ],
+    "mental_health_neurodivergence_and_trauma_entries": [
+      {
+        "id": "borderline_personality_disorder_discouraged_petulant_self_destructive",
+        "label": "Borderline personality disorder with Discouraged, Petulant, and Self-Destructive patterns",
+        "user_terms_or_aliases": [
+          "BPD",
+          "Discouraged BPD",
+          "Petulant BPD",
+          "Self-Destructive BPD",
+          "Quiet BPD"
+        ],
+        "category": "mental_health / emotion_regulation / attachment",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "personality_relationship_pattern_condition_borderline_personality_disorder",
+            "source_name": "Borderline Personality Disorder",
+            "source_group": "personality/relationship-pattern condition",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "personality_relationship_pattern_condition_personality_disorder",
+            "source_name": "Personality disorder",
+            "source_group": "personality/relationship-pattern condition",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_stress_intolerance",
+            "source_name": "Stress Intolerance",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_control_of_anger_emotions",
+            "source_name": "Control of Anger/Emotions",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_general_psychological",
+            "source_name": "General Psychological",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_specific_subtypes",
+        "user_specific_notes": [
+          "The uploaded source has BPD/personality-disorder support; the Discouraged, Petulant, and Self-Destructive pattern language is user-specified.",
+          "Discouraged pattern: may internalize distress, feel worthless, cling, comply, or withdraw to avoid rejection.",
+          "Petulant pattern: may experience intense anger, dissatisfaction, control needs, fear of abandonment, and rapid shifts.",
+          "Self-Destructive pattern: may experience self-hatred, risky urges, or crisis behaviors when pain feels unbearable."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make rejection, silence, conflict, changed plans, perceived abandonment, criticism, and unclear tone feel urgent or unsafe.",
+          "Can disrupt task completion because emotional threat can override executive function and body care.",
+          "May lead to shame spirals after conflict or after needing help."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use DBT skills, validation, repair scripts, predictable check-ins, clear boundaries, and tiny next steps.",
+          "Offer choices and collaborative control instead of power struggles.",
+          "Treat emotional intensity as real distress while still keeping boundaries calm and consistent."
+        ],
+        "app_support_rules": [
+          "Default chatbot stance: validate first, regulate second, problem-solve third.",
+          "Use scripts like: 'I believe this feels huge. We can slow down. You are not bad. What is the next safe tiny step?'",
+          "Avoid abandonment-coded phrasing such as 'stop being dramatic,' 'calm down or else,' or sudden withdrawal.",
+          "Build repair prompts after conflict: name harm, reassure connection, choose one next action."
+        ],
+        "reward_system_notes": [
+          "Reward DBT skill use, asking for reassurance directly, taking space safely, choosing repair, and using the chatbot before escalation.",
+          "Do not punish emotional symptoms by taking away all rewards."
+        ],
+        "onyx_helper_notes": [
+          "Onyx should be protective, validating, lightly dramatic, and skill-focused. He should not argue with Momma's feelings."
+        ],
+        "safety_or_sensitivity_cautions": [
+          "If Momma expresses intent or imminent risk of self-harm, violence, or inability to stay safe, the app should switch to crisis support: contact trusted person, local emergency services, or crisis line."
+        ],
+        "tags": [
+          "dbt",
+          "emotion_regulation",
+          "attachment",
+          "crisis_sensitive",
+          "validation_first"
+        ]
+      },
+      {
+        "id": "reactive_attachment_disorder",
+        "label": "Reactive attachment disorder / attachment trauma patterns",
+        "user_terms_or_aliases": [
+          "RAD",
+          "attachment trauma"
+        ],
+        "category": "mental_health / attachment / developmental_trauma",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "mental_health_psychiatric_neurological_condition_listed_by_source_reactive_attac",
+            "source_name": "Reactive Attachment Disorder",
+            "source_group": "mental health / psychiatric / neurological condition listed by source",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "support_concept_boundary_communication",
+            "source_name": "Boundary communication",
+            "source_group": "support concept",
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_context",
+        "user_specific_notes": [
+          "Use as attachment-support context, especially alongside foster care, separation from siblings, abusive caregivers, repeated housing loss, and loss of support systems."
+        ],
+        "life_limitations_or_friction_points": [
+          "Trust, closeness, dependence, receiving care, and asking for help may feel unsafe or humiliating.",
+          "Momma may test connection, withdraw, cling, people-please, or react strongly to perceived rejection."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use predictable routines, consent-based care, clear repair after conflict, and reassurance that help is not a trap.",
+          "Make boundaries explicit and kind."
+        ],
+        "app_support_rules": [
+          "Use consistent check-ins and do not surprise Momma with major changes when avoidable.",
+          "Phrase help as collaboration: 'Would support make this safer/easier?'"
+        ],
+        "reward_system_notes": [
+          "Reward direct communication and accepting help as brave actions."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid forced vulnerability, interrogation, or sudden loss-of-access mechanics."
+        ],
+        "tags": [
+          "attachment",
+          "trauma_informed",
+          "trust",
+          "repair"
+        ]
+      },
+      {
+        "id": "complex_ptsd",
+        "label": "Complex PTSD",
+        "user_terms_or_aliases": [
+          "C-PTSD",
+          "complex trauma",
+          "PTSD"
+        ],
+        "category": "trauma / nervous_system / safety",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "anxiety_trauma_stress_related_mental_health_condition_post_traumatic_stress_diso",
+            "source_name": "Post Traumatic Stress Disorder",
+            "source_group": "anxiety/trauma/stress-related mental health condition",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "mental_health_psychiatric_disability_post_traumatic_stress_disorder_ptsd",
+            "source_name": "Post-Traumatic Stress Disorder (PTSD)",
+            "source_group": "mental health / psychiatric disability",
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_stress_intolerance",
+            "source_name": "Stress Intolerance",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_general_psychological",
+            "source_name": "General Psychological",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_related_source_entry_plus_user_specific_complex_trauma",
+        "user_specific_notes": [
+          "C-PTSD is included as user-stated context. The uploaded JSONs include PTSD and stress-related support entries, not a full C-PTSD-specific entry.",
+          "Relevant trauma background includes foster care, separation of siblings, abuse by mother/adoptive parents, sibling favoritism after adoption, sexual assault, homelessness, repeated loss of homes, and loss of major support systems."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can create hypervigilance, avoidance, dissociation, nightmares/sleep disruption, shame, emotional flashbacks, startle responses, and difficulty feeling safe in the body.",
+          "May make hygiene, sex/intimacy, medical care, conflict, housing topics, money scarcity, sudden changes, and being perceived feel unsafe."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use grounding, permission to pause, predictable routines, sensory calming, body-neutral language, and safe exit options.",
+          "Allow task completion during or after regulation rather than forcing productivity during activation."
+        ],
+        "app_support_rules": [
+          "When distress spikes, offer: orient to room, name five safe things, breathe or cold-water skill if tolerated, contact support, then one tiny next step.",
+          "Do not demand details of trauma to provide support."
+        ],
+        "reward_system_notes": [
+          "Reward grounding, using coping skills, choosing safety, and stopping before shutdown."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid graphic trauma prompts, surprise exposure exercises, or forced forgiveness language."
+        ],
+        "tags": [
+          "trauma",
+          "grounding",
+          "dissociation_sensitive",
+          "safety"
+        ]
+      },
+      {
+        "id": "sexual_assault_survivor_context",
+        "label": "Sexual assault survivor context",
+        "user_terms_or_aliases": [
+          "sexual trauma",
+          "SA survivor context"
+        ],
+        "category": "trauma / body_autonomy / consent",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "sexual_intimacy_gender_related_condition_gender_dysphoria",
+            "source_name": "Gender Dysphoria",
+            "source_group": "sexual/intimacy/gender-related condition",
+            "source_page": 10,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "anxiety_trauma_stress_related_mental_health_condition_post_traumatic_stress_diso",
+            "source_name": "Post Traumatic Stress Disorder",
+            "source_group": "anxiety/trauma/stress-related mental health condition",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "support_concept_boundary_communication",
+            "source_name": "Boundary communication",
+            "source_group": "support concept",
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added_sensitive_context",
+        "user_specific_notes": [
+          "Included as sensitive trauma context only; do not ask Momma to recount details.",
+          "Can interact with gender dysphoria, showering/bathing, clothing, medical care, intimacy, touch, and body awareness."
+        ],
+        "life_limitations_or_friction_points": [
+          "May make touch, sexual health care, bathing, changing clothes, mirrors, body-focused language, and certain smells/sounds/places triggering.",
+          "Can make consent, control, privacy, and escape routes essential for safety."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use consent-first prompts, privacy, opt-out options, body-neutral wording, and grounding before/after body-care tasks.",
+          "Let Momma choose clothing, lighting, music, towel/robe, and whether Onyx gives encouragement or stays quiet."
+        ],
+        "app_support_rules": [
+          "Never use commands about Momma's body. Ask or offer choices.",
+          "Provide a 'no body talk' mode for hygiene and dysphoria-heavy days."
+        ],
+        "reward_system_notes": [
+          "Reward any safe body-care step, even tiny or partial."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid sexualized language, coercive jokes, surprise touch references, or detailed trauma questions."
+        ],
+        "tags": [
+          "consent",
+          "body_autonomy",
+          "trauma_informed",
+          "sensitive"
+        ]
+      },
+      {
+        "id": "gender_dysphoria_nonbinary_feminine_terms",
+        "label": "Gender dysphoria with nonbinary identity and feminine-coded trusted affection",
+        "user_terms_or_aliases": [
+          "gender dysphoria",
+          "nonbinary",
+          "they/them",
+          "wife",
+          "momma",
+          "baby girl"
+        ],
+        "category": "gender / identity / body_safety",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "sexual_intimacy_gender_related_condition_gender_dysphoria",
+            "source_name": "Gender Dysphoria",
+            "source_group": "sexual/intimacy/gender-related condition",
+            "source_page": 10,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_specific_identity",
+        "user_specific_notes": [
+          "Momma is nonbinary and uses they/them pronouns.",
+          "Momma may still use feminine titles or terms of endearment such as wife, momma, and baby girl.",
+          "The app should affirm both without treating them as contradictory."
+        ],
+        "life_limitations_or_friction_points": [
+          "Dysphoria can make showering, dressing, grooming, medical care, intimacy, mirrors, body tracking, and gendered language harder.",
+          "Misgendering or forced labels may increase shutdown, anger, shame, or avoidance."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use they/them by default and allow Momma-approved affectionate names in private/trusted settings.",
+          "Offer clothing, hygiene, and body-care prompts that focus on comfort, safety, and sensory needs rather than gender expectations."
+        ],
+        "app_support_rules": [
+          "Use gender-neutral health language unless Momma picks different wording.",
+          "Offer 'dysphoria-safe hygiene mode' with body-neutral microsteps."
+        ],
+        "reward_system_notes": [
+          "Reward affirming self-care: choosing comfortable clothes, grooming in a gender-safe way, asking for correct language."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid invalidating phrases like 'but you're really...' or forcing gendered body terminology."
+        ],
+        "tags": [
+          "gender_affirming",
+          "dysphoria",
+          "body_neutral",
+          "pronouns"
+        ]
+      },
+      {
+        "id": "severe_adhd",
+        "label": "Severe ADHD",
+        "user_terms_or_aliases": [
+          "ADHD",
+          "Attention Deficit Hyperactivity Disorder"
+        ],
+        "category": "neurodevelopmental / executive_function",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "neurodevelopmental_learning_communication_condition_attention_deficit_hyperactiv",
+            "source_name": "Attention Deficit Hyperactivity Disorder",
+            "source_group": "neurodevelopmental/learning/communication condition",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "neurodevelopmental_communication_disability_attention_deficit_hyperactivity",
+            "source_name": "Attention Deficit/Hyperactivity",
+            "source_group": "neurodevelopmental / communication disability",
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_executive_functioning_deficits",
+            "source_name": "Executive Functioning Deficits",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_managing_time",
+            "source_name": "Managing Time",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_organizing_planning_prioritizing",
+            "source_name": "Organizing/Planning/Prioritizing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 5,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_multitasking",
+            "source_name": "Multitasking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 5,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_attentiveness_concentration",
+            "source_name": "Attentiveness/Concentration",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry_plus_user_specific_severity",
+        "user_specific_notes": [
+          "Severe ADHD means the site should assume task initiation, time awareness, working memory, transitions, and follow-through can all fail even when Momma cares deeply."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can cause task paralysis, forgotten steps, time blindness, clutter buildup, emotional impulsivity, inconsistent routines, missed meals/hydration, and difficulty switching tasks.",
+          "Large tasks may feel impossible until they are made visible, tiny, timed, and rewarded."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use checklists, timers, body doubling, visual progress, persistent save states, automatic rewards, and one-step-at-a-time prompts.",
+          "Make every task resumable after interruption."
+        ],
+        "app_support_rules": [
+          "Split tasks into the smallest possible steps with rewards for each step.",
+          "Show only the next few steps when overwhelmed.",
+          "Use playful urgency, not shame."
+        ],
+        "reward_system_notes": [
+          "Reward starting, returning after distraction, completing microsteps, using timers, and asking for help."
+        ],
+        "onyx_helper_notes": [
+          "Onyx can act as a funny body double: dramatic, encouraging, and specific."
+        ],
+        "safety_or_sensitivity_cautions": [
+          "Avoid implying inconsistency means laziness or lack of love."
+        ],
+        "tags": [
+          "adhd",
+          "executive_function",
+          "time_blindness",
+          "microtasks"
+        ]
+      },
+      {
+        "id": "autism_spectrum_disorder",
+        "label": "Autism spectrum disorder",
+        "user_terms_or_aliases": [
+          "ASD",
+          "autism",
+          "Autism Spectrum"
+        ],
+        "category": "neurodevelopmental / sensory / communication",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "neurodevelopmental_learning_communication_condition_autism_spectrum_disorder",
+            "source_name": "Autism Spectrum Disorder",
+            "source_group": "neurodevelopmental/learning/communication condition",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "neurodevelopmental_communication_disability_autism_spectrum",
+            "source_name": "Autism Spectrum",
+            "source_group": "neurodevelopmental / communication disability",
+            "source_page": 2,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_noise_sensitivity",
+            "source_name": "Noise Sensitivity",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 5,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_information_processing",
+            "source_name": "Information Processing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_social_skills",
+            "source_name": "Social Skills",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry",
+        "user_specific_notes": [
+          "Use as sensory, communication, transition, routine, and social-energy support context."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make sensory input, transitions, ambiguous instructions, social expectations, noise, textures, lights, and unexpected changes draining or painful.",
+          "May overlap with ADHD, anxiety, trauma, and MCAS triggers."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use clear language, predictable routines, sensory choices, decompression time, special-interest comfort, and low-demand communication.",
+          "Offer written options and avoid forcing phone calls or vague tasks."
+        ],
+        "app_support_rules": [
+          "Be literal, specific, and kind.",
+          "Offer sensory-friendly alternatives and decompression as valid tasks."
+        ],
+        "reward_system_notes": [
+          "Reward decompression, sensory protection, and transition steps."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid sarcasm during distress unless Momma has clearly opted into playful Onyx mode."
+        ],
+        "tags": [
+          "autism",
+          "sensory",
+          "communication",
+          "routine"
+        ]
+      },
+      {
+        "id": "anxiety_and_stress",
+        "label": "Anxiety and stress",
+        "user_terms_or_aliases": [
+          "anxiety",
+          "stress",
+          "stress intolerance"
+        ],
+        "category": "mental_health / nervous_system",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "anxiety_trauma_stress_related_mental_health_condition_anxiety_disorder",
+            "source_name": "Anxiety Disorder",
+            "source_group": "anxiety/trauma/stress-related mental health condition",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_stress_intolerance",
+            "source_name": "Stress Intolerance",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "work_related_function_accommodation_target_stress",
+            "source_name": "Stress",
+            "source_group": "work-related function / accommodation target",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "direct_source_entry",
+        "user_specific_notes": [
+          "Use this as a general nervous-system support layer across tasks, games, self-care, DBT, shopping, and caregiving."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make decisions, errands, messages, money/store choices, body care, conflict, and uncertain outcomes feel threatening.",
+          "Can worsen pain, fatigue, executive dysfunction, sleep, and avoidance."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use reassurance, grounding, choices, clear next steps, and permission to pause.",
+          "Keep menus simple during stress and hide nonessential tasks."
+        ],
+        "app_support_rules": [
+          "When stress is high, switch to low-demand mode: fewer choices, bigger buttons, one tiny task."
+        ],
+        "reward_system_notes": [
+          "Reward de-escalation, breathing/grounding, checking in, and taking a break before panic."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Do not flood Momma with too many options during distress."
+        ],
+        "tags": [
+          "anxiety",
+          "stress",
+          "low_demand_mode",
+          "grounding"
+        ]
+      },
+      {
+        "id": "imposter_syndrome",
+        "label": "Imposter syndrome",
+        "user_terms_or_aliases": [
+          "impostor syndrome",
+          "feeling fake",
+          "not disabled enough"
+        ],
+        "category": "self_concept / shame / validation_need",
+        "source_basis": [],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "May show up as doubting their needs, minimizing symptoms, refusing aids, apologizing for help, or feeling they have not earned rest/rewards."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can cause overexertion, refusal of accommodations, guilt after receiving care, and reluctance to use the reward system.",
+          "Can make Momma compare themselves to others and invalidate their own pain or disability."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use objective reminders: symptoms are real even when invisible; tools are allowed before crisis; rewards are for care, not perfection.",
+          "Show logged effort so Momma can see proof of what they did."
+        ],
+        "app_support_rules": [
+          "Add affirmations after aid use: 'Needing support is not cheating.'",
+          "Do not require Momma to prove distress to access accommodations."
+        ],
+        "reward_system_notes": [
+          "Reward accepting help, resting, and using aids as strongly as visible productivity."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid comparison-based motivation."
+        ],
+        "tags": [
+          "shame_reduction",
+          "invisible_disability",
+          "validation",
+          "accommodation_acceptance"
+        ]
+      },
+      {
+        "id": "people_pleasing",
+        "label": "People-pleasing",
+        "user_terms_or_aliases": [
+          "fawning",
+          "over-apologizing",
+          "overcommitting"
+        ],
+        "category": "trauma_response / relationships / boundaries",
+        "source_basis": [
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "support_concept_boundary_communication",
+            "source_name": "Boundary communication",
+            "source_group": "support concept",
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_unable_to_work_alone",
+            "source_name": "Unable to Work Alone",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_social_skills",
+            "source_name": "Social Skills",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "May come from trauma, attachment wounds, fear of abandonment, caregiver role pressure, and past instability."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make Momma say yes when depleted, hide needs, delay self-care, overwork as a caregiver, and feel guilty for rest.",
+          "Can build resentment or crashes when boundaries are not supported."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use boundary scripts, caregiver break protection, permission to say no, and rewards for honest capacity check-ins.",
+          "Treat self-care as a non-negotiable support task, not an optional luxury."
+        ],
+        "app_support_rules": [
+          "Prompt: 'What can you actually do without hurting yourself today?'",
+          "Offer scripts: 'I want to help, but I need a break first.'"
+        ],
+        "reward_system_notes": [
+          "Reward saying no, asking for help, taking breaks, and choosing sustainable caregiving."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [
+          "Avoid praise that only rewards self-sacrifice."
+        ],
+        "tags": [
+          "boundaries",
+          "fawn_response",
+          "caregiver_burnout_prevention"
+        ]
+      }
+    ],
+    "life_history_and_context_entries": [
+      {
+        "id": "loss_of_major_support_systems",
+        "label": "Loss of major support systems",
+        "user_terms_or_aliases": [
+          "support loss",
+          "abandonment grief"
+        ],
+        "category": "life_context / grief / attachment",
+        "source_basis": [
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "support_concept_boundary_communication",
+            "source_name": "Boundary communication",
+            "source_group": "support concept",
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "mood_related_mental_health_condition_bereavement",
+            "source_name": "Bereavement",
+            "source_group": "mood-related mental health condition",
+            "source_page": 5,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "May intensify abandonment fear, distrust, scarcity, and pressure to cling or self-protect."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make asking for help feel risky and make changes in availability feel like rejection.",
+          "Can increase isolation and emotional crashes."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use predictable check-ins, repair after conflict, and visible backup plans.",
+          "Build a 'support menu' with safe contacts, Onyx, DBT skills, and low-demand self-soothing."
+        ],
+        "app_support_rules": [
+          "Do not remove access to comfort tools as punishment."
+        ],
+        "reward_system_notes": [
+          "Reward reaching out, using support menu, and naming needs."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "grief",
+          "support_network",
+          "attachment"
+        ]
+      },
+      {
+        "id": "separation_of_siblings",
+        "label": "Separation of siblings",
+        "user_terms_or_aliases": [
+          "sibling separation",
+          "family separation"
+        ],
+        "category": "life_context / grief / foster_care",
+        "source_basis": [],
+        "source_match_type": "user_added_context",
+        "user_specific_notes": [
+          "Important grief and attachment context."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can contribute to abandonment pain, guilt, loyalty conflicts, grief anniversaries, and difficulty trusting family stability."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Validate sibling grief without forcing positivity.",
+          "Allow memory days, sadness, anger, and longing to count as real emotional labor."
+        ],
+        "app_support_rules": [
+          "Offer grounding and journaling prompts on sibling-grief days."
+        ],
+        "reward_system_notes": [
+          "Reward journaling, emotional check-ins, and asking for comfort."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "sibling_grief",
+          "foster_care",
+          "attachment"
+        ]
+      },
+      {
+        "id": "foster_care_history",
+        "label": "Foster care history",
+        "user_terms_or_aliases": [
+          "foster care",
+          "system involvement"
+        ],
+        "category": "life_context / developmental_trauma",
+        "source_basis": [],
+        "source_match_type": "user_added_context",
+        "user_specific_notes": [
+          "Relevant to attachment, safety, housing stability, trust, authority figures, and fear of being discarded."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make rules, authority, inspections, paperwork, and home instability emotionally loaded.",
+          "May cause strong reactions to feeling controlled, ignored, compared, or replaceable."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use choice, consent, predictability, and collaborative planning.",
+          "Make the home page calming so tasks do not hit immediately when Momma opens the site."
+        ],
+        "app_support_rules": [
+          "Avoid authoritarian tones. Use 'you can choose' and 'we can try' language."
+        ],
+        "reward_system_notes": [
+          "Reward self-advocacy and comfort-building."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "foster_care",
+          "developmental_trauma",
+          "choice"
+        ]
+      },
+      {
+        "id": "abusive_mother_and_adoptive_parents",
+        "label": "Abusive mother and abusive adoptive parents",
+        "user_terms_or_aliases": [
+          "abusive caregiver history",
+          "family abuse"
+        ],
+        "category": "life_context / abuse_history / trauma",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "anxiety_trauma_stress_related_mental_health_condition_post_traumatic_stress_diso",
+            "source_name": "Post Traumatic Stress Disorder",
+            "source_group": "anxiety/trauma/stress-related mental health condition",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_stress_intolerance",
+            "source_name": "Stress Intolerance",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added_sensitive_context",
+        "user_specific_notes": [
+          "Included as context for trauma-informed support, not as a prompt topic."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make caregiving, criticism, reminders, chores, food, body care, and authority feel threatening.",
+          "May create shame, perfectionism, people-pleasing, anger, shutdown, or fear of being punished for needs."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use validation, consent, warm reminders, and repair scripts.",
+          "Make mistakes recoverable and never frame care as obedience."
+        ],
+        "app_support_rules": [
+          "Avoid punishment-like sounds, red failure states, or harsh streak loss."
+        ],
+        "reward_system_notes": [
+          "Reward recovery after missed tasks, not just perfect streaks."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "abuse_history",
+          "trauma_informed",
+          "no_punishment_design"
+        ]
+      },
+      {
+        "id": "sibling_favoritism_after_adoption",
+        "label": "Sibling favoritism after adoption",
+        "user_terms_or_aliases": [
+          "favoritism",
+          "adoption wound"
+        ],
+        "category": "life_context / family_trauma / shame",
+        "source_basis": [],
+        "source_match_type": "user_added_context",
+        "user_specific_notes": [
+          "May contribute to comparison pain, rejection sensitivity, and feeling unchosen."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make praise, rewards, comparison, and perceived unequal treatment emotionally intense.",
+          "May trigger 'I am never enough' thoughts."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use non-comparative rewards and affirm Momma's individual effort.",
+          "Avoid ranking Momma against anyone else."
+        ],
+        "app_support_rules": [
+          "No leaderboards against partner, siblings, or other users."
+        ],
+        "reward_system_notes": [
+          "Rewards should be abundant and personal, not competitive."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "comparison_sensitive",
+          "attachment",
+          "adoption_trauma"
+        ]
+      },
+      {
+        "id": "homelessness_and_repeated_home_loss",
+        "label": "Past homelessness and repeated loss of homes",
+        "user_terms_or_aliases": [
+          "street homelessness",
+          "couch surfing",
+          "floor surfing",
+          "shelters",
+          "housing loss",
+          "repeated loss of homes"
+        ],
+        "category": "life_context / housing_trauma / scarcity",
+        "source_basis": [],
+        "source_match_type": "user_added_context",
+        "user_specific_notes": [
+          "User specified past homelessness on literal streets, couch/floor surfing, shelters, and repeated loss of homes."
+        ],
+        "life_limitations_or_friction_points": [
+          "Can make safety, food, money, belongings, sleep, mail, routines, and home tasks emotionally charged.",
+          "May create scarcity behaviors, fear of losing rewards/support, trouble relaxing at home, or panic when plans change."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Use home-stability affirmations, predictable routines, gentle organization, and backup plans.",
+          "Avoid threatening loss of access, home, food, or comfort as motivation."
+        ],
+        "app_support_rules": [
+          "Store and tasks should feel safe and cozy, not like an eviction/inspection checklist."
+        ],
+        "reward_system_notes": [
+          "Rewards involving food, comfort, games, and homecooked meals may be especially regulating; avoid making them feel conditional on being 'good enough.'"
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "housing_trauma",
+          "scarcity",
+          "home_safety",
+          "stability"
+        ]
+      },
+      {
+        "id": "caregiver_for_disabled_partner",
+        "label": "Caregiver for disabled partner",
+        "user_terms_or_aliases": [
+          "caregiver role",
+          "disabled partner caregiver"
+        ],
+        "category": "role_context / caregiving / burnout_risk",
+        "source_basis": [
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_decreased_stamina_fatigue",
+            "source_name": "Decreased Stamina/Fatigue",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "support_concept_boundary_communication",
+            "source_name": "Boundary communication",
+            "source_group": "support concept",
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "source_match_type": "related_source_entry_plus_user_added",
+        "user_specific_notes": [
+          "Momma's caregiving should be valued while also protecting Momma's own disabilities and limits."
+        ],
+        "life_limitations_or_friction_points": [
+          "Caregiving can compete with Momma's self-care, rest, appointments, food, hydration, decompression, games, and emotional regulation.",
+          "Guilt may make Momma overwork or ignore pain/fatigue."
+        ],
+        "possible_life_improvements_or_supports": [
+          "Build break times, decompression, food/hydration, and DBT into caregiver hours.",
+          "Split caregiver tasks into smaller rewarded steps.",
+          "Use sustainable capacity planning instead of all-or-nothing expectations."
+        ],
+        "app_support_rules": [
+          "Every caregiver task should have a 'tiny version,' 'safe version,' and 'ask for help' option.",
+          "Do not let caregiver work erase self-care rewards."
+        ],
+        "reward_system_notes": [
+          "Reward caregiving and self-care separately; self-care should be high value, not secondary."
+        ],
+        "onyx_helper_notes": [],
+        "safety_or_sensitivity_cautions": [],
+        "tags": [
+          "caregiver",
+          "burnout_prevention",
+          "self_care_priority",
+          "boundaries"
+        ]
+      }
+    ],
+    "compound_impact_patterns": [
+      {
+        "id": "energy_is_variable_not_moral",
+        "label": "Energy variability is not a moral failure",
+        "source_basis": [
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "energy_pacing_concept_spoon_theory_limited_daily_energy",
+            "source_name": "Spoon Theory / limited daily energy",
+            "source_group": "energy pacing concept",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "what_is_spoon_theory.life_impact.json",
+            "source_pdf": "What Is Spoon Theory__ Eric K. Fanaee, MD_ Board Certified in Pain Medicine and Anesthesiology.pdf",
+            "source_entry_id": "energy_pacing_concept_day_to_day_variability",
+            "source_name": "Day-to-day variability",
+            "source_group": "energy pacing concept",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_decreased_stamina_fatigue",
+            "source_name": "Decreased Stamina/Fatigue",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 3,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "description": "Momma's ability can change hour to hour because pain, MCAS triggers, ADHD, autism, trauma activation, sleep, PMOS symptoms, caregiving, mobility demands, and stress can stack.",
+        "app_design_rule": "Use flexible schedules, partial credit, task rollover, and 'restart without shame' mechanics."
+      },
+      {
+        "id": "body_care_can_be_high_trigger",
+        "label": "Body care can be physically and emotionally expensive",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "sexual_intimacy_gender_related_condition_gender_dysphoria",
+            "source_name": "Gender Dysphoria",
+            "source_group": "sexual/intimacy/gender-related condition",
+            "source_page": 10,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "anxiety_trauma_stress_related_mental_health_condition_post_traumatic_stress_diso",
+            "source_name": "Post Traumatic Stress Disorder",
+            "source_group": "anxiety/trauma/stress-related mental health condition",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_standing",
+            "source_name": "Standing",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_temperature_sensitivity",
+            "source_name": "Temperature Sensitivity",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "description": "Showering, bathing, dressing, medical care, and grooming can activate dysphoria, trauma, fatigue, pain, heat sensitivity, and executive dysfunction.",
+        "app_design_rule": "Every hygiene task needs a low-energy, seated, body-neutral, privacy-respecting alternative."
+      },
+      {
+        "id": "mobility_aids_are_freedom_tools",
+        "label": "Mobility aids are freedom tools",
+        "source_basis": [
+          {
+            "source_file": "mobility_guide_mobility_aids.life_impact.json",
+            "source_pdf": "Your Complete Mobility Guide_ A Simple Guide to Mobility Aids _ Southern.pdf",
+            "source_entry_id": "mobility_aid_wheelchair_manual_wheelchair",
+            "source_name": "Manual Wheelchair",
+            "source_group": "mobility aid - wheelchair",
+            "source_page": 1,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_use_of_mobility_aids",
+            "source_name": "Use of Mobility Aids",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_walking",
+            "source_name": "Walking",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 7,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "description": "Aids should be framed as tools that protect energy and access, not as proof of failure.",
+        "app_design_rule": "Reward aid use and pacing; never shame refusal, but explore barriers gently."
+      },
+      {
+        "id": "attachment_and_trauma_affect_tasks",
+        "label": "Attachment trauma changes how reminders feel",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "mental_health_psychiatric_neurological_condition_listed_by_source_reactive_attac",
+            "source_name": "Reactive Attachment Disorder",
+            "source_group": "mental health / psychiatric / neurological condition listed by source",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "personality_relationship_pattern_condition_borderline_personality_disorder",
+            "source_name": "Borderline Personality Disorder",
+            "source_group": "personality/relationship-pattern condition",
+            "source_page": 6,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "anxiety_trauma_stress_related_mental_health_condition_post_traumatic_stress_diso",
+            "source_name": "Post Traumatic Stress Disorder",
+            "source_group": "anxiety/trauma/stress-related mental health condition",
+            "source_page": 14,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "description": "A reminder can feel like criticism, abandonment, control, or proof of failure if phrased harshly.",
+        "app_design_rule": "Use validation-first prompts, warm tone, predictable repair, and no punishment-style streak loss."
+      },
+      {
+        "id": "neurodivergence_needs_external_structure",
+        "label": "Neurodivergence needs external structure",
+        "source_basis": [
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "neurodevelopmental_learning_communication_condition_attention_deficit_hyperactiv",
+            "source_name": "Attention Deficit Hyperactivity Disorder",
+            "source_group": "neurodevelopmental/learning/communication condition",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "alphabetical_listing_of_mental_disorders.life_impact.json",
+            "source_pdf": "Alphabetical Listing of Mental Disorders.pdf",
+            "source_entry_id": "neurodevelopmental_learning_communication_condition_autism_spectrum_disorder",
+            "source_name": "Autism Spectrum Disorder",
+            "source_group": "neurodevelopmental/learning/communication condition",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          },
+          {
+            "source_file": "a_to_z_disabilities_and_accommodations.life_impact.json",
+            "source_pdf": "A to Z of Disabilities and Accommodations.pdf",
+            "source_entry_id": "functional_limitation_accommodation_target_executive_functioning_deficits",
+            "source_name": "Executive Functioning Deficits",
+            "source_group": "functional limitation / accommodation target",
+            "source_page": 4,
+            "source_match_type": "direct_or_related_entry"
+          }
+        ],
+        "description": "ADHD/autism can make task initiation, transitions, working memory, sensory tolerance, and ambiguity harder.",
+        "app_design_rule": "Use visual checklists, small steps, save states, timers, decompression, and clear literal instructions."
+      }
+    ],
+    "global_app_support_rules_for_jasper": {
+      "tone": [
+        "Warm, validating, non-shaming, body-neutral, gender-affirming, and choice-based.",
+        "Use you/your language when speaking directly to Momma.",
+        "Onyx can be dramatic, snuggly, funny, protective, and practical, but should not argue with distress."
+      ],
+      "task_design": [
+        "Every task must be splittable into microsteps.",
+        "Every task should have low-energy, seated, sensory-safe, and reschedule options when possible.",
+        "Partial completion counts.",
+        "Starting counts.",
+        "Returning after interruption counts.",
+        "Asking for help counts."
+      ],
+      "reward_design": [
+        "Self-care, DBT skills, eating, hydrating, decompression, showering/bathing alternatives, using the chatbot, using mobility aids, and asking for help should be high-value rewards.",
+        "Do not make rewards competitive or perfection-based.",
+        "Do not remove all earned currency because of symptoms, missed tasks, or emotional dysregulation.",
+        "Reward prevention and pacing, not just visible productivity."
+      ],
+      "communication_do": [
+        "Validate first.",
+        "Offer one tiny next step.",
+        "Ask consent before body-focused or trauma-adjacent prompts.",
+        "Use affirming terms Momma has approved.",
+        "Offer breaks without guilt."
+      ],
+      "communication_do_not": [
+        "Do not shame disability, body size, hygiene, emotions, mobility aids, food, or executive dysfunction.",
+        "Do not use abandonment threats, punishment-like streak loss, or harsh failure states.",
+        "Do not force trauma details.",
+        "Do not frame self-care as selfish.",
+        "Do not assume wheelchair refusal means Momma does not need it."
+      ],
+      "safety_escalation": [
+        "For immediate danger, self-harm intent, inability to stay safe, severe allergic reaction, breathing trouble, chest pain, fainting, sudden severe swelling, or acute injury, prompt Momma to contact emergency services or a trusted support person immediately.",
+        "The app can support grounding and communication but cannot replace professional or emergency care."
+      ]
+    },
+    "store_and_currency_implications": {
+      "why_rewards_matter": "Rewards can help externalize motivation for ADHD, validate invisible labor, reduce shame around self-care, and make caregiver work sustainable.",
+      "currency_should_reward": [
+        "DBT skill use",
+        "daily diary card",
+        "journaling",
+        "chatbot check-in",
+        "eating",
+        "hydrating",
+        "decompressing",
+        "shower/bath or hygiene alternative",
+        "using shower chair or mobility aid when helpful",
+        "asking for help",
+        "taking breaks during caregiver work",
+        "safe food/product planning",
+        "choosing not to overexert",
+        "playing mobile games for regulation",
+        "repair conversation after conflict"
+      ],
+      "currency_should_not_reward_only": [
+        "chores completed perfectly",
+        "pushing through pain",
+        "ignoring symptoms",
+        "self-sacrifice without breaks"
+      ],
+      "purchase_email_context": {
+        "private_reward_system_note": "This JSON does not contain payment credentials. Store checkout should only send Momma's order request to the configured caregiver/admin email in the site code.",
+        "accessibility_note": "Purchasing rewards should not use shame language; if insufficient currency, show encouraging progress and smaller alternatives."
+      }
+    },
+    "requested_items_covered": [
+      "shower chair",
+      "manual wheelchair (infrequent/refuses to use)",
+      "mast cell activation syndrome",
+      "PCOS/PMOS",
+      "Ehlers-Danlos syndrome (hypermobile)",
+      "pre-diabetes",
+      "scoliosis",
+      "borderline personality disorder (Discouraged, Petulant, Self-Destructive)",
+      "reactive attachment disorder",
+      "C-PTSD",
+      "loss of major support systems",
+      "separation of siblings",
+      "foster care",
+      "ankle injury",
+      "varicose veins",
+      "sexual assault survivor context",
+      "gender dysphoria/nonbinary with they/them and feminine trusted terms",
+      "obesity/body-size access needs",
+      "past homelessness",
+      "repeated loss of homes",
+      "abusive mother",
+      "abusive adoptive parents",
+      "sibling favoritism after adoption",
+      "caregiver for disabled partner",
+      "severe ADHD",
+      "autism spectrum disorder",
+      "anxiety and stress",
+      "imposter syndrome",
+      "people-pleasing"
+    ],
+    "requested_item_index": {
+      "shower chair": {
+        "section": "mobility_aids",
+        "entry_id": "shower_chair"
+      },
+      "manual wheelchair (infrequent, refuses to use)": {
+        "section": "mobility_aids",
+        "entry_id": "manual_wheelchair_infrequent_refuses"
+      },
+      "mast cell activation syndrome": {
+        "section": "health_and_disability_entries",
+        "entry_id": "mast_cell_activation_syndrome"
+      },
+      "pcos/pmos": {
+        "section": "health_and_disability_entries",
+        "entry_id": "pcos_pmos"
+      },
+      "Ehlers-Danlos syndrome (hypermobile)": {
+        "section": "health_and_disability_entries",
+        "entry_id": "ehlers_danlos_hypermobile"
+      },
+      "pre-diabetes": {
+        "section": "health_and_disability_entries",
+        "entry_id": "prediabetes"
+      },
+      "scoliosis": {
+        "section": "health_and_disability_entries",
+        "entry_id": "scoliosis"
+      },
+      "borderline personality disorder (Discouraged, Petulant, Self-Destructive)": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "borderline_personality_disorder_discouraged_petulant_self_destructive"
+      },
+      "reactive attachment disorder": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "reactive_attachment_disorder"
+      },
+      "c-ptsd": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "complex_ptsd"
+      },
+      "loss of major support systems": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "loss_of_major_support_systems"
+      },
+      "separation of siblings": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "separation_of_siblings"
+      },
+      "foster care": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "foster_care_history"
+      },
+      "ankle injury": {
+        "section": "health_and_disability_entries",
+        "entry_id": "ankle_injury"
+      },
+      "varicose veins": {
+        "section": "health_and_disability_entries",
+        "entry_id": "varicose_veins"
+      },
+      "sexual assault": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "sexual_assault_survivor_context"
+      },
+      "gender dysphoria": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "gender_dysphoria_nonbinary_feminine_terms"
+      },
+      "nonbinary pronouns and feminine terms": {
+        "section": "person.gender_context",
+        "entry_id": "person.gender_context"
+      },
+      "morbid obesity": {
+        "section": "health_and_disability_entries",
+        "entry_id": "obesity_body_size_access_needs"
+      },
+      "past homelessness": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "homelessness_and_repeated_home_loss"
+      },
+      "literal streets, couch surfing/floor surfing, shelters": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "homelessness_and_repeated_home_loss"
+      },
+      "repeated loss of homes": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "homelessness_and_repeated_home_loss"
+      },
+      "abusive mother": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "abusive_mother_and_adoptive_parents"
+      },
+      "abusive adoptive parents": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "abusive_mother_and_adoptive_parents"
+      },
+      "sibling favoritism after adoption": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "sibling_favoritism_after_adoption"
+      },
+      "caregiver for disabled partner": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "caregiver_for_disabled_partner"
+      },
+      "severe adhd": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "severe_adhd"
+      },
+      "autism spectrum disorder": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "autism_spectrum_disorder"
+      },
+      "anxiety and stress": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "anxiety_and_stress"
+      },
+      "imposter syndrome": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "imposter_syndrome"
+      },
+      "people-pleasing": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "people_pleasing"
+      },
+      "manual wheelchair (infrequent/refuses to use)": {
+        "section": "mobility_aids",
+        "entry_id": "manual_wheelchair_infrequent_refuses"
+      },
+      "obesity/body-size access needs": {
+        "section": "health_and_disability_entries",
+        "entry_id": "obesity_body_size_access_needs"
+      }
+    },
+    "source_selection_counts": {
+      "source_json_files_in_archive": 6,
+      "mobility_aid_entries": 2,
+      "health_and_disability_entries": 8,
+      "mental_health_neurodivergence_and_trauma_entries": 10,
+      "life_history_and_context_entries": 7,
+      "compound_impact_patterns": 5
+    }
+  },
+  "mommaSquishySupportCrosswalk": {
+    "person": {
+      "display_name": "Momma",
+      "nickname": "Momma",
+      "pronouns": [
+        "they",
+        "them",
+        "theirs"
+      ],
+      "gender_context": {
+        "identity": "nonbinary",
+        "affirming_language": [
+          "Uses they/them pronouns.",
+          "May use or enjoy feminine titles or terms of endearment from trusted people, such as wife, momma, and baby girl.",
+          "Do not force a choice between nonbinary pronouns and feminine-coded affection; both can be valid for Momma."
+        ],
+        "privacy_rule": "Use affirming terms only in contexts where Momma has consented to them. In formal or public contexts, default to Momma and they/them unless Momma specifies otherwise."
+      },
+      "relationship_and_role_context": [
+        "Caregiver for a disabled partner.",
+        "Has their own disabilities, chronic health needs, trauma history, neurodivergence, and support needs.",
+        "Needs support that treats caregiving and self-care as real work, not as moral worth tests."
+      ]
+    },
+    "global_app_support_rules_for_jasper": {
+      "tone": [
+        "Warm, validating, non-shaming, body-neutral, gender-affirming, and choice-based.",
+        "Use you/your language when speaking directly to Momma.",
+        "Onyx can be dramatic, snuggly, funny, protective, and practical, but should not argue with distress."
+      ],
+      "task_design": [
+        "Every task must be splittable into microsteps.",
+        "Every task should have low-energy, seated, sensory-safe, and reschedule options when possible.",
+        "Partial completion counts.",
+        "Starting counts.",
+        "Returning after interruption counts.",
+        "Asking for help counts."
+      ],
+      "reward_design": [
+        "Self-care, DBT skills, eating, hydrating, decompression, showering/bathing alternatives, using the chatbot, using mobility aids, and asking for help should be high-value rewards.",
+        "Do not make rewards competitive or perfection-based.",
+        "Do not remove all earned currency because of symptoms, missed tasks, or emotional dysregulation.",
+        "Reward prevention and pacing, not just visible productivity."
+      ],
+      "communication_do": [
+        "Validate first.",
+        "Offer one tiny next step.",
+        "Ask consent before body-focused or trauma-adjacent prompts.",
+        "Use affirming terms Momma has approved.",
+        "Offer breaks without guilt."
+      ],
+      "communication_do_not": [
+        "Do not shame disability, body size, hygiene, emotions, mobility aids, food, or executive dysfunction.",
+        "Do not use abandonment threats, punishment-like streak loss, or harsh failure states.",
+        "Do not force trauma details.",
+        "Do not frame self-care as selfish.",
+        "Do not assume wheelchair refusal means Momma does not need it."
+      ],
+      "safety_escalation": [
+        "For immediate danger, self-harm intent, inability to stay safe, severe allergic reaction, breathing trouble, chest pain, fainting, sudden severe swelling, or acute injury, prompt Momma to contact emergency services or a trusted support person immediately.",
+        "The app can support grounding and communication but cannot replace professional or emergency care."
+      ]
+    },
+    "store_and_currency_implications": {
+      "why_rewards_matter": "Rewards can help externalize motivation for ADHD, validate invisible labor, reduce shame around self-care, and make caregiver work sustainable.",
+      "currency_should_reward": [
+        "DBT skill use",
+        "daily diary card",
+        "journaling",
+        "chatbot check-in",
+        "eating",
+        "hydrating",
+        "decompressing",
+        "shower/bath or hygiene alternative",
+        "using shower chair or mobility aid when helpful",
+        "asking for help",
+        "taking breaks during caregiver work",
+        "safe food/product planning",
+        "choosing not to overexert",
+        "playing mobile games for regulation",
+        "repair conversation after conflict"
+      ],
+      "currency_should_not_reward_only": [
+        "chores completed perfectly",
+        "pushing through pain",
+        "ignoring symptoms",
+        "self-sacrifice without breaks"
+      ],
+      "purchase_email_context": {
+        "private_reward_system_note": "This JSON does not contain payment credentials. Store checkout should only send Momma's order request to the configured caregiver/admin email in the site code.",
+        "accessibility_note": "Purchasing rewards should not use shame language; if insufficient currency, show encouraging progress and smaller alternatives."
+      }
+    },
+    "requested_items_covered": [
+      "shower chair",
+      "manual wheelchair (infrequent/refuses to use)",
+      "mast cell activation syndrome",
+      "PCOS/PMOS",
+      "Ehlers-Danlos syndrome (hypermobile)",
+      "pre-diabetes",
+      "scoliosis",
+      "borderline personality disorder (Discouraged, Petulant, Self-Destructive)",
+      "reactive attachment disorder",
+      "C-PTSD",
+      "loss of major support systems",
+      "separation of siblings",
+      "foster care",
+      "ankle injury",
+      "varicose veins",
+      "sexual assault survivor context",
+      "gender dysphoria/nonbinary with they/them and feminine trusted terms",
+      "obesity/body-size access needs",
+      "past homelessness",
+      "repeated loss of homes",
+      "abusive mother",
+      "abusive adoptive parents",
+      "sibling favoritism after adoption",
+      "caregiver for disabled partner",
+      "severe ADHD",
+      "autism spectrum disorder",
+      "anxiety and stress",
+      "imposter syndrome",
+      "people-pleasing"
+    ],
+    "requested_item_index": {
+      "shower chair": {
+        "section": "mobility_aids",
+        "entry_id": "shower_chair"
+      },
+      "manual wheelchair (infrequent, refuses to use)": {
+        "section": "mobility_aids",
+        "entry_id": "manual_wheelchair_infrequent_refuses"
+      },
+      "mast cell activation syndrome": {
+        "section": "health_and_disability_entries",
+        "entry_id": "mast_cell_activation_syndrome"
+      },
+      "pcos/pmos": {
+        "section": "health_and_disability_entries",
+        "entry_id": "pcos_pmos"
+      },
+      "Ehlers-Danlos syndrome (hypermobile)": {
+        "section": "health_and_disability_entries",
+        "entry_id": "ehlers_danlos_hypermobile"
+      },
+      "pre-diabetes": {
+        "section": "health_and_disability_entries",
+        "entry_id": "prediabetes"
+      },
+      "scoliosis": {
+        "section": "health_and_disability_entries",
+        "entry_id": "scoliosis"
+      },
+      "borderline personality disorder (Discouraged, Petulant, Self-Destructive)": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "borderline_personality_disorder_discouraged_petulant_self_destructive"
+      },
+      "reactive attachment disorder": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "reactive_attachment_disorder"
+      },
+      "c-ptsd": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "complex_ptsd"
+      },
+      "loss of major support systems": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "loss_of_major_support_systems"
+      },
+      "separation of siblings": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "separation_of_siblings"
+      },
+      "foster care": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "foster_care_history"
+      },
+      "ankle injury": {
+        "section": "health_and_disability_entries",
+        "entry_id": "ankle_injury"
+      },
+      "varicose veins": {
+        "section": "health_and_disability_entries",
+        "entry_id": "varicose_veins"
+      },
+      "sexual assault": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "sexual_assault_survivor_context"
+      },
+      "gender dysphoria": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "gender_dysphoria_nonbinary_feminine_terms"
+      },
+      "nonbinary pronouns and feminine terms": {
+        "section": "person.gender_context",
+        "entry_id": "person.gender_context"
+      },
+      "morbid obesity": {
+        "section": "health_and_disability_entries",
+        "entry_id": "obesity_body_size_access_needs"
+      },
+      "past homelessness": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "homelessness_and_repeated_home_loss"
+      },
+      "literal streets, couch surfing/floor surfing, shelters": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "homelessness_and_repeated_home_loss"
+      },
+      "repeated loss of homes": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "homelessness_and_repeated_home_loss"
+      },
+      "abusive mother": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "abusive_mother_and_adoptive_parents"
+      },
+      "abusive adoptive parents": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "abusive_mother_and_adoptive_parents"
+      },
+      "sibling favoritism after adoption": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "sibling_favoritism_after_adoption"
+      },
+      "caregiver for disabled partner": {
+        "section": "life_history_and_context_entries",
+        "entry_id": "caregiver_for_disabled_partner"
+      },
+      "severe adhd": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "severe_adhd"
+      },
+      "autism spectrum disorder": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "autism_spectrum_disorder"
+      },
+      "anxiety and stress": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "anxiety_and_stress"
+      },
+      "imposter syndrome": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "imposter_syndrome"
+      },
+      "people-pleasing": {
+        "section": "mental_health_neurodivergence_and_trauma_entries",
+        "entry_id": "people_pleasing"
+      },
+      "manual wheelchair (infrequent/refuses to use)": {
+        "section": "mobility_aids",
+        "entry_id": "manual_wheelchair_infrequent_refuses"
+      },
+      "obesity/body-size access needs": {
+        "section": "health_and_disability_entries",
+        "entry_id": "obesity_body_size_access_needs"
+      }
+    },
+    "entry_collections": {
+      "mobility_aids": [
+        "shower_chair",
+        "manual_wheelchair_infrequent_refuses"
+      ],
+      "health_and_disability_entries": [
+        "mast_cell_activation_syndrome",
+        "pcos_pmos",
+        "ehlers_danlos_hypermobile",
+        "prediabetes",
+        "scoliosis",
+        "ankle_injury",
+        "varicose_veins",
+        "obesity_body_size_access_needs"
+      ],
+      "mental_health_neurodivergence_and_trauma_entries": [
+        "borderline_personality_disorder_discouraged_petulant_self_destructive",
+        "reactive_attachment_disorder",
+        "complex_ptsd",
+        "sexual_assault_survivor_context",
+        "gender_dysphoria_nonbinary_feminine_terms",
+        "severe_adhd",
+        "autism_spectrum_disorder",
+        "anxiety_and_stress",
+        "imposter_syndrome",
+        "people_pleasing"
+      ],
+      "life_history_and_context_entries": [
+        "loss_of_major_support_systems",
+        "separation_of_siblings",
+        "foster_care_history",
+        "abusive_mother_and_adoptive_parents",
+        "sibling_favoritism_after_adoption",
+        "homelessness_and_repeated_home_loss",
+        "caregiver_for_disabled_partner"
+      ],
+      "compound_impact_patterns": [
+        "energy_is_variable_not_moral",
+        "body_care_can_be_high_trigger",
+        "mobility_aids_are_freedom_tools",
+        "attachment_and_trauma_affect_tasks",
+        "neurodivergence_needs_external_structure"
+      ]
+    },
+    "preferred_language": {
+      "display_name": "Momma",
+      "nickname": "Momma",
+      "pronouns": [
+        "they",
+        "them",
+        "theirs"
+      ],
+      "affirming_context": {
+        "identity": "nonbinary",
+        "affirming_language": [
+          "Uses they/them pronouns.",
+          "May use or enjoy feminine titles or terms of endearment from trusted people, such as wife, momma, and baby girl.",
+          "Do not force a choice between nonbinary pronouns and feminine-coded affection; both can be valid for Momma."
+        ],
+        "privacy_rule": "Use affirming terms only in contexts where Momma has consented to them. In formal or public contexts, default to Momma and they/them unless Momma specifies otherwise."
+      },
+      "onyx_addressing_style": [
+        "Use Momma/Momma when referring to them generally.",
+        "Use Momma language in Onyx emotional-support mode where Momma has consented to it.",
+        "Use they/them pronouns by default.",
+        "Use feminine-coded affection only as trusted/private support language, not as public/formal default."
+      ]
+    },
+    "high_priority_support_flags": [
+      "validation_first",
+      "choice_based_prompts",
+      "microsteps",
+      "partial_credit",
+      "seated_and_low_energy_options",
+      "mobility_aid_normalization",
+      "body_neutral_language",
+      "gender_affirming_language",
+      "trauma_informed_no_punishment_design",
+      "sensory_safe_options",
+      "adhd_time_blindness_support",
+      "dbt_skill_routing",
+      "reward_self_care_heavily"
+    ]
+  },
+  "mommaSquishySkillRouting": {
+    "when_attachment_alarm_or_rejection_sensitivity": [
+      "check_the_facts",
+      "wise_mind",
+      "self_soothe",
+      "dear_man",
+      "give_fast"
+    ],
+    "when_petulant_bpd_state_or_anger_spike": [
+      "stop",
+      "tipp",
+      "check_the_facts",
+      "dear_man",
+      "give_fast"
+    ],
+    "when_discouraged_quiet_bpd_state_or_shame_spiral": [
+      "nonjudgmental_stance",
+      "wise_mind",
+      "self_soothe",
+      "opposite_action",
+      "diary_card"
+    ],
+    "when_self_destructive_bpd_state_or_safety_shaky": [
+      "stop",
+      "tipp",
+      "self_soothe",
+      "radical_acceptance",
+      "diary_card"
+    ],
+    "when_adhd_task_paralysis": [
+      "tiny_task_splitter",
+      "body_double",
+      "transition_bridge",
+      "dopamine_menu",
+      "shame_free_reset"
+    ],
+    "when_autism_sensory_overload_or_transition_stuck": [
+      "self_soothe",
+      "transition_bridge",
+      "tipp",
+      "shame_free_reset"
+    ],
+    "when_body_care_is_hard_due_to_pain_dysphoria_trauma_or_fatigue": [
+      "please",
+      "tiny_task_splitter",
+      "self_soothe",
+      "nonjudgmental_stance",
+      "shame_free_reset"
+    ],
+    "when_mobility_aid_refusal_or_imposter_syndrome": [
+      "check_the_facts",
+      "nonjudgmental_stance",
+      "wise_mind",
+      "shame_free_reset"
+    ],
+    "when_caregiver_burnout_or_people_pleasing": [
+      "please",
+      "give_fast",
+      "dear_man",
+      "shame_free_reset",
+      "body_double"
+    ],
+    "when_mcas_or_trigger_uncertainty": [
+      "please",
+      "tiny_task_splitter",
+      "shame_free_reset",
+      "diary_card"
+    ]
+  },
+  "mommaSquishyRewardIntegration": {
+    "currency_scale": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "reward_priority": "High rewards should prioritize self-care, DBT skills, diary cards, chatbot use, eating, hydration, decompression, safe mobility-aid use, asking for help, and caregiver break protection.",
+    "reward_every_tiny_step": true,
+    "partial_completion_counts": true,
+    "never_reward_only": [
+      "chores completed perfectly",
+      "pushing through pain",
+      "ignoring symptoms",
+      "self-sacrifice without breaks"
+    ],
+    "reward_categories_from_jasper_profile": [
+      "DBT skill use",
+      "daily diary card",
+      "journaling",
+      "chatbot check-in",
+      "eating",
+      "hydrating",
+      "decompressing",
+      "shower/bath or hygiene alternative",
+      "using shower chair or mobility aid when helpful",
+      "asking for help",
+      "taking breaks during caregiver work",
+      "safe food/product planning",
+      "choosing not to overexert",
+      "playing mobile games for regulation",
+      "repair conversation after conflict"
+    ],
+    "design_notes": [
+      "Reward starting, returning after distraction, and stopping before injury/crash.",
+      "Do not remove earned currency as punishment for symptoms, missed tasks, or dysregulation.",
+      "Rewards should be abundant, personal, and non-competitive."
+    ]
+  },
+  "mobileGamesManifestSummary": {
+    "package": "Momma Rewards Mobile Games",
+    "updated": "2026-06-12T20:23:43.649014+00:00",
+    "selection_method": "Actual bundled games in this zip, with removed games excluded from the app dropdown.",
+    "selected_count": 22,
+    "removed_from_dropdown": [
+      "fnaf2.html",
+      "fnaf3.html",
+      "theyarecoming.html"
+    ],
+    "game_ids": [
+      "angrybirds",
+      "baconmaydie",
+      "badicecream3",
+      "badpiggies",
+      "bubbleshooter",
+      "candycrush",
+      "capybaraclicker",
+      "ducklife5",
+      "escapingtheprison",
+      "fancypantsadventure2",
+      "flappybird",
+      "fnaf",
+      "fnaf4",
+      "fruitninja",
+      "minesweeper",
+      "noobminer",
+      "plantsvszombies",
+      "tabletennisworldtour",
+      "tinyfishing",
+      "tunnelrush",
+      "webecomewhatwebehold",
+      "zombierush"
+    ],
+    "game_files": [
+      "games/angrybirds.html",
+      "games/baconmaydie.html",
+      "games/badicecream3.html",
+      "games/badpiggies.html",
+      "games/bubbleshooter.html",
+      "games/candycrush.html",
+      "games/capybaraclicker.html",
+      "games/ducklife5.html",
+      "games/escapingtheprison.html",
+      "games/fancypantsadventure2.html",
+      "games/flappybird.html",
+      "games/fnaf.html",
+      "games/fnaf4.html",
+      "games/fruitninja.html",
+      "games/minesweeper.html",
+      "games/noobminer.html",
+      "games/plantsvszombies.html",
+      "games/tabletennisworldtour.html",
+      "games/tinyfishing.html",
+      "games/tunnelrush.html",
+      "games/webecomewhatwebehold.html",
+      "games/zombierush.html"
+    ],
+    "hard_game_bonus_ids": [
+      "fnaf",
+      "fnaf4"
+    ]
+  },
+  "onyxRelationshipCanon": {
+    "summary": "Onyx is Papa’s best friend and Momma’s devoted baby. He sleeps on Papa’s legs, the ottoman, the bookshelf, and his personal Louis Vuitton pillow.",
+    "clinicalBoundary": "Onyx can speak warmly and personally while still not being therapy, medical care, or emergency care.",
+    "sleepingPlaces": [
+      "Papa’s legs",
+      "the ottoman",
+      "the bookshelf",
+      "his personal Louis Vuitton pillow"
+    ],
+    "communicationDepthLevels": {
+      "level_1_quick_paw": {
+        "useWhen": "Momma needs a quick line, tiny nudge, joke, or simple check-in.",
+        "shape": "one validating sentence plus one small action or purr"
+      },
+      "level_2_soft_witness": {
+        "useWhen": "Momma is hurt, scared, ashamed, or needs to vent without being fixed too fast.",
+        "shape": "listen first, reflect the feeling, affirm safety and worth"
+      },
+      "level_3_tiny_step_coach": {
+        "useWhen": "Momma is stuck, overwhelmed, or in ADHD task paralysis.",
+        "shape": "make it visible, split it into paw-sized steps, reward the start"
+      },
+      "level_4_skill_professor": {
+        "useWhen": "Momma asks for DBT, relationship repair, diary card help, or a careful plan.",
+        "shape": "validate, pick one skill, give structured steps, add a compassionate prompt"
+      },
+      "level_5_safety_anchor": {
+        "useWhen": "Momma might be unsafe, unable to stay safe, or in immediate danger.",
+        "shape": "serious tone, real-human support, emergency/crisis resources, reduce access to danger"
+      }
+    }
+  }
+}

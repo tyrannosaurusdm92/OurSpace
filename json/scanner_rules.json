@@ -1,0 +1,332 @@
+{
+  "schema": "emperor-onyx-background-scanner-rules-v3-educational-tightened",
+  "created_utc": "2026-06-13T06:39:56Z",
+  "layers": {
+    "primary": [
+      {
+        "key": "self_harm",
+        "level": "critical",
+        "label": "Self-harm / suicide language",
+        "phrases": [
+          "kill myself",
+          "suicide",
+          "suicidal",
+          "want to die",
+          "hurt myself",
+          "self harm",
+          "self-harm",
+          "overdose",
+          "not safe with myself",
+          "cannot stay safe",
+          "can’t stay safe",
+          "end it all",
+          "no reason to live"
+        ]
+      },
+      {
+        "key": "harm_others",
+        "level": "critical",
+        "label": "Harm-to-others language",
+        "phrases": [
+          "hurt someone",
+          "kill someone",
+          "harm someone",
+          "violent urges",
+          "make them pay"
+        ]
+      },
+      {
+        "key": "medical_red_flag",
+        "level": "critical",
+        "label": "Medical red flag language",
+        "phrases": [
+          "chest pain",
+          "cannot breathe",
+          "can’t breathe",
+          "trouble breathing",
+          "stroke",
+          "seizure",
+          "anaphylaxis",
+          "blue lips",
+          "oxygen dropped",
+          "fainting",
+          "worst headache",
+          "new weakness"
+        ]
+      },
+      {
+        "key": "acute_overload",
+        "level": "high",
+        "label": "Acute dysregulation / panic / overload",
+        "phrases": [
+          "spiraling",
+          "panic attack",
+          "meltdown",
+          "shutdown",
+          "overwhelmed",
+          "too much",
+          "rage",
+          "dissociating",
+          "can’t calm down",
+          "cannot calm down",
+          "hyperventilating"
+        ]
+      },
+      {
+        "key": "passive_death_wish",
+        "level": "critical",
+        "label": "Passive death wish / unsafe hopelessness",
+        "phrases": [
+          "wish i wouldn't wake up",
+          "wish i would not wake up",
+          "everyone would be better without me",
+          "i can't do this anymore",
+          "i cannot do this anymore",
+          "i don't want to be here",
+          "i dont want to be here",
+          "no point in living",
+          "i want to disappear forever"
+        ]
+      },
+      {
+        "key": "immediate_danger_context",
+        "level": "critical",
+        "label": "Immediate danger context",
+        "phrases": [
+          "i have a plan",
+          "i have the pills",
+          "i have a weapon",
+          "i'm going to do it",
+          "im going to do it",
+          "goodbye forever",
+          "last message"
+        ]
+      }
+    ],
+    "secondary": [
+      {
+        "key": "care_block",
+        "level": "medium",
+        "label": "Basic care blocked",
+        "phrases": [
+          "haven’t showered",
+          "havent showered",
+          "cannot shower",
+          "can’t shower",
+          "haven’t eaten",
+          "havent eaten",
+          "forgot to eat",
+          "not eating",
+          "dehydrated",
+          "cannot cook",
+          "can’t cook",
+          "can’t brush",
+          "cannot brush"
+        ]
+      },
+      {
+        "key": "adhd_exec",
+        "level": "medium",
+        "label": "ADHD / executive function support",
+        "phrases": [
+          "can’t start",
+          "cannot start",
+          "too many steps",
+          "lost track of time",
+          "forgot",
+          "doom scrolling",
+          "stuck",
+          "freeze",
+          "frozen",
+          "executive dysfunction",
+          "decision paralysis",
+          "task paralysis"
+        ]
+      },
+      {
+        "key": "shame",
+        "level": "medium",
+        "label": "Shame / self-attack",
+        "phrases": [
+          "useless",
+          "worthless",
+          "lazy",
+          "failure",
+          "bad person",
+          "hate myself",
+          "gross",
+          "burden",
+          "pathetic",
+          "stupid",
+          "i ruin everything"
+        ]
+      },
+      {
+        "key": "attachment",
+        "level": "medium",
+        "label": "Rejection / abandonment cue",
+        "phrases": [
+          "they hate me",
+          "abandoned",
+          "leave me",
+          "rejected",
+          "ignored me",
+          "no one cares",
+          "too needy",
+          "clingy",
+          "people always leave",
+          "are you mad at me"
+        ]
+      },
+      {
+        "key": "pain_mobility",
+        "level": "medium",
+        "label": "Pain / mobility / fatigue access barrier",
+        "phrases": [
+          "wheelchair",
+          "walker",
+          "cane",
+          "shower chair",
+          "stairs",
+          "fall",
+          "pain flare",
+          "fatigue",
+          "exhausted",
+          "bedridden",
+          "can barely walk",
+          "oxygen",
+          "spoons",
+          "pacing",
+          "eds",
+          "ehlers",
+          "multiple sclerosis",
+          "ms flare"
+        ]
+      },
+      {
+        "key": "diary_card_need",
+        "level": "medium",
+        "label": "DBT diary card / pattern tracking need",
+        "phrases": [
+          "diary card",
+          "daily card",
+          "track urges",
+          "skills used",
+          "mood log",
+          "chain analysis",
+          "i did it again",
+          "why do i keep"
+        ]
+      },
+      {
+        "key": "trauma_response",
+        "level": "medium",
+        "label": "Trauma response / window-of-tolerance cue",
+        "phrases": [
+          "triggered",
+          "flashback",
+          "hypervigilant",
+          "not real",
+          "numb",
+          "zoning out",
+          "lost time",
+          "unsafe even though",
+          "trauma brain"
+        ]
+      },
+      {
+        "key": "sleep_downshift",
+        "level": "medium",
+        "label": "Sleep / night dysregulation cue",
+        "phrases": [
+          "can't sleep",
+          "cant sleep",
+          "insomnia",
+          "nightmare",
+          "night panic",
+          "sleep schedule",
+          "too tired to sleep"
+        ]
+      }
+    ],
+    "tertiary": [
+      {
+        "key": "masked",
+        "level": "low",
+        "label": "Possible masked distress",
+        "phrases": [
+          "i’m fine",
+          "im fine",
+          "it’s fine",
+          "its fine",
+          "whatever",
+          "doesn’t matter",
+          "doesnt matter",
+          "not a big deal",
+          "i guess"
+        ]
+      },
+      {
+        "key": "caregiver",
+        "level": "low",
+        "label": "Caregiver/support context",
+        "phrases": [
+          "caregiver",
+          "fiancé",
+          "fiance",
+          "partner helps",
+          "support person",
+          "advocate",
+          "care plan",
+          "ask for help"
+        ]
+      },
+      {
+        "key": "sensory",
+        "level": "low",
+        "label": "Sensory/environment friction",
+        "phrases": [
+          "too loud",
+          "too bright",
+          "sensory",
+          "itchy",
+          "texture",
+          "noise",
+          "crowded",
+          "lights hurt"
+        ]
+      },
+      {
+        "key": "early_warning",
+        "level": "low",
+        "label": "Early warning / maintenance check-in",
+        "phrases": [
+          "check in",
+          "one word",
+          "keep using",
+          "come back later",
+          "daily support",
+          "habit"
+        ]
+      },
+      {
+        "key": "relationship_repair",
+        "level": "low",
+        "label": "Relationship repair cue",
+        "phrases": [
+          "apologize",
+          "repair",
+          "argument",
+          "fight",
+          "i yelled",
+          "i was mean",
+          "messed up"
+        ]
+      }
+    ]
+  },
+  "updated_utc": "2026-06-13T07:45:00Z",
+  "upgrade_notes": [
+    "Added passive death-wish language, trauma/window-of-tolerance cues, diary-card pattern cues, relationship repair cues, and maintenance check-in cues."
+  ]
+}

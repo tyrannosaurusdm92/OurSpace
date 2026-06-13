@@ -1,0 +1,140 @@
+{
+  "schema": "emperor-onyx-care-micro-actions-v1",
+  "created_utc": "2026-06-13T06:39:56Z",
+  "principle": "Tiny steps count. When activation is low, suggest the smallest safe next action and a recovery option.",
+  "categories": [
+    {
+      "id": "hydration",
+      "name": "Hydration",
+      "signals": [
+        "thirsty",
+        "dehydrated",
+        "dry mouth",
+        "headache",
+        "forgot to drink"
+      ],
+      "actions": [
+        "Put water beside you, even before drinking it.",
+        "Take one sip, then pause.",
+        "Add flavor/ice/straw if that reduces friction.",
+        "Set the cup on the path to the bathroom/bed/desk."
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food / energy",
+      "signals": [
+        "hungry",
+        "forgot to eat",
+        "not eating",
+        "nauseous",
+        "no appetite",
+        "cannot cook",
+        "can’t cook"
+      ],
+      "actions": [
+        "Pick a no-cook food first: crackers, yogurt, cheese, fruit, granola, leftovers, or a safe snack.",
+        "Eat three bites before deciding anything else.",
+        "Ask a caregiver/support person for one simple option, not a whole meal plan.",
+        "Use “fed is better than perfect” as the rule."
+      ]
+    },
+    {
+      "id": "hygiene",
+      "name": "Hygiene",
+      "signals": [
+        "shower",
+        "brushing teeth",
+        "dirty",
+        "gross",
+        "can’t bathe",
+        "cannot bathe"
+      ],
+      "actions": [
+        "Choose the lowest-energy version: wipe face, deodorant, mouthwash, dry shampoo, clean shirt.",
+        "Sit down for hygiene whenever possible.",
+        "Use a shower chair, towel setup, and post-shower rest plan if showering.",
+        "Do one hygiene zone only: mouth, face, armpits, hair, or clothes."
+      ]
+    },
+    {
+      "id": "adhd_start",
+      "name": "ADHD task start",
+      "signals": [
+        "can’t start",
+        "cannot start",
+        "stuck",
+        "freeze",
+        "frozen",
+        "too many steps",
+        "executive dysfunction",
+        "doom scrolling"
+      ],
+      "actions": [
+        "Name only the next visible action, not the whole task.",
+        "Set a 2-minute “touch the task” timer.",
+        "Open the tab/app/object, then stop if needed.",
+        "Use body-doubling or text someone “I am starting one tiny step.”"
+      ]
+    },
+    {
+      "id": "pain_mobility",
+      "name": "Pain / mobility pacing",
+      "signals": [
+        "pain",
+        "flare",
+        "wheelchair",
+        "walker",
+        "cane",
+        "bedridden",
+        "can barely walk",
+        "oxygen",
+        "fatigue",
+        "spoons"
+      ],
+      "actions": [
+        "Switch to seated, lying-down, or aided version.",
+        "Place needed items within reach before starting.",
+        "Break the task into reach-zone steps.",
+        "Budget recovery before and after, not only after."
+      ]
+    },
+    {
+      "id": "emotion_regulation",
+      "name": "DBT emotion regulation",
+      "signals": [
+        "spiraling",
+        "panic",
+        "rage",
+        "meltdown",
+        "shutdown",
+        "dissociating",
+        "overwhelmed"
+      ],
+      "actions": [
+        "Lower body arousal first: cold water/ice pack, slower exhale, feet on floor.",
+        "Use “name it to tame it”: feeling + intensity + trigger.",
+        "Choose one DBT skill before problem-solving.",
+        "Delay big messages or decisions until intensity drops."
+      ]
+    },
+    {
+      "id": "connection",
+      "name": "Connection / attachment",
+      "signals": [
+        "abandoned",
+        "rejected",
+        "ignored",
+        "no one cares",
+        "are you mad",
+        "people leave"
+      ],
+      "actions": [
+        "Check facts before mind-reading.",
+        "Write the soft version of the ask: “Can you reassure me when you can?”",
+        "Use a 20-minute pause before sending many follow-ups.",
+        "Ask for one clear thing instead of testing the relationship."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "emperor-onyx-safety-plan-v1",
+  "created_utc": "2026-06-13T06:39:56Z",
+  "use_when": "Scanner primary layer detects immediate safety/medical risk language or the user says they may not stay safe.",
+  "priority_order": [
+    "Reduce immediate danger",
+    "Move toward a safe person/place",
+    "Contact emergency/crisis support",
+    "Use grounding only while connecting to help"
+  ],
+  "us_options": [
+    "Call or text 988 for the Suicide & Crisis Lifeline.",
+    "Call 911 for immediate danger, medical emergency, or danger to others.",
+    "Go to the nearest emergency department if safe transportation is available."
+  ],
+  "bot_behavior": [
+    "Do not continue ordinary coaching while critical safety language is active.",
+    "Use direct, low-shame language.",
+    "Ask only essential safety questions if needed.",
+    "Encourage removing means and not being alone when possible."
+  ]
+}
