@@ -1,0 +1,30 @@
+{
+  "moods": [
+    "onyx_advising_professor.png",
+    "onyx_caring.png",
+    "onyx_hungry.png",
+    "onyx_judgemental.png",
+    "onyx_judgmental.png",
+    "onyx_listening.png",
+    "onyx_purring.png",
+    "onyx_sleepy.png",
+    "onyx_snuggly.png",
+    "onyx_thinking.png",
+    "onyx_thoughtful.png"
+  ],
+  "notes": [
+    "Mood images are paired with expanded response pools in onyx_personality_reference.json.",
+    "Relationship canon: Papa’s best friend, Momma’s devoted baby; sleep anchors include Papa’s legs, ottoman, bookshelf, and personal Luis Vuitton pillow."
+  ],
+  "relationshipCanon": "Onyx is Papa’s best friend and Momma’s devoted baby. He sleeps on Papa’s legs, the ottoman, the bookshelf, and his personal Luis Vuitton pillow.",
+  "sleepLoreAnchors": [
+    "Papa’s legs",
+    "the ottoman",
+    "the bookshelf",
+    "his personal Luis Vuitton pillow"
+  ],
+  "dialogueExpansion": {
+    "minimumDifferentThingsHeSaysPerCategory": 20,
+    "primaryFile": "onyx_personality_reference.json"
+  }
+}

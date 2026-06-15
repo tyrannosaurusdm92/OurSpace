@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lord Onyx Blepman — Full Live Voidattude Model</title>
+  <link rel="stylesheet" href="css/onyx.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero card">
+      <div class="avatar-wrap">
+        <img id="onyxMood" class="avatar" src="assets/onyx-moods/onyx_snuggly.png" alt="Lord Onyx mood portrait" />
+        <div id="moodLabel" class="mood-label">snuggly</div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">fully merged live support persona</p>
+        <h1>Lord Onyx Blepman</h1>
+        <h2>Emperor of the Voidattude</h2>
+        <p>A black cat who was once human: attitude, psychiatric skill routing, physical-health/accessibility awareness, DBT paws, and extremely serious snuggles.</p>
+        <div class="status-row">
+          <span id="knowledgeStats">loading knowledge…</span>
+          <span id="providerBadge">local brain ready</span>
+        </div>
+        <div class="chips" id="moodChips"></div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="chat card">
+        <div id="messages" class="messages" aria-live="polite"></div>
+        <div id="suggestions" class="suggestions"></div>
+        <form id="chatForm" class="chat-form">
+          <textarea id="messageInput" rows="3" placeholder="Tell Onyx what is happening... messy is allowed."></textarea>
+          <div class="form-row">
+            <select id="profileSelect" title="Onyx relational mode">
+              <option value="papa">Papa / Dino Dad mode</option>
+              <option value="momma">Momma mode</option>
+            </select>
+            <label class="toggle"><input id="forceLocal" type="checkbox" /> force local</label>
+            <button type="submit">Send to Onyx</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="side card">
+        <h3>Quick paws</h3>
+        <button data-prompt="I am overwhelmed. Ground me gently.">Ground me</button>
+        <button data-prompt="I am stuck and need an ADHD-friendly tiny step plan.">Tiny step plan</button>
+        <button data-prompt="My body hurts and I need a low-spoon care plan.">Low-spoon body care</button>
+        <button data-prompt="Teach me a DBT skill I can use right now.">DBT skill</button>
+        <button data-prompt="I need help writing a message with boundaries.">Relationship script</button>
+        <button data-prompt="Tell me who you are, Lord Onyx.">Who are you?</button>
+        <h3>Image mood helper</h3>
+        <form id="imageForm" class="image-form">
+          <input id="imageInput" type="file" accept="image/*" />
+          <input id="imageCaption" type="text" placeholder="Optional context for the image" />
+          <button type="submit">Pick Onyx mood</button>
+        </form>
+        <h3>Runtime</h3>
+        <p class="fine-print">Use <code>.env</code> to connect a strong OpenAI-compatible or Ollama model. Without that, Onyx uses the merged local psychiatry/DBT/health scanner and persona engine.</p>
+      </aside>
+    </section>
+  </main>
+  <script src="js/onyx-gas-config.js"></script>
+  <script src="js/onyx.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+
+/* OurSpace Onyx v5 GAS widget — profile-page module integration */
+:root{
+  --onyx-void:#06121c;
+  --onyx-panel:rgba(2,18,30,.94);
+  --onyx-soft:rgba(255,255,255,.94);
+  --onyx-cyan:#00ffff;
+  --onyx-blue:#1e8dff;
+  --onyx-green:#a9ef8f;
+  --onyx-gold:#d69a24;
+  --onyx-shadow:0 12px 32px rgba(0,0,0,.28);
+}
+.onyx-live-panel,
+.onyx-widget{
+  width:100%;
+  border:2px solid var(--onyx-cyan);
+  border-radius:16px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 22% 8%,rgba(0,255,255,.25),transparent 30%),
+    radial-gradient(circle at 80% 3%,rgba(76,173,255,.18),transparent 34%),
+    linear-gradient(135deg,#051018,#081c2b 55%,#03070d);
+  color:#eefcff;
+  box-shadow:var(--onyx-shadow);
+}
+.onyx-picture-card{display:grid;gap:10px;padding:12px;}
+.onyx-picture-stage{
+  display:grid;
+  grid-template-columns:minmax(140px,260px) 1fr;
+  gap:14px;
+  align-items:center;
+}
+.onyx-picture-main,
+.onyx-face{
+  width:100%;
+  max-width:260px;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  border-radius:18px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(0,255,255,.45);
+  box-shadow:0 0 28px rgba(0,255,255,.22);
+}
+.onyx-picture-copy{display:grid;gap:6px;}
+.onyx-picture-copy strong,
+.onyx-title{font-size:1.2em;color:#fff;text-shadow:0 0 9px rgba(0,255,255,.55);}
+.onyx-picture-mode,
+.onyx-mode-pill{
+  display:inline-flex;
+  width:max-content;
+  padding:4px 8px;
+  border-radius:999px;
+  background:rgba(0,255,255,.14);
+  border:1px solid rgba(0,255,255,.45);
+  color:#dcffff;
+  font-weight:800;
+}
+.onyx-status-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
+.onyx-status-row span{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  padding:4px 7px;
+  font-size:.9em;
+}
+.onyx-mood-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(78px,1fr));
+  gap:7px;
+  margin-top:4px;
+}
+.onyx-mood-button{
+  display:grid;
+  gap:4px;
+  justify-items:center;
+  min-height:74px;
+  border:1px solid rgba(0,255,255,.34);
+  background:rgba(255,255,255,.08);
+  color:#eaffff;
+  border-radius:12px;
+  padding:5px;
+  font-weight:800;
+}
+.onyx-mood-button img{
+  width:44px;
+  height:44px;
+  object-fit:contain;
+  border-radius:9px;
+}
+.onyx-mood-button.is-active{
+  outline:2px solid var(--onyx-green);
+  background:rgba(169,239,143,.16);
+}
+.onyx-widget{display:grid;grid-template-rows:auto minmax(220px,1fr) auto;}
+.onyx-header{
+  display:grid;
+  grid-template-columns:72px 1fr auto;
+  gap:10px;
+  align-items:center;
+  padding:10px;
+  border-bottom:1px solid rgba(0,255,255,.26);
+  background:rgba(0,0,0,.22);
+}
+.onyx-header .onyx-face{width:72px;height:72px;border-radius:14px;}
+.onyx-subtitle{opacity:.88;font-size:.95em;}
+.onyx-mode{font-weight:900;color:var(--onyx-green);text-align:right;}
+.onyx-messages{
+  display:grid;
+  align-content:start;
+  gap:8px;
+  min-height:220px;
+  max-height:min(52vh,460px);
+  overflow:auto;
+  padding:10px;
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,0,0,.08));
+}
+.onyx-msg{
+  max-width:92%;
+  border-radius:13px;
+  padding:8px 10px;
+  line-height:1.35;
+  white-space:normal;
+  box-shadow:0 4px 12px rgba(0,0,0,.18);
+}
+.onyx-msg .meta{font-size:.78em;opacity:.75;font-weight:800;margin-bottom:3px;}
+.onyx-msg.user{
+  justify-self:end;
+  background:#eaffff;
+  color:#03252c;
+  border:1px solid rgba(0,255,255,.4);
+}
+.onyx-msg.onyx{
+  justify-self:start;
+  background:rgba(5,35,52,.96);
+  color:#f3ffff;
+  border:1px solid rgba(0,255,255,.32);
+}
+.onyx-msg.system{
+  justify-self:center;
+  max-width:100%;
+  background:rgba(214,154,36,.16);
+  border:1px solid rgba(214,154,36,.45);
+  color:#fff3d2;
+  font-weight:800;
+}
+.onyx-msg.onyx-safety{border-color:#ffb3b3;background:#451b25;}
+.onyx-controls{display:grid;gap:8px;padding:10px;border-top:1px solid rgba(0,255,255,.26);}
+.onyx-chips,.onyx-suggestions{display:flex;flex-wrap:wrap;gap:6px;}
+.onyx-chip,.onyx-suggestion,.onyx-tool-button{
+  border:1px solid rgba(0,255,255,.4);
+  background:rgba(0,255,255,.13);
+  color:#eefcff;
+  border-radius:999px;
+  padding:6px 9px;
+  font-weight:800;
+}
+.onyx-input-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;}
+.onyx-input-row textarea{
+  width:100%;
+  min-height:66px;
+  resize:vertical;
+  border:1px solid rgba(0,255,255,.45);
+  border-radius:12px;
+  padding:8px;
+  background:rgba(255,255,255,.96);
+  color:#051018;
+}
+.onyx-send{
+  align-self:stretch;
+  border:1px solid #fff;
+  border-radius:12px;
+  padding:8px 12px;
+  font-weight:900;
+  background:linear-gradient(#fff,var(--onyx-cyan));
+  color:#012930;
+}
+.onyx-tool-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;}
+.onyx-tool-row input[type=file]{max-width:180px;}
+.onyx-small-note{opacity:.8;font-size:.86em;}
+.onyx-hidden{display:none !important;}
+.onyx-fade{animation:onyxPulse .32s ease both;}
+@keyframes onyxPulse{from{filter:brightness(.75) saturate(.75);transform:scale(.985)}to{filter:none;transform:scale(1)}}
+@media (max-width:720px){
+  .onyx-picture-stage{grid-template-columns:1fr;}
+  .onyx-picture-main{justify-self:center;}
+  .onyx-header{grid-template-columns:56px 1fr;}
+  .onyx-header .onyx-face{width:56px;height:56px;}
+  .onyx-mode{grid-column:1/-1;text-align:left;}
+  .onyx-input-row{grid-template-columns:1fr;}
+  .onyx-send{min-height:42px;}
+}

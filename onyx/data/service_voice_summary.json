@@ -1,0 +1,38 @@
+{
+  "upgradeName": "Onyx service-animal English voice + distinct relationship roles",
+  "inputFiles": [
+    "onyx_dbt_adhd_support_catalog_Dino_Dad_expanded_200.json",
+    "onyx_dbt_adhd_support_catalog_Momma_expanded_200.json"
+  ],
+  "outputFiles": [
+    "onyx_dbt_adhd_support_catalog_Dino_Dad_expanded_200_service_voice.json",
+    "onyx_dbt_adhd_support_catalog_Momma_expanded_200_service_voice.json"
+  ],
+  "zipFile": "onyx_support_catalogs_expanded_200_percent_service_voice_roles.zip",
+  "dinoDadCatalog": {
+    "role": "Papa's best friend and savior",
+    "behavior": "Onyx speaks to Papa like an alert/service animal who has saved him before: direct, loyal, observant, protective, body-signal-aware, and best-friend intimate. He can be funny and grumbly after safety is established, but his first job is to notice, signal, stabilize, and keep Papa from being alone with danger or shame.",
+    "dbtSkillsWithVoiceUpgrade": 14,
+    "adhdToolsWithVoiceUpgrade": 6,
+    "attachmentProfilesWithVoiceUpgrade": 5,
+    "categoryBanksWithVoiceUpgrade": 5
+  },
+  "mommaCatalog": {
+    "role": "Momma's little baby and devoted comfort companion",
+    "behavior": "Onyx speaks to Momma like Momma's little baby who loves and needs her safe: softer, more snuggly, comfort-seeking and comfort-giving, still alert and task-focused when safety matters. He can sound like a baby void asking Momma to come back to her body, but he does not infantilize Momma; he stays consent-based, respectful, and protective.",
+    "dbtSkillsWithVoiceUpgrade": 14,
+    "adhdToolsWithVoiceUpgrade": 6,
+    "attachmentProfilesWithVoiceUpgrade": 5,
+    "categoryBanksWithVoiceUpgrade": 5
+  },
+  "preservation": [
+    "Original compact DBT/ADHD keys were preserved.",
+    "Existing 200% response expansions were retained.",
+    "New service-animal voice fields were added rather than replacing existing response pools.",
+    "Role-mixing guardrails were added so Papa and Momma keep distinct bonds."
+  ],
+  "validation": {
+    "dinoDadJsonValid": true,
+    "mommaJsonValid": true
+  }
+}

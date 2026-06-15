@@ -1,0 +1,352 @@
+{
+  "build": "Lord_Onyx_Blepman_Google_Apps_Script_v5_Windows_Safe_TESTED",
+  "main_backend": "https://script.google.com/macros/s/AKfycbxrm8lbJFGe62K_3xOTUQYvr2D7AKXLCrR8LkR6s14Bwd3k_qkaff9QDRs6KeGhHPaoSg/exec",
+  "onyx_full_backend": "https://script.google.com/macros/s/AKfycbwy_5_ZEsSmN5WqcuLtxfPFz1ITyz6IHxPnpEBPIVOtsa7k6Rb60O-u6gJdPNF_tjaR/exec",
+  "notes": [
+    "Live Apps Script endpoints configured in .env.example, config JSON, backend bridge, safe_json metadata, frontend config, and root static index.html.",
+    "External Apps Script content could not be fully inspected in this sandbox; local routing/fallback handling and UI behavior were tested."
+  ],
+  "checks": [
+    {
+      "name": "Python compile",
+      "passed": true,
+      "output_tail": ""
+    },
+    {
+      "name": "Frontend JS syntax",
+      "passed": true,
+      "output_tail": ""
+    },
+    {
+      "name": "Unit tests",
+      "passed": true,
+      "output_tail": ".....\n----------------------------------------------------------------------\nRan 5 tests in 3.128s\n\nOK\n"
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "health",
+      "size": 868,
+      "passed": true
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "health",
+      "size": 868,
+      "passed": true
+    },
+    {
+      "path": "/api/persona",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "persona",
+      "size": 8860,
+      "passed": true
+    },
+    {
+      "path": "/api/backend",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "backend.status",
+      "size": 1578,
+      "passed": true
+    },
+    {
+      "path": "/api/config",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "config",
+      "size": 1134,
+      "passed": true
+    },
+    {
+      "path": "/api/tools",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "tools",
+      "size": 1258,
+      "passed": true
+    },
+    {
+      "path": "/api/mood-test",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "mood.test",
+      "size": 2368,
+      "passed": true
+    },
+    {
+      "path": "/api/memory/export",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "memory.export",
+      "size": 9494,
+      "passed": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 3301,
+      "passed": true
+    },
+    {
+      "path": "/static/js/onyx.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 10532,
+      "passed": true
+    },
+    {
+      "path": "/static/js/onyx-gas-config.js",
+      "status": 200,
+      "content_type": "text/javascript; charset=utf-8",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 513,
+      "passed": true
+    },
+    {
+      "path": "/static/css/onyx.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 4666,
+      "passed": true
+    },
+    {
+      "path": "/api/chat",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "chat",
+      "size": 4650,
+      "passed": true
+    },
+    {
+      "path": "/api/chat",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": false,
+      "action": "chat",
+      "size": 1405,
+      "passed": true
+    },
+    {
+      "path": "/api/image-mood",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "image_mood",
+      "size": 2335,
+      "passed": true
+    },
+    {
+      "path": "/api/memory/save",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "memory.save",
+      "size": 742,
+      "passed": true
+    },
+    {
+      "path": "/api/memory/search",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "memory.search",
+      "size": 773,
+      "passed": true
+    },
+    {
+      "path": "/api/rag/ingest",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "rag.ingest",
+      "size": 727,
+      "passed": true
+    },
+    {
+      "path": "/api/rag/search",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "rag.search",
+      "size": 1032,
+      "passed": true
+    },
+    {
+      "path": "/api/tools/run",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "tools.run",
+      "size": 730,
+      "passed": true
+    },
+    {
+      "path": "/api/model/route",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "json": true,
+      "ok_field": true,
+      "action": "model.route",
+      "size": 777,
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_advising_professor.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1321840,
+      "name": "mood image advising_professor",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_caring.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1254025,
+      "name": "mood image caring",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_hungry.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1325684,
+      "name": "mood image hungry",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_judgmental.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1298987,
+      "name": "mood image judgmental",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_listening.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1211660,
+      "name": "mood image listening",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_purring.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1269361,
+      "name": "mood image purring",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_sleepy.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1291607,
+      "name": "mood image sleepy",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_snuggly.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1306633,
+      "name": "mood image snuggly",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_thinking.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1328074,
+      "name": "mood image thinking",
+      "passed": true
+    },
+    {
+      "path": "/static/assets/onyx-moods/onyx_thoughtful.png",
+      "status": 200,
+      "content_type": "image/png",
+      "json": false,
+      "ok_field": null,
+      "action": null,
+      "size": 1337874,
+      "name": "mood image thoughtful",
+      "passed": true
+    }
+  ],
+  "server_log_tail": "/Jun/2026 11:28:58] 127.0.0.1 \"GET /health HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:58] 127.0.0.1 \"GET /health HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:58] 127.0.0.1 \"GET /api/health HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:58] 127.0.0.1 \"GET /api/persona HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:58] 127.0.0.1 \"GET /api/backend HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:58] 127.0.0.1 \"GET /api/config HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:58] 127.0.0.1 \"GET /api/tools HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /api/mood-test HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /api/memory/export HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET / HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/js/onyx.js HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/js/onyx-gas-config.js HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/css/onyx.css HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/chat HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/chat HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/image-mood HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/memory/save HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/memory/search HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/rag/ingest HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/rag/search HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/tools/run HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"POST /api/model/route HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_advising_professor.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_caring.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_hungry.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_judgmental.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_listening.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_purring.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_sleepy.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_snuggly.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_thinking.png HTTP/1.1\" 200 -\n[15/Jun/2026 11:28:59] 127.0.0.1 \"GET /static/assets/onyx-moods/onyx_thoughtful.png HTTP/1.1\" 200 -\n",
+  "summary": {
+    "passed": 34,
+    "failed": 0,
+    "total": 34
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "merged": [
+    {
+      "source": "MindMate",
+      "used": [
+        "wellbeing intents",
+        "anxiety response",
+        "journaling",
+        "mood tracking",
+        "breathing",
+        "emergency redirection",
+        "simple chat UI structure"
+      ]
+    },
+    {
+      "source": "Self-Care Bot",
+      "used": [
+        "hygiene reminders",
+        "negative media awareness",
+        "gentle self-care focus"
+      ]
+    },
+    {
+      "source": "ADHD Manager Bot",
+      "used": [
+        "friendly ADHD helper stance",
+        "to-do manager",
+        "long-term memory idea",
+        "timed reminders",
+        "Pomodoro commands"
+      ]
+    },
+    {
+      "source": "Second Brain ADHD n8n",
+      "used": [
+        "recurring reminders until task completion",
+        "status fields",
+        "task hub model",
+        "Telegram reminder concepts converted to local browser reminders"
+      ]
+    },
+    {
+      "source": "Sidejot",
+      "used": [
+        "ADHD-friendly task generation schema",
+        "plan/backlog split",
+        "25-minute task chunks",
+        "planning UI pattern"
+      ]
+    },
+    {
+      "source": "DBT Assistant",
+      "used": [
+        "DBT modules: mindfulness, emotion regulation, distress tolerance, interpersonal effectiveness",
+        "interactive flow concept during emotional overload"
+      ]
+    },
+    {
+      "source": "dbt-agent-skills / dbot / actions",
+      "used": [
+        "not merged into wellness logic because these are data-build-tool/devops repositories, not dialectical behavior therapy chatbots"
+      ]
+    }
+  ],
+  "safetyNote": {
+    "stance": "skill-coaching, reflection, planning, crisis redirection, and self-care support; not diagnosis or medical treatment",
+    "tone": [
+      "warm",
+      "direct",
+      "non-shaming",
+      "sensory-aware",
+      "ADHD-friendly",
+      "attachment-aware"
+    ],
+    "privacy": "Local-first. The static version stores journal, mood, tasks, reminders, and safety-plan data in this browser's localStorage only."
+  },
+  "postMergeUpdates": [
+    {
+      "update": "onyx_relationship_and_dialogue_depth_expansion",
+      "preservedExistingData": true,
+      "relationshipCanon": "Onyx is Papa’s best friend and Momma’s devoted baby. He sleeps on Papa’s legs, the ottoman, the bookshelf, and his personal Luis Vuitton pillow.",
+      "expandedSpokenCategoriesToAtLeast": 20,
+      "filesUpdated": [
+        "data/onyx_personality_reference.json",
+        "data/bot-data.json",
+        "data/onyx_dbt_adhd_support_catalog.json",
+        "data/onyx_mood_manifest.json",
+        "data/source-merge-report.json"
+      ]
+    }
+  ]
+}
