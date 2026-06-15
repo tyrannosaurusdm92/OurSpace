@@ -189,3 +189,16 @@
   .onyx-input-row{grid-template-columns:1fr;}
   .onyx-send{min-height:42px;}
 }
+
+
+/* Onyx face is program-selected; users do not manually select moods. */
+.onyx-auto-note{
+  border-left:4px solid var(--onyx-green);
+  background:rgba(169,239,143,.10);
+  color:#eaffea;
+  padding:8px 10px;
+  border-radius:10px;
+  font-weight:700;
+  line-height:1.35;
+}
+.onyx-mood-grid{display:none!important;}

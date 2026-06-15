@@ -228,24 +228,19 @@
     const initial = moodByProfile.get(profile) || "snuggly";
     panel.innerHTML = `<div class="onyx-live-panel onyx-picture-card">
       <div class="onyx-picture-stage">
-        <img class="onyx-picture-main" alt="Lord Onyx Blepman mood portrait" src="${escapeHTML(moodImage(initial))}">
+        <img class="onyx-picture-main" alt="Lord Onyx Blepman current conversation-chosen face" src="${escapeHTML(moodImage(initial))}">
         <div class="onyx-picture-copy">
           <strong>${escapeHTML(p.widgetLabel)}</strong>
           <span class="onyx-picture-mode">${escapeHTML(moodTitle(initial))}</span>
           <small>${escapeHTML(p.bond)} • V5 live GAS brain</small>
+          <div class="onyx-auto-note">Onyx chooses this face from conversation input, output, body-care context, and backend mood logic. The user does not have to pick his mood.</div>
           <div class="onyx-status-row">
             <span data-onyx-provider>connecting…</span>
             <span data-onyx-knowledge>loading knowledge…</span>
           </div>
         </div>
       </div>
-      <div class="onyx-mood-grid">${Object.keys(MOODS).filter(k => k !== "judgemental").map(key => `<button type="button" class="onyx-mood-button" data-onyx-mood="${escapeHTML(key)}" title="${escapeHTML(moodTitle(key))}"><img alt="" src="${escapeHTML(moodImage(key))}"><span>${escapeHTML(moodTitle(key).replace(" Mode", ""))}</span></button>`).join("")}</div>
     </div>`;
-    panel.addEventListener("click", ev => {
-      const btn = ev.target.closest("[data-onyx-mood]");
-      if (!btn) return;
-      setMood(profile, btn.dataset.onyxMood);
-    });
     setMood(profile, initial);
     hydratePersona(profile);
   }
