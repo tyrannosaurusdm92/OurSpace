@@ -117,3 +117,83 @@
   }
   .page-board{min-height:1100px;}
 }
+
+
+/* OurSpace repair pass: true module zoom + pleasant Onyx/Messenger default room layout. */
+.module{
+  --module-content-zoom:1;
+  --module-font-factor:1;
+  touch-action:none;
+}
+.module[data-module-size="25"]{--module-size-factor:.25;--module-content-zoom:.58;--module-font-factor:.58;}
+.module[data-module-size="50"]{--module-size-factor:.50;--module-content-zoom:.72;--module-font-factor:.72;}
+.module[data-module-size="75"]{--module-size-factor:.75;--module-content-zoom:.86;--module-font-factor:.86;}
+.module[data-module-size="100"]{--module-size-factor:1;--module-content-zoom:1;--module-font-factor:1;}
+.module .module-head{min-height:34px;cursor:grab;}
+.module .module-head:active{cursor:grabbing;}
+.module .module-title,
+.module .module-actions{font-size:calc(1em * var(--module-font-factor));}
+.module .module-body{font-size:1em;}
+.module .module-body > *{zoom:var(--module-content-zoom);}
+.module .module-body button,
+.module .module-body input,
+.module .module-body select,
+.module .module-body textarea{font-size:inherit;}
+.module[data-module-size="25"] .module-head{padding:3px 4px;}
+.module[data-module-size="25"] .module-actions{gap:2px;}
+.module[data-module-size="25"] .module-title{max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* The chatbot page defaults match the requested visual map:
+   left: profile then Messenger; right: DBT prompt, Onyx auto-face, Onyx chat. */
+#chatbot .page-intro{
+  background:#050505;
+  color:#fff;
+  border-color:#050505;
+  box-shadow:0 8px 20px rgba(0,0,0,.28);
+}
+#chatbot .page-intro h2{color:#fff;text-shadow:0 0 10px var(--glow, rgba(0,255,255,.55));}
+#chatbot .page-board{
+  min-height:1320px;
+  background:rgba(255,255,255,.72);
+  border:0;
+  box-shadow:inset 0 0 0 2px rgba(0,0,0,.10);
+}
+#chatbot .module{border-width:3px;border-radius:22px;overflow:hidden;}
+#chatbot .module .module-head{border-radius:18px 18px 0 0;padding:8px 10px;}
+#chatbot .module .module-body{min-height:inherit;}
+#chatbot .module[data-module-id="profile-chatbot"]{--w:500px;min-height:440px;border-color:#f57f17;background:rgba(255,246,229,.96);}
+#chatbot .module[data-module-id="profile-chatbot"] .module-head{background:#f57f17;color:#1e0b00; text-shadow:none;}
+#chatbot .module[data-module-id="messenger"]{--w:500px;min-height:760px;border-color:#7b1fb1;background:rgba(250,241,255,.96);}
+#chatbot .module[data-module-id="messenger"] .module-head{background:#7b1fb1;}
+#chatbot .module[data-module-id="dbt-prompts"]{--w:560px;min-height:250px;border-color:#b5121b;background:rgba(255,241,241,.96);}
+#chatbot .module[data-module-id="dbt-prompts"] .module-head{background:#b5121b;}
+#chatbot .module[data-module-id="onyx-image"]{--w:560px;min-height:405px;border-color:#155719;background:rgba(240,255,240,.96);}
+#chatbot .module[data-module-id="onyx-image"] .module-head{background:#155719;}
+#chatbot .module[data-module-id="onyx-chat"]{--w:560px;min-height:570px;border-color:#12d8d2;background:rgba(234,255,255,.96);}
+#chatbot .module[data-module-id="onyx-chat"] .module-head{background:#00a8a8;color:#002426;text-shadow:none;}
+#chatbot .module[data-module-id="onyx-chat"] .module-body,
+#chatbot .module[data-module-id="onyx-image"] .module-body,
+#chatbot .module[data-module-id="messenger"] .module-body{padding:8px;}
+
+/* Keep Messenger usable inside the purple module instead of sprawling like a full-page app. */
+#chatbot .module[data-module-id="messenger"] .os-messenger{min-height:700px;max-height:720px;border-radius:16px;}
+#chatbot .module[data-module-id="messenger"] .os-app-shell{min-height:700px;grid-template-columns:56px minmax(0,1fr);padding:8px;gap:8px;}
+#chatbot .module[data-module-id="messenger"] .os-channels{display:none;}
+#chatbot .module[data-module-id="messenger"] .os-chat{min-width:0;}
+#chatbot .module[data-module-id="messenger"] .os-studio{display:none!important;}
+#chatbot .module[data-module-id="messenger"] .os-sidebar{border-radius:18px;padding:8px 5px;}
+#chatbot .module[data-module-id="messenger"] .os-rail-button{width:42px;height:42px;border-radius:14px;}
+#chatbot .module[data-module-id="messenger"] .os-brand{width:42px;height:42px;border-radius:14px;}
+
+@media(max-width:900px){
+  .page-board{min-width:0!important;overflow:visible;}
+  .module:not(.collapsed){position:relative!important;left:auto!important;top:auto!important;width:calc(100% - 16px)!important;margin:8px!important;min-width:0;}
+  #chatbot .page-board{display:grid;gap:10px;min-height:auto;padding:8px 0 40px;}
+  #chatbot .module[data-module-id="profile-chatbot"],
+  #chatbot .module[data-module-id="dbt-prompts"],
+  #chatbot .module[data-module-id="onyx-image"],
+  #chatbot .module[data-module-id="onyx-chat"],
+  #chatbot .module[data-module-id="messenger"]{min-height:unset;}
+  #chatbot .module[data-module-id="messenger"] .os-messenger,
+  #chatbot .module[data-module-id="messenger"] .os-app-shell{min-height:620px;}
+}

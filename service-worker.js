@@ -1,5 +1,5 @@
 /* OurSpace GitHub Pages PWA service worker. Keeps the app shell available without trying to pre-cache every large game file. */
-const CACHE_VERSION = 'ourspace-pwa-v3-gas-onyx';
+const CACHE_VERSION = 'ourspace-pwa-v4-layout-zoom';
 const CORE_ASSETS = [
   './',
   './index.html',
