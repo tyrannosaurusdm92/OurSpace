@@ -1,0 +1,1288 @@
+{
+  "schema": "ourspace.game.reward.rules.v1",
+  "brand": "OurSpace",
+  "generatedOn": "2026-06-14T03:28:53.692495+00:00",
+  "description": "Rule-based OurSpace currency override for HTML games. Store rewards internally as totalCopper, then display platinum/gold/silver/copper. Paint by Number is included as bundled creative game #23.",
+  "currencyScale": {
+    "copper": 1,
+    "silver": 10,
+    "gold": 100,
+    "platinum": 1000,
+    "conversionRules": [
+      "10 copper = 1 silver",
+      "10 silver = 1 gold",
+      "10 gold = 1 platinum"
+    ]
+  },
+  "displayRule": "Hide zero denominations. Never show 200 copper when it can be shown as 2 gold.",
+  "defaultSessionCapCopper": 25000,
+  "globalEvents": {
+    "game_launch": {
+      "label": "Game opened",
+      "totalCopper": 100,
+      "cooldownMs": 300000,
+      "maxPerSession": 1,
+      "tier": "tiny_start"
+    },
+    "first_action": {
+      "label": "First in-game action",
+      "totalCopper": 250,
+      "cooldownMs": 300000,
+      "maxPerSession": 1,
+      "tier": "gentle_step"
+    },
+    "action_streak_small": {
+      "label": "In-game action streak",
+      "totalCopper": 250,
+      "cooldownMs": 45000,
+      "maxPerSession": 8,
+      "tier": "gentle_step"
+    },
+    "action_streak_large": {
+      "label": "Strong play streak",
+      "totalCopper": 500,
+      "cooldownMs": 90000,
+      "maxPerSession": 4,
+      "tier": "small_task"
+    },
+    "play_time_5_min": {
+      "label": "Focused play block",
+      "totalCopper": 500,
+      "cooldownMs": 300000,
+      "maxPerSession": 6,
+      "tier": "small_task"
+    },
+    "level_complete": {
+      "label": "Level / round cleared",
+      "totalCopper": 900,
+      "cooldownMs": 20000,
+      "maxPerSession": 12,
+      "tier": "medium_task"
+    },
+    "achievement": {
+      "label": "Achievement unlocked",
+      "totalCopper": 500,
+      "cooldownMs": 20000,
+      "maxPerSession": 10,
+      "tier": "small_task"
+    },
+    "high_score": {
+      "label": "High score / best score",
+      "totalCopper": 900,
+      "cooldownMs": 45000,
+      "maxPerSession": 8,
+      "tier": "medium_task"
+    },
+    "score_milestone": {
+      "label": "Score milestone",
+      "totalCopper": 250,
+      "cooldownMs": 15000,
+      "maxPerSession": 20,
+      "tier": "gentle_step"
+    },
+    "resource_milestone": {
+      "label": "Resource / coin milestone",
+      "totalCopper": 250,
+      "cooldownMs": 15000,
+      "maxPerSession": 20,
+      "tier": "gentle_step"
+    },
+    "game_over_recovery": {
+      "label": "Played and reset safely",
+      "totalCopper": 100,
+      "cooldownMs": 120000,
+      "maxPerSession": 5,
+      "tier": "tiny_start"
+    },
+    "fnaf_defensive_set": {
+      "label": "FNAF defensive survival actions",
+      "totalCopper": 250,
+      "cooldownMs": 12000,
+      "maxPerSession": 20,
+      "tier": "gentle_step"
+    },
+    "fnaf_hour_survived": {
+      "label": "FNAF hour survived",
+      "totalCopper": 900,
+      "cooldownMs": 30000,
+      "maxPerSession": 8,
+      "tier": "medium_task"
+    },
+    "fnaf_night_survived": {
+      "label": "FNAF night survived",
+      "totalCopper": 2500,
+      "cooldownMs": 60000,
+      "maxPerSession": 8,
+      "tier": "very_hard_task"
+    },
+    "fnaf_hard_clear": {
+      "label": "FNAF hard clear",
+      "totalCopper": 5000,
+      "cooldownMs": 180000,
+      "maxPerSession": 3,
+      "tier": "hero"
+    }
+  },
+  "gameRules": {
+    "angrybirds": {
+      "name": "Angry Birds",
+      "file": "games/angrybirds.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "baconmaydie": {
+      "name": "Bacon May Die",
+      "file": "games/baconmaydie.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "badicecream3": {
+      "name": "Bad Ice Cream 3",
+      "file": "games/badicecream3.html",
+      "category": "level_puzzle",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "level",
+        "points",
+        "record",
+        "round",
+        "score",
+        "stage",
+        "wave"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "badpiggies": {
+      "name": "Bad Piggies",
+      "file": "games/badpiggies.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "bubbleshooter": {
+      "name": "Bubble Shooter",
+      "file": "games/bubbleshooter.html",
+      "category": "level_puzzle",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "level",
+        "points",
+        "record",
+        "round",
+        "score",
+        "stage",
+        "wave"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "candycrush": {
+      "name": "Candy Crush",
+      "file": "games/candycrush.html",
+      "category": "level_puzzle",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "level",
+        "points",
+        "record",
+        "round",
+        "score",
+        "stage",
+        "wave"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "capybaraclicker": {
+      "name": "Capybara Clicker",
+      "file": "games/capybaraclicker.html",
+      "category": "resource_progression",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "resource_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "capybara",
+        "cash",
+        "coin",
+        "coins",
+        "duck",
+        "fish",
+        "gem",
+        "gems",
+        "gold",
+        "level",
+        "money",
+        "ore",
+        "stars",
+        "training",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "ducklife5": {
+      "name": "Duck Life 5",
+      "file": "games/ducklife5.html",
+      "category": "resource_progression",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "resource_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "capybara",
+        "cash",
+        "coin",
+        "coins",
+        "duck",
+        "fish",
+        "gem",
+        "gems",
+        "gold",
+        "level",
+        "money",
+        "ore",
+        "stars",
+        "training",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "escapingtheprison": {
+      "name": "Escaping the Prison",
+      "file": "games/escapingtheprison.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "fancypantsadventure2": {
+      "name": "Fancy Pants Adventure 2",
+      "file": "games/fancypantsadventure2.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "flappybird": {
+      "name": "Flappy Bird",
+      "file": "games/flappybird.html",
+      "category": "skill_score",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "fnaf": {
+      "name": "Five Nights at Freddy's",
+      "file": "games/fnaf.html",
+      "category": "survival_horror",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "fnaf_defensive_set",
+        "fnaf_hard_clear",
+        "fnaf_hour_survived",
+        "fnaf_night_survived",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "am",
+        "best",
+        "high score",
+        "hour",
+        "night",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "6 am",
+        "6am",
+        "complete!",
+        "level complete",
+        "mission complete",
+        "night complete",
+        "night survived",
+        "round complete",
+        "stage clear",
+        "survived",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 40000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "fnaf4": {
+      "name": "Five Nights at Freddy's 4",
+      "file": "games/fnaf4.html",
+      "category": "survival_horror",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "fnaf_defensive_set",
+        "fnaf_hard_clear",
+        "fnaf_hour_survived",
+        "fnaf_night_survived",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "am",
+        "best",
+        "high score",
+        "hour",
+        "night",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "6 am",
+        "6am",
+        "complete!",
+        "level complete",
+        "mission complete",
+        "night complete",
+        "night survived",
+        "round complete",
+        "stage clear",
+        "survived",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 40000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "fruitninja": {
+      "name": "Fruit Ninja",
+      "file": "games/fruitninja.html",
+      "category": "skill_score",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "minesweeper": {
+      "name": "Minesweeper",
+      "file": "games/minesweeper.html",
+      "category": "level_puzzle",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "level",
+        "points",
+        "record",
+        "round",
+        "score",
+        "stage",
+        "wave"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "noobminer": {
+      "name": "Noob Miner",
+      "file": "games/noobminer.html",
+      "category": "resource_progression",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "resource_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "capybara",
+        "cash",
+        "coin",
+        "coins",
+        "duck",
+        "fish",
+        "gem",
+        "gems",
+        "gold",
+        "level",
+        "money",
+        "ore",
+        "stars",
+        "training",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "plantsvszombies": {
+      "name": "Plants vs. Zombies",
+      "file": "games/plantsvszombies.html",
+      "category": "level_puzzle",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "level",
+        "points",
+        "record",
+        "round",
+        "score",
+        "stage",
+        "wave"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "tabletennisworldtour": {
+      "name": "Table Tennis World Tour",
+      "file": "games/tabletennisworldtour.html",
+      "category": "skill_score",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "tinyfishing": {
+      "name": "Tiny Fishing",
+      "file": "games/tinyfishing.html",
+      "category": "resource_progression",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "resource_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "capybara",
+        "cash",
+        "coin",
+        "coins",
+        "duck",
+        "fish",
+        "gem",
+        "gems",
+        "gold",
+        "level",
+        "money",
+        "ore",
+        "stars",
+        "training",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "tunnelrush": {
+      "name": "Tunnel Rush",
+      "file": "games/tunnelrush.html",
+      "category": "skill_score",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min",
+        "score_milestone"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "webecomewhatwebehold": {
+      "name": "We Become What We Behold",
+      "file": "games/webecomewhatwebehold.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "zombierush": {
+      "name": "Zombie Rush",
+      "file": "games/zombierush.html",
+      "category": "adventure_arcade",
+      "enabledEvents": [
+        "achievement",
+        "action_streak_large",
+        "action_streak_small",
+        "first_action",
+        "game_launch",
+        "game_over_recovery",
+        "high_score",
+        "level_complete",
+        "play_time_5_min"
+      ],
+      "scoreKeys": [
+        "best",
+        "high score",
+        "points",
+        "record",
+        "score"
+      ],
+      "resourceKeys": [
+        "cash",
+        "coin",
+        "coins",
+        "gem",
+        "gems",
+        "gold",
+        "money",
+        "stars",
+        "xp"
+      ],
+      "winPhrases": [
+        "complete!",
+        "level complete",
+        "mission complete",
+        "round complete",
+        "stage clear",
+        "victory",
+        "you win"
+      ],
+      "sessionCapCopper": 25000,
+      "notes": "Rules only. The actual game file is not included in this package."
+    },
+    "paintbynumber": {
+      "name": "Paint by Number",
+      "file": "games/paintbynumber.html",
+      "category": "creative_focus",
+      "enabledEvents": [
+        "game_launch",
+        "first_action",
+        "action_streak_small",
+        "action_streak_large",
+        "play_time_5_min",
+        "paint_image_loaded",
+        "paint_process_started",
+        "paint_palette_created",
+        "paint_art_saved",
+        "achievement",
+        "level_complete"
+      ],
+      "scoreKeys": [
+        "colors",
+        "palette",
+        "facets",
+        "segments",
+        "labels",
+        "image",
+        "paint"
+      ],
+      "resourceKeys": [
+        "colors",
+        "facets",
+        "segments",
+        "labels",
+        "palette"
+      ],
+      "winPhrases": [
+        "process image",
+        "download svg",
+        "download png",
+        "download palette",
+        "label placement",
+        "output"
+      ],
+      "eventOverrides": {
+        "paint_image_loaded": {
+          "label": "Loaded image for paint-by-number",
+          "totalCopper": 250,
+          "cooldownMs": 45000,
+          "maxPerSession": 4,
+          "tier": "gentle_step"
+        },
+        "paint_process_started": {
+          "label": "Started paint-by-number processing",
+          "totalCopper": 500,
+          "cooldownMs": 60000,
+          "maxPerSession": 8,
+          "tier": "small_task"
+        },
+        "paint_palette_created": {
+          "label": "Generated palette / numbered facets",
+          "totalCopper": 900,
+          "cooldownMs": 120000,
+          "maxPerSession": 6,
+          "tier": "medium_task"
+        },
+        "paint_art_saved": {
+          "label": "Saved paint-by-number art",
+          "totalCopper": 500,
+          "cooldownMs": 60000,
+          "maxPerSession": 8,
+          "tier": "small_task"
+        }
+      },
+      "sessionCapCopper": 25000,
+      "notes": "Bundled creative-focus game #23. Rewards mirror the other games but favor image load, processing, palette/facet creation, focused play, and save/export actions."
+    }
+  },
+  "detectors": {
+    "canvasText": true,
+    "domText": true,
+    "localStorageProgress": true,
+    "pointerKeyboardActions": true,
+    "customApi": "window.OurSpaceGameRewards.award(eventId, detail) or window.OurSpaceGameRewards.reportScore(value, kind)",
+    "postMessage": "Parent listens for type='ourspace.game.reward.v1'. Legacy game reward messages are ignored by default."
+  },
+  "replacementPolicy": {
+    "sourceOfTruth": "ourspace_game_reward_rules.json",
+    "doNotConvertRawGameCurrencyDirectly": true,
+    "useMilestonesAndCooldowns": true,
+    "ignoreLegacyRewardMessagesByDefault": true,
+    "removeOldBridgeWithPatcher": true
+  }
+}

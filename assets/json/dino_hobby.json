@@ -1,0 +1,63 @@
+{
+  "profile": "dino",
+  "schemaVersion": "1.0.0",
+  "hobbies": [
+    {
+      "id": "dnd-campaign",
+      "category": "creative",
+      "name": "D&D campaign work",
+      "rewardCopper": 100,
+      "notes": "Worldbuilding, encounter prep, NPC writing, lore organization."
+    },
+    {
+      "id": "fantasy-saga",
+      "category": "creative",
+      "name": "Fantasy saga writing",
+      "rewardCopper": 100,
+      "notes": "Drafting, outlining, editing, or character work."
+    },
+    {
+      "id": "mmorpg-concept",
+      "category": "creative",
+      "name": "MMORPG concept work",
+      "rewardCopper": 100,
+      "notes": "Systems, classes, lore, maps, or quest design."
+    },
+    {
+      "id": "songwriting",
+      "category": "creative",
+      "name": "Songwriting",
+      "rewardCopper": 80,
+      "notes": "Lyrics, melody ideas, recording notes, or revisions."
+    },
+    {
+      "id": "eq2-sims",
+      "category": "games",
+      "name": "EverQuest 2 / Sims 2 time",
+      "rewardCopper": 50,
+      "notes": "Joy time counts as care when it is intentional."
+    }
+  ],
+  "selfCare": [
+    {
+      "id": "hydrate",
+      "name": "Hydration check",
+      "rewardCopper": 20
+    },
+    {
+      "id": "meds",
+      "name": "Medication/medical routine check",
+      "rewardCopper": 100
+    },
+    {
+      "id": "oxygen-comfort",
+      "name": "Oxygen and comfort check",
+      "rewardCopper": 80
+    },
+    {
+      "id": "low-spoon-rest",
+      "name": "Low-spoon rest block",
+      "rewardCopper": 60
+    }
+  ]
+}

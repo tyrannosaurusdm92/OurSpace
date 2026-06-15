@@ -1,0 +1,135 @@
+{
+  "profile": "squishy",
+  "schemaVersion": "1.0.0",
+  "events": [
+    {
+      "id": "squishy-event-1",
+      "date": "2026-06-14",
+      "title": "Change into clean clothes",
+      "type": "task",
+      "rewardCopper": 900,
+      "notes": "Dignity care."
+    },
+    {
+      "id": "squishy-event-2",
+      "date": "2026-06-15",
+      "title": "Open today's task list",
+      "type": "task",
+      "rewardCopper": 100,
+      "notes": "Opening the app counts as starting."
+    },
+    {
+      "id": "squishy-event-3",
+      "date": "2026-06-16",
+      "title": "Save/export site data",
+      "type": "task",
+      "rewardCopper": 250,
+      "notes": "Prevents lost progress."
+    },
+    {
+      "id": "squishy-event-4",
+      "date": "2026-06-17",
+      "title": "Feed cats",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Cat care is family care."
+    },
+    {
+      "id": "squishy-event-5",
+      "date": "2026-06-18",
+      "title": "Refresh cat water",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Separate from feeding."
+    },
+    {
+      "id": "squishy-event-6",
+      "date": "2026-06-19",
+      "title": "Scoop the 1 litter box",
+      "type": "task",
+      "rewardCopper": 1500,
+      "notes": "Smell/gross/sensory bonus."
+    },
+    {
+      "id": "squishy-event-7",
+      "date": "2026-06-20",
+      "title": "Full litter change",
+      "type": "task",
+      "rewardCopper": 2500,
+      "notes": "Heavy/gross task."
+    },
+    {
+      "id": "squishy-event-8",
+      "date": "2026-06-21",
+      "title": "Brush one cat",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "One cat at a time."
+    },
+    {
+      "id": "squishy-event-9",
+      "date": "2026-06-22",
+      "title": "Trim nails for one cat",
+      "type": "task",
+      "rewardCopper": 2500,
+      "notes": "Stress/skill bonus."
+    },
+    {
+      "id": "squishy-event-10",
+      "date": "2026-06-23",
+      "title": "Check cat food/litter supply",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Prevents emergencies."
+    },
+    {
+      "id": "squishy-event-11",
+      "date": "2026-06-24",
+      "title": "Give cats affection/playtime",
+      "type": "task",
+      "rewardCopper": 250,
+      "notes": "Joy, not just labor."
+    },
+    {
+      "id": "squishy-event-12",
+      "date": "2026-06-25",
+      "title": "Take over Dino's dishes, small batch",
+      "type": "task",
+      "rewardCopper": 2500,
+      "notes": "Extra for protecting Dino's body."
+    },
+    {
+      "id": "squishy-event-13",
+      "date": "2026-06-26",
+      "title": "Take over Dino's dishes, full sink/load",
+      "type": "task",
+      "rewardCopper": 4000,
+      "notes": "Major takeover reward."
+    },
+    {
+      "id": "squishy-event-14",
+      "date": "2026-06-27",
+      "title": "Wipe counter",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Tiny reset."
+    },
+    {
+      "id": "squishy-json-review",
+      "date": "2026-06-14",
+      "title": "Review tasks/store JSON",
+      "type": "admin",
+      "rewardCopper": 100,
+      "notes": "Use the import/export buttons to keep data editable."
+    },
+    {
+      "id": "squishy-store-reset",
+      "date": "2026-06-21",
+      "title": "Store wishlist refresh",
+      "type": "store",
+      "rewardCopper": 100,
+      "notes": "Add or remove single-item store listings."
+    }
+  ],
+  "editableNotes": "Edit this JSON to change the Calendar page. Import/export buttons can also override it in the browser."
+}

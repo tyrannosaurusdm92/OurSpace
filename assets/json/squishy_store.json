@@ -1,0 +1,618 @@
+{
+  "profile": "squishy",
+  "pageOwner": "Jasper",
+  "storeName": "Squishy Store",
+  "rewardProvidedBy": "Dino",
+  "schemaVersion": "2.0.0",
+  "currencySystem": {
+    "copperPerSilver": 10,
+    "silverPerGold": 10,
+    "goldPerPlatinum": 10
+  },
+  "aisles": [
+    {
+      "id": "all",
+      "label": "Show All"
+    },
+    {
+      "id": "beverages",
+      "label": "Beverages"
+    },
+    {
+      "id": "snacks",
+      "label": "Snacks"
+    },
+    {
+      "id": "food",
+      "label": "Food"
+    },
+    {
+      "id": "clothes",
+      "label": "Clothes"
+    },
+    {
+      "id": "comfort",
+      "label": "Comfort Items"
+    },
+    {
+      "id": "hobby",
+      "label": "Hobby Items"
+    },
+    {
+      "id": "work-help",
+      "label": "Work-Help Items"
+    },
+    {
+      "id": "gift-cards",
+      "label": "Gift Cards"
+    },
+    {
+      "id": "in-store",
+      "label": "In-Store Purchases"
+    },
+    {
+      "id": "online",
+      "label": "Online Purchases"
+    },
+    {
+      "id": "outings",
+      "label": "Outings"
+    },
+    {
+      "id": "provided-by",
+      "label": "Reward Provided By"
+    },
+    {
+      "id": "adult",
+      "label": "21+ Items"
+    },
+    {
+      "id": "vacation",
+      "label": "Vacation Items"
+    }
+  ],
+  "items": [
+    {
+      "id": "bev-water-flavor",
+      "aisle": "beverages",
+      "name": "Flavored Water",
+      "emoji": "💧",
+      "description": "A flavored water, sparkling water, or hydration drink.",
+      "priceCopper": 300,
+      "tags": [
+        "drink",
+        "hydration"
+      ]
+    },
+    {
+      "id": "bev-juice-box",
+      "aisle": "beverages",
+      "name": "Juice or Smoothie",
+      "emoji": "🧃",
+      "description": "A juice, smoothie, or fruity drink treat.",
+      "priceCopper": 600,
+      "tags": [
+        "drink",
+        "treat"
+      ]
+    },
+    {
+      "id": "bev-fancy-drink",
+      "aisle": "beverages",
+      "name": "Fancy Drink",
+      "emoji": "🥤",
+      "description": "A specialty drink, cafe drink, boba, or sparkling treat.",
+      "priceCopper": 900,
+      "tags": [
+        "drink",
+        "treat"
+      ]
+    },
+    {
+      "id": "snack-salty",
+      "aisle": "snacks",
+      "name": "Salty Crunchy Snack",
+      "emoji": "🥨",
+      "description": "Chips, pretzels, crackers, popcorn, or another crunchy snack.",
+      "priceCopper": 500,
+      "tags": [
+        "snack",
+        "salty"
+      ]
+    },
+    {
+      "id": "snack-sweet",
+      "aisle": "snacks",
+      "name": "Sweet Snack",
+      "emoji": "🍬",
+      "description": "Candy, gummies, chocolate, cookies, or a small sweet treat.",
+      "priceCopper": 500,
+      "tags": [
+        "snack",
+        "sweet"
+      ]
+    },
+    {
+      "id": "snack-bakery",
+      "aisle": "snacks",
+      "name": "Bakery Treat",
+      "emoji": "🧁",
+      "description": "A pastry, cupcake, muffin, cookie, or other bakery-style treat.",
+      "priceCopper": 900,
+      "tags": [
+        "snack",
+        "bakery"
+      ]
+    },
+    {
+      "id": "food-small-delivery",
+      "aisle": "food",
+      "name": "Small Food Delivery",
+      "emoji": "🍔",
+      "description": "A smaller takeout or delivery contribution.",
+      "priceCopper": 2500,
+      "tags": [
+        "meal",
+        "delivery"
+      ]
+    },
+    {
+      "id": "food-favorite-meal",
+      "aisle": "food",
+      "name": "Favorite Meal",
+      "emoji": "🍱",
+      "description": "A favorite meal reward, home, pickup, or delivery.",
+      "priceCopper": 4000,
+      "tags": [
+        "meal"
+      ]
+    },
+    {
+      "id": "food-big-comfort",
+      "aisle": "food",
+      "name": "Big Comfort Food Reward",
+      "emoji": "🍜",
+      "description": "A bigger comfort-food reward for a hard day or milestone.",
+      "priceCopper": 7000,
+      "tags": [
+        "meal",
+        "comfort"
+      ]
+    },
+    {
+      "id": "clothes-shirt",
+      "aisle": "clothes",
+      "name": "Shirt",
+      "emoji": "👕",
+      "description": "A shirt, top, band shirt, nerd shirt, cottage shirt, or comfort top.",
+      "priceCopper": 3500,
+      "tags": [
+        "clothes",
+        "single item"
+      ]
+    },
+    {
+      "id": "clothes-pants",
+      "aisle": "clothes",
+      "name": "Pants",
+      "emoji": "👖",
+      "description": "A pair of pants, pajama pants, shorts, or easy-wear bottoms.",
+      "priceCopper": 4500,
+      "tags": [
+        "clothes",
+        "single item"
+      ]
+    },
+    {
+      "id": "clothes-hoodie",
+      "aisle": "clothes",
+      "name": "Hoodie",
+      "emoji": "🧥",
+      "description": "A hoodie, cardigan, jacket, or cozy layer.",
+      "priceCopper": 6500,
+      "tags": [
+        "clothes",
+        "cozy"
+      ]
+    },
+    {
+      "id": "comfort-blanket",
+      "aisle": "comfort",
+      "name": "Blanket",
+      "emoji": "🛌",
+      "description": "A blanket, throw, weighted blanket contribution, or cozy bed item.",
+      "priceCopper": 4500,
+      "tags": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "comfort-plush",
+      "aisle": "comfort",
+      "name": "Plush Friend",
+      "emoji": "🧸",
+      "description": "A plush, stuffed animal, pillow, or comfort buddy.",
+      "priceCopper": 3500,
+      "tags": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "comfort-duck",
+      "aisle": "comfort",
+      "name": "Duck",
+      "emoji": "🦆",
+      "description": "A duck-themed comfort item, plush, tiny collectible, or silly friend.",
+      "priceCopper": 1800,
+      "tags": [
+        "comfort",
+        "duck",
+        "single item"
+      ]
+    },
+    {
+      "id": "hobby-book",
+      "aisle": "hobby",
+      "name": "Book",
+      "emoji": "📚",
+      "description": "A book, workbook, zine, manga, novel, or hobby reference.",
+      "priceCopper": 3500,
+      "tags": [
+        "hobby",
+        "book"
+      ]
+    },
+    {
+      "id": "hobby-art-supply",
+      "aisle": "hobby",
+      "name": "Art or Craft Supply",
+      "emoji": "🎨",
+      "description": "A single craft supply, paint, pen, sticker pack, yarn, or small kit.",
+      "priceCopper": 2500,
+      "tags": [
+        "hobby",
+        "creative"
+      ]
+    },
+    {
+      "id": "hobby-game-addon",
+      "aisle": "hobby",
+      "name": "Game Add-On",
+      "emoji": "🎮",
+      "description": "A game add-on, DLC, app reward, or in-game comfort purchase.",
+      "priceCopper": 5000,
+      "tags": [
+        "hobby",
+        "gaming"
+      ]
+    },
+    {
+      "id": "work-admin-help",
+      "aisle": "work-help",
+      "name": "Admin Help Session",
+      "emoji": "📋",
+      "description": "Help with a form, email, phone call, schedule, or planning step.",
+      "priceCopper": 4000,
+      "tags": [
+        "help",
+        "admin"
+      ]
+    },
+    {
+      "id": "work-setup-help",
+      "aisle": "work-help",
+      "name": "Setup Help",
+      "emoji": "🛠️",
+      "description": "Help setting up a device, app, comfort station, workspace, or supplies.",
+      "priceCopper": 3000,
+      "tags": [
+        "help",
+        "setup"
+      ]
+    },
+    {
+      "id": "work-big-help",
+      "aisle": "work-help",
+      "name": "Big Work-Help Session",
+      "emoji": "🧰",
+      "description": "A longer help session for a harder task.",
+      "priceCopper": 7000,
+      "tags": [
+        "help",
+        "bigger task"
+      ]
+    },
+    {
+      "id": "gift-card-small",
+      "aisle": "gift-cards",
+      "name": "Small Gift Card",
+      "emoji": "🎁",
+      "description": "A small digital or physical gift card.",
+      "priceCopper": 5000,
+      "tags": [
+        "gift card"
+      ]
+    },
+    {
+      "id": "gift-card-medium",
+      "aisle": "gift-cards",
+      "name": "Medium Gift Card",
+      "emoji": "💳",
+      "description": "A medium gift card reward.",
+      "priceCopper": 10000,
+      "tags": [
+        "gift card"
+      ]
+    },
+    {
+      "id": "gift-card-large",
+      "aisle": "gift-cards",
+      "name": "Large Gift Card",
+      "emoji": "🏆",
+      "description": "A high-tier gift card reward.",
+      "priceCopper": 20000,
+      "tags": [
+        "gift card"
+      ]
+    },
+    {
+      "id": "instore-small",
+      "aisle": "in-store",
+      "name": "Small In-Store Purchase",
+      "emoji": "🛒",
+      "description": "A single small item from a local store.",
+      "priceCopper": 2500,
+      "tags": [
+        "in-store"
+      ]
+    },
+    {
+      "id": "instore-medium",
+      "aisle": "in-store",
+      "name": "Medium In-Store Purchase",
+      "emoji": "🏬",
+      "description": "A moderate in-store reward.",
+      "priceCopper": 7000,
+      "tags": [
+        "in-store"
+      ]
+    },
+    {
+      "id": "instore-big",
+      "aisle": "in-store",
+      "name": "Big In-Store Purchase",
+      "emoji": "🛍️",
+      "description": "A larger in-store reward.",
+      "priceCopper": 15000,
+      "tags": [
+        "in-store"
+      ]
+    },
+    {
+      "id": "online-small",
+      "aisle": "online",
+      "name": "Small Online Purchase",
+      "emoji": "📦",
+      "description": "A small online item.",
+      "priceCopper": 3000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "id": "online-etsy",
+      "aisle": "online",
+      "name": "Marketplace Find",
+      "emoji": "🛍️",
+      "description": "An Etsy, handmade, collectible, or marketplace find.",
+      "priceCopper": 6000,
+      "tags": [
+        "online",
+        "marketplace"
+      ]
+    },
+    {
+      "id": "online-big",
+      "aisle": "online",
+      "name": "Big Online Purchase",
+      "emoji": "🚚",
+      "description": "A higher-tier online purchase reward.",
+      "priceCopper": 15000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "id": "outing-small",
+      "aisle": "outings",
+      "name": "Small Outing",
+      "emoji": "🌤️",
+      "description": "A short, low-pressure outing, ride, or fresh-air plan.",
+      "priceCopper": 5000,
+      "tags": [
+        "outing"
+      ]
+    },
+    {
+      "id": "outing-food",
+      "aisle": "outings",
+      "name": "Food Outing",
+      "emoji": "🍽️",
+      "description": "A restaurant, pickup, cafe, or treat outing.",
+      "priceCopper": 9000,
+      "tags": [
+        "outing",
+        "food"
+      ]
+    },
+    {
+      "id": "outing-special",
+      "aisle": "outings",
+      "name": "Special Outing",
+      "emoji": "🎟️",
+      "description": "A bigger planned outing, date, event, or adventure.",
+      "priceCopper": 18000,
+      "tags": [
+        "outing",
+        "special"
+      ]
+    },
+    {
+      "id": "adult-placeholder-small",
+      "aisle": "adult",
+      "name": "21+ Legal Adult Placeholder",
+      "emoji": "🔞",
+      "description": "Private adult-only reward placeholder. Keep details legal, local, and off the public page.",
+      "priceCopper": 7000,
+      "tags": [
+        "21+",
+        "placeholder",
+        "legal only"
+      ]
+    },
+    {
+      "id": "adult-placeholder-errand",
+      "aisle": "adult",
+      "name": "21+ Legal Errand Placeholder",
+      "emoji": "✅",
+      "description": "Adult-only errand placeholder with legal/ID reminder. No restricted purchase details are stored.",
+      "priceCopper": 12000,
+      "tags": [
+        "21+",
+        "placeholder",
+        "legal only"
+      ]
+    },
+    {
+      "id": "vacation-snack",
+      "aisle": "vacation",
+      "name": "Vacation Snack Budget",
+      "emoji": "🧳",
+      "description": "Trip snacks, drinks, or travel comfort items.",
+      "priceCopper": 5000,
+      "tags": [
+        "vacation"
+      ]
+    },
+    {
+      "id": "vacation-activity",
+      "aisle": "vacation",
+      "name": "Vacation Activity",
+      "emoji": "🏖️",
+      "description": "A small activity, attraction, museum, beach, or trip treat.",
+      "priceCopper": 15000,
+      "tags": [
+        "vacation",
+        "activity"
+      ]
+    },
+    {
+      "id": "vacation-big",
+      "aisle": "vacation",
+      "name": "Big Vacation Reward",
+      "emoji": "🗺️",
+      "description": "A larger travel, lodging, or trip contribution reward.",
+      "priceCopper": 30000,
+      "tags": [
+        "vacation",
+        "big"
+      ]
+    },
+    {
+      "id": "hobby-witchy-book",
+      "aisle": "hobby",
+      "name": "Witchy Book",
+      "emoji": "🔮",
+      "description": "A witchy, tarot, cottagecore, recipe, garden, or cozy book.",
+      "priceCopper": 4500,
+      "tags": [
+        "hobby",
+        "witchcore"
+      ]
+    },
+    {
+      "id": "hobby-tarot-oracle",
+      "aisle": "hobby",
+      "name": "Tarot or Oracle Item",
+      "emoji": "🃏",
+      "description": "A tarot/oracle deck contribution, guidebook, bag, cloth, or card stand.",
+      "priceCopper": 8000,
+      "tags": [
+        "hobby",
+        "tarot"
+      ]
+    },
+    {
+      "id": "hobby-cottage-decor",
+      "aisle": "hobby",
+      "name": "Cottage Decor Piece",
+      "emoji": "🍄",
+      "description": "A cottagecore decor item, shelf charm, candle holder, or tiny home accent.",
+      "priceCopper": 3500,
+      "tags": [
+        "hobby",
+        "cottagecore"
+      ]
+    },
+    {
+      "id": "clothes-cottage-top",
+      "aisle": "clothes",
+      "name": "Cottagecore Top",
+      "emoji": "🌻",
+      "description": "A soft top, cottage shirt, sweater, cardigan, or sunrise-toned wearable.",
+      "priceCopper": 3500,
+      "tags": [
+        "clothes",
+        "cottagecore"
+      ]
+    },
+    {
+      "id": "comfort-cozy-bath",
+      "aisle": "comfort",
+      "name": "Cozy Bath Item",
+      "emoji": "🛁",
+      "description": "A gentle bath/body comfort item, lotion, soak, or sensory-safe treat.",
+      "priceCopper": 2500,
+      "tags": [
+        "comfort",
+        "self-care"
+      ]
+    },
+    {
+      "id": "provided-dino-small",
+      "aisle": "provided-by",
+      "name": "Dino's Choice: Small Reward",
+      "emoji": "💌",
+      "description": "Dino chooses a small surprise reward for Jasper.",
+      "priceCopper": 2500,
+      "tags": [
+        "provider choice"
+      ],
+      "providerNote": "Dino"
+    },
+    {
+      "id": "provided-dino-medium",
+      "aisle": "provided-by",
+      "name": "Dino's Choice: Medium Reward",
+      "emoji": "🎁",
+      "description": "Dino chooses a medium surprise reward for Jasper.",
+      "priceCopper": 6000,
+      "tags": [
+        "provider choice"
+      ],
+      "providerNote": "Dino"
+    },
+    {
+      "id": "provided-dino-big",
+      "aisle": "provided-by",
+      "name": "Dino's Choice: Big Reward",
+      "emoji": "🌟",
+      "description": "Dino chooses a big surprise reward for Jasper.",
+      "priceCopper": 12000,
+      "tags": [
+        "provider choice"
+      ],
+      "providerNote": "Dino"
+    }
+  ]
+}

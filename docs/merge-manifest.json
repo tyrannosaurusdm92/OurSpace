@@ -1,0 +1,57 @@
+{
+  "project": "OurSpace Two-Profile Login Gateway",
+  "profiles": {
+    "jasper": {
+      "siteName": "Squishy Cottage",
+      "route": "squishy-cottage.html"
+    },
+    "william": {
+      "siteName": "Dino Nerdzone",
+      "route": "dino-nerdzone.html"
+    }
+  },
+  "backendUrl": "https://script.google.com/macros/s/AKfycbxrm8lbJFGe62K_3xOTUQYvr2D7AKXLCrR8LkR6s14Bwd3k_qkaff9QDRs6KeGhHPaoSg/exec",
+  "outsideProviderAppsRemoved": true,
+  "passwordVisibilityToggles": true,
+  "browserPasswordSaveFriendlyAutocomplete": true,
+  "cartReceiptCodeKept": true,
+  "windowsSafe": true,
+  "fontFilesBundled": false,
+  "revisions": [],
+  "font_integration_revision": {
+    "created": "2026-06-15T02:30:51.482326Z",
+    "included_binary_font_files": false,
+    "font_css_paths": [
+      "assets/fonts/magic-school/MagicSchoolTwo.ttf",
+      "assets/fonts/magic-school/MagicSchoolOne.ttf",
+      "assets/fonts/morris-roman/MorrisRoman-Black.ttf",
+      "assets/fonts/morris-roman/MorrisRomanAlternate-Black.ttf"
+    ],
+    "helper_script": "tools/install-fonts-from-zips.ps1"
+  },
+  "revision": "seascape-profile-store-font-remap",
+  "backgroundImage": "https://wallpapers.com/images/high/whimsical-seascape-with-smiling-tree-at-twilight-g0u5e1g3tzskk7bp.webp",
+  "storeIntegratedInto": [
+    "squishy-cottage.html",
+    "dino-nerdzone.html"
+  ],
+  "accentPalette": [
+    "#75dbcd",
+    "#8cebd2",
+    "#7ab7b9",
+    "#fa9574",
+    "#e8ba9a",
+    "#435542",
+    "#7c805d"
+  ],
+  "storeNames": {
+    "jasper": "Squishy Store",
+    "william": "Dino Store"
+  },
+  "fontRoles": {
+    "pageTitle": "Magic School",
+    "subtitles": "Morris Roman",
+    "typingAndOther": "Comic Sans"
+  },
+  "loginBackgroundFit": "contain"
+}

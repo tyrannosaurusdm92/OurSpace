@@ -1,0 +1,55 @@
+
+body[data-profile="jasper"] {
+  --profile-bg: #2f1f34;
+  --profile-text: #fffdf7;
+  --profile-font: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  --ourspace-cyan: #5eead4;
+  --ourspace-border: rgba(255, 229, 138, 0.68);
+  --module-border-color: rgba(255, 229, 138, 0.76);
+  --module-button-color: #ff9b45;
+  --module-bg: rgba(61, 34, 50, 0.74);
+  --link-color: #8ff7f2;
+  --button-text: #fffdf7;
+  --input-text: #fffdf7;
+}
+body[data-profile="william"] {
+  --profile-bg: #090b16;
+  --profile-text: #f7ffff;
+  --profile-font: "Segoe UI", "Trebuchet MS", system-ui, sans-serif;
+  --ourspace-cyan: #00ffff;
+  --ourspace-border: rgba(0, 255, 255, 0.62);
+  --module-border-color: rgba(0, 255, 255, 0.7);
+  --module-button-color: #00ffff;
+  --module-bg: rgba(9, 11, 22, 0.78);
+  --link-color: #7ffcff;
+  --button-text: #ffffff;
+  --input-text: #ffffff;
+}
+body[data-profile="jasper"] .page-hero h1 { color: #fffdf7; text-shadow: 0 2px 0 #3d2232, 0 0 18px #ff9b45, 0 0 28px #5eead4; }
+body[data-profile="william"] .page-hero h1 { color: #ffffff; text-shadow: 0 2px 0 #000, 0 0 18px #00ffff, 0 0 30px #008dff; }
+body[data-profile="jasper"] .module { box-shadow: 0 1rem 2.1rem rgba(92,49,81,.38), 0 0 1.1rem rgba(255,155,69,.22); }
+body[data-profile="william"] .module { box-shadow: 0 1rem 2.1rem rgba(0,255,255,.18), 0 0 1.4rem rgba(0,255,255,.2); }
+
+
+/* JSON-populated DBT and game module additions */
+.game-frame {
+  width: 100%;
+  min-height: 420px;
+  border: 1px solid var(--module-border-color, rgba(0,255,255,.45));
+  border-radius: 18px;
+  background: #000;
+  margin-top: 12px;
+}
+#game-reward-rules {
+  max-height: 360px;
+  overflow: auto;
+  margin-top: 12px;
+}
+.dbt-card ol,
+#journal-worksheet-fields ul {
+  margin: 8px 0 0 1.25rem;
+  padding: 0;
+}
+#dbt-filter-row label {
+  min-width: min(100%, 180px);
+}

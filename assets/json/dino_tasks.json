@@ -1,0 +1,5337 @@
+{
+  "profile": "dino",
+  "displayName": "Dino",
+  "schemaVersion": "1.0.0",
+  "source": {
+    "uploadedFileName": "Pasted markdown.md",
+    "convertedFrom": "Currency display revision markdown",
+    "conversionNotes": "Tasks marked Both are included in both profile files. Rewards are stored as totalCopper and normalized display denominations."
+  },
+  "currencySystem": {
+    "baseUnit": "copper",
+    "conversion": {
+      "copperPerSilver": 10,
+      "silverPerGold": 10,
+      "goldPerPlatinum": 10,
+      "copperPerGold": 100,
+      "copperPerPlatinum": 1000
+    },
+    "displayRule": "Store rewards internally as totalCopper, then display normalized platinum/gold/silver/copper from highest to lowest denomination. Hide zero denominations.",
+    "conversions": [
+      "10 copper = 1 silver",
+      "10 silver = 1 gold",
+      "10 gold = 1 platinum"
+    ],
+    "formatExampleFunctionName": "formatReward"
+  },
+  "currencyTiers": [
+    {
+      "id": "tiny_start",
+      "tier": "Tiny start",
+      "useFor": "Opening, checking, choosing, gathering one item",
+      "reward": {
+        "display": "1 gold",
+        "sourceDisplay": "1 gold",
+        "totalCopper": 100,
+        "denominations": {
+          "platinum": 0,
+          "gold": 1,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "gentle_step",
+      "tier": "Gentle step",
+      "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "small_task",
+      "tier": "Small task",
+      "useFor": "One clear task chunk",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "medium_task",
+      "tier": "Medium task",
+      "useFor": "Normal chore, care task, hobby work block",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "hard_task",
+      "tier": "Hard task",
+      "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "very_hard_task",
+      "tier": "Very hard task",
+      "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "hero_takeover",
+      "tier": "Hero / takeover",
+      "useFor": "Squishy fully takes over a Dino-assigned high-burden task",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "recovery_bonus",
+      "tier": "Recovery bonus",
+      "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "globalPricingModifiers": [
+    {
+      "id": "low_spoon_attempt_bonus",
+      "modifier": "Low-spoon attempt bonus",
+      "addWhen": "They tried even if they only did part of it",
+      "bonus": {
+        "display": "+2 gold, 5 silver",
+        "sourceDisplay": "+2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "gentle_hygiene_bonus",
+      "modifier": "Gentle hygiene bonus",
+      "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "pain_fatigue_flare_bonus",
+      "modifier": "Pain/fatigue flare bonus",
+      "addWhen": "Task happened during pain, MS fatigue, EDS instability, migraine, sensory overload, depression, anxiety, etc.",
+      "bonus": {
+        "display": "+9 gold",
+        "sourceDisplay": "+9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "dysphoria_trauma_safe_care_bonus",
+      "modifier": "Dysphoria/trauma-safe care bonus",
+      "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+      "bonus": {
+        "display": "+9 gold",
+        "sourceDisplay": "+9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "dino_takeover_bonus",
+      "modifier": "Dino takeover bonus",
+      "addWhen": "Squishy does a Dino-assigned task because Dino's body/access barriers are too high",
+      "bonus": {
+        "display": "+1 platinum, 5 gold",
+        "sourceDisplay": "+1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "major_dino_takeover_bonus",
+      "modifier": "Major Dino takeover bonus",
+      "addWhen": "Squishy takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+      "bonus": {
+        "display": "+4 platinum",
+        "sourceDisplay": "+4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "recovery_repair_bonus",
+      "modifier": "Recovery/repair bonus",
+      "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "gentleWordingRules": [
+    {
+      "id": "hygiene_skipped",
+      "situation": "Hygiene skipped",
+      "useWording": "\"Tiny wash counts. Your body still deserves care.\"",
+      "avoidWording": "\"You failed hygiene.\""
+    },
+    {
+      "id": "shower_is_too_much",
+      "situation": "Shower is too much",
+      "useWording": "\"Would wipes, face wash, clean clothes, or sitting with supplies be enough today?\"",
+      "avoidWording": "\"Just shower.\""
+    },
+    {
+      "id": "task_incomplete",
+      "situation": "Task incomplete",
+      "useWording": "\"Partial completion paid out. Recovery counts too.\"",
+      "avoidWording": "\"Incomplete / failed.\""
+    },
+    {
+      "id": "squishy_takes_over_dino_task",
+      "situation": "Squishy takes over Dino task",
+      "useWording": "\"You protected Dino's body and the home. Hero reward added.\"",
+      "avoidWording": "\"You had to do Dino's job.\""
+    },
+    {
+      "id": "dino_cannot_do_physical_task",
+      "situation": "Dino cannot do physical task",
+      "useWording": "\"This is an access barrier, not laziness.\"",
+      "avoidWording": "\"Try harder.\""
+    },
+    {
+      "id": "squishy_is_burnt_out",
+      "situation": "Squishy is burnt out",
+      "useWording": "\"Caregiver break is protected. Eating and decompression earn rewards.\"",
+      "avoidWording": "\"Push through.\""
+    },
+    {
+      "id": "doctor_admin_task",
+      "situation": "Doctor/admin task",
+      "useWording": "\"This is a high-effort quest. Opening the portal counts.\"",
+      "avoidWording": "\"This should be easy.\""
+    }
+  ],
+  "takeoverRules": [
+    {
+      "id": "squishy_helps_dino_start_the_task",
+      "takeoverType": "Squishy helps Dino start the task",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_does_half_of_dino_s_task",
+      "takeoverType": "Squishy does half of Dino's task",
+      "bonus": {
+        "display": "+1 platinum, 5 gold",
+        "sourceDisplay": "+1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_fully_takes_over_dino_s_task",
+      "takeoverType": "Squishy fully takes over Dino's task",
+      "bonus": {
+        "display": "+2 platinum, 5 gold",
+        "sourceDisplay": "+2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_fully_takes_over_a_high_burden_dino_task",
+      "takeoverType": "Squishy fully takes over a high-burden Dino task",
+      "bonus": {
+        "display": "+4 platinum",
+        "sourceDisplay": "+4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_takes_over_during_a_dino_flare_crash",
+      "takeoverType": "Squishy takes over during a Dino flare/crash",
+      "bonus": {
+        "display": "+5 platinum",
+        "sourceDisplay": "+5 platinum",
+        "totalCopper": 5000,
+        "denominations": {
+          "platinum": 5,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "defaultTaskFlags": {
+    "profile": [
+      "squishy",
+      "dino",
+      "shared"
+    ],
+    "respawn": [
+      "daily",
+      "every2",
+      "weekly",
+      "monthly",
+      "asneeded"
+    ],
+    "priority": [
+      "gentle",
+      "medium",
+      "hard",
+      "veryHard",
+      "hero"
+    ],
+    "rewardTotalCopper": 0,
+    "displayReward": true,
+    "normalizeCurrencyDisplay": true,
+    "lowSpoon": true,
+    "partialCounts": true,
+    "recoveryReward": true,
+    "hygieneGentleMode": true,
+    "bodyNeutralMode": true,
+    "traumaSensitive": true,
+    "dysphoriaSensitive": true,
+    "dinoAssigned": true,
+    "caregiverPaid": true,
+    "noSweepMopForDino": true,
+    "allowTakeoverBonus": true,
+    "noShameLanguage": true
+  },
+  "taskCounts": {
+    "totalIncluded": 122,
+    "sharedBothTasksIncluded": 47,
+    "profileSpecificTasksIncluded": 75
+  },
+  "tasks": [
+    {
+      "id": "shared_foundation_tasks_both_self_care_drink_water_hydrate",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Drink water / hydrate",
+      "respawn": "Daily, repeatable",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "A few sips counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_eat_meal_1",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Eat meal 1",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Easy food counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_eat_meal_2",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Eat meal 2",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Minimum nourishment goal, not diet culture."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_take_morning_meds",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Take morning meds",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Health care is work."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_take_evening_meds",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Take evening meds",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate reward from morning meds."
+    },
+    {
+      "id": "shared_foundation_tasks_both_mental_health_use_onyx_support",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Mental health",
+      "task": "Use Onyx support",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Asking for help counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_mental_health_use_one_dbt_grounding_skill",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Mental health",
+      "task": "Use one DBT/grounding skill",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "STOP, TIPP, grounding, Wise Mind, etc."
+    },
+    {
+      "id": "shared_foundation_tasks_both_rest_decompression_break",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Rest",
+      "task": "Decompression break",
+      "respawn": "Daily, repeatable",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Rest prevents crashes."
+    },
+    {
+      "id": "shared_foundation_tasks_both_hygiene_brush_teeth_mouth_care",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Hygiene",
+      "task": "Brush teeth / mouth care",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Partial mouth care counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_hygiene_wash_face_wipes_low_spoon_wash",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Hygiene",
+      "task": "Wash face / wipes / low-spoon wash",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Hygiene is physical and mental effort."
+    },
+    {
+      "id": "shared_foundation_tasks_both_hygiene_change_into_clean_clothes",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Hygiene",
+      "task": "Change into clean clothes",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Dignity care."
+    },
+    {
+      "id": "shared_foundation_tasks_both_admin_open_today_s_task_list",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Admin",
+      "task": "Open today's task list",
+      "respawn": "Daily",
+      "reward": {
+        "display": "1 gold",
+        "sourceDisplay": "1 gold",
+        "totalCopper": 100,
+        "denominations": {
+          "platinum": 0,
+          "gold": 1,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Opening the app counts as starting."
+    },
+    {
+      "id": "shared_foundation_tasks_both_admin_save_export_site_data",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Admin",
+      "task": "Save/export site data",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Prevents lost progress."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_feed_cats",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Feed cats",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Cat care is family care."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_refresh_cat_water",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Refresh cat water",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from feeding."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_scoop_the_1_litter_box",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Scoop the 1 litter box",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Smell/gross/sensory bonus."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_full_litter_change",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Full litter change",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Heavy/gross task."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_brush_one_cat",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Brush one cat",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One cat at a time."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_trim_nails_for_one_cat",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Trim nails for one cat",
+      "respawn": "Monthly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Stress/skill bonus."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_check_cat_food_litter_supply",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Check cat food/litter supply",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Prevents emergencies."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_dino_joy_spend_intentional_time_with_onyx_harvey_cal",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Dino",
+      "category": "Joy",
+      "task": "Spend intentional time with Onyx/Harvey/Callie",
+      "respawn": "Daily",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Love counts."
+    },
+    {
+      "id": "kitchen_tasks_dino_chore_gather_dirty_dishes_from_reachable_area",
+      "section": "Kitchen tasks",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Gather dirty dishes from reachable area",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Low-spoon dish start."
+    },
+    {
+      "id": "kitchen_tasks_dino_chore_wash_5_dishes",
+      "section": "Kitchen tasks",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Wash 5 dishes",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Dino's main chore, still rewarded well."
+    },
+    {
+      "id": "kitchen_tasks_dino_chore_wash_one_small_dish_batch",
+      "section": "Kitchen tasks",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Wash one small dish batch",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Pain/fatigue counts."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_wipe_counter",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe counter",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny reset."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_wipe_stove_top",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe stove top",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Grease/sensory bonus."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_clean_microwave",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clean microwave",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Gross/sensory task."
+    },
+    {
+      "id": "kitchen_tasks_dino_chore_identify_expired_fridge_items",
+      "section": "Kitchen tasks",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Identify expired fridge items",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Seated visual step."
+    },
+    {
+      "id": "kitchen_tasks_dino_chore_clean_one_reachable_fridge_shelf_drawer",
+      "section": "Kitchen tasks",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Clean one reachable fridge shelf/drawer",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Partial shelf counts."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_throw_away_expired_food",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Throw away expired food",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Smell/gross bonus."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_wipe_fridge_shelf_drawer",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe fridge shelf/drawer",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from tossing food."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_put_away_cold_groceries",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put away cold groceries",
+      "respawn": "As needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Split from pantry goods."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_put_away_pantry_dry_groceries",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put away pantry/dry groceries",
+      "respawn": "As needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One category at a time."
+    },
+    {
+      "id": "kitchen_tasks_both_admin_make_grocery_inventory_list",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Admin",
+      "task": "Make grocery inventory list",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Executive-function task."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_gather_bathroom_trash",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Gather bathroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Trash micro-step."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_move_bathroom_trash_to_main_trash",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Move bathroom trash to main trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from gathering."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_put_new_bag_in_bathroom_trash",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put new bag in bathroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion step."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_clean_toilet_bowl",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clean toilet bowl",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Gross-task bonus."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_wipe_toilet_seat_lid_base",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe toilet seat/lid/base",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from bowl."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_wipe_sink",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe sink",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Small reset."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_clean_mirror",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clean mirror",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Quick win."
+    },
+    {
+      "id": "bathroom_hygiene_care_dino_hygiene_shower_chair_setup_check",
+      "section": "Bathroom + hygiene care",
+      "person": "Dino",
+      "category": "Hygiene",
+      "task": "Shower-chair setup check",
+      "respawn": "As needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Setup is real effort."
+    },
+    {
+      "id": "bathroom_hygiene_care_dino_hygiene_wash_one_body_area",
+      "section": "Bathroom + hygiene care",
+      "person": "Dino",
+      "category": "Hygiene",
+      "task": "Wash one body area",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny wash counts."
+    },
+    {
+      "id": "bathroom_hygiene_care_dino_hygiene_low_spoon_wipe_down",
+      "section": "Bathroom + hygiene care",
+      "person": "Dino",
+      "category": "Hygiene",
+      "task": "Low-spoon wipe-down",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Full shower alternative."
+    },
+    {
+      "id": "bathroom_hygiene_care_dino_hygiene_full_shower_bath",
+      "section": "Bathroom + hygiene care",
+      "person": "Dino",
+      "category": "Hygiene",
+      "task": "Full shower/bath",
+      "respawn": "Every 2-3 days/as able",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Huge effort; needs recovery."
+    },
+    {
+      "id": "bathroom_hygiene_care_dino_hygiene_post_shower_recovery_rest",
+      "section": "Bathroom + hygiene care",
+      "person": "Dino",
+      "category": "Hygiene",
+      "task": "Post-shower recovery rest",
+      "respawn": "After shower",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Recovery is part of the task."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_gather_bedroom_trash",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Gather bedroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny trash step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_move_bedroom_trash_to_main_trash",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Move bedroom trash to main trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate movement step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_put_new_bag_in_bedroom_trash",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put new bag in bedroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_clear_bed_surface_reset_bed_area",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clear bed surface / reset bed area",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Bed-level reset matters."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_change_pillowcase",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Change pillowcase",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Small bedding task."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_laundry_put_dirty_laundry_in_hamper",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Laundry",
+      "task": "Put dirty laundry in hamper",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Micro-step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_dino_laundry_sort_laundry_from_reachable_pos",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Dino",
+      "category": "Laundry",
+      "task": "Sort laundry from reachable position",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Low-spoon version."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_dino_laundry_pick_one_laundry_category",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Dino",
+      "category": "Laundry",
+      "task": "Pick one laundry category",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Towels/clothes/bedding."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_dino_self_care_put_essentials_within_reach",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Dino",
+      "category": "Self-care",
+      "task": "Put essentials within reach",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Water, meds, phone, charger."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_dino_self_care_position_shift_pressure_relie",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Dino",
+      "category": "Self-care",
+      "task": "Position shift / pressure relief",
+      "respawn": "Daily, repeatable",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Body care, not laziness."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_gather_living_room_trash",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Gather living room trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny step."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_move_living_room_trash_to_main_trash",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Move living room trash to main trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate step."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_put_new_bag_in_living_room_trash",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put new bag in living room trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion step."
+    },
+    {
+      "id": "living_room_whole_home_dino_chore_identify_trash_cans_that_need_emptying",
+      "section": "Living room + whole home",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Identify trash cans that need emptying",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Seated planning."
+    },
+    {
+      "id": "living_room_whole_home_dino_chore_gather_reachable_trash_into_one_bag",
+      "section": "Living room + whole home",
+      "person": "Dino",
+      "category": "Chore",
+      "task": "Gather reachable trash into one bag",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Only if accessible."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_dust_one_surface",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Dust one surface",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One surface counts."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_organize_one_pile_basket",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Organize one pile/basket",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One pile only."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_organize_one_small_area",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Organize one small area",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Shelf, cart, bag, table."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_pain_check_in",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "Pain check-in",
+      "respawn": "Daily",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Notice body status."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_ms_fatigue_check",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "MS/fatigue check-in",
+      "respawn": "Daily",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Helps choose task size."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_autism_sensory_c",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "Autism/sensory check-in",
+      "respawn": "Daily",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Prevents overload."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_take_meds",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "Take meds",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Health care is work."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_eat_safe_food",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "Eat safe food",
+      "respawn": "Daily/repeatable",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Any safe food counts."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_hydration_check",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "Hydration check",
+      "respawn": "Daily/repeatable",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "A few sips counts."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_oxygen_respirato",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Body",
+      "task": "Oxygen/respiratory check if applicable",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Routine safety check."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_access_charge_check_p",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Access",
+      "task": "Charge/check power wheelchair",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Mobility access protection."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_access_check_reachabl",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Access",
+      "task": "Check reachable essentials",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Water, meds, phone, charger."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_recovery_planned_reco",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Recovery",
+      "task": "Planned recovery break",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Recovery prevents crashes."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_depression_open_onyx_",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Depression",
+      "task": "Open Onyx and name today's level",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Low-demand check-in."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_depression_do_one_sti",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Depression",
+      "task": "Do one \"still alive\" care step",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "For hard depression days."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_autism_sensory_reset",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Autism",
+      "task": "Sensory reset",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Reduce overload."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_dbt_use_one_dbt_skill",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "DBT",
+      "task": "Use one DBT skill",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Skill use counts."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_dbt_fill_diary_check_",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "DBT",
+      "task": "Fill diary/check-in card",
+      "respawn": "Daily",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Emotional labor."
+    },
+    {
+      "id": "dino_physical_health_mental_health_access_and_hygiene_dino_shutdown_name_withdra",
+      "section": "Dino physical health, mental health, access, and hygiene",
+      "person": "Dino",
+      "category": "Shutdown",
+      "task": "Name withdrawal/shutdown without fixing it yet",
+      "respawn": "As needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny awareness win."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_relationship_send_squishy_on",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Relationship",
+      "task": "Send Squishy one loving message",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Better partner goal."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_relationship_say_i_m_withdra",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Relationship",
+      "task": "Say \"I'm withdrawn but I love you\"",
+      "respawn": "As needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Repair during shutdown."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_relationship_plan_one_tiny_l",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Relationship",
+      "task": "Plan one tiny loving thing",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Intention counts."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_relationship_gentle_check_in",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Relationship",
+      "task": "Gentle check-in conversation",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Emotional labor."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_relationship_repair_after_co",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Relationship",
+      "task": "Repair after conflict/withdrawal",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Hard and important."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_communication_open_messages_",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Communication",
+      "task": "Open messages/inbox",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny start."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_communication_pick_one_messa",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Communication",
+      "task": "Pick one message to answer",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Decision step."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_communication_reply_to_one_f",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Communication",
+      "task": "Reply to one friend/message",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Communication is hard."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_communication_send_reconnect",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Communication",
+      "task": "Send reconnect message",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Emotional labor."
+    },
+    {
+      "id": "dino_communication_relationship_and_friendship_dino_communication_send_apology_r",
+      "section": "Dino communication, relationship, and friendship",
+      "person": "Dino",
+      "category": "Communication",
+      "task": "Send apology/repair message",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Repair is growth."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_check_appointment_list_calendar",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Check appointment list/calendar",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Medical admin is real work."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_open_patient_portal",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Open patient portal",
+      "respawn": "As needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny start."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_message_doctor_portal",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Message doctor/portal",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Communication burden."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_schedule_doctor_appointment",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Schedule doctor appointment",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Very hard task."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_refill_request_medication",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Refill/request medication",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Important admin."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_prepare_appointment_notes",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Prepare appointment notes",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Helps communication."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_attend_doctor_appointment",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Attend doctor appointment",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Major access/emotional load."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_medical_recover_after_appointment",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Medical",
+      "task": "Recover after appointment",
+      "respawn": "As needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Recovery counts."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_paperwork_open_one_paperwork_item",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Paperwork",
+      "task": "Open one paperwork item",
+      "respawn": "As needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny start."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_paperwork_complete_one_paperwork_step",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Paperwork",
+      "task": "Complete one paperwork step",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One form/page/call."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_household_admin_add_one_grocery_item_to_list",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Household admin",
+      "task": "Add one grocery item to list",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One item counts."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_household_admin_review_grocery_delivery_cart",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Household admin",
+      "task": "Review grocery/delivery cart",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Low-spoon admin."
+    },
+    {
+      "id": "dino_admin_and_medical_dino_housing_admin_apartment_application_research_step",
+      "section": "Dino admin and medical",
+      "person": "Dino",
+      "category": "Housing admin",
+      "task": "Apartment application research step",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High executive-function task."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_open_d_d_campaign_file",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "D&D",
+      "task": "Open D&D campaign file",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny start."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_write_one_npc_note",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "D&D",
+      "task": "Write one NPC note",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Campaign progress."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_write_one_location_lore_note",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "D&D",
+      "task": "Write one location/lore note",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Campaign progress."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_build_foundry_vtt_prep_for_15_minu",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "D&D",
+      "task": "Build Foundry VTT prep for 15 minutes",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Virtual D&D focus."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_research_foundry_arkenforge_packag",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "D&D",
+      "task": "Research Foundry/Arkenforge package",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Reward-store planning."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_finish_one_d_d_prep_chunk",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "D&D",
+      "task": "Finish one D&D prep chunk",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Map, encounter, session note, etc."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_open_saga_document",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Fantasy saga",
+      "task": "Open saga document",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny start."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_write_100_words",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Fantasy saga",
+      "task": "Write 100 words",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Small writing win."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_outline_one_scene_chapter",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Fantasy saga",
+      "task": "Outline one scene/chapter",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Bigger writing task."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_edit_one_page_scene",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Fantasy saga",
+      "task": "Edit one page/scene",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Creative labor."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_mmorpg_write_one_mmorpg_system_idea",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "MMORPG",
+      "task": "Write one MMORPG system idea",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Design progress."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_mmorpg_flesh_out_one_class_race_mechan",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "MMORPG",
+      "task": "Flesh out one class/race/mechanic",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Bigger design chunk."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_music_write_one_lyric_line",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Music",
+      "task": "Write one lyric line",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny music win."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_music_draft_one_verse_chorus",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Music",
+      "task": "Draft one verse/chorus",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Songwriting chunk."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_music_use_brev_ai_music_tool_for_one_i",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Music",
+      "task": "Use Brev.ai/music tool for one idea",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Music creation."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_poems_stories_write_one_poem_short_sto",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Poems/stories",
+      "task": "Write one poem/short story idea",
+      "respawn": "Daily/as able",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Creative spark."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_poems_stories_finish_one_poem_short_st",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Poems/stories",
+      "task": "Finish one poem/short story draft",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion reward."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_joy_look_up_save_one_t_rex_collectible",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Joy",
+      "task": "Look up/save one T-rex collectible",
+      "respawn": "Weekly/as able",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Joy task."
+    },
+    {
+      "id": "dino_work_hobbies_creativity_and_joy_dino_joy_play_decompress_before_crash",
+      "section": "Dino work, hobbies, creativity, and joy",
+      "person": "Dino",
+      "category": "Joy",
+      "task": "Play/decompress before crash",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Stopping before overstimulation is a win."
+    }
+  ],
+  "tasksBySection": {
+    "Shared foundation tasks": [
+      {
+        "id": "shared_foundation_tasks_both_self_care_drink_water_hydrate",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Drink water / hydrate",
+        "respawn": "Daily, repeatable",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "A few sips counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_eat_meal_1",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Eat meal 1",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Easy food counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_eat_meal_2",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Eat meal 2",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Minimum nourishment goal, not diet culture."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_take_morning_meds",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Take morning meds",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Health care is work."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_take_evening_meds",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Take evening meds",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate reward from morning meds."
+      },
+      {
+        "id": "shared_foundation_tasks_both_mental_health_use_onyx_support",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Mental health",
+        "task": "Use Onyx support",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Asking for help counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_mental_health_use_one_dbt_grounding_skill",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Mental health",
+        "task": "Use one DBT/grounding skill",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "STOP, TIPP, grounding, Wise Mind, etc."
+      },
+      {
+        "id": "shared_foundation_tasks_both_rest_decompression_break",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Rest",
+        "task": "Decompression break",
+        "respawn": "Daily, repeatable",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Rest prevents crashes."
+      },
+      {
+        "id": "shared_foundation_tasks_both_hygiene_brush_teeth_mouth_care",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Hygiene",
+        "task": "Brush teeth / mouth care",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Partial mouth care counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_hygiene_wash_face_wipes_low_spoon_wash",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Hygiene",
+        "task": "Wash face / wipes / low-spoon wash",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Hygiene is physical and mental effort."
+      },
+      {
+        "id": "shared_foundation_tasks_both_hygiene_change_into_clean_clothes",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Hygiene",
+        "task": "Change into clean clothes",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Dignity care."
+      },
+      {
+        "id": "shared_foundation_tasks_both_admin_open_today_s_task_list",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Admin",
+        "task": "Open today's task list",
+        "respawn": "Daily",
+        "reward": {
+          "display": "1 gold",
+          "sourceDisplay": "1 gold",
+          "totalCopper": 100,
+          "denominations": {
+            "platinum": 0,
+            "gold": 1,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Opening the app counts as starting."
+      },
+      {
+        "id": "shared_foundation_tasks_both_admin_save_export_site_data",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Admin",
+        "task": "Save/export site data",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Prevents lost progress."
+      }
+    ],
+    "Cats: Onyx, Harvey, and Callie": [
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_feed_cats",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Feed cats",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Cat care is family care."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_refresh_cat_water",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Refresh cat water",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from feeding."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_scoop_the_1_litter_box",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Scoop the 1 litter box",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Smell/gross/sensory bonus."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_full_litter_change",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Full litter change",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Heavy/gross task."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_brush_one_cat",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Brush one cat",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One cat at a time."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_trim_nails_for_one_cat",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Trim nails for one cat",
+        "respawn": "Monthly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Stress/skill bonus."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_check_cat_food_litter_supply",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Check cat food/litter supply",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Prevents emergencies."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_dino_joy_spend_intentional_time_with_onyx_harvey_cal",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Dino",
+        "category": "Joy",
+        "task": "Spend intentional time with Onyx/Harvey/Callie",
+        "respawn": "Daily",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Love counts."
+      }
+    ],
+    "Kitchen tasks": [
+      {
+        "id": "kitchen_tasks_dino_chore_gather_dirty_dishes_from_reachable_area",
+        "section": "Kitchen tasks",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Gather dirty dishes from reachable area",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Low-spoon dish start."
+      },
+      {
+        "id": "kitchen_tasks_dino_chore_wash_5_dishes",
+        "section": "Kitchen tasks",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Wash 5 dishes",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Dino's main chore, still rewarded well."
+      },
+      {
+        "id": "kitchen_tasks_dino_chore_wash_one_small_dish_batch",
+        "section": "Kitchen tasks",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Wash one small dish batch",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Pain/fatigue counts."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_wipe_counter",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe counter",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny reset."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_wipe_stove_top",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe stove top",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Grease/sensory bonus."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_clean_microwave",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clean microwave",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Gross/sensory task."
+      },
+      {
+        "id": "kitchen_tasks_dino_chore_identify_expired_fridge_items",
+        "section": "Kitchen tasks",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Identify expired fridge items",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Seated visual step."
+      },
+      {
+        "id": "kitchen_tasks_dino_chore_clean_one_reachable_fridge_shelf_drawer",
+        "section": "Kitchen tasks",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Clean one reachable fridge shelf/drawer",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Partial shelf counts."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_throw_away_expired_food",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Throw away expired food",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Smell/gross bonus."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_wipe_fridge_shelf_drawer",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe fridge shelf/drawer",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from tossing food."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_put_away_cold_groceries",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put away cold groceries",
+        "respawn": "As needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Split from pantry goods."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_put_away_pantry_dry_groceries",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put away pantry/dry groceries",
+        "respawn": "As needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One category at a time."
+      },
+      {
+        "id": "kitchen_tasks_both_admin_make_grocery_inventory_list",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Admin",
+        "task": "Make grocery inventory list",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Executive-function task."
+      }
+    ],
+    "Bathroom + hygiene care": [
+      {
+        "id": "bathroom_hygiene_care_both_chore_gather_bathroom_trash",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Gather bathroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Trash micro-step."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_move_bathroom_trash_to_main_trash",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Move bathroom trash to main trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from gathering."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_put_new_bag_in_bathroom_trash",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put new bag in bathroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion step."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_clean_toilet_bowl",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clean toilet bowl",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Gross-task bonus."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_wipe_toilet_seat_lid_base",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe toilet seat/lid/base",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from bowl."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_wipe_sink",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe sink",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Small reset."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_clean_mirror",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clean mirror",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Quick win."
+      },
+      {
+        "id": "bathroom_hygiene_care_dino_hygiene_shower_chair_setup_check",
+        "section": "Bathroom + hygiene care",
+        "person": "Dino",
+        "category": "Hygiene",
+        "task": "Shower-chair setup check",
+        "respawn": "As needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Setup is real effort."
+      },
+      {
+        "id": "bathroom_hygiene_care_dino_hygiene_wash_one_body_area",
+        "section": "Bathroom + hygiene care",
+        "person": "Dino",
+        "category": "Hygiene",
+        "task": "Wash one body area",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny wash counts."
+      },
+      {
+        "id": "bathroom_hygiene_care_dino_hygiene_low_spoon_wipe_down",
+        "section": "Bathroom + hygiene care",
+        "person": "Dino",
+        "category": "Hygiene",
+        "task": "Low-spoon wipe-down",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Full shower alternative."
+      },
+      {
+        "id": "bathroom_hygiene_care_dino_hygiene_full_shower_bath",
+        "section": "Bathroom + hygiene care",
+        "person": "Dino",
+        "category": "Hygiene",
+        "task": "Full shower/bath",
+        "respawn": "Every 2-3 days/as able",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Huge effort; needs recovery."
+      },
+      {
+        "id": "bathroom_hygiene_care_dino_hygiene_post_shower_recovery_rest",
+        "section": "Bathroom + hygiene care",
+        "person": "Dino",
+        "category": "Hygiene",
+        "task": "Post-shower recovery rest",
+        "respawn": "After shower",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Recovery is part of the task."
+      }
+    ],
+    "Bedroom, laundry, and bed-level reset": [
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_gather_bedroom_trash",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Gather bedroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny trash step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_move_bedroom_trash_to_main_trash",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Move bedroom trash to main trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate movement step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_put_new_bag_in_bedroom_trash",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put new bag in bedroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_clear_bed_surface_reset_bed_area",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clear bed surface / reset bed area",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Bed-level reset matters."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_change_pillowcase",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Change pillowcase",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Small bedding task."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_laundry_put_dirty_laundry_in_hamper",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Laundry",
+        "task": "Put dirty laundry in hamper",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Micro-step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_dino_laundry_sort_laundry_from_reachable_pos",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Dino",
+        "category": "Laundry",
+        "task": "Sort laundry from reachable position",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Low-spoon version."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_dino_laundry_pick_one_laundry_category",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Dino",
+        "category": "Laundry",
+        "task": "Pick one laundry category",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Towels/clothes/bedding."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_dino_self_care_put_essentials_within_reach",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Dino",
+        "category": "Self-care",
+        "task": "Put essentials within reach",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Water, meds, phone, charger."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_dino_self_care_position_shift_pressure_relie",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Dino",
+        "category": "Self-care",
+        "task": "Position shift / pressure relief",
+        "respawn": "Daily, repeatable",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Body care, not laziness."
+      }
+    ],
+    "Living room + whole home": [
+      {
+        "id": "living_room_whole_home_both_chore_gather_living_room_trash",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Gather living room trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny step."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_move_living_room_trash_to_main_trash",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Move living room trash to main trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate step."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_put_new_bag_in_living_room_trash",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put new bag in living room trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion step."
+      },
+      {
+        "id": "living_room_whole_home_dino_chore_identify_trash_cans_that_need_emptying",
+        "section": "Living room + whole home",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Identify trash cans that need emptying",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Seated planning."
+      },
+      {
+        "id": "living_room_whole_home_dino_chore_gather_reachable_trash_into_one_bag",
+        "section": "Living room + whole home",
+        "person": "Dino",
+        "category": "Chore",
+        "task": "Gather reachable trash into one bag",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Only if accessible."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_dust_one_surface",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Dust one surface",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One surface counts."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_organize_one_pile_basket",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Organize one pile/basket",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One pile only."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_organize_one_small_area",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Organize one small area",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Shelf, cart, bag, table."
+      }
+    ],
+    "Dino physical health, mental health, access, and hygiene": [
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_pain_check_in",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "Pain check-in",
+        "respawn": "Daily",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Notice body status."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_ms_fatigue_check",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "MS/fatigue check-in",
+        "respawn": "Daily",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Helps choose task size."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_autism_sensory_c",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "Autism/sensory check-in",
+        "respawn": "Daily",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Prevents overload."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_take_meds",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "Take meds",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Health care is work."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_eat_safe_food",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "Eat safe food",
+        "respawn": "Daily/repeatable",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Any safe food counts."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_hydration_check",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "Hydration check",
+        "respawn": "Daily/repeatable",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "A few sips counts."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_body_oxygen_respirato",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Body",
+        "task": "Oxygen/respiratory check if applicable",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Routine safety check."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_access_charge_check_p",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Access",
+        "task": "Charge/check power wheelchair",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Mobility access protection."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_access_check_reachabl",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Access",
+        "task": "Check reachable essentials",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Water, meds, phone, charger."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_recovery_planned_reco",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Recovery",
+        "task": "Planned recovery break",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Recovery prevents crashes."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_depression_open_onyx_",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Depression",
+        "task": "Open Onyx and name today's level",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Low-demand check-in."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_depression_do_one_sti",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Depression",
+        "task": "Do one \"still alive\" care step",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "For hard depression days."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_autism_sensory_reset",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Autism",
+        "task": "Sensory reset",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Reduce overload."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_dbt_use_one_dbt_skill",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "DBT",
+        "task": "Use one DBT skill",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Skill use counts."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_dbt_fill_diary_check_",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "DBT",
+        "task": "Fill diary/check-in card",
+        "respawn": "Daily",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Emotional labor."
+      },
+      {
+        "id": "dino_physical_health_mental_health_access_and_hygiene_dino_shutdown_name_withdra",
+        "section": "Dino physical health, mental health, access, and hygiene",
+        "person": "Dino",
+        "category": "Shutdown",
+        "task": "Name withdrawal/shutdown without fixing it yet",
+        "respawn": "As needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny awareness win."
+      }
+    ],
+    "Dino communication, relationship, and friendship": [
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_relationship_send_squishy_on",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Relationship",
+        "task": "Send Squishy one loving message",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Better partner goal."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_relationship_say_i_m_withdra",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Relationship",
+        "task": "Say \"I'm withdrawn but I love you\"",
+        "respawn": "As needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Repair during shutdown."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_relationship_plan_one_tiny_l",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Relationship",
+        "task": "Plan one tiny loving thing",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Intention counts."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_relationship_gentle_check_in",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Relationship",
+        "task": "Gentle check-in conversation",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Emotional labor."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_relationship_repair_after_co",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Relationship",
+        "task": "Repair after conflict/withdrawal",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Hard and important."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_communication_open_messages_",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Communication",
+        "task": "Open messages/inbox",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny start."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_communication_pick_one_messa",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Communication",
+        "task": "Pick one message to answer",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Decision step."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_communication_reply_to_one_f",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Communication",
+        "task": "Reply to one friend/message",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Communication is hard."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_communication_send_reconnect",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Communication",
+        "task": "Send reconnect message",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Emotional labor."
+      },
+      {
+        "id": "dino_communication_relationship_and_friendship_dino_communication_send_apology_r",
+        "section": "Dino communication, relationship, and friendship",
+        "person": "Dino",
+        "category": "Communication",
+        "task": "Send apology/repair message",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Repair is growth."
+      }
+    ],
+    "Dino admin and medical": [
+      {
+        "id": "dino_admin_and_medical_dino_medical_check_appointment_list_calendar",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Check appointment list/calendar",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Medical admin is real work."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_open_patient_portal",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Open patient portal",
+        "respawn": "As needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny start."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_message_doctor_portal",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Message doctor/portal",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Communication burden."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_schedule_doctor_appointment",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Schedule doctor appointment",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Very hard task."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_refill_request_medication",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Refill/request medication",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Important admin."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_prepare_appointment_notes",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Prepare appointment notes",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Helps communication."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_attend_doctor_appointment",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Attend doctor appointment",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Major access/emotional load."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_medical_recover_after_appointment",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Medical",
+        "task": "Recover after appointment",
+        "respawn": "As needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Recovery counts."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_paperwork_open_one_paperwork_item",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Paperwork",
+        "task": "Open one paperwork item",
+        "respawn": "As needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny start."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_paperwork_complete_one_paperwork_step",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Paperwork",
+        "task": "Complete one paperwork step",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One form/page/call."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_household_admin_add_one_grocery_item_to_list",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Household admin",
+        "task": "Add one grocery item to list",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One item counts."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_household_admin_review_grocery_delivery_cart",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Household admin",
+        "task": "Review grocery/delivery cart",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Low-spoon admin."
+      },
+      {
+        "id": "dino_admin_and_medical_dino_housing_admin_apartment_application_research_step",
+        "section": "Dino admin and medical",
+        "person": "Dino",
+        "category": "Housing admin",
+        "task": "Apartment application research step",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High executive-function task."
+      }
+    ],
+    "Dino work, hobbies, creativity, and joy": [
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_open_d_d_campaign_file",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "D&D",
+        "task": "Open D&D campaign file",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny start."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_write_one_npc_note",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "D&D",
+        "task": "Write one NPC note",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Campaign progress."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_write_one_location_lore_note",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "D&D",
+        "task": "Write one location/lore note",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Campaign progress."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_build_foundry_vtt_prep_for_15_minu",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "D&D",
+        "task": "Build Foundry VTT prep for 15 minutes",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Virtual D&D focus."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_research_foundry_arkenforge_packag",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "D&D",
+        "task": "Research Foundry/Arkenforge package",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Reward-store planning."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_d_d_finish_one_d_d_prep_chunk",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "D&D",
+        "task": "Finish one D&D prep chunk",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Map, encounter, session note, etc."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_open_saga_document",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Fantasy saga",
+        "task": "Open saga document",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny start."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_write_100_words",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Fantasy saga",
+        "task": "Write 100 words",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Small writing win."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_outline_one_scene_chapter",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Fantasy saga",
+        "task": "Outline one scene/chapter",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Bigger writing task."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_fantasy_saga_edit_one_page_scene",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Fantasy saga",
+        "task": "Edit one page/scene",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Creative labor."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_mmorpg_write_one_mmorpg_system_idea",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "MMORPG",
+        "task": "Write one MMORPG system idea",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Design progress."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_mmorpg_flesh_out_one_class_race_mechan",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "MMORPG",
+        "task": "Flesh out one class/race/mechanic",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Bigger design chunk."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_music_write_one_lyric_line",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Music",
+        "task": "Write one lyric line",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny music win."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_music_draft_one_verse_chorus",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Music",
+        "task": "Draft one verse/chorus",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Songwriting chunk."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_music_use_brev_ai_music_tool_for_one_i",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Music",
+        "task": "Use Brev.ai/music tool for one idea",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Music creation."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_poems_stories_write_one_poem_short_sto",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Poems/stories",
+        "task": "Write one poem/short story idea",
+        "respawn": "Daily/as able",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Creative spark."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_poems_stories_finish_one_poem_short_st",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Poems/stories",
+        "task": "Finish one poem/short story draft",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion reward."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_joy_look_up_save_one_t_rex_collectible",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Joy",
+        "task": "Look up/save one T-rex collectible",
+        "respawn": "Weekly/as able",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Joy task."
+      },
+      {
+        "id": "dino_work_hobbies_creativity_and_joy_dino_joy_play_decompress_before_crash",
+        "section": "Dino work, hobbies, creativity, and joy",
+        "person": "Dino",
+        "category": "Joy",
+        "task": "Play/decompress before crash",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Stopping before overstimulation is a win."
+      }
+    ]
+  }
+}

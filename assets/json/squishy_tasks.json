@@ -1,0 +1,4655 @@
+{
+  "profile": "squishy",
+  "displayName": "Squishy",
+  "schemaVersion": "1.0.0",
+  "source": {
+    "uploadedFileName": "Pasted markdown.md",
+    "convertedFrom": "Currency display revision markdown",
+    "conversionNotes": "Tasks marked Both are included in both profile files. Rewards are stored as totalCopper and normalized display denominations."
+  },
+  "currencySystem": {
+    "baseUnit": "copper",
+    "conversion": {
+      "copperPerSilver": 10,
+      "silverPerGold": 10,
+      "goldPerPlatinum": 10,
+      "copperPerGold": 100,
+      "copperPerPlatinum": 1000
+    },
+    "displayRule": "Store rewards internally as totalCopper, then display normalized platinum/gold/silver/copper from highest to lowest denomination. Hide zero denominations.",
+    "conversions": [
+      "10 copper = 1 silver",
+      "10 silver = 1 gold",
+      "10 gold = 1 platinum"
+    ],
+    "formatExampleFunctionName": "formatReward"
+  },
+  "currencyTiers": [
+    {
+      "id": "tiny_start",
+      "tier": "Tiny start",
+      "useFor": "Opening, checking, choosing, gathering one item",
+      "reward": {
+        "display": "1 gold",
+        "sourceDisplay": "1 gold",
+        "totalCopper": 100,
+        "denominations": {
+          "platinum": 0,
+          "gold": 1,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "gentle_step",
+      "tier": "Gentle step",
+      "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "small_task",
+      "tier": "Small task",
+      "useFor": "One clear task chunk",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "medium_task",
+      "tier": "Medium task",
+      "useFor": "Normal chore, care task, hobby work block",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "hard_task",
+      "tier": "Hard task",
+      "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "very_hard_task",
+      "tier": "Very hard task",
+      "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "hero_takeover",
+      "tier": "Hero / takeover",
+      "useFor": "Squishy fully takes over a Dino-assigned high-burden task",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "recovery_bonus",
+      "tier": "Recovery bonus",
+      "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "globalPricingModifiers": [
+    {
+      "id": "low_spoon_attempt_bonus",
+      "modifier": "Low-spoon attempt bonus",
+      "addWhen": "They tried even if they only did part of it",
+      "bonus": {
+        "display": "+2 gold, 5 silver",
+        "sourceDisplay": "+2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "gentle_hygiene_bonus",
+      "modifier": "Gentle hygiene bonus",
+      "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "pain_fatigue_flare_bonus",
+      "modifier": "Pain/fatigue flare bonus",
+      "addWhen": "Task happened during pain, MS fatigue, EDS instability, migraine, sensory overload, depression, anxiety, etc.",
+      "bonus": {
+        "display": "+9 gold",
+        "sourceDisplay": "+9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "dysphoria_trauma_safe_care_bonus",
+      "modifier": "Dysphoria/trauma-safe care bonus",
+      "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+      "bonus": {
+        "display": "+9 gold",
+        "sourceDisplay": "+9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "dino_takeover_bonus",
+      "modifier": "Dino takeover bonus",
+      "addWhen": "Squishy does a Dino-assigned task because Dino's body/access barriers are too high",
+      "bonus": {
+        "display": "+1 platinum, 5 gold",
+        "sourceDisplay": "+1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "major_dino_takeover_bonus",
+      "modifier": "Major Dino takeover bonus",
+      "addWhen": "Squishy takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+      "bonus": {
+        "display": "+4 platinum",
+        "sourceDisplay": "+4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "recovery_repair_bonus",
+      "modifier": "Recovery/repair bonus",
+      "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "gentleWordingRules": [
+    {
+      "id": "hygiene_skipped",
+      "situation": "Hygiene skipped",
+      "useWording": "\"Tiny wash counts. Your body still deserves care.\"",
+      "avoidWording": "\"You failed hygiene.\""
+    },
+    {
+      "id": "shower_is_too_much",
+      "situation": "Shower is too much",
+      "useWording": "\"Would wipes, face wash, clean clothes, or sitting with supplies be enough today?\"",
+      "avoidWording": "\"Just shower.\""
+    },
+    {
+      "id": "task_incomplete",
+      "situation": "Task incomplete",
+      "useWording": "\"Partial completion paid out. Recovery counts too.\"",
+      "avoidWording": "\"Incomplete / failed.\""
+    },
+    {
+      "id": "squishy_takes_over_dino_task",
+      "situation": "Squishy takes over Dino task",
+      "useWording": "\"You protected Dino's body and the home. Hero reward added.\"",
+      "avoidWording": "\"You had to do Dino's job.\""
+    },
+    {
+      "id": "dino_cannot_do_physical_task",
+      "situation": "Dino cannot do physical task",
+      "useWording": "\"This is an access barrier, not laziness.\"",
+      "avoidWording": "\"Try harder.\""
+    },
+    {
+      "id": "squishy_is_burnt_out",
+      "situation": "Squishy is burnt out",
+      "useWording": "\"Caregiver break is protected. Eating and decompression earn rewards.\"",
+      "avoidWording": "\"Push through.\""
+    },
+    {
+      "id": "doctor_admin_task",
+      "situation": "Doctor/admin task",
+      "useWording": "\"This is a high-effort quest. Opening the portal counts.\"",
+      "avoidWording": "\"This should be easy.\""
+    }
+  ],
+  "takeoverRules": [
+    {
+      "id": "squishy_helps_dino_start_the_task",
+      "takeoverType": "Squishy helps Dino start the task",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_does_half_of_dino_s_task",
+      "takeoverType": "Squishy does half of Dino's task",
+      "bonus": {
+        "display": "+1 platinum, 5 gold",
+        "sourceDisplay": "+1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_fully_takes_over_dino_s_task",
+      "takeoverType": "Squishy fully takes over Dino's task",
+      "bonus": {
+        "display": "+2 platinum, 5 gold",
+        "sourceDisplay": "+2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_fully_takes_over_a_high_burden_dino_task",
+      "takeoverType": "Squishy fully takes over a high-burden Dino task",
+      "bonus": {
+        "display": "+4 platinum",
+        "sourceDisplay": "+4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "squishy_takes_over_during_a_dino_flare_crash",
+      "takeoverType": "Squishy takes over during a Dino flare/crash",
+      "bonus": {
+        "display": "+5 platinum",
+        "sourceDisplay": "+5 platinum",
+        "totalCopper": 5000,
+        "denominations": {
+          "platinum": 5,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "defaultTaskFlags": {
+    "profile": [
+      "squishy",
+      "dino",
+      "shared"
+    ],
+    "respawn": [
+      "daily",
+      "every2",
+      "weekly",
+      "monthly",
+      "asneeded"
+    ],
+    "priority": [
+      "gentle",
+      "medium",
+      "hard",
+      "veryHard",
+      "hero"
+    ],
+    "rewardTotalCopper": 0,
+    "displayReward": true,
+    "normalizeCurrencyDisplay": true,
+    "lowSpoon": true,
+    "partialCounts": true,
+    "recoveryReward": true,
+    "hygieneGentleMode": true,
+    "bodyNeutralMode": true,
+    "traumaSensitive": true,
+    "dysphoriaSensitive": true,
+    "dinoAssigned": true,
+    "caregiverPaid": true,
+    "noSweepMopForDino": true,
+    "allowTakeoverBonus": true,
+    "noShameLanguage": true
+  },
+  "taskCounts": {
+    "totalIncluded": 105,
+    "sharedBothTasksIncluded": 47,
+    "profileSpecificTasksIncluded": 58
+  },
+  "tasks": [
+    {
+      "id": "shared_foundation_tasks_both_self_care_drink_water_hydrate",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Drink water / hydrate",
+      "respawn": "Daily, repeatable",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "A few sips counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_eat_meal_1",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Eat meal 1",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Easy food counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_eat_meal_2",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Eat meal 2",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Minimum nourishment goal, not diet culture."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_take_morning_meds",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Take morning meds",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Health care is work."
+    },
+    {
+      "id": "shared_foundation_tasks_both_self_care_take_evening_meds",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Self-care",
+      "task": "Take evening meds",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate reward from morning meds."
+    },
+    {
+      "id": "shared_foundation_tasks_both_mental_health_use_onyx_support",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Mental health",
+      "task": "Use Onyx support",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Asking for help counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_mental_health_use_one_dbt_grounding_skill",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Mental health",
+      "task": "Use one DBT/grounding skill",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "STOP, TIPP, grounding, Wise Mind, etc."
+    },
+    {
+      "id": "shared_foundation_tasks_both_rest_decompression_break",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Rest",
+      "task": "Decompression break",
+      "respawn": "Daily, repeatable",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Rest prevents crashes."
+    },
+    {
+      "id": "shared_foundation_tasks_both_hygiene_brush_teeth_mouth_care",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Hygiene",
+      "task": "Brush teeth / mouth care",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Partial mouth care counts."
+    },
+    {
+      "id": "shared_foundation_tasks_both_hygiene_wash_face_wipes_low_spoon_wash",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Hygiene",
+      "task": "Wash face / wipes / low-spoon wash",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Hygiene is physical and mental effort."
+    },
+    {
+      "id": "shared_foundation_tasks_both_hygiene_change_into_clean_clothes",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Hygiene",
+      "task": "Change into clean clothes",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Dignity care."
+    },
+    {
+      "id": "shared_foundation_tasks_both_admin_open_today_s_task_list",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Admin",
+      "task": "Open today's task list",
+      "respawn": "Daily",
+      "reward": {
+        "display": "1 gold",
+        "sourceDisplay": "1 gold",
+        "totalCopper": 100,
+        "denominations": {
+          "platinum": 0,
+          "gold": 1,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Opening the app counts as starting."
+    },
+    {
+      "id": "shared_foundation_tasks_both_admin_save_export_site_data",
+      "section": "Shared foundation tasks",
+      "person": "Both",
+      "category": "Admin",
+      "task": "Save/export site data",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Prevents lost progress."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_feed_cats",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Feed cats",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Cat care is family care."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_refresh_cat_water",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Refresh cat water",
+      "respawn": "Daily",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from feeding."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_scoop_the_1_litter_box",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Scoop the 1 litter box",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Smell/gross/sensory bonus."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_full_litter_change",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Full litter change",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Heavy/gross task."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_brush_one_cat",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Brush one cat",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One cat at a time."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_trim_nails_for_one_cat",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Trim nails for one cat",
+      "respawn": "Monthly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Stress/skill bonus."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_both_cats_check_cat_food_litter_supply",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Both",
+      "category": "Cats",
+      "task": "Check cat food/litter supply",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Prevents emergencies."
+    },
+    {
+      "id": "cats_onyx_harvey_and_callie_squishy_joy_give_cats_affection_playtime",
+      "section": "Cats: Onyx, Harvey, and Callie",
+      "person": "Squishy",
+      "category": "Joy",
+      "task": "Give cats affection/playtime",
+      "respawn": "Daily",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Joy, not just labor."
+    },
+    {
+      "id": "kitchen_tasks_squishy_dino_takeover_take_over_dino_s_dishes_small_batch",
+      "section": "Kitchen tasks",
+      "person": "Squishy",
+      "category": "Dino takeover",
+      "task": "Take over Dino's dishes, small batch",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Extra for protecting Dino's body."
+    },
+    {
+      "id": "kitchen_tasks_squishy_dino_takeover_take_over_dino_s_dishes_full_sink_load",
+      "section": "Kitchen tasks",
+      "person": "Squishy",
+      "category": "Dino takeover",
+      "task": "Take over Dino's dishes, full sink/load",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Major takeover reward."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_wipe_counter",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe counter",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny reset."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_wipe_stove_top",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe stove top",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Grease/sensory bonus."
+    },
+    {
+      "id": "kitchen_tasks_squishy_chore_sweep_kitchen",
+      "section": "Kitchen tasks",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Sweep kitchen",
+      "respawn": "Every 2 days/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Dino should not be assigned sweep/mop."
+    },
+    {
+      "id": "kitchen_tasks_squishy_chore_mop_kitchen",
+      "section": "Kitchen tasks",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Mop kitchen",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High shoulder/body burden if Dino did it."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_clean_microwave",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clean microwave",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Gross/sensory task."
+    },
+    {
+      "id": "kitchen_tasks_squishy_dino_takeover_take_over_fridge_cleanout",
+      "section": "Kitchen tasks",
+      "person": "Squishy",
+      "category": "Dino takeover",
+      "task": "Take over fridge cleanout",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Major takeover reward."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_throw_away_expired_food",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Throw away expired food",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Smell/gross bonus."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_wipe_fridge_shelf_drawer",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe fridge shelf/drawer",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from tossing food."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_put_away_cold_groceries",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put away cold groceries",
+      "respawn": "As needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Split from pantry goods."
+    },
+    {
+      "id": "kitchen_tasks_both_chore_put_away_pantry_dry_groceries",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put away pantry/dry groceries",
+      "respawn": "As needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One category at a time."
+    },
+    {
+      "id": "kitchen_tasks_both_admin_make_grocery_inventory_list",
+      "section": "Kitchen tasks",
+      "person": "Both",
+      "category": "Admin",
+      "task": "Make grocery inventory list",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Executive-function task."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_gather_bathroom_trash",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Gather bathroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Trash micro-step."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_move_bathroom_trash_to_main_trash",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Move bathroom trash to main trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from gathering."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_put_new_bag_in_bathroom_trash",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put new bag in bathroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion step."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_clean_toilet_bowl",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clean toilet bowl",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Gross-task bonus."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_wipe_toilet_seat_lid_base",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe toilet seat/lid/base",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from bowl."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_wipe_sink",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Wipe sink",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Small reset."
+    },
+    {
+      "id": "bathroom_hygiene_care_both_chore_clean_mirror",
+      "section": "Bathroom + hygiene care",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clean mirror",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Quick win."
+    },
+    {
+      "id": "bathroom_hygiene_care_squishy_chore_sweep_bathroom",
+      "section": "Bathroom + hygiene care",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Sweep bathroom",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Dino shoulder-dislocation risk."
+    },
+    {
+      "id": "bathroom_hygiene_care_squishy_chore_mop_bathroom",
+      "section": "Bathroom + hygiene care",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Mop bathroom",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High physical load."
+    },
+    {
+      "id": "bathroom_hygiene_care_squishy_chore_clean_shower_tub_surface",
+      "section": "Bathroom + hygiene care",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Clean shower/tub surface",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Physical/sensory task."
+    },
+    {
+      "id": "bathroom_hygiene_care_squishy_caregiver_support_help_dino_with_hygiene_setup",
+      "section": "Bathroom + hygiene care",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Help Dino with hygiene setup",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Consent/privacy-sensitive."
+    },
+    {
+      "id": "bathroom_hygiene_care_squishy_caregiver_support_help_dino_with_shower_bathing_su",
+      "section": "Bathroom + hygiene care",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Help Dino with shower/bathing support",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Major caregiver support."
+    },
+    {
+      "id": "bathroom_hygiene_care_squishy_caregiver_support_help_dino_with_toileting_setup_s",
+      "section": "Bathroom + hygiene care",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Help Dino with toileting setup/support",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Privacy/dignity-sensitive."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_gather_bedroom_trash",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Gather bedroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny trash step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_move_bedroom_trash_to_main_trash",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Move bedroom trash to main trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate movement step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_put_new_bag_in_bedroom_trash",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put new bag in bedroom trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_clear_bed_surface_reset_bed_area",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Clear bed surface / reset bed area",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Bed-level reset matters."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_chore_change_pillowcase",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Change pillowcase",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Small bedding task."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_squishy_chore_change_sheets",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Change sheets",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Physically hard."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_both_laundry_put_dirty_laundry_in_hamper",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Both",
+      "category": "Laundry",
+      "task": "Put dirty laundry in hamper",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Micro-step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_squishy_laundry_start_laundry_load",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Squishy",
+      "category": "Laundry",
+      "task": "Start laundry load",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Physical + executive effort."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_squishy_laundry_move_laundry_to_dryer",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Squishy",
+      "category": "Laundry",
+      "task": "Move laundry to dryer",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate step."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_squishy_laundry_fold_sort_clean_laundry_for_",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Squishy",
+      "category": "Laundry",
+      "task": "Fold/sort clean laundry for 10 minutes",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Partial folding counts."
+    },
+    {
+      "id": "bedroom_laundry_and_bed_level_reset_squishy_dino_takeover_fully_take_over_dino_s",
+      "section": "Bedroom, laundry, and bed-level reset",
+      "person": "Squishy",
+      "category": "Dino takeover",
+      "task": "Fully take over Dino's laundry task",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Major takeover reward."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_gather_living_room_trash",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Gather living room trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Tiny step."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_move_living_room_trash_to_main_trash",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Move living room trash to main trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate step."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_put_new_bag_in_living_room_trash",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Put new bag in living room trash",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Completion step."
+    },
+    {
+      "id": "living_room_whole_home_squishy_dino_takeover_take_over_dino_s_trash_gathering",
+      "section": "Living room + whole home",
+      "person": "Squishy",
+      "category": "Dino takeover",
+      "task": "Take over Dino's trash gathering",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Takeover reward."
+    },
+    {
+      "id": "living_room_whole_home_squishy_chore_take_trash_out",
+      "section": "Living room + whole home",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Take trash out",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High access/physical burden."
+    },
+    {
+      "id": "living_room_whole_home_squishy_chore_put_new_bags_in_all_trash_cans",
+      "section": "Living room + whole home",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Put new bags in all trash cans",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Separate from taking out."
+    },
+    {
+      "id": "living_room_whole_home_squishy_chore_sweep_living_room",
+      "section": "Living room + whole home",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Sweep living room",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Dino should not sweep/mop."
+    },
+    {
+      "id": "living_room_whole_home_squishy_chore_mop_living_room",
+      "section": "Living room + whole home",
+      "person": "Squishy",
+      "category": "Chore",
+      "task": "Mop living room",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High shoulder/body burden."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_dust_one_surface",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Dust one surface",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One surface counts."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_organize_one_pile_basket",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Organize one pile/basket",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "One pile only."
+    },
+    {
+      "id": "living_room_whole_home_both_chore_organize_one_small_area",
+      "section": "Living room + whole home",
+      "person": "Both",
+      "category": "Chore",
+      "task": "Organize one small area",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Shelf, cart, bag, table."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_monday_",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Paid caregiver work",
+      "task": "Monday caregiver block",
+      "respawn": "Weekly Monday",
+      "reward": {
+        "display": "5 platinum",
+        "sourceDisplay": "5 platinum",
+        "totalCopper": 5000,
+        "denominations": {
+          "platinum": 5,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "7h45m work block."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_tuesday",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Paid caregiver work",
+      "task": "Tuesday caregiver block",
+      "respawn": "Weekly Tuesday",
+      "reward": {
+        "display": "3 platinum, 5 gold",
+        "sourceDisplay": "3 platinum, 5 gold",
+        "totalCopper": 3500,
+        "denominations": {
+          "platinum": 3,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "5-hour work block."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_wednesd",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Paid caregiver work",
+      "task": "Wednesday caregiver block",
+      "respawn": "Weekly Wednesday",
+      "reward": {
+        "display": "3 platinum, 5 gold",
+        "sourceDisplay": "3 platinum, 5 gold",
+        "totalCopper": 3500,
+        "denominations": {
+          "platinum": 3,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "5-hour work block."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_thursda",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Paid caregiver work",
+      "task": "Thursday caregiver block",
+      "respawn": "Weekly Thursday",
+      "reward": {
+        "display": "3 platinum, 5 gold",
+        "sourceDisplay": "3 platinum, 5 gold",
+        "totalCopper": 3500,
+        "denominations": {
+          "platinum": 3,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "5-hour work block."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_friday_",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Paid caregiver work",
+      "task": "Friday caregiver block",
+      "respawn": "Weekly Friday",
+      "reward": {
+        "display": "3 platinum, 5 gold",
+        "sourceDisplay": "3 platinum, 5 gold",
+        "totalCopper": 3500,
+        "denominations": {
+          "platinum": 3,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "5-hour work block."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_protected_break_workday_mea",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Protected break",
+      "task": "Workday meal break",
+      "respawn": "Weekday",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Eating during care work is rewarded."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_protected_break_workday_hyd",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Protected break",
+      "task": "Workday hydration break",
+      "respawn": "Weekday",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Hydration matters."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_protected_break_workday_dec",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Protected break",
+      "task": "Workday decompression break",
+      "respawn": "Weekday",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Prevents burnout."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_work_admin_enter_start_end_",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Work admin",
+      "task": "Enter start/end time",
+      "respawn": "Weekday",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Time tracking is admin work."
+    },
+    {
+      "id": "squishy_paid_caregiver_work_protected_breaks_squishy_work_admin_add_workday_note",
+      "section": "Squishy paid caregiver work + protected breaks",
+      "person": "Squishy",
+      "category": "Work admin",
+      "task": "Add workday note",
+      "respawn": "Weekday/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Missed punch, EVV, paperwork, etc."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_bring_dino_food",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Bring Dino food",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Care support + nourishment."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_bring_dino_beverage",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Bring Dino beverage",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Access support."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_help_dino_gather_re",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Help Dino gather reachable supplies",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Reduces barriers."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_help_dino_repositio",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Help Dino reposition/transfer safely",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Safety support."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_help_dino_with_oxyg",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Caregiver support",
+      "task": "Help Dino with oxygen/respiratory setup",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Safety-sensitive."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_medical_support_help_dino_prepare_app",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Medical support",
+      "task": "Help Dino prepare appointment notes",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Communication support."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_medical_support_help_dino_get_ready_f",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Medical support",
+      "task": "Help Dino get ready for doctor appointment",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Major physical/admin/emotional load."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_medical_support_help_dino_recover_aft",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Medical support",
+      "task": "Help Dino recover after appointment",
+      "respawn": "As needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Recovery care."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_admin_support_help_dino_make_importan",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Admin support",
+      "task": "Help Dino make important phone call",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High stress/admin support."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_admin_support_help_dino_with_one_pape",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Admin support",
+      "task": "Help Dino with one paperwork task",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High executive-function load."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_admin_support_help_dino_place_grocery",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Admin support",
+      "task": "Help Dino place grocery/delivery order",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Practical support."
+    },
+    {
+      "id": "squishy_caregiver_support_for_dino_squishy_communication_support_help_dino_choos",
+      "section": "Squishy caregiver support for Dino",
+      "person": "Squishy",
+      "category": "Communication support",
+      "task": "Help Dino choose one message to answer",
+      "respawn": "As needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Social support."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_self_care_take_meds",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Self-care",
+      "task": "Take meds",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Squishy's care matters too."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_self_care_eat_meal_1",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Self-care",
+      "task": "Eat meal 1",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Not just caregiver labor."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_self_care_eat_meal_2",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Self-care",
+      "task": "Eat meal 2",
+      "respawn": "Daily",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Food is care."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_hygiene_hygiene_task_gentle_mode",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Hygiene",
+      "task": "Hygiene task, gentle mode",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Shower, wipes, teeth, hair, clothes all count."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_mental_health_use_onyx_comfort_m",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Mental health",
+      "task": "Use Onyx comfort mode",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Emotional support."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_joy_play_a_game_for_decompressio",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Joy",
+      "task": "Play a game for decompression",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Joy is regulation."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_joy_look_up_save_one_duck_collec",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Joy",
+      "task": "Look up/save one duck collectible idea",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Collection joy."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_joy_craft_art_hobby_for_10_minut",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Joy",
+      "task": "Craft/art hobby for 10 minutes",
+      "respawn": "Daily/as needed",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Joy counts."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_make_inventory_list",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Admin",
+      "task": "Make inventory list",
+      "respawn": "Weekly",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Household planning."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_grocery_delivery_order",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Admin",
+      "task": "Grocery delivery order",
+      "respawn": "Weekly/as needed",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Multi-step admin."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_apartment_application_step",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Admin",
+      "task": "Apartment application step",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Very hard admin."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_make_important_phone_call",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Admin",
+      "task": "Make important phone call",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High stress."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_complete_one_paperwork_tas",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Admin",
+      "task": "Complete one paperwork task",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "Executive-function load."
+    },
+    {
+      "id": "squishy_self_care_joy_hobbies_and_admin_squishy_medical_go_to_doctor_appointment",
+      "section": "Squishy self-care, joy, hobbies, and admin",
+      "person": "Squishy",
+      "category": "Medical",
+      "task": "Go to doctor appointment",
+      "respawn": "As needed",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      },
+      "gentleNote": "High physical/mental load."
+    }
+  ],
+  "tasksBySection": {
+    "Shared foundation tasks": [
+      {
+        "id": "shared_foundation_tasks_both_self_care_drink_water_hydrate",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Drink water / hydrate",
+        "respawn": "Daily, repeatable",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "A few sips counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_eat_meal_1",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Eat meal 1",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Easy food counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_eat_meal_2",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Eat meal 2",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Minimum nourishment goal, not diet culture."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_take_morning_meds",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Take morning meds",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Health care is work."
+      },
+      {
+        "id": "shared_foundation_tasks_both_self_care_take_evening_meds",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Self-care",
+        "task": "Take evening meds",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate reward from morning meds."
+      },
+      {
+        "id": "shared_foundation_tasks_both_mental_health_use_onyx_support",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Mental health",
+        "task": "Use Onyx support",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Asking for help counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_mental_health_use_one_dbt_grounding_skill",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Mental health",
+        "task": "Use one DBT/grounding skill",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "STOP, TIPP, grounding, Wise Mind, etc."
+      },
+      {
+        "id": "shared_foundation_tasks_both_rest_decompression_break",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Rest",
+        "task": "Decompression break",
+        "respawn": "Daily, repeatable",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Rest prevents crashes."
+      },
+      {
+        "id": "shared_foundation_tasks_both_hygiene_brush_teeth_mouth_care",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Hygiene",
+        "task": "Brush teeth / mouth care",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Partial mouth care counts."
+      },
+      {
+        "id": "shared_foundation_tasks_both_hygiene_wash_face_wipes_low_spoon_wash",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Hygiene",
+        "task": "Wash face / wipes / low-spoon wash",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Hygiene is physical and mental effort."
+      },
+      {
+        "id": "shared_foundation_tasks_both_hygiene_change_into_clean_clothes",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Hygiene",
+        "task": "Change into clean clothes",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Dignity care."
+      },
+      {
+        "id": "shared_foundation_tasks_both_admin_open_today_s_task_list",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Admin",
+        "task": "Open today's task list",
+        "respawn": "Daily",
+        "reward": {
+          "display": "1 gold",
+          "sourceDisplay": "1 gold",
+          "totalCopper": 100,
+          "denominations": {
+            "platinum": 0,
+            "gold": 1,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Opening the app counts as starting."
+      },
+      {
+        "id": "shared_foundation_tasks_both_admin_save_export_site_data",
+        "section": "Shared foundation tasks",
+        "person": "Both",
+        "category": "Admin",
+        "task": "Save/export site data",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Prevents lost progress."
+      }
+    ],
+    "Cats: Onyx, Harvey, and Callie": [
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_feed_cats",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Feed cats",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Cat care is family care."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_refresh_cat_water",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Refresh cat water",
+        "respawn": "Daily",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from feeding."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_scoop_the_1_litter_box",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Scoop the 1 litter box",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Smell/gross/sensory bonus."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_full_litter_change",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Full litter change",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Heavy/gross task."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_brush_one_cat",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Brush one cat",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One cat at a time."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_trim_nails_for_one_cat",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Trim nails for one cat",
+        "respawn": "Monthly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Stress/skill bonus."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_both_cats_check_cat_food_litter_supply",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Both",
+        "category": "Cats",
+        "task": "Check cat food/litter supply",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Prevents emergencies."
+      },
+      {
+        "id": "cats_onyx_harvey_and_callie_squishy_joy_give_cats_affection_playtime",
+        "section": "Cats: Onyx, Harvey, and Callie",
+        "person": "Squishy",
+        "category": "Joy",
+        "task": "Give cats affection/playtime",
+        "respawn": "Daily",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Joy, not just labor."
+      }
+    ],
+    "Kitchen tasks": [
+      {
+        "id": "kitchen_tasks_squishy_dino_takeover_take_over_dino_s_dishes_small_batch",
+        "section": "Kitchen tasks",
+        "person": "Squishy",
+        "category": "Dino takeover",
+        "task": "Take over Dino's dishes, small batch",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Extra for protecting Dino's body."
+      },
+      {
+        "id": "kitchen_tasks_squishy_dino_takeover_take_over_dino_s_dishes_full_sink_load",
+        "section": "Kitchen tasks",
+        "person": "Squishy",
+        "category": "Dino takeover",
+        "task": "Take over Dino's dishes, full sink/load",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Major takeover reward."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_wipe_counter",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe counter",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny reset."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_wipe_stove_top",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe stove top",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Grease/sensory bonus."
+      },
+      {
+        "id": "kitchen_tasks_squishy_chore_sweep_kitchen",
+        "section": "Kitchen tasks",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Sweep kitchen",
+        "respawn": "Every 2 days/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Dino should not be assigned sweep/mop."
+      },
+      {
+        "id": "kitchen_tasks_squishy_chore_mop_kitchen",
+        "section": "Kitchen tasks",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Mop kitchen",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High shoulder/body burden if Dino did it."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_clean_microwave",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clean microwave",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Gross/sensory task."
+      },
+      {
+        "id": "kitchen_tasks_squishy_dino_takeover_take_over_fridge_cleanout",
+        "section": "Kitchen tasks",
+        "person": "Squishy",
+        "category": "Dino takeover",
+        "task": "Take over fridge cleanout",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Major takeover reward."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_throw_away_expired_food",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Throw away expired food",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Smell/gross bonus."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_wipe_fridge_shelf_drawer",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe fridge shelf/drawer",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from tossing food."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_put_away_cold_groceries",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put away cold groceries",
+        "respawn": "As needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Split from pantry goods."
+      },
+      {
+        "id": "kitchen_tasks_both_chore_put_away_pantry_dry_groceries",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put away pantry/dry groceries",
+        "respawn": "As needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One category at a time."
+      },
+      {
+        "id": "kitchen_tasks_both_admin_make_grocery_inventory_list",
+        "section": "Kitchen tasks",
+        "person": "Both",
+        "category": "Admin",
+        "task": "Make grocery inventory list",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Executive-function task."
+      }
+    ],
+    "Bathroom + hygiene care": [
+      {
+        "id": "bathroom_hygiene_care_both_chore_gather_bathroom_trash",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Gather bathroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Trash micro-step."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_move_bathroom_trash_to_main_trash",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Move bathroom trash to main trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from gathering."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_put_new_bag_in_bathroom_trash",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put new bag in bathroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion step."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_clean_toilet_bowl",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clean toilet bowl",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Gross-task bonus."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_wipe_toilet_seat_lid_base",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe toilet seat/lid/base",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from bowl."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_wipe_sink",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Wipe sink",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Small reset."
+      },
+      {
+        "id": "bathroom_hygiene_care_both_chore_clean_mirror",
+        "section": "Bathroom + hygiene care",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clean mirror",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Quick win."
+      },
+      {
+        "id": "bathroom_hygiene_care_squishy_chore_sweep_bathroom",
+        "section": "Bathroom + hygiene care",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Sweep bathroom",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Dino shoulder-dislocation risk."
+      },
+      {
+        "id": "bathroom_hygiene_care_squishy_chore_mop_bathroom",
+        "section": "Bathroom + hygiene care",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Mop bathroom",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High physical load."
+      },
+      {
+        "id": "bathroom_hygiene_care_squishy_chore_clean_shower_tub_surface",
+        "section": "Bathroom + hygiene care",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Clean shower/tub surface",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Physical/sensory task."
+      },
+      {
+        "id": "bathroom_hygiene_care_squishy_caregiver_support_help_dino_with_hygiene_setup",
+        "section": "Bathroom + hygiene care",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Help Dino with hygiene setup",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Consent/privacy-sensitive."
+      },
+      {
+        "id": "bathroom_hygiene_care_squishy_caregiver_support_help_dino_with_shower_bathing_su",
+        "section": "Bathroom + hygiene care",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Help Dino with shower/bathing support",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Major caregiver support."
+      },
+      {
+        "id": "bathroom_hygiene_care_squishy_caregiver_support_help_dino_with_toileting_setup_s",
+        "section": "Bathroom + hygiene care",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Help Dino with toileting setup/support",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Privacy/dignity-sensitive."
+      }
+    ],
+    "Bedroom, laundry, and bed-level reset": [
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_gather_bedroom_trash",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Gather bedroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny trash step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_move_bedroom_trash_to_main_trash",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Move bedroom trash to main trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate movement step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_put_new_bag_in_bedroom_trash",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put new bag in bedroom trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_clear_bed_surface_reset_bed_area",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Clear bed surface / reset bed area",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Bed-level reset matters."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_chore_change_pillowcase",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Change pillowcase",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Small bedding task."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_squishy_chore_change_sheets",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Change sheets",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Physically hard."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_both_laundry_put_dirty_laundry_in_hamper",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Both",
+        "category": "Laundry",
+        "task": "Put dirty laundry in hamper",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Micro-step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_squishy_laundry_start_laundry_load",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Squishy",
+        "category": "Laundry",
+        "task": "Start laundry load",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Physical + executive effort."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_squishy_laundry_move_laundry_to_dryer",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Squishy",
+        "category": "Laundry",
+        "task": "Move laundry to dryer",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate step."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_squishy_laundry_fold_sort_clean_laundry_for_",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Squishy",
+        "category": "Laundry",
+        "task": "Fold/sort clean laundry for 10 minutes",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Partial folding counts."
+      },
+      {
+        "id": "bedroom_laundry_and_bed_level_reset_squishy_dino_takeover_fully_take_over_dino_s",
+        "section": "Bedroom, laundry, and bed-level reset",
+        "person": "Squishy",
+        "category": "Dino takeover",
+        "task": "Fully take over Dino's laundry task",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Major takeover reward."
+      }
+    ],
+    "Living room + whole home": [
+      {
+        "id": "living_room_whole_home_both_chore_gather_living_room_trash",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Gather living room trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Tiny step."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_move_living_room_trash_to_main_trash",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Move living room trash to main trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate step."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_put_new_bag_in_living_room_trash",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Put new bag in living room trash",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 gold, 5 silver",
+          "sourceDisplay": "2 gold, 5 silver",
+          "totalCopper": 250,
+          "denominations": {
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Completion step."
+      },
+      {
+        "id": "living_room_whole_home_squishy_dino_takeover_take_over_dino_s_trash_gathering",
+        "section": "Living room + whole home",
+        "person": "Squishy",
+        "category": "Dino takeover",
+        "task": "Take over Dino's trash gathering",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Takeover reward."
+      },
+      {
+        "id": "living_room_whole_home_squishy_chore_take_trash_out",
+        "section": "Living room + whole home",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Take trash out",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High access/physical burden."
+      },
+      {
+        "id": "living_room_whole_home_squishy_chore_put_new_bags_in_all_trash_cans",
+        "section": "Living room + whole home",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Put new bags in all trash cans",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Separate from taking out."
+      },
+      {
+        "id": "living_room_whole_home_squishy_chore_sweep_living_room",
+        "section": "Living room + whole home",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Sweep living room",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Dino should not sweep/mop."
+      },
+      {
+        "id": "living_room_whole_home_squishy_chore_mop_living_room",
+        "section": "Living room + whole home",
+        "person": "Squishy",
+        "category": "Chore",
+        "task": "Mop living room",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High shoulder/body burden."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_dust_one_surface",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Dust one surface",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One surface counts."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_organize_one_pile_basket",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Organize one pile/basket",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "One pile only."
+      },
+      {
+        "id": "living_room_whole_home_both_chore_organize_one_small_area",
+        "section": "Living room + whole home",
+        "person": "Both",
+        "category": "Chore",
+        "task": "Organize one small area",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Shelf, cart, bag, table."
+      }
+    ],
+    "Squishy paid caregiver work + protected breaks": [
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_monday_",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Paid caregiver work",
+        "task": "Monday caregiver block",
+        "respawn": "Weekly Monday",
+        "reward": {
+          "display": "5 platinum",
+          "sourceDisplay": "5 platinum",
+          "totalCopper": 5000,
+          "denominations": {
+            "platinum": 5,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "7h45m work block."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_tuesday",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Paid caregiver work",
+        "task": "Tuesday caregiver block",
+        "respawn": "Weekly Tuesday",
+        "reward": {
+          "display": "3 platinum, 5 gold",
+          "sourceDisplay": "3 platinum, 5 gold",
+          "totalCopper": 3500,
+          "denominations": {
+            "platinum": 3,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "5-hour work block."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_wednesd",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Paid caregiver work",
+        "task": "Wednesday caregiver block",
+        "respawn": "Weekly Wednesday",
+        "reward": {
+          "display": "3 platinum, 5 gold",
+          "sourceDisplay": "3 platinum, 5 gold",
+          "totalCopper": 3500,
+          "denominations": {
+            "platinum": 3,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "5-hour work block."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_thursda",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Paid caregiver work",
+        "task": "Thursday caregiver block",
+        "respawn": "Weekly Thursday",
+        "reward": {
+          "display": "3 platinum, 5 gold",
+          "sourceDisplay": "3 platinum, 5 gold",
+          "totalCopper": 3500,
+          "denominations": {
+            "platinum": 3,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "5-hour work block."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_paid_caregiver_work_friday_",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Paid caregiver work",
+        "task": "Friday caregiver block",
+        "respawn": "Weekly Friday",
+        "reward": {
+          "display": "3 platinum, 5 gold",
+          "sourceDisplay": "3 platinum, 5 gold",
+          "totalCopper": 3500,
+          "denominations": {
+            "platinum": 3,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "5-hour work block."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_protected_break_workday_mea",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Protected break",
+        "task": "Workday meal break",
+        "respawn": "Weekday",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Eating during care work is rewarded."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_protected_break_workday_hyd",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Protected break",
+        "task": "Workday hydration break",
+        "respawn": "Weekday",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Hydration matters."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_protected_break_workday_dec",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Protected break",
+        "task": "Workday decompression break",
+        "respawn": "Weekday",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Prevents burnout."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_work_admin_enter_start_end_",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Work admin",
+        "task": "Enter start/end time",
+        "respawn": "Weekday",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Time tracking is admin work."
+      },
+      {
+        "id": "squishy_paid_caregiver_work_protected_breaks_squishy_work_admin_add_workday_note",
+        "section": "Squishy paid caregiver work + protected breaks",
+        "person": "Squishy",
+        "category": "Work admin",
+        "task": "Add workday note",
+        "respawn": "Weekday/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Missed punch, EVV, paperwork, etc."
+      }
+    ],
+    "Squishy caregiver support for Dino": [
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_bring_dino_food",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Bring Dino food",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Care support + nourishment."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_bring_dino_beverage",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Bring Dino beverage",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Access support."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_help_dino_gather_re",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Help Dino gather reachable supplies",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Reduces barriers."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_help_dino_repositio",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Help Dino reposition/transfer safely",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Safety support."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_caregiver_support_help_dino_with_oxyg",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Caregiver support",
+        "task": "Help Dino with oxygen/respiratory setup",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Safety-sensitive."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_medical_support_help_dino_prepare_app",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Medical support",
+        "task": "Help Dino prepare appointment notes",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Communication support."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_medical_support_help_dino_get_ready_f",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Medical support",
+        "task": "Help Dino get ready for doctor appointment",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Major physical/admin/emotional load."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_medical_support_help_dino_recover_aft",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Medical support",
+        "task": "Help Dino recover after appointment",
+        "respawn": "As needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Recovery care."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_admin_support_help_dino_make_importan",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Admin support",
+        "task": "Help Dino make important phone call",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High stress/admin support."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_admin_support_help_dino_with_one_pape",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Admin support",
+        "task": "Help Dino with one paperwork task",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High executive-function load."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_admin_support_help_dino_place_grocery",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Admin support",
+        "task": "Help Dino place grocery/delivery order",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Practical support."
+      },
+      {
+        "id": "squishy_caregiver_support_for_dino_squishy_communication_support_help_dino_choos",
+        "section": "Squishy caregiver support for Dino",
+        "person": "Squishy",
+        "category": "Communication support",
+        "task": "Help Dino choose one message to answer",
+        "respawn": "As needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Social support."
+      }
+    ],
+    "Squishy self-care, joy, hobbies, and admin": [
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_self_care_take_meds",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Self-care",
+        "task": "Take meds",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Squishy's care matters too."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_self_care_eat_meal_1",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Self-care",
+        "task": "Eat meal 1",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Not just caregiver labor."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_self_care_eat_meal_2",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Self-care",
+        "task": "Eat meal 2",
+        "respawn": "Daily",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Food is care."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_hygiene_hygiene_task_gentle_mode",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Hygiene",
+        "task": "Hygiene task, gentle mode",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Shower, wipes, teeth, hair, clothes all count."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_mental_health_use_onyx_comfort_m",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Mental health",
+        "task": "Use Onyx comfort mode",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Emotional support."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_joy_play_a_game_for_decompressio",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Joy",
+        "task": "Play a game for decompression",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Joy is regulation."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_joy_look_up_save_one_duck_collec",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Joy",
+        "task": "Look up/save one duck collectible idea",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "5 gold",
+          "sourceDisplay": "5 gold",
+          "totalCopper": 500,
+          "denominations": {
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Collection joy."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_joy_craft_art_hobby_for_10_minut",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Joy",
+        "task": "Craft/art hobby for 10 minutes",
+        "respawn": "Daily/as needed",
+        "reward": {
+          "display": "9 gold",
+          "sourceDisplay": "9 gold",
+          "totalCopper": 900,
+          "denominations": {
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Joy counts."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_make_inventory_list",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Admin",
+        "task": "Make inventory list",
+        "respawn": "Weekly",
+        "reward": {
+          "display": "1 platinum, 5 gold",
+          "sourceDisplay": "1 platinum, 5 gold",
+          "totalCopper": 1500,
+          "denominations": {
+            "platinum": 1,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Household planning."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_grocery_delivery_order",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Admin",
+        "task": "Grocery delivery order",
+        "respawn": "Weekly/as needed",
+        "reward": {
+          "display": "2 platinum, 5 gold",
+          "sourceDisplay": "2 platinum, 5 gold",
+          "totalCopper": 2500,
+          "denominations": {
+            "platinum": 2,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Multi-step admin."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_apartment_application_step",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Admin",
+        "task": "Apartment application step",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Very hard admin."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_make_important_phone_call",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Admin",
+        "task": "Make important phone call",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High stress."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_admin_complete_one_paperwork_tas",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Admin",
+        "task": "Complete one paperwork task",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "Executive-function load."
+      },
+      {
+        "id": "squishy_self_care_joy_hobbies_and_admin_squishy_medical_go_to_doctor_appointment",
+        "section": "Squishy self-care, joy, hobbies, and admin",
+        "person": "Squishy",
+        "category": "Medical",
+        "task": "Go to doctor appointment",
+        "respawn": "As needed",
+        "reward": {
+          "display": "4 platinum",
+          "sourceDisplay": "4 platinum",
+          "totalCopper": 4000,
+          "denominations": {
+            "platinum": 4,
+            "gold": 0,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        "gentleNote": "High physical/mental load."
+      }
+    ]
+  }
+}

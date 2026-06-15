@@ -1,0 +1,388 @@
+:root {
+  color-scheme: dark;
+  --sea: #75dbcd;
+  --mint: #8cebd2;
+  --ocean: #7ab7b9;
+  --sunset: #fa9574;
+  --peach: #e8ba9a;
+  --sage: #bccdb9;
+  --moss: #7c805d;
+  --tree: #435542;
+  --deep: #173638;
+  --ink: #193332;
+  --cream: #fff9ef;
+  --foam: #f4fff5;
+  --shadow: 0 1.4rem 4rem rgba(15, 35, 37, 0.42);
+  --line: rgba(255, 249, 239, 0.34);
+  --dark-line: rgba(25, 51, 50, 0.18);
+  --radius-lg: 2.2rem;
+  --radius-md: 1.2rem;
+  --login-bg-image: url("https://wallpapers.com/images/high/whimsical-seascape-with-smiling-tree-at-twilight-g0u5e1g3tzskk7bp.webp");
+  --font-title: "love-ya-like-a-sister", "Comic Sans MS", "Comic Sans", cursive;
+  --font-subtitle: "Morris Roman", "Comic Sans MS", "Comic Sans", cursive;
+  --font-body: "Comic Sans MS", "Comic Sans", cursive;
+  --white-outline-shadow:
+    3px 0 0 #000, -3px 0 0 #000, 0 3px 0 #000, 0 -3px 0 #000,
+    2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000,
+    0 0.24rem 0.18rem rgba(255, 255, 255, 0.24),
+    0 0.72rem 1.05rem rgba(0, 0, 0, 0.5);
+  --white-outline-shadow-large:
+    5px 0 0 #000, -5px 0 0 #000, 0 5px 0 #000, 0 -5px 0 #000,
+    4px 4px 0 #000, -4px 4px 0 #000, 4px -4px 0 #000, -4px -4px 0 #000,
+    0 0.26rem 0.2rem rgba(255, 255, 255, 0.25),
+    0 0.9rem 1.4rem rgba(0, 0, 0, 0.52);
+}
+
+
+/* Font folders are kept as placeholders. No font binaries are bundled here.
+   The page uses local installed fonts when present, then safe system fallbacks. */
+@font-face {
+  font-family: "love-ya-like-a-sister";
+  src: local("love-ya-like-a-sister"), local("Love Ya Like A Sister");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Morris Roman";
+  src: local("Morris Roman Black"), local("Morris Roman Alternate Black"), local("Morris Roman");
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+html { min-height: 100%; }
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--cream);
+  font-family: var(--font-body);
+  background-color: var(--deep);
+}
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled, input:disabled, select:disabled, textarea:disabled { cursor: wait; opacity: 0.68; }
+
+.auth-page {
+  overflow-x: hidden;
+  padding: clamp(1rem, 3vw, 2.5rem);
+  background-color: var(--deep);
+  background-image:
+    linear-gradient(90deg, rgba(23, 54, 56, 0.66), rgba(23, 54, 56, 0.24) 46%, rgba(255, 249, 239, 0.10)),
+    var(--login-bg-image);
+  background-position: center, center;
+  background-size: cover, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+}
+
+.auth-page::before,
+.auth-page::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+}
+.auth-page::before {
+  width: 72vw;
+  height: 72vw;
+  left: -28vw;
+  bottom: -36vw;
+  background: rgba(250, 149, 116, 0.28);
+  box-shadow: 42vw -18vw 0 rgba(117, 219, 205, 0.24);
+}
+.auth-page::after {
+  width: 52vw;
+  height: 52vw;
+  right: -17vw;
+  top: -28vw;
+  background: rgba(67, 85, 66, 0.46);
+  box-shadow: -34vw 15vw 0 rgba(232, 186, 154, 0.18);
+}
+
+.auth-shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(18rem, 1fr) minmax(20rem, 31rem);
+  gap: clamp(1.25rem, 4vw, 4.5rem);
+  align-items: center;
+  min-height: calc(100vh - clamp(2rem, 6vw, 5rem));
+  width: min(92rem, 100%);
+  margin-inline: auto;
+}
+
+.brand-panel {
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1.5rem;
+  padding: clamp(0.5rem, 2vw, 1rem) 0;
+}
+
+.brand-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--cream);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-shadow: var(--white-outline-shadow);
+}
+
+.brand-mark {
+  font-family: var(--font-title);
+  font-size: clamp(1.15rem, 2.4vw, 1.9rem);
+  white-space: nowrap;
+}
+
+.profile-mini-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+.profile-mini-nav span {
+  padding: 0.45rem 0.75rem;
+  border: 0.08rem solid rgba(255, 249, 239, 0.44);
+  border-radius: 999rem;
+  background: rgba(25, 51, 50, 0.24);
+  backdrop-filter: blur(0.45rem);
+}
+
+.brand-hero {
+  align-self: center;
+  max-width: 44rem;
+}
+.eyebrow {
+  margin: 0 0 0.7rem;
+  color: var(--mint);
+  font-family: var(--font-subtitle);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-shadow: var(--white-outline-shadow);
+}
+.ourspace-title {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(3.75rem, 12vw, 9rem);
+  line-height: 0.78;
+  color: var(--cream);
+  text-shadow: var(--white-outline-shadow-large);
+}
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: clamp(1.4rem, 4vw, 2.2rem);
+}
+.profile-card {
+  min-height: 8rem;
+  display: grid;
+  align-content: end;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 0.08rem solid rgba(255, 249, 239, 0.38);
+  border-radius: 1.4rem;
+  background: linear-gradient(145deg, rgba(255, 249, 239, 0.18), rgba(25, 51, 50, 0.24));
+  box-shadow: 0 0.8rem 2rem rgba(25, 51, 50, 0.28);
+  backdrop-filter: blur(0.45rem);
+}
+.profile-card h2,
+.profile-card p { margin: 0; }
+.profile-card h2 {
+  font-family: var(--font-subtitle);
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  letter-spacing: 0.04em;
+}
+.profile-card p { color: rgba(255, 249, 239, 0.82); }
+.profile-icon { font-size: 1.8rem; color: var(--peach); }
+
+.brand-mark,
+.profile-mini-nav span,
+.eyebrow,
+.ourspace-title,
+.profile-card h2,
+.profile-card p,
+.profile-owner,
+.profile-header h1,
+.profile-header .eyebrow {
+  color: #fff;
+  text-shadow: var(--white-outline-shadow);
+}
+
+.ourspace-title,
+.profile-header h1 {
+  -webkit-text-stroke: 0.035em #000;
+  paint-order: stroke fill;
+  text-shadow: var(--white-outline-shadow-large);
+}
+
+.form-panel {
+  position: relative;
+  width: 100%;
+  padding: clamp(1.35rem, 4vw, 2.4rem);
+  color: var(--ink);
+  background: rgba(255, 249, 239, 0.94);
+  border: 0.08rem solid rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.form-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 0.45rem;
+  background: linear-gradient(90deg, var(--sea), var(--sunset), var(--peach), var(--moss));
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+.tab {
+  border: 0.08rem solid var(--dark-line);
+  border-radius: 999rem;
+  padding: 0.7rem 0.85rem;
+  color: var(--ink);
+  background: rgba(117, 219, 205, 0.14);
+}
+.tab.active {
+  color: var(--cream);
+  background: linear-gradient(135deg, var(--tree), var(--ocean));
+  border-color: rgba(25, 51, 50, 0.22);
+  text-shadow: var(--white-outline-shadow);
+}
+
+.status {
+  min-height: 1.55rem;
+  margin: 0.65rem 0 0.9rem;
+  color: var(--tree);
+}
+.status.error { color: #9e392f; }
+.status.success { color: #23634e; }
+.auth-panel[hidden] { display: none; }
+.auth-panel h2 {
+  margin: 0 0 1rem;
+  color: var(--tree);
+  font-family: var(--font-subtitle);
+  font-size: clamp(2.05rem, 5vw, 3.25rem);
+  letter-spacing: 0.05em;
+}
+.auth-form { display: grid; gap: 0.75rem; }
+.auth-form.compact {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 0.08rem solid var(--dark-line);
+}
+label {
+  color: var(--tree);
+  font-family: var(--font-body);
+  letter-spacing: 0.04em;
+}
+input, select, textarea {
+  width: 100%;
+  min-height: 3rem;
+  border: 0;
+  border-bottom: 0.12rem solid rgba(25, 51, 50, 0.52);
+  border-radius: 0;
+  padding: 0.75rem 0.25rem;
+  color: var(--ink);
+  background: transparent;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--sunset);
+  box-shadow: 0 0.45rem 0 -0.32rem rgba(250, 149, 116, 0.9);
+}
+select option { color: #172727; }
+.password-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.65rem;
+  align-items: end;
+}
+.toggle-password {
+  min-height: 2.8rem;
+  border: 0.08rem solid rgba(25, 51, 50, 0.22);
+  border-radius: 999rem;
+  padding: 0.6rem 0.85rem;
+  color: var(--tree);
+  background: rgba(117, 219, 205, 0.18);
+}
+.primary-action,
+.secondary-action {
+  min-height: 3.25rem;
+  border: 0;
+  border-radius: 999rem;
+  padding: 0.85rem 1.2rem;
+  color: var(--cream);
+  background: linear-gradient(135deg, var(--tree), var(--moss));
+  box-shadow: 0 0.7rem 1.8rem rgba(67, 85, 66, 0.28);
+  font-family: var(--font-body);
+  letter-spacing: 0.05em;
+  text-shadow: var(--white-outline-shadow);
+}
+.secondary-action { background: linear-gradient(135deg, var(--ocean), var(--tree)); }
+.primary-action:hover, .secondary-action:hover, .toggle-password:hover, .tab:hover {
+  filter: brightness(1.06) saturate(1.1);
+}
+
+.profile-page {
+  display: block;
+  min-height: 100vh;
+  padding: clamp(0.8rem, 3vw, 2rem);
+  background:
+    linear-gradient(180deg, rgba(23, 54, 56, 0.70), rgba(23, 54, 56, 0.36)),
+    var(--login-bg-image) center / cover fixed no-repeat;
+}
+.profile-shell {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  color: var(--cream);
+  background: rgba(25, 51, 50, 0.58);
+  border: 0.08rem solid rgba(255, 249, 239, 0.24);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(0.45rem);
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.75rem 0.5rem 1.25rem;
+  border-bottom: 0.08rem solid rgba(255, 249, 239, 0.2);
+}
+.profile-header h1 {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(3.2rem, 10vw, 7rem);
+  line-height: 0.85;
+  color: var(--cream);
+  text-shadow: var(--white-outline-shadow-large);
+}
+.profile-owner { margin: 0.35rem 0 0; color: rgba(255, 249, 239, 0.82); }
+.profile-home-card {
+  margin-top: 1.25rem;
+}
+a { color: var(--mint); }
+code { color: var(--mint); }
+
+@media (max-width: 900px) {
+  .auth-shell { grid-template-columns: 1fr; align-items: start; }
+  .brand-panel { min-height: auto; }
+  .brand-topline { align-items: flex-start; flex-direction: column; }
+  .profile-mini-nav { justify-content: flex-start; }
+  .profile-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .auth-page { padding: 0.75rem; }
+  .tabs { grid-template-columns: 1fr; }
+  .profile-header { flex-direction: column; }
+  .password-wrap { grid-template-columns: 1fr; align-items: stretch; }
+  .ourspace-title { font-size: clamp(3.2rem, 18.75vw, 5.25rem); }
+}

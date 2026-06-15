@@ -1,0 +1,49 @@
+{
+  "name": "ourspace-messenger-plugin",
+  "version": "1.0.0",
+  "generated_for": "OurSpace site messenger plug-in",
+  "windows_safe": true,
+  "entry_points": {
+    "demo": "index.html",
+    "css": "css/ourspace-messenger.css",
+    "backend_bridge": "js/ourspace-backend-bridge.js",
+    "main_plugin": "js/ourspace-messenger.js"
+  },
+  "backend_urls": {
+    "main": "https://script.google.com/macros/s/AKfycbxrm8lbJFGe62K_3xOTUQYvr2D7AKXLCrR8LkR6s14Bwd3k_qkaff9QDRs6KeGhHPaoSg/exec",
+    "onyx_alerts": "https://script.google.com/macros/s/AKfycbwy_5_ZEsSmN5WqcuLtxfPFz1ITyz6IHxPnpEBPIVOtsa7k6Rb60O-u6gJdPNF_tjaR/exec"
+  },
+  "active_vendor_files": [
+    "vendor/jeeliz/jeelizFaceFilter.js",
+    "vendor/jeeliz/NN_VERYLIGHT_1.json",
+    "vendor/jeeliz/LICENSE-APACHE-2.0.txt"
+  ],
+  "active_features": [
+    "mobile_first_chat_ui",
+    "auto_dark_mode",
+    "image_chat_backgrounds",
+    "channels",
+    "direct_messages",
+    "attachments_images_gifs_videos_links_files_audio",
+    "sticker_creation_from_conversation",
+    "speech_to_text",
+    "voice_changer_recordings",
+    "voice_changer_calls",
+    "webrtc_audio_calling",
+    "webrtc_video_calling",
+    "face_filter_camera",
+    "main_backend_bridge",
+    "onyx_alert_backend_bridge",
+    "offline_queue",
+    "json_export"
+  ],
+  "not_bundled": [
+    "node_modules",
+    "legacy_source_app_folders",
+    "unused demo assets",
+    "unused mobile native Objective-C source",
+    "unused Next.js/React build systems",
+    "unused Matrix bot server runtime",
+    "unused Jeeliz demo libraries and models"
+  ]
+}
