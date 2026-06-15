@@ -2,6 +2,7 @@
   'use strict';
   const SIZE_OPTIONS = ['25','50','75','100'];
   const DEFAULT_SIZE = '100';
+  const LAYOUT_VERSION = 'chatbot-layout-v3-zoom-personalized';
   const $ = (sel, root=document) => root.querySelector(sel);
   const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
   function parseConfig(){
@@ -11,6 +12,15 @@
   const cfg = parseConfig();
   const dataProfile = cfg.dataProfile || cfg.profile || 'profile';
   const storeKey = (...parts) => ['ourspace', dataProfile, ...parts].join(':');
+  function maybeResetOldSavedLayouts(){
+    const versionKey = storeKey('moduleLayoutVersion');
+    try {
+      if (localStorage.getItem(versionKey) === LAYOUT_VERSION) return;
+      const prefix = ['ourspace', dataProfile, 'module'].join(':') + ':';
+      Object.keys(localStorage).forEach(key => { if (key.startsWith(prefix)) localStorage.removeItem(key); });
+      localStorage.setItem(versionKey, LAYOUT_VERSION);
+    } catch (err) { console.warn('Module layout migration skipped', err); }
+  }
   function readState(page, mod){
     try { return JSON.parse(localStorage.getItem(storeKey('module', page, mod.dataset.moduleId)) || '{}') || {}; }
     catch { return {}; }
@@ -34,8 +44,9 @@
     const safe = SIZE_OPTIONS.includes(String(size)) ? String(size) : DEFAULT_SIZE;
     mod.dataset.moduleSize = safe;
     mod.style.setProperty('--module-size-factor', String(Number(safe) / 100));
-    const font = safe === '25' ? '.72' : safe === '50' ? '.84' : safe === '75' ? '.94' : '1';
+    const font = safe === '25' ? '.58' : safe === '50' ? '.72' : safe === '75' ? '.86' : '1';
     mod.style.setProperty('--module-font-factor', font);
+    mod.style.setProperty('--module-content-zoom', font);
     const select = $('.os-module-size-select', mod);
     if(select) select.value = safe;
   }
@@ -186,6 +197,7 @@
     $$('.module .module-body').forEach(body => observer.observe(body, { childList:true, subtree:false }));
   }
   function init(){
+    maybeResetOldSavedLayouts();
     enhance();
     watchDynamicBodies();
     document.addEventListener('change', ev => {
