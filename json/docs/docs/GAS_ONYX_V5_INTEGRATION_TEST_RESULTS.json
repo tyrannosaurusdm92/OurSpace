@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-06-15T11:51:27Z",
+  "configured_main_backend": "https://script.google.com/macros/library/d/1Ld-KR6PrFPTBs1qsdAsZ55kBUa9QRYIkLgidknvgJ-2PLtujf9D-Mt6A/1",
+  "configured_onyx_full_backend": "https://script.google.com/macros/library/d/1OtngPSoPXDpeYa8FDD9bb7rU_0mvFvD_23niUCrfy09t5Mbk0cy0kV5l/1",
+  "checks": {
+    "required_files": {
+      "ok": true,
+      "missing": []
+    },
+    "profile_pages": {
+      "dino-nerdzone.html": {
+        "has_chatbot_section": true,
+        "has_mood_module": true,
+        "has_chat_module": true,
+        "profile_marker_present": true,
+        "correct_title_present": true,
+        "main_backend_count": 3,
+        "onyx_backend_count": 2,
+        "store_backend_submit": true,
+        "gas_app_script": true,
+        "ok": true
+      },
+      "squishy-cottage.html": {
+        "has_chatbot_section": true,
+        "has_mood_module": true,
+        "has_chat_module": true,
+        "profile_marker_present": true,
+        "correct_title_present": true,
+        "main_backend_count": 3,
+        "onyx_backend_count": 2,
+        "store_backend_submit": true,
+        "gas_app_script": true,
+        "ok": true
+      }
+    },
+    "old_backend_urls_removed": {
+      "ok": true,
+      "matches": []
+    },
+    "javascript_syntax": {
+      "ok": true,
+      "checked": 20,
+      "bad": []
+    },
+    "inline_javascript_syntax": {
+      "ok": true,
+      "checked": 4,
+      "bad": []
+    },
+    "html_local_paths": {
+      "ok": true,
+      "checked": 118,
+      "missing": [],
+      "missing_count": 0
+    },
+    "service_worker_cache_assets": {
+      "ok": true,
+      "checked": 55,
+      "missing": []
+    },
+    "local_http_smoke": {
+      "ok": null,
+      "skipped": true,
+      "reason": "Local loopback HTTP server did not stay reachable inside the sandbox; static file/path checks were used instead."
+    },
+    "onyx_upgrade_assets": {
+      "ok": true,
+      "mood_pngs": [
+        "onyx_advising_professor.png",
+        "onyx_caring.png",
+        "onyx_hungry.png",
+        "onyx_judgemental.png",
+        "onyx_judgmental.png",
+        "onyx_listening.png",
+        "onyx_purring.png",
+        "onyx_sleepy.png",
+        "onyx_snuggly.png",
+        "onyx_thinking.png",
+        "onyx_thoughtful.png"
+      ],
+      "data_files": 40
+    }
+  }
+}

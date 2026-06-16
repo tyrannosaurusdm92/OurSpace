@@ -1,0 +1,197 @@
+{
+  "schema": "ourspace.categorized_json_manifest.v1",
+  "created_at_utc": "2026-06-15T23:52:33.035640+00:00",
+  "source_archive": "merge and categorize.zip",
+  "top_level_folders": [
+    "william",
+    "jasper",
+    "games",
+    "currency",
+    "dbt"
+  ],
+  "requested_user_subfolders": [
+    "physical health",
+    "mental health",
+    "emotional health",
+    "life impact",
+    "tasks",
+    "store"
+  ],
+  "method": [
+    "All JSON files in the source archive were scanned.",
+    "Exact duplicate JSON payloads were identified by canonical SHA-256 and merged into a single canonical output where appropriate.",
+    "DBT, games, currency, user task, and user store files were merged from duplicated json1/json2/catalog copies.",
+    "William and Jasper health/life-impact folders include user-supplied current profile context, existing person-specific JSON entries, and relevant disability/accessibility knowledge-base extracts only."
+  ],
+  "exact_duplicate_groups_found": [
+    {
+      "sha256": "523063448fe3fe5ce6720a5af1ea2d3d18aa5d695e3cb123a4252473cde4d032",
+      "source_paths_merged": [
+        "merge and categorize/dbt_json_catalogs (1)/dbt_combined_catalog.json",
+        "merge and categorize/json1/dbt_all.json",
+        "merge and categorize/json2/dbt_all.json"
+      ],
+      "copies_merged": 3
+    },
+    {
+      "sha256": "de180975b26905cc7fa1c681759e5dae14e9f1f68b3d6ad66b3e48b985ff4353",
+      "source_paths_merged": [
+        "merge and categorize/dbt_json_catalogs (1)/dbt_skills_catalog.json",
+        "merge and categorize/json1/dbt_skills.json",
+        "merge and categorize/json2/dbt_skills.json"
+      ],
+      "copies_merged": 3
+    },
+    {
+      "sha256": "758512871fbbb7bd5bcd345f0c70448c5eae6b3c06386cf826bc789bbee88b20",
+      "source_paths_merged": [
+        "merge and categorize/dbt_json_catalogs (1)/dbt_worksheets_catalog.json",
+        "merge and categorize/json1/dbt_ws.json",
+        "merge and categorize/json2/dbt_ws.json"
+      ],
+      "copies_merged": 3
+    },
+    {
+      "sha256": "d7c55602b5a88db0a82218cbdc8d5a445d14a18ce6b8d529bb2351ed35e6113e",
+      "source_paths_merged": [
+        "merge and categorize/json1/dino_cal.json",
+        "merge and categorize/json2/dino_cal.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "96ff2b4502f0763179c97915e71bc76b9674008855ba29a01d567e6abc184b39",
+      "source_paths_merged": [
+        "merge and categorize/json1/dino_hobby.json",
+        "merge and categorize/json2/dino_hobby.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "2369405b8e1763e069a7c79f9208ccf4eb854451957d56aa3d2613ea53d5cb8c",
+      "source_paths_merged": [
+        "merge and categorize/json1/dino_sched.json",
+        "merge and categorize/json2/dino_sched.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "9d112e3e5d6e990f81452b098c26008af4167da6a16c2912130d8c4eae46b639",
+      "source_paths_merged": [
+        "merge and categorize/json1/dino_store.json",
+        "merge and categorize/json2/dino_store.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "2e5f10d2fd0fc873f65ecf071aefaf7a6128f5ea8754f08622e9e90673056703",
+      "source_paths_merged": [
+        "merge and categorize/json1/dino_tasks.json",
+        "merge and categorize/json2/dino_tasks.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "0c847e2e8a54346058bf4173bbdee370f40eb8394bac1136f936892d772a5f76",
+      "source_paths_merged": [
+        "merge and categorize/json1/games.json",
+        "merge and categorize/json2/games.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "51cc3301ac98269c8ad9efa84f1218262be9a36b6a9edb724953202131f76dbb",
+      "source_paths_merged": [
+        "merge and categorize/json1/game_ids.json",
+        "merge and categorize/json1/ourspace_allowed_game_ids.json",
+        "merge and categorize/json2/game_ids.json"
+      ],
+      "copies_merged": 3
+    },
+    {
+      "sha256": "3baf3d5e6d0879d9c0e4c7eaa946967518254f33f8e5d2f85e27dffa6379e30d",
+      "source_paths_merged": [
+        "merge and categorize/json1/game_rules.json",
+        "merge and categorize/json2/game_rules.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "26a508c713238a5fb6f9fcc39b560be4e5f8e2353b1cacd71b6e17ad84b17900",
+      "source_paths_merged": [
+        "merge and categorize/json1/squishy_cal.json",
+        "merge and categorize/json2/squishy_cal.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "0ea0cc737795e155df93c7d001adb7166975f77bb49d7dcef6b53e98c08bdebe",
+      "source_paths_merged": [
+        "merge and categorize/json1/squishy_hobby.json",
+        "merge and categorize/json2/squishy_hobby.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "b18bdc38bae725a8f31360e33a72d37ade63008b37bd8d1cc72caa30a6a91bb4",
+      "source_paths_merged": [
+        "merge and categorize/json1/squishy_sched.json",
+        "merge and categorize/json2/squishy_sched.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "25ce22058647bdfbd53f71e6b806d04fdac33abb3987607be5ec6ed78366055d",
+      "source_paths_merged": [
+        "merge and categorize/json1/squishy_store.json",
+        "merge and categorize/json2/squishy_store.json"
+      ],
+      "copies_merged": 2
+    },
+    {
+      "sha256": "57fa23825195dfdcb94cd02dde44a5c9c1d6b50a91897e158f92c3add35d680e",
+      "source_paths_merged": [
+        "merge and categorize/json1/squishy_tasks.json",
+        "merge and categorize/json2/squishy_tasks.json"
+      ],
+      "copies_merged": 2
+    }
+  ],
+  "source_json_count": 57,
+  "source_non_json_count": 1,
+  "output_file_count": 32,
+  "output_files": [
+    "william/user_supplied_profile_context.json",
+    "jasper/user_supplied_profile_context.json",
+    "games/games_manifest_merged.json",
+    "games/allowed_game_ids_merged.json",
+    "games/game_reward_rules_merged.json",
+    "games/mobile_games_module.json",
+    "currency/currency_system_merged.json",
+    "dbt/dbt_combined_catalog.json",
+    "dbt/dbt_skills_catalog.json",
+    "dbt/dbt_worksheets_catalog.json",
+    "dbt/README.md",
+    "dbt/source_split_disability_package_readme.json",
+    "jasper/physical health/source_profile_physical_health.json",
+    "jasper/physical health/relevant_disability_knowledge_base_extract.json",
+    "jasper/mental health/source_profile_mental_health.json",
+    "jasper/mental health/relevant_disability_knowledge_base_extract.json",
+    "jasper/emotional health/source_profile_emotional_health.json",
+    "jasper/emotional health/relevant_disability_knowledge_base_extract.json",
+    "jasper/life impact/source_profile_life_impact.json",
+    "jasper/life impact/relevant_disability_knowledge_base_extract.json",
+    "jasper/tasks/tasks_merged.json",
+    "jasper/store/store_merged.json",
+    "william/physical health/source_profile_physical_health.json",
+    "william/physical health/relevant_disability_knowledge_base_extract.json",
+    "william/mental health/source_profile_mental_health.json",
+    "william/mental health/relevant_disability_knowledge_base_extract.json",
+    "william/emotional health/source_profile_emotional_health.json",
+    "william/emotional health/relevant_disability_knowledge_base_extract.json",
+    "william/life impact/source_profile_life_impact.json",
+    "william/life impact/relevant_disability_knowledge_base_extract.json",
+    "william/tasks/tasks_merged.json",
+    "william/store/store_merged.json"
+  ]
+}

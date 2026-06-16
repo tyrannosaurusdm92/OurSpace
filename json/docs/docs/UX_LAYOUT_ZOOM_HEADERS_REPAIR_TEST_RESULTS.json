@@ -1,0 +1,257 @@
+{
+  "javascript_syntax": [
+    {
+      "file": "js/ourspace-module-workshop.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/ourspace-messenger.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/ourspace-gas-app.js",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "js/ourspace-pwa.js",
+      "ok": true,
+      "stderr": ""
+    }
+  ],
+  "inline_script_syntax": [
+    {
+      "html": "dino-nerdzone.html",
+      "script_index": 1,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "html": "dino-nerdzone.html",
+      "script_index": 7,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "html": "squishy-cottage.html",
+      "script_index": 1,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "html": "squishy-cottage.html",
+      "script_index": 7,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "html": "currency-ledger.html",
+      "script_index": 0,
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "html": "currency-ledger.html",
+      "script_index": 4,
+      "ok": true,
+      "stderr": ""
+    }
+  ],
+  "missing_local_html_references": [],
+  "missing_service_worker_core_assets": [],
+  "profile_copy_checks": {
+    "dino-nerdzone.html": {
+      "must_have": {
+        "William, you do not need to earn the oxygen you breathe": 4,
+        "Papa-protective judgment": 1,
+        "Future William deserves treats": 1
+      },
+      "must_not_have": {
+        "Jasper, you are amazing": 0,
+        "people-please the people who want your company": 0,
+        "Future Jasper deserves treats": 0,
+        "zero courtroom judgments": 0
+      }
+    },
+    "squishy-cottage.html": {
+      "must_have": {
+        "Jasper, you are amazing just as you are": 4,
+        "people-please the people who want your company": 4,
+        "zero courtroom judgments": 1,
+        "Future Jasper deserves treats": 1
+      },
+      "must_not_have": {
+        "William, you do not need to earn the oxygen you breathe": 0,
+        "Future William deserves treats": 0,
+        "Papa-protective judgment": 0
+      }
+    }
+  },
+  "structure_checks": {
+    "dino-nerdzone.html": {
+      "home": {
+        "marquees": 1,
+        "modules": [
+          "profile-home",
+          "home-about",
+          "home-hobbies",
+          "home-today",
+          "home-layout"
+        ]
+      },
+      "calendar": {
+        "marquees": 1,
+        "modules": [
+          "profile-calendar",
+          "calendar-main",
+          "calendar-help"
+        ]
+      },
+      "todays-schedule": {
+        "marquees": 1,
+        "modules": [
+          "profile-todays-schedule",
+          "schedule-list",
+          "schedule-search",
+          "schedule-source"
+        ]
+      },
+      "chatbot": {
+        "marquees": 1,
+        "modules": [
+          "profile-chatbot",
+          "onyx-image",
+          "onyx-chat",
+          "messenger",
+          "dbt-prompts"
+        ]
+      },
+      "dbt-diary-cards": {
+        "marquees": 1,
+        "modules": [
+          "profile-dbt-diary-cards",
+          "diary-card"
+        ]
+      },
+      "dbt-journaling": {
+        "marquees": 1,
+        "modules": [
+          "profile-dbt-journaling",
+          "journal-entry",
+          "worksheet-module",
+          "handout-module"
+        ]
+      },
+      "mobile-games": {
+        "marquees": 1,
+        "modules": [
+          "profile-mobile-games",
+          "game-module"
+        ]
+      },
+      "serotonin": {
+        "marquees": 1,
+        "modules": [
+          "profile-serotonin",
+          "phone-module",
+          "gallery-module",
+          "youtube-module",
+          "audio-module"
+        ]
+      },
+      "store": {
+        "marquees": 1,
+        "modules": [
+          "profile-store",
+          "store-module"
+        ]
+      },
+      "chatbot_lore_cards": 6,
+      "zoom_wrap_capable_css": true
+    },
+    "squishy-cottage.html": {
+      "home": {
+        "marquees": 1,
+        "modules": [
+          "profile-home",
+          "home-about",
+          "home-hobbies",
+          "home-today",
+          "home-layout"
+        ]
+      },
+      "calendar": {
+        "marquees": 1,
+        "modules": [
+          "profile-calendar",
+          "calendar-main",
+          "calendar-help"
+        ]
+      },
+      "todays-schedule": {
+        "marquees": 1,
+        "modules": [
+          "profile-todays-schedule",
+          "schedule-list",
+          "schedule-search",
+          "schedule-source"
+        ]
+      },
+      "chatbot": {
+        "marquees": 1,
+        "modules": [
+          "profile-chatbot",
+          "onyx-image",
+          "onyx-chat",
+          "messenger",
+          "dbt-prompts"
+        ]
+      },
+      "dbt-diary-cards": {
+        "marquees": 1,
+        "modules": [
+          "profile-dbt-diary-cards",
+          "diary-card"
+        ]
+      },
+      "dbt-journaling": {
+        "marquees": 1,
+        "modules": [
+          "profile-dbt-journaling",
+          "journal-entry",
+          "worksheet-module",
+          "handout-module"
+        ]
+      },
+      "mobile-games": {
+        "marquees": 1,
+        "modules": [
+          "profile-mobile-games",
+          "game-module"
+        ]
+      },
+      "serotonin": {
+        "marquees": 1,
+        "modules": [
+          "profile-serotonin",
+          "phone-module",
+          "gallery-module",
+          "youtube-module",
+          "audio-module"
+        ]
+      },
+      "store": {
+        "marquees": 1,
+        "modules": [
+          "profile-store",
+          "store-module"
+        ]
+      },
+      "chatbot_lore_cards": 6,
+      "zoom_wrap_capable_css": true
+    }
+  },
+  "overall_ok": true
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "ourspace.onyx_full_integration_report.v1",
+  "generatedAt": "2026-06-16T00:49:39.714380+00:00",
+  "basePackage": "OurSpace_single_json_folder_repaired.zip",
+  "integratedSource": "onyx_scanner_randomizer_merged_static_chatbot.zip",
+  "summary": "Fully reintegrated the merged Onyx scanner/randomizer chatbot as the embedded profile-page Onyx engine while preserving a static browser-only/no-backend site.",
+  "activeRuntimeFiles": [
+    "onyx/onyx-widget.js",
+    "onyx/static/script/conversation_scanner_randomizer.js",
+    "onyx/static/script/onyx_full_data_bundle.js",
+    "onyx/static/script/onyx_robust_brain.js",
+    "onyx/static/script/onyx_emotion_routes.js",
+    "onyx/static/script/onyx_conversation_brain_bundle.js",
+    "onyx/static/script/onyx_service_voice_bundle.js"
+  ],
+  "singleJsonFolderAdditions": [
+    "json/onyx/full_chatbot/manifest.json",
+    "json/onyx/full_chatbot/onyx_generated_response_banks.json",
+    "json/onyx/full_chatbot/onyx_internal_programming.json",
+    "json/onyx/full_chatbot/onyx_merged_knowledge_base.json",
+    "json/onyx/full_chatbot/onyx_mood_manifest.json",
+    "json/onyx/full_chatbot/onyx_personality_reference.json",
+    "json/onyx/full_chatbot/onyx_response_catalog_for_scanner.json"
+  ],
+  "behaviorChanges": [
+    "Onyx embedded widget now loads the full generated response-bank bundle from the merged chatbot source.",
+    "Added OnyxRobustBrain wrapper that routes by profile, topic category, mood, DBT skill intent, and safety language.",
+    "DBT requests force advising_professor mood before food/body words can steal the emote.",
+    "Food/hungry emote triggers only for actual food/body/store contexts, not DBT questions that mention hunger.",
+    "Petting/how-are-you/Onyx-food questions now route to personality-core responses instead of generic support fallbacks.",
+    "Generated-bank artifacts such as unique paw-print markers and underscore source labels are stripped from displayed replies.",
+    "The huge knowledge JSON remains in json/onyx/full_chatbot and window globals, while recursive scanner registration stays lightweight to avoid freezing static pages.",
+    "Onyx status badges now show full-bank replies plus scanner entries when loaded."
+  ],
+  "staticOnly": true,
+  "backendRequired": false,
+  "pythonRequiredInApp": false,
+  "fontBinariesRemovedFromOutput": [
+    "assets/fonts/love-ya-like-a-sister/LoveYaLikeASister.ttf",
+    "assets/fonts/morris-roman/MorrisRoman-Black.ttf",
+    "assets/fonts/morris-roman/MorrisRomanAlternate-Black.ttf"
+  ],
+  "notes": [
+    "Font binary files were removed from the returned package; CSS/browser fallback fonts remain."
+  ]
+}

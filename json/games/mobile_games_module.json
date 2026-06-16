@@ -1,0 +1,233 @@
+{
+  "moduleName": "OurSpace Mobile Games Module",
+  "version": "site-embedded-json-css-only-v1",
+  "moduleMode": "embedded-in-site-mobile-games-page",
+  "note": "The module is not a separate HTML page. The games themselves remain separate HTML files loaded into the in-site game frame.",
+  "sizing": {
+    "siteModuleDefault": "width: min(94vw, 520px)",
+    "siteModuleLarge": "width: min(94vw, 760px)",
+    "siteModuleWide": "width: min(94vw, 1080px)",
+    "siteModuleMinHeight": "min-height: 170px",
+    "mobileOverrideUnder860px": "width: calc(100vw - 28px) !important",
+    "collapsedBubble": "width: 100px; height: 100px",
+    "phoneFrame": "width: min(100%, 320px); aspect-ratio: 9 / 16; border: 10px solid currentColor",
+    "gameStage": "width: 100%; min-height: 220px",
+    "fullscreenFrame": "position: fixed; inset: 10px"
+  },
+  "selectors": {
+    "moduleRoot": ".ourspace-mobile-games-module",
+    "gameSelect": "#ourspaceGameSelect",
+    "profileSelect": "#ourspaceGameProfileSelect",
+    "launchButton": "#ourspaceLaunchGameBtn",
+    "fullscreenButton": "#ourspaceGameFullscreenBtn",
+    "directLink": "#ourspaceGameDirectLink",
+    "gameFrame": "#ourspaceGameFrame",
+    "ledgerBalance": "#ourspaceGameBalance",
+    "ledgerHistory": "#ourspaceGameHistory"
+  },
+  "currencyConfig": {
+    "ledgerKey": "ourspace.currency.ledger.v1",
+    "blockUnknownGameRewards": true,
+    "allowedGameIds": [
+      "angrybirds",
+      "baconmaydie",
+      "badicecream3",
+      "badpiggies",
+      "bubbleshooter",
+      "candycrush",
+      "capybaraclicker",
+      "ducklife5",
+      "escapingtheprison",
+      "fancypantsadventure2",
+      "flappybird",
+      "fnaf",
+      "fnaf4",
+      "fruitninja",
+      "minesweeper",
+      "noobminer",
+      "plantsvszombies",
+      "tabletennisworldtour",
+      "tinyfishing",
+      "tunnelrush",
+      "webecomewhatwebehold",
+      "zombierush",
+      "paintbynumber"
+    ],
+    "scale": {
+      "copperToSilver": 10,
+      "silverToGold": 10,
+      "goldToPlatinum": 10
+    }
+  },
+  "profiles": [
+    {
+      "id": "shared",
+      "label": "OurSpace shared"
+    },
+    {
+      "id": "dino",
+      "label": "Papa / Dino Dad"
+    },
+    {
+      "id": "momma",
+      "label": "Momma"
+    }
+  ],
+  "games": [
+    {
+      "id": "angrybirds",
+      "name": "Angry Birds",
+      "file": "games/angrybirds.html",
+      "path": "games/angrybirds.html"
+    },
+    {
+      "id": "baconmaydie",
+      "name": "Bacon May Die",
+      "file": "games/baconmaydie.html",
+      "path": "games/baconmaydie.html"
+    },
+    {
+      "id": "badicecream3",
+      "name": "Bad Ice Cream 3",
+      "file": "games/badicecream3.html",
+      "path": "games/badicecream3.html"
+    },
+    {
+      "id": "badpiggies",
+      "name": "Bad Piggies",
+      "file": "games/badpiggies.html",
+      "path": "games/badpiggies.html"
+    },
+    {
+      "id": "bubbleshooter",
+      "name": "Bubble Shooter",
+      "file": "games/bubbleshooter.html",
+      "path": "games/bubbleshooter.html"
+    },
+    {
+      "id": "candycrush",
+      "name": "Candy Crush",
+      "file": "games/candycrush.html",
+      "path": "games/candycrush.html"
+    },
+    {
+      "id": "capybaraclicker",
+      "name": "Capybara Clicker",
+      "file": "games/capybaraclicker.html",
+      "path": "games/capybaraclicker.html"
+    },
+    {
+      "id": "ducklife5",
+      "name": "Duck Life 5",
+      "file": "games/ducklife5.html",
+      "path": "games/ducklife5.html"
+    },
+    {
+      "id": "escapingtheprison",
+      "name": "Escaping the Prison",
+      "file": "games/escapingtheprison.html",
+      "path": "games/escapingtheprison.html"
+    },
+    {
+      "id": "fancypantsadventure2",
+      "name": "Fancy Pants Adventure 2",
+      "file": "games/fancypantsadventure2.html",
+      "path": "games/fancypantsadventure2.html"
+    },
+    {
+      "id": "flappybird",
+      "name": "Flappy Bird",
+      "file": "games/flappybird.html",
+      "path": "games/flappybird.html"
+    },
+    {
+      "id": "fnaf",
+      "name": "Five Nights at Freddy's",
+      "file": "games/fnaf.html",
+      "path": "games/fnaf.html"
+    },
+    {
+      "id": "fnaf4",
+      "name": "Five Nights at Freddy's 4",
+      "file": "games/fnaf4.html",
+      "path": "games/fnaf4.html"
+    },
+    {
+      "id": "fruitninja",
+      "name": "Fruit Ninja",
+      "file": "games/fruitninja.html",
+      "path": "games/fruitninja.html"
+    },
+    {
+      "id": "minesweeper",
+      "name": "Minesweeper",
+      "file": "games/minesweeper.html",
+      "path": "games/minesweeper.html"
+    },
+    {
+      "id": "noobminer",
+      "name": "Noob Miner",
+      "file": "games/noobminer.html",
+      "path": "games/noobminer.html"
+    },
+    {
+      "id": "plantsvszombies",
+      "name": "Plants vs. Zombies",
+      "file": "games/plantsvszombies.html",
+      "path": "games/plantsvszombies.html"
+    },
+    {
+      "id": "tabletennisworldtour",
+      "name": "Table Tennis World Tour",
+      "file": "games/tabletennisworldtour.html",
+      "path": "games/tabletennisworldtour.html"
+    },
+    {
+      "id": "tinyfishing",
+      "name": "Tiny Fishing",
+      "file": "games/tinyfishing.html",
+      "path": "games/tinyfishing.html"
+    },
+    {
+      "id": "tunnelrush",
+      "name": "Tunnel Rush",
+      "file": "games/tunnelrush.html",
+      "path": "games/tunnelrush.html"
+    },
+    {
+      "id": "webecomewhatwebehold",
+      "name": "We Become What We Behold",
+      "file": "games/webecomewhatwebehold.html",
+      "path": "games/webecomewhatwebehold.html"
+    },
+    {
+      "id": "zombierush",
+      "name": "Zombie Rush",
+      "file": "games/zombierush.html",
+      "path": "games/zombierush.html"
+    },
+    {
+      "id": "paintbynumber",
+      "name": "Paint by Number",
+      "file": "games/paintbynumber.html",
+      "path": "games/paintbynumber.html"
+    }
+  ],
+  "recommendedFrameUrlPattern": "{path}?game={id}",
+  "integration": {
+    "htmlPolicy": "Do not create a standalone module HTML file. Place the module markup inside the existing mobile games page and use this JSON as the editable data source.",
+    "gamePolicy": "Each item in games.path points to a separate bundled game HTML file. The launcher/frame belongs to the site page, not to its own HTML file.",
+    "requiredSiteScripts": [
+      "ourspace-currency-core.js",
+      "portal-storage.js",
+      "currency.js",
+      "ourspace-play-to-win-adapter.js"
+    ],
+    "recommendedJsonGlobal": "window.OurSpaceMobileGamesData"
+  },
+  "_categorization": {
+    "source_paths_merged": [
+      "merge and categorize/json1/ourspace_mobile_games_module.json"
+    ]
+  }
+}

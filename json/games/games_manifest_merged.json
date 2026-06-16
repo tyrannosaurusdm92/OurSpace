@@ -1,0 +1,464 @@
+{
+  "manifestName": "OurSpace HTML Games Manifest",
+  "brand": "OurSpace",
+  "sourceArchive": "OurSpace_games_with_reward_override.zip",
+  "generatedOn": "2026-06-13",
+  "currencyCompatibilityNote": "Game manifest only; no currency conversion logic included.",
+  "pathRoot": "OurSpace_html_games_24000kb_and_under",
+  "gameCount": 23,
+  "games": [
+    {
+      "id": "angrybirds",
+      "name": "Angry Birds",
+      "file": "angrybirds.html",
+      "path": "OurSpace_html_games_24000kb_and_under/angrybirds.html",
+      "type": "html-game",
+      "sizeBytes": 14147535,
+      "sizeKB": 13815.95,
+      "sizeMB": 13.49,
+      "githubUnder24000KB": true,
+      "sha256": "3ac28c3c3fe685c4d222ef93b1074118d3f8970af029c79df4a62a8268008fa2",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "baconmaydie",
+      "name": "Bacon May Die",
+      "file": "baconmaydie.html",
+      "path": "OurSpace_html_games_24000kb_and_under/baconmaydie.html",
+      "type": "html-game",
+      "sizeBytes": 6132072,
+      "sizeKB": 5988.35,
+      "sizeMB": 5.85,
+      "githubUnder24000KB": true,
+      "sha256": "1461fc32abf2d77b10b2f091853d29a7998be5dd343ca3960b21a20c28375fa6",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "badicecream3",
+      "name": "Bad Ice Cream 3",
+      "file": "badicecream3.html",
+      "path": "OurSpace_html_games_24000kb_and_under/badicecream3.html",
+      "type": "html-game",
+      "sizeBytes": 5069956,
+      "sizeKB": 4951.13,
+      "sizeMB": 4.84,
+      "githubUnder24000KB": true,
+      "sha256": "378ce6c7a9313bce59b376e09403b80682780e7de8aed527e78976de044a4b87",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "badpiggies",
+      "name": "Bad Piggies",
+      "file": "badpiggies.html",
+      "path": "OurSpace_html_games_24000kb_and_under/badpiggies.html",
+      "type": "html-game",
+      "sizeBytes": 10002358,
+      "sizeKB": 9767.93,
+      "sizeMB": 9.54,
+      "githubUnder24000KB": true,
+      "sha256": "edcfebf3ed1d48c901d01d33fe0a9ac2f279068502172b71d0eee897ec4e05ab",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "bubbleshooter",
+      "name": "Bubble Shooter",
+      "file": "bubbleshooter.html",
+      "path": "OurSpace_html_games_24000kb_and_under/bubbleshooter.html",
+      "type": "html-game",
+      "sizeBytes": 7076593,
+      "sizeKB": 6910.74,
+      "sizeMB": 6.75,
+      "githubUnder24000KB": true,
+      "sha256": "ee2bae303e8fc4440585a27d12b93e2ed98ef312f7e097f92ab81537a42f550c",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "candycrush",
+      "name": "Candy Crush",
+      "file": "candycrush.html",
+      "path": "OurSpace_html_games_24000kb_and_under/candycrush.html",
+      "type": "html-game",
+      "sizeBytes": 4528523,
+      "sizeKB": 4422.39,
+      "sizeMB": 4.32,
+      "githubUnder24000KB": true,
+      "sha256": "f4466b2632c4ffa39656c0be331cf224472b775b6bd48b0d8cdfc1443106e7ae",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "capybaraclicker",
+      "name": "Capybara Clicker",
+      "file": "capybaraclicker.html",
+      "path": "OurSpace_html_games_24000kb_and_under/capybaraclicker.html",
+      "type": "html-game",
+      "sizeBytes": 13529066,
+      "sizeKB": 13211.98,
+      "sizeMB": 12.9,
+      "githubUnder24000KB": true,
+      "sha256": "3a66a88f5e9d2fd26ca09f338c9a51a308188fd7aa16b380233a01cca2e2d467",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "ducklife5",
+      "name": "Duck Life 5",
+      "file": "ducklife5.html",
+      "path": "OurSpace_html_games_24000kb_and_under/ducklife5.html",
+      "type": "html-game",
+      "sizeBytes": 14093660,
+      "sizeKB": 13763.34,
+      "sizeMB": 13.44,
+      "githubUnder24000KB": true,
+      "sha256": "deee123d63efead251555c32cd6d11c53693c7606f2be1456d1d20a565a0dbc0",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "escapingtheprison",
+      "name": "Escaping the Prison",
+      "file": "escapingtheprison.html",
+      "path": "OurSpace_html_games_24000kb_and_under/escapingtheprison.html",
+      "type": "html-game",
+      "sizeBytes": 19784366,
+      "sizeKB": 19320.67,
+      "sizeMB": 18.87,
+      "githubUnder24000KB": true,
+      "sha256": "02af20cfa603d4fbb526f95e45fda1eeb89c280a041af19f5984fbdfbf8b9f82",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "fancypantsadventure2",
+      "name": "Fancy Pants Adventure 2",
+      "file": "fancypantsadventure2.html",
+      "path": "OurSpace_html_games_24000kb_and_under/fancypantsadventure2.html",
+      "type": "html-game",
+      "sizeBytes": 21462770,
+      "sizeKB": 20959.74,
+      "sizeMB": 20.47,
+      "githubUnder24000KB": true,
+      "sha256": "23c5438c3a1495231e67446c8d2da32b5f781c6932e2595869b4ffed68b3c73f",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "flappybird",
+      "name": "Flappy Bird",
+      "file": "flappybird.html",
+      "path": "OurSpace_html_games_24000kb_and_under/flappybird.html",
+      "type": "html-game",
+      "sizeBytes": 4341439,
+      "sizeKB": 4239.69,
+      "sizeMB": 4.14,
+      "githubUnder24000KB": true,
+      "sha256": "98973257cca1ee688e8112fb8d100f61c4ab04c4b2c8180dac42293354b7b39a",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "fnaf",
+      "name": "Five Nights at Freddy's",
+      "file": "fnaf.html",
+      "path": "OurSpace_html_games_24000kb_and_under/fnaf.html",
+      "type": "html-game",
+      "sizeBytes": 19628025,
+      "sizeKB": 19167.99,
+      "sizeMB": 18.72,
+      "githubUnder24000KB": true,
+      "sha256": "6be3d6462911c4886049c9566874b9021c4d54d0915333a35cdc7be69ae8ea5d",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "fnaf4",
+      "name": "Five Nights at Freddy's 4",
+      "file": "fnaf4.html",
+      "path": "OurSpace_html_games_24000kb_and_under/fnaf4.html",
+      "type": "html-game",
+      "sizeBytes": 23273381,
+      "sizeKB": 22727.91,
+      "sizeMB": 22.2,
+      "githubUnder24000KB": true,
+      "sha256": "628d4d1a8bc30659d0e60d4d5c04ca377c0f35ec16fb4cd7169cf320cd6909a9",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "fruitninja",
+      "name": "Fruit Ninja",
+      "file": "fruitninja.html",
+      "path": "OurSpace_html_games_24000kb_and_under/fruitninja.html",
+      "type": "html-game",
+      "sizeBytes": 8405166,
+      "sizeKB": 8208.17,
+      "sizeMB": 8.02,
+      "githubUnder24000KB": true,
+      "sha256": "a8b6d7e1bdba087cd7cfc83dab20d192b1a2dc8970b86371042b7c4d7cfac67d",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "minesweeper",
+      "name": "Minesweeper",
+      "file": "minesweeper.html",
+      "path": "OurSpace_html_games_24000kb_and_under/minesweeper.html",
+      "type": "html-game",
+      "sizeBytes": 1230455,
+      "sizeKB": 1201.62,
+      "sizeMB": 1.17,
+      "githubUnder24000KB": true,
+      "sha256": "bb97b93d70f30e207ed968924d7c3bfb22f4f837e6e4f3686509e9e6a06b9b83",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "noobminer",
+      "name": "Noob Miner",
+      "file": "noobminer.html",
+      "path": "OurSpace_html_games_24000kb_and_under/noobminer.html",
+      "type": "html-game",
+      "sizeBytes": 2600098,
+      "sizeKB": 2539.16,
+      "sizeMB": 2.48,
+      "githubUnder24000KB": true,
+      "sha256": "9ab979b198ba4bb87fda78154d9e9284fb8bd3b45ab1d083122740a11f8ebc92",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "plantsvszombies",
+      "name": "Plants vs. Zombies",
+      "file": "plantsvszombies.html",
+      "path": "OurSpace_html_games_24000kb_and_under/plantsvszombies.html",
+      "type": "html-game",
+      "sizeBytes": 21035460,
+      "sizeKB": 20542.44,
+      "sizeMB": 20.06,
+      "githubUnder24000KB": true,
+      "sha256": "4afdc3cb83acb1fd92949d686e56ee6fc00225842bceae422b2db3c758d0a370",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "tabletennisworldtour",
+      "name": "Table Tennis World Tour",
+      "file": "tabletennisworldtour.html",
+      "path": "OurSpace_html_games_24000kb_and_under/tabletennisworldtour.html",
+      "type": "html-game",
+      "sizeBytes": 3919342,
+      "sizeKB": 3827.48,
+      "sizeMB": 3.74,
+      "githubUnder24000KB": true,
+      "sha256": "a393829b16b1fa12857cdd7ffbfd1d9ae72e33acbe6a79cb9ae8ef794522d0e4",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "tinyfishing",
+      "name": "Tiny Fishing",
+      "file": "tinyfishing.html",
+      "path": "OurSpace_html_games_24000kb_and_under/tinyfishing.html",
+      "type": "html-game",
+      "sizeBytes": 2452259,
+      "sizeKB": 2394.78,
+      "sizeMB": 2.34,
+      "githubUnder24000KB": true,
+      "sha256": "45aa220a71d1e5f0732627b6674b254db7b5239b7ae5910e72b99e5fc81b4599",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "tunnelrush",
+      "name": "Tunnel Rush",
+      "file": "tunnelrush.html",
+      "path": "OurSpace_html_games_24000kb_and_under/tunnelrush.html",
+      "type": "html-game",
+      "sizeBytes": 17360695,
+      "sizeKB": 16953.8,
+      "sizeMB": 16.56,
+      "githubUnder24000KB": true,
+      "sha256": "6046ec31949ad335c9c23880bc7eaa6aed8abc32ca58bcdffdffa9061c5e5599",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "webecomewhatwebehold",
+      "name": "We Become What We Behold",
+      "file": "webecomewhatwebehold.html",
+      "path": "OurSpace_html_games_24000kb_and_under/webecomewhatwebehold.html",
+      "type": "html-game",
+      "sizeBytes": 8045376,
+      "sizeKB": 7856.81,
+      "sizeMB": 7.67,
+      "githubUnder24000KB": true,
+      "sha256": "4eaac6fd515f2ded0bc49b800f0060e11027d79e6c54e18f305561e8c1d747b7",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "zombierush",
+      "name": "Zombie Rush",
+      "file": "zombierush.html",
+      "path": "OurSpace_html_games_24000kb_and_under/zombierush.html",
+      "type": "html-game",
+      "sizeBytes": 2827087,
+      "sizeKB": 2760.83,
+      "sizeMB": 2.7,
+      "githubUnder24000KB": true,
+      "sha256": "2bd938ab221164d5169db38e7eda8fb55d140e798ddaf08f48219393f1765705",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace"
+      ]
+    },
+    {
+      "id": "paintbynumber",
+      "name": "Paint by Number",
+      "file": "paintbynumber.html",
+      "path": "OurSpace_html_games_24000kb_and_under/paintbynumber.html",
+      "type": "html-game",
+      "sizeBytes": 662184,
+      "sizeKB": 646.66,
+      "sizeMB": 0.63,
+      "githubUnder24000KB": true,
+      "sha256": "a29460318b4e7c055c6671401f7e6c9792c664869d097ce2e25aba30e15cf528",
+      "launchMode": "iframe-or-direct-html",
+      "tags": [
+        "game",
+        "html",
+        "OurSpace",
+        "creative",
+        "paint-by-number"
+      ],
+      "rewardBridge": "ourspace-game-reward-override",
+      "sourceLicense": "MIT"
+    }
+  ],
+  "totalSizeBytes": 231607866,
+  "totalSizeKB": 226179.56,
+  "totalSizeMB": 220.88,
+  "allGamesUnder24000KB": true,
+  "allowedGameIds": [
+    "angrybirds",
+    "baconmaydie",
+    "badicecream3",
+    "badpiggies",
+    "bubbleshooter",
+    "candycrush",
+    "capybaraclicker",
+    "ducklife5",
+    "escapingtheprison",
+    "fancypantsadventure2",
+    "flappybird",
+    "fnaf",
+    "fnaf4",
+    "fruitninja",
+    "minesweeper",
+    "noobminer",
+    "plantsvszombies",
+    "tabletennisworldtour",
+    "tinyfishing",
+    "tunnelrush",
+    "webecomewhatwebehold",
+    "zombierush",
+    "paintbynumber"
+  ],
+  "onlyTheseGamesCanEarnGameRewards": true,
+  "privateCurrencyOnly": true,
+  "realCurrencyPayouts": false,
+  "cryptoWalletRequired": false,
+  "updatedOn": "2026-06-14T03:28:53.692495+00:00",
+  "addedGame": "paintbynumber"
+}
