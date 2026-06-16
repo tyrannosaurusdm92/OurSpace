@@ -1,3 +1,0 @@
-Paste this one line before </body> in BOTH dino-nerdzone.html and squishy-cottage.html:
-
-<script src="js/ourspace-dbt-chat-attach.js" defer></script>
