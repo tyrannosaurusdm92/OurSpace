@@ -54,6 +54,36 @@
     dbtWorksheets: "json/dbt/dbt_worksheets_catalog.json"
   };
 
+  function hashTokens() {
+    return String(location.hash || "").split("#").map(part => part.trim()).filter(Boolean);
+  }
+
+  function isAdminHashActive() {
+    return hashTokens().some(part => part.toLowerCase() === "admin-editor");
+  }
+
+  function pageFromHash() {
+    const aliases = {
+      "mobile-game": "mobile-games",
+      "mobilegames": "mobile-games",
+      "games": "mobile-games",
+      "dbt-chat": "onyx-support",
+      "chatbot": "onyx-support",
+      "chat": "onyx-support",
+      "today": "todays-schedule",
+      "schedule": "todays-schedule",
+      "diary": "dbt-diary-cards",
+      "journal": "dbt-journaling"
+    };
+    const pageTokens = hashTokens().filter(part => part.toLowerCase() !== "admin-editor");
+    const raw = pageTokens[pageTokens.length - 1] || "home";
+    return aliases[raw] || raw;
+  }
+
+  function buildHashForPage(pageId) {
+    return isAdminHashActive() ? `#admin-editor#${pageId}` : `#${pageId}`;
+  }
+
   document.addEventListener("DOMContentLoaded", boot);
 
   async function boot() {
@@ -64,8 +94,8 @@
     applyMyspaceLayout();
     await loadAllData();
     renderAll();
-    setPage(location.hash ? location.hash.replace(/^#/, "") : "home", false);
-    window.addEventListener("hashchange", () => setPage(location.hash.replace(/^#/, "") || "home", false));
+    setPage(pageFromHash(), false);
+    window.addEventListener("hashchange", () => setPage(pageFromHash(), false));
   }
 
   async function loadAllData() {
@@ -142,7 +172,7 @@
     document.querySelectorAll(".page-section").forEach(section => section.classList.toggle("active", section.id === pageId));
     const select = document.getElementById("osg-page-select");
     if (select) select.value = pageId;
-    if (updateHash) history.replaceState(null, "", `#${pageId}`);
+    if (updateHash) history.replaceState(null, "", buildHashForPage(pageId));
     const bg = (config.backgrounds || {})[pageId];
     if (bg) document.documentElement.style.setProperty("--page-bg-image", `url("${bg}")`);
     document.querySelectorAll("[data-osg-page]").forEach(link => link.classList.toggle("active", link.getAttribute("data-osg-page") === pageId));
