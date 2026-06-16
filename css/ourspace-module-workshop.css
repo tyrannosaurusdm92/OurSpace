@@ -36,8 +36,8 @@ body.os-invisible-grid-ready::after{
   isolation:isolate;
 }
 .module{
-  --module-scale:1.3;
-  --module-zoom:1.3;
+  --module-scale:1;
+  --module-zoom:1;
   --module-font-scale:1;
   --module-button-scale:1;
   --module-content-scale:1;
@@ -60,7 +60,7 @@ body.os-invisible-grid-ready::after{
 .module[data-module-size="75"]{--module-scale:.75;--module-zoom:.75;}
 .module[data-module-size="100"]{--module-scale:1;--module-zoom:1;}
 .module[data-module-size="125"]{--module-scale:1.25;--module-zoom:1.25;}
-.module[data-module-size="130"]{--module-scale:1.3;--module-zoom:1.3;}
+.module[data-module-size="130"]{--module-scale:1;--module-zoom:1;}
 .module[data-module-size="150"]{--module-scale:1.50;--module-zoom:1.50;}
 .module[data-module-size="175"]{--module-scale:1.75;--module-zoom:1.75;}
 .module[data-module-size="200"]{--module-scale:2;--module-zoom:2;}
@@ -158,4 +158,38 @@ body.os-admin-editor .module:not(.collapsed):not(.is-collapsed)>[data-module-bod
   .module:not(.collapsed):not(.is-collapsed)>.module-body,
   .module:not(.collapsed):not(.is-collapsed)>[data-module-body]{overflow:auto!important;}
   .os-admin-editor-panel{left:8px;right:8px;bottom:8px;max-width:none;}
+}
+
+
+/* OurSpace no-current transparent grid hardening.
+   The snap grid still exists logically in JavaScript, but it never paints white lines or a white overlay. */
+body.os-invisible-grid-ready::after{
+  content:""!important;
+  position:fixed!important;
+  inset:0!important;
+  pointer-events:none!important;
+  z-index:0!important;
+  opacity:0!important;
+  background:none!important;
+  background-image:none!important;
+}
+body.os-invisible-grid-ready::before{
+  background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.30))!important;
+}
+body.os-invisible-grid-ready .page-board{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+}
+body.os-invisible-grid-ready .page-section{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+}
+body.os-admin-editor .page-board,
+body.os-admin-editor .retro-wrap{
+  background-image:none!important;
+}
+.module.os-dragging{
+  box-shadow:0 16px 36px rgba(0,0,0,.38)!important;
 }

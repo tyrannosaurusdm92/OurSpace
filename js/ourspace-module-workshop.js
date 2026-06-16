@@ -4,8 +4,8 @@
 (function(){
   'use strict';
   const SIZE_OPTIONS = ['25','50','75','100','125','130','150','175','200'];
-  const DEFAULT_SIZE = '130';
-  const LAYOUT_VERSION = 'module-layout-v9-admin-editor-invisible-grid';
+  const DEFAULT_SIZE = '100';
+  const LAYOUT_VERSION = 'module-layout-v10-no-current-transparent-grid';
   const GRID_SIZE = 24;
   const ADMIN_HASH = 'admin-editor';
   const $ = (sel, root=document) => root.querySelector(sel);
@@ -573,10 +573,10 @@
     return `/* OurSpace ${mode} default layout override. Generated from #admin-editor. */\n(function(){\n  window.OurSpaceDefaultLayoutOverrides = window.OurSpaceDefaultLayoutOverrides || {};\n  window.OurSpaceDefaultLayoutOverrides[${JSON.stringify(mode)}] = ${JSON.stringify(snapshot,null,2)};\n  window.dispatchEvent(new CustomEvent('ourspace:default-layout-overrides-loaded',{detail:{mode:${JSON.stringify(mode)}}}));\n})();\n`;
   }
   function overrideCss(mode, snapshot){
-    return `/* OurSpace ${mode} default module override.\n   The layout data lives in ../js/current js/ourspace-default-${mode}-override.js.\n   Keep this CSS file beside the exported JS so the override folder contains both css and js. */\n:root{--os-${mode}-default-override-exported-at:${JSON.stringify(snapshot.exportedAt)};}\n`;
+    return `/* OurSpace ${mode} default module override.\n   The layout data lives in ../js/ourspace-default-${mode}-override.js.\n   Keep this CSS file beside the exported JS so the override folder contains both css and js. */\n:root{--os-${mode}-default-override-exported-at:${JSON.stringify(snapshot.exportedAt)};}\n`;
   }
   function readme(mode){
-    return `OurSpace ${mode} default override\n\nGenerated from #admin-editor.\nUnzip this folder over your GitHub OurSpace folder. The main ourspace-module-workshop.js automatically tries to load the generated override JS from the same js/current js folder.\n\nUse the public site normally without #admin-editor; the editor/export controls stay hidden.\nUse #admin-editor#mobile-games or #admin-editor#mobile-game for the mobile games page while editing.\n`;
+    return `OurSpace ${mode} default override\n\nGenerated from #admin-editor.\nUnzip this folder over your GitHub OurSpace folder. The main ourspace-module-workshop.js automatically tries to load the generated override JS from the same js folder.\n\nUse the public site normally without #admin-editor; the editor/export controls stay hidden.\nUse #admin-editor#mobile-games or #admin-editor#mobile-game for the mobile games page while editing.\n`;
   }
   function snapshotForMode(mode){
     return {version:LAYOUT_VERSION, mode, profile:dataProfile, exportedAt:new Date().toISOString(), gridSize:GRID_SIZE, modules:allModuleStates()};
@@ -586,8 +586,8 @@
     const files=[];
     modes.forEach(m=>{
       const snap=snapshotForMode(m);
-      files.push({name:`OurSpace/js/current js/ourspace-default-${m}-override.js`, text:overrideJs(m,snap)});
-      files.push({name:`OurSpace/css/current/ourspace-default-${m}-override.css`, text:overrideCss(m,snap)});
+      files.push({name:`OurSpace/js/ourspace-default-${m}-override.js`, text:overrideJs(m,snap)});
+      files.push({name:`OurSpace/css/ourspace-default-${m}-override.css`, text:overrideCss(m,snap)});
       files.push({name:`OurSpace/README-admin-${m}-default-override.txt`, text:readme(m)});
     });
     downloadBlob(zipStore(files), `OurSpace_default_${mode}_override.zip`);

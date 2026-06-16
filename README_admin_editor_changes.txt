@@ -1,17 +1,19 @@
-OurSpace admin-editor update
+OurSpace admin editor / transparent grid repair
 
-What changed:
-- Restored the old visual profile/page styling by removing the visible white grid/background override and the compact 50% redesign layer.
-- Kept invisible 24px snap-grid behavior for dragging/resizing modules.
-- Kept module zoom options from 25% through 200%, with 130% as the default.
-- Added horizontal and vertical in-module scrollbars for module bodies.
-- Added #admin-editor mode with export buttons for default desktop/mobile override zips.
-- Added per-module admin controls for font %, button %, content %, width, and height.
-- Patched hash parsing so #admin-editor#mobile-game routes to mobile-games.
+Changes in this package:
+- Removed the legacy css/current and js/current js folders.
+- Moved all runtime JavaScript files into /js so the existing HTML/script paths load correctly on GitHub.
+- Kept the old profile-page visual design while keeping the logical snap grid invisible.
+- Added a hard CSS layer that prevents white grid lines / white page-board overlays from painting over the background images.
+- Preserved module dragging, sizing/zoom, collapse, user preference save/restore, in-module scrollbars, and admin-only fine controls.
+- #admin-editor now survives page hashes, including #admin-editor#mobile-games.
+- Admin runtime exports now generate replacement /css and /js files, not /current folders.
+- Added .htm aliases for index, squishy-cottage, and dino-nerdzone so both .html and .htm URLs work.
+- Bumped the service worker cache name so GitHub Pages/PWA caching stops serving the older white-grid/current-folder build.
 
-Use:
-- Public pages: normal URLs, no admin controls visible.
-- Editor pages: add #admin-editor, then optional in-site hash after it.
-  Example: dino-nerdzone.html#admin-editor#mobile-game
-- After arranging modules, click Export default desktop override or Export default mobile override.
-- Unzip that exported override over your GitHub OurSpace folder. The placeholder default override files are already included so the main module workshop script knows where to load replacements.
+Admin URLs:
+- index.html#admin-editor or index.htm#admin-editor
+- squishy-cottage.html#admin-editor or squishy-cottage.htm#admin-editor
+- dino-nerdzone.html#admin-editor#mobile-games
+
+When exporting defaults from the admin editor, unzip the export over the OurSpace folder and commit the generated css/js replacements.

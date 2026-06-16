@@ -1,5 +1,5 @@
 /* OurSpace PWA service worker: app-shell cache for installable phone-app style access. */
-const CACHE_NAME = 'ourspace-pwa-v2026-06-15-library-backends';
+const CACHE_NAME = 'ourspace-pwa-v2026-06-16-no-current-transparent-grid';
 const APP_SHELL = [
   './',
   './index.html',
