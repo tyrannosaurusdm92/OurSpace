@@ -1,0 +1,442 @@
+{
+  "schema": "ourspace.user_profile_category_extract.v1",
+  "person": "William",
+  "category": "physical health",
+  "source_path": "merge and categorize/william_trex_dino_dad_person_specific_life_impact (1).json",
+  "mobility_aids_adaptive_equipment_and_daily_living_supports": [
+    {
+      "id": "adaptive_equipment_shower_chair",
+      "name": "Shower chair",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "mobility_aid_umbrella_mobility_aid_device",
+        "functional_limitation_accommodation_target_sitting"
+      ],
+      "life_limitations_addressed": [
+        "Bathing while standing may be unsafe, exhausting, painful, or impossible during weakness, vertigo, MS/EDS flares, back pain, asthma symptoms, or severe fatigue.",
+        "Bathroom tasks can carry high fall risk because of wet surfaces, transfers, dizziness, and limited stamina."
+      ],
+      "possible_life_improvements_or_supports": [
+        "Can make bathing more possible while seated.",
+        "Can reduce fall risk and reduce spoon cost of hygiene.",
+        "Can allow pacing, partial bathing, or caregiver-assisted bathing with more safety and dignity."
+      ],
+      "accessibility_notes": [
+        "Needs stable placement, reachable supplies, non-slip setup, transfer planning, and enough space for the power wheelchair or caregiver assistance."
+      ]
+    },
+    {
+      "id": "mobility_aid_power_wheelchair",
+      "name": "Power wheelchair",
+      "source_status": "matched_uploaded_json",
+      "related_source_entry_ids": [
+        "mobility_aid_powered_wheelchair_power_wheelchair",
+        "mobility_aid_umbrella_mobility_aid_device",
+        "functional_limitation_accommodation_target_use_of_mobility_aids"
+      ],
+      "life_limitations_addressed": [
+        "Barely being able to walk/being mostly bedbound can make distance, errands, appointments, standing lines, transfers, and basic movement unsafe or impossible without powered mobility.",
+        "Manual propulsion may be unrealistic because of extreme short arms, back injury, EDS pain, MS fatigue/weakness, respiratory limitations, and limited stamina."
+      ],
+      "possible_life_improvements_or_supports": [
+        "Can conserve energy by making movement less physically expensive.",
+        "Can reduce fall risk and increase access to appointments, home spaces, stores, and social participation.",
+        "Can provide independence when walking or manual wheelchair use is not reliable."
+      ],
+      "accessibility_notes": [
+        "Needs charging routine, maintenance, accessible route planning, turning-radius checks, transfer planning, and backup options during equipment failure."
+      ]
+    },
+    {
+      "id": "respiratory_support_oxygen",
+      "name": "Oxygen",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "physical_chronic_health_disability_respiratory_impairments",
+        "functional_limitation_accommodation_target_respiratory_distress_breathing_proble"
+      ],
+      "life_limitations_addressed": [
+        "Severe asthma/respiratory impairment can affect stamina, sleep, speaking, showering, transfers, walking, and safe recovery from exertion or infection.",
+        "Oxygen equipment can add tubing, tank/concentrator logistics, power needs, travel planning, stigma, and safety precautions."
+      ],
+      "possible_life_improvements_or_supports": [
+        "Can support breathing and daily functioning when prescribed/needed.",
+        "Can make pacing and recovery safer when coordinated with medical instructions.",
+        "Can reduce fear when respiratory symptoms are unpredictable, if an emergency plan is clear."
+      ],
+      "accessibility_notes": [
+        "Needs tubing management, trip-hazard reduction, equipment access near bed/chair/bathroom, emergency instructions, and fire/smoke safety."
+      ]
+    },
+    {
+      "id": "caregiver_support_fiance",
+      "name": "Fiancé as caregiver",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "energy_pacing_concept_spoon_theory_limited_daily_energy",
+        "support_concept_boundary_communication",
+        "energy_pacing_concept_day_to_day_variability"
+      ],
+      "life_limitations_addressed": [
+        "Bedbound/barely-walking status and complex chronic illness can make daily activities difficult to complete alone.",
+        "Frequent hospitalizations, mobility limits, toileting/bathing barriers, oxygen needs, and cognitive/energy crashes can require practical and emotional support."
+      ],
+      "possible_life_improvements_or_supports": [
+        "Consistent caregiver support can improve safety, reduce missed needs, preserve energy, support emotional regulation, and make home routines more possible.",
+        "Clear task lists and boundaries can reduce stress for both William and the caregiver."
+      ],
+      "accessibility_notes": [
+        "Care routines should be split into small steps, include rest breaks, and avoid assuming unlimited caregiver capacity."
+      ]
+    },
+    {
+      "id": "bathroom_adaptation_bidet",
+      "name": "Bidet",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "functional_limitation_accommodation_target_toileting_grooming_issue",
+        "mobility_musculoskeletal_neuromotor_disability_arm_conditions",
+        "functional_limitation_accommodation_target_use_of_one_hand_arm",
+        "mobility_musculoskeletal_neuromotor_disability_back_impairment"
+      ],
+      "life_limitations_addressed": [
+        "Toileting hygiene may be limited by back injury, extreme short arms, EDS pain, mobility limits, body size, fatigue, vertigo, and difficulty twisting/reaching.",
+        "Relying on caregiver help for intimate hygiene can affect privacy, dignity, and trauma safety."
+      ],
+      "possible_life_improvements_or_supports": [
+        "Can increase independence and dignity during toileting.",
+        "Can reduce painful reaching/twisting and reduce dependence on caregiver help for hygiene."
+      ],
+      "accessibility_notes": [
+        "Needs reachable controls, safe transfer setup, cleaning plan, and compatibility with William's bathroom arrangement."
+      ]
+    },
+    {
+      "id": "toileting_reach_extender_tool",
+      "name": "Extender tool for toileting",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "functional_limitation_accommodation_target_toileting_grooming_issue",
+        "mobility_musculoskeletal_neuromotor_disability_arm_conditions",
+        "functional_limitation_accommodation_target_use_of_one_hand_arm",
+        "mobility_musculoskeletal_neuromotor_disability_back_impairment"
+      ],
+      "life_limitations_addressed": [
+        "Short arm reach, back injury, body size, EDS instability, pain, and limited mobility can make wiping/cleaning physically difficult or unsafe.",
+        "Toileting assistance can be emotionally vulnerable, especially with trauma history and gender dysphoria."
+      ],
+      "possible_life_improvements_or_supports": [
+        "Can reduce painful twisting/reaching.",
+        "Can improve independence, privacy, and confidence with toileting."
+      ],
+      "accessibility_notes": [
+        "Needs a discreet storage place, cleaning routine, and backup plan for flare days."
+      ]
+    }
+  ],
+  "physical_health_entries": [
+    {
+      "id": "condition_multiple_sclerosis",
+      "name": "Multiple Sclerosis",
+      "category": "autoimmune / neurological / mobility-impacting",
+      "source_status": "matched_uploaded_json",
+      "related_source_entry_ids": [
+        "autoimmune_disease_nervous_system_multiple_sclerosis_ms",
+        "physical_chronic_health_disability_multiple_sclerosis"
+      ],
+      "william_specific_context": [
+        "Part of William's complex chronic illness profile.",
+        "Interacts with power wheelchair use, oxygen/respiratory strain, fatigue, vertigo, seizure hospitalizations, infection vulnerability, and limited walking."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Unpredictable fatigue, weakness, numbness/tingling, pain, coordination issues, balance problems, possible cognitive fog, and variable flare days.",
+        "May make walking, transfers, bathing, errands, cooking, appointments, and social plans unreliable.",
+        "Heat, infections, stress, poor sleep, or overexertion may worsen functioning."
+      ],
+      "support_design_notes": [
+        "Use pacing, rest breaks, accessible routes, seated options, appointment reminders, symptom tracking, and flexible expectations.",
+        "Avoid interpreting inconsistency as unwillingness."
+      ]
+    },
+    {
+      "id": "condition_pcos_pmos",
+      "name": "PCOS / PMOS",
+      "category": "endocrine / metabolic / reproductive-health-related",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "physical_chronic_health_disability_thyroid_disorders",
+        "endocrine_metabolic_disorder_hypothyroidism"
+      ],
+      "terminology_note": "User supplied: 'Polycystic Ovary Syndrome has officially been renamed Polyendocrine Metabolic Ovarian Syndrome.' This profile preserves both PCOS and PMOS language as provided by William.",
+      "william_specific_context": [
+        "May intersect with gender dysphoria because reproductive/gynecologic care can be misgendering or body-dysphoria-triggering for a binary trans man.",
+        "May interact with morbid obesity, metabolic concerns, fatigue, pain, and endocrine symptoms."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Hormonal/metabolic symptoms can affect weight, energy, pain, mood, bleeding/cycles if present, skin/hair changes, insulin resistance risk, and medical appointments.",
+        "Care may require extra privacy, consent, correct gendering, and avoidance of language that feminizes William."
+      ],
+      "support_design_notes": [
+        "Use neutral/anatomical or William-approved language for body-specific care.",
+        "Offer reminders and tracking without shaming body size, food, hormones, fertility, or gender."
+      ]
+    },
+    {
+      "id": "functional_status_bedridden_barely_can_walk",
+      "name": "Bedridden / barely can walk",
+      "category": "functional mobility status",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "mobility_aid_umbrella_mobility_aid_device",
+        "mobility_aid_powered_wheelchair_power_wheelchair",
+        "functional_limitation_accommodation_target_sitting",
+        "functional_limitation_accommodation_target_use_of_mobility_aids"
+      ],
+      "william_specific_context": [
+        "William is mostly bedbound and barely able to walk.",
+        "This should be treated as a central access need, not as laziness, avoidance, or lack of willpower."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "High spoon cost for transfers, toileting, showering, dressing, leaving home, cooking, cleaning, and appointments.",
+        "Increased risk from falls, pressure discomfort/injury, deconditioning, isolation, pain flares, and emergency access barriers."
+      ],
+      "support_design_notes": [
+        "Default to bed-level, seated, or wheelchair-accessible task options.",
+        "Split tasks into micro-steps and reward partial completion.",
+        "Build in recovery time and caregiver backup options."
+      ]
+    },
+    {
+      "id": "condition_ehlers_danlos_hypermobile",
+      "name": "Ehlers-Danlos syndrome, hypermobile type",
+      "category": "connective tissue / pain / joint stability",
+      "source_status": "matched_uploaded_json",
+      "related_source_entry_ids": [
+        "physical_chronic_health_disability_ehlers_danlos_syndrome",
+        "physical_chronic_health_disability_chronic_pain",
+        "functional_limitation_accommodation_target_pain",
+        "mobility_musculoskeletal_neuromotor_disability_arm_conditions"
+      ],
+      "william_specific_context": [
+        "Part of William's mobility, pain, bathroom, showering, and reach-access profile.",
+        "Interacts with back injury, short arms, power wheelchair use, and toileting/shower adaptations."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can cause joint instability, subluxations/dislocations, widespread pain, fatigue, soft-tissue injury, and difficulty with repetitive or forceful tasks.",
+        "May make reaching, bending, twisting, transfers, standing, and showering painful or unsafe."
+      ],
+      "support_design_notes": [
+        "Use joint-protection strategies, seated tasks, adaptive tools, reduced reaching, careful transfers, and gentle pacing.",
+        "Avoid pushing through pain as a default."
+      ]
+    },
+    {
+      "id": "condition_hypothyroidism",
+      "name": "Hypothyroidism",
+      "category": "endocrine / metabolic",
+      "source_status": "matched_uploaded_json",
+      "related_source_entry_ids": [
+        "endocrine_metabolic_disorder_hypothyroidism",
+        "physical_chronic_health_disability_thyroid_disorders"
+      ],
+      "william_specific_context": [
+        "Interacts with fatigue, brain fog, mood, weight/metabolic concerns, cold intolerance, sleep disruption, and overall spoon budget."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "May affect energy, cognition, mood, body temperature, weight, skin/hair, sleep, and daily reliability.",
+        "Can make task initiation and follow-through harder when symptoms are undertreated or fluctuating."
+      ],
+      "support_design_notes": [
+        "Use medication/routine reminders if wanted, flexible scheduling, low-energy task options, and non-shaming check-ins."
+      ]
+    },
+    {
+      "id": "injury_broken_back_2011_reinjury",
+      "name": "Broken back from being struck/flung across an intersection as a pedestrian in 2011, with repeated re-injury",
+      "category": "traumatic physical injury / chronic pain / mobility",
+      "source_status": "user_supplied_addition_with_related_source_match",
+      "related_source_entry_ids": [
+        "mobility_musculoskeletal_neuromotor_disability_back_impairment",
+        "physical_chronic_health_disability_chronic_pain",
+        "functional_limitation_accommodation_target_pain",
+        "mental_health_psychiatric_disability_post_traumatic_stress_disorder_ptsd"
+      ],
+      "william_specific_context": [
+        "A major traumatic injury from 2011 with repeated re-injury.",
+        "May create both physical limitations and trauma triggers around traffic, intersections, pedestrians, pain, loss of mobility, and medical systems."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can limit walking, standing, sitting, transfers, lifting, bending, reaching, bathing, toileting, sleep, transportation, and appointments.",
+        "Repeated re-injury may make symptom flares unpredictable and recovery non-linear."
+      ],
+      "support_design_notes": [
+        "Use no-lift/no-bend task alternatives, reachable supplies, transfer safety, seated routines, pain pacing, and trauma-informed language."
+      ]
+    },
+    {
+      "id": "condition_complex_ptsd",
+      "name": "C-PTSD / complex trauma",
+      "category": "trauma / nervous system / mental health",
+      "source_status": "user_supplied_addition_with_ptsd_source_match",
+      "related_source_entry_ids": [
+        "anxiety_trauma_stress_related_mental_health_condition_post_traumatic_stress_diso",
+        "mental_health_psychiatric_disability_post_traumatic_stress_disorder_ptsd",
+        "anxiety_trauma_stress_related_mental_health_condition_acute_stress_disorder"
+      ],
+      "william_specific_context": [
+        "Multiple long-term trauma exposures: childhood abuse, foster care abuse, trafficking/sexual assault, hate crime, stalking/doxxing, abusive partners, repeated losses, homelessness, and medical trauma."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "May involve hypervigilance, nightmares, flashbacks, dissociation, shame, avoidance, startle response, mistrust, emotional flooding, and difficulty feeling safe.",
+        "Can worsen pain, fatigue, asthma/breathing distress, sleep, executive function, and hospital stress."
+      ],
+      "support_design_notes": [
+        "Use grounding options, consent, predictable steps, privacy protections, emotional validation, and gentle choices.",
+        "Avoid surprise demands, coercion, graphic reminders, blame, or forced disclosure."
+      ]
+    },
+    {
+      "id": "condition_lymphedema",
+      "name": "Lymphedema",
+      "category": "swelling / lymphatic / mobility / infection-risk",
+      "source_status": "user_supplied_addition",
+      "related_source_entry_ids": [
+        "mobility_musculoskeletal_neuromotor_disability_leg_impairment",
+        "physical_chronic_health_disability_skin_conditions",
+        "functional_limitation_accommodation_target_pain",
+        "functional_limitation_accommodation_target_use_of_mobility_aids"
+      ],
+      "william_specific_context": [
+        "May interact with morbid obesity, mobility limits, pain, recurrent infections/hospitalizations, and wheelchair/bed positioning."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can cause swelling, heaviness, pain, skin tightness, difficulty with clothes/shoes/transfers, reduced mobility, and increased infection concern.",
+        "May make standing/walking, showering, and wound/skin monitoring harder."
+      ],
+      "support_design_notes": [
+        "Use skin checks, gentle positioning, accessible clothing, pacing, and clinician-approved compression/elevation routines if applicable."
+      ]
+    },
+    {
+      "id": "condition_severe_asthma",
+      "name": "Severe asthma",
+      "category": "respiratory / chronic health / emergency planning",
+      "source_status": "user_supplied_addition_with_related_source_match",
+      "related_source_entry_ids": [
+        "physical_chronic_health_disability_respiratory_impairments",
+        "functional_limitation_accommodation_target_respiratory_distress_breathing_proble"
+      ],
+      "william_specific_context": [
+        "Interacts with oxygen use, infections, fatigue, showering, transfers, anxiety, and hospitalizations."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can limit exertion, speaking, bathing, walking, household chores, exposure to fragrances/smoke/dust/cold air, and safe recovery from illness.",
+        "Breathing distress may escalate quickly and can be frightening."
+      ],
+      "support_design_notes": [
+        "Keep rescue/emergency plan accessible, reduce respiratory triggers, build rest breaks into tasks, and keep supplies within reach."
+      ]
+    },
+    {
+      "id": "condition_vertigo",
+      "name": "Vertigo",
+      "category": "balance / vestibular / fall-risk",
+      "source_status": "matched_uploaded_json",
+      "related_source_entry_ids": [
+        "physical_chronic_health_disability_vertigo",
+        "functional_limitation_accommodation_target_dizziness",
+        "functional_limitation_accommodation_target_sitting"
+      ],
+      "william_specific_context": [
+        "Interacts with showering, transfers, walking, power wheelchair navigation, bed-to-chair movement, and seizure/fall safety."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can cause dizziness, spinning sensation, nausea, disorientation, falls, and avoidance of movement.",
+        "May make bathroom and transfer tasks high-risk."
+      ],
+      "support_design_notes": [
+        "Use seated options, slow transitions, grab bars/supports when available, clear floors, and caregiver standby for risky tasks."
+      ]
+    },
+    {
+      "id": "condition_morbid_obesity",
+      "name": "Morbid obesity",
+      "category": "body size / mobility / stigma / equipment access",
+      "source_status": "matched_uploaded_json",
+      "related_source_entry_ids": [
+        "physical_chronic_health_disability_obesity",
+        "functional_limitation_accommodation_target_use_of_mobility_aids",
+        "physical_chronic_health_disability_respiratory_impairments",
+        "functional_limitation_accommodation_target_toileting_grooming_issue"
+      ],
+      "william_specific_context": [
+        "Interacts with mobility, oxygen/asthma, lymphedema, PCOS/PMOS, back injury, power wheelchair needs, shower chair sizing, toileting tools, and medical stigma."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can affect equipment fit, safe transfers, bathroom access, seating, transportation, respiratory effort, pain, and clinician bias.",
+        "Weight stigma can create avoidance, shame, delayed care, and mistrust."
+      ],
+      "support_design_notes": [
+        "Use size-inclusive equipment, non-shaming language, practical access planning, and focus on safety/function rather than blame."
+      ]
+    },
+    {
+      "id": "body_access_extremely_short_arms_trex",
+      "name": "Extremely short arms / T-Rex nickname",
+      "category": "body mechanics / reach access / adaptive tools",
+      "source_status": "user_supplied_addition_with_related_source_match",
+      "related_source_entry_ids": [
+        "mobility_musculoskeletal_neuromotor_disability_arm_conditions",
+        "functional_limitation_accommodation_target_use_of_one_hand_arm",
+        "functional_limitation_accommodation_target_toileting_grooming_issue"
+      ],
+      "william_specific_context": [
+        "William's nickname T-Rex relates to extremely short arms.",
+        "This directly affects reaching, toileting, dressing, bathing, transfers, wheelchair propulsion/control setup, grabbing objects, and using standard home layouts."
+      ],
+      "likely_life_impacts_to_account_for": [
+        "Can make ordinary items functionally out of reach even when they seem nearby to other people.",
+        "Can increase dependence on extender tools, caregiver help, adaptive storage, reachable controls, and bed/chair-side organization."
+      ],
+      "support_design_notes": [
+        "Keep essentials within William-specific reach, use reachers/extenders, avoid high/low storage, and treat reach barriers as access issues, not inconvenience."
+      ]
+    }
+  ],
+  "high_priority_access_needs": {
+    "mobility": [
+      "Assume wheelchair-first access.",
+      "Offer bed-level and seated options before standing/walking options.",
+      "Avoid stairs, long distances, tight spaces, and tasks requiring bending/lifting/reaching unless explicitly marked accessible."
+    ],
+    "bathroom_and_hygiene": [
+      "Use shower chair, bidet, toileting extender, reachable supplies, and privacy-respecting caregiver assistance when needed.",
+      "Treat toileting/bathing as dignity-sensitive and trauma-sensitive.",
+      "Use male language and William-approved anatomy language."
+    ],
+    "respiratory": [
+      "Account for oxygen access, asthma triggers, infection recovery, exertion limits, and emergency planning.",
+      "Reduce smoke, strong fragrance, dust, cold-air exposure, and rushed exertion when possible."
+    ],
+    "energy_and_spoons": [
+      "Use spoon-theory pacing.",
+      "Split every care task into tiny steps.",
+      "Count partial completion as real progress.",
+      "Build rest and recovery into the plan after bathing, toileting, transfers, appointments, emotional conversations, and hospitalizations."
+    ],
+    "neurodivergence_and_executive_function": [
+      "Use clear steps, visual lists, reminders, timers, body-doubling, predictable routines, and low-demand restarts.",
+      "Avoid shame for forgetfulness, task paralysis, overwhelm, or inconsistent capacity."
+    ],
+    "trauma_and_attachment": [
+      "Use consent, validation, consistency, repair, and explicit reassurance.",
+      "Avoid threats of abandonment, silent treatment, moralizing, coercion, and surprise demands.",
+      "Protect privacy because of doxxing/stalking history."
+    ],
+    "body_size_and_reach": [
+      "Use size-inclusive equipment and room layouts.",
+      "Keep essentials within William's actual arm reach from bed and wheelchair.",
+      "Use adaptive tools without jokes unless William initiates humor."
+    ]
+  }
+}

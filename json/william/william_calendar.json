@@ -1,0 +1,144 @@
+{
+  "profile": "william",
+  "schemaVersion": "ourspace.calendar.from_profile_tasks.v2",
+  "events": [
+    {
+      "id": "dino-event-1",
+      "date": "2026-06-14",
+      "title": "Change into clean clothes",
+      "type": "task",
+      "rewardCopper": 900,
+      "notes": "Dignity care."
+    },
+    {
+      "id": "dino-event-2",
+      "date": "2026-06-15",
+      "title": "Open today's task list",
+      "type": "task",
+      "rewardCopper": 100,
+      "notes": "Opening the app counts as starting."
+    },
+    {
+      "id": "dino-event-3",
+      "date": "2026-06-16",
+      "title": "Save/export site data",
+      "type": "task",
+      "rewardCopper": 250,
+      "notes": "Prevents lost progress."
+    },
+    {
+      "id": "dino-event-4",
+      "date": "2026-06-17",
+      "title": "Feed cats",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Cat care is family care."
+    },
+    {
+      "id": "dino-event-5",
+      "date": "2026-06-18",
+      "title": "Refresh cat water",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Separate from feeding."
+    },
+    {
+      "id": "dino-event-6",
+      "date": "2026-06-19",
+      "title": "Scoop the 1 litter box",
+      "type": "task",
+      "rewardCopper": 1500,
+      "notes": "Smell/gross/sensory bonus."
+    },
+    {
+      "id": "dino-event-7",
+      "date": "2026-06-20",
+      "title": "Full litter change",
+      "type": "task",
+      "rewardCopper": 2500,
+      "notes": "Heavy/gross task."
+    },
+    {
+      "id": "dino-event-8",
+      "date": "2026-06-21",
+      "title": "Brush one cat",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "One cat at a time."
+    },
+    {
+      "id": "dino-event-9",
+      "date": "2026-06-22",
+      "title": "Trim nails for one cat",
+      "type": "task",
+      "rewardCopper": 2500,
+      "notes": "Stress/skill bonus."
+    },
+    {
+      "id": "dino-event-10",
+      "date": "2026-06-23",
+      "title": "Check cat food/litter supply",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Prevents emergencies."
+    },
+    {
+      "id": "dino-event-11",
+      "date": "2026-06-24",
+      "title": "Spend intentional time with Onyx/Harvey/Callie",
+      "type": "task",
+      "rewardCopper": 250,
+      "notes": "Love counts."
+    },
+    {
+      "id": "dino-event-12",
+      "date": "2026-06-25",
+      "title": "Gather dirty dishes from reachable area",
+      "type": "task",
+      "rewardCopper": 250,
+      "notes": "Low-spoon dish start."
+    },
+    {
+      "id": "dino-event-13",
+      "date": "2026-06-26",
+      "title": "Wash 5 dishes",
+      "type": "task",
+      "rewardCopper": 500,
+      "notes": "Dino's main chore, still rewarded well."
+    },
+    {
+      "id": "dino-event-14",
+      "date": "2026-06-27",
+      "title": "Wash one small dish batch",
+      "type": "task",
+      "rewardCopper": 900,
+      "notes": "Pain/fatigue counts."
+    },
+    {
+      "id": "dino-json-review",
+      "date": "2026-06-14",
+      "title": "Review tasks/store JSON",
+      "type": "admin",
+      "rewardCopper": 100,
+      "notes": "Use the import/export buttons to keep data editable."
+    },
+    {
+      "id": "dino-store-reset",
+      "date": "2026-06-21",
+      "title": "Store wishlist refresh",
+      "type": "store",
+      "rewardCopper": 100,
+      "notes": "Add or remove single-item store listings."
+    }
+  ],
+  "editableNotes": "Edit this JSON to change the Calendar page. Import/export buttons can also override it in the browser.",
+  "recurrenceNotes": [
+    "Daily, weekly, weekday, monthly, and as-needed items are preserved for live respawn tracking.",
+    "Calendar events are kept under the profile folder instead of scattered dino/squishy filenames."
+  ],
+  "source": "json/william/william_tasks.json",
+  "_canonicalFileName": "william_calendar.json",
+  "_legacyAliases": [
+    "dino_cal.json"
+  ]
+}

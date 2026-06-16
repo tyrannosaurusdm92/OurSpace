@@ -1,0 +1,5326 @@
+{
+  "schema": "ourspace.user_store_merged.v1",
+  "person": "William",
+  "source_paths": [
+    "merge and categorize/json1/dino_store.json",
+    "merge and categorize/ourspace_two_user_rewards_store (1).json"
+  ],
+  "profile_store_json": {
+    "profile": "dino",
+    "pageOwner": "William",
+    "storeName": "Dino Store",
+    "rewardProvidedBy": "Squishy",
+    "schemaVersion": "2.0.0",
+    "currencySystem": {
+      "copperPerSilver": 10,
+      "silverPerGold": 10,
+      "goldPerPlatinum": 10
+    },
+    "aisles": [
+      {
+        "id": "all",
+        "label": "Show All"
+      },
+      {
+        "id": "beverages",
+        "label": "Beverages"
+      },
+      {
+        "id": "snacks",
+        "label": "Snacks"
+      },
+      {
+        "id": "food",
+        "label": "Food"
+      },
+      {
+        "id": "clothes",
+        "label": "Clothes"
+      },
+      {
+        "id": "comfort",
+        "label": "Comfort Items"
+      },
+      {
+        "id": "hobby",
+        "label": "Hobby Items"
+      },
+      {
+        "id": "work-help",
+        "label": "Work-Help Items"
+      },
+      {
+        "id": "gift-cards",
+        "label": "Gift Cards"
+      },
+      {
+        "id": "in-store",
+        "label": "In-Store Purchases"
+      },
+      {
+        "id": "online",
+        "label": "Online Purchases"
+      },
+      {
+        "id": "outings",
+        "label": "Outings"
+      },
+      {
+        "id": "provided-by",
+        "label": "Reward Provided By"
+      },
+      {
+        "id": "adult",
+        "label": "21+ Items"
+      },
+      {
+        "id": "vacation",
+        "label": "Vacation Items"
+      }
+    ],
+    "items": [
+      {
+        "id": "bev-water-flavor",
+        "aisle": "beverages",
+        "name": "Flavored Water",
+        "emoji": "💧",
+        "description": "A flavored water, sparkling water, or hydration drink.",
+        "priceCopper": 300,
+        "tags": [
+          "drink",
+          "hydration"
+        ]
+      },
+      {
+        "id": "bev-juice-box",
+        "aisle": "beverages",
+        "name": "Juice or Smoothie",
+        "emoji": "🧃",
+        "description": "A juice, smoothie, or fruity drink treat.",
+        "priceCopper": 600,
+        "tags": [
+          "drink",
+          "treat"
+        ]
+      },
+      {
+        "id": "bev-fancy-drink",
+        "aisle": "beverages",
+        "name": "Fancy Drink",
+        "emoji": "🥤",
+        "description": "A specialty drink, cafe drink, boba, or sparkling treat.",
+        "priceCopper": 900,
+        "tags": [
+          "drink",
+          "treat"
+        ]
+      },
+      {
+        "id": "snack-salty",
+        "aisle": "snacks",
+        "name": "Salty Crunchy Snack",
+        "emoji": "🥨",
+        "description": "Chips, pretzels, crackers, popcorn, or another crunchy snack.",
+        "priceCopper": 500,
+        "tags": [
+          "snack",
+          "salty"
+        ]
+      },
+      {
+        "id": "snack-sweet",
+        "aisle": "snacks",
+        "name": "Sweet Snack",
+        "emoji": "🍬",
+        "description": "Candy, gummies, chocolate, cookies, or a small sweet treat.",
+        "priceCopper": 500,
+        "tags": [
+          "snack",
+          "sweet"
+        ]
+      },
+      {
+        "id": "snack-bakery",
+        "aisle": "snacks",
+        "name": "Bakery Treat",
+        "emoji": "🧁",
+        "description": "A pastry, cupcake, muffin, cookie, or other bakery-style treat.",
+        "priceCopper": 900,
+        "tags": [
+          "snack",
+          "bakery"
+        ]
+      },
+      {
+        "id": "food-small-delivery",
+        "aisle": "food",
+        "name": "Small Food Delivery",
+        "emoji": "🍔",
+        "description": "A smaller takeout or delivery contribution.",
+        "priceCopper": 2500,
+        "tags": [
+          "meal",
+          "delivery"
+        ]
+      },
+      {
+        "id": "food-favorite-meal",
+        "aisle": "food",
+        "name": "Favorite Meal",
+        "emoji": "🍱",
+        "description": "A favorite meal reward, home, pickup, or delivery.",
+        "priceCopper": 4000,
+        "tags": [
+          "meal"
+        ]
+      },
+      {
+        "id": "food-big-comfort",
+        "aisle": "food",
+        "name": "Big Comfort Food Reward",
+        "emoji": "🍜",
+        "description": "A bigger comfort-food reward for a hard day or milestone.",
+        "priceCopper": 7000,
+        "tags": [
+          "meal",
+          "comfort"
+        ]
+      },
+      {
+        "id": "clothes-shirt",
+        "aisle": "clothes",
+        "name": "Shirt",
+        "emoji": "👕",
+        "description": "A shirt, top, band shirt, nerd shirt, cottage shirt, or comfort top.",
+        "priceCopper": 3500,
+        "tags": [
+          "clothes",
+          "single item"
+        ]
+      },
+      {
+        "id": "clothes-pants",
+        "aisle": "clothes",
+        "name": "Pants",
+        "emoji": "👖",
+        "description": "A pair of pants, pajama pants, shorts, or easy-wear bottoms.",
+        "priceCopper": 4500,
+        "tags": [
+          "clothes",
+          "single item"
+        ]
+      },
+      {
+        "id": "clothes-hoodie",
+        "aisle": "clothes",
+        "name": "Hoodie",
+        "emoji": "🧥",
+        "description": "A hoodie, cardigan, jacket, or cozy layer.",
+        "priceCopper": 6500,
+        "tags": [
+          "clothes",
+          "cozy"
+        ]
+      },
+      {
+        "id": "comfort-blanket",
+        "aisle": "comfort",
+        "name": "Blanket",
+        "emoji": "🛌",
+        "description": "A blanket, throw, weighted blanket contribution, or cozy bed item.",
+        "priceCopper": 4500,
+        "tags": [
+          "comfort"
+        ]
+      },
+      {
+        "id": "comfort-plush",
+        "aisle": "comfort",
+        "name": "Plush Friend",
+        "emoji": "🧸",
+        "description": "A plush, stuffed animal, pillow, or comfort buddy.",
+        "priceCopper": 3500,
+        "tags": [
+          "comfort"
+        ]
+      },
+      {
+        "id": "comfort-duck",
+        "aisle": "comfort",
+        "name": "Duck",
+        "emoji": "🦆",
+        "description": "A duck-themed comfort item, plush, tiny collectible, or silly friend.",
+        "priceCopper": 1800,
+        "tags": [
+          "comfort",
+          "duck",
+          "single item"
+        ]
+      },
+      {
+        "id": "hobby-book",
+        "aisle": "hobby",
+        "name": "Book",
+        "emoji": "📚",
+        "description": "A book, workbook, zine, manga, novel, or hobby reference.",
+        "priceCopper": 3500,
+        "tags": [
+          "hobby",
+          "book"
+        ]
+      },
+      {
+        "id": "hobby-art-supply",
+        "aisle": "hobby",
+        "name": "Art or Craft Supply",
+        "emoji": "🎨",
+        "description": "A single craft supply, paint, pen, sticker pack, yarn, or small kit.",
+        "priceCopper": 2500,
+        "tags": [
+          "hobby",
+          "creative"
+        ]
+      },
+      {
+        "id": "hobby-game-addon",
+        "aisle": "hobby",
+        "name": "Game Add-On",
+        "emoji": "🎮",
+        "description": "A game add-on, DLC, app reward, or in-game comfort purchase.",
+        "priceCopper": 5000,
+        "tags": [
+          "hobby",
+          "gaming"
+        ]
+      },
+      {
+        "id": "work-admin-help",
+        "aisle": "work-help",
+        "name": "Admin Help Session",
+        "emoji": "📋",
+        "description": "Help with a form, email, phone call, schedule, or planning step.",
+        "priceCopper": 4000,
+        "tags": [
+          "help",
+          "admin"
+        ]
+      },
+      {
+        "id": "work-setup-help",
+        "aisle": "work-help",
+        "name": "Setup Help",
+        "emoji": "🛠️",
+        "description": "Help setting up a device, app, comfort station, workspace, or supplies.",
+        "priceCopper": 3000,
+        "tags": [
+          "help",
+          "setup"
+        ]
+      },
+      {
+        "id": "work-big-help",
+        "aisle": "work-help",
+        "name": "Big Work-Help Session",
+        "emoji": "🧰",
+        "description": "A longer help session for a harder task.",
+        "priceCopper": 7000,
+        "tags": [
+          "help",
+          "bigger task"
+        ]
+      },
+      {
+        "id": "gift-card-small",
+        "aisle": "gift-cards",
+        "name": "Small Gift Card",
+        "emoji": "🎁",
+        "description": "A small digital or physical gift card.",
+        "priceCopper": 5000,
+        "tags": [
+          "gift card"
+        ]
+      },
+      {
+        "id": "gift-card-medium",
+        "aisle": "gift-cards",
+        "name": "Medium Gift Card",
+        "emoji": "💳",
+        "description": "A medium gift card reward.",
+        "priceCopper": 10000,
+        "tags": [
+          "gift card"
+        ]
+      },
+      {
+        "id": "gift-card-large",
+        "aisle": "gift-cards",
+        "name": "Large Gift Card",
+        "emoji": "🏆",
+        "description": "A high-tier gift card reward.",
+        "priceCopper": 20000,
+        "tags": [
+          "gift card"
+        ]
+      },
+      {
+        "id": "instore-small",
+        "aisle": "in-store",
+        "name": "Small In-Store Purchase",
+        "emoji": "🛒",
+        "description": "A single small item from a local store.",
+        "priceCopper": 2500,
+        "tags": [
+          "in-store"
+        ]
+      },
+      {
+        "id": "instore-medium",
+        "aisle": "in-store",
+        "name": "Medium In-Store Purchase",
+        "emoji": "🏬",
+        "description": "A moderate in-store reward.",
+        "priceCopper": 7000,
+        "tags": [
+          "in-store"
+        ]
+      },
+      {
+        "id": "instore-big",
+        "aisle": "in-store",
+        "name": "Big In-Store Purchase",
+        "emoji": "🛍️",
+        "description": "A larger in-store reward.",
+        "priceCopper": 15000,
+        "tags": [
+          "in-store"
+        ]
+      },
+      {
+        "id": "online-small",
+        "aisle": "online",
+        "name": "Small Online Purchase",
+        "emoji": "📦",
+        "description": "A small online item.",
+        "priceCopper": 3000,
+        "tags": [
+          "online"
+        ]
+      },
+      {
+        "id": "online-etsy",
+        "aisle": "online",
+        "name": "Marketplace Find",
+        "emoji": "🛍️",
+        "description": "An Etsy, handmade, collectible, or marketplace find.",
+        "priceCopper": 6000,
+        "tags": [
+          "online",
+          "marketplace"
+        ]
+      },
+      {
+        "id": "online-big",
+        "aisle": "online",
+        "name": "Big Online Purchase",
+        "emoji": "🚚",
+        "description": "A higher-tier online purchase reward.",
+        "priceCopper": 15000,
+        "tags": [
+          "online"
+        ]
+      },
+      {
+        "id": "outing-small",
+        "aisle": "outings",
+        "name": "Small Outing",
+        "emoji": "🌤️",
+        "description": "A short, low-pressure outing, ride, or fresh-air plan.",
+        "priceCopper": 5000,
+        "tags": [
+          "outing"
+        ]
+      },
+      {
+        "id": "outing-food",
+        "aisle": "outings",
+        "name": "Food Outing",
+        "emoji": "🍽️",
+        "description": "A restaurant, pickup, cafe, or treat outing.",
+        "priceCopper": 9000,
+        "tags": [
+          "outing",
+          "food"
+        ]
+      },
+      {
+        "id": "outing-special",
+        "aisle": "outings",
+        "name": "Special Outing",
+        "emoji": "🎟️",
+        "description": "A bigger planned outing, date, event, or adventure.",
+        "priceCopper": 18000,
+        "tags": [
+          "outing",
+          "special"
+        ]
+      },
+      {
+        "id": "adult-placeholder-small",
+        "aisle": "adult",
+        "name": "21+ Legal Adult Placeholder",
+        "emoji": "🔞",
+        "description": "Private adult-only reward placeholder. Keep details legal, local, and off the public page.",
+        "priceCopper": 7000,
+        "tags": [
+          "21+",
+          "placeholder",
+          "legal only"
+        ]
+      },
+      {
+        "id": "adult-placeholder-errand",
+        "aisle": "adult",
+        "name": "21+ Legal Errand Placeholder",
+        "emoji": "✅",
+        "description": "Adult-only errand placeholder with legal/ID reminder. No restricted purchase details are stored.",
+        "priceCopper": 12000,
+        "tags": [
+          "21+",
+          "placeholder",
+          "legal only"
+        ]
+      },
+      {
+        "id": "vacation-snack",
+        "aisle": "vacation",
+        "name": "Vacation Snack Budget",
+        "emoji": "🧳",
+        "description": "Trip snacks, drinks, or travel comfort items.",
+        "priceCopper": 5000,
+        "tags": [
+          "vacation"
+        ]
+      },
+      {
+        "id": "vacation-activity",
+        "aisle": "vacation",
+        "name": "Vacation Activity",
+        "emoji": "🏖️",
+        "description": "A small activity, attraction, museum, beach, or trip treat.",
+        "priceCopper": 15000,
+        "tags": [
+          "vacation",
+          "activity"
+        ]
+      },
+      {
+        "id": "vacation-big",
+        "aisle": "vacation",
+        "name": "Big Vacation Reward",
+        "emoji": "🗺️",
+        "description": "A larger travel, lodging, or trip contribution reward.",
+        "priceCopper": 30000,
+        "tags": [
+          "vacation",
+          "big"
+        ]
+      },
+      {
+        "id": "hobby-dnd-book",
+        "aisle": "hobby",
+        "name": "DnD Book",
+        "emoji": "🐉",
+        "description": "A D&D book, dice supplement, campaign helper, or TTRPG reference.",
+        "priceCopper": 8000,
+        "tags": [
+          "hobby",
+          "DnD",
+          "single item"
+        ]
+      },
+      {
+        "id": "hobby-dice",
+        "aisle": "hobby",
+        "name": "Dice Set",
+        "emoji": "🎲",
+        "description": "A dice set, dice tray contribution, or tabletop accessory.",
+        "priceCopper": 2500,
+        "tags": [
+          "hobby",
+          "dice"
+        ]
+      },
+      {
+        "id": "hobby-trex",
+        "aisle": "hobby",
+        "name": "T-Rex Collectible",
+        "emoji": "🦖",
+        "description": "A T-rex figure, print, sticker, plush, or themed collectible.",
+        "priceCopper": 3500,
+        "tags": [
+          "hobby",
+          "T-Rex"
+        ]
+      },
+      {
+        "id": "clothes-nerd-shirt",
+        "aisle": "clothes",
+        "name": "Nerdy Shirt",
+        "emoji": "👕",
+        "description": "A nerdy, pun, band, dinosaur, dragon, or fantasy shirt.",
+        "priceCopper": 3500,
+        "tags": [
+          "clothes",
+          "cyan identity"
+        ]
+      },
+      {
+        "id": "clothes-mall-goth",
+        "aisle": "clothes",
+        "name": "Mall-Goth Clothing Piece",
+        "emoji": "🖤",
+        "description": "A Tripp-style, goth, alt, neon, or steampunk clothing item.",
+        "priceCopper": 7500,
+        "tags": [
+          "clothes",
+          "mall goth"
+        ]
+      },
+      {
+        "id": "provided-squishy-small",
+        "aisle": "provided-by",
+        "name": "Squishy's Choice: Small Reward",
+        "emoji": "💌",
+        "description": "Squishy chooses a small surprise reward for Dino.",
+        "priceCopper": 2500,
+        "tags": [
+          "provider choice"
+        ],
+        "providerNote": "Squishy"
+      },
+      {
+        "id": "provided-squishy-medium",
+        "aisle": "provided-by",
+        "name": "Squishy's Choice: Medium Reward",
+        "emoji": "🎁",
+        "description": "Squishy chooses a medium surprise reward for Dino.",
+        "priceCopper": 6000,
+        "tags": [
+          "provider choice"
+        ],
+        "providerNote": "Squishy"
+      },
+      {
+        "id": "provided-squishy-big",
+        "aisle": "provided-by",
+        "name": "Squishy's Choice: Big Reward",
+        "emoji": "🌟",
+        "description": "Squishy chooses a big surprise reward for Dino.",
+        "priceCopper": 12000,
+        "tags": [
+          "provider choice"
+        ],
+        "providerNote": "Squishy"
+      }
+    ]
+  },
+  "profile_store_rewards_from_two_user_store": [
+    {
+      "id": "william_store_caffeine-connoisseur-regular-red-bull-20-oz-preferred",
+      "profile": "william",
+      "aisle": "Caffeine connoisseur",
+      "item": "Regular Red Bull, 20 oz preferred",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite energy drink",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-green-apple-c4",
+      "profile": "william",
+      "aisle": "Caffeine connoisseur",
+      "item": "Green apple C4",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-watermelon-ghost",
+      "profile": "william",
+      "aisle": "Caffeine connoisseur",
+      "item": "Watermelon Ghost",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-energy-drink-multipack-contribution",
+      "profile": "william",
+      "aisle": "Caffeine connoisseur",
+      "item": "Energy drink multipack contribution",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Bigger reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-polar-orange-dry",
+      "profile": "william",
+      "aisle": "Drinks, no cola",
+      "item": "Polar Orange Dry",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Local favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-pulp-heavy-orange-juice",
+      "profile": "william",
+      "aisle": "Drinks, no cola",
+      "item": "Pulp-heavy orange juice",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Must be pulpy",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-chocolate-milk",
+      "profile": "william",
+      "aisle": "Drinks, no cola",
+      "item": "Chocolate milk",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Sweet drink favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-juice-bottle-non-cola",
+      "profile": "william",
+      "aisle": "Drinks, no cola",
+      "item": "Juice bottle, non-cola",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Cran-apple, cran-grape, etc",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_candy-sour-trolli-worms",
+      "profile": "william",
+      "aisle": "Candy",
+      "item": "Sour Trolli worms",
+      "cost": {
+        "totalCopper": 150,
+        "display": "1 gold, 5 silver",
+        "platinum": 0,
+        "gold": 1,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite candy",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_candy-starburst",
+      "profile": "william",
+      "aisle": "Candy",
+      "item": "Starburst",
+      "cost": {
+        "totalCopper": 150,
+        "display": "1 gold, 5 silver",
+        "platinum": 0,
+        "gold": 1,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite candy",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-blue-cheese-wedges",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Blue cheese wedges",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Favorite snack",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-strawberries",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Strawberries",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Pair with blue cheese",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-blue-cheese-strawberries-snack-plate",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Blue cheese + strawberries snack plate",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Top-tier favorite snack combo",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-pork-cracklins",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Pork cracklins",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite salty snack",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-pork-rinds",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Pork rinds",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite salty snack",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-rap-snacks",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Rap Snacks",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Favorite salty snack",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-chips-non-cola-snack-run",
+      "profile": "william",
+      "aisle": "Salty/cheese snacks",
+      "item": "Chips, non-cola snack run",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Any salty snack",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-small-t-rex-figure",
+      "profile": "william",
+      "aisle": "T-rex collection",
+      "item": "Small T-rex figure",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Dino collectible",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-t-rex-plush",
+      "profile": "william",
+      "aisle": "T-rex collection",
+      "item": "T-rex plush",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Comfort/collection",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-fancy-t-rex-collectible",
+      "profile": "william",
+      "aisle": "T-rex collection",
+      "item": "Fancy T-rex collectible",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "High-tier",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-t-rex-shirt-decor-item",
+      "profile": "william",
+      "aisle": "T-rex collection",
+      "item": "T-rex shirt/decor item",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Collection + style",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-breathable-shorts",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Breathable shorts",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Power-wheelchair-friendly",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-pun-shirt",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Pun shirt",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Style favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-nerdy-shirt",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Nerdy shirt",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Style favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-band-t-shirt",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Band T-shirt",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Style favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-d-d-shirt",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "D&D shirt",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Style favorite",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-pajama-pants",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Pajama pants",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Breathable/easy wear",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-hoodie",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Hoodie",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Comfort/style",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-tripp-pants",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Tripp pants",
+      "cost": {
+        "totalCopper": 3000,
+        "display": "3 platinum",
+        "platinum": 3,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "High-tier style reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-wheelchair-comfy-outfit-bundle",
+      "profile": "william",
+      "aisle": "Clothes",
+      "item": "Wheelchair-comfy outfit bundle",
+      "cost": {
+        "totalCopper": 4000,
+        "display": "4 platinum",
+        "platinum": 4,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Shorts/pants + shirt + hoodie",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-lip-jewelry",
+      "profile": "william",
+      "aisle": "Piercings/gauges",
+      "item": "Lip jewelry",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Body jewelry",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-eyebrow-jewelry",
+      "profile": "william",
+      "aisle": "Piercings/gauges",
+      "item": "Eyebrow jewelry",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Body jewelry",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-gauge-tunnel-plugs-set",
+      "profile": "william",
+      "aisle": "Piercings/gauges",
+      "item": "Gauge/tunnel/plugs set",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Body jewelry",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-black-steel-silicone-jewelry-upgrade",
+      "profile": "william",
+      "aisle": "Piercings/gauges",
+      "item": "Black steel/silicone jewelry upgrade",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Higher-tier",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-bedside-organizer",
+      "profile": "william",
+      "aisle": "Accessibility comforts",
+      "item": "Bedside organizer",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Keeps items within reach",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-wheelchair-cup-holder",
+      "profile": "william",
+      "aisle": "Accessibility comforts",
+      "item": "Wheelchair cup holder",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Practical comfort",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-wheelchair-bag-pouch",
+      "profile": "william",
+      "aisle": "Accessibility comforts",
+      "item": "Wheelchair bag/pouch",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Access support",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-bed-tray-lap-desk",
+      "profile": "william",
+      "aisle": "Accessibility comforts",
+      "item": "Bed tray/lap desk",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Bed-level work/play",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-heating-pad-cold-pack",
+      "profile": "william",
+      "aisle": "Accessibility comforts",
+      "item": "Heating pad / cold pack",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Pain comfort",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-support-pillow-positioning-aid",
+      "profile": "william",
+      "aisle": "Accessibility comforts",
+      "item": "Support pillow / positioning aid",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Pain/access support",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-everquest-2-game-funds",
+      "profile": "william",
+      "aisle": "Gaming",
+      "item": "EverQuest 2 game funds",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Main game",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-sims-2-related-item-modding-comfort-fund",
+      "profile": "william",
+      "aisle": "Gaming",
+      "item": "Sims 2 related item/modding comfort fund",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Main game",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-gaming-mouse-keyboard-contribution",
+      "profile": "william",
+      "aisle": "Gaming",
+      "item": "Gaming mouse/keyboard contribution",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Setup reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-tower-gaming-system-contribution-small",
+      "profile": "william",
+      "aisle": "Gaming",
+      "item": "Tower gaming system contribution, small",
+      "cost": {
+        "totalCopper": 5000,
+        "display": "5 platinum",
+        "platinum": 5,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Very high-tier savings reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-tower-gaming-system-contribution-major",
+      "profile": "william",
+      "aisle": "Gaming",
+      "item": "Tower gaming system contribution, major",
+      "cost": {
+        "totalCopper": 10000,
+        "display": "10 platinum",
+        "platinum": 10,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Long-term jackpot reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-foundry-vtt-purchase-contribution",
+      "profile": "william",
+      "aisle": "Virtual D&D",
+      "item": "Foundry VTT purchase contribution",
+      "cost": {
+        "totalCopper": 5000,
+        "display": "5 platinum",
+        "platinum": 5,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Major digital D&D need",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-foundry-premium-module-package",
+      "profile": "william",
+      "aisle": "Virtual D&D",
+      "item": "Foundry premium/module/package",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Digital D&D pack",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-arkenforge-package-asset-pack",
+      "profile": "william",
+      "aisle": "Virtual D&D",
+      "item": "Arkenforge package/asset pack",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Map/VTT tools",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-digital-map-token-asset-pack",
+      "profile": "william",
+      "aisle": "Virtual D&D",
+      "item": "Digital map/token asset pack",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Online D&D",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-dice-set",
+      "profile": "william",
+      "aisle": "In-person D&D material",
+      "item": "Dice set",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Even if mostly online",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-d-d-lore-handbook",
+      "profile": "william",
+      "aisle": "In-person D&D material",
+      "item": "D&D lore/handbook",
+      "cost": {
+        "totalCopper": 3000,
+        "display": "3 platinum",
+        "platinum": 3,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Big book reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-campaign-notebook-binder",
+      "profile": "william",
+      "aisle": "In-person D&D material",
+      "item": "Campaign notebook/binder",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Writing/worldbuilding",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-mini-terrain-display-piece",
+      "profile": "william",
+      "aisle": "In-person D&D material",
+      "item": "Mini/terrain/display piece",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "In-person material joy",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-nice-notebook-journal",
+      "profile": "william",
+      "aisle": "Writing",
+      "item": "Nice notebook/journal",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Saga/songs/poems",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-pens-highlighters-tabs",
+      "profile": "william",
+      "aisle": "Writing",
+      "item": "Pens/highlighters/tabs",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Writing tools",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-worldbuilding-binder-supplies",
+      "profile": "william",
+      "aisle": "Writing",
+      "item": "Worldbuilding binder supplies",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "D&D/saga/MMORPG",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-writing-software-app-contribution",
+      "profile": "william",
+      "aisle": "Writing",
+      "item": "Writing software/app contribution",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Digital writing support",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_music-brev-ai-music-tool-session-reward",
+      "profile": "william",
+      "aisle": "Music",
+      "item": "Brev.ai/music tool session/reward",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Songwriting support",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_music-music-app-subscription-contribution",
+      "profile": "william",
+      "aisle": "Music",
+      "item": "Music app/subscription contribution",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "If useful",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_cats-cat-treats",
+      "profile": "william",
+      "aisle": "Cats",
+      "item": "Cat treats",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Spoil Onyx/Harvey/Callie",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_cats-cat-toy",
+      "profile": "william",
+      "aisle": "Cats",
+      "item": "Cat toy",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Cat joy",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_cats-cat-brush-grooming-item",
+      "profile": "william",
+      "aisle": "Cats",
+      "item": "Cat brush/grooming item",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Practical care",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_comfort-t-rex-cat-comfort-plush",
+      "profile": "william",
+      "aisle": "Comfort",
+      "item": "T-rex/cat comfort plush",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Comfort object",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_comfort-candle-or-cozy-room-item",
+      "profile": "william",
+      "aisle": "Comfort",
+      "item": "Candle or cozy room item",
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Comfort/ambience",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_comfort-weighted-sensory-comfort-item",
+      "profile": "william",
+      "aisle": "Comfort",
+      "item": "Weighted/sensory comfort item",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Autism/decompression support",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_food-delivery-uber-eats-order-contribution-small",
+      "profile": "william",
+      "aisle": "Food delivery",
+      "item": "Uber Eats/order contribution, small",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Food reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_food-delivery-full-food-delivery-order",
+      "profile": "william",
+      "aisle": "Food delivery",
+      "item": "Full food delivery order",
+      "cost": {
+        "totalCopper": 3000,
+        "display": "3 platinum",
+        "platinum": 3,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "High-tier",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_homecooked-food-favorite-low-spoon-meal-request",
+      "profile": "william",
+      "aisle": "Homecooked food",
+      "item": "Favorite low-spoon meal request",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "If Squishy has capacity",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_homecooked-food-steak-starch-veggie-meal",
+      "profile": "william",
+      "aisle": "Homecooked food",
+      "item": "Steak/starch/veggie meal",
+      "cost": {
+        "totalCopper": 3500,
+        "display": "3 platinum, 5 gold",
+        "platinum": 3,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Higher cost/labor",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-edible-dispensary-contribution-small",
+      "profile": "william",
+      "aisle": "Adult MA cannabis",
+      "item": "Edible dispensary contribution, small",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Edibles only for Dino due asthma",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-edible-dispensary-contribution-larger",
+      "profile": "william",
+      "aisle": "Adult MA cannabis",
+      "item": "Edible dispensary contribution, larger",
+      "cost": {
+        "totalCopper": 4000,
+        "display": "4 platinum",
+        "platinum": 4,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Manual review/adult-only",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-topical-tincture-contribution",
+      "profile": "william",
+      "aisle": "Adult MA cannabis",
+      "item": "Topical/tincture contribution",
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Non-smoking option",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-admin-check-dispensary-edible-menu",
+      "profile": "william",
+      "aisle": "Adult MA cannabis admin",
+      "item": "Check dispensary edible menu",
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "notes": "Planning task/reward",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-admin-plan-accessible-dispensary-pickup-delivery",
+      "profile": "william",
+      "aisle": "Adult MA cannabis admin",
+      "item": "Plan accessible dispensary pickup/delivery",
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "Access planning",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult_21_plus_nicotine_vape_fluid",
+      "profile": "william",
+      "aisle": "Adult 21+ nicotine",
+      "item": "Nicotine vape fluid",
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "notes": "21+ nicotine reward item for William; legal/local rules and age verification apply. Not a cannabis item.",
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true,
+        "nicotine": true,
+        "vapeFluid": true
+      }
+    }
+  ],
+  "reward_provider": "Squishy",
+  "currency": {
+    "baseUnit": "copper",
+    "conversion": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "denominations": {
+      "copper": 1,
+      "silver": 10,
+      "gold": 100,
+      "platinum": 1000
+    },
+    "displayRule": "Store and calculate rewards/costs as totalCopper, then display normalized platinum, gold, silver, copper from highest to lowest and hide zero denominations.",
+    "formatExamples": {
+      "50": "5 silver",
+      "120": "1 gold, 2 silver",
+      "250": "2 gold, 5 silver",
+      "900": "9 gold",
+      "1500": "1 platinum, 5 gold",
+      "3000": "3 platinum"
+    }
+  },
+  "profile": "william",
+  "pageOwner": "William",
+  "storeName": "Dino Store",
+  "rewardProvidedBy": "Squishy",
+  "schemaVersion": "2.0.0",
+  "currencySystem": {
+    "copperPerSilver": 10,
+    "silverPerGold": 10,
+    "goldPerPlatinum": 10
+  },
+  "aisles": [
+    {
+      "id": "all",
+      "label": "Show All"
+    },
+    {
+      "id": "beverages",
+      "label": "Beverages"
+    },
+    {
+      "id": "snacks",
+      "label": "Snacks"
+    },
+    {
+      "id": "food",
+      "label": "Food"
+    },
+    {
+      "id": "clothes",
+      "label": "Clothes"
+    },
+    {
+      "id": "comfort",
+      "label": "Comfort Items"
+    },
+    {
+      "id": "hobby",
+      "label": "Hobby Items"
+    },
+    {
+      "id": "work-help",
+      "label": "Work-Help Items"
+    },
+    {
+      "id": "gift-cards",
+      "label": "Gift Cards"
+    },
+    {
+      "id": "in-store",
+      "label": "In-Store Purchases"
+    },
+    {
+      "id": "online",
+      "label": "Online Purchases"
+    },
+    {
+      "id": "outings",
+      "label": "Outings"
+    },
+    {
+      "id": "provided-by",
+      "label": "Reward Provided By"
+    },
+    {
+      "id": "adult",
+      "label": "21+ Items"
+    },
+    {
+      "id": "vacation",
+      "label": "Vacation Items"
+    },
+    {
+      "id": "caffeine-connoisseur",
+      "label": "Caffeine connoisseur"
+    },
+    {
+      "id": "drinks-no-cola",
+      "label": "Drinks, no cola"
+    },
+    {
+      "id": "candy",
+      "label": "Candy"
+    },
+    {
+      "id": "salty-cheese-snacks",
+      "label": "Salty/cheese snacks"
+    },
+    {
+      "id": "t-rex-collection",
+      "label": "T-rex collection"
+    },
+    {
+      "id": "piercings-gauges",
+      "label": "Piercings/gauges"
+    },
+    {
+      "id": "accessibility-comforts",
+      "label": "Accessibility comforts"
+    },
+    {
+      "id": "gaming",
+      "label": "Gaming"
+    },
+    {
+      "id": "virtual-d-d",
+      "label": "Virtual D&D"
+    },
+    {
+      "id": "in-person-d-d-material",
+      "label": "In-person D&D material"
+    },
+    {
+      "id": "writing",
+      "label": "Writing"
+    },
+    {
+      "id": "music",
+      "label": "Music"
+    },
+    {
+      "id": "cats",
+      "label": "Cats"
+    },
+    {
+      "id": "food-delivery",
+      "label": "Food delivery"
+    },
+    {
+      "id": "homecooked-food",
+      "label": "Homecooked food"
+    },
+    {
+      "id": "adult-ma-cannabis",
+      "label": "Adult MA cannabis"
+    },
+    {
+      "id": "adult-ma-cannabis-admin",
+      "label": "Adult MA cannabis admin"
+    },
+    {
+      "id": "adult-21-nicotine",
+      "label": "Adult 21+ nicotine"
+    }
+  ],
+  "items": [
+    {
+      "id": "bev-water-flavor",
+      "aisle": "beverages",
+      "name": "Flavored Water",
+      "emoji": "💧",
+      "description": "A flavored water, sparkling water, or hydration drink.",
+      "priceCopper": 300,
+      "tags": [
+        "drink",
+        "hydration"
+      ]
+    },
+    {
+      "id": "bev-juice-box",
+      "aisle": "beverages",
+      "name": "Juice or Smoothie",
+      "emoji": "🧃",
+      "description": "A juice, smoothie, or fruity drink treat.",
+      "priceCopper": 600,
+      "tags": [
+        "drink",
+        "treat"
+      ]
+    },
+    {
+      "id": "bev-fancy-drink",
+      "aisle": "beverages",
+      "name": "Fancy Drink",
+      "emoji": "🥤",
+      "description": "A specialty drink, cafe drink, boba, or sparkling treat.",
+      "priceCopper": 900,
+      "tags": [
+        "drink",
+        "treat"
+      ]
+    },
+    {
+      "id": "snack-salty",
+      "aisle": "snacks",
+      "name": "Salty Crunchy Snack",
+      "emoji": "🥨",
+      "description": "Chips, pretzels, crackers, popcorn, or another crunchy snack.",
+      "priceCopper": 500,
+      "tags": [
+        "snack",
+        "salty"
+      ]
+    },
+    {
+      "id": "snack-sweet",
+      "aisle": "snacks",
+      "name": "Sweet Snack",
+      "emoji": "🍬",
+      "description": "Candy, gummies, chocolate, cookies, or a small sweet treat.",
+      "priceCopper": 500,
+      "tags": [
+        "snack",
+        "sweet"
+      ]
+    },
+    {
+      "id": "snack-bakery",
+      "aisle": "snacks",
+      "name": "Bakery Treat",
+      "emoji": "🧁",
+      "description": "A pastry, cupcake, muffin, cookie, or other bakery-style treat.",
+      "priceCopper": 900,
+      "tags": [
+        "snack",
+        "bakery"
+      ]
+    },
+    {
+      "id": "food-small-delivery",
+      "aisle": "food",
+      "name": "Small Food Delivery",
+      "emoji": "🍔",
+      "description": "A smaller takeout or delivery contribution.",
+      "priceCopper": 2500,
+      "tags": [
+        "meal",
+        "delivery"
+      ]
+    },
+    {
+      "id": "food-favorite-meal",
+      "aisle": "food",
+      "name": "Favorite Meal",
+      "emoji": "🍱",
+      "description": "A favorite meal reward, home, pickup, or delivery.",
+      "priceCopper": 4000,
+      "tags": [
+        "meal"
+      ]
+    },
+    {
+      "id": "food-big-comfort",
+      "aisle": "food",
+      "name": "Big Comfort Food Reward",
+      "emoji": "🍜",
+      "description": "A bigger comfort-food reward for a hard day or milestone.",
+      "priceCopper": 7000,
+      "tags": [
+        "meal",
+        "comfort"
+      ]
+    },
+    {
+      "id": "clothes-shirt",
+      "aisle": "clothes",
+      "name": "Shirt",
+      "emoji": "👕",
+      "description": "A shirt, top, band shirt, nerd shirt, cottage shirt, or comfort top.",
+      "priceCopper": 3500,
+      "tags": [
+        "clothes",
+        "single item"
+      ]
+    },
+    {
+      "id": "clothes-pants",
+      "aisle": "clothes",
+      "name": "Pants",
+      "emoji": "👖",
+      "description": "A pair of pants, pajama pants, shorts, or easy-wear bottoms.",
+      "priceCopper": 4500,
+      "tags": [
+        "clothes",
+        "single item"
+      ]
+    },
+    {
+      "id": "clothes-hoodie",
+      "aisle": "clothes",
+      "name": "Hoodie",
+      "emoji": "🧥",
+      "description": "A hoodie, cardigan, jacket, or cozy layer.",
+      "priceCopper": 6500,
+      "tags": [
+        "clothes",
+        "cozy"
+      ]
+    },
+    {
+      "id": "comfort-blanket",
+      "aisle": "comfort",
+      "name": "Blanket",
+      "emoji": "🛌",
+      "description": "A blanket, throw, weighted blanket contribution, or cozy bed item.",
+      "priceCopper": 4500,
+      "tags": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "comfort-plush",
+      "aisle": "comfort",
+      "name": "Plush Friend",
+      "emoji": "🧸",
+      "description": "A plush, stuffed animal, pillow, or comfort buddy.",
+      "priceCopper": 3500,
+      "tags": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "comfort-duck",
+      "aisle": "comfort",
+      "name": "Duck",
+      "emoji": "🦆",
+      "description": "A duck-themed comfort item, plush, tiny collectible, or silly friend.",
+      "priceCopper": 1800,
+      "tags": [
+        "comfort",
+        "duck",
+        "single item"
+      ]
+    },
+    {
+      "id": "hobby-book",
+      "aisle": "hobby",
+      "name": "Book",
+      "emoji": "📚",
+      "description": "A book, workbook, zine, manga, novel, or hobby reference.",
+      "priceCopper": 3500,
+      "tags": [
+        "hobby",
+        "book"
+      ]
+    },
+    {
+      "id": "hobby-art-supply",
+      "aisle": "hobby",
+      "name": "Art or Craft Supply",
+      "emoji": "🎨",
+      "description": "A single craft supply, paint, pen, sticker pack, yarn, or small kit.",
+      "priceCopper": 2500,
+      "tags": [
+        "hobby",
+        "creative"
+      ]
+    },
+    {
+      "id": "hobby-game-addon",
+      "aisle": "hobby",
+      "name": "Game Add-On",
+      "emoji": "🎮",
+      "description": "A game add-on, DLC, app reward, or in-game comfort purchase.",
+      "priceCopper": 5000,
+      "tags": [
+        "hobby",
+        "gaming"
+      ]
+    },
+    {
+      "id": "work-admin-help",
+      "aisle": "work-help",
+      "name": "Admin Help Session",
+      "emoji": "📋",
+      "description": "Help with a form, email, phone call, schedule, or planning step.",
+      "priceCopper": 4000,
+      "tags": [
+        "help",
+        "admin"
+      ]
+    },
+    {
+      "id": "work-setup-help",
+      "aisle": "work-help",
+      "name": "Setup Help",
+      "emoji": "🛠️",
+      "description": "Help setting up a device, app, comfort station, workspace, or supplies.",
+      "priceCopper": 3000,
+      "tags": [
+        "help",
+        "setup"
+      ]
+    },
+    {
+      "id": "work-big-help",
+      "aisle": "work-help",
+      "name": "Big Work-Help Session",
+      "emoji": "🧰",
+      "description": "A longer help session for a harder task.",
+      "priceCopper": 7000,
+      "tags": [
+        "help",
+        "bigger task"
+      ]
+    },
+    {
+      "id": "gift-card-small",
+      "aisle": "gift-cards",
+      "name": "Small Gift Card",
+      "emoji": "🎁",
+      "description": "A small digital or physical gift card.",
+      "priceCopper": 5000,
+      "tags": [
+        "gift card"
+      ]
+    },
+    {
+      "id": "gift-card-medium",
+      "aisle": "gift-cards",
+      "name": "Medium Gift Card",
+      "emoji": "💳",
+      "description": "A medium gift card reward.",
+      "priceCopper": 10000,
+      "tags": [
+        "gift card"
+      ]
+    },
+    {
+      "id": "gift-card-large",
+      "aisle": "gift-cards",
+      "name": "Large Gift Card",
+      "emoji": "🏆",
+      "description": "A high-tier gift card reward.",
+      "priceCopper": 20000,
+      "tags": [
+        "gift card"
+      ]
+    },
+    {
+      "id": "instore-small",
+      "aisle": "in-store",
+      "name": "Small In-Store Purchase",
+      "emoji": "🛒",
+      "description": "A single small item from a local store.",
+      "priceCopper": 2500,
+      "tags": [
+        "in-store"
+      ]
+    },
+    {
+      "id": "instore-medium",
+      "aisle": "in-store",
+      "name": "Medium In-Store Purchase",
+      "emoji": "🏬",
+      "description": "A moderate in-store reward.",
+      "priceCopper": 7000,
+      "tags": [
+        "in-store"
+      ]
+    },
+    {
+      "id": "instore-big",
+      "aisle": "in-store",
+      "name": "Big In-Store Purchase",
+      "emoji": "🛍️",
+      "description": "A larger in-store reward.",
+      "priceCopper": 15000,
+      "tags": [
+        "in-store"
+      ]
+    },
+    {
+      "id": "online-small",
+      "aisle": "online",
+      "name": "Small Online Purchase",
+      "emoji": "📦",
+      "description": "A small online item.",
+      "priceCopper": 3000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "id": "online-etsy",
+      "aisle": "online",
+      "name": "Marketplace Find",
+      "emoji": "🛍️",
+      "description": "An Etsy, handmade, collectible, or marketplace find.",
+      "priceCopper": 6000,
+      "tags": [
+        "online",
+        "marketplace"
+      ]
+    },
+    {
+      "id": "online-big",
+      "aisle": "online",
+      "name": "Big Online Purchase",
+      "emoji": "🚚",
+      "description": "A higher-tier online purchase reward.",
+      "priceCopper": 15000,
+      "tags": [
+        "online"
+      ]
+    },
+    {
+      "id": "outing-small",
+      "aisle": "outings",
+      "name": "Small Outing",
+      "emoji": "🌤️",
+      "description": "A short, low-pressure outing, ride, or fresh-air plan.",
+      "priceCopper": 5000,
+      "tags": [
+        "outing"
+      ]
+    },
+    {
+      "id": "outing-food",
+      "aisle": "outings",
+      "name": "Food Outing",
+      "emoji": "🍽️",
+      "description": "A restaurant, pickup, cafe, or treat outing.",
+      "priceCopper": 9000,
+      "tags": [
+        "outing",
+        "food"
+      ]
+    },
+    {
+      "id": "outing-special",
+      "aisle": "outings",
+      "name": "Special Outing",
+      "emoji": "🎟️",
+      "description": "A bigger planned outing, date, event, or adventure.",
+      "priceCopper": 18000,
+      "tags": [
+        "outing",
+        "special"
+      ]
+    },
+    {
+      "id": "adult-placeholder-small",
+      "aisle": "adult",
+      "name": "21+ Legal Adult Placeholder",
+      "emoji": "🔞",
+      "description": "Private adult-only reward placeholder. Keep details legal, local, and off the public page.",
+      "priceCopper": 7000,
+      "tags": [
+        "21+",
+        "placeholder",
+        "legal only"
+      ]
+    },
+    {
+      "id": "adult-placeholder-errand",
+      "aisle": "adult",
+      "name": "21+ Legal Errand Placeholder",
+      "emoji": "✅",
+      "description": "Adult-only errand placeholder with legal/ID reminder. No restricted purchase details are stored.",
+      "priceCopper": 12000,
+      "tags": [
+        "21+",
+        "placeholder",
+        "legal only"
+      ]
+    },
+    {
+      "id": "vacation-snack",
+      "aisle": "vacation",
+      "name": "Vacation Snack Budget",
+      "emoji": "🧳",
+      "description": "Trip snacks, drinks, or travel comfort items.",
+      "priceCopper": 5000,
+      "tags": [
+        "vacation"
+      ]
+    },
+    {
+      "id": "vacation-activity",
+      "aisle": "vacation",
+      "name": "Vacation Activity",
+      "emoji": "🏖️",
+      "description": "A small activity, attraction, museum, beach, or trip treat.",
+      "priceCopper": 15000,
+      "tags": [
+        "vacation",
+        "activity"
+      ]
+    },
+    {
+      "id": "vacation-big",
+      "aisle": "vacation",
+      "name": "Big Vacation Reward",
+      "emoji": "🗺️",
+      "description": "A larger travel, lodging, or trip contribution reward.",
+      "priceCopper": 30000,
+      "tags": [
+        "vacation",
+        "big"
+      ]
+    },
+    {
+      "id": "hobby-dnd-book",
+      "aisle": "hobby",
+      "name": "DnD Book",
+      "emoji": "🐉",
+      "description": "A D&D book, dice supplement, campaign helper, or TTRPG reference.",
+      "priceCopper": 8000,
+      "tags": [
+        "hobby",
+        "DnD",
+        "single item"
+      ]
+    },
+    {
+      "id": "hobby-dice",
+      "aisle": "hobby",
+      "name": "Dice Set",
+      "emoji": "🎲",
+      "description": "A dice set, dice tray contribution, or tabletop accessory.",
+      "priceCopper": 2500,
+      "tags": [
+        "hobby",
+        "dice"
+      ]
+    },
+    {
+      "id": "hobby-trex",
+      "aisle": "hobby",
+      "name": "T-Rex Collectible",
+      "emoji": "🦖",
+      "description": "A T-rex figure, print, sticker, plush, or themed collectible.",
+      "priceCopper": 3500,
+      "tags": [
+        "hobby",
+        "T-Rex"
+      ]
+    },
+    {
+      "id": "clothes-nerd-shirt",
+      "aisle": "clothes",
+      "name": "Nerdy Shirt",
+      "emoji": "👕",
+      "description": "A nerdy, pun, band, dinosaur, dragon, or fantasy shirt.",
+      "priceCopper": 3500,
+      "tags": [
+        "clothes",
+        "cyan identity"
+      ]
+    },
+    {
+      "id": "clothes-mall-goth",
+      "aisle": "clothes",
+      "name": "Mall-Goth Clothing Piece",
+      "emoji": "🖤",
+      "description": "A Tripp-style, goth, alt, neon, or steampunk clothing item.",
+      "priceCopper": 7500,
+      "tags": [
+        "clothes",
+        "mall goth"
+      ]
+    },
+    {
+      "id": "provided-squishy-small",
+      "aisle": "provided-by",
+      "name": "Squishy's Choice: Small Reward",
+      "emoji": "💌",
+      "description": "Squishy chooses a small surprise reward for Dino.",
+      "priceCopper": 2500,
+      "tags": [
+        "provider choice"
+      ],
+      "providerNote": "Squishy"
+    },
+    {
+      "id": "provided-squishy-medium",
+      "aisle": "provided-by",
+      "name": "Squishy's Choice: Medium Reward",
+      "emoji": "🎁",
+      "description": "Squishy chooses a medium surprise reward for Dino.",
+      "priceCopper": 6000,
+      "tags": [
+        "provider choice"
+      ],
+      "providerNote": "Squishy"
+    },
+    {
+      "id": "provided-squishy-big",
+      "aisle": "provided-by",
+      "name": "Squishy's Choice: Big Reward",
+      "emoji": "🌟",
+      "description": "Squishy chooses a big surprise reward for Dino.",
+      "priceCopper": 12000,
+      "tags": [
+        "provider choice"
+      ],
+      "providerNote": "Squishy"
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-regular-red-bull-20-oz-preferred",
+      "profile": "william",
+      "aisle": "caffeine-connoisseur",
+      "aisleLabel": "Caffeine connoisseur",
+      "name": "Regular Red Bull, 20 oz preferred",
+      "item": "Regular Red Bull, 20 oz preferred",
+      "emoji": "🎁",
+      "description": "Favorite energy drink",
+      "notes": "Favorite energy drink",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Caffeine connoisseur"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-green-apple-c4",
+      "profile": "william",
+      "aisle": "caffeine-connoisseur",
+      "aisleLabel": "Caffeine connoisseur",
+      "name": "Green apple C4",
+      "item": "Green apple C4",
+      "emoji": "🎁",
+      "description": "Favorite",
+      "notes": "Favorite",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Caffeine connoisseur"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-watermelon-ghost",
+      "profile": "william",
+      "aisle": "caffeine-connoisseur",
+      "aisleLabel": "Caffeine connoisseur",
+      "name": "Watermelon Ghost",
+      "item": "Watermelon Ghost",
+      "emoji": "🎁",
+      "description": "Favorite",
+      "notes": "Favorite",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Caffeine connoisseur"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_caffeine-connoisseur-energy-drink-multipack-contribution",
+      "profile": "william",
+      "aisle": "caffeine-connoisseur",
+      "aisleLabel": "Caffeine connoisseur",
+      "name": "Energy drink multipack contribution",
+      "item": "Energy drink multipack contribution",
+      "emoji": "🎁",
+      "description": "Bigger reward",
+      "notes": "Bigger reward",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Caffeine connoisseur"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-polar-orange-dry",
+      "profile": "william",
+      "aisle": "drinks-no-cola",
+      "aisleLabel": "Drinks, no cola",
+      "name": "Polar Orange Dry",
+      "item": "Polar Orange Dry",
+      "emoji": "🎁",
+      "description": "Local favorite",
+      "notes": "Local favorite",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Drinks, no cola"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-pulp-heavy-orange-juice",
+      "profile": "william",
+      "aisle": "drinks-no-cola",
+      "aisleLabel": "Drinks, no cola",
+      "name": "Pulp-heavy orange juice",
+      "item": "Pulp-heavy orange juice",
+      "emoji": "🎁",
+      "description": "Must be pulpy",
+      "notes": "Must be pulpy",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Drinks, no cola"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-chocolate-milk",
+      "profile": "william",
+      "aisle": "drinks-no-cola",
+      "aisleLabel": "Drinks, no cola",
+      "name": "Chocolate milk",
+      "item": "Chocolate milk",
+      "emoji": "🎁",
+      "description": "Sweet drink favorite",
+      "notes": "Sweet drink favorite",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Drinks, no cola"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_drinks-no-cola-juice-bottle-non-cola",
+      "profile": "william",
+      "aisle": "drinks-no-cola",
+      "aisleLabel": "Drinks, no cola",
+      "name": "Juice bottle, non-cola",
+      "item": "Juice bottle, non-cola",
+      "emoji": "🎁",
+      "description": "Cran-apple, cran-grape, etc",
+      "notes": "Cran-apple, cran-grape, etc",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Drinks, no cola"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_candy-sour-trolli-worms",
+      "profile": "william",
+      "aisle": "candy",
+      "aisleLabel": "Candy",
+      "name": "Sour Trolli worms",
+      "item": "Sour Trolli worms",
+      "emoji": "🎁",
+      "description": "Favorite candy",
+      "notes": "Favorite candy",
+      "priceCopper": 150,
+      "cost": {
+        "totalCopper": 150,
+        "display": "1 gold, 5 silver",
+        "platinum": 0,
+        "gold": 1,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Candy"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_candy-starburst",
+      "profile": "william",
+      "aisle": "candy",
+      "aisleLabel": "Candy",
+      "name": "Starburst",
+      "item": "Starburst",
+      "emoji": "🎁",
+      "description": "Favorite candy",
+      "notes": "Favorite candy",
+      "priceCopper": 150,
+      "cost": {
+        "totalCopper": 150,
+        "display": "1 gold, 5 silver",
+        "platinum": 0,
+        "gold": 1,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Candy"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-blue-cheese-wedges",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Blue cheese wedges",
+      "item": "Blue cheese wedges",
+      "emoji": "🎁",
+      "description": "Favorite snack",
+      "notes": "Favorite snack",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-strawberries",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Strawberries",
+      "item": "Strawberries",
+      "emoji": "🎁",
+      "description": "Pair with blue cheese",
+      "notes": "Pair with blue cheese",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-blue-cheese-strawberries-snack-plate",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Blue cheese + strawberries snack plate",
+      "item": "Blue cheese + strawberries snack plate",
+      "emoji": "🎁",
+      "description": "Top-tier favorite snack combo",
+      "notes": "Top-tier favorite snack combo",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-pork-cracklins",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Pork cracklins",
+      "item": "Pork cracklins",
+      "emoji": "🎁",
+      "description": "Favorite salty snack",
+      "notes": "Favorite salty snack",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-pork-rinds",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Pork rinds",
+      "item": "Pork rinds",
+      "emoji": "🎁",
+      "description": "Favorite salty snack",
+      "notes": "Favorite salty snack",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-rap-snacks",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Rap Snacks",
+      "item": "Rap Snacks",
+      "emoji": "🎁",
+      "description": "Favorite salty snack",
+      "notes": "Favorite salty snack",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_salty-cheese-snacks-chips-non-cola-snack-run",
+      "profile": "william",
+      "aisle": "salty-cheese-snacks",
+      "aisleLabel": "Salty/cheese snacks",
+      "name": "Chips, non-cola snack run",
+      "item": "Chips, non-cola snack run",
+      "emoji": "🎁",
+      "description": "Any salty snack",
+      "notes": "Any salty snack",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Salty/cheese snacks"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-small-t-rex-figure",
+      "profile": "william",
+      "aisle": "t-rex-collection",
+      "aisleLabel": "T-rex collection",
+      "name": "Small T-rex figure",
+      "item": "Small T-rex figure",
+      "emoji": "🎁",
+      "description": "Dino collectible",
+      "notes": "Dino collectible",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "T-rex collection"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-t-rex-plush",
+      "profile": "william",
+      "aisle": "t-rex-collection",
+      "aisleLabel": "T-rex collection",
+      "name": "T-rex plush",
+      "item": "T-rex plush",
+      "emoji": "🎁",
+      "description": "Comfort/collection",
+      "notes": "Comfort/collection",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "T-rex collection"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-fancy-t-rex-collectible",
+      "profile": "william",
+      "aisle": "t-rex-collection",
+      "aisleLabel": "T-rex collection",
+      "name": "Fancy T-rex collectible",
+      "item": "Fancy T-rex collectible",
+      "emoji": "🎁",
+      "description": "High-tier",
+      "notes": "High-tier",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "T-rex collection"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_t-rex-collection-t-rex-shirt-decor-item",
+      "profile": "william",
+      "aisle": "t-rex-collection",
+      "aisleLabel": "T-rex collection",
+      "name": "T-rex shirt/decor item",
+      "item": "T-rex shirt/decor item",
+      "emoji": "🎁",
+      "description": "Collection + style",
+      "notes": "Collection + style",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "T-rex collection"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-breathable-shorts",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Breathable shorts",
+      "item": "Breathable shorts",
+      "emoji": "🎁",
+      "description": "Power-wheelchair-friendly",
+      "notes": "Power-wheelchair-friendly",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-pun-shirt",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Pun shirt",
+      "item": "Pun shirt",
+      "emoji": "🎁",
+      "description": "Style favorite",
+      "notes": "Style favorite",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-nerdy-shirt",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Nerdy shirt",
+      "item": "Nerdy shirt",
+      "emoji": "🎁",
+      "description": "Style favorite",
+      "notes": "Style favorite",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-band-t-shirt",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Band T-shirt",
+      "item": "Band T-shirt",
+      "emoji": "🎁",
+      "description": "Style favorite",
+      "notes": "Style favorite",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-d-d-shirt",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "D&D shirt",
+      "item": "D&D shirt",
+      "emoji": "🎁",
+      "description": "Style favorite",
+      "notes": "Style favorite",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-pajama-pants",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Pajama pants",
+      "item": "Pajama pants",
+      "emoji": "🎁",
+      "description": "Breathable/easy wear",
+      "notes": "Breathable/easy wear",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-hoodie",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Hoodie",
+      "item": "Hoodie",
+      "emoji": "🎁",
+      "description": "Comfort/style",
+      "notes": "Comfort/style",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-tripp-pants",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Tripp pants",
+      "item": "Tripp pants",
+      "emoji": "🎁",
+      "description": "High-tier style reward",
+      "notes": "High-tier style reward",
+      "priceCopper": 3000,
+      "cost": {
+        "totalCopper": 3000,
+        "display": "3 platinum",
+        "platinum": 3,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_clothes-wheelchair-comfy-outfit-bundle",
+      "profile": "william",
+      "aisle": "clothes",
+      "aisleLabel": "Clothes",
+      "name": "Wheelchair-comfy outfit bundle",
+      "item": "Wheelchair-comfy outfit bundle",
+      "emoji": "🎁",
+      "description": "Shorts/pants + shirt + hoodie",
+      "notes": "Shorts/pants + shirt + hoodie",
+      "priceCopper": 4000,
+      "cost": {
+        "totalCopper": 4000,
+        "display": "4 platinum",
+        "platinum": 4,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Clothes"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-lip-jewelry",
+      "profile": "william",
+      "aisle": "piercings-gauges",
+      "aisleLabel": "Piercings/gauges",
+      "name": "Lip jewelry",
+      "item": "Lip jewelry",
+      "emoji": "🎁",
+      "description": "Body jewelry",
+      "notes": "Body jewelry",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Piercings/gauges"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-eyebrow-jewelry",
+      "profile": "william",
+      "aisle": "piercings-gauges",
+      "aisleLabel": "Piercings/gauges",
+      "name": "Eyebrow jewelry",
+      "item": "Eyebrow jewelry",
+      "emoji": "🎁",
+      "description": "Body jewelry",
+      "notes": "Body jewelry",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Piercings/gauges"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-gauge-tunnel-plugs-set",
+      "profile": "william",
+      "aisle": "piercings-gauges",
+      "aisleLabel": "Piercings/gauges",
+      "name": "Gauge/tunnel/plugs set",
+      "item": "Gauge/tunnel/plugs set",
+      "emoji": "🎁",
+      "description": "Body jewelry",
+      "notes": "Body jewelry",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Piercings/gauges"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_piercings-gauges-black-steel-silicone-jewelry-upgrade",
+      "profile": "william",
+      "aisle": "piercings-gauges",
+      "aisleLabel": "Piercings/gauges",
+      "name": "Black steel/silicone jewelry upgrade",
+      "item": "Black steel/silicone jewelry upgrade",
+      "emoji": "🎁",
+      "description": "Higher-tier",
+      "notes": "Higher-tier",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Piercings/gauges"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-bedside-organizer",
+      "profile": "william",
+      "aisle": "accessibility-comforts",
+      "aisleLabel": "Accessibility comforts",
+      "name": "Bedside organizer",
+      "item": "Bedside organizer",
+      "emoji": "🎁",
+      "description": "Keeps items within reach",
+      "notes": "Keeps items within reach",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Accessibility comforts"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-wheelchair-cup-holder",
+      "profile": "william",
+      "aisle": "accessibility-comforts",
+      "aisleLabel": "Accessibility comforts",
+      "name": "Wheelchair cup holder",
+      "item": "Wheelchair cup holder",
+      "emoji": "🎁",
+      "description": "Practical comfort",
+      "notes": "Practical comfort",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Accessibility comforts"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-wheelchair-bag-pouch",
+      "profile": "william",
+      "aisle": "accessibility-comforts",
+      "aisleLabel": "Accessibility comforts",
+      "name": "Wheelchair bag/pouch",
+      "item": "Wheelchair bag/pouch",
+      "emoji": "🎁",
+      "description": "Access support",
+      "notes": "Access support",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Accessibility comforts"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-bed-tray-lap-desk",
+      "profile": "william",
+      "aisle": "accessibility-comforts",
+      "aisleLabel": "Accessibility comforts",
+      "name": "Bed tray/lap desk",
+      "item": "Bed tray/lap desk",
+      "emoji": "🎁",
+      "description": "Bed-level work/play",
+      "notes": "Bed-level work/play",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Accessibility comforts"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-heating-pad-cold-pack",
+      "profile": "william",
+      "aisle": "accessibility-comforts",
+      "aisleLabel": "Accessibility comforts",
+      "name": "Heating pad / cold pack",
+      "item": "Heating pad / cold pack",
+      "emoji": "🎁",
+      "description": "Pain comfort",
+      "notes": "Pain comfort",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Accessibility comforts"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_accessibility-comforts-support-pillow-positioning-aid",
+      "profile": "william",
+      "aisle": "accessibility-comforts",
+      "aisleLabel": "Accessibility comforts",
+      "name": "Support pillow / positioning aid",
+      "item": "Support pillow / positioning aid",
+      "emoji": "🎁",
+      "description": "Pain/access support",
+      "notes": "Pain/access support",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Accessibility comforts"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-everquest-2-game-funds",
+      "profile": "william",
+      "aisle": "gaming",
+      "aisleLabel": "Gaming",
+      "name": "EverQuest 2 game funds",
+      "item": "EverQuest 2 game funds",
+      "emoji": "🎁",
+      "description": "Main game",
+      "notes": "Main game",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Gaming"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-sims-2-related-item-modding-comfort-fund",
+      "profile": "william",
+      "aisle": "gaming",
+      "aisleLabel": "Gaming",
+      "name": "Sims 2 related item/modding comfort fund",
+      "item": "Sims 2 related item/modding comfort fund",
+      "emoji": "🎁",
+      "description": "Main game",
+      "notes": "Main game",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Gaming"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-gaming-mouse-keyboard-contribution",
+      "profile": "william",
+      "aisle": "gaming",
+      "aisleLabel": "Gaming",
+      "name": "Gaming mouse/keyboard contribution",
+      "item": "Gaming mouse/keyboard contribution",
+      "emoji": "🎁",
+      "description": "Setup reward",
+      "notes": "Setup reward",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Gaming"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-tower-gaming-system-contribution-small",
+      "profile": "william",
+      "aisle": "gaming",
+      "aisleLabel": "Gaming",
+      "name": "Tower gaming system contribution, small",
+      "item": "Tower gaming system contribution, small",
+      "emoji": "🎁",
+      "description": "Very high-tier savings reward",
+      "notes": "Very high-tier savings reward",
+      "priceCopper": 5000,
+      "cost": {
+        "totalCopper": 5000,
+        "display": "5 platinum",
+        "platinum": 5,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Gaming"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_gaming-tower-gaming-system-contribution-major",
+      "profile": "william",
+      "aisle": "gaming",
+      "aisleLabel": "Gaming",
+      "name": "Tower gaming system contribution, major",
+      "item": "Tower gaming system contribution, major",
+      "emoji": "🎁",
+      "description": "Long-term jackpot reward",
+      "notes": "Long-term jackpot reward",
+      "priceCopper": 10000,
+      "cost": {
+        "totalCopper": 10000,
+        "display": "10 platinum",
+        "platinum": 10,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Gaming"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-foundry-vtt-purchase-contribution",
+      "profile": "william",
+      "aisle": "virtual-d-d",
+      "aisleLabel": "Virtual D&D",
+      "name": "Foundry VTT purchase contribution",
+      "item": "Foundry VTT purchase contribution",
+      "emoji": "🎁",
+      "description": "Major digital D&D need",
+      "notes": "Major digital D&D need",
+      "priceCopper": 5000,
+      "cost": {
+        "totalCopper": 5000,
+        "display": "5 platinum",
+        "platinum": 5,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Virtual D&D"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-foundry-premium-module-package",
+      "profile": "william",
+      "aisle": "virtual-d-d",
+      "aisleLabel": "Virtual D&D",
+      "name": "Foundry premium/module/package",
+      "item": "Foundry premium/module/package",
+      "emoji": "🎁",
+      "description": "Digital D&D pack",
+      "notes": "Digital D&D pack",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Virtual D&D"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-arkenforge-package-asset-pack",
+      "profile": "william",
+      "aisle": "virtual-d-d",
+      "aisleLabel": "Virtual D&D",
+      "name": "Arkenforge package/asset pack",
+      "item": "Arkenforge package/asset pack",
+      "emoji": "🎁",
+      "description": "Map/VTT tools",
+      "notes": "Map/VTT tools",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Virtual D&D"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_virtual-d-d-digital-map-token-asset-pack",
+      "profile": "william",
+      "aisle": "virtual-d-d",
+      "aisleLabel": "Virtual D&D",
+      "name": "Digital map/token asset pack",
+      "item": "Digital map/token asset pack",
+      "emoji": "🎁",
+      "description": "Online D&D",
+      "notes": "Online D&D",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Virtual D&D"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-dice-set",
+      "profile": "william",
+      "aisle": "in-person-d-d-material",
+      "aisleLabel": "In-person D&D material",
+      "name": "Dice set",
+      "item": "Dice set",
+      "emoji": "🎁",
+      "description": "Even if mostly online",
+      "notes": "Even if mostly online",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "In-person D&D material"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-d-d-lore-handbook",
+      "profile": "william",
+      "aisle": "in-person-d-d-material",
+      "aisleLabel": "In-person D&D material",
+      "name": "D&D lore/handbook",
+      "item": "D&D lore/handbook",
+      "emoji": "🎁",
+      "description": "Big book reward",
+      "notes": "Big book reward",
+      "priceCopper": 3000,
+      "cost": {
+        "totalCopper": 3000,
+        "display": "3 platinum",
+        "platinum": 3,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "In-person D&D material"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-campaign-notebook-binder",
+      "profile": "william",
+      "aisle": "in-person-d-d-material",
+      "aisleLabel": "In-person D&D material",
+      "name": "Campaign notebook/binder",
+      "item": "Campaign notebook/binder",
+      "emoji": "🎁",
+      "description": "Writing/worldbuilding",
+      "notes": "Writing/worldbuilding",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "In-person D&D material"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_in-person-d-d-material-mini-terrain-display-piece",
+      "profile": "william",
+      "aisle": "in-person-d-d-material",
+      "aisleLabel": "In-person D&D material",
+      "name": "Mini/terrain/display piece",
+      "item": "Mini/terrain/display piece",
+      "emoji": "🎁",
+      "description": "In-person material joy",
+      "notes": "In-person material joy",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "In-person D&D material"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-nice-notebook-journal",
+      "profile": "william",
+      "aisle": "writing",
+      "aisleLabel": "Writing",
+      "name": "Nice notebook/journal",
+      "item": "Nice notebook/journal",
+      "emoji": "🎁",
+      "description": "Saga/songs/poems",
+      "notes": "Saga/songs/poems",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Writing"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-pens-highlighters-tabs",
+      "profile": "william",
+      "aisle": "writing",
+      "aisleLabel": "Writing",
+      "name": "Pens/highlighters/tabs",
+      "item": "Pens/highlighters/tabs",
+      "emoji": "🎁",
+      "description": "Writing tools",
+      "notes": "Writing tools",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Writing"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-worldbuilding-binder-supplies",
+      "profile": "william",
+      "aisle": "writing",
+      "aisleLabel": "Writing",
+      "name": "Worldbuilding binder supplies",
+      "item": "Worldbuilding binder supplies",
+      "emoji": "🎁",
+      "description": "D&D/saga/MMORPG",
+      "notes": "D&D/saga/MMORPG",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Writing"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_writing-writing-software-app-contribution",
+      "profile": "william",
+      "aisle": "writing",
+      "aisleLabel": "Writing",
+      "name": "Writing software/app contribution",
+      "item": "Writing software/app contribution",
+      "emoji": "🎁",
+      "description": "Digital writing support",
+      "notes": "Digital writing support",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Writing"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_music-brev-ai-music-tool-session-reward",
+      "profile": "william",
+      "aisle": "music",
+      "aisleLabel": "Music",
+      "name": "Brev.ai/music tool session/reward",
+      "item": "Brev.ai/music tool session/reward",
+      "emoji": "🎁",
+      "description": "Songwriting support",
+      "notes": "Songwriting support",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Music"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_music-music-app-subscription-contribution",
+      "profile": "william",
+      "aisle": "music",
+      "aisleLabel": "Music",
+      "name": "Music app/subscription contribution",
+      "item": "Music app/subscription contribution",
+      "emoji": "🎁",
+      "description": "If useful",
+      "notes": "If useful",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Music"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_cats-cat-treats",
+      "profile": "william",
+      "aisle": "cats",
+      "aisleLabel": "Cats",
+      "name": "Cat treats",
+      "item": "Cat treats",
+      "emoji": "🎁",
+      "description": "Spoil Onyx/Harvey/Callie",
+      "notes": "Spoil Onyx/Harvey/Callie",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Cats"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_cats-cat-toy",
+      "profile": "william",
+      "aisle": "cats",
+      "aisleLabel": "Cats",
+      "name": "Cat toy",
+      "item": "Cat toy",
+      "emoji": "🎁",
+      "description": "Cat joy",
+      "notes": "Cat joy",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Cats"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_cats-cat-brush-grooming-item",
+      "profile": "william",
+      "aisle": "cats",
+      "aisleLabel": "Cats",
+      "name": "Cat brush/grooming item",
+      "item": "Cat brush/grooming item",
+      "emoji": "🎁",
+      "description": "Practical care",
+      "notes": "Practical care",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Cats"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_comfort-t-rex-cat-comfort-plush",
+      "profile": "william",
+      "aisle": "comfort",
+      "aisleLabel": "Comfort",
+      "name": "T-rex/cat comfort plush",
+      "item": "T-rex/cat comfort plush",
+      "emoji": "🎁",
+      "description": "Comfort object",
+      "notes": "Comfort object",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Comfort"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_comfort-candle-or-cozy-room-item",
+      "profile": "william",
+      "aisle": "comfort",
+      "aisleLabel": "Comfort",
+      "name": "Candle or cozy room item",
+      "item": "Candle or cozy room item",
+      "emoji": "🎁",
+      "description": "Comfort/ambience",
+      "notes": "Comfort/ambience",
+      "priceCopper": 900,
+      "cost": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Comfort"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_comfort-weighted-sensory-comfort-item",
+      "profile": "william",
+      "aisle": "comfort",
+      "aisleLabel": "Comfort",
+      "name": "Weighted/sensory comfort item",
+      "item": "Weighted/sensory comfort item",
+      "emoji": "🎁",
+      "description": "Autism/decompression support",
+      "notes": "Autism/decompression support",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Comfort"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_food-delivery-uber-eats-order-contribution-small",
+      "profile": "william",
+      "aisle": "food-delivery",
+      "aisleLabel": "Food delivery",
+      "name": "Uber Eats/order contribution, small",
+      "item": "Uber Eats/order contribution, small",
+      "emoji": "🎁",
+      "description": "Food reward",
+      "notes": "Food reward",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Food delivery"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_food-delivery-full-food-delivery-order",
+      "profile": "william",
+      "aisle": "food-delivery",
+      "aisleLabel": "Food delivery",
+      "name": "Full food delivery order",
+      "item": "Full food delivery order",
+      "emoji": "🎁",
+      "description": "High-tier",
+      "notes": "High-tier",
+      "priceCopper": 3000,
+      "cost": {
+        "totalCopper": 3000,
+        "display": "3 platinum",
+        "platinum": 3,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Food delivery"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_homecooked-food-favorite-low-spoon-meal-request",
+      "profile": "william",
+      "aisle": "homecooked-food",
+      "aisleLabel": "Homecooked food",
+      "name": "Favorite low-spoon meal request",
+      "item": "Favorite low-spoon meal request",
+      "emoji": "🎁",
+      "description": "If Squishy has capacity",
+      "notes": "If Squishy has capacity",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Homecooked food"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_homecooked-food-steak-starch-veggie-meal",
+      "profile": "william",
+      "aisle": "homecooked-food",
+      "aisleLabel": "Homecooked food",
+      "name": "Steak/starch/veggie meal",
+      "item": "Steak/starch/veggie meal",
+      "emoji": "🎁",
+      "description": "Higher cost/labor",
+      "notes": "Higher cost/labor",
+      "priceCopper": 3500,
+      "cost": {
+        "totalCopper": 3500,
+        "display": "3 platinum, 5 gold",
+        "platinum": 3,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Homecooked food"
+      ],
+      "adultOnly": false,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": false,
+        "manualReview": false,
+        "legalLocalOnly": false,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-edible-dispensary-contribution-small",
+      "profile": "william",
+      "aisle": "adult-ma-cannabis",
+      "aisleLabel": "Adult MA cannabis",
+      "name": "Edible dispensary contribution, small",
+      "item": "Edible dispensary contribution, small",
+      "emoji": "🎁",
+      "description": "Edibles only for Dino due asthma",
+      "notes": "Edibles only for Dino due asthma",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Adult MA cannabis"
+      ],
+      "adultOnly": true,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-edible-dispensary-contribution-larger",
+      "profile": "william",
+      "aisle": "adult-ma-cannabis",
+      "aisleLabel": "Adult MA cannabis",
+      "name": "Edible dispensary contribution, larger",
+      "item": "Edible dispensary contribution, larger",
+      "emoji": "🎁",
+      "description": "Manual review/adult-only",
+      "notes": "Manual review/adult-only",
+      "priceCopper": 4000,
+      "cost": {
+        "totalCopper": 4000,
+        "display": "4 platinum",
+        "platinum": 4,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Adult MA cannabis"
+      ],
+      "adultOnly": true,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-topical-tincture-contribution",
+      "profile": "william",
+      "aisle": "adult-ma-cannabis",
+      "aisleLabel": "Adult MA cannabis",
+      "name": "Topical/tincture contribution",
+      "item": "Topical/tincture contribution",
+      "emoji": "🎁",
+      "description": "Non-smoking option",
+      "notes": "Non-smoking option",
+      "priceCopper": 2000,
+      "cost": {
+        "totalCopper": 2000,
+        "display": "2 platinum",
+        "platinum": 2,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Adult MA cannabis"
+      ],
+      "adultOnly": true,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-admin-check-dispensary-edible-menu",
+      "profile": "william",
+      "aisle": "adult-ma-cannabis-admin",
+      "aisleLabel": "Adult MA cannabis admin",
+      "name": "Check dispensary edible menu",
+      "item": "Check dispensary edible menu",
+      "emoji": "🎁",
+      "description": "Planning task/reward",
+      "notes": "Planning task/reward",
+      "priceCopper": 250,
+      "cost": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      },
+      "tags": [
+        "Adult MA cannabis admin"
+      ],
+      "adultOnly": true,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult-ma-cannabis-admin-plan-accessible-dispensary-pickup-delivery",
+      "profile": "william",
+      "aisle": "adult-ma-cannabis-admin",
+      "aisleLabel": "Adult MA cannabis admin",
+      "name": "Plan accessible dispensary pickup/delivery",
+      "item": "Plan accessible dispensary pickup/delivery",
+      "emoji": "🎁",
+      "description": "Access planning",
+      "notes": "Access planning",
+      "priceCopper": 500,
+      "cost": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Adult MA cannabis admin"
+      ],
+      "adultOnly": true,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true
+      }
+    },
+    {
+      "id": "william_store_adult_21_plus_nicotine_vape_fluid",
+      "profile": "william",
+      "aisle": "adult-21-nicotine",
+      "aisleLabel": "Adult 21+ nicotine",
+      "name": "Nicotine vape fluid",
+      "item": "Nicotine vape fluid",
+      "emoji": "🎁",
+      "description": "21+ nicotine reward item for William; legal/local rules and age verification apply. Not a cannabis item.",
+      "notes": "21+ nicotine reward item for William; legal/local rules and age verification apply. Not a cannabis item.",
+      "priceCopper": 1500,
+      "cost": {
+        "totalCopper": 1500,
+        "display": "1 platinum, 5 gold",
+        "platinum": 1,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      },
+      "tags": [
+        "Adult 21+ nicotine"
+      ],
+      "adultOnly": true,
+      "flags": {
+        "costsCurrency": true,
+        "adultOnly21Plus": true,
+        "manualReview": true,
+        "legalLocalOnly": true,
+        "noRealMoneyValue": true,
+        "nicotine": true,
+        "vapeFluid": true
+      }
+    }
+  ],
+  "_canonicalFileName": "william_store.json",
+  "_legacyAliases": [
+    "dino_store.json"
+  ],
+  "_mappingNote": "Profile store file renamed to explicit profile name and enriched with module-compatible top-level aisles/items fields."
+}
