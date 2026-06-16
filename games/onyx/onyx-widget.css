@@ -1,0 +1,77 @@
+/* Onyx embedded static browser widget — backend-free profile integration. */
+:root{
+  --onyx-void:#06121c;
+  --onyx-panel:rgba(3,18,29,.96);
+  --onyx-soft:rgba(255,255,255,.96);
+  --onyx-cyan:#00ffff;
+  --onyx-green:#a9ef8f;
+  --onyx-gold:#ffd37a;
+  --onyx-danger:#ffb3b3;
+  --onyx-shadow:0 12px 32px rgba(0,0,0,.28);
+}
+.onyx-static-panel,
+.onyx-static-chat{
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  border:2px solid var(--accent,var(--onyx-cyan));
+  border-radius:16px;
+  background:
+    radial-gradient(circle at 22% 8%,rgba(0,255,255,.20),transparent 30%),
+    radial-gradient(circle at 80% 3%,rgba(76,173,255,.16),transparent 34%),
+    linear-gradient(135deg,#051018,#081c2b 55%,#03070d);
+  color:#eefcff;
+  box-shadow:var(--onyx-shadow);
+}
+.onyx-static-panel{display:grid;gap:12px;padding:12px;}
+.onyx-picture-stage{display:grid;grid-template-columns:minmax(130px,240px) 1fr;gap:14px;align-items:center;}
+.onyx-picture-main,.onyx-chat-face{width:100%;max-width:240px;aspect-ratio:1/1;object-fit:contain;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(0,255,255,.45);box-shadow:0 0 28px rgba(0,255,255,.22);}
+.onyx-picture-main{justify-self:center;}
+.onyx-picture-copy{min-width:0;display:grid;gap:7px;}
+.onyx-title{font-size:1.15rem;font-weight:900;color:#fff;text-shadow:0 0 9px rgba(0,255,255,.55);overflow-wrap:anywhere;}
+.onyx-subtitle{opacity:.9;line-height:1.35;overflow-wrap:anywhere;}
+.onyx-pill-row,.onyx-chips,.onyx-tool-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.onyx-pill,.onyx-mode,.onyx-status-pill{display:inline-flex;width:max-content;max-width:100%;padding:4px 8px;border-radius:999px;background:rgba(0,255,255,.14);border:1px solid rgba(0,255,255,.45);color:#dcffff;font-weight:800;overflow-wrap:anywhere;}
+.onyx-status-pill{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);font-size:.9em;}
+.onyx-auto-note{border-left:4px solid var(--onyx-green);background:rgba(169,239,143,.10);color:#eaffea;padding:8px 10px;border-radius:10px;font-weight:700;line-height:1.35;}
+.onyx-static-chat{display:grid;grid-template-rows:auto minmax(240px,1fr) auto;min-height:min(72vh,680px);}
+.onyx-chat-head{display:grid;grid-template-columns:72px 1fr auto;gap:10px;align-items:center;padding:10px;border-bottom:1px solid rgba(0,255,255,.26);background:rgba(0,0,0,.22);}
+.onyx-chat-face{width:72px;height:72px;border-radius:14px;}
+.onyx-chat-title-wrap{min-width:0;display:grid;gap:3px;}
+.onyx-mode{text-align:right;justify-self:end;}
+.onyx-log{display:grid;align-content:start;gap:8px;min-height:240px;max-height:min(56vh,520px);overflow:auto;padding:10px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,0,0,.08));}
+.onyx-message{max-width:92%;border-radius:13px;padding:8px 10px;line-height:1.38;white-space:normal;box-shadow:0 4px 12px rgba(0,0,0,.18);overflow-wrap:anywhere;}
+.onyx-message .meta{font-size:.78em;opacity:.75;font-weight:800;margin-bottom:3px;color:inherit;}
+.onyx-message.user{justify-self:end;background:#eaffff;color:#03252c;border:1px solid rgba(0,255,255,.4);}
+.onyx-message.onyx{justify-self:start;background:rgba(5,35,52,.96);color:#f3ffff;border:1px solid rgba(0,255,255,.32);}
+.onyx-message.system{justify-self:center;max-width:100%;background:rgba(214,154,36,.16);border:1px solid rgba(214,154,36,.45);color:#fff3d2;font-weight:800;}
+.onyx-message.safety{border-color:var(--onyx-danger);background:#451b25;}
+.onyx-controls{display:grid;gap:8px;padding:10px;border-top:1px solid rgba(0,255,255,.26);}
+.onyx-chip,.onyx-send,.onyx-tool-button{border:1px solid rgba(0,255,255,.4);background:rgba(0,255,255,.13);color:#eefcff;border-radius:999px;padding:6px 9px;font-weight:800;}
+.onyx-chip:hover,.onyx-tool-button:hover{filter:brightness(1.12);}
+.onyx-input-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:stretch;}
+.onyx-input{width:100%;min-height:72px;resize:vertical;border:1px solid rgba(0,255,255,.45);border-radius:12px;padding:9px;background:rgba(255,255,255,.96);color:#051018;line-height:1.35;}
+.onyx-send{border:1px solid #fff;background:linear-gradient(#fff,var(--accent,var(--onyx-cyan)));color:var(--button-text,#012930);border-radius:12px;padding:8px 12px;min-width:78px;}
+.onyx-small-note{opacity:.82;font-size:.86em;line-height:1.35;}
+.onyx-hidden{display:none!important;}
+.onyx-fade{animation:onyxPulse .32s ease both;}
+@keyframes onyxPulse{from{filter:brightness(.75) saturate(.75);transform:scale(.985)}to{filter:none;transform:scale(1)}}
+
+/* The existing profile pages used a fixed-width mobile board. This override makes all modules stack cleanly on phones. */
+@media(max-width:900px){
+  .page-board{min-width:0!important;min-height:auto!important;overflow:visible!important;display:grid!important;gap:12px!important;padding:10px!important;}
+  .module{position:relative!important;left:auto!important;top:auto!important;width:100%!important;max-width:100%!important;min-height:auto!important;}
+  .module-body{max-width:100%;overflow:visible;}
+  .module[data-module-id="messenger"],.module[data-module-id="onyx-chat"],.module[data-module-id="onyx-image"]{min-height:auto!important;}
+  .page-intro{display:grid!important;align-items:start!important;}
+}
+@media(max-width:720px){
+  .onyx-picture-stage{grid-template-columns:1fr;}
+  .onyx-chat-head{grid-template-columns:56px 1fr;}
+  .onyx-chat-face{width:56px;height:56px;}
+  .onyx-mode{grid-column:1/-1;justify-self:start;text-align:left;}
+  .onyx-input-row{grid-template-columns:1fr;}
+  .onyx-send{min-height:42px;}
+  .onyx-static-chat{min-height:0;}
+  .onyx-log{max-height:58vh;}
+}

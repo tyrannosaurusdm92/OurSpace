@@ -1,0 +1,18 @@
+Onyx static embed manifest
+
+Entry pages:
+- ../../dino-nerdzone.html#chatbot
+- ../../squishy-cottage.html#chatbot
+
+No separate emperor_onyx.html is included. Onyx is mounted through:
+- [data-onyx-mood-panel]
+- [data-onyx-chat]
+
+Core static files:
+- onyx-widget.js: browser-only embedded widget and relationship routing
+- onyx-widget.css: responsive widget styling and mobile module stacking
+- static/script/conversation_scanner_randomizer.js: local response engine
+- static/script/onyx_conversation_brain_bundle.js: local JSON bundle for file:// use
+- static/script/onyx_service_voice_bundle.js: Papa/Momma service-animal voice catalogs
+- static/script/onyx_emotion_routes.js: emotion/mood routing
+- static/img/*.png: Onyx mood images
