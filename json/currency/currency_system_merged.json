@@ -1,0 +1,2176 @@
+{
+  "schema": "ourspace.currency_system_merged.v2",
+  "source_paths": [
+    "merge and categorize/ourspace_two_user_rewards_store (1).json",
+    "merge and categorize/json1/dino_store.json",
+    "merge and categorize/json2/dino_store.json",
+    "merge and categorize/json1/squishy_store.json",
+    "merge and categorize/json2/squishy_store.json",
+    "merge and categorize/json1/dino_tasks.json",
+    "merge and categorize/json2/dino_tasks.json",
+    "merge and categorize/json1/squishy_tasks.json",
+    "merge and categorize/json2/squishy_tasks.json",
+    "merge and categorize/json1/game_rules.json",
+    "merge and categorize/json2/game_rules.json",
+    "merge and categorize/json1/ourspace_game_reward_rules.json",
+    "uploaded/currency-system.json",
+    "uploaded/currency_system_merged.json"
+  ],
+  "primary_currency_system": {
+    "baseUnit": "copper",
+    "conversion": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "denominations": {
+      "copper": 1,
+      "silver": 10,
+      "gold": 100,
+      "platinum": 1000
+    },
+    "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+    "formatExamples": {
+      "50": "5 silver",
+      "120": "1 gold, 2 silver",
+      "250": "2 gold, 5 silver",
+      "900": "9 gold",
+      "1500": "1 platinum, 5 gold",
+      "3000": "3 platinum",
+      "25": "2 silver, 5 copper",
+      "100": "1 gold",
+      "500": "5 gold",
+      "1000": "1 platinum",
+      "2500": "2 platinum, 5 gold",
+      "4000": "4 platinum",
+      "25000": "25 platinum"
+    },
+    "numericConversion": {
+      "copper": 1,
+      "silver": 10,
+      "gold": 100,
+      "platinum": 1000
+    }
+  },
+  "reward_earning_scale": [
+    {
+      "difficulty": "Tiny start / check-in",
+      "reward": {
+        "totalCopper": 25,
+        "display": "2 silver, 5 copper",
+        "platinum": 0,
+        "gold": 0,
+        "silver": 2,
+        "copper": 5
+      }
+    },
+    {
+      "difficulty": "Small self-care / easy step",
+      "reward": {
+        "totalCopper": 50,
+        "display": "5 silver",
+        "platinum": 0,
+        "gold": 0,
+        "silver": 5,
+        "copper": 0
+      }
+    },
+    {
+      "difficulty": "Normal task chunk",
+      "reward": {
+        "totalCopper": 120,
+        "display": "1 gold, 2 silver",
+        "platinum": 0,
+        "gold": 1,
+        "silver": 2,
+        "copper": 0
+      }
+    },
+    {
+      "difficulty": "Hard / gross / executive-function task",
+      "reward": {
+        "totalCopper": 250,
+        "display": "2 gold, 5 silver",
+        "platinum": 0,
+        "gold": 2,
+        "silver": 5,
+        "copper": 0
+      }
+    },
+    {
+      "difficulty": "Very hard / care support / appointment / major chore",
+      "reward": {
+        "totalCopper": 500,
+        "display": "5 gold",
+        "platinum": 0,
+        "gold": 5,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "difficulty": "Dino task takeover / high-burden caregiver support",
+      "reward": {
+        "totalCopper": 900,
+        "display": "9 gold",
+        "platinum": 0,
+        "gold": 9,
+        "silver": 0,
+        "copper": 0
+      }
+    }
+  ],
+  "profiles": {
+    "william": {
+      "displayName": "William",
+      "siteName": "Dino",
+      "storeName": "Dino Store",
+      "rewardProvidedBy": "Squishy",
+      "roleNotes": [
+        "Chores are limited to trash to chute if energy allows, sink dishes when Squishy brings them, and laundry.",
+        "Wheelchair-first planning, seated/bed-level options, tiny steps, rest/recovery, oxygen-aware pacing, and effort/safety rewards are supported.",
+        "Nicotine vape fluid is included as a 21+ nicotine reward item."
+      ],
+      "is21Plus": true
+    },
+    "jasper": {
+      "displayName": "Jasper",
+      "siteName": "Squishy",
+      "storeName": "Squishy Store",
+      "rewardProvidedBy": "Dino",
+      "roleNotes": [
+        "Paid caregiver work blocks are included.",
+        "Protected caregiver breaks are rewarded.",
+        "Duck collection and Jasper-specific favorites are included."
+      ],
+      "is21Plus": true
+    }
+  },
+  "task_currency_systems": {
+    "william": {
+      "currencySystem": {
+        "baseUnit": "copper",
+        "conversion": {
+          "copperPerSilver": 10,
+          "silverPerGold": 10,
+          "goldPerPlatinum": 10,
+          "copperPerGold": 100,
+          "copperPerPlatinum": 1000
+        },
+        "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+        "conversions": [
+          "10 copper = 1 silver",
+          "10 silver = 1 gold",
+          "10 gold = 1 platinum"
+        ],
+        "formatExampleFunctionName": "formatReward",
+        "privacyRules": {
+          "privateCurrencyOnly": true,
+          "realCurrencyPayouts": false,
+          "onlyBundledOurSpaceGamesCanEarnGameRewards": true
+        }
+      },
+      "currencyTiers": [
+        {
+          "id": "tiny_start",
+          "tier": "Tiny start",
+          "useFor": "Opening, checking, choosing, gathering one item",
+          "reward": {
+            "display": "1 gold",
+            "sourceDisplay": "1 gold",
+            "totalCopper": 100,
+            "denominations": {
+              "platinum": 0,
+              "gold": 1,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "gentle_step",
+          "tier": "Gentle step",
+          "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+          "reward": {
+            "display": "2 gold, 5 silver",
+            "sourceDisplay": "2 gold, 5 silver",
+            "totalCopper": 250,
+            "denominations": {
+              "platinum": 0,
+              "gold": 2,
+              "silver": 5,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "small_task",
+          "tier": "Small task",
+          "useFor": "One clear task chunk",
+          "reward": {
+            "display": "5 gold",
+            "sourceDisplay": "5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "medium_task",
+          "tier": "Medium task",
+          "useFor": "Normal chore, care task, hobby work block",
+          "reward": {
+            "display": "9 gold",
+            "sourceDisplay": "9 gold",
+            "totalCopper": 900,
+            "denominations": {
+              "platinum": 0,
+              "gold": 9,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "hard_task",
+          "tier": "Hard task",
+          "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+          "reward": {
+            "display": "1 platinum, 5 gold",
+            "sourceDisplay": "1 platinum, 5 gold",
+            "totalCopper": 1500,
+            "denominations": {
+              "platinum": 1,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "very_hard_task",
+          "tier": "Very hard task",
+          "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+          "reward": {
+            "display": "2 platinum, 5 gold",
+            "sourceDisplay": "2 platinum, 5 gold",
+            "totalCopper": 2500,
+            "denominations": {
+              "platinum": 2,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "hero_takeover",
+          "tier": "Hero / takeover",
+          "useFor": "Squishy fully takes over a Dino-assigned high-burden task",
+          "reward": {
+            "display": "4 platinum",
+            "sourceDisplay": "4 platinum",
+            "totalCopper": 4000,
+            "denominations": {
+              "platinum": 4,
+              "gold": 0,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "recovery_bonus",
+          "tier": "Recovery bonus",
+          "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+          "reward": {
+            "display": "5 gold",
+            "sourceDisplay": "5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        }
+      ],
+      "globalPricingModifiers": [
+        {
+          "id": "low_spoon_attempt_bonus",
+          "modifier": "Low-spoon attempt bonus",
+          "addWhen": "They tried even if they only did part of it",
+          "bonus": {
+            "display": "+2 gold, 5 silver",
+            "sourceDisplay": "+2 gold, 5 silver",
+            "totalCopper": 250,
+            "denominations": {
+              "platinum": 0,
+              "gold": 2,
+              "silver": 5,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "gentle_hygiene_bonus",
+          "modifier": "Gentle hygiene bonus",
+          "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+          "bonus": {
+            "display": "+5 gold",
+            "sourceDisplay": "+5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "pain_fatigue_flare_bonus",
+          "modifier": "Pain/fatigue flare bonus",
+          "addWhen": "Task happened during pain, MS fatigue, EDS instability, migraine, sensory overload, depression, anxiety, etc.",
+          "bonus": {
+            "display": "+9 gold",
+            "sourceDisplay": "+9 gold",
+            "totalCopper": 900,
+            "denominations": {
+              "platinum": 0,
+              "gold": 9,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "dysphoria_trauma_safe_care_bonus",
+          "modifier": "Dysphoria/trauma-safe care bonus",
+          "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+          "bonus": {
+            "display": "+9 gold",
+            "sourceDisplay": "+9 gold",
+            "totalCopper": 900,
+            "denominations": {
+              "platinum": 0,
+              "gold": 9,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "dino_takeover_bonus",
+          "modifier": "Dino takeover bonus",
+          "addWhen": "Squishy does a Dino-assigned task because Dino's body/access barriers are too high",
+          "bonus": {
+            "display": "+1 platinum, 5 gold",
+            "sourceDisplay": "+1 platinum, 5 gold",
+            "totalCopper": 1500,
+            "denominations": {
+              "platinum": 1,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "major_dino_takeover_bonus",
+          "modifier": "Major Dino takeover bonus",
+          "addWhen": "Squishy takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+          "bonus": {
+            "display": "+4 platinum",
+            "sourceDisplay": "+4 platinum",
+            "totalCopper": 4000,
+            "denominations": {
+              "platinum": 4,
+              "gold": 0,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "recovery_repair_bonus",
+          "modifier": "Recovery/repair bonus",
+          "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+          "bonus": {
+            "display": "+5 gold",
+            "sourceDisplay": "+5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        }
+      ],
+      "gentleWording": [
+        {
+          "situation": "Hygiene skipped",
+          "use": "Tiny wash counts. Your body still deserves care.",
+          "avoid": "You failed hygiene."
+        },
+        {
+          "situation": "Shower is too much",
+          "use": "Would wipes, face wash, clean clothes, or sitting with supplies be enough today?",
+          "avoid": "Just shower."
+        },
+        {
+          "situation": "Task incomplete",
+          "use": "Partial completion paid out. Recovery counts too.",
+          "avoid": "Incomplete / failed."
+        },
+        {
+          "situation": "A person takes over a high-burden task",
+          "use": "You protected the home and the person you love. Hero reward added.",
+          "avoid": "You had to do their job."
+        },
+        {
+          "situation": "A physical task is not accessible",
+          "use": "This is an access barrier, not laziness.",
+          "avoid": "Try harder."
+        },
+        {
+          "situation": "Burnout",
+          "use": "Breaks are protected. Eating and decompression earn rewards.",
+          "avoid": "Push through."
+        },
+        {
+          "situation": "Doctor/admin task",
+          "use": "This is a high-effort quest. Opening the portal counts.",
+          "avoid": "This should be easy."
+        }
+      ]
+    },
+    "jasper": {
+      "currencySystem": {
+        "baseUnit": "copper",
+        "conversion": {
+          "copperPerSilver": 10,
+          "silverPerGold": 10,
+          "goldPerPlatinum": 10,
+          "copperPerGold": 100,
+          "copperPerPlatinum": 1000
+        },
+        "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+        "conversions": [
+          "10 copper = 1 silver",
+          "10 silver = 1 gold",
+          "10 gold = 1 platinum"
+        ],
+        "formatExampleFunctionName": "formatReward",
+        "privacyRules": {
+          "privateCurrencyOnly": true,
+          "realCurrencyPayouts": false,
+          "onlyBundledOurSpaceGamesCanEarnGameRewards": true
+        }
+      },
+      "currencyTiers": [
+        {
+          "id": "tiny_start",
+          "tier": "Tiny start",
+          "useFor": "Opening, checking, choosing, gathering one item",
+          "reward": {
+            "display": "1 gold",
+            "sourceDisplay": "1 gold",
+            "totalCopper": 100,
+            "denominations": {
+              "platinum": 0,
+              "gold": 1,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "gentle_step",
+          "tier": "Gentle step",
+          "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+          "reward": {
+            "display": "2 gold, 5 silver",
+            "sourceDisplay": "2 gold, 5 silver",
+            "totalCopper": 250,
+            "denominations": {
+              "platinum": 0,
+              "gold": 2,
+              "silver": 5,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "small_task",
+          "tier": "Small task",
+          "useFor": "One clear task chunk",
+          "reward": {
+            "display": "5 gold",
+            "sourceDisplay": "5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "medium_task",
+          "tier": "Medium task",
+          "useFor": "Normal chore, care task, hobby work block",
+          "reward": {
+            "display": "9 gold",
+            "sourceDisplay": "9 gold",
+            "totalCopper": 900,
+            "denominations": {
+              "platinum": 0,
+              "gold": 9,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "hard_task",
+          "tier": "Hard task",
+          "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+          "reward": {
+            "display": "1 platinum, 5 gold",
+            "sourceDisplay": "1 platinum, 5 gold",
+            "totalCopper": 1500,
+            "denominations": {
+              "platinum": 1,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "very_hard_task",
+          "tier": "Very hard task",
+          "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+          "reward": {
+            "display": "2 platinum, 5 gold",
+            "sourceDisplay": "2 platinum, 5 gold",
+            "totalCopper": 2500,
+            "denominations": {
+              "platinum": 2,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "hero_takeover",
+          "tier": "Hero / takeover",
+          "useFor": "Squishy fully takes over a Dino-assigned high-burden task",
+          "reward": {
+            "display": "4 platinum",
+            "sourceDisplay": "4 platinum",
+            "totalCopper": 4000,
+            "denominations": {
+              "platinum": 4,
+              "gold": 0,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "recovery_bonus",
+          "tier": "Recovery bonus",
+          "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+          "reward": {
+            "display": "5 gold",
+            "sourceDisplay": "5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        }
+      ],
+      "globalPricingModifiers": [
+        {
+          "id": "low_spoon_attempt_bonus",
+          "modifier": "Low-spoon attempt bonus",
+          "addWhen": "They tried even if they only did part of it",
+          "bonus": {
+            "display": "+2 gold, 5 silver",
+            "sourceDisplay": "+2 gold, 5 silver",
+            "totalCopper": 250,
+            "denominations": {
+              "platinum": 0,
+              "gold": 2,
+              "silver": 5,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "gentle_hygiene_bonus",
+          "modifier": "Gentle hygiene bonus",
+          "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+          "bonus": {
+            "display": "+5 gold",
+            "sourceDisplay": "+5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "pain_fatigue_flare_bonus",
+          "modifier": "Pain/fatigue flare bonus",
+          "addWhen": "Task happened during pain, MS fatigue, EDS instability, migraine, sensory overload, depression, anxiety, etc.",
+          "bonus": {
+            "display": "+9 gold",
+            "sourceDisplay": "+9 gold",
+            "totalCopper": 900,
+            "denominations": {
+              "platinum": 0,
+              "gold": 9,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "dysphoria_trauma_safe_care_bonus",
+          "modifier": "Dysphoria/trauma-safe care bonus",
+          "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+          "bonus": {
+            "display": "+9 gold",
+            "sourceDisplay": "+9 gold",
+            "totalCopper": 900,
+            "denominations": {
+              "platinum": 0,
+              "gold": 9,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "dino_takeover_bonus",
+          "modifier": "Dino takeover bonus",
+          "addWhen": "Squishy does a Dino-assigned task because Dino's body/access barriers are too high",
+          "bonus": {
+            "display": "+1 platinum, 5 gold",
+            "sourceDisplay": "+1 platinum, 5 gold",
+            "totalCopper": 1500,
+            "denominations": {
+              "platinum": 1,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "major_dino_takeover_bonus",
+          "modifier": "Major Dino takeover bonus",
+          "addWhen": "Squishy takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+          "bonus": {
+            "display": "+4 platinum",
+            "sourceDisplay": "+4 platinum",
+            "totalCopper": 4000,
+            "denominations": {
+              "platinum": 4,
+              "gold": 0,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        },
+        {
+          "id": "recovery_repair_bonus",
+          "modifier": "Recovery/repair bonus",
+          "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+          "bonus": {
+            "display": "+5 gold",
+            "sourceDisplay": "+5 gold",
+            "totalCopper": 500,
+            "denominations": {
+              "platinum": 0,
+              "gold": 5,
+              "silver": 0,
+              "copper": 0
+            }
+          }
+        }
+      ],
+      "gentleWording": [
+        {
+          "situation": "Hygiene skipped",
+          "use": "Tiny wash counts. Your body still deserves care.",
+          "avoid": "You failed hygiene."
+        },
+        {
+          "situation": "Shower is too much",
+          "use": "Would wipes, face wash, clean clothes, or sitting with supplies be enough today?",
+          "avoid": "Just shower."
+        },
+        {
+          "situation": "Task incomplete",
+          "use": "Partial completion paid out. Recovery counts too.",
+          "avoid": "Incomplete / failed."
+        },
+        {
+          "situation": "A person takes over a high-burden task",
+          "use": "You protected the home and the person you love. Hero reward added.",
+          "avoid": "You had to do their job."
+        },
+        {
+          "situation": "A physical task is not accessible",
+          "use": "This is an access barrier, not laziness.",
+          "avoid": "Try harder."
+        },
+        {
+          "situation": "Burnout",
+          "use": "Breaks are protected. Eating and decompression earn rewards.",
+          "avoid": "Push through."
+        },
+        {
+          "situation": "Doctor/admin task",
+          "use": "This is a high-effort quest. Opening the portal counts.",
+          "avoid": "This should be easy."
+        }
+      ]
+    }
+  },
+  "store_currency_systems": {
+    "william": {
+      "copperPerSilver": 10,
+      "silverPerGold": 10,
+      "goldPerPlatinum": 10,
+      "copperPerGold": 100,
+      "copperPerPlatinum": 1000,
+      "baseUnit": "copper",
+      "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+      "privateCurrencyOnly": true,
+      "realCurrencyPayouts": false
+    },
+    "jasper": {
+      "copperPerSilver": 10,
+      "silverPerGold": 10,
+      "goldPerPlatinum": 10,
+      "copperPerGold": 100,
+      "copperPerPlatinum": 1000,
+      "baseUnit": "copper",
+      "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+      "privateCurrencyOnly": true,
+      "realCurrencyPayouts": false
+    }
+  },
+  "game_currency_rules": {
+    "currencyScale": {
+      "copper": 1,
+      "silver": 10,
+      "gold": 100,
+      "platinum": 1000,
+      "conversionRules": [
+        "10 copper = 1 silver",
+        "10 silver = 1 gold",
+        "10 gold = 1 platinum"
+      ]
+    },
+    "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+    "defaultSessionCapCopper": 25000,
+    "globalEvents": {
+      "game_launch": {
+        "label": "Game opened",
+        "totalCopper": 100,
+        "cooldownMs": 300000,
+        "maxPerSession": 1,
+        "tier": "tiny_start"
+      },
+      "first_action": {
+        "label": "First in-game action",
+        "totalCopper": 250,
+        "cooldownMs": 300000,
+        "maxPerSession": 1,
+        "tier": "gentle_step"
+      },
+      "action_streak_small": {
+        "label": "In-game action streak",
+        "totalCopper": 250,
+        "cooldownMs": 45000,
+        "maxPerSession": 8,
+        "tier": "gentle_step"
+      },
+      "action_streak_large": {
+        "label": "Strong play streak",
+        "totalCopper": 500,
+        "cooldownMs": 90000,
+        "maxPerSession": 4,
+        "tier": "small_task"
+      },
+      "play_time_5_min": {
+        "label": "Focused play block",
+        "totalCopper": 500,
+        "cooldownMs": 300000,
+        "maxPerSession": 6,
+        "tier": "small_task"
+      },
+      "level_complete": {
+        "label": "Level / round cleared",
+        "totalCopper": 900,
+        "cooldownMs": 20000,
+        "maxPerSession": 12,
+        "tier": "medium_task"
+      },
+      "achievement": {
+        "label": "Achievement unlocked",
+        "totalCopper": 500,
+        "cooldownMs": 20000,
+        "maxPerSession": 10,
+        "tier": "small_task"
+      },
+      "high_score": {
+        "label": "High score / best score",
+        "totalCopper": 900,
+        "cooldownMs": 45000,
+        "maxPerSession": 8,
+        "tier": "medium_task"
+      },
+      "score_milestone": {
+        "label": "Score milestone",
+        "totalCopper": 250,
+        "cooldownMs": 15000,
+        "maxPerSession": 20,
+        "tier": "gentle_step"
+      },
+      "resource_milestone": {
+        "label": "Resource / coin milestone",
+        "totalCopper": 250,
+        "cooldownMs": 15000,
+        "maxPerSession": 20,
+        "tier": "gentle_step"
+      },
+      "game_over_recovery": {
+        "label": "Played and reset safely",
+        "totalCopper": 100,
+        "cooldownMs": 120000,
+        "maxPerSession": 5,
+        "tier": "tiny_start"
+      },
+      "fnaf_defensive_set": {
+        "label": "FNAF defensive survival actions",
+        "totalCopper": 250,
+        "cooldownMs": 12000,
+        "maxPerSession": 20,
+        "tier": "gentle_step"
+      },
+      "fnaf_hour_survived": {
+        "label": "FNAF hour survived",
+        "totalCopper": 900,
+        "cooldownMs": 30000,
+        "maxPerSession": 8,
+        "tier": "medium_task"
+      },
+      "fnaf_night_survived": {
+        "label": "FNAF night survived",
+        "totalCopper": 2500,
+        "cooldownMs": 60000,
+        "maxPerSession": 8,
+        "tier": "very_hard_task"
+      },
+      "fnaf_hard_clear": {
+        "label": "FNAF hard clear",
+        "totalCopper": 5000,
+        "cooldownMs": 180000,
+        "maxPerSession": 3,
+        "tier": "hero"
+      }
+    },
+    "detectors": {
+      "canvasText": true,
+      "domText": true,
+      "localStorageProgress": true,
+      "pointerKeyboardActions": true,
+      "customApi": "window.OurSpaceGameRewards.award(eventId, detail) or window.OurSpaceGameRewards.reportScore(value, kind)",
+      "postMessage": "Parent listens for type='ourspace.game.reward.v1'. Legacy game reward messages are ignored by default."
+    },
+    "onlyBundledOurSpaceGamesCanEarnGameRewards": true
+  },
+  "uploaded_source_files": [
+    "currency-system.json",
+    "currency_system_merged.json"
+  ],
+  "merge_notes": [
+    "Merged the uploaded currency-system.json with the uploaded currency_system_merged.json.",
+    "Only two JSON files were mounted/available in this chat, so the merge includes those two attached files.",
+    "Kept existing profile/task/store/game currency structures and added the standalone currency system rules, tiers, modifiers, and gentle wording."
+  ],
+  "currency_restrictions": {
+    "privateCurrencyOnly": true,
+    "realCurrencyPayouts": false,
+    "onlyBundledOurSpaceGamesCanEarnGameRewards": true
+  },
+  "canonical_currency_tiers": [
+    {
+      "id": "tiny_start",
+      "tier": "Tiny start",
+      "useFor": "Opening, checking, choosing, gathering one item",
+      "reward": {
+        "display": "1 gold",
+        "sourceDisplay": "1 gold",
+        "totalCopper": 100,
+        "denominations": {
+          "platinum": 0,
+          "gold": 1,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "gentle_step",
+      "tier": "Gentle step",
+      "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+      "reward": {
+        "display": "2 gold, 5 silver",
+        "sourceDisplay": "2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "small_task",
+      "tier": "Small task",
+      "useFor": "One clear task chunk",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "medium_task",
+      "tier": "Medium task",
+      "useFor": "Normal chore, care task, hobby work block",
+      "reward": {
+        "display": "9 gold",
+        "sourceDisplay": "9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "hard_task",
+      "tier": "Hard task",
+      "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+      "reward": {
+        "display": "1 platinum, 5 gold",
+        "sourceDisplay": "1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "very_hard_task",
+      "tier": "Very hard task",
+      "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+      "reward": {
+        "display": "2 platinum, 5 gold",
+        "sourceDisplay": "2 platinum, 5 gold",
+        "totalCopper": 2500,
+        "denominations": {
+          "platinum": 2,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "hero_takeover",
+      "tier": "Hero / takeover",
+      "useFor": "A profile fully takes over a high-burden support task",
+      "reward": {
+        "display": "4 platinum",
+        "sourceDisplay": "4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "recovery_bonus",
+      "tier": "Recovery bonus",
+      "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+      "reward": {
+        "display": "5 gold",
+        "sourceDisplay": "5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "global_currency_modifiers": [
+    {
+      "id": "low_spoon_attempt_bonus",
+      "modifier": "Low-spoon attempt bonus",
+      "addWhen": "They tried even if they only did part of it",
+      "bonus": {
+        "display": "+2 gold, 5 silver",
+        "sourceDisplay": "+2 gold, 5 silver",
+        "totalCopper": 250,
+        "denominations": {
+          "platinum": 0,
+          "gold": 2,
+          "silver": 5,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "gentle_hygiene_bonus",
+      "modifier": "Gentle hygiene bonus",
+      "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "pain_fatigue_flare_bonus",
+      "modifier": "Pain/fatigue flare bonus",
+      "addWhen": "Task happened during pain, fatigue, instability, migraine, sensory overload, depression, anxiety, etc.",
+      "bonus": {
+        "display": "+9 gold",
+        "sourceDisplay": "+9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "dysphoria_trauma_safe_care_bonus",
+      "modifier": "Dysphoria/trauma-safe care bonus",
+      "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+      "bonus": {
+        "display": "+9 gold",
+        "sourceDisplay": "+9 gold",
+        "totalCopper": 900,
+        "denominations": {
+          "platinum": 0,
+          "gold": 9,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "takeover_bonus",
+      "modifier": "Takeover bonus",
+      "addWhen": "Someone takes over an assigned task because access barriers are too high",
+      "bonus": {
+        "display": "+1 platinum, 5 gold",
+        "sourceDisplay": "+1 platinum, 5 gold",
+        "totalCopper": 1500,
+        "denominations": {
+          "platinum": 1,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "major_takeover_bonus",
+      "modifier": "Major takeover bonus",
+      "addWhen": "Someone takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+      "bonus": {
+        "display": "+4 platinum",
+        "sourceDisplay": "+4 platinum",
+        "totalCopper": 4000,
+        "denominations": {
+          "platinum": 4,
+          "gold": 0,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    },
+    {
+      "id": "recovery_repair_bonus",
+      "modifier": "Recovery/repair bonus",
+      "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+      "bonus": {
+        "display": "+5 gold",
+        "sourceDisplay": "+5 gold",
+        "totalCopper": 500,
+        "denominations": {
+          "platinum": 0,
+          "gold": 5,
+          "silver": 0,
+          "copper": 0
+        }
+      }
+    }
+  ],
+  "gentle_wording": [
+    {
+      "situation": "Hygiene skipped",
+      "use": "Tiny wash counts. Your body still deserves care.",
+      "avoid": "You failed hygiene."
+    },
+    {
+      "situation": "Shower is too much",
+      "use": "Would wipes, face wash, clean clothes, or sitting with supplies be enough today?",
+      "avoid": "Just shower."
+    },
+    {
+      "situation": "Task incomplete",
+      "use": "Partial completion paid out. Recovery counts too.",
+      "avoid": "Incomplete / failed."
+    },
+    {
+      "situation": "A person takes over a high-burden task",
+      "use": "You protected the home and the person you love. Hero reward added.",
+      "avoid": "You had to do their job."
+    },
+    {
+      "situation": "A physical task is not accessible",
+      "use": "This is an access barrier, not laziness.",
+      "avoid": "Try harder."
+    },
+    {
+      "situation": "Burnout",
+      "use": "Breaks are protected. Eating and decompression earn rewards.",
+      "avoid": "Push through."
+    },
+    {
+      "situation": "Doctor/admin task",
+      "use": "This is a high-effort quest. Opening the portal counts.",
+      "avoid": "This should be easy."
+    }
+  ],
+  "merged_source_payloads": {
+    "currency-system.json": {
+      "conversion": {
+        "copper": 1,
+        "silver": 10,
+        "gold": 100,
+        "platinum": 1000
+      },
+      "displayRule": "Store amounts internally as totalCopper/rewardTotalCopper/priceTotalCopper, display normalized highest-to-lowest, and hide zero denominations.",
+      "privateCurrencyOnly": true,
+      "realCurrencyPayouts": false,
+      "onlyBundledOurSpaceGamesCanEarnGameRewards": true,
+      "tiers": [
+        {
+          "tier": "Tiny start",
+          "use": "Opening, checking, choosing, gathering one item",
+          "rewardText": "1 gold",
+          "rewardTotalCopper": 100
+        },
+        {
+          "tier": "Gentle step",
+          "use": "Low-spoon self-care, tiny chore, tiny admin",
+          "rewardText": "2 gold, 5 silver",
+          "rewardTotalCopper": 250
+        },
+        {
+          "tier": "Small task",
+          "use": "One clear task chunk",
+          "rewardText": "5 gold",
+          "rewardTotalCopper": 500
+        },
+        {
+          "tier": "Medium task",
+          "use": "Normal chore, care task, hobby work block",
+          "rewardText": "9 gold",
+          "rewardTotalCopper": 900
+        },
+        {
+          "tier": "Hard task",
+          "use": "Gross, painful, sensory-heavy, executive-function-heavy",
+          "rewardText": "1 platinum, 5 gold",
+          "rewardTotalCopper": 1500
+        },
+        {
+          "tier": "Very hard task",
+          "use": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+          "rewardText": "2 platinum, 5 gold",
+          "rewardTotalCopper": 2500
+        },
+        {
+          "tier": "Hero / takeover",
+          "use": "A profile fully takes over a high-burden support task",
+          "rewardText": "4 platinum",
+          "rewardTotalCopper": 4000
+        },
+        {
+          "tier": "Recovery bonus",
+          "use": "Rest after hard task, stopping before crash, asking for help safely",
+          "rewardText": "5 gold",
+          "rewardTotalCopper": 500
+        }
+      ],
+      "modifiers": [
+        {
+          "modifier": "Low-spoon attempt bonus",
+          "when": "They tried even if they only did part of it",
+          "bonusText": "+2 gold, 5 silver",
+          "bonusTotalCopper": 250
+        },
+        {
+          "modifier": "Gentle hygiene bonus",
+          "when": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+          "bonusText": "+5 gold",
+          "bonusTotalCopper": 500
+        },
+        {
+          "modifier": "Pain/fatigue flare bonus",
+          "when": "Task happened during pain, fatigue, instability, migraine, sensory overload, depression, anxiety, etc.",
+          "bonusText": "+9 gold",
+          "bonusTotalCopper": 900
+        },
+        {
+          "modifier": "Dysphoria/trauma-safe care bonus",
+          "when": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+          "bonusText": "+9 gold",
+          "bonusTotalCopper": 900
+        },
+        {
+          "modifier": "Takeover bonus",
+          "when": "Someone takes over an assigned task because access barriers are too high",
+          "bonusText": "+1 platinum, 5 gold",
+          "bonusTotalCopper": 1500
+        },
+        {
+          "modifier": "Major takeover bonus",
+          "when": "Someone takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+          "bonusText": "+4 platinum",
+          "bonusTotalCopper": 4000
+        },
+        {
+          "modifier": "Recovery/repair bonus",
+          "when": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+          "bonusText": "+5 gold",
+          "bonusTotalCopper": 500
+        }
+      ],
+      "gentleWording": [
+        {
+          "situation": "Hygiene skipped",
+          "use": "Tiny wash counts. Your body still deserves care.",
+          "avoid": "You failed hygiene."
+        },
+        {
+          "situation": "Shower is too much",
+          "use": "Would wipes, face wash, clean clothes, or sitting with supplies be enough today?",
+          "avoid": "Just shower."
+        },
+        {
+          "situation": "Task incomplete",
+          "use": "Partial completion paid out. Recovery counts too.",
+          "avoid": "Incomplete / failed."
+        },
+        {
+          "situation": "A person takes over a high-burden task",
+          "use": "You protected the home and the person you love. Hero reward added.",
+          "avoid": "You had to do their job."
+        },
+        {
+          "situation": "A physical task is not accessible",
+          "use": "This is an access barrier, not laziness.",
+          "avoid": "Try harder."
+        },
+        {
+          "situation": "Burnout",
+          "use": "Breaks are protected. Eating and decompression earn rewards.",
+          "avoid": "Push through."
+        },
+        {
+          "situation": "Doctor/admin task",
+          "use": "This is a high-effort quest. Opening the portal counts.",
+          "avoid": "This should be easy."
+        }
+      ]
+    },
+    "currency_system_merged.json": {
+      "schema": "ourspace.currency_merged.v1",
+      "source_paths": [
+        "merge and categorize/ourspace_two_user_rewards_store (1).json",
+        "merge and categorize/json1/dino_store.json",
+        "merge and categorize/json2/dino_store.json",
+        "merge and categorize/json1/squishy_store.json",
+        "merge and categorize/json2/squishy_store.json",
+        "merge and categorize/json1/dino_tasks.json",
+        "merge and categorize/json2/dino_tasks.json",
+        "merge and categorize/json1/squishy_tasks.json",
+        "merge and categorize/json2/squishy_tasks.json",
+        "merge and categorize/json1/game_rules.json",
+        "merge and categorize/json2/game_rules.json",
+        "merge and categorize/json1/ourspace_game_reward_rules.json"
+      ],
+      "primary_currency_system": {
+        "baseUnit": "copper",
+        "conversion": {
+          "10 copper": "1 silver",
+          "10 silver": "1 gold",
+          "10 gold": "1 platinum"
+        },
+        "denominations": {
+          "copper": 1,
+          "silver": 10,
+          "gold": 100,
+          "platinum": 1000
+        },
+        "displayRule": "Store and calculate rewards/costs as totalCopper, then display normalized platinum, gold, silver, copper from highest to lowest and hide zero denominations.",
+        "formatExamples": {
+          "50": "5 silver",
+          "120": "1 gold, 2 silver",
+          "250": "2 gold, 5 silver",
+          "900": "9 gold",
+          "1500": "1 platinum, 5 gold",
+          "3000": "3 platinum"
+        }
+      },
+      "reward_earning_scale": [
+        {
+          "difficulty": "Tiny start / check-in",
+          "reward": {
+            "totalCopper": 25,
+            "display": "2 silver, 5 copper",
+            "platinum": 0,
+            "gold": 0,
+            "silver": 2,
+            "copper": 5
+          }
+        },
+        {
+          "difficulty": "Small self-care / easy step",
+          "reward": {
+            "totalCopper": 50,
+            "display": "5 silver",
+            "platinum": 0,
+            "gold": 0,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        {
+          "difficulty": "Normal task chunk",
+          "reward": {
+            "totalCopper": 120,
+            "display": "1 gold, 2 silver",
+            "platinum": 0,
+            "gold": 1,
+            "silver": 2,
+            "copper": 0
+          }
+        },
+        {
+          "difficulty": "Hard / gross / executive-function task",
+          "reward": {
+            "totalCopper": 250,
+            "display": "2 gold, 5 silver",
+            "platinum": 0,
+            "gold": 2,
+            "silver": 5,
+            "copper": 0
+          }
+        },
+        {
+          "difficulty": "Very hard / care support / appointment / major chore",
+          "reward": {
+            "totalCopper": 500,
+            "display": "5 gold",
+            "platinum": 0,
+            "gold": 5,
+            "silver": 0,
+            "copper": 0
+          }
+        },
+        {
+          "difficulty": "Dino task takeover / high-burden caregiver support",
+          "reward": {
+            "totalCopper": 900,
+            "display": "9 gold",
+            "platinum": 0,
+            "gold": 9,
+            "silver": 0,
+            "copper": 0
+          }
+        }
+      ],
+      "profiles": {
+        "william": {
+          "displayName": "William",
+          "siteName": "Dino",
+          "storeName": "Dino Store",
+          "rewardProvidedBy": "Squishy",
+          "roleNotes": [
+            "Chores are limited to trash to chute if energy allows, sink dishes when Squishy brings them, and laundry.",
+            "Wheelchair-first planning, seated/bed-level options, tiny steps, rest/recovery, oxygen-aware pacing, and effort/safety rewards are supported.",
+            "Nicotine vape fluid is included as a 21+ nicotine reward item."
+          ],
+          "is21Plus": true
+        },
+        "jasper": {
+          "displayName": "Jasper",
+          "siteName": "Squishy",
+          "storeName": "Squishy Store",
+          "rewardProvidedBy": "Dino",
+          "roleNotes": [
+            "Paid caregiver work blocks are included.",
+            "Protected caregiver breaks are rewarded.",
+            "Duck collection and Jasper-specific favorites are included."
+          ],
+          "is21Plus": true
+        }
+      },
+      "task_currency_systems": {
+        "william": {
+          "currencySystem": {
+            "baseUnit": "copper",
+            "conversion": {
+              "copperPerSilver": 10,
+              "silverPerGold": 10,
+              "goldPerPlatinum": 10,
+              "copperPerGold": 100,
+              "copperPerPlatinum": 1000
+            },
+            "displayRule": "Store rewards internally as totalCopper, then display normalized platinum/gold/silver/copper from highest to lowest denomination. Hide zero denominations.",
+            "conversions": [
+              "10 copper = 1 silver",
+              "10 silver = 1 gold",
+              "10 gold = 1 platinum"
+            ],
+            "formatExampleFunctionName": "formatReward"
+          },
+          "currencyTiers": [
+            {
+              "id": "tiny_start",
+              "tier": "Tiny start",
+              "useFor": "Opening, checking, choosing, gathering one item",
+              "reward": {
+                "display": "1 gold",
+                "sourceDisplay": "1 gold",
+                "totalCopper": 100,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 1,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "gentle_step",
+              "tier": "Gentle step",
+              "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+              "reward": {
+                "display": "2 gold, 5 silver",
+                "sourceDisplay": "2 gold, 5 silver",
+                "totalCopper": 250,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 2,
+                  "silver": 5,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "small_task",
+              "tier": "Small task",
+              "useFor": "One clear task chunk",
+              "reward": {
+                "display": "5 gold",
+                "sourceDisplay": "5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "medium_task",
+              "tier": "Medium task",
+              "useFor": "Normal chore, care task, hobby work block",
+              "reward": {
+                "display": "9 gold",
+                "sourceDisplay": "9 gold",
+                "totalCopper": 900,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 9,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "hard_task",
+              "tier": "Hard task",
+              "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+              "reward": {
+                "display": "1 platinum, 5 gold",
+                "sourceDisplay": "1 platinum, 5 gold",
+                "totalCopper": 1500,
+                "denominations": {
+                  "platinum": 1,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "very_hard_task",
+              "tier": "Very hard task",
+              "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+              "reward": {
+                "display": "2 platinum, 5 gold",
+                "sourceDisplay": "2 platinum, 5 gold",
+                "totalCopper": 2500,
+                "denominations": {
+                  "platinum": 2,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "hero_takeover",
+              "tier": "Hero / takeover",
+              "useFor": "Squishy fully takes over a Dino-assigned high-burden task",
+              "reward": {
+                "display": "4 platinum",
+                "sourceDisplay": "4 platinum",
+                "totalCopper": 4000,
+                "denominations": {
+                  "platinum": 4,
+                  "gold": 0,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "recovery_bonus",
+              "tier": "Recovery bonus",
+              "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+              "reward": {
+                "display": "5 gold",
+                "sourceDisplay": "5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            }
+          ],
+          "globalPricingModifiers": [
+            {
+              "id": "low_spoon_attempt_bonus",
+              "modifier": "Low-spoon attempt bonus",
+              "addWhen": "They tried even if they only did part of it",
+              "bonus": {
+                "display": "+2 gold, 5 silver",
+                "sourceDisplay": "+2 gold, 5 silver",
+                "totalCopper": 250,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 2,
+                  "silver": 5,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "gentle_hygiene_bonus",
+              "modifier": "Gentle hygiene bonus",
+              "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+              "bonus": {
+                "display": "+5 gold",
+                "sourceDisplay": "+5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "pain_fatigue_flare_bonus",
+              "modifier": "Pain/fatigue flare bonus",
+              "addWhen": "Task happened during pain, MS fatigue, EDS instability, migraine, sensory overload, depression, anxiety, etc.",
+              "bonus": {
+                "display": "+9 gold",
+                "sourceDisplay": "+9 gold",
+                "totalCopper": 900,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 9,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "dysphoria_trauma_safe_care_bonus",
+              "modifier": "Dysphoria/trauma-safe care bonus",
+              "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+              "bonus": {
+                "display": "+9 gold",
+                "sourceDisplay": "+9 gold",
+                "totalCopper": 900,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 9,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "dino_takeover_bonus",
+              "modifier": "Dino takeover bonus",
+              "addWhen": "Squishy does a Dino-assigned task because Dino's body/access barriers are too high",
+              "bonus": {
+                "display": "+1 platinum, 5 gold",
+                "sourceDisplay": "+1 platinum, 5 gold",
+                "totalCopper": 1500,
+                "denominations": {
+                  "platinum": 1,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "major_dino_takeover_bonus",
+              "modifier": "Major Dino takeover bonus",
+              "addWhen": "Squishy takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+              "bonus": {
+                "display": "+4 platinum",
+                "sourceDisplay": "+4 platinum",
+                "totalCopper": 4000,
+                "denominations": {
+                  "platinum": 4,
+                  "gold": 0,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "recovery_repair_bonus",
+              "modifier": "Recovery/repair bonus",
+              "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+              "bonus": {
+                "display": "+5 gold",
+                "sourceDisplay": "+5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            }
+          ]
+        },
+        "jasper": {
+          "currencySystem": {
+            "baseUnit": "copper",
+            "conversion": {
+              "copperPerSilver": 10,
+              "silverPerGold": 10,
+              "goldPerPlatinum": 10,
+              "copperPerGold": 100,
+              "copperPerPlatinum": 1000
+            },
+            "displayRule": "Store rewards internally as totalCopper, then display normalized platinum/gold/silver/copper from highest to lowest denomination. Hide zero denominations.",
+            "conversions": [
+              "10 copper = 1 silver",
+              "10 silver = 1 gold",
+              "10 gold = 1 platinum"
+            ],
+            "formatExampleFunctionName": "formatReward"
+          },
+          "currencyTiers": [
+            {
+              "id": "tiny_start",
+              "tier": "Tiny start",
+              "useFor": "Opening, checking, choosing, gathering one item",
+              "reward": {
+                "display": "1 gold",
+                "sourceDisplay": "1 gold",
+                "totalCopper": 100,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 1,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "gentle_step",
+              "tier": "Gentle step",
+              "useFor": "Low-spoon self-care, tiny chore, tiny admin",
+              "reward": {
+                "display": "2 gold, 5 silver",
+                "sourceDisplay": "2 gold, 5 silver",
+                "totalCopper": 250,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 2,
+                  "silver": 5,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "small_task",
+              "tier": "Small task",
+              "useFor": "One clear task chunk",
+              "reward": {
+                "display": "5 gold",
+                "sourceDisplay": "5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "medium_task",
+              "tier": "Medium task",
+              "useFor": "Normal chore, care task, hobby work block",
+              "reward": {
+                "display": "9 gold",
+                "sourceDisplay": "9 gold",
+                "totalCopper": 900,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 9,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "hard_task",
+              "tier": "Hard task",
+              "useFor": "Gross, painful, sensory-heavy, executive-function-heavy",
+              "reward": {
+                "display": "1 platinum, 5 gold",
+                "sourceDisplay": "1 platinum, 5 gold",
+                "totalCopper": 1500,
+                "denominations": {
+                  "platinum": 1,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "very_hard_task",
+              "tier": "Very hard task",
+              "useFor": "Hygiene, doctor, paperwork, phone call, trash out, full litter change",
+              "reward": {
+                "display": "2 platinum, 5 gold",
+                "sourceDisplay": "2 platinum, 5 gold",
+                "totalCopper": 2500,
+                "denominations": {
+                  "platinum": 2,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "hero_takeover",
+              "tier": "Hero / takeover",
+              "useFor": "Squishy fully takes over a Dino-assigned high-burden task",
+              "reward": {
+                "display": "4 platinum",
+                "sourceDisplay": "4 platinum",
+                "totalCopper": 4000,
+                "denominations": {
+                  "platinum": 4,
+                  "gold": 0,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "recovery_bonus",
+              "tier": "Recovery bonus",
+              "useFor": "Rest after hard task, stopping before crash, asking for help safely",
+              "reward": {
+                "display": "5 gold",
+                "sourceDisplay": "5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            }
+          ],
+          "globalPricingModifiers": [
+            {
+              "id": "low_spoon_attempt_bonus",
+              "modifier": "Low-spoon attempt bonus",
+              "addWhen": "They tried even if they only did part of it",
+              "bonus": {
+                "display": "+2 gold, 5 silver",
+                "sourceDisplay": "+2 gold, 5 silver",
+                "totalCopper": 250,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 2,
+                  "silver": 5,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "gentle_hygiene_bonus",
+              "modifier": "Gentle hygiene bonus",
+              "addWhen": "Hygiene/body-care task done with no shame, seated option, wipes, shower chair, or partial wash",
+              "bonus": {
+                "display": "+5 gold",
+                "sourceDisplay": "+5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "pain_fatigue_flare_bonus",
+              "modifier": "Pain/fatigue flare bonus",
+              "addWhen": "Task happened during pain, MS fatigue, EDS instability, migraine, sensory overload, depression, anxiety, etc.",
+              "bonus": {
+                "display": "+9 gold",
+                "sourceDisplay": "+9 gold",
+                "totalCopper": 900,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 9,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "dysphoria_trauma_safe_care_bonus",
+              "modifier": "Dysphoria/trauma-safe care bonus",
+              "addWhen": "Body care, bathroom care, or clothing care done with consent/privacy/gentle wording",
+              "bonus": {
+                "display": "+9 gold",
+                "sourceDisplay": "+9 gold",
+                "totalCopper": 900,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 9,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "dino_takeover_bonus",
+              "modifier": "Dino takeover bonus",
+              "addWhen": "Squishy does a Dino-assigned task because Dino's body/access barriers are too high",
+              "bonus": {
+                "display": "+1 platinum, 5 gold",
+                "sourceDisplay": "+1 platinum, 5 gold",
+                "totalCopper": 1500,
+                "denominations": {
+                  "platinum": 1,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "major_dino_takeover_bonus",
+              "modifier": "Major Dino takeover bonus",
+              "addWhen": "Squishy takes over dishes, trash, laundry, fridge, mopping/sweeping, shower support, paperwork, phone call, doctor prep",
+              "bonus": {
+                "display": "+4 platinum",
+                "sourceDisplay": "+4 platinum",
+                "totalCopper": 4000,
+                "denominations": {
+                  "platinum": 4,
+                  "gold": 0,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            },
+            {
+              "id": "recovery_repair_bonus",
+              "modifier": "Recovery/repair bonus",
+              "addWhen": "They rest after effort, ask for help, repair after shutdown, or stop before a crash",
+              "bonus": {
+                "display": "+5 gold",
+                "sourceDisplay": "+5 gold",
+                "totalCopper": 500,
+                "denominations": {
+                  "platinum": 0,
+                  "gold": 5,
+                  "silver": 0,
+                  "copper": 0
+                }
+              }
+            }
+          ]
+        }
+      },
+      "store_currency_systems": {
+        "william": {
+          "copperPerSilver": 10,
+          "silverPerGold": 10,
+          "goldPerPlatinum": 10
+        },
+        "jasper": {
+          "copperPerSilver": 10,
+          "silverPerGold": 10,
+          "goldPerPlatinum": 10
+        }
+      },
+      "game_currency_rules": {
+        "currencyScale": {
+          "copper": 1,
+          "silver": 10,
+          "gold": 100,
+          "platinum": 1000,
+          "conversionRules": [
+            "10 copper = 1 silver",
+            "10 silver = 1 gold",
+            "10 gold = 1 platinum"
+          ]
+        },
+        "displayRule": "Hide zero denominations. Never show 200 copper when it can be shown as 2 gold.",
+        "defaultSessionCapCopper": 25000,
+        "globalEvents": {
+          "game_launch": {
+            "label": "Game opened",
+            "totalCopper": 100,
+            "cooldownMs": 300000,
+            "maxPerSession": 1,
+            "tier": "tiny_start"
+          },
+          "first_action": {
+            "label": "First in-game action",
+            "totalCopper": 250,
+            "cooldownMs": 300000,
+            "maxPerSession": 1,
+            "tier": "gentle_step"
+          },
+          "action_streak_small": {
+            "label": "In-game action streak",
+            "totalCopper": 250,
+            "cooldownMs": 45000,
+            "maxPerSession": 8,
+            "tier": "gentle_step"
+          },
+          "action_streak_large": {
+            "label": "Strong play streak",
+            "totalCopper": 500,
+            "cooldownMs": 90000,
+            "maxPerSession": 4,
+            "tier": "small_task"
+          },
+          "play_time_5_min": {
+            "label": "Focused play block",
+            "totalCopper": 500,
+            "cooldownMs": 300000,
+            "maxPerSession": 6,
+            "tier": "small_task"
+          },
+          "level_complete": {
+            "label": "Level / round cleared",
+            "totalCopper": 900,
+            "cooldownMs": 20000,
+            "maxPerSession": 12,
+            "tier": "medium_task"
+          },
+          "achievement": {
+            "label": "Achievement unlocked",
+            "totalCopper": 500,
+            "cooldownMs": 20000,
+            "maxPerSession": 10,
+            "tier": "small_task"
+          },
+          "high_score": {
+            "label": "High score / best score",
+            "totalCopper": 900,
+            "cooldownMs": 45000,
+            "maxPerSession": 8,
+            "tier": "medium_task"
+          },
+          "score_milestone": {
+            "label": "Score milestone",
+            "totalCopper": 250,
+            "cooldownMs": 15000,
+            "maxPerSession": 20,
+            "tier": "gentle_step"
+          },
+          "resource_milestone": {
+            "label": "Resource / coin milestone",
+            "totalCopper": 250,
+            "cooldownMs": 15000,
+            "maxPerSession": 20,
+            "tier": "gentle_step"
+          },
+          "game_over_recovery": {
+            "label": "Played and reset safely",
+            "totalCopper": 100,
+            "cooldownMs": 120000,
+            "maxPerSession": 5,
+            "tier": "tiny_start"
+          },
+          "fnaf_defensive_set": {
+            "label": "FNAF defensive survival actions",
+            "totalCopper": 250,
+            "cooldownMs": 12000,
+            "maxPerSession": 20,
+            "tier": "gentle_step"
+          },
+          "fnaf_hour_survived": {
+            "label": "FNAF hour survived",
+            "totalCopper": 900,
+            "cooldownMs": 30000,
+            "maxPerSession": 8,
+            "tier": "medium_task"
+          },
+          "fnaf_night_survived": {
+            "label": "FNAF night survived",
+            "totalCopper": 2500,
+            "cooldownMs": 60000,
+            "maxPerSession": 8,
+            "tier": "very_hard_task"
+          },
+          "fnaf_hard_clear": {
+            "label": "FNAF hard clear",
+            "totalCopper": 5000,
+            "cooldownMs": 180000,
+            "maxPerSession": 3,
+            "tier": "hero"
+          }
+        },
+        "detectors": {
+          "canvasText": true,
+          "domText": true,
+          "localStorageProgress": true,
+          "pointerKeyboardActions": true,
+          "customApi": "window.OurSpaceGameRewards.award(eventId, detail) or window.OurSpaceGameRewards.reportScore(value, kind)",
+          "postMessage": "Parent listens for type='ourspace.game.reward.v1'. Legacy game reward messages are ignored by default."
+        }
+      }
+    }
+  },
+  "merge_integrity": {
+    "filesMergedCount": 2,
+    "filesMerged": [
+      "currency-system.json",
+      "currency_system_merged.json"
+    ],
+    "canonicalTierCount": 8,
+    "globalModifierCount": 7,
+    "gentleWordingCount": 7,
+    "profilesPresent": [
+      "jasper",
+      "william"
+    ],
+    "gameEventCount": 15,
+    "validatedJson": true
+  }
+}
