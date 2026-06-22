@@ -95,7 +95,7 @@
     return `${game.file}${glue}socials=1&socialsGame=${encodeURIComponent(game.slug)}&socialsPlayers=${players}`;
   }
   async function loadManifest() {
-    const manifest = await api('/games_manifest.json');
+    const manifest = await api('games_manifest.json');
     state.games = manifest.games || [];
     state.stats = manifest;
     store.selectedSlug ||= state.games[0]?.slug || '';

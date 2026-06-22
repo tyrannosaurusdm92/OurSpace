@@ -72,6 +72,213 @@
   const fmtTime = ms => { const sec = Math.max(0, Math.floor(ms / 1000)); return `${String(Math.floor(sec / 60)).padStart(2, '0')}:${String(sec % 60).padStart(2, '0')}`; };
   const initials = name => String(name || '?').trim().split(/\s+/).slice(0, 2).map(x => x[0]?.toUpperCase() || '').join('') || '?';
 
+  const PROFILE_LAYOUT_MARKER = '[[SOCIALS_PROFILE_LAYOUT_V1]]';
+  const MYSPACE_PROFILE_KEY = 'socials.myspaceProfile.v1';
+  const PASSWORD_HELP_KEY = 'socials.passwordHelp.v1';
+
+  function getVisibleFeedPosts() {
+    return (state.data.feed || []).filter(post => !isProfileDesignPost(post));
+  }
+
+  function isProfileDesignPost(post) {
+    return String(post?.text || '').startsWith(PROFILE_LAYOUT_MARKER);
+  }
+
+  function parseProfileDesignPost(post) {
+    if (!isProfileDesignPost(post)) return null;
+    try {
+      const parsed = JSON.parse(String(post.text || '').slice(PROFILE_LAYOUT_MARKER.length));
+      parsed.author = parsed.name || post.author || parsed.author || 'Friend';
+      parsed.updatedAt = parsed.updatedAt || post.createdAt || new Date().toISOString();
+      return parsed;
+    } catch {
+      return null;
+    }
+  }
+
+  function loadLocalMyspaceProfile() {
+    try { return JSON.parse(localStorage.getItem(MYSPACE_PROFILE_KEY) || '{}'); }
+    catch { return {}; }
+  }
+
+  function saveLocalMyspaceProfile(profile) {
+    localStorage.setItem(MYSPACE_PROFILE_KEY, JSON.stringify(profile || {}));
+  }
+
+  function collectProfileDesigns() {
+    const designs = new Map();
+    for (const p of state.data.profiles || []) {
+      if (p?.name) designs.set(String(p.name).toLowerCase(), {
+        name: p.name,
+        status: p.status || 'Around',
+        color: p.color || '#38bdf8',
+        headline: `${p.status || 'Around'}`,
+        about: 'This friend has not published a custom profile layout yet.',
+        layoutCode: '',
+        mediaTitle: '',
+        mediaUrl: '',
+        updatedAt: ''
+      });
+    }
+    for (const post of state.data.feed || []) {
+      const design = parseProfileDesignPost(post);
+      if (!design?.author) continue;
+      const key = String(design.author).toLowerCase();
+      const existing = designs.get(key);
+      if (!existing || String(design.updatedAt || '').localeCompare(String(existing.updatedAt || '')) >= 0) {
+        designs.set(key, { ...existing, ...design, name: design.author || design.name });
+      }
+    }
+    const local = loadLocalMyspaceProfile();
+    if (local?.name) designs.set(String(local.name).toLowerCase(), { ...designs.get(String(local.name).toLowerCase()), ...local });
+    return designs;
+  }
+
+  function currentMyspaceDesign() {
+    return {
+      name: me(),
+      status: $('#displayStatus')?.value.trim() || 'Around',
+      headline: $('#myspaceHeadline')?.value.trim() || 'Mood: online',
+      about: $('#myspaceAbout')?.value.trim() || '',
+      color: $('#myspaceProfileColor')?.value || '#ff66cc',
+      mediaTitle: $('#myspaceMediaTitle')?.value.trim() || '',
+      mediaUrl: $('#myspaceMediaUrl')?.value.trim() || '',
+      layoutCode: $('#myspaceLayoutCode')?.value || '',
+      updatedAt: new Date().toISOString()
+    };
+  }
+
+  function packMyspaceDesignForBackend(design) {
+    const maxChars = 3900 - PROFILE_LAYOUT_MARKER.length;
+    const packed = { ...design };
+    let json = JSON.stringify(packed);
+    if (json.length <= maxChars) return { design: packed, truncated: false };
+    const overflow = json.length - maxChars;
+    packed.layoutCode = String(packed.layoutCode || '').slice(0, Math.max(0, String(packed.layoutCode || '').length - overflow - 240));
+    json = JSON.stringify(packed);
+    if (json.length > maxChars) {
+      const extra = json.length - maxChars;
+      packed.about = String(packed.about || '').slice(0, Math.max(0, String(packed.about || '').length - extra - 120));
+    }
+    return { design: packed, truncated: true };
+  }
+
+  function safeText(value, fallback = '') {
+    return esc(String(value ?? fallback));
+  }
+
+  function sanitizeMyspaceLayoutCode(code) {
+    let clean = String(code || '');
+    clean = clean.replace(/<script\b[\s\S]*?<\/script>/gi, '');
+    clean = clean.replace(/<iframe\b[\s\S]*?<\/iframe>/gi, '');
+    clean = clean.replace(/<object\b[\s\S]*?<\/object>/gi, '');
+    clean = clean.replace(/<embed\b[\s\S]*?>/gi, '');
+    clean = clean.replace(/\son[a-z]+\s*=\s*(".*?"|'.*?'|[^\s>]+)/gi, '');
+    clean = clean.replace(/javascript\s*:/gi, '');
+    clean = clean.replace(/data:text\/html/gi, '');
+    if (!/<[a-z][\s\S]*>/i.test(clean) && clean.trim()) clean = `<style>${clean}</style>`;
+    return clean;
+  }
+
+  function profileMediaMarkup(design) {
+    const url = String(design.mediaUrl || '').trim();
+    if (!url) return '<div class="media-player empty">No profile song selected.</div>';
+    const title = safeText(design.mediaTitle || 'Profile media');
+    const safeUrl = safeText(url);
+    if (/\.(mp3|m4a|ogg|wav)(\?.*)?$/i.test(url)) {
+      return `<div class="media-player"><b>${title}</b><audio controls src="${safeUrl}"></audio></div>`;
+    }
+    if (/\.(mp4|webm|mov)(\?.*)?$/i.test(url)) {
+      return `<div class="media-player"><b>${title}</b><video controls src="${safeUrl}"></video></div>`;
+    }
+    return `<div class="media-player"><b>${title}</b><a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeUrl}</a></div>`;
+  }
+
+  function buildMyspaceProfileDoc(design = {}, posts = []) {
+    const color = /^#[0-9a-f]{6}$/i.test(String(design.color || '')) ? design.color : '#ff66cc';
+    const name = safeText(design.name || 'Friend');
+    const status = safeText(design.status || 'Around');
+    const headline = safeText(design.headline || 'Mood: online');
+    const about = safeText(design.about || 'No About Me yet.').replace(/\n/g, '<br>');
+    const layoutCode = sanitizeMyspaceLayoutCode(design.layoutCode);
+    const layoutStyles = (layoutCode.match(/<style\b[\s\S]*?<\/style>/gi) || []).join('\n');
+    const layoutHtml = layoutCode.replace(/<style\b[\s\S]*?<\/style>/gi, '').trim();
+    const postItems = posts.slice(0, 8).map(post => `<li><b>${safeText(fmt(post.createdAt))}</b><br>${safeText(post.text || '').replace(/\n/g, '<br>')}</li>`).join('') || '<li>No public posts yet.</li>';
+    return `<!doctype html><html><head><meta charset="utf-8"><base target="_blank"><style>
+      :root{--accent:${color};font-family:Verdana,Arial,sans-serif;color:#111;background:#dbeafe}
+      body{margin:0;background:linear-gradient(90deg,#003399 0 16px,#fff 16px calc(100% - 16px),#ff6600 calc(100% - 16px));font-size:12px}
+      a{color:#003399;font-weight:bold}.page{max-width:840px;margin:0 auto;padding:10px;background:#fff;min-height:100vh}
+      .top{background:#003399;color:#fff;padding:8px 10px;border:2px solid #001a66;display:flex;justify-content:space-between;gap:8px;align-items:center}
+      h1{font-size:24px;margin:0;color:#fff;text-shadow:2px 2px 0 #000}.online{color:#00ff66;font-weight:bold;text-transform:uppercase}
+      .grid{display:grid;grid-template-columns:220px 1fr;gap:10px;margin-top:10px}.box{border:2px solid #6699cc;background:#f2f8ff;margin-bottom:10px}
+      .box h2{margin:0;background:#ffcc99;color:#003366;font-size:13px;padding:5px;border-bottom:2px solid #6699cc;text-transform:uppercase}
+      .box .inside{padding:8px}.pfp{height:160px;background:radial-gradient(circle,var(--accent),#003399);display:grid;place-items:center;color:#fff;font-size:48px;font-weight:bold;border:4px ridge #fff}
+      .contact{display:grid;grid-template-columns:1fr 1fr;gap:4px}.contact span{background:#e6f0ff;border:1px solid #99bbee;padding:4px;text-align:center}
+      .media-player{border:2px inset #888;background:#000;color:#00ff66;padding:7px;font-family:"Courier New",monospace}.media-player audio,.media-player video{width:100%;margin-top:5px}
+      .blurbs{background:#fffbe6}.friend-posts ul{margin:0;padding-left:18px}.friend-posts li{margin-bottom:8px}
+      .custom-zone{border:2px dashed var(--accent);background:#fff;margin-top:10px;padding:8px;min-height:40px}
+      @media(max-width:640px){.grid{grid-template-columns:1fr}.top{display:block}}
+    </style>${layoutStyles}</head><body><div class="page">
+      <div class="top"><h1>${name}</h1><div><span class="online">Online Now!</span><br>${status}</div></div>
+      <div class="grid">
+        <aside>
+          <div class="box"><h2>${name}'s Profile</h2><div class="inside"><div class="pfp">${safeText(initials(design.name || 'F'))}</div><p><b>${headline}</b></p></div></div>
+          <div class="box"><h2>Contacting ${name}</h2><div class="inside contact"><span>Message</span><span>Add Comment</span><span>Forward</span><span>Favorite</span></div></div>
+          <div class="box"><h2>Music</h2><div class="inside">${profileMediaMarkup(design)}</div></div>
+        </aside>
+        <main>
+          <div class="box blurbs"><h2>${name}'s Blurbs</h2><div class="inside"><b>About me:</b><p>${about}</p></div></div>
+          <div class="box friend-posts"><h2>${name}'s Latest Posts</h2><div class="inside"><ul>${postItems}</ul></div></div>
+          <div class="custom-zone">${layoutHtml || '<b>Custom layout zone</b>'}</div>
+        </main>
+      </div>
+    </div></body></html>`;
+  }
+
+  function refreshMyspacePreview() {
+    const frame = $('#myspacePreview');
+    if (!frame) return;
+    const posts = getVisibleFeedPosts().filter(post => String(post.author || '').toLowerCase() === me().toLowerCase());
+    frame.srcdoc = buildMyspaceProfileDoc(currentMyspaceDesign(), posts);
+  }
+
+  async function publishMyspaceDesign() {
+    const design = currentMyspaceDesign();
+    saveLocalMyspaceProfile(design);
+    const packed = packMyspaceDesignForBackend(design);
+    await postJson('/api/profile', { id: slug(design.name), name: design.name, status: design.status, color: design.color });
+    await postJson('/api/post', { author: design.name, text: PROFILE_LAYOUT_MARKER + JSON.stringify(packed.design) });
+    toast(packed.truncated ? 'Profile published. Very long layout code was trimmed for backend sharing, but the full version stayed saved in this browser.' : 'Profile and MySpace layout published.');
+    await loadState().catch(err => toast(err.message));
+  }
+
+  function profilePostCard(post) {
+    const card = document.createElement('article');
+    card.className = 'post';
+    card.innerHTML = `<div class="post-head"><button class="profile-link" type="button">${esc(post.author)}</button><span>${fmt(post.createdAt)}</span></div>${post.text ? `<div class="post-body">${esc(post.text)}</div>` : ''}`;
+    $('.profile-link', card)?.addEventListener('click', () => openRetroProfile(post.author));
+    const media = mediaElement(post);
+    if (media) card.appendChild(media);
+    card.appendChild(reactionRow('post', post));
+    return card;
+  }
+
+  function openRetroProfile(name) {
+    const key = String(name || '').toLowerCase();
+    const designs = collectProfileDesigns();
+    const design = designs.get(key) || { name, status: 'Around', headline: 'Profile', about: 'No profile published yet.', color: '#38bdf8' };
+    const posts = getVisibleFeedPosts().filter(post => String(post.author || '').toLowerCase() === key);
+    $('#profileViewTitle').textContent = `${design.name || name}'s Profile`;
+    $('#profileViewFrame').srcdoc = buildMyspaceProfileDoc(design, posts);
+    const list = $('#profilePostList');
+    list.innerHTML = '';
+    if (!posts.length) list.innerHTML = '<article class="post"><strong>No public posts yet.</strong></article>';
+    else posts.slice(0, 12).forEach(post => list.appendChild(profilePostCard(post)));
+    $('#profileView').hidden = false;
+    $('#profileView').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+
   function fileToDataUrl(file) {
     if (!file) return Promise.resolve({ media: '', mediaType: '' });
     return new Promise((resolve, reject) => {
@@ -139,35 +346,51 @@
     renderEvents();
   }
 
-  function renderProfiles() {
+    function renderProfiles() {
     const root = $('#profiles');
+    if (!root) return;
     root.innerHTML = '';
-    for (const p of state.data.profiles || []) {
-      const card = document.createElement('article');
-      card.className = 'profile';
+    const designs = collectProfileDesigns();
+    const seen = new Set();
+    const people = [];
+    for (const p of state.data.profiles || []) people.push({ name: p.name, status: p.status, color: p.color });
+    for (const design of designs.values()) people.push({ name: design.name, status: design.status, color: design.color });
+    for (const p of people) {
+      if (!p?.name) continue;
+      const key = String(p.name).toLowerCase();
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const card = document.createElement('button');
+      card.type = 'button';
+      card.className = 'profile retro-profile-button';
       card.innerHTML = `<span class="dot" style="background:${esc(p.color || '#38bdf8')}">${esc(initials(p.name))}</span><div><strong>${esc(p.name)}</strong><div class="hint">${esc(p.status || 'Around')}</div></div>`;
+      card.addEventListener('click', () => openRetroProfile(p.name));
       root.appendChild(card);
     }
+    if (!root.children.length) root.innerHTML = '<article class="profile"><span class="dot">?</span><div><strong>No profiles yet</strong><div class="hint">Sign in and publish yours.</div></div></article>';
+    refreshMyspacePreview();
   }
 
   function renderFeed() {
     const list = $('#feedList');
+    if (!list) return;
     list.innerHTML = '';
-    const posts = state.data.feed || [];
+    const posts = getVisibleFeedPosts();
     if (!posts.length) {
       list.innerHTML = '<div class="post"><strong>No posts yet.</strong><p class="hint">Share the first update above.</p></div>';
       return;
     }
     for (const post of posts) {
-      const card = document.createElement('article');
-      card.className = 'post';
-      card.innerHTML = `<div class="post-head"><strong>${esc(post.author)}</strong><span>${fmt(post.createdAt)}</span></div>${post.text ? `<div class="post-body">${esc(post.text)}</div>` : ''}`;
-      const media = mediaElement(post);
-      if (media) card.appendChild(media);
-      card.appendChild(reactionRow('post', post));
+      const card = profilePostCard(post);
       const comments = document.createElement('div');
       comments.className = 'comments';
-      for (const c of post.comments || []) comments.innerHTML += `<div class="comment"><strong>${esc(c.author)}:</strong> ${esc(c.text)}</div>`;
+      for (const c of post.comments || []) {
+        const row = document.createElement('div');
+        row.className = 'comment';
+        row.innerHTML = `<button class="comment-author profile-link" type="button">${esc(c.author)}</button>: ${esc(c.text)}`;
+        $('.profile-link', row)?.addEventListener('click', () => openRetroProfile(c.author));
+        comments.appendChild(row);
+      }
       const form = document.createElement('form');
       form.className = 'comment-row';
       form.innerHTML = '<input maxlength="1200" placeholder="Comment"><button class="secondary">Reply</button>';
@@ -181,7 +404,9 @@
       card.append(comments, form);
       list.appendChild(card);
     }
+    refreshMyspacePreview();
   }
+
 
   function reactionRow(type, item) {
     const row = document.createElement('div');
@@ -281,17 +506,45 @@
     }
   }
 
-  function bindSocialForms() {
-    $('#displayName').value = localStorage.getItem('socials.name') || 'Friend';
-    $('#displayStatus').value = localStorage.getItem('socials.status') || 'Around';
-    $('#roomName').value = $('#displayName').value;
+    function bindSocialForms() {
+    const localProfile = loadLocalMyspaceProfile();
+    const session = window.SocialSharedBackend?.getSession?.() || {};
+    $('#displayName').value = localProfile.name || session.displayName || localStorage.getItem('socials.name') || 'Friend';
+    $('#displayStatus').value = localProfile.status || localStorage.getItem('socials.status') || 'Around';
+    $('#myspaceHeadline').value = localProfile.headline || localStorage.getItem('socials.myspaceHeadline') || 'Mood: nostalgic';
+    $('#myspaceAbout').value = localProfile.about || localStorage.getItem('socials.myspaceAbout') || '';
+    $('#myspaceProfileColor').value = localProfile.color || localStorage.getItem('socials.myspaceColor') || '#ff66cc';
+    $('#myspaceMediaTitle').value = localProfile.mediaTitle || localStorage.getItem('socials.myspaceMediaTitle') || '';
+    $('#myspaceMediaUrl').value = localProfile.mediaUrl || localStorage.getItem('socials.myspaceMediaUrl') || '';
+    $('#myspaceLayoutCode').value = localProfile.layoutCode || localStorage.getItem('socials.myspaceLayoutCode') || '';
+    if ($('#roomName')) $('#roomName').value = $('#displayName').value;
+    refreshMyspacePreview();
+
+    ['displayName','displayStatus','myspaceHeadline','myspaceAbout','myspaceProfileColor','myspaceMediaTitle','myspaceMediaUrl','myspaceLayoutCode'].forEach(id => {
+      const el = $('#' + id);
+      el?.addEventListener('input', () => {
+        const design = currentMyspaceDesign();
+        saveLocalMyspaceProfile(design);
+        localStorage.setItem('socials.name', design.name);
+        localStorage.setItem('socials.status', design.status);
+        localStorage.setItem('socials.myspaceHeadline', design.headline);
+        localStorage.setItem('socials.myspaceAbout', design.about);
+        localStorage.setItem('socials.myspaceColor', design.color);
+        localStorage.setItem('socials.myspaceMediaTitle', design.mediaTitle);
+        localStorage.setItem('socials.myspaceMediaUrl', design.mediaUrl);
+        localStorage.setItem('socials.myspaceLayoutCode', design.layoutCode);
+        refreshMyspacePreview();
+      });
+    });
+
     $('#saveProfile').addEventListener('click', async () => {
       localStorage.setItem('socials.name', me());
       localStorage.setItem('socials.status', $('#displayStatus').value.trim() || 'Around');
-      $('#roomName').value = me();
-      await postJson('/api/profile', { id: slug(me()), name: me(), status: $('#displayStatus').value.trim() || 'Around' }).catch(err => toast(err.message));
-      toast('Profile saved.');
+      if ($('#roomName')) $('#roomName').value = me();
+      await publishMyspaceDesign().catch(err => toast(err.message));
     });
+    $('#previewMyspaceLayout')?.addEventListener('click', refreshMyspacePreview);
+    $('#closeProfileView')?.addEventListener('click', () => { $('#profileView').hidden = true; });
     $('#refreshState').addEventListener('click', () => loadState().catch(err => toast(err.message)));
     $('#postForm').addEventListener('submit', async event => {
       event.preventDefault();
@@ -301,6 +554,7 @@
       if (!text && !media.media) return;
       await postJson('/api/post', { author: me(), text, ...media }).catch(err => toast(err.message));
       $('#postText').value = ''; $('#postFile').value = '';
+      await loadState().catch(err => toast(err.message));
     });
     $('#messageForm').addEventListener('submit', async event => {
       event.preventDefault();
@@ -310,6 +564,7 @@
       if (!text && !media.media) return;
       await postJson('/api/messages', { channel: state.activeChannel, author: me(), text, ...media }).catch(err => toast(err.message));
       $('#messageInput').value = ''; $('#messageFile').value = '';
+      await loadState().catch(err => toast(err.message));
     });
     $('#newChannelForm').addEventListener('submit', event => {
       event.preventDefault();
@@ -333,6 +588,7 @@
       e.target.value = '';
     });
   }
+
 
   function bindCamera() {
     $('#startCamera').addEventListener('click', startCamera);
@@ -658,27 +914,36 @@
   function vttTime(ms) { const t = Math.max(0, Math.floor(ms)); const h = Math.floor(t / 3600000); const m = Math.floor((t % 3600000) / 60000); const s = Math.floor((t % 60000) / 1000); const z = t % 1000; return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}.${String(z).padStart(3, '0')}`; }
 
 
-  function createAuthOverlay() {
-    let overlay = document.querySelector('#sharedBackendAuth');
-    if (overlay) return overlay;
-    overlay = document.createElement('section');
-    overlay.id = 'sharedBackendAuth';
-    overlay.className = 'auth-overlay hidden';
-    overlay.innerHTML = `<form class="auth-card" id="sharedBackendAuthForm">
-      <p class="eyebrow">shared backend login</p>
-      <h2>Sign in</h2>
-      <p class="hint">This project is wired to the shared Google Apps Script backend. Use a normal username/password form so Google Password Manager can save and autofill it. The backend only stores salted password hashes and caps each project at 10 active people.</p>
-      <label>Username <input id="backendUsername" name="username" autocomplete="username" required></label>
-      <label>Password <input id="backendPassword" name="password" type="password" autocomplete="current-password" required></label>
-      <label>Display name <input id="backendDisplayName" name="name" autocomplete="nickname" placeholder="Shown to friends"></label>
-      <div class="row wrap">
-        <button class="primary" type="submit">Login</button>
-        <button id="registerBackendUser" class="secondary" type="button">Register</button>
-        <button id="useLocalOnly" class="secondary" type="button">Use local/offline</button>
-      </div>
-    </form>`;
-    document.body.appendChild(overlay);
-    return overlay;
+    function setAuthPasswordVisible(input, button) {
+    if (!input || !button) return;
+    const showing = input.type === 'text';
+    input.type = showing ? 'password' : 'text';
+    button.textContent = showing ? 'Show' : 'Hide';
+    button.setAttribute('aria-pressed', String(!showing));
+    input.focus();
+  }
+
+  function enterSignedInApp(session = {}) {
+    const name = session.displayName || session.name || localStorage.getItem('socials.name') || $('#usernameInput')?.value.trim() || 'Friend';
+    $('#signinShell').hidden = true;
+    $('#appShell').hidden = false;
+    document.body.classList.add('signed-in');
+    $('#signedInMessage').textContent = `Signed in as ${name}.`;
+    $('#logoutBackend')?.removeAttribute('hidden');
+    localStorage.setItem('socials.name', name);
+  }
+
+  function showSignInShell(message = '') {
+    $('#appShell').hidden = true;
+    $('#signinShell').hidden = false;
+    document.body.classList.remove('signed-in');
+    if (message) $('#statusMessage').textContent = message;
+  }
+
+  function localPasswordHelp(email, newPassword) {
+    const payload = { email, note: 'Browser-only reminder. Remote backend passwords are not changed by this app screen.', savedAt: new Date().toISOString(), length: String(newPassword || '').length };
+    localStorage.setItem(PASSWORD_HELP_KEY, JSON.stringify(payload));
+    return payload;
   }
 
   async function initSharedBackendUI() {
@@ -698,45 +963,86 @@
       else window.SocialSharedBackend?.setBackendUrl?.(url);
       location.reload();
     });
-    $('#logoutBackend')?.addEventListener('click', async () => { await window.SocialSharedBackend?.logout?.(); location.reload(); });
-    if (!window.SocialSharedBackend?.isEnabled?.()) return;
-    $('#logoutBackend')?.removeAttribute('hidden');
-    const session = window.SocialSharedBackend.getSession();
-    if (session?.displayName) {
-      $('#displayName').value = session.displayName;
-      localStorage.setItem('socials.name', session.displayName);
-      await window.SocialSharedBackend.request('heartbeat', { name: session.displayName, status: $('#displayStatus').value || 'Around' }).catch(err => toast(err.message));
-      return;
+
+    $('#togglePassword')?.addEventListener('click', () => setAuthPasswordVisible($('#passwordInput'), $('#togglePassword')));
+    $('#toggleResetPassword')?.addEventListener('click', () => setAuthPasswordVisible($('#resetPasswordInput'), $('#toggleResetPassword')));
+    $('#forgotButton')?.addEventListener('click', () => {
+      $('#forgotPanel').hidden = !$('#forgotPanel').hidden;
+      $('#resetMessage').textContent = '';
+      if (!$('#forgotPanel').hidden) $('#resetEmailInput').focus();
+    });
+    $('#resetPasswordButton')?.addEventListener('click', () => {
+      const email = $('#resetEmailInput').value.trim().toLowerCase();
+      const newPassword = $('#resetPasswordInput').value;
+      if (!email || !newPassword) {
+        $('#resetMessage').textContent = 'Enter the email and the new password you want to remember.';
+        return;
+      }
+      localPasswordHelp(email, newPassword);
+      $('#resetMessage').textContent = 'Saved a browser-only reminder. The deployed backend password was not changed.';
+    });
+
+    $('#logoutBackend')?.addEventListener('click', async () => {
+      await window.SocialSharedBackend?.logout?.();
+      showSignInShell('Signed out. The inner site is hidden again.');
+    });
+
+    if (!window.SocialSharedBackend?.isEnabled?.()) {
+      enterSignedInApp({ displayName: localStorage.getItem('socials.name') || 'Local Friend' });
+      return null;
     }
-    const overlay = createAuthOverlay();
-    overlay.classList.remove('hidden');
-    const form = $('#sharedBackendAuthForm', overlay);
-    const finish = async (mode) => {
-      const username = $('#backendUsername', overlay).value.trim();
-      const password = $('#backendPassword', overlay).value;
-      const displayName = $('#backendDisplayName', overlay).value.trim() || username;
-      if (!username || !password) return toast('Username and password are required.');
-      const session = mode === 'register'
-        ? await window.SocialSharedBackend.register(username, password, displayName)
-        : await window.SocialSharedBackend.login(username, password, displayName);
-      $('#displayName').value = session.displayName || displayName;
-      localStorage.setItem('socials.name', session.displayName || displayName);
-      overlay.classList.add('hidden');
-      toast('Shared backend connected.');
-    };
-    form.addEventListener('submit', async event => { event.preventDefault(); await finish('login').catch(err => toast(err.message)); });
-    $('#registerBackendUser', overlay).addEventListener('click', () => finish('register').catch(err => toast(err.message)));
-    $('#useLocalOnly', overlay).addEventListener('click', () => { window.SocialSharedBackend.disableBackend(); overlay.classList.add('hidden'); toast('Using local/offline mode in this browser only.'); });
-    await new Promise(resolve => {
-      const watcher = setInterval(() => {
-        if (overlay.classList.contains('hidden') || !window.SocialSharedBackend.isEnabled()) { clearInterval(watcher); resolve(); }
-      }, 250);
+
+    const existing = window.SocialSharedBackend.getSession();
+    if (existing?.sessionToken || existing?.token) {
+      enterSignedInApp(existing);
+      return existing;
+    }
+
+    showSignInShell('');
+    return new Promise(resolve => {
+      $('#signinForm').addEventListener('submit', async event => {
+        event.preventDefault();
+        const email = $('#emailInput').value.trim().toLowerCase();
+        const username = $('#usernameInput').value.trim();
+        const password = $('#passwordInput').value;
+        const displayName = $('#signinDisplayNameInput').value.trim() || username;
+        if (!username || !password) {
+          $('#statusMessage').textContent = 'Please enter a username and password.';
+          return;
+        }
+        if (password.length < 6) {
+          $('#statusMessage').textContent = 'The deployed backend requires passwords of at least 6 characters.';
+          return;
+        }
+        $('#statusMessage').textContent = 'Signing in...';
+        try {
+          let session;
+          try {
+            session = await window.SocialSharedBackend.login(username, password, displayName);
+            $('#statusMessage').textContent = 'Signed in.';
+          } catch (error) {
+            if (!/not found|register|first setup/i.test(error.message || '')) throw error;
+            $('#statusMessage').textContent = 'No account found. Creating it now...';
+            session = await window.SocialSharedBackend.register(username, password, displayName);
+          }
+          if (email) localStorage.setItem('socials.email', email);
+          localStorage.setItem('socials.username', username);
+          localStorage.setItem('socials.name', session.displayName || displayName);
+          enterSignedInApp(session);
+          await window.SocialSharedBackend.request('heartbeat', { name: session.displayName || displayName, status: 'Around' }).catch(() => {});
+          resolve(session);
+        } catch (error) {
+          $('#statusMessage').textContent = error.message || 'Sign in failed.';
+        }
+      }, { once: false });
     });
   }
 
+
   async function init() {
-    bindMainTabs(); bindSocialForms(); bindCamera(); bindRoom();
+    bindMainTabs();
     await initSharedBackendUI();
+    bindSocialForms(); bindCamera(); bindRoom();
     connectSocialEvents();
     await loadState().catch(err => toast(err.message));
     if (location.hash.startsWith('#room=')) { $('#roomCode').value = decodeURIComponent(location.hash.replace('#room=', '')); $$('.tab').find(b => b.dataset.tab === 'rooms')?.click(); }

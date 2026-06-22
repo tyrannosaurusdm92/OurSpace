@@ -223,3 +223,303 @@ a { color: var(--law-page-fg); }
 .event-form textarea { min-height: 100px; }
 .event-card .post-body { white-space: pre-wrap; }
 #installProjectApp.install-ready { outline: 3px solid var(--law-accent); }
+
+
+/* === Full sign-in gate from attached Socials Application HTML === */
+body:not(.signed-in){
+  color:var(--law-page-fg,#E8FFFF);
+  background:
+    linear-gradient(180deg, rgba(0,3,5,.38), rgba(0,3,5,.82)),
+    url("https://wallpapers.com/images/high/starry-night-over-mountains-zt0to2lebx20wyzt.jpg"),
+    url("https://wallpapers.com/wallpapers/starry-night-over-mountains-zt0to2lebx20wyzt.html"),
+    radial-gradient(circle at top, #104b57 0%, #000305 72%);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+body.signed-in{color:var(--text);}
+
+#signinShell{
+  width:min(980px, calc(100% - 28px));
+  min-height:100vh;
+  margin:0 auto;
+  padding:44px 0;
+  display:grid;
+  align-items:center;
+}
+#signinPanel{
+  width:100%;
+  padding:clamp(24px,4vw,52px);
+  border:2px solid var(--law-border,#00D9D9);
+  border-radius:32px;
+  background:rgba(0,60,66,.88);
+  color:var(--law-panel-fg,#E8FFFF);
+  box-shadow:0 0 44px rgba(0,255,255,.24),0 24px 80px rgba(0,0,0,.48);
+  backdrop-filter:blur(12px);
+  text-align:center;
+}
+#signinPanel h1{
+  margin:0 0 16px;
+  padding:8px 12px;
+  font-family:var(--title-font);
+  font-size:clamp(2.2rem,7vw,5rem);
+  line-height:1;
+  letter-spacing:.05em;
+}
+#signinPanel h2{
+  margin:0 0 24px;
+  padding:8px 12px;
+  font-family:var(--h2-font);
+  font-size:clamp(1.1rem,3vw,2rem);
+  color:var(--law-accent,#00FFFF);
+}
+#signinPanel p{
+  max-width:72ch;
+  margin:0 auto 24px;
+  padding:8px 12px;
+  line-height:1.75;
+}
+#signinForm,#forgotPanel{
+  display:grid;
+  gap:20px;
+  padding:22px;
+  border:1px solid rgba(232,255,255,.28);
+  border-radius:24px;
+  background:rgba(0,30,36,.58);
+}
+#forgotPanel{margin-top:22px}
+.formGrid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+.fullWidth{grid-column:1/-1}
+.passwordRow{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:12px;
+  align-items:end;
+}
+.actionRow{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:14px;
+  padding:18px;
+}
+#signinPanel input,#signinPanel textarea,#signinPanel select{
+  width:100%;
+  min-height:52px;
+  padding:16px 18px;
+  border:2px solid var(--law-border,#00D9D9);
+  border-radius:18px;
+  background:#fff!important;
+  color:#000!important;
+  text-align:center;
+}
+#signinPanel button{
+  min-height:52px;
+  min-width:52px;
+  padding:16px 24px;
+  border:2px solid var(--law-border,#00D9D9);
+  border-radius:18px;
+  background:var(--law-button-bg,#001E24);
+  color:#fff;
+  font-weight:800;
+  box-shadow:0 0 18px rgba(0,255,255,.18),0 12px 32px rgba(0,0,0,.26);
+}
+#signinPanel button.secondary{border-color:var(--law-divider,#CA6309)}
+#signinPanel label{
+  display:grid;
+  gap:10px;
+  width:100%;
+  color:inherit;
+  font-weight:800;
+  text-align:center;
+}
+#statusMessage,#resetMessage{
+  min-height:28px;
+  margin:0;
+  padding:12px;
+  font-weight:800;
+  color:#fff;
+}
+.smallNote{display:block;padding:10px;font-size:.92rem;line-height:1.6}
+.app-shell[hidden],#signinShell[hidden]{display:none!important}
+.top-actions{
+  grid-template-columns:auto auto auto auto auto;
+  align-items:center;
+}
+.signed-in-message{
+  display:inline-flex;
+  align-items:center;
+  padding:.65rem .9rem;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--text);
+  background:rgba(255,255,255,.07);
+  font-weight:800;
+}
+
+/* === Retro 2007 MySpace Feed/Profile Facelift === */
+.myspace-feed-panel{
+  --ms-blue:#003399;
+  --ms-orange:#ff6600;
+  --ms-light:#e7f1ff;
+  --ms-border:#6699cc;
+  --ms-pink:#ff66cc;
+}
+.retro-space-shell{
+  display:grid;
+  grid-template-columns:minmax(280px,360px) minmax(0,1fr);
+  gap:1rem;
+  align-items:start;
+  font-family:Verdana,Arial,sans-serif;
+}
+.retro-profile-column,.retro-feed-column{
+  display:grid;
+  gap:1rem;
+}
+.myspace-card{
+  border:2px solid var(--ms-border);
+  border-radius:0;
+  background:#fff;
+  color:#111;
+  box-shadow:7px 7px 0 rgba(0,51,153,.22);
+  padding:0;
+  overflow:hidden;
+}
+.myspace-card .hint,.myspace-card label{
+  color:#334155;
+}
+.myspace-card h2,.myspace-card h3{
+  color:#003366;
+  letter-spacing:0;
+}
+.myspace-card > :not(.myspace-titlebar){
+  margin-left:10px;
+  margin-right:10px;
+}
+.myspace-titlebar{
+  margin:0;
+  padding:7px 10px;
+  background:linear-gradient(90deg,var(--ms-blue),#1f5bd8);
+  color:#fff;
+  font-size:.86rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  border-bottom:3px solid var(--ms-orange);
+}
+.profile-preview-wrap{
+  margin:10px;
+  border:3px ridge #99bbee;
+  background:#dbeafe;
+}
+.myspace-preview,.myspace-profile-frame{
+  width:100%;
+  height:430px;
+  display:block;
+  border:0;
+  background:#fff;
+}
+.myspace-profile-frame{height:620px}
+.retro-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+  padding:0 10px 10px;
+}
+.myspace-card input,.myspace-card textarea,.myspace-card select{
+  background:#fff!important;
+  color:#111!important;
+  border:2px inset #aac6ee;
+  border-radius:0;
+}
+.myspace-card input[type="color"]{
+  min-height:52px;
+  padding:3px;
+}
+.layout-code-box{
+  min-height:260px;
+  font-family:"Courier New",monospace;
+  font-size:.88rem;
+  line-height:1.35;
+}
+.retro-profile-list{
+  grid-template-columns:1fr;
+  padding-bottom:10px;
+}
+.retro-profile-button{
+  width:calc(100% - 20px);
+  margin:0 10px;
+  justify-content:flex-start;
+  text-align:left;
+  border-radius:0;
+  background:#eef6ff;
+  color:#111;
+  border:1px solid #99bbee;
+  box-shadow:none;
+}
+.retro-profile-button:hover{
+  background:#fff6dd;
+  border-color:var(--ms-orange);
+}
+.myspace-card .post,.myspace-card .message,.myspace-card .story{
+  background:#f8fbff;
+  color:#111;
+  border:1px solid #99bbee;
+  border-radius:0;
+}
+.myspace-card .post-head,.myspace-card .msg-head{
+  background:#ffcc99;
+  color:#003366;
+  margin:-.9rem -.9rem .65rem;
+  padding:.45rem .65rem;
+  border-bottom:1px solid #99bbee;
+}
+.profile-link,.comment-author{
+  display:inline;
+  min-width:0;
+  min-height:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:#003399;
+  box-shadow:none;
+  font-weight:900;
+  text-decoration:underline;
+}
+.profile-link:hover,.comment-author:hover{
+  transform:none;
+  background:transparent;
+  color:#ff6600;
+}
+.retro-profile-view{
+  animation:retroPop .22s ease-out;
+}
+.profile-post-list{
+  max-height:380px;
+  overflow:auto;
+  padding-bottom:10px;
+}
+@keyframes retroPop{
+  from{transform:translateY(-8px);opacity:.01}
+  to{transform:none;opacity:1}
+}
+@media(max-width:980px){
+  #signinShell{width:100%;padding:16px}
+  #signinPanel{border-radius:24px}
+  .formGrid,.passwordRow{grid-template-columns:1fr}
+  #signinPanel button,#signinPanel input,#signinPanel select,#signinPanel textarea{width:100%}
+  .top-actions{grid-template-columns:1fr}
+  .retro-space-shell{grid-template-columns:1fr}
+  .myspace-preview,.myspace-profile-frame{height:560px}
+}
+@media(max-width:600px){
+  .myspace-card > :not(.myspace-titlebar){margin-left:8px;margin-right:8px}
+  .retro-actions{display:grid}
+  .myspace-preview,.myspace-profile-frame{height:520px}
+}

@@ -27,7 +27,7 @@
         const result = await window.SocialSharedBackend.get('state');
         return result?.state || null;
       }
-      const response = await fetch('/api/state', { cache: 'no-store' });
+      const response = await fetch('api/state', { cache: 'no-store' });
       if (!response.ok) return null;
       return await response.json();
     } catch (error) {

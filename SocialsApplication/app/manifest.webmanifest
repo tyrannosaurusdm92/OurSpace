@@ -1,8 +1,11 @@
 {
   "name": "Socials Application",
   "short_name": "Socials",
-  "start_url": "/",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000305",
-  "theme_color": "#003C42"
+  "theme_color": "#003C42",
+  "scope": "./",
+  "id": "./index.html",
+  "description": "Private small-network social app with feed, channels, camera, rooms, games, events, docs, and shared backend support."
 }

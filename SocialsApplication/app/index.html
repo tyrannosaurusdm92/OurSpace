@@ -12,6 +12,67 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
+
+  <main id="signinShell">
+    <section id="signinPanel" aria-labelledby="signinTitle">
+      <h1 id="signinTitle">Socials Application</h1>
+      <h2>Sign in to enter the social space</h2>
+      <p>Use a normal email, username, and password form so your browser or Google Password Manager can save your login. The form still talks to the existing Google Apps Script backend using the same login and register actions.</p>
+
+      <form id="signinForm" autocomplete="on">
+        <div class="formGrid">
+          <label>
+            Email
+            <input id="emailInput" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Username
+            <input id="usernameInput" name="username" type="text" autocomplete="username" placeholder="Your username" required />
+          </label>
+          <label class="fullWidth">
+            Display name
+            <input id="signinDisplayNameInput" name="name" type="text" autocomplete="nickname" placeholder="Shown to friends" />
+          </label>
+          <label class="fullWidth">
+            Password
+            <span class="passwordRow">
+              <input id="passwordInput" name="password" type="password" autocomplete="current-password" placeholder="Your password" required minlength="6" />
+              <button id="togglePassword" type="button" aria-pressed="false">Show</button>
+            </span>
+          </label>
+        </div>
+        <div class="actionRow">
+          <button type="submit">Sign In / Create Account</button>
+          <button id="forgotButton" class="secondary" type="button">Forgot Password</button>
+        </div>
+        <p id="statusMessage" role="status" aria-live="polite"></p>
+      </form>
+
+      <section id="forgotPanel" hidden aria-labelledby="forgotTitle">
+        <h3 id="forgotTitle">Password Help</h3>
+        <p>This backend currently supports login, register, and logout. To avoid breaking your deployed Google Apps Script, this screen does not invent a fake remote reset endpoint. If the password is lost, reset it in the backend sheet or create a new account if your small-circle user limit allows it.</p>
+        <label>
+          Account Email
+          <input id="resetEmailInput" name="reset-email" type="email" autocomplete="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          New Password Reminder
+          <span class="passwordRow">
+            <input id="resetPasswordInput" name="new-password" type="password" autocomplete="new-password" placeholder="New password to remember locally" minlength="6" />
+            <button id="toggleResetPassword" type="button" aria-pressed="false">Show</button>
+          </span>
+        </label>
+        <div class="actionRow">
+          <button id="resetPasswordButton" type="button">Save Browser Reminder Only</button>
+        </div>
+        <p id="resetMessage" role="status" aria-live="polite"></p>
+      </section>
+
+      <small class="smallNote">Background source: Wallpapers.com Starry Night Over Mountains.</small>
+    </section>
+  </main>
+
+  <div id="appShell" class="app-shell" hidden>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <header class="topbar">
     <div class="brand">
@@ -21,14 +82,12 @@
         <h1>Socials Application</h1>
       </div>
     </div>
-    <div class="identity card-lite">
-      <label>Display name <input id="displayName" maxlength="80" autocomplete="nickname"></label>
-      <label>Status <input id="displayStatus" maxlength="120" placeholder="Around"></label>
-      <button id="saveProfile" class="primary">Save profile</button>
+    <div class="identity card-lite top-actions">
+      <span id="signedInMessage" class="signed-in-message">Signed in.</span>
       <button id="rerollTheme" class="secondary" type="button">Reroll theme</button>
       <button id="backendSettings" class="secondary" type="button">Backend connected</button>
       <button id="installProjectApp" class="secondary" type="button">Install app icon</button>
-      <button id="logoutBackend" class="danger" type="button" hidden>Logout</button>
+      <button id="logoutBackend" class="danger" type="button" hidden>Sign Out</button>
     </div>
   </header>
 
@@ -43,32 +102,87 @@
   </nav>
 
   <main class="shell">
-    <section id="feed" class="panel active-panel">
-      <div class="grid two">
-        <section class="card composer-card">
-          <p class="eyebrow">home base</p>
-          <h2>Friend feed</h2>
-          <form id="postForm" class="stack">
-            <textarea id="postText" maxlength="4000" placeholder="Share an update with your small circle..."></textarea>
-            <div class="row wrap">
-              <label class="file-btn">Attach image/video/audio<input id="postFile" type="file" accept="image/*,video/*,audio/*"></label>
-              <button class="primary" type="submit">Post</button>
+    <section id="feed" class="panel active-panel myspace-feed-panel">
+      <div class="retro-space-shell">
+        <section class="retro-profile-column">
+          <article class="myspace-card profile-editor">
+            <div class="myspace-titlebar">MySpace-style profile</div>
+            <div class="profile-preview-wrap">
+              <iframe id="myspacePreview" class="myspace-preview" title="Your retro profile preview" sandbox=""></iframe>
             </div>
-          </form>
-          <div class="hint">Everything stores through the shared Google Apps Script backend when signed in. Local/offline mode remains available only for testing.</div>
+            <div class="retro-actions">
+              <button id="saveProfile" class="primary" type="button">Save Profile + Publish Layout</button>
+              <button id="previewMyspaceLayout" class="secondary" type="button">Preview Layout Code</button>
+            </div>
+            <p class="hint">Paste classic MySpace layout CSS/HTML below. It is shown inside a sandboxed profile frame so your design can look wild without breaking the rest of the app.</p>
+          </article>
+
+          <article class="myspace-card">
+            <div class="myspace-titlebar">Profile basics</div>
+            <div class="stack">
+              <label>Display name <input id="displayName" maxlength="80" autocomplete="nickname"></label>
+              <label>Status <input id="displayStatus" maxlength="120" placeholder="Around"></label>
+              <label>Profile headline <input id="myspaceHeadline" maxlength="140" placeholder="Mood: nostalgic"></label>
+              <label>About me <textarea id="myspaceAbout" maxlength="900" placeholder="Write your About Me, interests, quotes, links, glitter text, etc."></textarea></label>
+              <label>Profile color <input id="myspaceProfileColor" type="color" value="#ff66cc"></label>
+            </div>
+          </article>
+
+          <article class="myspace-card">
+            <div class="myspace-titlebar">Media player</div>
+            <div class="stack">
+              <label>Song / playlist title <input id="myspaceMediaTitle" maxlength="120" placeholder="Now playing..."></label>
+              <label>Audio or media URL <input id="myspaceMediaUrl" maxlength="600" placeholder="https://...mp3 or a page link"></label>
+            </div>
+          </article>
+
+          <article class="myspace-card">
+            <div class="myspace-titlebar">Layout code</div>
+            <textarea id="myspaceLayoutCode" class="layout-code-box" maxlength="2600" spellcheck="false" placeholder="Paste MySpace layout CSS/HTML here. CSS-only snippets are wrapped automatically. &lt;script&gt; tags and on-click JavaScript are stripped for safety."></textarea>
+          </article>
+
+          <article class="myspace-card">
+            <div class="section-head">
+              <div><p class="eyebrow">people</p><h2>Profile directory</h2></div>
+              <button id="refreshState" class="secondary" type="button">Refresh</button>
+            </div>
+            <div id="profiles" class="profile-grid retro-profile-list"></div>
+          </article>
         </section>
-        <section class="card">
-          <div class="section-head">
-            <div><p class="eyebrow">people</p><h2>Circle</h2></div>
-            <button id="refreshState" class="secondary">Refresh</button>
-          </div>
-          <div id="profiles" class="profile-grid"></div>
+
+        <section class="retro-feed-column">
+          <article class="myspace-card composer-card">
+            <div class="myspace-titlebar">Daily posting</div>
+            <h2>Friend feed</h2>
+            <form id="postForm" class="stack">
+              <textarea id="postText" maxlength="4000" placeholder="Share a daily update with your small circle..."></textarea>
+              <div class="row wrap">
+                <label class="file-btn">Attach image/video/audio<input id="postFile" type="file" accept="image/*,video/*,audio/*"></label>
+                <button class="primary" type="submit">Post Update</button>
+              </div>
+            </form>
+            <div class="hint">The feed works like Facebook-style posting, while each name opens a retro profile page with that person’s MySpace-inspired design.</div>
+          </article>
+
+          <article id="profileView" class="myspace-card retro-profile-view" hidden>
+            <div class="section-head">
+              <div><p class="eyebrow">profile</p><h2 id="profileViewTitle">Profile</h2></div>
+              <button id="closeProfileView" class="secondary" type="button">Back to feed</button>
+            </div>
+            <iframe id="profileViewFrame" class="myspace-profile-frame" title="Friend profile" sandbox=""></iframe>
+            <h3>Recent posts</h3>
+            <div id="profilePostList" class="feed-list profile-post-list"></div>
+          </article>
+
+          <article class="myspace-card feed-card">
+            <div class="section-head">
+              <div><p class="eyebrow">timeline</p><h2>Latest posts</h2></div>
+              <button id="exportData" class="secondary" type="button">Export all JSON</button>
+            </div>
+            <div id="feedList" class="feed-list"></div>
+          </article>
         </section>
       </div>
-      <section class="card feed-card">
-        <div class="section-head"><div><p class="eyebrow">timeline</p><h2>Latest posts</h2></div><button id="exportData" class="secondary">Export all JSON</button></div>
-        <div id="feedList" class="feed-list"></div>
-      </section>
     </section>
 
     <section id="chat" class="panel">
@@ -280,6 +394,7 @@
   </main>
   <template id="mediaTemplate"><div class="media-box"></div></template>
   <div id="messenger-plugin-root"></div>
+  </div>
   <script src="theme-law.js"></script>
   <script src="social-backend-config.js"></script>
   <script src="social-shared-backend.js"></script>
