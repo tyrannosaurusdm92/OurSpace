@@ -1,0 +1,95 @@
+{
+  "id": "interpersonal_effectiveness_handout_20",
+  "module": "Interpersonal Effectiveness",
+  "module_category": "Interpersonal Effectiveness Skills",
+  "item_type": "handout",
+  "item_number": "20",
+  "title": "Strategies for Increasing the Probability of Behaviors You Want",
+  "source_marker": "Interpersonal Effectiveness Handout 20   (I. E. Worksheet 14)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    185
+  ],
+  "source_book_pages": [
+    "161"
+  ],
+  "related_references": [
+    "I. E. Worksheet 14"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Behaviors",
+    "Increasing",
+    "Probability",
+    "Strategies",
+    "Want"
+  ],
+  "pages": [
+    {
+      "pdf_page": 185,
+      "book_page": "161",
+      "text": "161\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nInterpersonal Effectiveness Handout 20   (I. E. Worksheet 14)\nStrategies for Increasing the Probability\nof Behaviors You Want\nDescribe behaviors for yourself or others that you would like to start or increase:\n\nReinforcer = A consequence that increases frequency of a behavior.\nPositive reinforcement = positive consequences (i.e., reward).\nBehavior is increased by consequences a person wants, likes, or will work to get.\nExamples:\nNegative reinforcement = removal of negative events (i.e., relief).\nBehavior is increased by consequences that stop or reduce something negative.\nExamples:\nShaping = Reinforcing small steps toward the behavior you want.\n•• Reinforce small steps that lead toward the goal.\n•• As new behavior stabilizes, require a little bit more before reinforcing.\n•• Continue until you reach the goal behavior.\nExamples of steps to a goal behavior:\n\nTiming counts.\n•• Reinforce behavior immediately after it occurs.\n•• When shaping new behavior, at first reinforce every instance of the behavior.\n•• Once behavior is established, gradually start to reinforce only some of the time.\nCAUTION: When you vary reinforcement, behavior becomes very hard to stop."
+    }
+  ],
+  "full_text": "Interpersonal Effectiveness Handout 20   (I. E. Worksheet 14)\nStrategies for Increasing the Probability\nof Behaviors You Want\nDescribe behaviors for yourself or others that you would like to start or increase:\n\nReinforcer = A consequence that increases frequency of a behavior.\nPositive reinforcement = positive consequences (i.e., reward).\nBehavior is increased by consequences a person wants, likes, or will work to get.\nExamples:\nNegative reinforcement = removal of negative events (i.e., relief).\nBehavior is increased by consequences that stop or reduce something negative.\nExamples:\nShaping = Reinforcing small steps toward the behavior you want.\n•• Reinforce small steps that lead toward the goal.\n•• As new behavior stabilizes, require a little bit more before reinforcing.\n•• Continue until you reach the goal behavior.\nExamples of steps to a goal behavior:\n\nTiming counts.\n•• Reinforce behavior immediately after it occurs.\n•• When shaping new behavior, at first reinforce every instance of the behavior.\n•• Once behavior is established, gradually start to reinforce only some of the time.\nCAUTION: When you vary reinforcement, behavior becomes very hard to stop.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/interpersonal_effectiveness/handouts/interpersonal_effectiveness_handout_20_strategies_for_increasing_the_probability_of_behaviors_you_want.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Strategies for Increasing the Probability of Behaviors You Want",
+    "domain": "interpersonal_effectiveness",
+    "item_type": "handout",
+    "shared_facing_summary": "Use this to protect both people: needs are real, boundaries are kind, and a pause is not abandonment when repair is named.",
+    "tiny_steps": [
+      "Name the ask in one sentence.",
+      "Name capacity honestly.",
+      "Offer one smaller option.",
+      "Agree on a return time or next check-in."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Add reassurance before hard asks.",
+      "Use text/chat if speech is hard.",
+      "Include caregiver capacity as part of the plan, not an afterthought."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not use skills to win, corner, threaten leaving, or make either person prove pain or disability."
+    ],
+    "suggested_cadence": [
+      "as_needed",
+      "weekly_repair_check"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "interpersonal_effectiveness",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/03_DBT_Interpersonal_Effectiveness/handouts/json/interpersonal_effectiveness_handout_20_strategies_for_increasing_the_probability_of_behaviors_you_want.json",
+    "shared_output_path": "shared/03_dbt_interpersonal_effectiveness/handouts_json/interpersonal_effectiveness_handout_20_strategies_for_increasing_the_prob_c1192d45.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/03_dbt_interpersonal_effectiveness/handouts_json/interpersonal_effectiveness_handout_20_strategies_for_increasing_the_prob_c1192d45.json"
+}
