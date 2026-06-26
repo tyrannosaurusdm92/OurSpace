@@ -1,0 +1,136 @@
+{
+  "id": "mindfulness-handout-8",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "handout",
+  "item_number": "8",
+  "title": "Practicing Loving Kindness to Increase Love and Compassion",
+  "source_marker": "Mindfulness Handout 8 (Mindfulness Worksheet 6)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    94
+  ],
+  "source_book_pages": [
+    "70"
+  ],
+  "related_references": [
+    "Mindfulness Worksheet 6"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Compassion",
+    "Increase",
+    "Kindness",
+    "Love",
+    "Loving",
+    "Practicing"
+  ],
+  "pages": [
+    {
+      "pdf_page": 94,
+      "book_page": "70",
+      "text": "70\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nMindfulness Handout 8 (Mindfulness Worksheet 6)\nPracticing Loving Kindness to Increase\nLove and Compassion\nWhat Is Loving Kindness?\nLoving kindness is a mindfulness practice designed to increase love and compas-\nsion first for ourselves and then for our loved ones, for friends, for those we are\nangry with, for difficult people, for enemies, and then for all beings.\nLoving kindness can protect us from developing and holding on to judgmentalness,\nill will, and hostile feelings toward ourselves and others.\nPracticing Loving Kindness\nPracticing loving kindness is like saying a prayer for yourself or someone\nelse. As when you are asking or praying for something for yourself or others, you\nactively send loving and kind wishes, and recite in your mind words and phrases that\nexpress good will toward yourself and others.\nLoving Kindness Instructions\n1. Choose a person to send loving kindness toward. Do not select a person you\ndo not want to relate to with kindness and compassion. Start with yourself, or, if\nthis is too difficult, with a person you already love.\n2. Sitting, standing, or lying down, begin by breathing slowly and deeply. Opening\nthe palms of your hands, gently bring the person to mind.\n3. Radiate loving kindness by reciting a set of warm wishes, such as “May I be\nhappy,” “May I be at peace,” “May I be healthy,” “May I be safe,” or another\nset of positive wishes of your own. Repeat the script slowly, and focus on\nthe meaning of each word as you say it in your mind. (If you have distracting\nthoughts, just notice them as they come and go and gently bring your mind\nback to your script.) Continue until you feel yourself immersed in loving\nkindness.\n4. Gradually work yourself up through loved ones, friends, those you are angry\nwith, difficult people, enemies, and finally all beings. For example, use a script\nsuch as “May John be happy,” “May John be at peace,” and so on (or “John,\nmay you be happy,” “May you be at peace,” and so on), as you concentrate on\nradiating loving kindness to John.\n5. Practice each day, starting with yourself and then moving to others."
+    }
+  ],
+  "full_text": "Mindfulness Handout 8 (Mindfulness Worksheet 6)\nPracticing Loving Kindness to Increase\nLove and Compassion\nWhat Is Loving Kindness?\nLoving kindness is a mindfulness practice designed to increase love and compas-\nsion first for ourselves and then for our loved ones, for friends, for those we are\nangry with, for difficult people, for enemies, and then for all beings.\nLoving kindness can protect us from developing and holding on to judgmentalness,\nill will, and hostile feelings toward ourselves and others.\nPracticing Loving Kindness\nPracticing loving kindness is like saying a prayer for yourself or someone\nelse. As when you are asking or praying for something for yourself or others, you\nactively send loving and kind wishes, and recite in your mind words and phrases that\nexpress good will toward yourself and others.\nLoving Kindness Instructions\n1. Choose a person to send loving kindness toward. Do not select a person you\ndo not want to relate to with kindness and compassion. Start with yourself, or, if\nthis is too difficult, with a person you already love.\n2. Sitting, standing, or lying down, begin by breathing slowly and deeply. Opening\nthe palms of your hands, gently bring the person to mind.\n3. Radiate loving kindness by reciting a set of warm wishes, such as “May I be\nhappy,” “May I be at peace,” “May I be healthy,” “May I be safe,” or another\nset of positive wishes of your own. Repeat the script slowly, and focus on\nthe meaning of each word as you say it in your mind. (If you have distracting\nthoughts, just notice them as they come and go and gently bring your mind\nback to your script.) Continue until you feel yourself immersed in loving\nkindness.\n4. Gradually work yourself up through loved ones, friends, those you are angry\nwith, difficult people, enemies, and finally all beings. For example, use a script\nsuch as “May John be happy,” “May John be at peace,” and so on (or “John,\nmay you be happy,” “May you be at peace,” and so on), as you concentrate on\nradiating loving kindness to John.\n5. Practice each day, starting with yourself and then moving to others.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/handouts/mindfulness_handout_8_practicing_loving_kindness_to_increase_love_and_compassion.json",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "02_DBT_Mindfulness/handouts/json/mindfulness_handout_8_practicing_loving_kindness_to_increase_love_and_compassion.json",
+    "title": "Practicing Loving Kindness to Increase Love and Compassion",
+    "category": "DBT Mindfulness",
+    "source_type": "handout",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Take one breath.",
+      "Name one body sensation or one fact.",
+      "Choose one kind next step or stop for rest."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}

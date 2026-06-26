@@ -1,0 +1,135 @@
+{
+  "id": "mindfulness-worksheet-1",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "worksheet",
+  "item_number": "1",
+  "title": "Pros and Cons of Practicing Mindfulness",
+  "source_marker": "Mindfulness Worksheet 1 (Mindfulness Handouts 1, 7)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    101
+  ],
+  "source_book_pages": [
+    "77"
+  ],
+  "related_references": [
+    "Mindfulness Handouts 1, 7"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Cons",
+    "Mindfulness",
+    "Practicing",
+    "Pros"
+  ],
+  "pages": [
+    {
+      "pdf_page": 101,
+      "book_page": "77",
+      "text": "77\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 1 (Mindfulness Handouts 1, 7)\nPros and Cons of Practicing Mindfulness\nDue Date: Name: Week Starting:\nMake a list of the pros and cons of practicing mindfulness skills.\nMake another list of the pros and cons of not practicing mindfulness skills.\nCheck the facts to be sure that you are correct in your assessment of advantages and\ndisadvantages.\nRate Willingness to Practice (0 = None; 100 = Very High) Before: After:\nFill this worksheet out when you are:\n•• Trying to decide whether to work on becoming more mindful of the moments in your life.\n•• Feeling willful; saying no to letting go of emotion mind or extreme reasonable mind.\n•• Resisting observing the present moment, rather than escaping it or trying to control it.\n•• Resisting giving up your interpretations of others or yourself, rather than just describing.\n•• Resisting throwing yourself into the flow of the moment; wanting to stand on the outside.\n•• Feeling threatened whenever you think of letting go of judgments.\n•• Not in the mood for being effective instead of proving you are right.\nWhen you are filling out this worksheet, think about these questions:\n•• Is a mindless life in your best interest (i.e., effective), or not in your best interest (i.e., ineffective)?\n•• Will refusing to go into Wise Mind solve a problem, or make a new problem for you?\n•• Is observing the moment without reacting to it immediately likely to increase your freedom, or\ndecrease it?\n•• Is being attached to your thoughts instead of the facts you can describe useful, or not?\n•• Is staying judgmental helping you change the things you want to change, or getting in the way?\n•• Is it more important to be effective, or to be right?\nPros\nStay Mindless, Judgmental, Ineffective Practice Mindfulness Cons\nStay Mindless, Judgmental, Ineffective Practice Mindfulness What did you decide to do?\nIs this the best decision (in Wise Mind)?\nList any and all wise things you did this week."
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 1 (Mindfulness Handouts 1, 7)\nPros and Cons of Practicing Mindfulness\nDue Date: Name: Week Starting:\nMake a list of the pros and cons of practicing mindfulness skills.\nMake another list of the pros and cons of not practicing mindfulness skills.\nCheck the facts to be sure that you are correct in your assessment of advantages and\ndisadvantages.\nRate Willingness to Practice (0 = None; 100 = Very High) Before: After:\nFill this worksheet out when you are:\n•• Trying to decide whether to work on becoming more mindful of the moments in your life.\n•• Feeling willful; saying no to letting go of emotion mind or extreme reasonable mind.\n•• Resisting observing the present moment, rather than escaping it or trying to control it.\n•• Resisting giving up your interpretations of others or yourself, rather than just describing.\n•• Resisting throwing yourself into the flow of the moment; wanting to stand on the outside.\n•• Feeling threatened whenever you think of letting go of judgments.\n•• Not in the mood for being effective instead of proving you are right.\nWhen you are filling out this worksheet, think about these questions:\n•• Is a mindless life in your best interest (i.e., effective), or not in your best interest (i.e., ineffective)?\n•• Will refusing to go into Wise Mind solve a problem, or make a new problem for you?\n•• Is observing the moment without reacting to it immediately likely to increase your freedom, or\ndecrease it?\n•• Is being attached to your thoughts instead of the facts you can describe useful, or not?\n•• Is staying judgmental helping you change the things you want to change, or getting in the way?\n•• Is it more important to be effective, or to be right?\nPros\nStay Mindless, Judgmental, Ineffective Practice Mindfulness Cons\nStay Mindless, Judgmental, Ineffective Practice Mindfulness What did you decide to do?\nIs this the best decision (in Wise Mind)?\nList any and all wise things you did this week.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/worksheets/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.json",
+  "html_path": "html/worksheets/mindfulness/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "02_DBT_Mindfulness/worksheets/json/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.json",
+    "title": "Pros and Cons of Practicing Mindfulness",
+    "category": "DBT Mindfulness",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}

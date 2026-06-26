@@ -1,0 +1,135 @@
+{
+  "id": "mindfulness-worksheet-10a",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "worksheet",
+  "item_number": "10a",
+  "title": "Analyzing Yourself on the Middle Path",
+  "source_marker": "Mindfulness Worksheet 10a (Mindfulness Handout 10)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    130
+  ],
+  "source_book_pages": [
+    "106"
+  ],
+  "related_references": [
+    "Mindfulness Handout 10"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Analyzing",
+    "Middle",
+    "Path",
+    "Yourself"
+  ],
+  "pages": [
+    {
+      "pdf_page": 130,
+      "book_page": "106",
+      "text": "106\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 10a (Mindfulness Handout 10)\nAnalyzing Yourself on the Middle Path\nDue Date: Name: Week Starting:\n1. Figure out where you are off the middle path, toward one extreme or the other. For each\nof the following Wise Mind dilemmas, put an X on the line that represents where you think you\nare most of the time. If you are fairly balanced, put the X in the middle. If you are out of balance,\nput the X near the end that you are too extreme on.\nReasonable mind\nEmotion mind\nDoing mind\nNothing-to-do mind\nIntense desire for\nchange of the moment\nRadical acceptance of\nwhat is\nSelf-denial\nSelf-indulgence\n2. Choose one dilemma. Describe very specifically what you are doing that is too much, and\nthen describe what you do too little of.\n3. Check the facts. Check for interpretations and opinions. Make sure that your list of activities\nyou do too much of or too little of is in fact accurate. Check your own values in Wise Mind: Be\nsure to work on your middle path, not someone else’s. Also check for judgments. Avoid “good,”\n“bad,” and judgmental language. Rewrite any items above if needed so that they are factual\nand nonjudgmental.\n4. Decide on one (or at most two) very specific things to do in the next week to get closer to\nbalance.\n5. Describe what you did since last week:\n6. Rate how effective the practice was in helping you become more balanced on the middle path.\nRate it from 1 (did not help at all) to 5 (very effective, really helped):\nList any and all wise things you did this week:\nToo much\n___________________________\n___________________________\n___________________________\nToo little\n___________________________\n___________________________\n___________________________\nDo less\n___________________________\n___________________________\n___________________________\nDo more\n___________________________\n___________________________\n___________________________"
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 10a (Mindfulness Handout 10)\nAnalyzing Yourself on the Middle Path\nDue Date: Name: Week Starting:\n1. Figure out where you are off the middle path, toward one extreme or the other. For each\nof the following Wise Mind dilemmas, put an X on the line that represents where you think you\nare most of the time. If you are fairly balanced, put the X in the middle. If you are out of balance,\nput the X near the end that you are too extreme on.\nReasonable mind\nEmotion mind\nDoing mind\nNothing-to-do mind\nIntense desire for\nchange of the moment\nRadical acceptance of\nwhat is\nSelf-denial\nSelf-indulgence\n2. Choose one dilemma. Describe very specifically what you are doing that is too much, and\nthen describe what you do too little of.\n3. Check the facts. Check for interpretations and opinions. Make sure that your list of activities\nyou do too much of or too little of is in fact accurate. Check your own values in Wise Mind: Be\nsure to work on your middle path, not someone else’s. Also check for judgments. Avoid “good,”\n“bad,” and judgmental language. Rewrite any items above if needed so that they are factual\nand nonjudgmental.\n4. Decide on one (or at most two) very specific things to do in the next week to get closer to\nbalance.\n5. Describe what you did since last week:\n6. Rate how effective the practice was in helping you become more balanced on the middle path.\nRate it from 1 (did not help at all) to 5 (very effective, really helped):\nList any and all wise things you did this week:\nToo much\n___________________________\n___________________________\n___________________________\nToo little\n___________________________\n___________________________\n___________________________\nDo less\n___________________________\n___________________________\n___________________________\nDo more\n___________________________\n___________________________\n___________________________",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/worksheets/mindfulness_worksheet_10a_analyzing_yourself_on_the_middle_path.json",
+  "html_path": "html/worksheets/mindfulness/mindfulness_worksheet_10a_analyzing_yourself_on_the_middle_path.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "02_DBT_Mindfulness/worksheets/json/mindfulness_worksheet_10a_analyzing_yourself_on_the_middle_path.json",
+    "title": "Analyzing Yourself on the Middle Path",
+    "category": "DBT Mindfulness",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}
