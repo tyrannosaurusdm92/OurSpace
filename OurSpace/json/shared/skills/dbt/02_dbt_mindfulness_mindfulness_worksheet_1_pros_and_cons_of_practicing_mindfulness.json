@@ -1,0 +1,95 @@
+{
+  "id": "mindfulness_worksheet_1",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "worksheet",
+  "item_number": "1",
+  "title": "Pros and Cons of Practicing Mindfulness",
+  "source_marker": "Mindfulness Worksheet 1   (Mindfulness Handouts 1, 7)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    101
+  ],
+  "source_book_pages": [
+    "77"
+  ],
+  "related_references": [
+    "Mindfulness Handouts 1, 7"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Cons",
+    "Mindfulness",
+    "Practicing",
+    "Pros"
+  ],
+  "pages": [
+    {
+      "pdf_page": 101,
+      "book_page": "77",
+      "text": "77\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 1   (Mindfulness Handouts 1, 7)\nPros and Cons of Practicing Mindfulness\nDue Date:             Name:                                    Week Starting:\nMake a list of the pros and cons of practicing mindfulness skills.\nMake another list of the pros and cons of not practicing mindfulness skills.\nCheck the facts to be sure that you are correct in your assessment of advantages and\ndisadvantages.\nRate Willingness to Practice (0 = None; 100 = Very High)  Before:         After:\nFill this worksheet out when you are:\n•• Trying to decide whether to work on becoming more mindful of the moments in your life.\n•• Feeling willful; saying no to letting go of emotion mind or extreme reasonable mind.\n•• Resisting observing the present moment, rather than escaping it or trying to control it.\n•• Resisting giving up your interpretations of others or yourself, rather than just describing.\n•• Resisting throwing yourself into the flow of the moment; wanting to stand on the outside.\n•• Feeling threatened whenever you think of letting go of judgments.\n•• Not in the mood for being effective instead of proving you are right.\nWhen you are filling out this worksheet, think about these questions:\n•• Is a mindless life in your best interest (i.e., effective), or not in your best interest (i.e., ineffective)?\n•• Will refusing to go into Wise Mind solve a problem, or make a new problem for you?\n•• Is observing the moment without reacting to it immediately likely to increase your freedom, or\ndecrease it?\n•• Is being attached to your thoughts instead of the facts you can describe useful, or not?\n•• Is staying judgmental helping you change the things you want to change, or getting in the way?\n•• Is it more important to be effective, or to be right?\nPros\nStay Mindless, Judgmental, Ineffective\n\n\nPractice Mindfulness\n\n\nCons\nStay Mindless, Judgmental, Ineffective\n\n\nPractice Mindfulness\n\n\nWhat did you decide to do?\nIs this the best decision (in Wise Mind)?\nList any and all wise things you did this week."
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 1   (Mindfulness Handouts 1, 7)\nPros and Cons of Practicing Mindfulness\nDue Date:             Name:                                    Week Starting:\nMake a list of the pros and cons of practicing mindfulness skills.\nMake another list of the pros and cons of not practicing mindfulness skills.\nCheck the facts to be sure that you are correct in your assessment of advantages and\ndisadvantages.\nRate Willingness to Practice (0 = None; 100 = Very High)  Before:         After:\nFill this worksheet out when you are:\n•• Trying to decide whether to work on becoming more mindful of the moments in your life.\n•• Feeling willful; saying no to letting go of emotion mind or extreme reasonable mind.\n•• Resisting observing the present moment, rather than escaping it or trying to control it.\n•• Resisting giving up your interpretations of others or yourself, rather than just describing.\n•• Resisting throwing yourself into the flow of the moment; wanting to stand on the outside.\n•• Feeling threatened whenever you think of letting go of judgments.\n•• Not in the mood for being effective instead of proving you are right.\nWhen you are filling out this worksheet, think about these questions:\n•• Is a mindless life in your best interest (i.e., effective), or not in your best interest (i.e., ineffective)?\n•• Will refusing to go into Wise Mind solve a problem, or make a new problem for you?\n•• Is observing the moment without reacting to it immediately likely to increase your freedom, or\ndecrease it?\n•• Is being attached to your thoughts instead of the facts you can describe useful, or not?\n•• Is staying judgmental helping you change the things you want to change, or getting in the way?\n•• Is it more important to be effective, or to be right?\nPros\nStay Mindless, Judgmental, Ineffective\n\n\nPractice Mindfulness\n\n\nCons\nStay Mindless, Judgmental, Ineffective\n\n\nPractice Mindfulness\n\n\nWhat did you decide to do?\nIs this the best decision (in Wise Mind)?\nList any and all wise things you did this week.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/worksheets/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.json",
+  "html_path": "html/worksheets/mindfulness/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.html",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Pros and Cons of Practicing Mindfulness",
+    "domain": "mindfulness",
+    "item_type": "worksheet",
+    "shared_facing_summary": "Mindfulness is allowed to be tiny, sensory-safe, and done from bed or wheelchair. Noticing without judging counts even when the day is messy.",
+    "tiny_steps": [
+      "Notice one body signal.",
+      "Name one feeling or need.",
+      "Find one neutral thing in the room.",
+      "Return to the next safe action."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use eyes-open grounding if closing eyes feels unsafe.",
+      "Use quiet, low-scent, low-touch options for MCAS, trauma, and sensory overload.",
+      "No posture requirement; lying down or supported sitting is valid."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not force stillness when it increases pain, panic, dysphoria, or trauma activation."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "mindfulness",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/02_DBT_Mindfulness/worksheets/json/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.json",
+    "shared_output_path": "shared/02_dbt_mindfulness/worksheets_json/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/02_dbt_mindfulness/worksheets_json/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.json"
+}

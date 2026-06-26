@@ -1,0 +1,91 @@
+{
+  "id": "general_handout_7",
+  "module": "General",
+  "module_category": "General Skills: Orientation and Analyzing Behavior",
+  "item_type": "handout",
+  "item_number": "7",
+  "title": "Chain Analysis",
+  "source_marker": "General Handout 7   (General Worksheets 2, 2a)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    44
+  ],
+  "source_book_pages": [
+    "20"
+  ],
+  "related_references": [
+    "General Worksheets 2, 2a"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Analysis",
+    "Chain"
+  ],
+  "pages": [
+    {
+      "pdf_page": 44,
+      "book_page": "20",
+      "text": "20\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nGeneral Handout 7   (General Worksheets 2, 2a)\nChain Analysis\nTo understand behavior, do a chain analysis.\nStep 1: Describe the problem behavior.\nStep 2: Describe the prompting event that started the chain of events leading to the problem\nbehavior.\nStep 3: Describe the factors happening before the event that made you vulnerable to starting\ndown the chain of events toward the problem behavior.\nStep 4: Describe in excruciating detail the chain of events that led to the problem behavior.\nStep 5: Describe the consequences of the problem behavior.\nTo change behavior:\nStep 6: Describe skillful behaviors to replace problem links in the chain of events.\nStep 7: Develop prevention plans to reduce vulnerability to stressful events.\nStep 8: Repair important or significant consequences of the problem behavior.\nVULNERABILITY\nPROMPTING EVENT\nLINKS\nCONSEQUENCES\nPROBLEM BEHAVIOR"
+    }
+  ],
+  "full_text": "General Handout 7   (General Worksheets 2, 2a)\nChain Analysis\nTo understand behavior, do a chain analysis.\nStep 1: Describe the problem behavior.\nStep 2: Describe the prompting event that started the chain of events leading to the problem\nbehavior.\nStep 3: Describe the factors happening before the event that made you vulnerable to starting\ndown the chain of events toward the problem behavior.\nStep 4: Describe in excruciating detail the chain of events that led to the problem behavior.\nStep 5: Describe the consequences of the problem behavior.\nTo change behavior:\nStep 6: Describe skillful behaviors to replace problem links in the chain of events.\nStep 7: Develop prevention plans to reduce vulnerability to stressful events.\nStep 8: Repair important or significant consequences of the problem behavior.\nVULNERABILITY\nPROMPTING EVENT\nLINKS\nCONSEQUENCES\nPROBLEM BEHAVIOR",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/general/handouts/general_handout_7_chain_analysis.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Chain Analysis",
+    "domain": "general_chain_analysis",
+    "item_type": "handout",
+    "shared_facing_summary": "Use this as a no-blame map. The point is not who failed; the point is what barrier showed up and what support would make the next try smaller.",
+    "tiny_steps": [
+      "Name the moment without blame.",
+      "Circle one link: body, brain, access, trauma cue, timing, or environment.",
+      "Choose one repair or prevention step.",
+      "Save the lesson; do not punish the person."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Do chain analysis verbally, by voice note, or with one checkbox.",
+      "Include pain, oxygen, MCAS, fatigue, dissociation, caregiver load, and mobility access as real links."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not use this as a courtroom, interrogation, or proof that someone did not try."
+    ],
+    "suggested_cadence": [
+      "as_needed",
+      "weekly_repair_check"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "general_chain_analysis",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_7_chain_analysis.json",
+    "shared_output_path": "shared/01_dbt_general_orientation_and_analyzing_behavior/handouts_json/general_handout_7_chain_analysis.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/01_dbt_general_orientation_and_analyzing_behavior/handouts_json/general_handout_7_chain_analysis.json"
+}

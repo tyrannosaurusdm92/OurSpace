@@ -1,0 +1,93 @@
+{
+  "id": "mindfulness_handout_3",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "handout",
+  "item_number": "3",
+  "title": "Wise Mind: States of Mind",
+  "source_marker": "Mindfulness Handout 3   (Mindfulness Worksheet 3)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    74
+  ],
+  "source_book_pages": [
+    "50"
+  ],
+  "related_references": [
+    "Mindfulness Worksheet 3"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Mind",
+    "States",
+    "Wise"
+  ],
+  "pages": [
+    {
+      "pdf_page": 74,
+      "book_page": "50",
+      "text": "50\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\n«\nMindfulness Handout 3   (Mindfulness Worksheet 3)\nWise Mind:\nStates of Mind\nEMOTION\nMIND\nREASONABLE\nMIND\nWISE\nMIND\nReasonable Mind Is:\n Cool\n Rational\n Task-Focused\nWhen in reasonable mind,\nyou are ruled by facts, reason,\nlogic, and pragmatics. Values\nand feelings are not important.\n        Emotion Mind Is:\n         Hot\n Mood-Dependent\nEmotion-Focused\nWhen in emotion mind,\nyou are ruled by your\nmoods, feelings, and urges\nto do or say things. Facts,\nreason, and logic are not\nimportant.\nWise Mind Is:\n The wisdom within\n each person\n Seeing the value of\n both reason and\n emotion\n Bringing left brain and\n right brain together\n The middle path"
+    }
+  ],
+  "full_text": "«\nMindfulness Handout 3   (Mindfulness Worksheet 3)\nWise Mind:\nStates of Mind\nEMOTION\nMIND\nREASONABLE\nMIND\nWISE\nMIND\nReasonable Mind Is:\n Cool\n Rational\n Task-Focused\nWhen in reasonable mind,\nyou are ruled by facts, reason,\nlogic, and pragmatics. Values\nand feelings are not important.\n        Emotion Mind Is:\n         Hot\n Mood-Dependent\nEmotion-Focused\nWhen in emotion mind,\nyou are ruled by your\nmoods, feelings, and urges\nto do or say things. Facts,\nreason, and logic are not\nimportant.\nWise Mind Is:\n The wisdom within\n each person\n Seeing the value of\n both reason and\n emotion\n Bringing left brain and\n right brain together\n The middle path",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/handouts/mindfulness_handout_3_wise_mind_states_of_mind.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Wise Mind: States of Mind",
+    "domain": "mindfulness",
+    "item_type": "handout",
+    "shared_facing_summary": "Mindfulness is allowed to be tiny, sensory-safe, and done from bed or wheelchair. Noticing without judging counts even when the day is messy.",
+    "tiny_steps": [
+      "Notice one body signal.",
+      "Name one feeling or need.",
+      "Find one neutral thing in the room.",
+      "Return to the next safe action."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use eyes-open grounding if closing eyes feels unsafe.",
+      "Use quiet, low-scent, low-touch options for MCAS, trauma, and sensory overload.",
+      "No posture requirement; lying down or supported sitting is valid."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not force stillness when it increases pain, panic, dysphoria, or trauma activation."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "mindfulness",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/02_DBT_Mindfulness/handouts/json/mindfulness_handout_3_wise_mind_states_of_mind.json",
+    "shared_output_path": "shared/02_dbt_mindfulness/handouts_json/mindfulness_handout_3_wise_mind_states_of_mind.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/02_dbt_mindfulness/handouts_json/mindfulness_handout_3_wise_mind_states_of_mind.json"
+}

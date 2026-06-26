@@ -1,0 +1,93 @@
+{
+  "id": "mindfulness_worksheet_6",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "worksheet",
+  "item_number": "6",
+  "title": "Loving Kindness",
+  "source_marker": "Mindfulness Worksheet 6   (Mindfulness Handout 8)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    121
+  ],
+  "source_book_pages": [
+    "97"
+  ],
+  "related_references": [
+    "Mindfulness Handout 8"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Kindness",
+    "Loving"
+  ],
+  "pages": [
+    {
+      "pdf_page": 121,
+      "book_page": "97",
+      "text": "97\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 6   (Mindfulness Handout 8)\nLoving Kindness\nDue Date:             Name:                                    Week Starting:\nCheck off the types of loving kindness mindfulness practices you did this week. Write out descrip-\ntions of two different times when you practiced loving kindness. Use the back of this worksheet if\nmore space is needed.\n    To myself      To a loved one      To a friend      To someone I was angry with\n    To a difficult person      To an enemy      To all beings      Other:\nDescribe the script you used (i.e., the warm wishes you sent):\n1.\n2.\n3.\n4.\n5.\nCheck if practicing loving kindness has increased any of the following, even a little bit toward this\nperson:        Feelings of warmth or caring      Love      Compassion\n    Feelings of connection      Wisdom      Happiness      Sense of personal validity\nDescribe how the skill helped or did not help you become more compassionate:\n\n    To myself      To a loved one      To a friend      To someone I was angry with\n    To a difficult person      To an enemy      To all beings      Other:\nDescribe the script you used (i.e., the warm wishes you sent):     Same as above (check if cor-\nrect).\n1.\n2.\n3.\n4.\n5.\nCheck if practicing loving kindness has increased any of the following, even a little bit toward this\nperson:        Feelings of warmth or caring      Love      Compassion\n    Feelings of connection      Wisdom      Happiness      Sense of personal validity\nDescribe how the skill helped or did not help you become more compassionate:\n\nList any and all wise things you did this week:"
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nMindfulness Worksheet 6   (Mindfulness Handout 8)\nLoving Kindness\nDue Date:             Name:                                    Week Starting:\nCheck off the types of loving kindness mindfulness practices you did this week. Write out descrip-\ntions of two different times when you practiced loving kindness. Use the back of this worksheet if\nmore space is needed.\n    To myself      To a loved one      To a friend      To someone I was angry with\n    To a difficult person      To an enemy      To all beings      Other:\nDescribe the script you used (i.e., the warm wishes you sent):\n1.\n2.\n3.\n4.\n5.\nCheck if practicing loving kindness has increased any of the following, even a little bit toward this\nperson:        Feelings of warmth or caring      Love      Compassion\n    Feelings of connection      Wisdom      Happiness      Sense of personal validity\nDescribe how the skill helped or did not help you become more compassionate:\n\n    To myself      To a loved one      To a friend      To someone I was angry with\n    To a difficult person      To an enemy      To all beings      Other:\nDescribe the script you used (i.e., the warm wishes you sent):     Same as above (check if cor-\nrect).\n1.\n2.\n3.\n4.\n5.\nCheck if practicing loving kindness has increased any of the following, even a little bit toward this\nperson:        Feelings of warmth or caring      Love      Compassion\n    Feelings of connection      Wisdom      Happiness      Sense of personal validity\nDescribe how the skill helped or did not help you become more compassionate:\n\nList any and all wise things you did this week:",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/worksheets/mindfulness_worksheet_6_loving_kindness.json",
+  "html_path": "html/worksheets/mindfulness/mindfulness_worksheet_6_loving_kindness.html",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Loving Kindness",
+    "domain": "mindfulness",
+    "item_type": "worksheet",
+    "shared_facing_summary": "Mindfulness is allowed to be tiny, sensory-safe, and done from bed or wheelchair. Noticing without judging counts even when the day is messy.",
+    "tiny_steps": [
+      "Notice one body signal.",
+      "Name one feeling or need.",
+      "Find one neutral thing in the room.",
+      "Return to the next safe action."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use eyes-open grounding if closing eyes feels unsafe.",
+      "Use quiet, low-scent, low-touch options for MCAS, trauma, and sensory overload.",
+      "No posture requirement; lying down or supported sitting is valid."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not force stillness when it increases pain, panic, dysphoria, or trauma activation."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "mindfulness",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/02_DBT_Mindfulness/worksheets/json/mindfulness_worksheet_6_loving_kindness.json",
+    "shared_output_path": "shared/02_dbt_mindfulness/worksheets_json/mindfulness_worksheet_6_loving_kindness.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/02_dbt_mindfulness/worksheets_json/mindfulness_worksheet_6_loving_kindness.json"
+}

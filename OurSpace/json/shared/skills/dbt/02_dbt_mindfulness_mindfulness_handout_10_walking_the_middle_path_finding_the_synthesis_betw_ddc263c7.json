@@ -1,0 +1,99 @@
+{
+  "id": "mindfulness_handout_10",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "handout",
+  "item_number": "10",
+  "title": "Walking the Middle Path: Finding the Synthesis between Opposites Reasonable mind",
+  "source_marker": "Mindfulness Handout 10   (Mindfulness Worksheets 10–10b)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    98
+  ],
+  "source_book_pages": [
+    "74"
+  ],
+  "related_references": [
+    "Mindfulness Worksheets 10–10b"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Finding",
+    "Middle",
+    "Opposites",
+    "Path",
+    "Reasonable",
+    "Synthesis",
+    "Walking",
+    "between",
+    "mind"
+  ],
+  "pages": [
+    {
+      "pdf_page": 98,
+      "book_page": "74",
+      "text": "74\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nMindfulness Handout 10   (Mindfulness Worksheets 10–10b)\nWalking the Middle Path:\nFinding the Synthesis between Opposites\nReasonable\nmind\nEmotion\nmind\nBoth regulate actions and make decisions based on reason,\nAnd\ntake into account values and experience even strong emotions as they come and go.\nDoing\nmind\nNothing-to-do\nmind\nBoth do what is needed in the moment (including reviewing the past or planning for the future),\nAnd\nexperience fully the uniqueness of each moment in the moment.\nIntense desire\nfor change\nof the moment\nRadical\nacceptance\nof the moment\nBoth allow yourself to have an intense desire to have something else than what is now,\nAnd\nbe willing to radically accept what you have in your life in the present moment.\nSelf-denial\nSelf-indulgence\nBoth practice moderation,\nAnd\nsatisfy the senses.\n\n\nOther:"
+    }
+  ],
+  "full_text": "Mindfulness Handout 10   (Mindfulness Worksheets 10–10b)\nWalking the Middle Path:\nFinding the Synthesis between Opposites\nReasonable\nmind\nEmotion\nmind\nBoth regulate actions and make decisions based on reason,\nAnd\ntake into account values and experience even strong emotions as they come and go.\nDoing\nmind\nNothing-to-do\nmind\nBoth do what is needed in the moment (including reviewing the past or planning for the future),\nAnd\nexperience fully the uniqueness of each moment in the moment.\nIntense desire\nfor change\nof the moment\nRadical\nacceptance\nof the moment\nBoth allow yourself to have an intense desire to have something else than what is now,\nAnd\nbe willing to radically accept what you have in your life in the present moment.\nSelf-denial\nSelf-indulgence\nBoth practice moderation,\nAnd\nsatisfy the senses.\n\n\nOther:",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/handouts/mindfulness_handout_10_walking_the_middle_path_finding_the_synthesis_between_opposites_reason.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Walking the Middle Path: Finding the Synthesis between Opposites Reasonable mind",
+    "domain": "mindfulness",
+    "item_type": "handout",
+    "shared_facing_summary": "Mindfulness is allowed to be tiny, sensory-safe, and done from bed or wheelchair. Noticing without judging counts even when the day is messy.",
+    "tiny_steps": [
+      "Notice one body signal.",
+      "Name one feeling or need.",
+      "Find one neutral thing in the room.",
+      "Return to the next safe action."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use eyes-open grounding if closing eyes feels unsafe.",
+      "Use quiet, low-scent, low-touch options for MCAS, trauma, and sensory overload.",
+      "No posture requirement; lying down or supported sitting is valid."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not force stillness when it increases pain, panic, dysphoria, or trauma activation."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "mindfulness",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/02_DBT_Mindfulness/handouts/json/mindfulness_handout_10_walking_the_middle_path_finding_the_synthesis_between_opposites_reason.json",
+    "shared_output_path": "shared/02_dbt_mindfulness/handouts_json/mindfulness_handout_10_walking_the_middle_path_finding_the_synthesis_betw_ddc263c7.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/02_dbt_mindfulness/handouts_json/mindfulness_handout_10_walking_the_middle_path_finding_the_synthesis_betw_ddc263c7.json"
+}

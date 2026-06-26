@@ -1,0 +1,98 @@
+{
+  "id": "general_handout_4",
+  "module": "General",
+  "module_category": "General Skills: Orientation and Analyzing Behavior",
+  "item_type": "handout",
+  "item_number": "4",
+  "title": "Skills Training Assumptions An assumption is a belief that cannot be proved, but we agree to abide by it anyway.",
+  "source_marker": "General Handout 4",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    37
+  ],
+  "source_book_pages": [
+    "13"
+  ],
+  "related_references": [],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Assumptions",
+    "Skills",
+    "Training",
+    "abide",
+    "agree",
+    "anyway",
+    "assumption",
+    "belief",
+    "cannot",
+    "proved",
+    "that"
+  ],
+  "pages": [
+    {
+      "pdf_page": 37,
+      "book_page": "13",
+      "text": "13\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\n☐\nGeneral Handout 4\nSkills Training Assumptions\nAn assumption is a belief that cannot be proved,\nbut we agree to abide by it anyway.\n1.\t People are doing the best they can.\nAll people at any given point in time are doing the best they can.\n2.\t People want to improve.\nThe common characteristic of all people is that they want to improve their lives and be happy.\n3.\t People need to do better, try harder, and be more motivated to change.*\nThe fact that people are doing the best they can, and want to do even better, does not mean\nthat these things are enough to solve the problem.\n4.\t People may not have caused all of our own problems, but they have to solve them\nanyway.**\nPeople have to change their own behavioral responses and alter their environment for their life\nto change.\n5.\t New behavior has to be learned in all relevant contexts.\nNew behavioral skills have to be practiced in the situations where the skills are needed, not just\nin the situation where the skills are first learned.\n6.\t All behaviors (actions, thoughts, emotions) are caused.\nThere is always a cause or set of causes for our actions, thoughts, and emotions, even if we do\nnot know what the causes are.\n7.\t Figuring out and changing the causes of behavior work better than judging and blaming.\nJudging and blaming are easier, but if we want to create change in the world, we have to\nchange the chains of events that cause unwanted behaviors and events.\n*But trying harder and being more motivated may not be needed if progress is steady and at a realistic rate of improvement.\n**Parents and caregivers must assist children in this task."
+    }
+  ],
+  "full_text": "☐\nGeneral Handout 4\nSkills Training Assumptions\nAn assumption is a belief that cannot be proved,\nbut we agree to abide by it anyway.\n1.\t People are doing the best they can.\nAll people at any given point in time are doing the best they can.\n2.\t People want to improve.\nThe common characteristic of all people is that they want to improve their lives and be happy.\n3.\t People need to do better, try harder, and be more motivated to change.*\nThe fact that people are doing the best they can, and want to do even better, does not mean\nthat these things are enough to solve the problem.\n4.\t People may not have caused all of our own problems, but they have to solve them\nanyway.**\nPeople have to change their own behavioral responses and alter their environment for their life\nto change.\n5.\t New behavior has to be learned in all relevant contexts.\nNew behavioral skills have to be practiced in the situations where the skills are needed, not just\nin the situation where the skills are first learned.\n6.\t All behaviors (actions, thoughts, emotions) are caused.\nThere is always a cause or set of causes for our actions, thoughts, and emotions, even if we do\nnot know what the causes are.\n7.\t Figuring out and changing the causes of behavior work better than judging and blaming.\nJudging and blaming are easier, but if we want to create change in the world, we have to\nchange the chains of events that cause unwanted behaviors and events.\n*But trying harder and being more motivated may not be needed if progress is steady and at a realistic rate of improvement.\n**Parents and caregivers must assist children in this task.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/general/handouts/general_handout_4_skills_training_assumptions_an_assumption_is_a_belief_that_cannot_be_p.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Skills Training Assumptions An assumption is a belief that cannot be proved, but we agree to abide by it anyway.",
+    "domain": "general_chain_analysis",
+    "item_type": "handout",
+    "shared_facing_summary": "Use this as a no-blame map. The point is not who failed; the point is what barrier showed up and what support would make the next try smaller.",
+    "tiny_steps": [
+      "Name the moment without blame.",
+      "Circle one link: body, brain, access, trauma cue, timing, or environment.",
+      "Choose one repair or prevention step.",
+      "Save the lesson; do not punish the person."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Do chain analysis verbally, by voice note, or with one checkbox.",
+      "Include pain, oxygen, MCAS, fatigue, dissociation, caregiver load, and mobility access as real links."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not use this as a courtroom, interrogation, or proof that someone did not try."
+    ],
+    "suggested_cadence": [
+      "as_needed",
+      "weekly_repair_check"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "general_chain_analysis",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_4_skills_training_assumptions_an_assumption_is_a_belief_that_cannot_be_p.json",
+    "shared_output_path": "shared/01_dbt_general_orientation_and_analyzing_behavior/handouts_json/general_handout_4_skills_training_assumptions_an_assumption_is_a_belief_t_0cdadbfd.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/01_dbt_general_orientation_and_analyzing_behavior/handouts_json/general_handout_4_skills_training_assumptions_an_assumption_is_a_belief_t_0cdadbfd.json"
+}

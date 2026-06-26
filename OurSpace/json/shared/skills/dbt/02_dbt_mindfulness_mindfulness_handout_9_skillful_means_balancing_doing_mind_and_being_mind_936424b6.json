@@ -1,0 +1,110 @@
+{
+  "id": "mindfulness_handout_9",
+  "module": "Mindfulness",
+  "module_category": "Mindfulness Skills",
+  "item_type": "handout",
+  "item_number": "9",
+  "title": "Skillful Means: Balancing Doing Mind and Being Mind Note. The terms “doing mind,” “being mind,” and “nothing-to-do mind” were first used by Jon Kabat-Zinn in Full Catastrophe Living (1990, 2013). BEING",
+  "source_marker": "Mindfulness Handout 9   (Mindfulness Worksheets 7–9)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    95
+  ],
+  "source_book_pages": [
+    "71"
+  ],
+  "related_references": [
+    "Mindfulness Worksheets 7–9"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "BEING",
+    "Balancing",
+    "Being",
+    "Catastrophe",
+    "Doing",
+    "Full",
+    "Kabat-Zinn",
+    "Living",
+    "Means",
+    "Mind",
+    "Note",
+    "Skillful",
+    "being",
+    "doing",
+    "first",
+    "mind",
+    "nothing-to-do",
+    "terms",
+    "used",
+    "were"
+  ],
+  "pages": [
+    {
+      "pdf_page": 95,
+      "book_page": "71",
+      "text": "71\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nMindfulness Handout 9   (Mindfulness Worksheets 7–9)\nSkillful Means:\nBalancing Doing Mind and Being Mind\nNote. The terms “doing mind,” “being mind,” and “nothing-to-do mind” were first used by Jon Kabat-Zinn in Full Catastrophe Living (1990, 2013).\nBEING\nMIND\nDOING\nMIND\nWISE\nMIND\nDoing Mind Is:\n • Discriminating Mind\n • Ambitious Mind\n • Goal-Oriented\nWhen in doing mind,\nyou view your thoughts\nas facts about the world.\nYou are focused on\nproblem solving and\nachieving goals.\n       Being Mind Is:\n• Curious Mind\n• Nothing-to-Do Mind\n• Present-Oriented\nWhen in being mind, you\nview your thoughts as\nsensations of the mind.\nYou are focused on the\nuniqueness of each\nmoment, letting go of\nfocusing on goals.\nWise Mind Is:\n • A balance of doing\n       and being\n • The middle path\nWhen in Wise Mind, you:\n Use skillful means.\n Let go of having to achieve\n goals—and throw your\n entire self into working\n toward these same goals.\n Enhance awareness while\n engaging in activities."
+    }
+  ],
+  "full_text": "Mindfulness Handout 9   (Mindfulness Worksheets 7–9)\nSkillful Means:\nBalancing Doing Mind and Being Mind\nNote. The terms “doing mind,” “being mind,” and “nothing-to-do mind” were first used by Jon Kabat-Zinn in Full Catastrophe Living (1990, 2013).\nBEING\nMIND\nDOING\nMIND\nWISE\nMIND\nDoing Mind Is:\n • Discriminating Mind\n • Ambitious Mind\n • Goal-Oriented\nWhen in doing mind,\nyou view your thoughts\nas facts about the world.\nYou are focused on\nproblem solving and\nachieving goals.\n       Being Mind Is:\n• Curious Mind\n• Nothing-to-Do Mind\n• Present-Oriented\nWhen in being mind, you\nview your thoughts as\nsensations of the mind.\nYou are focused on the\nuniqueness of each\nmoment, letting go of\nfocusing on goals.\nWise Mind Is:\n • A balance of doing\n       and being\n • The middle path\nWhen in Wise Mind, you:\n Use skillful means.\n Let go of having to achieve\n goals—and throw your\n entire self into working\n toward these same goals.\n Enhance awareness while\n engaging in activities.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/mindfulness/handouts/mindfulness_handout_9_skillful_means_balancing_doing_mind_and_being_mind_note_the_terms_doin.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Skillful Means: Balancing Doing Mind and Being Mind Note. The terms “doing mind,” “being mind,” and “nothing-to-do mind” were first used by Jon Kabat-Zinn in Full Catastrophe Living (1990, 2013). BEING",
+    "domain": "mindfulness",
+    "item_type": "handout",
+    "shared_facing_summary": "Mindfulness is allowed to be tiny, sensory-safe, and done from bed or wheelchair. Noticing without judging counts even when the day is messy.",
+    "tiny_steps": [
+      "Notice one body signal.",
+      "Name one feeling or need.",
+      "Find one neutral thing in the room.",
+      "Return to the next safe action."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use eyes-open grounding if closing eyes feels unsafe.",
+      "Use quiet, low-scent, low-touch options for MCAS, trauma, and sensory overload.",
+      "No posture requirement; lying down or supported sitting is valid."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not force stillness when it increases pain, panic, dysphoria, or trauma activation."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "mindfulness",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/02_DBT_Mindfulness/handouts/json/mindfulness_handout_9_skillful_means_balancing_doing_mind_and_being_mind_note_the_terms_doin.json",
+    "shared_output_path": "shared/02_dbt_mindfulness/handouts_json/mindfulness_handout_9_skillful_means_balancing_doing_mind_and_being_mind_936424b6.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/02_dbt_mindfulness/handouts_json/mindfulness_handout_9_skillful_means_balancing_doing_mind_and_being_mind_936424b6.json"
+}
