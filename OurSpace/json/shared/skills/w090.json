@@ -1,0 +1,1514 @@
+{
+  "schema": "pdf_to_json_text_layout_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "group_type": "single_pdf_json",
+  "merge_policy": {
+    "threshold": "merge documents when TF-IDF cosine similarity >= 0.60 OR 5-token shingle containment of the smaller document >= 0.60",
+    "why_containment_is_used": "Containment catches shorter PDFs that are substantially embedded inside longer PDFs even when whole-document Jaccard/cosine is lower."
+  },
+  "source_document_count": 1,
+  "source_documents": [
+    {
+      "document_id": "how_to_tidy_up_like_a_pro_2",
+      "source_index": 15,
+      "original_filename": "How-to-Tidy-Up-Like-a-Pro-2.pdf",
+      "source_relative_path": "adhd/How-to-Tidy-Up-Like-a-Pro-2.pdf",
+      "sha256": "a79e5e1f877eb245df388e3c48d7aa570a21c86b934fd2d9b8bcc459a1cd101b",
+      "title": "From the ADHD Experts at",
+      "page_count": 9,
+      "character_count": 17079,
+      "word_count": 2943,
+      "link_count": 14,
+      "image_count": 0,
+      "form_field_count": 0,
+      "annotation_count": 0
+    }
+  ],
+  "within_group_similarity": [],
+  "documents": [
+    {
+      "document_id": "how_to_tidy_up_like_a_pro_2",
+      "source_index": 15,
+      "original_filename": "How-to-Tidy-Up-Like-a-Pro-2.pdf",
+      "source_relative_path": "adhd/How-to-Tidy-Up-Like-a-Pro-2.pdf",
+      "sha256": "a79e5e1f877eb245df388e3c48d7aa570a21c86b934fd2d9b8bcc459a1cd101b",
+      "title": "From the ADHD Experts at",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Adobe InDesign CS5.5 (7.5)",
+        "producer": "Adobe PDF Library 9.9",
+        "creationDate": "D:20190219171806-05'00'",
+        "modDate": "D:20190219172415-05'00'",
+        "trapped": "",
+        "encryption": "Standard V4 R4 128-bit AES"
+      },
+      "page_count": 9,
+      "character_count": 17079,
+      "word_count": 2943,
+      "link_count": 14,
+      "image_count": 0,
+      "form_field_count": 0,
+      "annotation_count": 0,
+      "full_text": "From the ADHD Experts at\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain A trusted source of advice and information for families touched by attention-deficit disorder— and a voice of inspiration to help people with ADHD find success at home, at school, and on the job.\nADDitudeMag.com\nscientific advisory board TERMS OF USE Copyright © 2019 by New Hope Media. All rights reserved. No part of this report may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, faxing, e-mailing, posting online, or by any information storage and retrieval system, without written permission from the Publisher. All trademarks and brands referred to herein are the property of their respective owners. All references to ADDitude magazine and ADDitudeMag.com are trade-\nmarks of New Hope Media.\nCONTACT INFORMATION New Hope Media 646-366-0830 108 West 39th St, Suite 805 New York, NY 10018\nLEGAL NOTICES ADDitude does not provide medical advice, diagnosis, or treatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or replace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant for questions about your health and education, or the health and education of your child and family members. Do not disregard, avoid, or delay obtaining medical or health related advice from your health-care professional because of something you have read here.\nIf you think you may have a medical emergency, call your doctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned in ADDitude publications or websites. Reliance on any information provided by ADDitude is solely at your own risk.\nRussell Barkley, Ph.D.\nMedical University of South Carolina Charleston, SC\nThomas E. Brown, Ph.D.\nUniversity of Southern California Los Angeles, CA\nWilliam Dodson, M.D.\nDodson ADHD Center\nGreenwood Village, CO\nRoss W. Greene, Ph.D.\nLives in the Balance Portland, ME\nEdward M. Hallowell, M.D.\nThe Hallowell Center Sudbury, MA Stephen P. Hinshaw, Ph.D.\nUniversity of California\nBerkeley, CA\nPeter Jaksa, Ph.D.\nADD Center of America Chicago, IL\nPeter Jensen, M.D.\nThe REACH Institute\nNew York, NY\nHarold Koplewicz, M.D.\nNew York University Medical School New York, NY\nSandy Newmark, M.D.\nOsher Center for Integrative Medicine, University of California\nSan Francisco, CA\nMichele Novotni, Ph.D.\nThe Villages, FL\nRoberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA J. Russell Ramsay, Ph.D.\nPerelman School of Medicine\nUniversity of Pennsylvania\nPhiladelphia, PA\nJerome Schultz, Ph.D.\nHarvard Medical School\nBoston, MA Founder: Ellen Kingsley (1951-2007) Editor In chief: Susan Caughman\nEditor: Wayne Kalyn\nstaff consulting creative Director: Joseph Caserto\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman senior Digital editor: Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nAdvertising: Anne Mazza Circulation: Sue Sidler\nCopy Editor: Gene Jones\ncontributing Editors Carol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nAnn Dolin, M.Ed., and Chris Dendy, M.S. (Education) administrative assistant Helen Dwork 3\n1.Ditch perfectionism when organizing your home.\nPerfectionism appears to exacerbate executive function deficits. If I have two clients with the same ADHD symptoms, and one is a perfectionist, it is harder for the perfectionist to get organized. Start a project with the under-\nstanding that perfection is not the goal; progress is.\n2. Assemble a home-organization team.\nA professional organizer is a great resource, but organizers are not accessible to everyone. Play a game with your kids to see who can declutter the most. Confess to your spouse the stress you feel, and about your desire to live a more organized life. Everyone in your family may not be on board, and that’s OK. Find those who are and enlist their help.\n3. Create organizational structure.\nSchedule your organizing task for the same time every day. Before long, your muscle memory will take over and your organizing will be on autopilot. We do this with our morning coffee and as part of our nighttime routine.\nby Lisa Woodruff\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain 4\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\n4. Take “before” photos of your mess.\nIndividuals with ADHD have a hard time seeing how much progress they have made and estimating how long tasks will take. Even if you’re embar-\nrassed, take the photos! Once you begin to make progress, you’ll be glad to have a visual reminder of how far you’ve come.\n5. Find one organizing mentor and stick with him or her.\nEach organizer does things a little differently, which means not every pro-\ngram will work for you. But don’t bounce around trying to gather the best tips from all of them. Find a person you like, and a program you can afford (some are free), and stick to it until the end. 6. Set small organization goals.\nDon’t try to organize a thousand books in one sitting. Break a big job into small pieces and take on one piece at a time. You’ll feel accomplished, and fight off discouragement.\n7. Pick the right time of day.\nSome of us are morning people. Many people with ADHD are not. Be will-\ning to try different times of day.\n8. Make positive associations.\nDrink your favorite tea or soda while you’re organizing. Allow yourself to listen to that page-turner audiobook while you’re working on your home. If you associate things you like with something that’s difficult, motivation comes easier.\n9. Get a physical roadmap.\nIf you join an organizing program, print it out and post it somewhere you will see it. If it lives only inside your phone or computer, it’s easy to for-\nget about it. You won’t forget about the 10 sheets of paper on your bulletin board.\n10. Trash your trash.\nSo much of what is “disorganized” in our home is garbage—actual garbage that can get thrown in a trash can, or things that can be recycled, like bottles and paper. Grab a big trash bag, go through your home, and pick up every-\nthing that belongs in the garbage. You’ll be shocked at how much clearer your space looks.\n11. Declutter your home.\nOnce the trash is gone, decluttering should be easier. You don’t need to be a minimalist (I’m not!), but keep only the things you love and use. It doesn’t 5\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\nmatter whether an item still works, or that you paid good money for it. If you don’t love it or use it regularly, let it go.\n12. Focus on practical solutions.\nThe goal is to have only things that you use and love in your home, and to know where they all are. That’s it! Practicality is all.\n13. Find one task to start and complete.\nIt will give you a feeling of success and motivate you to take the next step. You are building your task-initiation muscle.\n14. Find others you can share your struggles with.\nThis can be your best friend across town, or a free Facebook group of strang-\ners. When you’re going through the same experiences as someone else, it’s affirming. It’s not just you.\n15. Don’t buy anything.\nI know that sounds counterintuitive, because home organization sites are full of beautiful bins and baskets. Resist. Declutter first, figure out how your space can be best utilized, and then make only the purchases that will keep you on track.\n16. Match your containers to your stuff.\nDon’t take up a whole cabinet for spices if you never cook, and don’t jam 30 sweaters into a tiny drawer. Once you’ve decluttered, and you’re keeping only the essentials, you can find containers that function. That may mean making purchases, or it may mean switching dressers with your daughter (who’s at college) because hers is bigger.\n17. Monotask.\nIn my 100-Day Home Organization Program, we focus on one task per day. We don’t organize the entire house in one day; we organize the spice drawer. Monotasking can be hard for a person with ADHD, but having a clear road-\nmap makes it easier.\n18. Get audio clues.\nWhether it’s a podcast or an audiobook, hearing your strategies triggers a different response in your brain than reading about them. You can find mo-\ntivation and direction in the voice of someone who’s been there.\n19. Write it down.\nIf you think it, put it on paper. If you write it down, it’s an object, not just a thought. Objects are much easier to organize than thoughts. 6\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\n20. Time each task on your to-do list.\nI used to hate emptying the dishwasher. I thought it took 20 minutes. One day, I said, “Let’s time it.” It took four minutes. Knowing that the chore takes four minutes allows me to squeeze it in here and there rather than avoiding it.\n21. Don’t keep a to-do list.\nYou can keep a master list of tasks you want to achieve, but don’t stare at it ev-\nery day and hope you get them all done (then feel bad when you don’t). When you plan your week, choose three and only three tasks from your list each day, and bring your focus to those tasks. Yes, you will get only three things done, not a million, but you weren’t going to get a million tasks done anyway.\n22. Small progress is still progress.\nThree tasks completed is not a hundred, but it’s better than zero. An orga-\nnized shelf is not an organized pantry, but it’s better than a disorganized shelf. Small progress is still progress.\n23. Give everything a home.\nThe number one mistake I see people make is that they try different organi-\nzation systems all the time. Change is your enemy. New is not better. Keep-\ning your keys in the same boring spot for 20 years is perfect. Organizing your home is not where you need to show off your creative side.\n24. Schedule a time to put items away.\nThis is a big barrier to organization — not putting things away. At the end of the day, set a timer for 10 minutes to “close down” your home and put things away. No one likes to do this, but if you can make it a habit, it becomes easier and less mentally taxing.\n25. Organization is a skill, not a talent.\nIt’s not something you are born with. It’s a habit that is cultivated over time. It’s never too late to start. And when you do start, get an organizing buddy with similar goals. Encourage each other to make progress in organizing your homes. The best scenario would be for both of you to organize the same spaces in your homes at the same time so you can share ideas.\n26. Hire it out.\nIf you can afford to hire help, do it. You’ll save so much more than money — in time, in lower anxiety — in someone else’s expertise. You can hire out an entire project, or just have someone come and clean after it’s done. You don’t have to do everything yourself. 7\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\n27. Take “after” photos.\nCompare them to the “before” photos. You did it! You made progress. Treat yourself to your favorite drink or a night of relaxation. You deserve it.\n28. Give yourself grace.\nYour worth as a person has nothing to do with how organized your house is. Refocus the energy you spend on worrying about your home’s condition, and you’ll be free to do what you are created to do. ADDitude eBooks Available Now\nadditudemag.com/shop\nGetting Things Done with Adult ADHD\nStop wasting time, improve productivity, and stay focused with these get-it-done strategies.\nYour brain works differently. And so you need ADHD-tested time-manage-\nment plans that don’t try to shove square pegs into round holes. Use this ebook to manage your to-do list and packed schedule, get out the door on time, beat deadlines and avoid distractions, and finish any task.\n>> Learn more about this eBook: http://additu.de/gtd\nThe Diet & Nutrition Guide for Adults with ADHD\nHow to manage your symptoms with food, vitamins, herbs & supplements\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises — including some designed especially for kids — as well as the science behind each natural therapy.\n>> Learn more about this eBook: http://additu.de/diet-guide\nMindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green time, and mindful meditation.\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises—including some designed especially for kids—as well as the science behind each natural therapy. >> Learn more about this eBook: http://additu.de/mindful\nFREE ADDitude Downloads\n73 ADHD-Friendly Ways to Organize Your Life Now\nAchieve less clutter, fewer hassles, and greater tranquility in your life.\nADHD Time Assessment\nChart\nDo you spend your time wisely? Use this tool to find out.\nBoost Your Productivity At Work\nADHD can make any job more challenging. Keep up with this expert advice.\nYou Know You Have ADHD\nWhen…\nReal ADHDers share personal stories highlighting the lighter side of living with attention deficit.\nSmart Comebacks\nWitty responses to ADHD doubters.\nIt’s Not ADHD: 3 Common Diagnosis Mistakes\nDoctors are sometimes too quick to diagnose ADHD. Read up on common misdiagnoses.\nFind these and many more free ADHD resources online at:\nhttp://additu.de/\nfreedownloads Expert Webinar Replays: Organization Solutions for People with ADHD\n>> http://additu.de/declutter\nOnce clutter has built up, the idea of tackling it can be overwhelming — and for many adults with ADHD, it’s impossible to even know where to start. In this expert webinar, Susan Pinsky explains why “good enough” is just as good as “perfect,” and imparts simple steps people with ADHD can take to reduce clutter and achieve efficient organization.\nThe ADHD-Executive Function Connection\n>> http://additu.de/efunction\nWe’ve all heard of executive functions — the brain-based skills that affect how we plan, organize, and carry out tasks. But how do executive functions relate to ADHD — and how can children and adults with the condition compensate for natural deficiencies in these critical skills? Thomas Brown, Ph.D., explains the ins and outs of executive functions and how they affect your focus in this expert webinar.\nJust Diagnosed? How to Succeed with Adult ADHD\n>> http://additu.de/just-diagnosed\nA late-in-life ADHD diagnosis doesn’t mean it’s all over! In honor of ADHD Awareness Month, Michele Novotni, Ph.D., shares strategies for becoming a self-advocate, so you can live your best life with ADHD.\nWhy People with ADHD Can’t Sleep\n>> http://additu.de/adhd-sleep\nNot only is skimping on sleep bad for your overall health and well-being, it can also exacerbate ADHD symptoms. Rest assured — there are numerous ways to improve your sleep hygiene! In this audio and slide presentation, hosted by Roberto Olivardia, Ph.D., learn the science behind ADHD sleep problems and get tips for revamping your circadian rhythm.\nSurvival Strategies for Moms with ADHD\n>> http://additu.de/moms\nMothers with ADHD, especially those parenting children with ADHD, often put the needs of others before themselves. Despite good intentions, when moms leave their own ADHD untreated, the whole family can suffer. In this webinar, hosted by Ellen Littman, Ph.D., learn to let go of society’s expecta-\ntions of being “perfect” and focus on your own accomplishments.\nFREE ADHD Newsletters from ADDitude\nSign up to receive criti-\ncal news and information about ADHD diagnosis and treatment, success at school, adult ADHD, and parenting strategies: http://additu.de/newsletter\nAdult ADHD and LD\nExpert advice on managing your household, time, money, career, and relationships\nParenting Children with ADHD and LD Strategies and support for par-\nents on behavior and discipline, time management, disorganiza-\ntion, and making friends.\nADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework, work with teachers, find the right schools, and much more.\nTreating ADHD\nTreatment options for attention deficit including medications, food, supplements, brain training, mindfulness and other alternative therapies.\nFor Women with ADHD\nManaging ADHD on the job, running a household, dealing with challenging emotions, and much more.",
+      "pages": [
+        {
+          "page_number": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "From the ADHD Experts at\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                184.72,
+                667.06,
+                430.53,
+                692.12
+              ],
+              "text": "From the ADHD Experts at"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                69.22,
+                71.42,
+                555.62,
+                357.46
+              ],
+              "text": "How to Tidy Up\nLike a Pro\n28 rules for organizing\nyour home by working\nwith your ADHD brain"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "A trusted source of advice and information for families touched by attention-deficit disorder— and a voice of inspiration to help people with ADHD find success at home, at school, and on the job.\nADDitudeMag.com\nscientific advisory board TERMS OF USE Copyright © 2019 by New Hope Media. All rights reserved. No part of this report may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, faxing, e-mailing, posting online, or by any information storage and retrieval system, without written permission from the Publisher. All trademarks and brands referred to herein are the property of their respective owners. All references to ADDitude magazine and ADDitudeMag.com are trade-\nmarks of New Hope Media.\nCONTACT INFORMATION New Hope Media 646-366-0830 108 West 39th St, Suite 805 New York, NY 10018\nLEGAL NOTICES ADDitude does not provide medical advice, diagnosis, or treatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or replace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant for questions about your health and education, or the health and education of your child and family members. Do not disregard, avoid, or delay obtaining medical or health related advice from your health-care professional because of something you have read here.\nIf you think you may have a medical emergency, call your doctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned in ADDitude publications or websites. Reliance on any information provided by ADDitude is solely at your own risk.\nRussell Barkley, Ph.D.\nMedical University of South Carolina Charleston, SC\nThomas E. Brown, Ph.D.\nUniversity of Southern California Los Angeles, CA\nWilliam Dodson, M.D.\nDodson ADHD Center\nGreenwood Village, CO\nRoss W. Greene, Ph.D.\nLives in the Balance Portland, ME\nEdward M. Hallowell, M.D.\nThe Hallowell Center Sudbury, MA Stephen P. Hinshaw, Ph.D.\nUniversity of California\nBerkeley, CA\nPeter Jaksa, Ph.D.\nADD Center of America Chicago, IL\nPeter Jensen, M.D.\nThe REACH Institute\nNew York, NY\nHarold Koplewicz, M.D.\nNew York University Medical School New York, NY\nSandy Newmark, M.D.\nOsher Center for Integrative Medicine, University of California\nSan Francisco, CA\nMichele Novotni, Ph.D.\nThe Villages, FL\nRoberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA J. Russell Ramsay, Ph.D.\nPerelman School of Medicine\nUniversity of Pennsylvania\nPhiladelphia, PA\nJerome Schultz, Ph.D.\nHarvard Medical School\nBoston, MA Founder: Ellen Kingsley (1951-2007) Editor In chief: Susan Caughman\nEditor: Wayne Kalyn\nstaff consulting creative Director: Joseph Caserto\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman senior Digital editor: Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nAdvertising: Anne Mazza Circulation: Sue Sidler\nCopy Editor: Gene Jones\ncontributing Editors Carol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nAnn Dolin, M.Ed., and Chris Dendy, M.S. (Education) administrative assistant Helen Dwork",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                122.07,
+                98.17,
+                488.19,
+                119.64
+              ],
+              "text": "A trusted source of advice and information for families touched by attention-deficit disorder—\nand a voice of inspiration to help people with ADHD find success at home, at school, and on the job."
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                251.24,
+                129.98,
+                363.32,
+                145.38
+              ],
+              "text": "ADDitudeMag.com"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                374.03,
+                445.17,
+                526.51,
+                457.53
+              ],
+              "text": "scientific advisory board"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                56.88,
+                166.17,
+                286.69,
+                249.97
+              ],
+              "text": "TERMS OF USE\nCopyright © 2019 by New Hope Media. All rights reserved.\nNo part of this report may be reproduced or transmitted\nin any form or by any means, electronic or mechanical,\nincluding photocopying, recording, faxing, e-mailing,\nposting online, or by any information storage and retrieval\nsystem, without written permission from the Publisher."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                56.88,
+                261.42,
+                286.66,
+                308.77
+              ],
+              "text": "All trademarks and brands referred to herein are the\nproperty of their respective owners. All references to\nADDitude magazine and ADDitudeMag.com are trade-\nmarks of New Hope Media."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                56.88,
+                328.41,
+                186.94,
+                376.21
+              ],
+              "text": "CONTACT INFORMATION\nNew Hope Media 646-366-0830\n108 West 39th St, Suite 805\nNew York, NY 10018"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                56.88,
+                394.41,
+                286.68,
+                538.21
+              ],
+              "text": "LEGAL NOTICES\nADDitude does not provide medical advice, diagnosis, or\ntreatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or\nreplace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant\nfor questions about your health and education, or the\nhealth and education of your child and family members.\nDo not disregard, avoid, or delay obtaining medical or\nhealth related advice from your health-care professional\nbecause of something you have read here."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                56.88,
+                553.26,
+                286.69,
+                636.61
+              ],
+              "text": "If you think you may have a medical emergency, call your\ndoctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products,\nprocedures, opinions, or other information that may be\nmentioned in ADDitude publications or websites. Reliance\non any information provided by ADDitude is solely at your\nown risk."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                336.43,
+                472.77,
+                415.87,
+                510.16
+              ],
+              "text": "Russell Barkley, Ph.D.\nMedical University of\nSouth Carolina\nCharleston, SC"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                320.95,
+                518.26,
+                432.72,
+                546.56
+              ],
+              "text": "Thomas E. Brown, Ph.D.\nUniversity of Southern California\nLos Angeles, CA"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                336.2,
+                554.66,
+                416.08,
+                582.95
+              ],
+              "text": "William Dodson, M.D.\nDodson ADHD Center\nGreenwood Village, CO"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                335.63,
+                591.05,
+                416.65,
+                619.35
+              ],
+              "text": "Ross W. Greene, Ph.D.\nLives in the Balance\nPortland, ME"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                327.73,
+                627.45,
+                424.57,
+                655.74
+              ],
+              "text": "Edward M. Hallowell, M.D.\nThe Hallowell Center\nSudbury, MA"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                327.78,
+                663.84,
+                424.53,
+                692.14
+              ],
+              "text": "Stephen P. Hinshaw, Ph.D.\nUniversity of California\nBerkeley, CA"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                336.98,
+                700.24,
+                416.71,
+                728.54
+              ],
+              "text": "Peter Jaksa, Ph.D.\nADD Center of America\nChicago, IL"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                477.41,
+                472.74,
+                546.39,
+                501.03
+              ],
+              "text": "Peter Jensen, M.D.\nThe REACH Institute\nNew York, NY"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                452.1,
+                509.13,
+                573.08,
+                537.43
+              ],
+              "text": "Harold Koplewicz, M.D.\nNew York University Medical School\nNew York, NY"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                470.64,
+                545.53,
+                553.15,
+                592.02
+              ],
+              "text": "Sandy Newmark, M.D.\nOsher Center for\nIntegrative Medicine,\nUniversity of California\nSan Francisco, CA"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                469.73,
+                600.12,
+                554.06,
+                619.32
+              ],
+              "text": "Michele Novotni, Ph.D.\nThe Villages, FL"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                467.28,
+                627.42,
+                556.52,
+                655.72
+              ],
+              "text": "Roberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                463.28,
+                663.82,
+                560.52,
+                701.37
+              ],
+              "text": "J. Russell Ramsay, Ph.D.\nPerelman School of Medicine\nUniversity of Pennsylvania\nPhiladelphia, PA"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                471.49,
+                709.37,
+                552.28,
+                737.66
+              ],
+              "text": "Jerome Schultz, Ph.D.\nHarvard Medical School\nBoston, MA"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                361.73,
+                167.75,
+                522.21,
+                179.97
+              ],
+              "text": "Founder: Ellen Kingsley (1951-2007)"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                365.85,
+                186.56,
+                515.18,
+                209.56
+              ],
+              "text": "Editor In chief: Susan Caughman\nEditor: Wayne Kalyn"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                327.78,
+                218.85,
+                553.45,
+                312.52
+              ],
+              "text": "staff\nconsulting creative Director: Joseph Caserto\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman\nsenior Digital editor: Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nAdvertising: Anne Mazza"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                352.0,
+                314.32,
+                530.25,
+                408.06
+              ],
+              "text": "Circulation: Sue Sidler\nCopy Editor: Gene Jones\ncontributing Editors\nCarol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nAnn Dolin, M.Ed., and Chris Dendy, M.S. (Education)"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                387.91,
+                410.76,
+                494.71,
+                431.92
+              ],
+              "text": "administrative assistant\nHelen Dwork"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/",
+              "bbox": [
+                251.24,
+                129.98,
+                363.31,
+                145.38
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/",
+              "bbox": [
+                157.83,
+                285.42,
+                241.08,
+                296.99
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "3\n1.Ditch perfectionism when organizing your home.\nPerfectionism appears to exacerbate executive function deficits. If I have two clients with the same ADHD symptoms, and one is a perfectionist, it is harder for the perfectionist to get organized. Start a project with the under-\nstanding that perfection is not the goal; progress is.\n2. Assemble a home-organization team.\nA professional organizer is a great resource, but organizers are not accessible to everyone. Play a game with your kids to see who can declutter the most. Confess to your spouse the stress you feel, and about your desire to live a more organized life. Everyone in your family may not be on board, and that’s OK. Find those who are and enlist their help.\n3. Create organizational structure.\nSchedule your organizing task for the same time every day. Before long, your muscle memory will take over and your organizing will be on autopilot. We do this with our morning coffee and as part of our nighttime routine.\nby Lisa Woodruff\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "3"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                436.05,
+                419.7,
+                511.56
+              ],
+              "text": "1.Ditch perfectionism when organizing your home.\nPerfectionism appears to exacerbate executive function deficits. If I have\ntwo clients with the same ADHD symptoms, and one is a perfectionist, it is\nharder for the perfectionist to get organized. Start a project with the under-\nstanding that perfection is not the goal; progress is."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                525.45,
+                419.76,
+                615.96
+              ],
+              "text": "2. Assemble a home-organization team.\nA professional organizer is a great resource, but organizers are not accessible\nto everyone. Play a game with your kids to see who can declutter the most.\nConfess to your spouse the stress you feel, and about your desire to live a\nmore organized life. Everyone in your family may not be on board, and that’s\nOK. Find those who are and enlist their help."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                629.85,
+                419.7,
+                690.36
+              ],
+              "text": "3. Create organizational structure.\nSchedule your organizing task for the same time every day. Before long, your\nmuscle memory will take over and your organizing will be on autopilot. We\ndo this with our morning coffee and as part of our nighttime routine."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                341.44,
+                149.37,
+                357.33
+              ],
+              "text": "by Lisa Woodruff"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                50.09,
+                104.02,
+                429.2,
+                326.93
+              ],
+              "text": "How to Tidy Up\nLike a Pro\n28 rules for organizing\nyour home by working\nwith your ADHD brain"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "4\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\n4. Take “before” photos of your mess.\nIndividuals with ADHD have a hard time seeing how much progress they have made and estimating how long tasks will take. Even if you’re embar-\nrassed, take the photos! Once you begin to make progress, you’ll be glad to have a visual reminder of how far you’ve come.\n5. Find one organizing mentor and stick with him or her.\nEach organizer does things a little differently, which means not every pro-\ngram will work for you. But don’t bounce around trying to gather the best tips from all of them. Find a person you like, and a program you can afford (some are free), and stick to it until the end. 6. Set small organization goals.\nDon’t try to organize a thousand books in one sitting. Break a big job into small pieces and take on one piece at a time. You’ll feel accomplished, and fight off discouragement.\n7. Pick the right time of day.\nSome of us are morning people. Many people with ADHD are not. Be will-\ning to try different times of day.\n8. Make positive associations.\nDrink your favorite tea or soda while you’re organizing. Allow yourself to listen to that page-turner audiobook while you’re working on your home. If you associate things you like with something that’s difficult, motivation comes easier.\n9. Get a physical roadmap.\nIf you join an organizing program, print it out and post it somewhere you will see it. If it lives only inside your phone or computer, it’s easy to for-\nget about it. You won’t forget about the 10 sheets of paper on your bulletin board.\n10. Trash your trash.\nSo much of what is “disorganized” in our home is garbage—actual garbage that can get thrown in a trash can, or things that can be recycled, like bottles and paper. Grab a big trash bag, go through your home, and pick up every-\nthing that belongs in the garbage. You’ll be shocked at how much clearer your space looks.\n11. Declutter your home.\nOnce the trash is gone, decluttering should be easier. You don’t need to be a minimalist (I’m not!), but keep only the things you love and use. It doesn’t",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "4"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                432.18,
+                645.67,
+                532.69,
+                704.77
+              ],
+              "text": "How to Tidy Up\nLike a Pro\n28 rules for organizing\nyour home by working\nwith your ADHD brain"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                70.13,
+                419.72,
+                145.64
+              ],
+              "text": "4. Take “before” photos of your mess.\nIndividuals with ADHD have a hard time seeing how much progress they\nhave made and estimating how long tasks will take. Even if you’re embar-\nrassed, take the photos! Once you begin to make progress, you’ll be glad to\nhave a visual reminder of how far you’ve come."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                159.53,
+                419.75,
+                235.04
+              ],
+              "text": "5. Find one organizing mentor and stick with him or her.\nEach organizer does things a little differently, which means not every pro-\ngram will work for you. But don’t bounce around trying to gather the best\ntips from all of them. Find a person you like, and a program you can afford\n(some are free), and stick to it until the end."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                248.93,
+                419.74,
+                309.44
+              ],
+              "text": "6. Set small organization goals.\nDon’t try to organize a thousand books in one sitting. Break a big job into\nsmall pieces and take on one piece at a time. You’ll feel accomplished, and\nfight off discouragement."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                323.33,
+                417.01,
+                368.84
+              ],
+              "text": "7. Pick the right time of day.\nSome of us are morning people. Many people with ADHD are not. Be will-\ning to try different times of day."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                382.73,
+                419.68,
+                458.24
+              ],
+              "text": "8. Make positive associations.\nDrink your favorite tea or soda while you’re organizing. Allow yourself to\nlisten to that page-turner audiobook while you’re working on your home.\nIf you associate things you like with something that’s difficult, motivation\ncomes easier."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                472.13,
+                419.75,
+                547.64
+              ],
+              "text": "9. Get a physical roadmap.\nIf you join an organizing program, print it out and post it somewhere you\nwill see it. If it lives only inside your phone or computer, it’s easy to for-\nget about it. You won’t forget about the 10 sheets of paper on your bulletin\nboard."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                561.53,
+                419.75,
+                652.04
+              ],
+              "text": "10. Trash your trash.\nSo much of what is “disorganized” in our home is garbage—actual garbage\nthat can get thrown in a trash can, or things that can be recycled, like bottles\nand paper. Grab a big trash bag, go through your home, and pick up every-\nthing that belongs in the garbage. You’ll be shocked at how much clearer\nyour space looks."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                665.93,
+                419.7,
+                711.44
+              ],
+              "text": "11. Declutter your home.\nOnce the trash is gone, decluttering should be easier. You don’t need to be a\nminimalist (I’m not!), but keep only the things you love and use. It doesn’t"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "5\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\nmatter whether an item still works, or that you paid good money for it. If you don’t love it or use it regularly, let it go.\n12. Focus on practical solutions.\nThe goal is to have only things that you use and love in your home, and to know where they all are. That’s it! Practicality is all.\n13. Find one task to start and complete.\nIt will give you a feeling of success and motivate you to take the next step. You are building your task-initiation muscle.\n14. Find others you can share your struggles with.\nThis can be your best friend across town, or a free Facebook group of strang-\ners. When you’re going through the same experiences as someone else, it’s affirming. It’s not just you.\n15. Don’t buy anything.\nI know that sounds counterintuitive, because home organization sites are full of beautiful bins and baskets. Resist. Declutter first, figure out how your space can be best utilized, and then make only the purchases that will keep you on track.\n16. Match your containers to your stuff.\nDon’t take up a whole cabinet for spices if you never cook, and don’t jam 30 sweaters into a tiny drawer. Once you’ve decluttered, and you’re keeping only the essentials, you can find containers that function. That may mean making purchases, or it may mean switching dressers with your daughter (who’s at college) because hers is bigger.\n17. Monotask.\nIn my 100-Day Home Organization Program, we focus on one task per day. We don’t organize the entire house in one day; we organize the spice drawer. Monotasking can be hard for a person with ADHD, but having a clear road-\nmap makes it easier.\n18. Get audio clues.\nWhether it’s a podcast or an audiobook, hearing your strategies triggers a different response in your brain than reading about them. You can find mo-\ntivation and direction in the voice of someone who’s been there.\n19. Write it down.\nIf you think it, put it on paper. If you write it down, it’s an object, not just a thought. Objects are much easier to organize than thoughts.",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "5"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                432.18,
+                645.67,
+                532.69,
+                704.77
+              ],
+              "text": "How to Tidy Up\nLike a Pro\n28 rules for organizing\nyour home by working\nwith your ADHD brain"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                68.78,
+                419.69,
+                100.04
+              ],
+              "text": "matter whether an item still works, or that you paid good money for it. If you\ndon’t love it or use it regularly, let it go."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                113.93,
+                419.68,
+                159.44
+              ],
+              "text": "12. Focus on practical solutions.\nThe goal is to have only things that you use and love in your home, and to\nknow where they all are. That’s it! Practicality is all."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                173.33,
+                419.69,
+                218.84
+              ],
+              "text": "13. Find one task to start and complete.\nIt will give you a feeling of success and motivate you to take the next step.\nYou are building your task-initiation muscle."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                232.73,
+                419.7,
+                293.24
+              ],
+              "text": "14. Find others you can share your struggles with.\nThis can be your best friend across town, or a free Facebook group of strang-\ners. When you’re going through the same experiences as someone else, it’s\naffirming. It’s not just you."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                307.13,
+                419.72,
+                382.64
+              ],
+              "text": "15. Don’t buy anything.\nI know that sounds counterintuitive, because home organization sites are\nfull of beautiful bins and baskets. Resist. Declutter first, figure out how your\nspace can be best utilized, and then make only the purchases that will keep\nyou on track."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                396.53,
+                419.75,
+                487.04
+              ],
+              "text": "16. Match your containers to your stuff.\nDon’t take up a whole cabinet for spices if you never cook, and don’t jam\n30 sweaters into a tiny drawer. Once you’ve decluttered, and you’re keeping\nonly the essentials, you can find containers that function. That may mean\nmaking purchases, or it may mean switching dressers with your daughter\n(who’s at college) because hers is bigger."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                500.93,
+                419.72,
+                576.44
+              ],
+              "text": "17. Monotask.\nIn my 100-Day Home Organization Program, we focus on one task per day.\nWe don’t organize the entire house in one day; we organize the spice drawer.\nMonotasking can be hard for a person with ADHD, but having a clear road-\nmap makes it easier."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                590.33,
+                419.75,
+                650.84
+              ],
+              "text": "18. Get audio clues.\nWhether it’s a podcast or an audiobook, hearing your strategies triggers a\ndifferent response in your brain than reading about them. You can find mo-\ntivation and direction in the voice of someone who’s been there."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                54.0,
+                664.73,
+                419.64,
+                710.24
+              ],
+              "text": "19. Write it down.\nIf you think it, put it on paper. If you write it down, it’s an object, not just a\nthought. Objects are much easier to organize than thoughts."
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "6\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\n20. Time each task on your to-do list.\nI used to hate emptying the dishwasher. I thought it took 20 minutes. One day, I said, “Let’s time it.” It took four minutes. Knowing that the chore takes four minutes allows me to squeeze it in here and there rather than avoiding it.\n21. Don’t keep a to-do list.\nYou can keep a master list of tasks you want to achieve, but don’t stare at it ev-\nery day and hope you get them all done (then feel bad when you don’t). When you plan your week, choose three and only three tasks from your list each day, and bring your focus to those tasks. Yes, you will get only three things done, not a million, but you weren’t going to get a million tasks done anyway.\n22. Small progress is still progress.\nThree tasks completed is not a hundred, but it’s better than zero. An orga-\nnized shelf is not an organized pantry, but it’s better than a disorganized shelf. Small progress is still progress.\n23. Give everything a home.\nThe number one mistake I see people make is that they try different organi-\nzation systems all the time. Change is your enemy. New is not better. Keep-\ning your keys in the same boring spot for 20 years is perfect. Organizing your home is not where you need to show off your creative side.\n24. Schedule a time to put items away.\nThis is a big barrier to organization — not putting things away. At the end of the day, set a timer for 10 minutes to “close down” your home and put things away. No one likes to do this, but if you can make it a habit, it becomes easier and less mentally taxing.\n25. Organization is a skill, not a talent.\nIt’s not something you are born with. It’s a habit that is cultivated over time. It’s never too late to start. And when you do start, get an organizing buddy with similar goals. Encourage each other to make progress in organizing your homes. The best scenario would be for both of you to organize the same spaces in your homes at the same time so you can share ideas.\n26. Hire it out.\nIf you can afford to hire help, do it. You’ll save so much more than money — in time, in lower anxiety — in someone else’s expertise. You can hire out an entire project, or just have someone come and clean after it’s done. You don’t have to do everything yourself.",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "6"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                432.18,
+                645.67,
+                532.69,
+                704.77
+              ],
+              "text": "How to Tidy Up\nLike a Pro\n28 rules for organizing\nyour home by working\nwith your ADHD brain"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                70.13,
+                419.68,
+                130.64
+              ],
+              "text": "20. Time each task on your to-do list.\nI used to hate emptying the dishwasher. I thought it took 20 minutes. One day,\nI said, “Let’s time it.” It took four minutes. Knowing that the chore takes four\nminutes allows me to squeeze it in here and there rather than avoiding it."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                144.53,
+                419.68,
+                235.04
+              ],
+              "text": "21. Don’t keep a to-do list.\nYou can keep a master list of tasks you want to achieve, but don’t stare at it ev-\nery day and hope you get them all done (then feel bad when you don’t). When\nyou plan your week, choose three and only three tasks from your list each day,\nand bring your focus to those tasks. Yes, you will get only three things done,\nnot a million, but you weren’t going to get a million tasks done anyway."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                248.93,
+                419.75,
+                309.44
+              ],
+              "text": "22. Small progress is still progress.\nThree tasks completed is not a hundred, but it’s better than zero. An orga-\nnized shelf is not an organized pantry, but it’s better than a disorganized\nshelf. Small progress is still progress."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                323.33,
+                419.71,
+                398.84
+              ],
+              "text": "23. Give everything a home.\nThe number one mistake I see people make is that they try different organi-\nzation systems all the time. Change is your enemy. New is not better. Keep-\ning your keys in the same boring spot for 20 years is perfect. Organizing\nyour home is not where you need to show off your creative side."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                412.73,
+                419.72,
+                488.24
+              ],
+              "text": "24. Schedule a time to put items away.\nThis is a big barrier to organization — not putting things away. At the end of\nthe day, set a timer for 10 minutes to “close down” your home and put things\naway. No one likes to do this, but if you can make it a habit, it becomes easier\nand less mentally taxing."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                502.13,
+                419.76,
+                592.64
+              ],
+              "text": "25. Organization is a skill, not a talent.\nIt’s not something you are born with. It’s a habit that is cultivated over time.\nIt’s never too late to start. And when you do start, get an organizing buddy\nwith similar goals. Encourage each other to make progress in organizing\nyour homes. The best scenario would be for both of you to organize the same\nspaces in your homes at the same time so you can share ideas."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                606.53,
+                419.76,
+                682.04
+              ],
+              "text": "26. Hire it out.\nIf you can afford to hire help, do it. You’ll save so much more than money —\nin time, in lower anxiety — in someone else’s expertise. You can hire out an\nentire project, or just have someone come and clean after it’s done. You don’t\nhave to do everything yourself."
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 7,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "7\nfrom the editors of\nHow to Tidy Up Like a Pro\n28 rules for organizing your home by working with your ADHD brain\n27. Take “after” photos.\nCompare them to the “before” photos. You did it! You made progress. Treat yourself to your favorite drink or a night of relaxation. You deserve it.\n28. Give yourself grace.\nYour worth as a person has nothing to do with how organized your house is. Refocus the energy you spend on worrying about your home’s condition, and you’ll be free to do what you are created to do.",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "7"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                432.18,
+                645.67,
+                532.69,
+                704.77
+              ],
+              "text": "How to Tidy Up\nLike a Pro\n28 rules for organizing\nyour home by working\nwith your ADHD brain"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                70.13,
+                419.69,
+                115.64
+              ],
+              "text": "27. Take “after” photos.\nCompare them to the “before” photos. You did it! You made progress. Treat\nyourself to your favorite drink or a night of relaxation. You deserve it."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                129.53,
+                419.71,
+                190.04
+              ],
+              "text": "28. Give yourself grace.\nYour worth as a person has nothing to do with how organized your house\nis. Refocus the energy you spend on worrying about your home’s condition,\nand you’ll be free to do what you are created to do."
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 8,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDitude eBooks Available Now\nadditudemag.com/shop\nGetting Things Done with Adult ADHD\nStop wasting time, improve productivity, and stay focused with these get-it-done strategies.\nYour brain works differently. And so you need ADHD-tested time-manage-\nment plans that don’t try to shove square pegs into round holes. Use this ebook to manage your to-do list and packed schedule, get out the door on time, beat deadlines and avoid distractions, and finish any task.\n>> Learn more about this eBook: http://additu.de/gtd\nThe Diet & Nutrition Guide for Adults with ADHD\nHow to manage your symptoms with food, vitamins, herbs & supplements\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises — including some designed especially for kids — as well as the science behind each natural therapy.\n>> Learn more about this eBook: http://additu.de/diet-guide\nMindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green time, and mindful meditation.\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises—including some designed especially for kids—as well as the science behind each natural therapy. >> Learn more about this eBook: http://additu.de/mindful\nFREE ADDitude Downloads\n73 ADHD-Friendly Ways to Organize Your Life Now\nAchieve less clutter, fewer hassles, and greater tranquility in your life.\nADHD Time Assessment\nChart\nDo you spend your time wisely? Use this tool to find out.\nBoost Your Productivity At Work\nADHD can make any job more challenging. Keep up with this expert advice.\nYou Know You Have ADHD\nWhen…\nReal ADHDers share personal stories highlighting the lighter side of living with attention deficit.\nSmart Comebacks\nWitty responses to ADHD doubters.\nIt’s Not ADHD: 3 Common Diagnosis Mistakes\nDoctors are sometimes too quick to diagnose ADHD. Read up on common misdiagnoses.\nFind these and many more free ADHD resources online at:\nhttp://additu.de/\nfreedownloads",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                54.0,
+                51.06,
+                231.01,
+                110.43
+              ],
+              "text": "ADDitude eBooks\nAvailable Now\nadditudemag.com/shop"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                133.85,
+                402.91,
+                178.04
+              ],
+              "text": "Getting Things Done with Adult ADHD\nStop wasting time, improve productivity, and stay focused with these\nget-it-done strategies."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                182.35,
+                419.74,
+                243.61
+              ],
+              "text": "Your brain works differently. And so you need ADHD-tested time-manage-\nment plans that don’t try to shove square pegs into round holes. Use this\nebook to manage your to-do list and packed schedule, get out the door on\ntime, beat deadlines and avoid distractions, and finish any task."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                246.85,
+                319.09,
+                263.11
+              ],
+              "text": ">> Learn more about this eBook: http://additu.de/gtd"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                286.65,
+                415.32,
+                318.85
+              ],
+              "text": "The Diet & Nutrition Guide for Adults with ADHD\nHow to manage your symptoms with food, vitamins, herbs & supplements"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                323.15,
+                419.72,
+                384.41
+              ],
+              "text": "Learn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like\nyoga and deep breathing exercises — including some designed especially for\nkids — as well as the science behind each natural therapy."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                387.65,
+                355.86,
+                403.91
+              ],
+              "text": ">> Learn more about this eBook: http://additu.de/diet-guide"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                427.45,
+                403.9,
+                471.64
+              ],
+              "text": "Mindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green\ntime, and mindful meditation."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                475.95,
+                419.74,
+                537.21
+              ],
+              "text": "Learn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like\nyoga and deep breathing exercises—including some designed especially for\nkids—as well as the science behind each natural therapy."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                540.45,
+                342.36,
+                556.71
+              ],
+              "text": ">> Learn more about this eBook: http://additu.de/mindful"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                432.72,
+                69.62,
+                558.91,
+                105.13
+              ],
+              "text": "FREE ADDitude\nDownloads"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                432.72,
+                113.81,
+                578.26,
+                163.0
+              ],
+              "text": "73 ADHD-Friendly Ways to\nOrganize Your Life Now\nAchieve less clutter, fewer hassles,\nand greater tranquility in your life."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                432.72,
+                173.81,
+                566.24,
+                223.0
+              ],
+              "text": "ADHD Time Assessment\nChart\nDo you spend your time wisely?\nUse this tool to find out."
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                432.72,
+                233.81,
+                574.18,
+                295.0
+              ],
+              "text": "Boost Your Productivity At\nWork\nADHD can make any job more\nchallenging. Keep up with this\nexpert advice."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                432.72,
+                305.81,
+                570.0,
+                379.0
+              ],
+              "text": "You Know You Have ADHD\nWhen…\nReal ADHDers share personal\nstories highlighting the lighter\nside of living with attention\ndeficit."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                432.72,
+                389.81,
+                543.6,
+                427.0
+              ],
+              "text": "Smart Comebacks\nWitty responses to ADHD\ndoubters."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                432.72,
+                437.81,
+                575.6,
+                499.0
+              ],
+              "text": "It’s Not ADHD: 3 Common\nDiagnosis Mistakes\nDoctors are sometimes too quick\nto diagnose ADHD. Read up on\ncommon misdiagnoses."
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                432.72,
+                510.18,
+                569.47,
+                577.53
+              ],
+              "text": "Find these and many\nmore free ADHD\nresources online at:\nhttp://additu.de/\nfreedownloads"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additudemag.com/shop",
+              "bbox": [
+                54.0,
+                91.14,
+                215.2,
+                110.43
+              ]
+            },
+            {
+              "uri": "http://additu.de/gtd",
+              "bbox": [
+                214.38,
+                246.85,
+                319.08,
+                263.11
+              ]
+            },
+            {
+              "uri": "http://additu.de/diet-guide",
+              "bbox": [
+                214.38,
+                387.65,
+                355.85,
+                403.91
+              ]
+            },
+            {
+              "uri": "http://additu.de/mindful",
+              "bbox": [
+                214.02,
+                540.45,
+                342.35,
+                556.71
+              ]
+            },
+            {
+              "uri": "http://additu.de/freedownloads",
+              "bbox": [
+                432.72,
+                550.81,
+                519.79,
+                564.53
+              ]
+            },
+            {
+              "uri": "http://additu.de/freedownloads",
+              "bbox": [
+                432.72,
+                563.81,
+                512.18,
+                577.53
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 9,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "Expert Webinar Replays: Organization Solutions for People with ADHD\n>> http://additu.de/declutter\nOnce clutter has built up, the idea of tackling it can be overwhelming — and for many adults with ADHD, it’s impossible to even know where to start. In this expert webinar, Susan Pinsky explains why “good enough” is just as good as “perfect,” and imparts simple steps people with ADHD can take to reduce clutter and achieve efficient organization.\nThe ADHD-Executive Function Connection\n>> http://additu.de/efunction\nWe’ve all heard of executive functions — the brain-based skills that affect how we plan, organize, and carry out tasks. But how do executive functions relate to ADHD — and how can children and adults with the condition compensate for natural deficiencies in these critical skills? Thomas Brown, Ph.D., explains the ins and outs of executive functions and how they affect your focus in this expert webinar.\nJust Diagnosed? How to Succeed with Adult ADHD\n>> http://additu.de/just-diagnosed\nA late-in-life ADHD diagnosis doesn’t mean it’s all over! In honor of ADHD Awareness Month, Michele Novotni, Ph.D., shares strategies for becoming a self-advocate, so you can live your best life with ADHD.\nWhy People with ADHD Can’t Sleep\n>> http://additu.de/adhd-sleep\nNot only is skimping on sleep bad for your overall health and well-being, it can also exacerbate ADHD symptoms. Rest assured — there are numerous ways to improve your sleep hygiene! In this audio and slide presentation, hosted by Roberto Olivardia, Ph.D., learn the science behind ADHD sleep problems and get tips for revamping your circadian rhythm.\nSurvival Strategies for Moms with ADHD\n>> http://additu.de/moms\nMothers with ADHD, especially those parenting children with ADHD, often put the needs of others before themselves. Despite good intentions, when moms leave their own ADHD untreated, the whole family can suffer. In this webinar, hosted by Ellen Littman, Ph.D., learn to let go of society’s expecta-\ntions of being “perfect” and focus on your own accomplishments.\nFREE ADHD Newsletters from ADDitude\nSign up to receive criti-\ncal news and information about ADHD diagnosis and treatment, success at school, adult ADHD, and parenting strategies: http://additu.de/newsletter\nAdult ADHD and LD\nExpert advice on managing your household, time, money, career, and relationships\nParenting Children with ADHD and LD Strategies and support for par-\nents on behavior and discipline, time management, disorganiza-\ntion, and making friends.\nADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework, work with teachers, find the right schools, and much more.\nTreating ADHD\nTreatment options for attention deficit including medications, food, supplements, brain training, mindfulness and other alternative therapies.\nFor Women with ADHD\nManaging ADHD on the job, running a household, dealing with challenging emotions, and much more.",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                54.0,
+                50.89,
+                360.7,
+                96.41
+              ],
+              "text": "Expert Webinar Replays:\nOrganization Solutions for People with ADHD"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                100.29,
+                203.95,
+                114.02
+              ],
+              "text": ">> http://additu.de/declutter"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                118.19,
+                419.75,
+                194.45
+              ],
+              "text": "Once clutter has built up, the idea of tackling it can be overwhelming — and\nfor many adults with ADHD, it’s impossible to even know where to start.\nIn this expert webinar, Susan Pinsky explains why “good enough” is just as\ngood as “perfect,” and imparts simple steps people with ADHD can take to\nreduce clutter and achieve efficient organization."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                204.48,
+                341.11,
+                222.21
+              ],
+              "text": "The ADHD-Executive Function Connection"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                226.09,
+                206.34,
+                239.82
+              ],
+              "text": ">> http://additu.de/efunction"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                243.99,
+                419.72,
+                335.25
+              ],
+              "text": "We’ve all heard of executive functions — the brain-based skills that affect\nhow we plan, organize, and carry out tasks. But how do executive functions\nrelate to ADHD — and how can children and adults with the condition\ncompensate for natural deficiencies in these critical skills? Thomas Brown,\nPh.D., explains the ins and outs of executive functions and how they affect\nyour focus in this expert webinar."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                345.28,
+                393.33,
+                363.01
+              ],
+              "text": "Just Diagnosed? How to Succeed with Adult ADHD"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                366.89,
+                234.29,
+                380.62
+              ],
+              "text": ">> http://additu.de/just-diagnosed"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                384.79,
+                419.71,
+                431.05
+              ],
+              "text": "A late-in-life ADHD diagnosis doesn’t mean it’s all over! In honor of ADHD\nAwareness Month, Michele Novotni, Ph.D., shares strategies for becoming a\nself-advocate, so you can live your best life with ADHD."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                441.08,
+                284.53,
+                458.81
+              ],
+              "text": "Why People with ADHD Can’t Sleep"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                462.69,
+                212.82,
+                476.42
+              ],
+              "text": ">> http://additu.de/adhd-sleep"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                54.0,
+                480.59,
+                419.75,
+                556.85
+              ],
+              "text": "Not only is skimping on sleep bad for your overall health and well-being, it\ncan also exacerbate ADHD symptoms. Rest assured — there are numerous\nways to improve your sleep hygiene! In this audio and slide presentation,\nhosted by Roberto Olivardia, Ph.D., learn the science behind ADHD sleep\nproblems and get tips for revamping your circadian rhythm."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                54.0,
+                566.88,
+                328.58,
+                584.61
+              ],
+              "text": "Survival Strategies for Moms with ADHD"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                54.0,
+                588.49,
+                187.76,
+                602.22
+              ],
+              "text": ">> http://additu.de/moms"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                54.0,
+                606.39,
+                419.69,
+                682.65
+              ],
+              "text": "Mothers with ADHD, especially those parenting children with ADHD, often\nput the needs of others before themselves. Despite good intentions, when\nmoms leave their own ADHD untreated, the whole family can suffer. In this\nwebinar, hosted by Ellen Littman, Ph.D., learn to let go of society’s expecta-\ntions of being “perfect” and focus on your own accomplishments."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                432.72,
+                69.48,
+                573.96,
+                210.37
+              ],
+              "text": "FREE ADHD\nNewsletters from\nADDitude\nSign up to receive criti-\ncal news and information\nabout ADHD diagnosis\nand treatment, success at\nschool, adult ADHD, and\nparenting strategies:\nhttp://additu.de/newsletter"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                432.72,
+                221.64,
+                569.53,
+                270.86
+              ],
+              "text": "Adult ADHD and LD\nExpert advice on managing your\nhousehold, time, money, career,\nand relationships"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                432.72,
+                281.67,
+                566.78,
+                354.86
+              ],
+              "text": "Parenting Children with\nADHD and LD\nStrategies and support for par-\nents on behavior and discipline,\ntime management, disorganiza-\ntion, and making friends."
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                432.72,
+                365.67,
+                573.47,
+                426.86
+              ],
+              "text": "ADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework,\nwork with teachers, find the right\nschools, and much more."
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                432.72,
+                437.67,
+                577.22,
+                510.87
+              ],
+              "text": "Treating ADHD\nTreatment options for attention\ndeficit including medications,\nfood, supplements, brain training,\nmindfulness and other alternative\ntherapies."
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                432.72,
+                521.67,
+                565.55,
+                582.86
+              ],
+              "text": "For Women with ADHD\nManaging ADHD on the job,\nrunning a household, dealing\nwith challenging emotions, and\nmuch more."
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additu.de/declutter",
+              "bbox": [
+                68.14,
+                100.14,
+                203.95,
+                114.02
+              ]
+            },
+            {
+              "uri": "http://additu.de/efunction",
+              "bbox": [
+                68.14,
+                226.09,
+                206.34,
+                239.82
+              ]
+            },
+            {
+              "uri": "http://additu.de/just-diagnosed",
+              "bbox": [
+                68.14,
+                366.89,
+                234.28,
+                380.62
+              ]
+            },
+            {
+              "uri": "http://additu.de/adhd-sleep",
+              "bbox": [
+                66.67,
+                462.69,
+                212.82,
+                476.42
+              ]
+            },
+            {
+              "uri": "http://additu.de/moms",
+              "bbox": [
+                68.14,
+                588.49,
+                187.76,
+                602.22
+              ]
+            },
+            {
+              "uri": "http://additu.de/newsletter",
+              "bbox": [
+                432.72,
+                196.67,
+                573.95,
+                210.4
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/how_to_tidy_up_like_a_pro_2.json",
+    "title": "pdf_to_json_text_layout_v1",
+    "category": "ADHD Cleaning Decluttering and Organization",
+    "source_type": "reference",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Pick the smallest visible version.",
+      "Use a timer, body double, or transition cue.",
+      "Stop after one tiny step if energy drops."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

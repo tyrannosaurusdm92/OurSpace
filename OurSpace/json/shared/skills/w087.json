@@ -1,0 +1,1426 @@
+{
+  "schema": "pdf_to_json_text_layout_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "group_type": "single_pdf_json",
+  "merge_policy": {
+    "threshold": "merge documents when TF-IDF cosine similarity >= 0.60 OR 5-token shingle containment of the smaller document >= 0.60",
+    "why_containment_is_used": "Containment catches shorter PDFs that are substantially embedded inside longer PDFs even when whole-document Jaccard/cosine is lower."
+  },
+  "source_document_count": 1,
+  "source_documents": [
+    {
+      "document_id": "add_organization_hacks_real_life_tips_from_adhd_experts",
+      "source_index": 4,
+      "original_filename": "ADD Organization Hacks_ Real-Life Tips from ADHD Experts.pdf",
+      "source_relative_path": "adhd/ADD Organization Hacks_ Real-Life Tips from ADHD Experts.pdf",
+      "sha256": "dcf59bbf4b71890f417dfe7bb2012bf0daa6383007025fee0787d9305ee62cc7",
+      "title": "ADD Organization Hacks: Real-Life Tips from ADHD Experts",
+      "page_count": 5,
+      "character_count": 9938,
+      "word_count": 1800,
+      "link_count": 30,
+      "image_count": 1,
+      "form_field_count": 0,
+      "annotation_count": 0
+    }
+  ],
+  "within_group_similarity": [],
+  "documents": [
+    {
+      "document_id": "add_organization_hacks_real_life_tips_from_adhd_experts",
+      "source_index": 4,
+      "original_filename": "ADD Organization Hacks_ Real-Life Tips from ADHD Experts.pdf",
+      "source_relative_path": "adhd/ADD Organization Hacks_ Real-Life Tips from ADHD Experts.pdf",
+      "sha256": "dcf59bbf4b71890f417dfe7bb2012bf0daa6383007025fee0787d9305ee62cc7",
+      "title": "ADD Organization Hacks: Real-Life Tips from ADHD Experts",
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "ADD Organization Hacks: Real-Life Tips from ADHD Experts",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "producer": "Skia/PDF m149",
+        "creationDate": "D:20260625143733+00'00'",
+        "modDate": "D:20260625143733+00'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "page_count": 5,
+      "character_count": 9938,
+      "word_count": 1800,
+      "link_count": 30,
+      "image_count": 1,
+      "form_field_count": 0,
+      "annotation_count": 0,
+      "full_text": "ADHD Adults\nHOME ORGANIZATION\n40 Little Life Hacks from ADHD Gurus\nRun-of-the-mill organization strategies don’t work for adults with ADD. Our ADHD brains — and attention spans — need more creative,\nclever “organization hacks” to the problems of losing our keys, forgetting our bills, and missing appointments. Here they are.\nUpdated on January 31, 2023\nClick to Read 9 Comments 💬\nBy ADDitude Editors\n1 of 9\nADD Experts, They're Just Like Us!\nADHD experts struggle with the same symptoms that challenge us all. They lose stuff, they miss appointments,\nthey buy books on organizing that they never read, and they live with clutter. What makes them experts is that\nthey figure out tricks to help them overcome the problems. ADDitude asked eight ADHD experts for their\nsimplest, most effective organization hacks. Here's what they said!\n2 of 9\nMichael Laskoff, CEO of abito.com\n1. Buy bright and shiny objects. When it comes to personal effects — keys, wallet, pens, notebooks, umbrella —\nI avoid black; it's easy to overlook and lose.\n2. Know what you will forget. I forget a meeting time almost as soon as someone tells me. Knowing that, I make\nan appointment only when I can write it down on my calendar.\n3. Dress the night before. I’m not a morning person, so I lay out my clothes and critical items for the next\nday the previous evening.\n4. Downsize your desk. Give me a flat surface, and I will pile paper on it. And since I can’t stop piling, I opted for\na small desk. It limits my potential to create paper-based chaos.\n5. Be redundant. I use multiple “alarms” — setting a clock, programming a cell phone, asking people to call me\n— to remind me of things. I ignore single reminders, but almost always pay attention to several of them.\n3 of 9\nSandy Maynard, ADHD Coach\nADHD Science & Strategies\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n1/5 6. Make it eye-catching. I paste logos on folders, rather than writing on them. My bank's colorful logo is easier\nto spot than a folder with “banking” written in black ink.\n7. Make it digital. I store all contact information in my phone. And I enter new phone numbers immediately. No\nscraps of paper that inevitably get thrown out.\n8. 10-9-8-7… I create a launchpad with my keys, purse, cell phone charger, and any items that need to be taken\nwith me in a basket by the front door.\n9. Nip clutter in the bud. I collect and sort my mail daily over a recycling wastebasket, so that junk mail doesn’t\nmake it to my desk.\n10. Closet control. For every new piece of clothing that I purchase, I get rid of one old item. That means socks\nwith holes in them, too.\n[Read This: 25 Great Apps for ADHD Minds]\n4 of 9\nBen Glenn, Founder of simplybenglenn.com\n11. Be a people person. I have a special person I trust, who understands the struggles of ADHD, to help me\nseparate my wants from needs and focus on what’s important now.\n12. Track time. Tasks that I think will take an hour often take three or four hours. The Time Timer\n(#CommissionsEarned) helps me track time’s passage by showing how much has lapsed.\n13. Meeting place. To avoid losing my phone, keys, and wallet, I created and trained myself to use an\n“essentials” spot—a place where I put all the things I need to have in hand before I leave the house.\n14. Go smaller. I downsized to a messenger bag. Its smaller size forces me to ask, “What do I absolutely need to\nbring with me?”\n15. Click on organization. The iPad (#CommissionsEarned) has organized my life. E-mail, blogs, games, movies,\nmusic, and calendar are on one device.\n16. Write it down—and forget it for now. A small spiral notebook that fits in my jacket pocket acts as an external\nhard drive for my brain. I write down my thoughts as they pop into my head, without fear of forgetting\nor veering off track.\n[Get This Free Download: 73 ADHD-Friendly Ways to Organize Your Life]\n5 of 9\nBeth Main, ADHD Coach\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n2/5 17. Easy access. I keep items that are used together near each other, and stuff I use regularly easily accessible. It\nminimizes running back and forth to get the things I need to do a job.\n18. Pounce on paper. When new paperwork comes into the house, I immediately sort it into Action Required,\nMight Act On Someday, Reference/Cold Storage, or Trash. The Action Required items go into a bin, and onto my\nto-do list.\n19. Take the pressure off. I categorize everything I intend to do \"someday\" on a master to-do list with due dates\nand priorities. It keeps me from forgetting important things, and frees up mental bandwidth.\n20. Buzz me. I program Google Calendar to send alerts to my phone for appointments and time-sensitive tasks,\nwith different color-coding for each area of my life.\n21. Solving problems. Graphic organizers help with making decisions, solving problems, or getting started on a\nproject. I draw circles and write a few words representing an idea in each one, then connect the circles that are\nrelated.\n6 of 9\nNed Hallowell, M.D.\n22. Create a chore file. I write down chores on index cards, and meet once a week with my wife to coordinate the\npriorities, and figure out who will be doing what.\n23. ADHD and sex: Schedule it. Set specific dates for sex, then put a reminder (or two!) in your calendar. What’s\nless romantic: scheduling sex or never having it?!\n24. Chart tough decisions. I write the problem at the top of a big piece of paper, and create three columns:\nReasons to do, Reasons not to do, Creative ideas. Then my wife and I fill it in and find solutions together.\n25. Hire an office organizer. At least once a year, I hire a temporary secretary to do all my filing.\n26. Create “capture” areas. I create capture spaces for “grabbing” stuff where it enters, like a mail bin and key\nhanger near the front door.\n7 of 9\nNancy Ratey, Ed.M.\n27. Meal prep. I set the table the night before, prepare any ingredients ahead of time, and store them in\ncontainers. Then I just throw them in the pot, pan, or microwave.\n28. Key trick. I attach my car keys to (or place them near) one of the items that I take with me when running\nerrands — letters, to-do list, shoes — so I don’t forget them.\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n3/5 29. Go digital. Two words: online banking. It cuts down on paper to file and eliminates the need to write down\neverything I’ve debited or charged to my account.\n30. Document recall. I always tell a close friend where I’ve hidden a spare key or put a document. I also\nphotocopy the contents of my wallet in case I lose it.\n31. Don’t sweat the small stuff. I file related papers together in folders rather than filing each one\nalphabetically.\n32. Keep it portable. I keep active projects in wire baskets on my desk. That way, if I get bored of working there, I\ncan carry them with me.\n[Take This Test: Could You Have an Executive Function Deficit?]\n8 of 9\nTerry Matlen, MSW, ACSW\n33. Stuff goes here. Instead of scraps of paper, I use one spiral notebook for brain dumps, and date each page, so\nI can find important information quickly.\n34. Time trick. I focus on the time I need to leave to get to my destination on time, not the time of the\nappointment.\n35. Plastic for paper. I keep a small plastic baggy in my purse for receipts and one in my glove compartment for\ndirections.\n36. Memory trick. When ADHD meds are running low, I turn the bottles upside down in the cabinet as a\nreminder to call for refills.\n9 of 9\nMichele Novotni, ADHD Coach and Therapist\n37. Label storage containers. Not only do I label a container with the broad category, I list all the items inside\nthat box on an index card and tape it to the side.\n38. Recipe recall. I use MasterCook (#CommissionsEarned) software to store and organize my recipes, so I can\nquickly browse them by title, category, or ingredients.\n39. Two to-do lists. I have an Action List of up to three items to do now, and a Parking Lot of things I want\nto/need to do. When I finish the Action items, I pull items or parts of items off the Parking Lot list.\n40. The college try. I hire college kids to file papers and scan documents regularly to help keep papers\norganized.\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n4/5 [Read This Next: The Ultimate Room-By-Room Organization Guide]\n#CommissionsEarned As an Amazon Associate, ADDitude earns a commission from qualifying purchases made\nby ADDitude readers on the affiliate links we share. However, all products linked in the ADDitude Store have\nbeen independently selected by our editors and/or recommended by our readers. Prices are accurate and items in\nstock as of time of publication. \n\n\nThe ADDITUDE Commitment\nADDitude collaborates closely with leading medical experts to publish accurate, clear, and authoritative content that millions of readers trust\nand share.\nREVIEW OUR EDITORIAL PROCESS\nMEET OUR MEDICAL ADVISORY PANEL\nADDitude verifies the factual accuracy of all new content.\nSources are cited for all scientific research and findings.\nContent is periodically reviewed and updated to reflect new health insights.\nWe strive to feature diverse voices and experiences.\nCopyright © 1998 - 2026 WebMD LLC. All rights reserved. Your use of this site is governed by our Terms of Use\nand Privacy Policy, and AI Policy. ADDitude does not provide medical advice, diagnosis, or treatment. The\nmaterial on this web site is provided for educational purposes only.\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n5/5",
+      "pages": [
+        {
+          "page_number": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADHD Adults\nHOME ORGANIZATION\n40 Little Life Hacks from ADHD Gurus\nRun-of-the-mill organization strategies don’t work for adults with ADD. Our ADHD brains — and attention spans — need more creative,\nclever “organization hacks” to the problems of losing our keys, forgetting our bills, and missing appointments. Here they are.\nUpdated on January 31, 2023\nClick to Read 9 Comments 💬\nBy ADDitude Editors\n1 of 9\nADD Experts, They're Just Like Us!\nADHD experts struggle with the same symptoms that challenge us all. They lose stuff, they miss appointments,\nthey buy books on organizing that they never read, and they live with clutter. What makes them experts is that\nthey figure out tricks to help them overcome the problems. ADDitude asked eight ADHD experts for their\nsimplest, most effective organization hacks. Here's what they said!\n2 of 9\nMichael Laskoff, CEO of abito.com\n1. Buy bright and shiny objects. When it comes to personal effects — keys, wallet, pens, notebooks, umbrella —\nI avoid black; it's easy to overlook and lose.\n2. Know what you will forget. I forget a meeting time almost as soon as someone tells me. Knowing that, I make\nan appointment only when I can write it down on my calendar.\n3. Dress the night before. I’m not a morning person, so I lay out my clothes and critical items for the next\nday the previous evening.\n4. Downsize your desk. Give me a flat surface, and I will pile paper on it. And since I can’t stop piling, I opted for\na small desk. It limits my potential to create paper-based chaos.\n5. Be redundant. I use multiple “alarms” — setting a clock, programming a cell phone, asking people to call me\n— to remind me of things. I ignore single reminders, but almost always pay attention to several of them.\n3 of 9\nSandy Maynard, ADHD Coach\nADHD Science & Strategies\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n1/5",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                55.12,
+                102.18,
+                114.42,
+                116.32
+              ],
+              "text": "ADHD Adults"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                55.12,
+                123.92,
+                155.73,
+                137.12
+              ],
+              "text": "HOME ORGANIZATION"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.12,
+                142.88,
+                351.64,
+                168.18
+              ],
+              "text": "40 Little Life Hacks from ADHD Gurus"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                168.14,
+                552.64,
+                191.46
+              ],
+              "text": "Run-of-the-mill organization strategies don’t work for adults with ADD. Our ADHD brains — and attention spans — need more creative,\nclever “organization hacks” to the problems of losing our keys, forgetting our bills, and missing appointments. Here they are."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                174.47,
+                192.18,
+                311.25,
+                206.32
+              ],
+              "text": "Updated on January 31, 2023"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                215.44,
+                210.49,
+                230.53
+              ],
+              "text": "Click to Read 9 Comments 💬"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                64.12,
+                190.68,
+                157.96,
+                204.82
+              ],
+              "text": "By ADDitude Editors"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                55.12,
+                245.42,
+                79.77,
+                258.62
+              ],
+              "text": "1 of 9"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                55.12,
+                265.01,
+                287.03,
+                285.75
+              ],
+              "text": "ADD Experts, They're Just Like Us!"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                55.12,
+                289.12,
+                553.13,
+                344.81
+              ],
+              "text": "ADHD experts struggle with the same symptoms that challenge us all. They lose stuff, they miss appointments,\nthey buy books on organizing that they never read, and they live with clutter. What makes them experts is that\nthey figure out tricks to help them overcome the problems. ADDitude asked eight ADHD experts for their\nsimplest, most effective organization hacks. Here's what they said!"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                388.67,
+                79.77,
+                401.87
+              ],
+              "text": "2 of 9"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                55.12,
+                408.26,
+                286.64,
+                429.0
+              ],
+              "text": "Michael Laskoff, CEO of abito.com"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                432.38,
+                554.98,
+                461.06
+              ],
+              "text": "1. Buy bright and shiny objects. When it comes to personal effects — keys, wallet, pens, notebooks, umbrella —\nI avoid black; it's easy to overlook and lose."
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                55.12,
+                474.38,
+                554.07,
+                503.06
+              ],
+              "text": "2. Know what you will forget. I forget a meeting time almost as soon as someone tells me. Knowing that, I make\nan appointment only when I can write it down on my calendar."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                55.12,
+                516.38,
+                524.75,
+                545.06
+              ],
+              "text": "3. Dress the night before. I’m not a morning person, so I lay out my clothes and critical items for the next\nday the previous evening."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                55.12,
+                558.38,
+                553.9,
+                587.06
+              ],
+              "text": "4. Downsize your desk. Give me a flat surface, and I will pile paper on it. And since I can’t stop piling, I opted for\na small desk. It limits my potential to create paper-based chaos."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                55.12,
+                600.38,
+                552.54,
+                629.06
+              ],
+              "text": "5. Be redundant. I use multiple “alarms” — setting a clock, programming a cell phone, asking people to call me\n— to remind me of things. I ignore single reminders, but almost always pay attention to several of them."
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                55.12,
+                695.42,
+                79.77,
+                708.62
+              ],
+              "text": "3 of 9"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                55.12,
+                715.01,
+                255.2,
+                735.75
+              ],
+              "text": "Sandy Maynard, ADHD Coach"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                193.47,
+                52.22,
+                308.92,
+                66.14
+              ],
+              "text": "ADHD Science & Strategies"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                24.0,
+                15.26,
+                460.52,
+                24.19
+              ],
+              "text": "6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n1/5"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/category/manage-adhd-life/",
+              "bbox": [
+                55.5,
+                102.0,
+                114.75,
+                116.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/category/manage-adhd-life/home-organization/",
+              "bbox": [
+                55.5,
+                123.75,
+                156.0,
+                137.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/reviews/slideshow/organization-hacks-top-adhd-experts/",
+              "bbox": [
+                55.5,
+                215.25,
+                210.75,
+                230.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/author/additude-editors/",
+              "bbox": [
+                78.0,
+                190.5,
+                158.25,
+                204.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/how-to-get-organized-with-adhd/",
+              "bbox": [
+                165.75,
+                329.25,
+                222.75,
+                345.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/alarm-clocks-for-adhd/",
+              "bbox": [
+                201.0,
+                600.0,
+                232.5,
+                615.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/",
+              "bbox": [
+                55.5,
+                46.5,
+                558.0,
+                68.25
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "6. Make it eye-catching. I paste logos on folders, rather than writing on them. My bank's colorful logo is easier\nto spot than a folder with “banking” written in black ink.\n7. Make it digital. I store all contact information in my phone. And I enter new phone numbers immediately. No\nscraps of paper that inevitably get thrown out.\n8. 10-9-8-7… I create a launchpad with my keys, purse, cell phone charger, and any items that need to be taken\nwith me in a basket by the front door.\n9. Nip clutter in the bud. I collect and sort my mail daily over a recycling wastebasket, so that junk mail doesn’t\nmake it to my desk.\n10. Closet control. For every new piece of clothing that I purchase, I get rid of one old item. That means socks\nwith holes in them, too.\n[Read This: 25 Great Apps for ADHD Minds]\n4 of 9\nBen Glenn, Founder of simplybenglenn.com\n11. Be a people person. I have a special person I trust, who understands the struggles of ADHD, to help me\nseparate my wants from needs and focus on what’s important now.\n12. Track time. Tasks that I think will take an hour often take three or four hours. The Time Timer\n(#CommissionsEarned) helps me track time’s passage by showing how much has lapsed.\n13. Meeting place. To avoid losing my phone, keys, and wallet, I created and trained myself to use an\n“essentials” spot—a place where I put all the things I need to have in hand before I leave the house.\n14. Go smaller. I downsized to a messenger bag. Its smaller size forces me to ask, “What do I absolutely need to\nbring with me?”\n15. Click on organization. The iPad (#CommissionsEarned) has organized my life. E-mail, blogs, games, movies,\nmusic, and calendar are on one device.\n16. Write it down—and forget it for now. A small spiral notebook that fits in my jacket pocket acts as an external\nhard drive for my brain. I write down my thoughts as they pop into my head, without fear of forgetting\nor veering off track.\n[Get This Free Download: 73 ADHD-Friendly Ways to Organize Your Life]\n5 of 9\nBeth Main, ADHD Coach\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n2/5",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                55.12,
+                27.38,
+                550.37,
+                56.06
+              ],
+              "text": "6. Make it eye-catching. I paste logos on folders, rather than writing on them. My bank's colorful logo is easier\nto spot than a folder with “banking” written in black ink."
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                55.12,
+                69.38,
+                554.26,
+                98.06
+              ],
+              "text": "7. Make it digital. I store all contact information in my phone. And I enter new phone numbers immediately. No\nscraps of paper that inevitably get thrown out."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.12,
+                111.38,
+                554.22,
+                140.06
+              ],
+              "text": "8. 10-9-8-7… I create a launchpad with my keys, purse, cell phone charger, and any items that need to be taken\nwith me in a basket by the front door."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                153.38,
+                550.68,
+                182.06
+              ],
+              "text": "9. Nip clutter in the bud. I collect and sort my mail daily over a recycling wastebasket, so that junk mail doesn’t\nmake it to my desk."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                55.12,
+                195.38,
+                540.92,
+                224.06
+              ],
+              "text": "10. Closet control. For every new piece of clothing that I purchase, I get rid of one old item. That means socks\nwith holes in them, too."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                53.86,
+                237.38,
+                251.08,
+                252.56
+              ],
+              "text": "[Read This: 25 Great Apps for ADHD Minds]"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                55.12,
+                318.92,
+                79.77,
+                332.12
+              ],
+              "text": "4 of 9"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                55.12,
+                338.51,
+                356.2,
+                359.25
+              ],
+              "text": "Ben Glenn, Founder of simplybenglenn.com"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                55.12,
+                362.62,
+                526.15,
+                391.31
+              ],
+              "text": "11. Be a people person. I have a special person I trust, who understands the struggles of ADHD, to help me\nseparate my wants from needs and focus on what’s important now."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                55.12,
+                404.62,
+                489.47,
+                419.81
+              ],
+              "text": "12. Track time. Tasks that I think will take an hour often take three or four hours. The Time Timer"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                418.12,
+                440.31,
+                433.31
+              ],
+              "text": "(#CommissionsEarned) helps me track time’s passage by showing how much has lapsed."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                55.12,
+                446.62,
+                500.73,
+                475.31
+              ],
+              "text": "13. Meeting place. To avoid losing my phone, keys, and wallet, I created and trained myself to use an\n“essentials” spot—a place where I put all the things I need to have in hand before I leave the house."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                488.62,
+                549.07,
+                517.31
+              ],
+              "text": "14. Go smaller. I downsized to a messenger bag. Its smaller size forces me to ask, “What do I absolutely need to\nbring with me?”"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                55.12,
+                530.62,
+                544.73,
+                559.31
+              ],
+              "text": "15. Click on organization. The iPad (#CommissionsEarned) has organized my life. E-mail, blogs, games, movies,\nmusic, and calendar are on one device."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                55.12,
+                572.62,
+                556.58,
+                614.81
+              ],
+              "text": "16. Write it down—and forget it for now. A small spiral notebook that fits in my jacket pocket acts as an external\nhard drive for my brain. I write down my thoughts as they pop into my head, without fear of forgetting\nor veering off track."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                53.86,
+                628.12,
+                381.38,
+                643.31
+              ],
+              "text": "[Get This Free Download: 73 ADHD-Friendly Ways to Organize Your Life]"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                55.12,
+                709.67,
+                79.77,
+                722.87
+              ],
+              "text": "5 of 9"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                55.12,
+                729.26,
+                217.78,
+                750.0
+              ],
+              "text": "Beth Main, ADHD Coach"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                24.0,
+                15.26,
+                460.52,
+                24.19
+              ],
+              "text": "6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n2/5"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/mobile-apps-for-adhd-minds/?src=embed_link",
+              "bbox": [
+                59.25,
+                237.0,
+                244.5,
+                252.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/what-is-adhd-symptoms-causes-treatments/",
+              "bbox": [
+                445.5,
+                362.25,
+                473.25,
+                378.0
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2vN4Pq6",
+              "bbox": [
+                438.0,
+                404.25,
+                489.75,
+                420.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                55.5,
+                419.25,
+                150.0,
+                432.75
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2RVn8lF",
+              "bbox": [
+                190.5,
+                530.25,
+                210.0,
+                546.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                212.25,
+                531.75,
+                306.75,
+                545.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/download/organization-for-adhd-get-your-life-in-order/?src=embed_link",
+              "bbox": [
+                59.25,
+                627.75,
+                375.0,
+                643.5
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "17. Easy access. I keep items that are used together near each other, and stuff I use regularly easily accessible. It\nminimizes running back and forth to get the things I need to do a job.\n18. Pounce on paper. When new paperwork comes into the house, I immediately sort it into Action Required,\nMight Act On Someday, Reference/Cold Storage, or Trash. The Action Required items go into a bin, and onto my\nto-do list.\n19. Take the pressure off. I categorize everything I intend to do \"someday\" on a master to-do list with due dates\nand priorities. It keeps me from forgetting important things, and frees up mental bandwidth.\n20. Buzz me. I program Google Calendar to send alerts to my phone for appointments and time-sensitive tasks,\nwith different color-coding for each area of my life.\n21. Solving problems. Graphic organizers help with making decisions, solving problems, or getting started on a\nproject. I draw circles and write a few words representing an idea in each one, then connect the circles that are\nrelated.\n6 of 9\nNed Hallowell, M.D.\n22. Create a chore file. I write down chores on index cards, and meet once a week with my wife to coordinate the\npriorities, and figure out who will be doing what.\n23. ADHD and sex: Schedule it. Set specific dates for sex, then put a reminder (or two!) in your calendar. What’s\nless romantic: scheduling sex or never having it?!\n24. Chart tough decisions. I write the problem at the top of a big piece of paper, and create three columns:\nReasons to do, Reasons not to do, Creative ideas. Then my wife and I fill it in and find solutions together.\n25. Hire an office organizer. At least once a year, I hire a temporary secretary to do all my filing.\n26. Create “capture” areas. I create capture spaces for “grabbing” stuff where it enters, like a mail bin and key\nhanger near the front door.\n7 of 9\nNancy Ratey, Ed.M.\n27. Meal prep. I set the table the night before, prepare any ingredients ahead of time, and store them in\ncontainers. Then I just throw them in the pot, pan, or microwave.\n28. Key trick. I attach my car keys to (or place them near) one of the items that I take with me when running\nerrands — letters, to-do list, shoes — so I don’t forget them.\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n3/5",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                55.12,
+                27.38,
+                552.95,
+                56.06
+              ],
+              "text": "17. Easy access. I keep items that are used together near each other, and stuff I use regularly easily accessible. It\nminimizes running back and forth to get the things I need to do a job."
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                55.12,
+                69.38,
+                550.33,
+                111.56
+              ],
+              "text": "18. Pounce on paper. When new paperwork comes into the house, I immediately sort it into Action Required,\nMight Act On Someday, Reference/Cold Storage, or Trash. The Action Required items go into a bin, and onto my\nto-do list."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.12,
+                124.88,
+                554.39,
+                153.56
+              ],
+              "text": "19. Take the pressure off. I categorize everything I intend to do \"someday\" on a master to-do list with due dates\nand priorities. It keeps me from forgetting important things, and frees up mental bandwidth."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                166.88,
+                553.1,
+                195.56
+              ],
+              "text": "20. Buzz me. I program Google Calendar to send alerts to my phone for appointments and time-sensitive tasks,\nwith different color-coding for each area of my life."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                55.12,
+                208.88,
+                551.63,
+                251.06
+              ],
+              "text": "21. Solving problems. Graphic organizers help with making decisions, solving problems, or getting started on a\nproject. I draw circles and write a few words representing an idea in each one, then connect the circles that are\nrelated."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                317.42,
+                79.77,
+                330.62
+              ],
+              "text": "6 of 9"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                55.12,
+                337.01,
+                188.96,
+                357.75
+              ],
+              "text": "Ned Hallowell, M.D."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                55.12,
+                361.12,
+                553.88,
+                389.81
+              ],
+              "text": "22. Create a chore file. I write down chores on index cards, and meet once a week with my wife to coordinate the\npriorities, and figure out who will be doing what."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                55.12,
+                403.12,
+                552.43,
+                431.81
+              ],
+              "text": "23. ADHD and sex: Schedule it. Set specific dates for sex, then put a reminder (or two!) in your calendar. What’s\nless romantic: scheduling sex or never having it?!"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                55.12,
+                445.12,
+                527.81,
+                473.81
+              ],
+              "text": "24. Chart tough decisions. I write the problem at the top of a big piece of paper, and create three columns:\nReasons to do, Reasons not to do, Creative ideas. Then my wife and I fill it in and find solutions together."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                487.12,
+                481.27,
+                502.31
+              ],
+              "text": "25. Hire an office organizer. At least once a year, I hire a temporary secretary to do all my filing."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                55.12,
+                515.62,
+                549.21,
+                544.31
+              ],
+              "text": "26. Create “capture” areas. I create capture spaces for “grabbing” stuff where it enters, like a mail bin and key\nhanger near the front door."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                610.67,
+                79.77,
+                623.87
+              ],
+              "text": "7 of 9"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                55.12,
+                630.26,
+                185.23,
+                651.0
+              ],
+              "text": "Nancy Ratey, Ed.M."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                55.12,
+                653.62,
+                516.5,
+                682.31
+              ],
+              "text": "27. Meal prep. I set the table the night before, prepare any ingredients ahead of time, and store them in\ncontainers. Then I just throw them in the pot, pan, or microwave."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                55.12,
+                695.62,
+                536.25,
+                724.31
+              ],
+              "text": "28. Key trick. I attach my car keys to (or place them near) one of the items that I take with me when running\nerrands — letters, to-do list, shoes — so I don’t forget them."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                24.0,
+                15.26,
+                460.52,
+                24.19
+              ],
+              "text": "6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n3/5"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/learning-to-linger/",
+              "bbox": [
+                70.5,
+                402.75,
+                135.75,
+                418.5
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "29. Go digital. Two words: online banking. It cuts down on paper to file and eliminates the need to write down\neverything I’ve debited or charged to my account.\n30. Document recall. I always tell a close friend where I’ve hidden a spare key or put a document. I also\nphotocopy the contents of my wallet in case I lose it.\n31. Don’t sweat the small stuff. I file related papers together in folders rather than filing each one\nalphabetically.\n32. Keep it portable. I keep active projects in wire baskets on my desk. That way, if I get bored of working there, I\ncan carry them with me.\n[Take This Test: Could You Have an Executive Function Deficit?]\n8 of 9\nTerry Matlen, MSW, ACSW\n33. Stuff goes here. Instead of scraps of paper, I use one spiral notebook for brain dumps, and date each page, so\nI can find important information quickly.\n34. Time trick. I focus on the time I need to leave to get to my destination on time, not the time of the\nappointment.\n35. Plastic for paper. I keep a small plastic baggy in my purse for receipts and one in my glove compartment for\ndirections.\n36. Memory trick. When ADHD meds are running low, I turn the bottles upside down in the cabinet as a\nreminder to call for refills.\n9 of 9\nMichele Novotni, ADHD Coach and Therapist\n37. Label storage containers. Not only do I label a container with the broad category, I list all the items inside\nthat box on an index card and tape it to the side.\n38. Recipe recall. I use MasterCook (#CommissionsEarned) software to store and organize my recipes, so I can\nquickly browse them by title, category, or ingredients.\n39. Two to-do lists. I have an Action List of up to three items to do now, and a Parking Lot of things I want\nto/need to do. When I finish the Action items, I pull items or parts of items off the Parking Lot list.\n40. The college try. I hire college kids to file papers and scan documents regularly to help keep papers\norganized.\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n4/5",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                55.12,
+                27.38,
+                543.5,
+                56.06
+              ],
+              "text": "29. Go digital. Two words: online banking. It cuts down on paper to file and eliminates the need to write down\neverything I’ve debited or charged to my account."
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                55.12,
+                69.38,
+                512.06,
+                98.06
+              ],
+              "text": "30. Document recall. I always tell a close friend where I’ve hidden a spare key or put a document. I also\nphotocopy the contents of my wallet in case I lose it."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.12,
+                111.38,
+                491.6,
+                140.06
+              ],
+              "text": "31. Don’t sweat the small stuff. I file related papers together in folders rather than filing each one\nalphabetically."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                153.38,
+                555.6,
+                182.06
+              ],
+              "text": "32. Keep it portable. I keep active projects in wire baskets on my desk. That way, if I get bored of working there, I\ncan carry them with me."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                53.86,
+                195.38,
+                341.77,
+                210.56
+              ],
+              "text": "[Take This Test: Could You Have an Executive Function Deficit?]"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                276.92,
+                79.77,
+                290.12
+              ],
+              "text": "8 of 9"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                55.12,
+                296.51,
+                228.66,
+                317.25
+              ],
+              "text": "Terry Matlen, MSW, ACSW"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                55.12,
+                320.62,
+                553.8,
+                349.31
+              ],
+              "text": "33. Stuff goes here. Instead of scraps of paper, I use one spiral notebook for brain dumps, and date each page, so\nI can find important information quickly."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                55.12,
+                362.62,
+                506.52,
+                391.31
+              ],
+              "text": "34. Time trick. I focus on the time I need to leave to get to my destination on time, not the time of the\nappointment."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                55.12,
+                404.62,
+                549.36,
+                433.31
+              ],
+              "text": "35. Plastic for paper. I keep a small plastic baggy in my purse for receipts and one in my glove compartment for\ndirections."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                446.62,
+                515.28,
+                475.31
+              ],
+              "text": "36. Memory trick. When ADHD meds are running low, I turn the bottles upside down in the cabinet as a\nreminder to call for refills."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                55.12,
+                541.67,
+                79.77,
+                554.87
+              ],
+              "text": "9 of 9"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                561.26,
+                357.88,
+                582.0
+              ],
+              "text": "Michele Novotni, ADHD Coach and Therapist"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                55.12,
+                584.62,
+                540.83,
+                613.31
+              ],
+              "text": "37. Label storage containers. Not only do I label a container with the broad category, I list all the items inside\nthat box on an index card and tape it to the side."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                55.12,
+                626.62,
+                533.32,
+                655.31
+              ],
+              "text": "38. Recipe recall. I use MasterCook (#CommissionsEarned) software to store and organize my recipes, so I can\nquickly browse them by title, category, or ingredients."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                55.12,
+                668.62,
+                525.74,
+                697.31
+              ],
+              "text": "39. Two to-do lists. I have an Action List of up to three items to do now, and a Parking Lot of things I want\nto/need to do. When I finish the Action items, I pull items or parts of items off the Parking Lot list."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                55.12,
+                710.62,
+                508.2,
+                739.31
+              ],
+              "text": "40. The college try. I hire college kids to file papers and scan documents regularly to help keep papers\norganized."
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                24.0,
+                15.26,
+                460.52,
+                24.19
+              ],
+              "text": "6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n4/5"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/executive-function-deficit-adhd-symptoms-test-for-adults/?src=embed_ss",
+              "bbox": [
+                59.25,
+                195.0,
+                335.25,
+                210.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/adhd-medication-for-adults-and-children/",
+              "bbox": [
+                166.5,
+                446.25,
+                221.25,
+                462.0
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2u6HdfJ",
+              "bbox": [
+                156.75,
+                626.25,
+                210.75,
+                642.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                213.0,
+                627.75,
+                307.5,
+                641.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/slideshows/how-to-organize-your-home-room-by-room/?src=embed_link",
+              "bbox": [
+                59.25,
+                762.75,
+                354.75,
+                763.88
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "[Read This Next: The Ultimate Room-By-Room Organization Guide]\n#CommissionsEarned As an Amazon Associate, ADDitude earns a commission from qualifying purchases made\nby ADDitude readers on the affiliate links we share. However, all products linked in the ADDitude Store have\nbeen independently selected by our editors and/or recommended by our readers. Prices are accurate and items in\nstock as of time of publication. \n\n\nThe ADDITUDE Commitment\nADDitude collaborates closely with leading medical experts to publish accurate, clear, and authoritative content that millions of readers trust\nand share.\nREVIEW OUR EDITORIAL PROCESS\nMEET OUR MEDICAL ADVISORY PANEL\nADDitude verifies the factual accuracy of all new content.\nSources are cited for all scientific research and findings.\nContent is periodically reviewed and updated to reflect new health insights.\nWe strive to feature diverse voices and experiences.\nCopyright © 1998 - 2026 WebMD LLC. All rights reserved. Your use of this site is governed by our Terms of Use\nand Privacy Policy, and AI Policy. ADDitude does not provide medical advice, diagnosis, or treatment. The\nmaterial on this web site is provided for educational purposes only.\n6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts\nhttps://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n5/5",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                53.86,
+                27.38,
+                361.24,
+                42.56
+              ],
+              "text": "[Read This Next: The Ultimate Room-By-Room Organization Guide]"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                55.12,
+                55.88,
+                557.05,
+                111.56
+              ],
+              "text": "#CommissionsEarned As an Amazon Associate, ADDitude earns a commission from qualifying purchases made\nby ADDitude readers on the affiliate links we share. However, all products linked in the ADDitude Store have\nbeen independently selected by our editors and/or recommended by our readers. Prices are accurate and items in\nstock as of time of publication."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                63.69,
+                126.89,
+                464.54,
+                178.21
+              ],
+              "text": "\n\n\nThe ADDITUDE Commitment"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                43.5,
+                180.89,
+                567.34,
+                203.46
+              ],
+              "text": "ADDitude collaborates closely with leading medical experts to publish accurate, clear, and authoritative content that millions of readers trust\nand share."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                212.85,
+                222.93,
+                399.14,
+                237.07
+              ],
+              "text": "REVIEW OUR EDITORIAL PROCESS"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                202.7,
+                265.68,
+                409.28,
+                279.82
+              ],
+              "text": "MEET OUR MEDICAL ADVISORY PANEL"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                84.75,
+                315.19,
+                367.87,
+                330.28
+              ],
+              "text": "ADDitude verifies the factual accuracy of all new content."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                84.75,
+                366.19,
+                361.16,
+                381.28
+              ],
+              "text": "Sources are cited for all scientific research and findings."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                84.75,
+                417.94,
+                460.91,
+                433.03
+              ],
+              "text": "Content is periodically reviewed and updated to reflect new health insights."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                84.75,
+                468.94,
+                339.77,
+                484.03
+              ],
+              "text": "We strive to feature diverse voices and experiences."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                28.5,
+                618.94,
+                566.09,
+                664.03
+              ],
+              "text": "Copyright © 1998 - 2026 WebMD LLC. All rights reserved. Your use of this site is governed by our Terms of Use\nand Privacy Policy, and AI Policy. ADDitude does not provide medical advice, diagnosis, or treatment. The\nmaterial on this web site is provided for educational purposes only."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                24.0,
+                15.26,
+                460.52,
+                24.19
+              ],
+              "text": "6/25/26, 10:37 AM\nADD Organization Hacks: Real-Life Tips from ADHD Experts"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/\n5/5"
+            }
+          ],
+          "images": [
+            {
+              "block_index": 11,
+              "bbox": [
+                526.5,
+                596.25,
+                584.25,
+                608.25
+              ],
+              "width_px": 77,
+              "height_px": 16,
+              "extension": "png",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            }
+          ],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/slideshows/how-to-organize-your-home-room-by-room/?src=embed_link",
+              "bbox": [
+                59.25,
+                28.5,
+                354.75,
+                42.75
+              ]
+            },
+            {
+              "uri": "https://www.facebook.com/sharer/sharer.php?u=https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/",
+              "bbox": [
+                55.5,
+                120.75,
+                79.5,
+                145.5
+              ]
+            },
+            {
+              "uri": "https://twitter.com/intent/tweet/?text=40+Little+Life+Hacks+from+ADHD+Gurus&url=https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/&via=",
+              "bbox": [
+                84.0,
+                120.75,
+                108.0,
+                144.75
+              ]
+            },
+            {
+              "uri": "https://www.instagram.com/additudemag/",
+              "bbox": [
+                113.25,
+                120.75,
+                137.25,
+                145.5
+              ]
+            },
+            {
+              "uri": "https://pinterest.com/pin/create/button/?url=https://www.additudemag.com/slideshows/organization-hacks-top-adhd-experts/&media=https://i0.wp.com/www.additudemag.com/wp-content/uploads/2016/11/Office-Supplies-On-Desk_1328x747.jpg?resize=1280%2C720px&ssl=1&description=Run-of-the-mill%20organization%20strategies%20don%27t%20work%20for%20adults%20with%20ADD.%20Our%20ADHD%20brains%20%E2%80%94%20and%20attention%20spans%20%E2%80%94%20need%20more%20creative,%20clever%20organization%20hacks%20to%20the%20problems%20of%20losing%20our%20keys,%20forgetting%20our%20bills,%20and%20missing%20appointments.%20Here%20they%20are.",
+              "bbox": [
+                142.5,
+                120.75,
+                166.5,
+                145.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/editorial-process-standards/",
+              "bbox": [
+                201.0,
+                212.25,
+                411.75,
+                247.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/adhd-medical-advisory-panel/",
+              "bbox": [
+                190.5,
+                255.0,
+                422.25,
+                290.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/terms-and-conditions/",
+              "bbox": [
+                501.75,
+                618.75,
+                566.25,
+                633.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/privacy-policy/",
+              "bbox": [
+                50.25,
+                633.75,
+                121.5,
+                648.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/ai-policy/",
+              "bbox": [
+                148.5,
+                633.75,
+                193.5,
+                648.75
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/add_organization_hacks_real_life_tips_from_adhd_experts.json",
+    "title": "pdf_to_json_text_layout_v1",
+    "category": "ADHD Cleaning Decluttering and Organization",
+    "source_type": "reference",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Pick the smallest visible version.",
+      "Use a timer, body double, or transition cue.",
+      "Stop after one tiny step if energy drops."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

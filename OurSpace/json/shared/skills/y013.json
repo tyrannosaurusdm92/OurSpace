@@ -1,0 +1,2468 @@
+{
+  "schema": "pdf_to_json_text_layout_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "group_type": "single_pdf_json",
+  "merge_policy": {
+    "threshold": "merge documents when TF-IDF cosine similarity >= 0.60 OR 5-token shingle containment of the smaller document >= 0.60",
+    "why_containment_is_used": "Containment catches shorter PDFs that are substantially embedded inside longer PDFs even when whole-document Jaccard/cosine is lower."
+  },
+  "source_document_count": 1,
+  "source_documents": [
+    {
+      "document_id": "the_professionals_who_diagnose_and_treat_adhd",
+      "source_index": 18,
+      "original_filename": "The-Professionals-Who-Diagnose-and-Treat-ADHD.pdf",
+      "source_relative_path": "adhd/The-Professionals-Who-Diagnose-and-Treat-ADHD.pdf",
+      "sha256": "01cf07425c224849905e9bc61fb890a8a243a9b7f343897e4aa732518c87937b",
+      "title": "From the ADHD Experts at",
+      "page_count": 9,
+      "character_count": 18347,
+      "word_count": 2716,
+      "link_count": 14,
+      "image_count": 1,
+      "form_field_count": 0,
+      "annotation_count": 0
+    }
+  ],
+  "within_group_similarity": [],
+  "documents": [
+    {
+      "document_id": "the_professionals_who_diagnose_and_treat_adhd",
+      "source_index": 18,
+      "original_filename": "The-Professionals-Who-Diagnose-and-Treat-ADHD.pdf",
+      "source_relative_path": "adhd/The-Professionals-Who-Diagnose-and-Treat-ADHD.pdf",
+      "sha256": "01cf07425c224849905e9bc61fb890a8a243a9b7f343897e4aa732518c87937b",
+      "title": "From the ADHD Experts at",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Adobe InDesign CS5.5 (7.5)",
+        "producer": "Adobe PDF Library 9.9",
+        "creationDate": "D:20180412131012-04'00'",
+        "modDate": "D:20180412132529-04'00'",
+        "trapped": "",
+        "encryption": "Standard V4 R4 128-bit AES"
+      },
+      "page_count": 9,
+      "character_count": 18347,
+      "word_count": 2716,
+      "link_count": 14,
+      "image_count": 1,
+      "form_field_count": 0,
+      "annotation_count": 0,
+      "full_text": "From the ADHD Experts at\nThe Professionals Who Diagnose & Treat ADHD A Comparative Guide A trusted source of advice and information for families touched by attention-deficit disorder— and a voice of inspiration to help people with ADHD find success at home, at school, and on the job.\nADDitudeMag.com\nscientific advisory board TERMS OF USE Copyright © 2018 by New Hope Media. All rights reserved. No part of this report may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, faxing, e-mailing, posting online, or by any information storage and retrieval system, without written permission from the Publisher. All trademarks and brands referred to herein are the property of their respective owners. All references to ADDitude magazine and ADDitudeMag.com are trade-\nmarks of New Hope Media.\nCONTACT INFORMATION New Hope Media 646-366-0830 108 West 39th St, Suite 805 New York, NY 10018\nLEGAL NOTICES ADDitude does not provide medical advice, diagnosis, or treatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or replace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant for questions about your health and education, or the health and education of your child and family members. Do not disregard, avoid, or delay obtaining medical or health related advice from your health-care professional because of something you have read here.\nIf you think you may have a medical emergency, call your doctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned in ADDitude publications or websites. Reliance on any information provided by ADDitude is solely at your own risk.\nFounder: Ellen Kingsley (1951-2007) Editor In chief: Susan Caughman\nEditor: Wayne Kalyn\nRussell Barkley, Ph.D.\nMedical University of South Carolina Charleston, SC\nThomas E. Brown, Ph.D.\nUniversity of Southern California Los Angeles, CA\nWilliam Dodson, M.D.\nDodson ADHD Center\nGreenwood Village, CO\nRoss W. Greene, Ph.D.\nLives in the Balance Portland, ME\nEdward M. Hallowell, M.D.\nThe Hallowell Center Sudbury, MA Stephen P. Hinshaw, Ph.D.\nUniversity of California\nBerkeley, CA\nPeter Jaksa, Ph.D.\nADD Center of America Chicago, IL\nPeter Jensen, M.D.\nThe REACH Institute\nNew York, NY\nHarold Koplewicz, M.D.\nNew York University Medical School New York, NY\nSandy Newmark, M.D.\nOsher Center for Integrative Medicine, University of California\nSan Francisco, CA\nMichele Novotni, Ph.D.\nThe Villages, FL\nRoberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA J. Russell Ramsay, Ph.D.\nPerelman School of Medicine\nUniversity of Pennsylvania\nPhiladelphia, PA\nJerome Schultz, Ph.D.\nHarvard Medical School\nBoston, MA staff consulting creative Director: Joseph Caserto\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman\nReporter: Devon Frye Senior Digital Editor: Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nAdvertising: Anne Mazza Circulation: Sue Sidler\nCopy Editor: Gene Jones Web Editor: Hope Goodrich\ncontributing Editors: Carol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nAnn Dolin, M.Ed., and Sandra F. Rief, M.A. (Education) administrative assistant: Alex Viola 3\nWhat do MDs, PhDs, and LCSWs share in common? All of these medical professionals can treat attention deficit disorder (ADHD or ADD) — but which ones provide the treatment services you need, nearby, and at an af-\nfordable price? Answering those questions — and sorting out the soup of professional acronyms — can get really overwhelming, really fast. Here, we aim to simplify the process with a comparative chart that high-\nlights the pros and cons of 14 different types of ADHD professionals. Use this to better understand your options and make the right decisions about your family’s mental health care.\nThe good news: Treatment options for attention deficit disorder have multiplied exponentially in the last two decades. The bad news? Choosing the most affordable and effective strategy is overwhelming at best, and downright daunting for many patients and families living with ADHD. Who can prescribe medication? Who can administer diagnostic tests? Who can offer counseling? Who is available for more than 15 minutes at a time? Read on to learn the pros and cons of PCPs, psychologists, counselors, and many other ADHD professionals.\nBy the ADDitude Editors\nThe Professionals Who Diagnose & Treat ADHD: A Comparative Guide 4\nTreatment Provider\nAdvantages\nDisadvantages\nFamily Doctor or Primary Care Physician (PCP)\nA medical doctor responsible for your overall health care; the first place many people go when they first suspect symptoms of ADHD\n• \u0007Familiar with your or your child’s medical history\n• \u0007Covered by insurance\n• \u0007Can diagnose ADHD and prescribe medication\n• \u0007No referral required; easy to get an appointment\n• \u0007Seldom have in-depth knowledge of ADHD symptoms or treatment\n• \u0007May focus on medication management\n• \u0007Brief office visits may lead to rushed diagnosis and/or treatment\nDevelopmental and Behavioral Pediatrician\nA medical doctor who has additional training in learning disabilities, developmental disorders, and other behavioral challenges\n• \u0007Can provide a more specialized evaluation than most PCPs\n• \u0007Can diagnose and treat related conditions effectively\n• \u0007Often covered by insurance\n• \u0007Can prescribe medication\n• \u0007Appointments may be tough to snag, particularly in underserved areas\n• \u0007May need to refer out for more specialized testing\nPsychiatrist\nA medical doctor who specializes in psychiatry; has completed medical school and received education and training in diagnosing and treating mental health disorders like ADHD, depression, and anxiety\n• \u0007Understands the relationship between emotional and physical disorders\n• \u0007Can prescribe medication; may provide talk therapy as well\n• \u0007Adept at diagnosing and treating comorbid conditions\n• \u0007Covered by most insurance plans\n• \u0007May focus on medication management and refer out for talk therapy\n• \u0007Copays often more expensive than are those for PCPs\nPsychopharmacologist A medical doctor (either an M.D., psychiatrist, or Doctor of Osteopathic Medicine) who specializes in the medications used to treat mental and emotional disorders\n• \u0007Often covered by insurance\n• \u0007Adept at prescribing multiple medications for ADHD and comorbid conditions\n• \u0007May serve as a consultant to another specialist, and not meet with you directly 5\nTreatment Provider\nAdvantages\nDisadvantages\nPsychologist\nHas an advanced degree in psychology (Ph.D. or Psy.D), and can provide talk therapy to patients in a clinical environment\n• \u0007Can diagnose ADHD and related conditions\n• \u0007Often easier to see than a psychiatrist\n• \u0007Usually covered by insurance\n• \u0007Helps patients manage the emotional challenges of life with ADHD\n• \u0007Can help educate patients about ADHD symptoms and treatment options\n• \u0007In most states, cannot prescribe medication (some exceptions)\n• \u0007Must refer out to a psychiatrist or PCP for medication management\nLicensed Professional Counselor (LPC) or Licensed Mental Health Counselor (LMHC)\nProfessionals who have been licensed by a state board to provide counseling-based mental therapy\n• \u0007Qualified to diagnose ADHD and most related conditions\n• \u0007Can provide counseling, including marriage and family counseling\n• \u0007Usually less expensive than other mental health professionals\n• \u0007Often covered by insurance\n• \u0007Cannot prescribe medication\n• \u0007May prefer to refer out for more in-depth diagnostic assessments\nNeurologist\nA medical doctor who specializes in disorders of the brain, spinal cord, and nervous system\n• \u0007Adept at diagnosing seizure disorders, Tourette Syndrome, or other related brain-based conditions that often appear with ADHD\n• \u0007Can perform brain scans to rule out certain conditions\n• \u0007Can prescribe medication\n• \u0007Not always covered by insurance\n• \u0007May be expensive, particularly when brain scans are performed\n• \u0007EEGs, MRIs, and other brain scans are not necessary to diagnose ADHD itself\nNeuropsychologist\nFocuses on a relatively young branch of psychology, and studies how specific structures of the brain relate to psychological disorders and patterns of behavior\n• \u0007Can make recommendations about school placement\n• \u0007Can help children and adults plan out and access multiple treatment interventions\n• \u0007Can fully assess cognitive and behavioral functioning, and provide differential diagnoses\n• \u0007Not usually covered by insurance\n• \u0007May need to refer out for talk therapy, medication management, or other services\n• \u0007Cannot prescribe medication 6\nTreatment Provider\nAdvantages\nDisadvantages\nPsychiatric-Mental Health Nurse (PMHN)\nA nurse who has undergone additional specialized training to work in psychiatric hospitals and treatment centers\n• \u0007Can assess the mental health needs of individuals, families, and groups\n• \u0007Adept at crisis intervention\n• \u0007Serves as a patient advocate\n• \u0007Often covered by insurance\n• \u0007Most cannot diagnose ADHD or prescribe medication (see APRNs, below)\n• \u0007Usually works in concert with doctors and hospitals, not independently\nPsychiatric Advanced Practice Registered Nurse (APRN)\nPsychiatric mental health nurses who have obtained a master’s or doctoral degree in the field\n• \u0007Can diagnose ADHD and related conditions\n• \u0007State laws vary, but can usually prescribe medication and/or provide therapy\n• \u0007Some studies show patient satisfaction on par with primary care doctors\n• \u0007Usually covered by insurance\n• \u0007Depending on state, may have limited prescription abilities or require a physician’s supervision\nNurse Practitioner or Psychiatric Nurse Practitioner\nA type of APRN who has pursued the further education and specialization needed to serve as a primary care provider for children and adults\n• \u0007Usually able to diagnose ADHD and related conditions\n• \u0007Can devise a complete treatment plan and provide therapy\n• \u0007Can prescribe medication\n• \u0007Covered by insurance\n• \u0007Often more available via appointment than are other mental health professionals\n• \u0007In some small studies, NPs outscored physicians in patient satisfaction\n• \u0007Depending on state, may need to collaborate with a physician to prescribe medication\n• \u0007May have limited knowledge of ADHD or related conditions, depending on training 7\nTreatment Provider\nAdvantages\nDisadvantages\nLicensed Clinical Social Worker (LCSW)\nA professional who has obtained a Master’s degree (or higher) in social work and has been licensed by a state board to provide mental health services\n• \u0007Able to diagnose ADHD and most related conditions\n• \u0007Excels at providing emotional support to patients and families\n• \u0007Adheres to high ethical standards for patient care\n• \u0007Often costs less than a psychiatrist or psychologist\n• \u0007Usually covered by insurance\n• \u0007Cannot prescribe medication\n• \u0007Depending on training, may struggle with complex diagnoses\nOccupational Therapist (OT)\nA licensed professional — usually with a Master’s degree or higher — who helps children and adults with motor deficits, sensory processing challenges, and underdeveloped social skills to function better in day-to-day life\n• \u0007Can diagnose and treat ADHD, SPD, dysgraphia, and many other comorbid conditions\n• \u0007Uses a unique, hands-on therapy that provides motor and sensory benefits\n• \u0007May be accessed through your child’s school\n• \u0007May also offer home visits\n• \u0007Usually more beneficial for children than for adults\n• \u0007Insurance often only covers OT for certain diagnoses\n• \u0007In the U.S., demand exceeds supply for occupational therapy • \u0007Cannot prescribe medication\nADHD Coach\nNot a medical professional, but a guide, teacher, and cheerleader who helps teach organizational, time-management, and goal-achieving strategies to teens and adults with ADHD\n• \u0007Helps clients build lifestyle skills (organization, time management, etc.) that are not often covered by medical professionals\n• \u0007Can guide clients toward specific life goals\n• \u0007Many have ADHD — and a unique perspective on the condition\n• \u0007No nationwide standards for licensing coaches currently exist\n• \u0007Can be expensive; rarely covered by insurance\n• \u0007Cannot diagnose ADHD or prescribe medication ADDitude eBooks Available Now\nadditudemag.com/shop\nADHD Medication and Treatment\nThe latest information on managing medication, starting therapy, evalu-\nating alternative treatments, and more.\nYou’re relieved to know, finally, that your lifelong symptoms are due to ADHD. But now, you have questions — on everything from which medica-\ntions are available to how to tell if they’re working properly. In this compre-\nhensive special report, you’ll learn how to seek an accurate diagnosis and map out a treatment plan that’s right for you. >> Learn more about this eBook: http://additu.de/treatment\nYour Complete ADHD Guide\nA complete overview of ADHD, outlining every step from diagnosis to treatment — all the way to living successfully with attention deficit.\nFrom the moment you suspect ADHD in yourself or your child, you have hundreds of questions. Which doctors can evaluate symptoms? What medi-\ncation side effects should you be prepared for? Can diet help? This compre-\nhensive eBook has over 100 pages of expert advice, personal stories, and more to help you become an ADHD expert. >> Learn more about this eBook: http://additu.de/adhd-101\nMindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green time, and mindful meditation.\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises — including some designed especially for kids — as well as the science behind each natural therapy.\n>> Learn more about this eBook: http://additu.de/mindful\nFREE ADDitude Downloads\n13 Questions to Ask Before Starting ADHD Medication\nThe best questions to ask your doctor before starting or tweaking any ADHD medication regimen.\nIt’s Not ADHD: 3 Common Diagnosis Mistakes\nDoctors are sometimes too quick to diagnose ADHD. Read up on common misdiagnoses.\n11 ADHD Coping Mechanisms Dr. William Dodson’s 11 ADHD-\ntested treatment strategies that really work..\nSecrets of the ADHD Brain\nLearn why we think, act, and feel the way we do..\nADHD Vitamins and Supplements\nFind out which herbs, vitamins, and nutritional supplements may help control some symptoms of ADHD.\n9 Foods to Eat (And Avoid) for Improved ADHD Symptoms\nYour guide to a high-protein, low-\nsugar, no-additive diet.\nThe Essential ADHD Monitoring System\nHow to know if your medication is working — and how to catch warning signs before they become problems..\nFind these and many more free ADHD resources online at:\nhttp://additu.de/\nfreedownloads Expert Webinar Replays: Cracking the ADHD Medication Maze\n>> http://additu.de/med-maze\nRoughly 80 percent of all people with ADHD benefit from taking medication. Still, many patients never get to experience their effectiveness. Why? Finding prescribers, untangling insurance, dealing with uncooperative pharmacists, and more ADHD-unfriendly obstacles get in the way. In this webinar, learn insider strategies for finding — and tweaking — the medication that works best for you.\nEmotions and ADHD: What Clinicians Need to Know\n>> http://additu.de/adhdemotions\nEmotional challenges are one of the core problems of ADHD, but too many clinicians — and even some self-proclaimed ADHD experts — don’t know what to look for or mistake emotional outbursts as symptoms of other con-\nditions. In this expert webinar, William Dodson, M.D., breaks down how ADHD impacts emotions, and outlines what professionals can do to help pa-\ntients manage out-of-control feelings.\nHealing the ADHD Brain: Interventions and Strategies that Work\n>> http://additu.de/healing\nThere’s no one-size-fits-all approach for treating ADHD. Here, Daniel G. Amen, M.D., explains treatment options ranging from medication and supplements to diet and exercise.\nNeurofeedback and Cognitive Training for Kids\n>> http://additu.de/neuro\nIs brain training — including neurofeedback and cognitive training (CT) — really all it’s cracked up to be? Is it safe for kids? Is it worth the money? Naomi Steiner, M.D., shares the research behind some computer-based al-\nternative therapies so you can make an informed decision before treating your child.\nThe ADHD-Executive Function Connection\n>> http://additu.de/efunction\nWe’ve all heard of executive functions — the brain-based skills that affect how we plan, organize, and carry out tasks. But how do executive functions relate to ADHD — and how can children and adults with the condition com-\npensate for natural deficiencies in these critical skills? Thomas Brown, Ph.D., explains the ins and outs of executive functions and how they affect your focus in this expert webinar.\nFREE ADHD Newsletters from ADDitude\nSign up to receive criti-\ncal news and information about ADHD diagnosis and treatment, success at school, adult ADHD, and parenting strategies: http://additu.de/newsletter\nAdult ADHD and LD\nExpert advice on managing your household, time, money, career, and relationships\nParenting Children with ADHD and LD Strategies and support for par-\nents on behavior and discipline, time management, disorganiza-\ntion, and making friends.\nADHD and LD at School How to get classroom accom-\nmodations, finish homework, work with teachers, find the right schools, and much more.\nTreating ADHD Treatment options for attention deficit including medications, food, supplements, brain training, mindfulness and other alternative therapies.\nFor Women with ADHD Managing ADHD on the job, run-\nning a household, dealing with challenging emotions, and much more.",
+      "pages": [
+        {
+          "page_number": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "From the ADHD Experts at\nThe Professionals Who Diagnose & Treat ADHD A Comparative Guide",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                184.72,
+                667.06,
+                430.53,
+                692.12
+              ],
+              "text": "From the ADHD Experts at"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.13,
+                37.67,
+                568.03,
+                272.38
+              ],
+              "text": "The Professionals\nWho Diagnose &\nTreat ADHD\nA Comparative Guide"
+            }
+          ],
+          "images": [
+            {
+              "block_index": 2,
+              "bbox": [
+                30.69,
+                292.56,
+                527.49,
+                640.32
+              ],
+              "width_px": 1035,
+              "height_px": 725,
+              "extension": "png",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            }
+          ],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "A trusted source of advice and information for families touched by attention-deficit disorder— and a voice of inspiration to help people with ADHD find success at home, at school, and on the job.\nADDitudeMag.com\nscientific advisory board TERMS OF USE Copyright © 2018 by New Hope Media. All rights reserved. No part of this report may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, faxing, e-mailing, posting online, or by any information storage and retrieval system, without written permission from the Publisher. All trademarks and brands referred to herein are the property of their respective owners. All references to ADDitude magazine and ADDitudeMag.com are trade-\nmarks of New Hope Media.\nCONTACT INFORMATION New Hope Media 646-366-0830 108 West 39th St, Suite 805 New York, NY 10018\nLEGAL NOTICES ADDitude does not provide medical advice, diagnosis, or treatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or replace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant for questions about your health and education, or the health and education of your child and family members. Do not disregard, avoid, or delay obtaining medical or health related advice from your health-care professional because of something you have read here.\nIf you think you may have a medical emergency, call your doctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned in ADDitude publications or websites. Reliance on any information provided by ADDitude is solely at your own risk.\nFounder: Ellen Kingsley (1951-2007) Editor In chief: Susan Caughman\nEditor: Wayne Kalyn\nRussell Barkley, Ph.D.\nMedical University of South Carolina Charleston, SC\nThomas E. Brown, Ph.D.\nUniversity of Southern California Los Angeles, CA\nWilliam Dodson, M.D.\nDodson ADHD Center\nGreenwood Village, CO\nRoss W. Greene, Ph.D.\nLives in the Balance Portland, ME\nEdward M. Hallowell, M.D.\nThe Hallowell Center Sudbury, MA Stephen P. Hinshaw, Ph.D.\nUniversity of California\nBerkeley, CA\nPeter Jaksa, Ph.D.\nADD Center of America Chicago, IL\nPeter Jensen, M.D.\nThe REACH Institute\nNew York, NY\nHarold Koplewicz, M.D.\nNew York University Medical School New York, NY\nSandy Newmark, M.D.\nOsher Center for Integrative Medicine, University of California\nSan Francisco, CA\nMichele Novotni, Ph.D.\nThe Villages, FL\nRoberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA J. Russell Ramsay, Ph.D.\nPerelman School of Medicine\nUniversity of Pennsylvania\nPhiladelphia, PA\nJerome Schultz, Ph.D.\nHarvard Medical School\nBoston, MA staff consulting creative Director: Joseph Caserto\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman\nReporter: Devon Frye Senior Digital Editor: Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nAdvertising: Anne Mazza Circulation: Sue Sidler\nCopy Editor: Gene Jones Web Editor: Hope Goodrich\ncontributing Editors: Carol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nAnn Dolin, M.Ed., and Sandra F. Rief, M.A. (Education) administrative assistant: Alex Viola",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                122.07,
+                98.17,
+                488.19,
+                119.64
+              ],
+              "text": "A trusted source of advice and information for families touched by attention-deficit disorder—\nand a voice of inspiration to help people with ADHD find success at home, at school, and on the job."
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                251.24,
+                129.98,
+                363.32,
+                145.38
+              ],
+              "text": "ADDitudeMag.com"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                365.46,
+                443.54,
+                517.94,
+                455.9
+              ],
+              "text": "scientific advisory board"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                56.88,
+                166.21,
+                286.69,
+                250.09
+              ],
+              "text": "TERMS OF USE\nCopyright © 2018 by New Hope Media. All rights reserved.\nNo part of this report may be reproduced or transmitted\nin any form or by any means, electronic or mechanical,\nincluding photocopying, recording, faxing, e-mailing,\nposting online, or by any information storage and retrieval\nsystem, without written permission from the Publisher."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                56.88,
+                261.54,
+                286.66,
+                308.89
+              ],
+              "text": "All trademarks and brands referred to herein are the\nproperty of their respective owners. All references to\nADDitude magazine and ADDitudeMag.com are trade-\nmarks of New Hope Media."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                56.88,
+                328.45,
+                186.94,
+                376.33
+              ],
+              "text": "CONTACT INFORMATION\nNew Hope Media 646-366-0830\n108 West 39th St, Suite 805\nNew York, NY 10018"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                56.88,
+                394.45,
+                286.68,
+                538.33
+              ],
+              "text": "LEGAL NOTICES\nADDitude does not provide medical advice, diagnosis, or\ntreatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or\nreplace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant\nfor questions about your health and education, or the\nhealth and education of your child and family members.\nDo not disregard, avoid, or delay obtaining medical or\nhealth related advice from your health-care professional\nbecause of something you have read here."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                56.88,
+                553.38,
+                286.69,
+                636.73
+              ],
+              "text": "If you think you may have a medical emergency, call your\ndoctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products,\nprocedures, opinions, or other information that may be\nmentioned in ADDitude publications or websites. Reliance\non any information provided by ADDitude is solely at your\nown risk."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                361.73,
+                167.75,
+                522.21,
+                179.97
+              ],
+              "text": "Founder: Ellen Kingsley (1951-2007)"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                365.85,
+                185.22,
+                515.18,
+                208.21
+              ],
+              "text": "Editor In chief: Susan Caughman\nEditor: Wayne Kalyn"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                336.43,
+                463.77,
+                415.87,
+                501.16
+              ],
+              "text": "Russell Barkley, Ph.D.\nMedical University of\nSouth Carolina\nCharleston, SC"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                320.95,
+                509.26,
+                432.72,
+                537.56
+              ],
+              "text": "Thomas E. Brown, Ph.D.\nUniversity of Southern California\nLos Angeles, CA"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                336.2,
+                545.66,
+                416.08,
+                573.95
+              ],
+              "text": "William Dodson, M.D.\nDodson ADHD Center\nGreenwood Village, CO"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                335.63,
+                582.05,
+                416.65,
+                610.35
+              ],
+              "text": "Ross W. Greene, Ph.D.\nLives in the Balance\nPortland, ME"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                327.73,
+                618.45,
+                424.57,
+                646.74
+              ],
+              "text": "Edward M. Hallowell, M.D.\nThe Hallowell Center\nSudbury, MA"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                327.78,
+                654.84,
+                424.53,
+                683.14
+              ],
+              "text": "Stephen P. Hinshaw, Ph.D.\nUniversity of California\nBerkeley, CA"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                336.98,
+                691.24,
+                416.71,
+                719.54
+              ],
+              "text": "Peter Jaksa, Ph.D.\nADD Center of America\nChicago, IL"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                477.41,
+                463.74,
+                546.39,
+                492.03
+              ],
+              "text": "Peter Jensen, M.D.\nThe REACH Institute\nNew York, NY"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                452.1,
+                500.13,
+                573.08,
+                528.43
+              ],
+              "text": "Harold Koplewicz, M.D.\nNew York University Medical School\nNew York, NY"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                470.64,
+                536.53,
+                553.15,
+                583.02
+              ],
+              "text": "Sandy Newmark, M.D.\nOsher Center for\nIntegrative Medicine,\nUniversity of California\nSan Francisco, CA"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                469.73,
+                591.12,
+                554.06,
+                610.32
+              ],
+              "text": "Michele Novotni, Ph.D.\nThe Villages, FL"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                467.28,
+                618.42,
+                556.52,
+                646.72
+              ],
+              "text": "Roberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                463.28,
+                654.82,
+                560.52,
+                692.37
+              ],
+              "text": "J. Russell Ramsay, Ph.D.\nPerelman School of Medicine\nUniversity of Pennsylvania\nPhiladelphia, PA"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                471.49,
+                700.37,
+                552.28,
+                728.66
+              ],
+              "text": "Jerome Schultz, Ph.D.\nHarvard Medical School\nBoston, MA"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                424.85,
+                218.85,
+                458.36,
+                231.21
+              ],
+              "text": "staff"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                347.07,
+                231.92,
+                534.16,
+                242.62
+              ],
+              "text": "consulting creative Director: Joseph Caserto"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                357.38,
+                244.04,
+                523.85,
+                254.74
+              ],
+              "text": "consulting art Director: Ron Anteroinen"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                382.35,
+                256.16,
+                498.88,
+                266.85
+              ],
+              "text": "Managing Editor: Eve Gilman"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                321.82,
+                268.27,
+                559.42,
+                291.09
+              ],
+              "text": "Reporter: Devon Frye Senior Digital Editor: Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                356.19,
+                292.51,
+                525.04,
+                315.32
+              ],
+              "text": "Digital Marketing Director: Anni Rodgers\nAdvertising: Anne Mazza"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                394.9,
+                316.74,
+                486.33,
+                327.44
+              ],
+              "text": "Circulation: Sue Sidler"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                337.44,
+                328.86,
+                543.79,
+                339.55
+              ],
+              "text": "Copy Editor: Gene Jones Web Editor: Hope Goodrich"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                341.71,
+                342.26,
+                540.99,
+                405.53
+              ],
+              "text": "contributing Editors:\nCarol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nAnn Dolin, M.Ed., and Sandra F. Rief, M.A. (Education)"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                367.64,
+                406.94,
+                513.59,
+                417.64
+              ],
+              "text": "administrative assistant: Alex Viola"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/",
+              "bbox": [
+                251.24,
+                129.98,
+                363.31,
+                145.38
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/",
+              "bbox": [
+                157.83,
+                285.54,
+                241.08,
+                297.11
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "3\nWhat do MDs, PhDs, and LCSWs share in common? All of these medical professionals can treat attention deficit disorder (ADHD or ADD) — but which ones provide the treatment services you need, nearby, and at an af-\nfordable price? Answering those questions — and sorting out the soup of professional acronyms — can get really overwhelming, really fast. Here, we aim to simplify the process with a comparative chart that high-\nlights the pros and cons of 14 different types of ADHD professionals. Use this to better understand your options and make the right decisions about your family’s mental health care.\nThe good news: Treatment options for attention deficit disorder have multiplied exponentially in the last two decades. The bad news? Choosing the most affordable and effective strategy is overwhelming at best, and downright daunting for many patients and families living with ADHD. Who can prescribe medication? Who can administer diagnostic tests? Who can offer counseling? Who is available for more than 15 minutes at a time? Read on to learn the pros and cons of PCPs, psychologists, counselors, and many other ADHD professionals.\nBy the ADDitude Editors\nThe Professionals Who Diagnose & Treat ADHD: A Comparative Guide",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "3"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                509.42,
+                419.7,
+                585.68
+              ],
+              "text": "What do MDs, PhDs, and LCSWs share in common? All of these medical\nprofessionals can treat attention deficit disorder (ADHD or ADD) — but\nwhich ones provide the treatment services you need, nearby, and at an af-\nfordable price? Answering those questions — and sorting out the soup of\nprofessional acronyms — can get really overwhelming, really fast."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                598.82,
+                419.76,
+                660.08
+              ],
+              "text": "Here, we aim to simplify the process with a comparative chart that high-\nlights the pros and cons of 14 different types of ADHD professionals. Use\nthis to better understand your options and make the right decisions about\nyour family’s mental health care."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                286.11,
+                415.54,
+                430.02
+              ],
+              "text": "The good news: Treatment options for attention deficit disorder\nhave multiplied exponentially in the last two decades. The bad\nnews? Choosing the most affordable and effective strategy is\noverwhelming at best, and downright daunting for many patients\nand families living with ADHD. Who can prescribe medication?\nWho can administer diagnostic tests? Who can offer counseling?\nWho is available for more than 15 minutes at a time? Read on to\nlearn the pros and cons of PCPs, psychologists, counselors, and\nmany other ADHD professionals."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                443.72,
+                185.32,
+                459.5
+              ],
+              "text": "By the ADDitude Editors"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                56.59,
+                103.26,
+                418.18,
+                240.88
+              ],
+              "text": "The Professionals\nWho Diagnose &\nTreat ADHD:"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                111.29,
+                235.29,
+                355.62,
+                268.1
+              ],
+              "text": "A Comparative Guide"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "4\nTreatment Provider\nAdvantages\nDisadvantages\nFamily Doctor or Primary Care Physician (PCP)\nA medical doctor responsible for your overall health care; the first place many people go when they first suspect symptoms of ADHD\n• \u0007Familiar with your or your child’s medical history\n• \u0007Covered by insurance\n• \u0007Can diagnose ADHD and prescribe medication\n• \u0007No referral required; easy to get an appointment\n• \u0007Seldom have in-depth knowledge of ADHD symptoms or treatment\n• \u0007May focus on medication management\n• \u0007Brief office visits may lead to rushed diagnosis and/or treatment\nDevelopmental and Behavioral Pediatrician\nA medical doctor who has additional training in learning disabilities, developmental disorders, and other behavioral challenges\n• \u0007Can provide a more specialized evaluation than most PCPs\n• \u0007Can diagnose and treat related conditions effectively\n• \u0007Often covered by insurance\n• \u0007Can prescribe medication\n• \u0007Appointments may be tough to snag, particularly in underserved areas\n• \u0007May need to refer out for more specialized testing\nPsychiatrist\nA medical doctor who specializes in psychiatry; has completed medical school and received education and training in diagnosing and treating mental health disorders like ADHD, depression, and anxiety\n• \u0007Understands the relationship between emotional and physical disorders\n• \u0007Can prescribe medication; may provide talk therapy as well\n• \u0007Adept at diagnosing and treating comorbid conditions\n• \u0007Covered by most insurance plans\n• \u0007May focus on medication management and refer out for talk therapy\n• \u0007Copays often more expensive than are those for PCPs\nPsychopharmacologist A medical doctor (either an M.D., psychiatrist, or Doctor of Osteopathic Medicine) who specializes in the medications used to treat mental and emotional disorders\n• \u0007Often covered by insurance\n• \u0007Adept at prescribing multiple medications for ADHD and comorbid conditions\n• \u0007May serve as a consultant to another specialist, and not meet with you directly",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "4"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                47.2,
+                62.06,
+                534.02,
+                76.51
+              ],
+              "text": "Treatment Provider\nAdvantages\nDisadvantages"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                46.0,
+                94.63,
+                179.35,
+                135.88
+              ],
+              "text": "Family Doctor or\nPrimary Care Physician\n(PCP)"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                46.0,
+                141.35,
+                189.65,
+                224.4
+              ],
+              "text": "A medical doctor\nresponsible for your overall\nhealth care; the first place\nmany people go when they\nfirst suspect symptoms of\nADHD"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                204.62,
+                94.4,
+                350.1,
+                121.44
+              ],
+              "text": "• \u0007Familiar with your or your\nchild’s medical history"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                204.62,
+                126.9,
+                322.58,
+                139.94
+              ],
+              "text": "• \u0007Covered by insurance"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                204.62,
+                145.41,
+                342.75,
+                172.44
+              ],
+              "text": "• \u0007Can diagnose ADHD and\nprescribe medication"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                204.62,
+                177.91,
+                361.73,
+                204.95
+              ],
+              "text": "• \u0007No referral required; easy to\nget an appointment"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                395.17,
+                94.41,
+                567.52,
+                135.45
+              ],
+              "text": "• \u0007Seldom have in-depth\nknowledge of ADHD symptoms\nor treatment"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                395.17,
+                140.92,
+                535.74,
+                167.96
+              ],
+              "text": "• \u0007May focus on medication\nmanagement"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                395.17,
+                173.42,
+                543.09,
+                214.46
+              ],
+              "text": "• \u0007Brief office visits may lead\nto rushed diagnosis and/or\ntreatment"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                46.0,
+                243.31,
+                178.36,
+                270.55
+              ],
+              "text": "Developmental and\nBehavioral Pediatrician"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                46.0,
+                276.02,
+                178.65,
+                359.07
+              ],
+              "text": "A medical doctor who\nhas additional training\nin learning disabilities,\ndevelopmental disorders,\nand other behavioral\nchallenges"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                204.62,
+                243.06,
+                375.78,
+                270.1
+              ],
+              "text": "• \u0007Can provide a more specialized\nevaluation than most PCPs"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                204.62,
+                275.57,
+                375.79,
+                302.61
+              ],
+              "text": "• \u0007Can diagnose and treat related\nconditions effectively"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                204.62,
+                308.07,
+                353.76,
+                321.11
+              ],
+              "text": "• \u0007Often covered by insurance"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                204.62,
+                326.58,
+                342.76,
+                339.61
+              ],
+              "text": "• \u0007Can prescribe medication"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                395.17,
+                243.07,
+                554.7,
+                284.12
+              ],
+              "text": "• \u0007Appointments may be tough\nto snag, particularly in\nunderserved areas"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                395.17,
+                289.58,
+                568.77,
+                316.62
+              ],
+              "text": "• \u0007May need to refer out for more\nspecialized testing"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                46.0,
+                377.96,
+                112.0,
+                391.2
+              ],
+              "text": "Psychiatrist"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                46.0,
+                396.67,
+                189.03,
+                521.73
+              ],
+              "text": "A medical doctor who\nspecializes in psychiatry;\nhas completed medical\nschool and received\neducation and training in\ndiagnosing and treating\nmental health disorders\nlike ADHD, depression, and\nanxiety"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                204.62,
+                377.73,
+                364.77,
+                418.77
+              ],
+              "text": "• \u0007Understands the relationship\nbetween emotional and\nphysical disorders"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                204.62,
+                424.23,
+                373.33,
+                451.27
+              ],
+              "text": "• \u0007Can prescribe medication; may\nprovide talk therapy as well"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                204.62,
+                456.74,
+                362.91,
+                483.78
+              ],
+              "text": "• \u0007Adept at diagnosing and\ntreating comorbid conditions"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                204.62,
+                489.24,
+                353.76,
+                516.28
+              ],
+              "text": "• \u0007Covered by most insurance\nplans"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                395.17,
+                377.75,
+                565.11,
+                418.79
+              ],
+              "text": "• \u0007May focus on medication\nmanagement and refer out for\ntalk therapy"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                395.17,
+                424.26,
+                557.16,
+                451.29
+              ],
+              "text": "• \u0007Copays often more expensive\nthan are those for PCPs"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                46.0,
+                540.64,
+                177.78,
+                553.88
+              ],
+              "text": "Psychopharmacologist"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                46.0,
+                559.35,
+                181.68,
+                656.4
+              ],
+              "text": "A medical doctor (either\nan M.D., psychiatrist, or\nDoctor of Osteopathic\nMedicine) who specializes\nin the medications used\nto treat mental and\nemotional disorders"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                204.62,
+                540.39,
+                353.76,
+                553.43
+              ],
+              "text": "• \u0007Often covered by insurance"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                204.62,
+                558.9,
+                367.21,
+                599.94
+              ],
+              "text": "• \u0007Adept at prescribing multiple\nmedications for ADHD and\ncomorbid conditions"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                395.17,
+                540.4,
+                551.66,
+                581.45
+              ],
+              "text": "• \u0007May serve as a consultant to\nanother specialist, and not\nmeet with you directly"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "5\nTreatment Provider\nAdvantages\nDisadvantages\nPsychologist\nHas an advanced degree in psychology (Ph.D. or Psy.D), and can provide talk therapy to patients in a clinical environment\n• \u0007Can diagnose ADHD and related conditions\n• \u0007Often easier to see than a psychiatrist\n• \u0007Usually covered by insurance\n• \u0007Helps patients manage the emotional challenges of life with ADHD\n• \u0007Can help educate patients about ADHD symptoms and treatment options\n• \u0007In most states, cannot prescribe medication (some exceptions)\n• \u0007Must refer out to a psychiatrist or PCP for medication management\nLicensed Professional Counselor (LPC) or Licensed Mental Health Counselor (LMHC)\nProfessionals who have been licensed by a state board to provide counseling-based mental therapy\n• \u0007Qualified to diagnose ADHD and most related conditions\n• \u0007Can provide counseling, including marriage and family counseling\n• \u0007Usually less expensive than other mental health professionals\n• \u0007Often covered by insurance\n• \u0007Cannot prescribe medication\n• \u0007May prefer to refer out for more in-depth diagnostic assessments\nNeurologist\nA medical doctor who specializes in disorders of the brain, spinal cord, and nervous system\n• \u0007Adept at diagnosing seizure disorders, Tourette Syndrome, or other related brain-based conditions that often appear with ADHD\n• \u0007Can perform brain scans to rule out certain conditions\n• \u0007Can prescribe medication\n• \u0007Not always covered by insurance\n• \u0007May be expensive, particularly when brain scans are performed\n• \u0007EEGs, MRIs, and other brain scans are not necessary to diagnose ADHD itself\nNeuropsychologist\nFocuses on a relatively young branch of psychology, and studies how specific structures of the brain relate to psychological disorders and patterns of behavior\n• \u0007Can make recommendations about school placement\n• \u0007Can help children and adults plan out and access multiple treatment interventions\n• \u0007Can fully assess cognitive and behavioral functioning, and provide differential diagnoses\n• \u0007Not usually covered by insurance\n• \u0007May need to refer out for talk therapy, medication management, or other services\n• \u0007Cannot prescribe medication",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "5"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                46.48,
+                62.06,
+                533.3,
+                76.51
+              ],
+              "text": "Treatment Provider\nAdvantages\nDisadvantages"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                45.28,
+                94.88,
+                116.84,
+                108.12
+              ],
+              "text": "Psychologist"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                45.28,
+                113.59,
+                182.22,
+                182.64
+              ],
+              "text": "Has an advanced degree\nin psychology (Ph.D. or\nPsy.D), and can provide\ntalk therapy to patients in\na clinical environment"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                203.9,
+                94.64,
+                342.03,
+                121.68
+              ],
+              "text": "• \u0007Can diagnose ADHD and\nrelated conditions"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                203.9,
+                127.14,
+                348.19,
+                154.18
+              ],
+              "text": "• \u0007Often easier to see than a\npsychiatrist"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                203.9,
+                159.65,
+                359.76,
+                172.68
+              ],
+              "text": "• \u0007Usually covered by insurance"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                203.9,
+                178.15,
+                358.56,
+                219.19
+              ],
+              "text": "• \u0007Helps patients manage the\nemotional challenges of life\nwith ADHD"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                203.9,
+                224.66,
+                357.91,
+                265.7
+              ],
+              "text": "• \u0007Can help educate patients\nabout ADHD symptoms and\ntreatment options"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                394.45,
+                94.66,
+                567.44,
+                121.7
+              ],
+              "text": "• \u0007In most states, cannot prescribe\nmedication (some exceptions)"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                394.45,
+                127.16,
+                564.38,
+                168.21
+              ],
+              "text": "• \u0007Must refer out to a psychiatrist\nor PCP for medication\nmanagement"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                45.28,
+                284.57,
+                181.91,
+                339.83
+              ],
+              "text": "Licensed Professional\nCounselor (LPC) or\nLicensed Mental Health\nCounselor (LMHC)"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                45.28,
+                345.29,
+                176.08,
+                414.34
+              ],
+              "text": "Professionals who have\nbeen licensed by a\nstate board to provide\ncounseling-based mental\ntherapy"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                203.9,
+                284.34,
+                361.6,
+                311.38
+              ],
+              "text": "• \u0007Qualified to diagnose ADHD\nand most related conditions"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                203.9,
+                316.85,
+                370.17,
+                357.89
+              ],
+              "text": "• \u0007Can provide counseling,\nincluding marriage and family\ncounseling"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                203.9,
+                363.36,
+                345.72,
+                404.4
+              ],
+              "text": "• \u0007Usually less expensive\nthan other mental health\nprofessionals"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                203.9,
+                409.86,
+                353.04,
+                422.9
+              ],
+              "text": "• \u0007Often covered by insurance"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                394.45,
+                284.37,
+                550.31,
+                297.4
+              ],
+              "text": "• \u0007Cannot prescribe medication"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                394.45,
+                302.87,
+                544.22,
+                343.91
+              ],
+              "text": "• \u0007May prefer to refer out for\nmore in-depth diagnostic\nassessments"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                45.28,
+                441.78,
+                112.36,
+                455.02
+              ],
+              "text": "Neurologist"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                45.28,
+                460.49,
+                182.81,
+                515.53
+              ],
+              "text": "A medical doctor who\nspecializes in disorders of\nthe brain, spinal cord, and\nnervous system"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                203.9,
+                441.53,
+                369.35,
+                510.58
+              ],
+              "text": "• \u0007Adept at diagnosing seizure\ndisorders, Tourette Syndrome,\nor other related brain-based\nconditions that often appear\nwith ADHD"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                203.9,
+                516.05,
+                376.89,
+                543.09
+              ],
+              "text": "• \u0007Can perform brain scans to rule\nout certain conditions"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                203.9,
+                548.55,
+                342.04,
+                561.59
+              ],
+              "text": "• \u0007Can prescribe medication"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                394.45,
+                441.56,
+                520.97,
+                468.59
+              ],
+              "text": "• \u0007Not always covered by\ninsurance"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                394.45,
+                474.06,
+                561.33,
+                515.1
+              ],
+              "text": "• \u0007May be expensive, particularly\nwhen brain scans are\nperformed"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                394.45,
+                520.57,
+                547.88,
+                561.61
+              ],
+              "text": "• \u0007EEGs, MRIs, and other brain\nscans are not necessary to\ndiagnose ADHD itself"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                45.28,
+                580.49,
+                152.11,
+                593.73
+              ],
+              "text": "Neuropsychologist"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                45.28,
+                599.2,
+                188.91,
+                696.25
+              ],
+              "text": "Focuses on a relatively\nyoung branch of\npsychology, and studies\nhow specific structures\nof the brain relate to\npsychological disorders and\npatterns of behavior"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                203.9,
+                580.24,
+                361.61,
+                607.28
+              ],
+              "text": "• \u0007Can make recommendations\nabout school placement"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                203.9,
+                612.75,
+                362.21,
+                653.79
+              ],
+              "text": "• \u0007Can help children and adults\nplan out and access multiple\ntreatment interventions"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                203.9,
+                659.26,
+                366.3,
+                700.3
+              ],
+              "text": "• \u0007Can fully assess cognitive and\nbehavioral functioning, and\nprovide differential diagnoses"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                394.45,
+                580.27,
+                522.2,
+                607.3
+              ],
+              "text": "• \u0007Not usually covered by\ninsurance"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                394.45,
+                612.77,
+                561.33,
+                653.81
+              ],
+              "text": "• \u0007May need to refer out for\ntalk therapy, medication\nmanagement, or other services"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                394.45,
+                659.28,
+                550.31,
+                672.31
+              ],
+              "text": "• \u0007Cannot prescribe medication"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "6\nTreatment Provider\nAdvantages\nDisadvantages\nPsychiatric-Mental Health Nurse (PMHN)\nA nurse who has undergone additional specialized training to work in psychiatric hospitals and treatment centers\n• \u0007Can assess the mental health needs of individuals, families, and groups\n• \u0007Adept at crisis intervention\n• \u0007Serves as a patient advocate\n• \u0007Often covered by insurance\n• \u0007Most cannot diagnose ADHD or prescribe medication (see APRNs, below)\n• \u0007Usually works in concert with doctors and hospitals, not independently\nPsychiatric Advanced Practice Registered Nurse (APRN)\nPsychiatric mental health nurses who have obtained a master’s or doctoral degree in the field\n• \u0007Can diagnose ADHD and related conditions\n• \u0007State laws vary, but can usually prescribe medication and/or provide therapy\n• \u0007Some studies show patient satisfaction on par with primary care doctors\n• \u0007Usually covered by insurance\n• \u0007Depending on state, may have limited prescription abilities or require a physician’s supervision\nNurse Practitioner or Psychiatric Nurse Practitioner\nA type of APRN who has pursued the further education and specialization needed to serve as a primary care provider for children and adults\n• \u0007Usually able to diagnose ADHD and related conditions\n• \u0007Can devise a complete treatment plan and provide therapy\n• \u0007Can prescribe medication\n• \u0007Covered by insurance\n• \u0007Often more available via appointment than are other mental health professionals\n• \u0007In some small studies, NPs outscored physicians in patient satisfaction\n• \u0007Depending on state, may need to collaborate with a physician to prescribe medication\n• \u0007May have limited knowledge of ADHD or related conditions, depending on training",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "6"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                47.2,
+                62.06,
+                534.02,
+                76.51
+              ],
+              "text": "Treatment Provider\nAdvantages\nDisadvantages"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                46.0,
+                94.88,
+                165.79,
+                122.13
+              ],
+              "text": "Psychiatric-Mental\nHealth Nurse (PMHN)"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                46.0,
+                127.59,
+                189.12,
+                196.64
+              ],
+              "text": "A nurse who has\nundergone additional\nspecialized training to work\nin psychiatric hospitals and\ntreatment centers"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                204.62,
+                94.64,
+                367.23,
+                135.68
+              ],
+              "text": "• \u0007Can assess the mental health\nneeds of individuals, families,\nand groups"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                204.62,
+                141.15,
+                351.93,
+                154.18
+              ],
+              "text": "• \u0007Adept at crisis intervention"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                204.62,
+                159.65,
+                357.45,
+                172.68
+              ],
+              "text": "• \u0007Serves as a patient advocate"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                204.62,
+                178.15,
+                353.76,
+                191.18
+              ],
+              "text": "• \u0007Often covered by insurance"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                395.17,
+                94.65,
+                555.29,
+                135.69
+              ],
+              "text": "• \u0007Most cannot diagnose ADHD\nor prescribe medication (see\nAPRNs, below)"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                395.17,
+                141.16,
+                557.14,
+                182.2
+              ],
+              "text": "• \u0007Usually works in concert with\ndoctors and hospitals, not\nindependently"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                46.0,
+                215.54,
+                170.1,
+                256.79
+              ],
+              "text": "Psychiatric Advanced\nPractice Registered\nNurse (APRN)"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                46.0,
+                262.26,
+                184.14,
+                317.3
+              ],
+              "text": "Psychiatric mental health\nnurses who have obtained\na master’s or doctoral\ndegree in the field"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                204.62,
+                215.3,
+                342.75,
+                242.33
+              ],
+              "text": "• \u0007Can diagnose ADHD and\nrelated conditions"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                204.62,
+                247.8,
+                374.97,
+                288.84
+              ],
+              "text": "• \u0007State laws vary, but can usually\nprescribe medication and/or\nprovide therapy"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                204.62,
+                294.31,
+                380.05,
+                335.35
+              ],
+              "text": "• \u0007Some studies show patient\nsatisfaction on par with primary\ncare doctors"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                204.62,
+                340.82,
+                360.48,
+                353.85
+              ],
+              "text": "• \u0007Usually covered by insurance"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                395.17,
+                215.32,
+                567.55,
+                256.36
+              ],
+              "text": "• \u0007Depending on state, may have\nlimited prescription abilities or\nrequire a physician’s supervision"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                46.0,
+                372.73,
+                162.45,
+                413.98
+              ],
+              "text": "Nurse Practitioner\nor Psychiatric Nurse\nPractitioner"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                46.0,
+                419.45,
+                178.02,
+                516.5
+              ],
+              "text": "A type of APRN who\nhas pursued the\nfurther education and\nspecialization needed to\nserve as a primary care\nprovider for children and\nadults"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                204.62,
+                372.5,
+                376.37,
+                399.54
+              ],
+              "text": "• \u0007Usually able to diagnose ADHD\nand related conditions"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                204.62,
+                405.0,
+                378.97,
+                432.04
+              ],
+              "text": "• \u0007Can devise a complete treatment\nplan and provide therapy"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                204.62,
+                437.51,
+                342.76,
+                450.54
+              ],
+              "text": "• \u0007Can prescribe medication"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                204.62,
+                456.01,
+                322.58,
+                469.04
+              ],
+              "text": "• \u0007Covered by insurance"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                204.62,
+                474.51,
+                361.11,
+                515.55
+              ],
+              "text": "• \u0007Often more available via\nappointment than are other\nmental health professionals"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                204.62,
+                521.02,
+                374.54,
+                562.06
+              ],
+              "text": "• \u0007In some small studies, NPs\noutscored physicians in patient\nsatisfaction"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                395.17,
+                372.53,
+                564.5,
+                413.57
+              ],
+              "text": "• \u0007Depending on state, may need\nto collaborate with a physician\nto prescribe medication"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                395.17,
+                419.04,
+                565.69,
+                460.08
+              ],
+              "text": "• \u0007May have limited knowledge\nof ADHD or related conditions,\ndepending on training"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 7,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "7\nTreatment Provider\nAdvantages\nDisadvantages\nLicensed Clinical Social Worker (LCSW)\nA professional who has obtained a Master’s degree (or higher) in social work and has been licensed by a state board to provide mental health services\n• \u0007Able to diagnose ADHD and most related conditions\n• \u0007Excels at providing emotional support to patients and families\n• \u0007Adheres to high ethical standards for patient care\n• \u0007Often costs less than a psychiatrist or psychologist\n• \u0007Usually covered by insurance\n• \u0007Cannot prescribe medication\n• \u0007Depending on training, may struggle with complex diagnoses\nOccupational Therapist (OT)\nA licensed professional — usually with a Master’s degree or higher — who helps children and adults with motor deficits, sensory processing challenges, and underdeveloped social skills to function better in day-to-day life\n• \u0007Can diagnose and treat ADHD, SPD, dysgraphia, and many other comorbid conditions\n• \u0007Uses a unique, hands-on therapy that provides motor and sensory benefits\n• \u0007May be accessed through your child’s school\n• \u0007May also offer home visits\n• \u0007Usually more beneficial for children than for adults\n• \u0007Insurance often only covers OT for certain diagnoses\n• \u0007In the U.S., demand exceeds supply for occupational therapy • \u0007Cannot prescribe medication\nADHD Coach\nNot a medical professional, but a guide, teacher, and cheerleader who helps teach organizational, time-management, and goal-achieving strategies to teens and adults with ADHD\n• \u0007Helps clients build lifestyle skills (organization, time management, etc.) that are not often covered by medical professionals\n• \u0007Can guide clients toward specific life goals\n• \u0007Many have ADHD — and a unique perspective on the condition\n• \u0007No nationwide standards for licensing coaches currently exist\n• \u0007Can be expensive; rarely covered by insurance\n• \u0007Cannot diagnose ADHD or prescribe medication",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "7"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                47.2,
+                62.06,
+                534.02,
+                76.51
+              ],
+              "text": "Treatment Provider\nAdvantages\nDisadvantages"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                46.0,
+                94.88,
+                180.24,
+                122.13
+              ],
+              "text": "Licensed Clinical Social\nWorker (LCSW)"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                46.0,
+                127.59,
+                189.05,
+                210.64
+              ],
+              "text": "A professional who has\nobtained a Master’s degree\n(or higher) in social work\nand has been licensed by\na state board to provide\nmental health services"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                204.62,
+                94.64,
+                361.08,
+                121.68
+              ],
+              "text": "• \u0007Able to diagnose ADHD and\nmost related conditions"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                204.62,
+                127.14,
+                377.0,
+                154.18
+              ],
+              "text": "• \u0007Excels at providing emotional\nsupport to patients and families"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                204.62,
+                159.65,
+                345.83,
+                186.69
+              ],
+              "text": "• \u0007Adheres to high ethical\nstandards for patient care"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                204.62,
+                192.15,
+                350.69,
+                219.19
+              ],
+              "text": "• \u0007Often costs less than a\npsychiatrist or psychologist"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                204.62,
+                224.66,
+                360.48,
+                237.69
+              ],
+              "text": "• \u0007Usually covered by insurance"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                395.17,
+                94.66,
+                551.03,
+                107.69
+              ],
+              "text": "• \u0007Cannot prescribe medication"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                395.17,
+                113.16,
+                545.53,
+                154.2
+              ],
+              "text": "• \u0007Depending on training,\nmay struggle with complex\ndiagnoses"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                46.0,
+                251.18,
+                180.52,
+                278.43
+              ],
+              "text": "Occupational Therapist\n(OT)"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                46.0,
+                283.89,
+                185.36,
+                422.95
+              ],
+              "text": "A licensed professional\n— usually with a\nMaster’s degree or\nhigher — who helps\nchildren and adults with\nmotor deficits, sensory\nprocessing challenges, and\nunderdeveloped social\nskills to function better in\nday-to-day life"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                204.62,
+                250.96,
+                373.93,
+                292.0
+              ],
+              "text": "• \u0007Can diagnose and treat ADHD,\nSPD, dysgraphia, and many\nother comorbid conditions"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                204.62,
+                297.47,
+                361.71,
+                338.51
+              ],
+              "text": "• \u0007Uses a unique, hands-on\ntherapy that provides motor\nand sensory benefits"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                204.62,
+                343.97,
+                372.08,
+                371.01
+              ],
+              "text": "• \u0007May be accessed through your\nchild’s school"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                204.62,
+                376.48,
+                346.85,
+                389.51
+              ],
+              "text": "• \u0007May also offer home visits"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                395.17,
+                250.98,
+                544.94,
+                278.02
+              ],
+              "text": "• \u0007Usually more beneficial for\nchildren than for adults"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                395.17,
+                283.49,
+                564.49,
+                310.52
+              ],
+              "text": "• \u0007Insurance often only covers OT\nfor certain diagnoses"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                395.17,
+                315.99,
+                569.97,
+                343.03
+              ],
+              "text": "• \u0007In the U.S., demand exceeds\nsupply for occupational therapy"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                395.17,
+                348.5,
+                551.03,
+                361.53
+              ],
+              "text": "• \u0007Cannot prescribe medication"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                46.0,
+                436.47,
+                117.22,
+                449.72
+              ],
+              "text": "ADHD Coach"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                46.0,
+                455.18,
+                188.43,
+                566.24
+              ],
+              "text": "Not a medical professional,\nbut a guide, teacher, and\ncheerleader who helps\nteach organizational,\ntime-management, and\ngoal-achieving strategies\nto teens and adults with\nADHD"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                204.62,
+                436.24,
+                366.6,
+                505.29
+              ],
+              "text": "• \u0007Helps clients build lifestyle\nskills (organization, time\nmanagement, etc.) that are\nnot often covered by medical\nprofessionals"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                204.62,
+                510.76,
+                343.98,
+                537.79
+              ],
+              "text": "• \u0007Can guide clients toward\nspecific life goals"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                204.62,
+                543.26,
+                353.14,
+                584.3
+              ],
+              "text": "• \u0007Many have ADHD — and a\nunique perspective on the\ncondition"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                395.17,
+                436.26,
+                566.31,
+                463.3
+              ],
+              "text": "• \u0007No nationwide standards for\nlicensing coaches currently exist"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                395.17,
+                468.77,
+                530.89,
+                495.81
+              ],
+              "text": "• \u0007Can be expensive; rarely\ncovered by insurance"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                395.17,
+                501.27,
+                542.46,
+                528.31
+              ],
+              "text": "• \u0007Cannot diagnose ADHD or\nprescribe medication"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 8,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDitude eBooks Available Now\nadditudemag.com/shop\nADHD Medication and Treatment\nThe latest information on managing medication, starting therapy, evalu-\nating alternative treatments, and more.\nYou’re relieved to know, finally, that your lifelong symptoms are due to ADHD. But now, you have questions — on everything from which medica-\ntions are available to how to tell if they’re working properly. In this compre-\nhensive special report, you’ll learn how to seek an accurate diagnosis and map out a treatment plan that’s right for you. >> Learn more about this eBook: http://additu.de/treatment\nYour Complete ADHD Guide\nA complete overview of ADHD, outlining every step from diagnosis to treatment — all the way to living successfully with attention deficit.\nFrom the moment you suspect ADHD in yourself or your child, you have hundreds of questions. Which doctors can evaluate symptoms? What medi-\ncation side effects should you be prepared for? Can diet help? This compre-\nhensive eBook has over 100 pages of expert advice, personal stories, and more to help you become an ADHD expert. >> Learn more about this eBook: http://additu.de/adhd-101\nMindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green time, and mindful meditation.\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises — including some designed especially for kids — as well as the science behind each natural therapy.\n>> Learn more about this eBook: http://additu.de/mindful\nFREE ADDitude Downloads\n13 Questions to Ask Before Starting ADHD Medication\nThe best questions to ask your doctor before starting or tweaking any ADHD medication regimen.\nIt’s Not ADHD: 3 Common Diagnosis Mistakes\nDoctors are sometimes too quick to diagnose ADHD. Read up on common misdiagnoses.\n11 ADHD Coping Mechanisms Dr. William Dodson’s 11 ADHD-\ntested treatment strategies that really work..\nSecrets of the ADHD Brain\nLearn why we think, act, and feel the way we do..\nADHD Vitamins and Supplements\nFind out which herbs, vitamins, and nutritional supplements may help control some symptoms of ADHD.\n9 Foods to Eat (And Avoid) for Improved ADHD Symptoms\nYour guide to a high-protein, low-\nsugar, no-additive diet.\nThe Essential ADHD Monitoring System\nHow to know if your medication is working — and how to catch warning signs before they become problems..\nFind these and many more free ADHD resources online at:\nhttp://additu.de/\nfreedownloads",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                54.0,
+                51.06,
+                231.01,
+                110.43
+              ],
+              "text": "ADDitude eBooks\nAvailable Now\nadditudemag.com/shop"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                133.85,
+                415.76,
+                178.04
+              ],
+              "text": "ADHD Medication and Treatment\nThe latest information on managing medication, starting therapy, evalu-\nating alternative treatments, and more."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                182.35,
+                419.72,
+                258.61
+              ],
+              "text": "You’re relieved to know, finally, that your lifelong symptoms are due to\nADHD. But now, you have questions — on everything from which medica-\ntions are available to how to tell if they’re working properly. In this compre-\nhensive special report, you’ll learn how to seek an accurate diagnosis and\nmap out a treatment plan that’s right for you."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                261.85,
+                355.58,
+                278.11
+              ],
+              "text": ">> Learn more about this eBook: http://additu.de/treatment"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                301.65,
+                402.05,
+                345.84
+              ],
+              "text": "Your Complete ADHD Guide\nA complete overview of ADHD, outlining every step from diagnosis to\ntreatment — all the way to living successfully with attention deficit."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                350.15,
+                419.72,
+                426.41
+              ],
+              "text": "From the moment you suspect ADHD in yourself or your child, you have\nhundreds of questions. Which doctors can evaluate symptoms? What medi-\ncation side effects should you be prepared for? Can diet help? This compre-\nhensive eBook has over 100 pages of expert advice, personal stories, and\nmore to help you become an ADHD expert."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                429.65,
+                348.5,
+                445.91
+              ],
+              "text": ">> Learn more about this eBook: http://additu.de/adhd-101"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                469.45,
+                403.9,
+                513.64
+              ],
+              "text": "Mindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green\ntime, and mindful meditation."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                517.95,
+                419.72,
+                579.21
+              ],
+              "text": "Learn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like\nyoga and deep breathing exercises — including some designed especially for\nkids — as well as the science behind each natural therapy."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                582.45,
+                342.36,
+                598.71
+              ],
+              "text": ">> Learn more about this eBook: http://additu.de/mindful"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                432.72,
+                69.62,
+                558.91,
+                105.13
+              ],
+              "text": "FREE ADDitude\nDownloads"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                432.72,
+                113.81,
+                575.6,
+                187.0
+              ],
+              "text": "13 Questions to Ask Before\nStarting ADHD Medication\nThe best questions to ask\nyour doctor before starting or\ntweaking any ADHD medication\nregimen."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                432.72,
+                197.81,
+                575.6,
+                259.0
+              ],
+              "text": "It’s Not ADHD: 3 Common\nDiagnosis Mistakes\nDoctors are sometimes too quick\nto diagnose ADHD. Read up on\ncommon misdiagnoses."
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                432.72,
+                269.81,
+                569.92,
+                331.0
+              ],
+              "text": "11 ADHD Coping\nMechanisms\nDr. William Dodson’s 11 ADHD-\ntested treatment strategies that\nreally work.."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                432.72,
+                341.81,
+                570.24,
+                379.0
+              ],
+              "text": "Secrets of the ADHD Brain\nLearn why we think, act, and feel\nthe way we do.."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                432.72,
+                389.81,
+                573.93,
+                463.0
+              ],
+              "text": "ADHD Vitamins and\nSupplements\nFind out which herbs, vitamins,\nand nutritional supplements may\nhelp control some symptoms of\nADHD."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                432.72,
+                473.81,
+                574.63,
+                535.0
+              ],
+              "text": "9 Foods to Eat (And Avoid)\nfor Improved ADHD\nSymptoms\nYour guide to a high-protein, low-\nsugar, no-additive diet."
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                432.72,
+                545.81,
+                569.2,
+                619.0
+              ],
+              "text": "The Essential ADHD\nMonitoring System\nHow to know if your medication\nis working — and how to catch\nwarning signs before they\nbecome problems.."
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                432.72,
+                629.18,
+                569.47,
+                696.53
+              ],
+              "text": "Find these and many\nmore free ADHD\nresources online at:\nhttp://additu.de/\nfreedownloads"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additudemag.com/shop",
+              "bbox": [
+                54.0,
+                91.14,
+                215.2,
+                110.43
+              ]
+            },
+            {
+              "uri": "http://additu.de/treatment",
+              "bbox": [
+                214.38,
+                261.85,
+                355.57,
+                278.11
+              ]
+            },
+            {
+              "uri": "http://additu.de/adhd-101",
+              "bbox": [
+                214.38,
+                429.65,
+                348.49,
+                445.91
+              ]
+            },
+            {
+              "uri": "http://additu.de/mindful",
+              "bbox": [
+                214.02,
+                582.45,
+                342.35,
+                598.71
+              ]
+            },
+            {
+              "uri": "http://additu.de/freedownloads",
+              "bbox": [
+                432.72,
+                669.81,
+                519.79,
+                683.53
+              ]
+            },
+            {
+              "uri": "http://additu.de/freedownloads",
+              "bbox": [
+                432.72,
+                682.81,
+                512.18,
+                696.53
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 9,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "Expert Webinar Replays: Cracking the ADHD Medication Maze\n>> http://additu.de/med-maze\nRoughly 80 percent of all people with ADHD benefit from taking medication. Still, many patients never get to experience their effectiveness. Why? Finding prescribers, untangling insurance, dealing with uncooperative pharmacists, and more ADHD-unfriendly obstacles get in the way. In this webinar, learn insider strategies for finding — and tweaking — the medication that works best for you.\nEmotions and ADHD: What Clinicians Need to Know\n>> http://additu.de/adhdemotions\nEmotional challenges are one of the core problems of ADHD, but too many clinicians — and even some self-proclaimed ADHD experts — don’t know what to look for or mistake emotional outbursts as symptoms of other con-\nditions. In this expert webinar, William Dodson, M.D., breaks down how ADHD impacts emotions, and outlines what professionals can do to help pa-\ntients manage out-of-control feelings.\nHealing the ADHD Brain: Interventions and Strategies that Work\n>> http://additu.de/healing\nThere’s no one-size-fits-all approach for treating ADHD. Here, Daniel G. Amen, M.D., explains treatment options ranging from medication and supplements to diet and exercise.\nNeurofeedback and Cognitive Training for Kids\n>> http://additu.de/neuro\nIs brain training — including neurofeedback and cognitive training (CT) — really all it’s cracked up to be? Is it safe for kids? Is it worth the money? Naomi Steiner, M.D., shares the research behind some computer-based al-\nternative therapies so you can make an informed decision before treating your child.\nThe ADHD-Executive Function Connection\n>> http://additu.de/efunction\nWe’ve all heard of executive functions — the brain-based skills that affect how we plan, organize, and carry out tasks. But how do executive functions relate to ADHD — and how can children and adults with the condition com-\npensate for natural deficiencies in these critical skills? Thomas Brown, Ph.D., explains the ins and outs of executive functions and how they affect your focus in this expert webinar.\nFREE ADHD Newsletters from ADDitude\nSign up to receive criti-\ncal news and information about ADHD diagnosis and treatment, success at school, adult ADHD, and parenting strategies: http://additu.de/newsletter\nAdult ADHD and LD\nExpert advice on managing your household, time, money, career, and relationships\nParenting Children with ADHD and LD Strategies and support for par-\nents on behavior and discipline, time management, disorganiza-\ntion, and making friends.\nADHD and LD at School How to get classroom accom-\nmodations, finish homework, work with teachers, find the right schools, and much more.\nTreating ADHD Treatment options for attention deficit including medications, food, supplements, brain training, mindfulness and other alternative therapies.\nFor Women with ADHD Managing ADHD on the job, run-\nning a household, dealing with challenging emotions, and much more.",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                54.0,
+                50.89,
+                302.81,
+                96.41
+              ],
+              "text": "Expert Webinar Replays:\nCracking the ADHD Medication Maze"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                100.29,
+                210.85,
+                114.02
+              ],
+              "text": ">> http://additu.de/med-maze"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                118.19,
+                419.74,
+                209.45
+              ],
+              "text": "Roughly 80 percent of all people with ADHD benefit from taking medication.\nStill, many patients never get to experience their effectiveness. Why? Finding\nprescribers, untangling insurance, dealing with uncooperative pharmacists,\nand more ADHD-unfriendly obstacles get in the way. In this webinar, learn\ninsider strategies for finding — and tweaking — the medication that works\nbest for you."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                219.48,
+                402.39,
+                237.21
+              ],
+              "text": "Emotions and ADHD: What Clinicians Need to Know"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                241.09,
+                231.59,
+                254.82
+              ],
+              "text": ">> http://additu.de/adhdemotions"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                258.99,
+                419.76,
+                350.25
+              ],
+              "text": "Emotional challenges are one of the core problems of ADHD, but too many\nclinicians — and even some self-proclaimed ADHD experts — don’t know\nwhat to look for or mistake emotional outbursts as symptoms of other con-\nditions. In this expert webinar, William Dodson, M.D., breaks down how\nADHD impacts emotions, and outlines what professionals can do to help pa-\ntients manage out-of-control feelings."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                360.28,
+                418.31,
+                394.01
+              ],
+              "text": "Healing the ADHD Brain: Interventions and Strategies\nthat Work"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                397.89,
+                194.03,
+                411.62
+              ],
+              "text": ">> http://additu.de/healing"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                415.79,
+                419.74,
+                462.05
+              ],
+              "text": "There’s no one-size-fits-all approach for treating ADHD. Here, Daniel G. Amen,\nM.D., explains treatment options ranging from medication and supplements to\ndiet and exercise."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                472.08,
+                359.54,
+                489.81
+              ],
+              "text": "Neurofeedback and Cognitive Training for Kids"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                493.69,
+                184.84,
+                507.42
+              ],
+              "text": ">> http://additu.de/neuro"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                54.0,
+                511.59,
+                419.71,
+                587.85
+              ],
+              "text": "Is brain training — including neurofeedback and cognitive training (CT)\n— really all it’s cracked up to be? Is it safe for kids? Is it worth the money?\nNaomi Steiner, M.D., shares the research behind some computer-based al-\nternative therapies so you can make an informed decision before treating\nyour child."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                54.0,
+                597.88,
+                341.12,
+                615.61
+              ],
+              "text": "The ADHD-Executive Function Connection"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                54.0,
+                619.49,
+                206.34,
+                633.22
+              ],
+              "text": ">> http://additu.de/efunction"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                54.0,
+                637.39,
+                419.75,
+                728.65
+              ],
+              "text": "We’ve all heard of executive functions — the brain-based skills that affect\nhow we plan, organize, and carry out tasks. But how do executive functions\nrelate to ADHD — and how can children and adults with the condition com-\npensate for natural deficiencies in these critical skills? Thomas Brown, Ph.D.,\nexplains the ins and outs of executive functions and how they affect your\nfocus in this expert webinar."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                432.72,
+                69.48,
+                573.96,
+                210.37
+              ],
+              "text": "FREE ADHD\nNewsletters from\nADDitude\nSign up to receive criti-\ncal news and information\nabout ADHD diagnosis\nand treatment, success at\nschool, adult ADHD, and\nparenting strategies:\nhttp://additu.de/newsletter"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                432.72,
+                221.64,
+                569.53,
+                270.86
+              ],
+              "text": "Adult ADHD and LD\nExpert advice on managing your\nhousehold, time, money, career,\nand relationships"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                432.72,
+                281.67,
+                566.78,
+                354.86
+              ],
+              "text": "Parenting Children with\nADHD and LD\nStrategies and support for par-\nents on behavior and discipline,\ntime management, disorganiza-\ntion, and making friends."
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                432.72,
+                365.67,
+                573.47,
+                426.86
+              ],
+              "text": "ADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework,\nwork with teachers, find the right\nschools, and much more."
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                432.72,
+                437.67,
+                577.22,
+                510.87
+              ],
+              "text": "Treating ADHD\nTreatment options for attention\ndeficit including medications,\nfood, supplements, brain training,\nmindfulness and other alternative\ntherapies."
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                432.72,
+                521.67,
+                571.38,
+                582.86
+              ],
+              "text": "For Women with ADHD\nManaging ADHD on the job, run-\nning a household, dealing with\nchallenging emotions, and much\nmore."
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additu.de/med-maze",
+              "bbox": [
+                68.14,
+                100.14,
+                210.85,
+                114.02
+              ]
+            },
+            {
+              "uri": "http://additu.de/adhdemotions",
+              "bbox": [
+                68.14,
+                241.09,
+                231.58,
+                254.82
+              ]
+            },
+            {
+              "uri": "http://additu.de/healing",
+              "bbox": [
+                68.14,
+                397.89,
+                194.02,
+                411.62
+              ]
+            },
+            {
+              "uri": "http://additu.de/neuro",
+              "bbox": [
+                66.67,
+                493.69,
+                184.83,
+                507.42
+              ]
+            },
+            {
+              "uri": "http://additu.de/efunction",
+              "bbox": [
+                68.14,
+                619.49,
+                206.34,
+                633.22
+              ]
+            },
+            {
+              "uri": "http://additu.de/newsletter",
+              "bbox": [
+                432.72,
+                196.67,
+                573.95,
+                210.4
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "yearly",
+    "source_relative_path": "13_ADHD_General_Reference_and_Diagnosis/json/the_professionals_who_diagnose_and_treat_adhd.json",
+    "title": "pdf_to_json_text_layout_v1",
+    "category": "ADHD General Reference and Diagnosis",
+    "source_type": "reference",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Pick the smallest visible version.",
+      "Use a timer, body double, or transition cue.",
+      "Stop after one tiny step if energy drops."
+    ],
+    "routine_integration": {
+      "routine_role": "yearly reference, review, or archive check",
+      "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+      "recommended_block": "yearly OurSpace maintenance and support refresh"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": false,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 1,
+      "gold": 0,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

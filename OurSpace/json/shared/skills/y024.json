@@ -1,0 +1,143 @@
+{
+  "json_files_checked": 238,
+  "html_files_count": 109,
+  "json_validation": [
+    {
+      "path": "manifest.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/all_items_compact.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/skills/dbt_skills_index.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/diary_cards/daily_dbt_diary_card_general.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/diary_cards/daily_mindfulness_diary_card.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/diary_cards/daily_interpersonal_effectiveness_diary_card.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/diary_cards/daily_emotion_regulation_diary_card.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/diary_cards/daily_distress_tolerance_diary_card.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/items/distress_tolerance/handouts/distress_tolerance_handout_1_goals_of_distress_tolerance_survive_crisis_situations_without_making_t.json",
+      "status": "ok"
+    },
+    {
+      "path": "json/items/distress_tolerance/handouts/distress_tolerance_handout_2_overview_crisis_survival_skills_these_are_skills_for_tolerating_painfu.json",
+      "status": "ok"
+    }
+  ],
+  "errors": [],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "yearly",
+    "source_relative_path": "99_Source_Manifests_Readmes_and_Reports/DBT_validation_report.json",
+    "title": "Dbt Validation Report",
+    "category": "Source Manifests Readmes and Reports",
+    "source_type": "manifest_or_index",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Read one short section.",
+      "Choose one sentence or tool that fits today.",
+      "Use the low-spoon version; no full worksheet is required."
+    ],
+    "routine_integration": {
+      "routine_role": "yearly reference, review, or archive check",
+      "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+      "recommended_block": "yearly OurSpace maintenance and support refresh"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": false,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 1,
+      "gold": 0,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

@@ -1,0 +1,4669 @@
+{
+  "schema": "pdf_to_json_text_layout_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "group_type": "single_pdf_json",
+  "merge_policy": {
+    "threshold": "merge documents when TF-IDF cosine similarity >= 0.60 OR 5-token shingle containment of the smaller document >= 0.60",
+    "why_containment_is_used": "Containment catches shorter PDFs that are substantially embedded inside longer PDFs even when whole-document Jaccard/cosine is lower."
+  },
+  "source_document_count": 1,
+  "source_documents": [
+    {
+      "document_id": "cleaning_planner_printables_kit",
+      "source_index": 10,
+      "original_filename": "Cleaning-Planner-Printables-Kit.pdf",
+      "source_relative_path": "adhd/Cleaning-Planner-Printables-Kit.pdf",
+      "sha256": "572c9a781aff45d8c61cedbb67d7ddcd706b5e86134050fe37258157602f8fe9",
+      "title": "Cleaning Planner Printables Kit",
+      "page_count": 21,
+      "character_count": 10746,
+      "word_count": 1316,
+      "link_count": 0,
+      "image_count": 0,
+      "form_field_count": 0,
+      "annotation_count": 0
+    }
+  ],
+  "within_group_similarity": [],
+  "documents": [
+    {
+      "document_id": "cleaning_planner_printables_kit",
+      "source_index": 10,
+      "original_filename": "Cleaning-Planner-Printables-Kit.pdf",
+      "source_relative_path": "adhd/Cleaning-Planner-Printables-Kit.pdf",
+      "sha256": "572c9a781aff45d8c61cedbb67d7ddcd706b5e86134050fe37258157602f8fe9",
+      "title": "Cleaning Planner Printables Kit",
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "Cleaning Planner Printables Kit",
+        "author": "aprettylifeinthesuburbs",
+        "subject": "",
+        "keywords": "DAE6cqeYDe8,BAA6yfMu68k",
+        "creator": "Canva",
+        "producer": "GPL Ghostscript 9.55.0",
+        "creationDate": "D:20220317170053+01'00'",
+        "modDate": "D:20220317170053+01'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "page_count": 21,
+      "character_count": 10746,
+      "word_count": 1316,
+      "link_count": 0,
+      "image_count": 0,
+      "form_field_count": 0,
+      "annotation_count": 0,
+      "full_text": "handy\ncleaning\nplanner\nWWW.APRETTYLIFEINTHESUBURBS.COM handy\ncleaning\nplanner\nWWW.APRETTYLIFEINTHESUBURBS.COM M T W T F S S\nDAILY CLEANING DUTY\nCLEANING CHECKLIST\nWEEKLY CLEANING NOTES\nMONTHLY CLEANING NOTES\nWWW.APRETTYLIFEINTHESUBURBS.COM monday\nweekly cleaning checklist\ntuesday\nwednesday\nthursday\nfriday\nsunday\nsaturday\nWWW.APRETTYLIFEINTHESUBURBS.COM living room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM dining room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM kitchen cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM bathroom cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM laundry room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM bedroom cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM kids room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM family room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM porch cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM QUANTITY\nITEM\nCLEANING SUPPLIES INVENTORY\nWWW.APRETTYLIFEINTHESUBURBS.COM CLEANING SUPPLIES SHOPPING LIST\ngeneral cleaning supplies paper towels\nmagic eraser\nbroom\ndustpan\nmop\nscrub brush\ntooth brush\nbucket\nvacuum\nduster\nmicrofibre cloth sponge\nmultipurpose cleaner\nfloor cleaner\nwood polish\nleather cleaner\nglass cleaner\ndisinfecting wipes\nspray bottle\nvinegar\nbaking soda kitchen cleaning supplies dishwasher detergent\ndish soap\noven cleaner\nstainless cleaner\nscrub pads\ncleaning cloths\nantibacterial cleaner bathroom cleaning supplies toilet cleaner\nglass cleaner\nshower cleaner\nmagic eraser\ndisinfecting wipes\nantibacterial cleaner\nold toothbrush\nscrub brush WWW.APRETTYLIFEINTHESUBURBS.COM general cleaning supplies kitchen cleaning supplies bathroom cleaning supplies CLEANING SUPPLIES SHOPPING LIST\nWWW.APRETTYLIFEINTHESUBURBS.COM SPRING CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH wash bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers organize closets\ndust + scrub baseboards\nclean walls + ceiling\nscrub tile and grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances sweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\nPLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ncheck light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nALL ROOMS clean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nWWW.APRETTYLIFEINTHESUBURBS.COM SUMMER CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH wash all bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nchange clothes for season\nscrub tile + grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances PLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nsweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\nALL ROOMS check light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nclean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nWWW.APRETTYLIFEINTHESUBURBS.COM FALL CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH wash all bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nchange clothes for season\nscrub tile + grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances PLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nsweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\ncheck light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nALL ROOMS clean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nWWW.APRETTYLIFEINTHESUBURBS.COM WINTER CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH clean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nwash all bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nchange clothes for season\nscrub tile + grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances PLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub the baseboards\nsweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\ncheck light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nALL ROOMS WWW.APRETTYLIFEINTHESUBURBS.COM 30 BAGS IN 30 DAYS\nDECLUTTER CHALLENGE\nDAY 1 KITCHEN CUPBOARD\nDAY 2 KITCHEN PANTRY\nDAY 3 KITCHEN DRAWERS\nDAY 4 UNDER KITCHEN SINK\nDAY 5 JUNK DRAWER\nDAY 6 CLEANING SUPPLIES\nDAY 7 FRIDGE AND FREEZER\nDAY 8 LINEN CLOSET\nDAY 9 BEDROOM CLOSET\nDAY 10 NIGHTSTANDS + DRAWERS\nDAY 11 SHOES\nDAY 12 MASTER BEDROOM\nDAY 13 GUEST BATHROOM\nDAY 14 MEDICINE CABINETS\nDAY 15 MAKEUP\nDAY 16 UNDER BEDS\nDAY 17 TOYS\nDAY 18 DESK DRAWERS\nDAY 19 TV CABINETS\nDAY 20 LAUNDRY ROOM\nDAY 21 PAPERS\nDAY 22 MAGAZINES AND BOOKS\nDAY 23 ARTS AND CRAFTS\nDAY 24 DECOR\nDAY 25 CAR\nDAY 26 GARAGE\nDAY 27 SHED\nDAY 28 BOARD + VIDEO GAMES\nDAY 29 PURSE\nDAY 30 ELECTRONICS\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+      "pages": [
+        {
+          "page_number": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "handy\ncleaning\nplanner\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                155.49,
+                195.37,
+                476.25,
+                475.27
+              ],
+              "text": "handy\ncleaning\nplanner"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                181.43,
+                766.95,
+                430.57,
+                782.11
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "handy\ncleaning\nplanner\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                144.92,
+                201.57,
+                465.67,
+                481.48
+              ],
+              "text": "handy\ncleaning\nplanner"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                180.73,
+                759.97,
+                429.87,
+                775.13
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "M T W T F S S\nDAILY CLEANING DUTY\nCLEANING CHECKLIST\nWEEKLY CLEANING NOTES\nMONTHLY CLEANING NOTES\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                50.1,
+                27.58,
+                561.9,
+                118.87
+              ],
+              "text": "M T W T F S S\nDAILY CLEANING DUTY\nCLEANING CHECKLIST"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                78.71,
+                610.37,
+                559.25,
+                628.14
+              ],
+              "text": "WEEKLY CLEANING NOTES\nMONTHLY CLEANING NOTES"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                181.43,
+                767.58,
+                430.57,
+                782.75
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "monday\nweekly cleaning checklist\ntuesday\nwednesday\nthursday\nfriday\nsunday\nsaturday\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                71.7,
+                170.94,
+                164.91,
+                200.05
+              ],
+              "text": "monday"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                101.26,
+                63.88,
+                510.73,
+                105.57
+              ],
+              "text": "weekly cleaning checklist"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                271.62,
+                170.94,
+                568.47,
+                200.05
+              ],
+              "text": "tuesday\nwednesday"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                157.38,
+                379.64,
+                436.35,
+                408.74
+              ],
+              "text": "thursday\nfriday"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                158.35,
+                575.35,
+                445.61,
+                604.46
+              ],
+              "text": "sunday\nsaturday"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                178.01,
+                768.97,
+                427.15,
+                784.13
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "living room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                66.22,
+                20.18,
+                545.79,
+                61.86
+              ],
+              "text": "living room cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                101.46,
+                359.95,
+                580.21,
+                381.24
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                772.79,
+                432.87,
+                787.96
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "dining room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                57.52,
+                20.18,
+                554.48,
+                61.86
+              ],
+              "text": "dining room cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                101.46,
+                359.95,
+                580.21,
+                381.23
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                773.47,
+                432.87,
+                788.63
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 7,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "kitchen cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                96.5,
+                20.18,
+                515.51,
+                61.86
+              ],
+              "text": "kitchen cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                101.46,
+                359.95,
+                580.21,
+                381.23
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                773.73,
+                432.87,
+                788.89
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 8,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "bathroom cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                76.18,
+                20.18,
+                535.82,
+                61.86
+              ],
+              "text": "bathroom cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                103.96,
+                359.95,
+                582.71,
+                381.23
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                771.43,
+                432.87,
+                786.6
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 9,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "laundry room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                48.34,
+                20.18,
+                563.67,
+                61.86
+              ],
+              "text": "laundry room cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                103.96,
+                359.95,
+                582.71,
+                381.24
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                771.43,
+                432.87,
+                786.6
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 10,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "bedroom cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                82.44,
+                20.18,
+                529.56,
+                61.86
+              ],
+              "text": "bedroom cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                101.46,
+                359.95,
+                580.21,
+                381.24
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                773.47,
+                432.87,
+                788.63
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 11,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "kids room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                77.02,
+                20.17,
+                534.98,
+                61.86
+              ],
+              "text": "kids room cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                101.46,
+                359.95,
+                580.21,
+                381.23
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                773.47,
+                432.87,
+                788.63
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 12,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "family room cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                62.8,
+                20.17,
+                553.82,
+                61.86
+              ],
+              "text": "family room cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                94.77,
+                77.91,
+                581.67,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                103.77,
+                359.95,
+                582.52,
+                381.23
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                773.47,
+                432.87,
+                788.63
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 13,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "porch cleaning checklist\ndaily cleaning tasks m t w t f s s\nweekly cleaning tasks 1 2 3 4\nmonthly cleaning tasks WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                110.11,
+                20.17,
+                501.89,
+                61.86
+              ],
+              "text": "porch cleaning checklist"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                96.96,
+                77.91,
+                583.86,
+                99.2
+              ],
+              "text": "daily cleaning tasks m t w t f s s"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                101.46,
+                359.95,
+                580.21,
+                381.23
+              ],
+              "text": "weekly cleaning tasks 1 2 3 4"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                84.31,
+                622.84,
+                493.32,
+                644.13
+              ],
+              "text": "monthly cleaning tasks"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                183.74,
+                773.47,
+                432.87,
+                788.63
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 14,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "QUANTITY\nITEM\nCLEANING SUPPLIES INVENTORY\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                126.34,
+                97.7,
+                543.6,
+                120.69
+              ],
+              "text": "QUANTITY\nITEM"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                47.0,
+                42.55,
+                565.0,
+                78.05
+              ],
+              "text": "CLEANING SUPPLIES INVENTORY"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                182.77,
+                773.4,
+                431.91,
+                788.57
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 15,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "CLEANING SUPPLIES SHOPPING LIST\ngeneral cleaning supplies paper towels\nmagic eraser\nbroom\ndustpan\nmop\nscrub brush\ntooth brush\nbucket\nvacuum\nduster\nmicrofibre cloth sponge\nmultipurpose cleaner\nfloor cleaner\nwood polish\nleather cleaner\nglass cleaner\ndisinfecting wipes\nspray bottle\nvinegar\nbaking soda kitchen cleaning supplies dishwasher detergent\ndish soap\noven cleaner\nstainless cleaner\nscrub pads\ncleaning cloths\nantibacterial cleaner bathroom cleaning supplies toilet cleaner\nglass cleaner\nshower cleaner\nmagic eraser\ndisinfecting wipes\nantibacterial cleaner\nold toothbrush\nscrub brush WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                28.19,
+                38.35,
+                583.82,
+                72.54
+              ],
+              "text": "CLEANING SUPPLIES SHOPPING LIST"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                69.92,
+                93.52,
+                415.53,
+                110.9
+              ],
+              "text": "general cleaning supplies"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                79.03,
+                117.05,
+                178.47,
+                137.04
+              ],
+              "text": "paper towels"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                79.03,
+                142.55,
+                178.97,
+                162.54
+              ],
+              "text": "magic eraser"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                79.03,
+                168.05,
+                131.06,
+                188.04
+              ],
+              "text": "broom"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                79.03,
+                193.55,
+                143.28,
+                213.54
+              ],
+              "text": "dustpan"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                79.03,
+                219.05,
+                115.3,
+                239.04
+              ],
+              "text": "mop"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                79.03,
+                244.55,
+                170.76,
+                264.54
+              ],
+              "text": "scrub brush"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                79.03,
+                270.05,
+                169.82,
+                290.04
+              ],
+              "text": "tooth brush"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                79.03,
+                295.55,
+                133.06,
+                315.54
+              ],
+              "text": "bucket"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                79.03,
+                321.05,
+                141.91,
+                341.04
+              ],
+              "text": "vacuum"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                79.03,
+                346.55,
+                128.86,
+                366.54
+              ],
+              "text": "duster"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                79.03,
+                372.05,
+                205.91,
+                392.04
+              ],
+              "text": "microfibre cloth"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                79.03,
+                397.55,
+                136.68,
+                417.54
+              ],
+              "text": "sponge"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                79.03,
+                423.05,
+                244.55,
+                443.04
+              ],
+              "text": "multipurpose cleaner"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                79.03,
+                448.55,
+                174.57,
+                468.54
+              ],
+              "text": "floor cleaner"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                79.03,
+                474.05,
+                172.26,
+                494.04
+              ],
+              "text": "wood polish"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                79.03,
+                499.55,
+                194.32,
+                519.54
+              ],
+              "text": "leather cleaner"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                79.03,
+                525.05,
+                178.56,
+                545.04
+              ],
+              "text": "glass cleaner"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                79.03,
+                550.55,
+                218.63,
+                570.54
+              ],
+              "text": "disinfecting wipes"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                79.03,
+                576.05,
+                170.27,
+                596.04
+              ],
+              "text": "spray bottle"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                79.03,
+                601.55,
+                136.8,
+                621.54
+              ],
+              "text": "vinegar"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                79.03,
+                627.05,
+                241.52,
+                647.04
+              ],
+              "text": "baking soda"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                318.68,
+                93.52,
+                614.97,
+                110.9
+              ],
+              "text": "kitchen cleaning supplies"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                324.73,
+                117.05,
+                494.58,
+                137.04
+              ],
+              "text": "dishwasher detergent"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                324.73,
+                142.55,
+                397.68,
+                162.54
+              ],
+              "text": "dish soap"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                324.73,
+                168.05,
+                423.14,
+                188.04
+              ],
+              "text": "oven cleaner"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                324.73,
+                193.55,
+                451.22,
+                213.54
+              ],
+              "text": "stainless cleaner"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                324.73,
+                219.05,
+                409.05,
+                239.04
+              ],
+              "text": "scrub pads"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                324.73,
+                244.55,
+                441.65,
+                264.54
+              ],
+              "text": "cleaning cloths"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                324.73,
+                270.05,
+                542.56,
+                290.04
+              ],
+              "text": "antibacterial cleaner"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                312.52,
+                400.71,
+                615.25,
+                418.08
+              ],
+              "text": "bathroom cleaning supplies"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                325.15,
+                428.32,
+                425.57,
+                448.31
+              ],
+              "text": "toilet cleaner"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                325.15,
+                453.82,
+                424.68,
+                473.81
+              ],
+              "text": "glass cleaner"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                325.15,
+                479.32,
+                442.37,
+                499.31
+              ],
+              "text": "shower cleaner"
+            },
+            {
+              "block_index": 36,
+              "bbox": [
+                325.15,
+                504.82,
+                425.09,
+                524.81
+              ],
+              "text": "magic eraser"
+            },
+            {
+              "block_index": 37,
+              "bbox": [
+                325.15,
+                530.32,
+                464.75,
+                550.31
+              ],
+              "text": "disinfecting wipes"
+            },
+            {
+              "block_index": 38,
+              "bbox": [
+                325.15,
+                555.82,
+                482.76,
+                575.81
+              ],
+              "text": "antibacterial cleaner"
+            },
+            {
+              "block_index": 39,
+              "bbox": [
+                325.15,
+                581.32,
+                440.07,
+                601.31
+              ],
+              "text": "old toothbrush"
+            },
+            {
+              "block_index": 40,
+              "bbox": [
+                325.15,
+                606.82,
+                469.08,
+                626.81
+              ],
+              "text": "scrub brush"
+            },
+            {
+              "block_index": 41,
+              "bbox": [
+                181.43,
+                772.79,
+                430.57,
+                787.96
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 16,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "general cleaning supplies kitchen cleaning supplies bathroom cleaning supplies CLEANING SUPPLIES SHOPPING LIST\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                69.92,
+                93.52,
+                613.81,
+                110.9
+              ],
+              "text": "general cleaning supplies\nkitchen cleaning supplies"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                312.52,
+                400.71,
+                615.25,
+                418.08
+              ],
+              "text": "bathroom cleaning supplies"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                28.19,
+                38.35,
+                583.82,
+                72.54
+              ],
+              "text": "CLEANING SUPPLIES SHOPPING LIST"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                181.43,
+                773.47,
+                430.57,
+                788.63
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 17,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "SPRING CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH wash bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers organize closets\ndust + scrub baseboards\nclean walls + ceiling\nscrub tile and grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances sweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\nPLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ncheck light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nALL ROOMS clean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                89.41,
+                32.29,
+                522.59,
+                74.37
+              ],
+              "text": "SPRING CLEANING LIST"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                44.13,
+                137.93,
+                180.92,
+                152.26
+              ],
+              "text": "scrub + disinfect the sink"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                44.13,
+                155.93,
+                136.67,
+                170.26
+              ],
+              "text": "clean garburator"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                44.13,
+                173.93,
+                170.78,
+                188.26
+              ],
+              "text": "throw out expired food"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                44.13,
+                191.93,
+                167.16,
+                206.26
+              ],
+              "text": "wipe down cupboards"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                44.13,
+                209.93,
+                132.22,
+                224.26
+              ],
+              "text": "clean coffee pot"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                44.13,
+                227.93,
+                139.7,
+                242.26
+              ],
+              "text": "clean refrigerator"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                44.13,
+                245.93,
+                103.66,
+                260.26
+              ],
+              "text": "clean oven"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                44.13,
+                263.93,
+                137.58,
+                278.26
+              ],
+              "text": "clean microwave"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                44.13,
+                281.93,
+                140.91,
+                296.26
+              ],
+              "text": "wipe down chairs"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                81.46,
+                101.65,
+                549.84,
+                122.68
+              ],
+              "text": "KITCHEN\nLIVING ROOM\nBEDROOMS"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                67.89,
+                336.08,
+                531.44,
+                357.12
+              ],
+              "text": "BATHROOM\nLAUNDRY ROOM\nPORCH"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                417.87,
+                137.93,
+                496.65,
+                152.26
+              ],
+              "text": "wash bedding"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                417.87,
+                155.93,
+                556.08,
+                170.26
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                417.87,
+                173.93,
+                532.14,
+                188.26
+              ],
+              "text": "flip + rotate mattress"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                417.87,
+                191.93,
+                516.03,
+                206.26
+              ],
+              "text": "organize drawers"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                417.87,
+                209.93,
+                506.62,
+                224.26
+              ],
+              "text": "organize closets"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                417.87,
+                227.93,
+                552.36,
+                242.26
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                417.87,
+                245.93,
+                526.66,
+                260.26
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                44.13,
+                370.65,
+                152.69,
+                384.97
+              ],
+              "text": "scrub tile and grout"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                44.13,
+                388.65,
+                182.35,
+                402.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                44.13,
+                406.65,
+                129.42,
+                420.97
+              ],
+              "text": "wash bath rugs"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                44.13,
+                424.65,
+                189.4,
+                438.97
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                44.13,
+                442.65,
+                178.62,
+                456.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                44.13,
+                460.65,
+                152.92,
+                474.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                44.13,
+                478.65,
+                158.62,
+                492.97
+              ],
+              "text": "wash shower curtain"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                44.13,
+                496.65,
+                148.54,
+                510.97
+              ],
+              "text": "clean shower + tub"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                228.45,
+                370.65,
+                372.61,
+                384.97
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                228.45,
+                388.65,
+                337.24,
+                402.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                228.45,
+                406.65,
+                366.66,
+                420.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                228.45,
+                424.65,
+                362.94,
+                438.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                228.45,
+                442.65,
+                301.05,
+                456.97
+              ],
+              "text": "clean washer"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                228.45,
+                460.65,
+                289.9,
+                474.97
+              ],
+              "text": "clean dryer"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                228.45,
+                478.65,
+                319.92,
+                492.97
+              ],
+              "text": "vacuum lint trap"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                228.45,
+                496.65,
+                359.56,
+                510.97
+              ],
+              "text": "clean under appliances"
+            },
+            {
+              "block_index": 36,
+              "bbox": [
+                417.87,
+                370.65,
+                481.39,
+                384.97
+              ],
+              "text": "sweep floor"
+            },
+            {
+              "block_index": 37,
+              "bbox": [
+                417.87,
+                388.65,
+                474.59,
+                402.97
+              ],
+              "text": "wash floor"
+            },
+            {
+              "block_index": 38,
+              "bbox": [
+                417.87,
+                406.65,
+                499.9,
+                420.97
+              ],
+              "text": "clean windows"
+            },
+            {
+              "block_index": 39,
+              "bbox": [
+                417.87,
+                424.65,
+                507.43,
+                438.97
+              ],
+              "text": "wipe down door"
+            },
+            {
+              "block_index": 40,
+              "bbox": [
+                417.87,
+                442.65,
+                475.18,
+                456.97
+              ],
+              "text": "clean rugs"
+            },
+            {
+              "block_index": 41,
+              "bbox": [
+                63.87,
+                567.18,
+                180.73,
+                588.22
+              ],
+              "text": "PLAY ROOM"
+            },
+            {
+              "block_index": 42,
+              "bbox": [
+                46.7,
+                601.06,
+                190.86,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 43,
+              "bbox": [
+                46.7,
+                619.06,
+                155.49,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 44,
+              "bbox": [
+                46.7,
+                637.06,
+                184.92,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 45,
+              "bbox": [
+                46.7,
+                655.06,
+                181.19,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 46,
+              "bbox": [
+                46.7,
+                673.06,
+                111.64,
+                687.38
+              ],
+              "text": "donate toys"
+            },
+            {
+              "block_index": 47,
+              "bbox": [
+                46.7,
+                691.06,
+                145.87,
+                705.38
+              ],
+              "text": "launder cloth toys"
+            },
+            {
+              "block_index": 48,
+              "bbox": [
+                46.7,
+                709.06,
+                121.49,
+                723.38
+              ],
+              "text": "toss out trash"
+            },
+            {
+              "block_index": 49,
+              "bbox": [
+                46.7,
+                727.06,
+                120.25,
+                741.38
+              ],
+              "text": "organize toys"
+            },
+            {
+              "block_index": 50,
+              "bbox": [
+                240.05,
+                567.18,
+                377.79,
+                588.22
+              ],
+              "text": "DINING ROOM"
+            },
+            {
+              "block_index": 51,
+              "bbox": [
+                232.95,
+                601.06,
+                377.11,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 52,
+              "bbox": [
+                232.95,
+                619.06,
+                341.74,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 53,
+              "bbox": [
+                232.95,
+                637.06,
+                371.16,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 54,
+              "bbox": [
+                232.95,
+                655.06,
+                367.44,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 55,
+              "bbox": [
+                417.87,
+                601.06,
+                512.69,
+                615.38
+              ],
+              "text": "check light bulbs"
+            },
+            {
+              "block_index": 56,
+              "bbox": [
+                417.87,
+                619.06,
+                479.96,
+                633.38
+              ],
+              "text": "wash floors"
+            },
+            {
+              "block_index": 57,
+              "bbox": [
+                417.87,
+                637.06,
+                535.8,
+                651.38
+              ],
+              "text": "donate unused items"
+            },
+            {
+              "block_index": 58,
+              "bbox": [
+                417.87,
+                655.06,
+                530.59,
+                669.38
+              ],
+              "text": "wash linens + towels"
+            },
+            {
+              "block_index": 59,
+              "bbox": [
+                417.87,
+                673.06,
+                504.96,
+                687.38
+              ],
+              "text": "spot clean walls"
+            },
+            {
+              "block_index": 60,
+              "bbox": [
+                417.87,
+                691.06,
+                494.27,
+                705.38
+              ],
+              "text": "dust furniture"
+            },
+            {
+              "block_index": 61,
+              "bbox": [
+                417.87,
+                709.06,
+                465.85,
+                723.38
+              ],
+              "text": "organize"
+            },
+            {
+              "block_index": 62,
+              "bbox": [
+                436.47,
+                567.18,
+                550.87,
+                588.22
+              ],
+              "text": "ALL ROOMS"
+            },
+            {
+              "block_index": 63,
+              "bbox": [
+                228.45,
+                140.09,
+                337.24,
+                154.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 64,
+              "bbox": [
+                228.45,
+                158.09,
+                347.25,
+                172.41
+              ],
+              "text": "clean TV + electronics"
+            },
+            {
+              "block_index": 65,
+              "bbox": [
+                228.45,
+                176.09,
+                358.21,
+                190.41
+              ],
+              "text": "wipe down lights + fans"
+            },
+            {
+              "block_index": 66,
+              "bbox": [
+                228.45,
+                194.09,
+                362.94,
+                208.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 67,
+              "bbox": [
+                228.45,
+                212.09,
+                366.66,
+                226.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 68,
+              "bbox": [
+                228.45,
+                230.09,
+                375.82,
+                244.41
+              ],
+              "text": "vacuum cushions + pillows"
+            },
+            {
+              "block_index": 69,
+              "bbox": [
+                228.45,
+                248.09,
+                310.53,
+                262.41
+              ],
+              "text": "vacuum couch"
+            },
+            {
+              "block_index": 70,
+              "bbox": [
+                228.45,
+                266.09,
+                307.71,
+                280.41
+              ],
+              "text": "wash blankets"
+            },
+            {
+              "block_index": 71,
+              "bbox": [
+                228.45,
+                284.09,
+                347.12,
+                298.41
+              ],
+              "text": "dust behind furniture"
+            },
+            {
+              "block_index": 72,
+              "bbox": [
+                180.95,
+                775.82,
+                430.09,
+                790.99
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 18,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "SUMMER CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH wash all bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nchange clothes for season\nscrub tile + grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances PLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nsweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\nALL ROOMS check light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nclean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                77.33,
+                38.42,
+                534.67,
+                80.49
+              ],
+              "text": "SUMMER CLEANING LIST"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                44.13,
+                140.09,
+                180.92,
+                154.41
+              ],
+              "text": "scrub + disinfect the sink"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                44.13,
+                158.09,
+                136.67,
+                172.41
+              ],
+              "text": "clean garburator"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                44.13,
+                176.09,
+                170.78,
+                190.41
+              ],
+              "text": "throw out expired food"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                44.13,
+                194.09,
+                167.16,
+                208.41
+              ],
+              "text": "wipe down cupboards"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                44.13,
+                212.09,
+                132.22,
+                226.41
+              ],
+              "text": "clean coffee pot"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                44.13,
+                230.09,
+                139.7,
+                244.41
+              ],
+              "text": "clean refrigerator"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                44.13,
+                248.09,
+                103.66,
+                262.41
+              ],
+              "text": "clean oven"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                44.13,
+                266.09,
+                137.58,
+                280.41
+              ],
+              "text": "clean microwave"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                44.13,
+                284.09,
+                140.91,
+                298.41
+              ],
+              "text": "wipe down chairs"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                81.46,
+                101.65,
+                549.84,
+                122.68
+              ],
+              "text": "KITCHEN\nLIVING ROOM\nBEDROOMS"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                67.89,
+                335.03,
+                531.44,
+                357.12
+              ],
+              "text": "BATHROOM\nLAUNDRY ROOM\nPORCH"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                417.87,
+                140.09,
+                511.93,
+                154.41
+              ],
+              "text": "wash all bedding"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                417.87,
+                158.09,
+                556.08,
+                172.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                417.87,
+                176.09,
+                532.14,
+                190.41
+              ],
+              "text": "flip + rotate mattress"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                417.87,
+                194.09,
+                563.13,
+                208.41
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                417.87,
+                212.09,
+                552.36,
+                226.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                417.87,
+                230.09,
+                526.66,
+                244.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                417.87,
+                248.09,
+                561.44,
+                262.41
+              ],
+              "text": "change clothes for season"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                44.13,
+                370.65,
+                137.63,
+                384.97
+              ],
+              "text": "scrub tile + grout"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                44.13,
+                388.65,
+                182.35,
+                402.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                44.13,
+                406.65,
+                129.42,
+                420.97
+              ],
+              "text": "wash bath rugs"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                44.13,
+                424.65,
+                189.4,
+                438.97
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                44.13,
+                442.65,
+                178.62,
+                456.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                44.13,
+                460.65,
+                152.92,
+                474.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                44.13,
+                478.65,
+                158.62,
+                492.97
+              ],
+              "text": "wash shower curtain"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                44.13,
+                496.65,
+                148.54,
+                510.97
+              ],
+              "text": "clean shower + tub"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                228.45,
+                370.65,
+                372.61,
+                384.97
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                228.45,
+                388.65,
+                337.24,
+                402.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                228.45,
+                406.65,
+                366.66,
+                420.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                228.45,
+                424.65,
+                362.94,
+                438.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                228.45,
+                442.65,
+                301.05,
+                456.97
+              ],
+              "text": "clean washer"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                228.45,
+                460.65,
+                289.9,
+                474.97
+              ],
+              "text": "clean dryer"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                228.45,
+                478.65,
+                319.92,
+                492.97
+              ],
+              "text": "vacuum lint trap"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                228.45,
+                496.65,
+                359.56,
+                510.97
+              ],
+              "text": "clean under appliances"
+            },
+            {
+              "block_index": 36,
+              "bbox": [
+                63.87,
+                567.18,
+                180.73,
+                588.22
+              ],
+              "text": "PLAY ROOM"
+            },
+            {
+              "block_index": 37,
+              "bbox": [
+                46.7,
+                601.06,
+                190.86,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 38,
+              "bbox": [
+                46.7,
+                619.06,
+                155.49,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 39,
+              "bbox": [
+                46.7,
+                637.06,
+                184.92,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 40,
+              "bbox": [
+                46.7,
+                655.06,
+                181.19,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 41,
+              "bbox": [
+                46.7,
+                673.06,
+                111.64,
+                687.38
+              ],
+              "text": "donate toys"
+            },
+            {
+              "block_index": 42,
+              "bbox": [
+                46.7,
+                691.06,
+                145.87,
+                705.38
+              ],
+              "text": "launder cloth toys"
+            },
+            {
+              "block_index": 43,
+              "bbox": [
+                46.7,
+                709.06,
+                121.49,
+                723.38
+              ],
+              "text": "toss out trash"
+            },
+            {
+              "block_index": 44,
+              "bbox": [
+                46.7,
+                727.06,
+                120.25,
+                741.38
+              ],
+              "text": "organize toys"
+            },
+            {
+              "block_index": 45,
+              "bbox": [
+                240.05,
+                567.18,
+                377.79,
+                588.22
+              ],
+              "text": "DINING ROOM"
+            },
+            {
+              "block_index": 46,
+              "bbox": [
+                232.95,
+                601.06,
+                377.11,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 47,
+              "bbox": [
+                232.95,
+                619.06,
+                341.74,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 48,
+              "bbox": [
+                232.95,
+                637.06,
+                371.16,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 49,
+              "bbox": [
+                232.95,
+                655.06,
+                367.44,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 50,
+              "bbox": [
+                417.87,
+                370.65,
+                481.39,
+                384.97
+              ],
+              "text": "sweep floor"
+            },
+            {
+              "block_index": 51,
+              "bbox": [
+                417.87,
+                388.65,
+                474.59,
+                402.97
+              ],
+              "text": "wash floor"
+            },
+            {
+              "block_index": 52,
+              "bbox": [
+                417.87,
+                406.65,
+                499.9,
+                420.97
+              ],
+              "text": "clean windows"
+            },
+            {
+              "block_index": 53,
+              "bbox": [
+                417.87,
+                424.65,
+                507.43,
+                438.97
+              ],
+              "text": "wipe down door"
+            },
+            {
+              "block_index": 54,
+              "bbox": [
+                417.87,
+                442.65,
+                475.18,
+                456.97
+              ],
+              "text": "clean rugs"
+            },
+            {
+              "block_index": 55,
+              "bbox": [
+                436.47,
+                567.18,
+                550.87,
+                588.22
+              ],
+              "text": "ALL ROOMS"
+            },
+            {
+              "block_index": 56,
+              "bbox": [
+                417.87,
+                601.06,
+                512.69,
+                615.38
+              ],
+              "text": "check light bulbs"
+            },
+            {
+              "block_index": 57,
+              "bbox": [
+                417.87,
+                619.06,
+                479.96,
+                633.38
+              ],
+              "text": "wash floors"
+            },
+            {
+              "block_index": 58,
+              "bbox": [
+                417.87,
+                637.06,
+                535.8,
+                651.38
+              ],
+              "text": "donate unused items"
+            },
+            {
+              "block_index": 59,
+              "bbox": [
+                417.87,
+                655.06,
+                530.59,
+                669.38
+              ],
+              "text": "wash linens + towels"
+            },
+            {
+              "block_index": 60,
+              "bbox": [
+                417.87,
+                673.06,
+                504.96,
+                687.38
+              ],
+              "text": "spot clean walls"
+            },
+            {
+              "block_index": 61,
+              "bbox": [
+                417.87,
+                691.06,
+                494.27,
+                705.38
+              ],
+              "text": "dust furniture"
+            },
+            {
+              "block_index": 62,
+              "bbox": [
+                417.87,
+                709.06,
+                465.85,
+                723.38
+              ],
+              "text": "organize"
+            },
+            {
+              "block_index": 63,
+              "bbox": [
+                228.45,
+                140.09,
+                337.24,
+                154.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 64,
+              "bbox": [
+                228.45,
+                158.09,
+                347.25,
+                172.41
+              ],
+              "text": "clean TV + electronics"
+            },
+            {
+              "block_index": 65,
+              "bbox": [
+                228.45,
+                176.09,
+                358.21,
+                190.41
+              ],
+              "text": "wipe down lights + fans"
+            },
+            {
+              "block_index": 66,
+              "bbox": [
+                228.45,
+                194.09,
+                362.94,
+                208.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 67,
+              "bbox": [
+                228.45,
+                212.09,
+                366.66,
+                226.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 68,
+              "bbox": [
+                228.45,
+                230.09,
+                375.82,
+                244.41
+              ],
+              "text": "vacuum cushions + pillows"
+            },
+            {
+              "block_index": 69,
+              "bbox": [
+                228.45,
+                248.09,
+                310.53,
+                262.41
+              ],
+              "text": "vacuum couch"
+            },
+            {
+              "block_index": 70,
+              "bbox": [
+                228.45,
+                266.09,
+                307.71,
+                280.41
+              ],
+              "text": "wash blankets"
+            },
+            {
+              "block_index": 71,
+              "bbox": [
+                228.45,
+                284.09,
+                347.12,
+                298.41
+              ],
+              "text": "dust behind furniture"
+            },
+            {
+              "block_index": 72,
+              "bbox": [
+                180.95,
+                775.82,
+                430.09,
+                790.99
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 19,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "FALL CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH wash all bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nchange clothes for season\nscrub tile + grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances PLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nsweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\ncheck light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nALL ROOMS clean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                114.48,
+                38.42,
+                497.53,
+                80.49
+              ],
+              "text": "FALL CLEANING LIST"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                44.13,
+                140.09,
+                180.92,
+                154.41
+              ],
+              "text": "scrub + disinfect the sink"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                44.13,
+                158.09,
+                136.67,
+                172.41
+              ],
+              "text": "clean garburator"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                44.13,
+                176.09,
+                170.78,
+                190.41
+              ],
+              "text": "throw out expired food"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                44.13,
+                194.09,
+                167.16,
+                208.41
+              ],
+              "text": "wipe down cupboards"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                44.13,
+                212.09,
+                132.22,
+                226.41
+              ],
+              "text": "clean coffee pot"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                44.13,
+                230.09,
+                139.7,
+                244.41
+              ],
+              "text": "clean refrigerator"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                44.13,
+                248.09,
+                103.66,
+                262.41
+              ],
+              "text": "clean oven"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                44.13,
+                266.09,
+                137.58,
+                280.41
+              ],
+              "text": "clean microwave"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                44.13,
+                284.09,
+                140.91,
+                298.41
+              ],
+              "text": "wipe down chairs"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                81.46,
+                101.65,
+                549.84,
+                122.68
+              ],
+              "text": "KITCHEN\nLIVING ROOM\nBEDROOMS"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                67.89,
+                335.03,
+                531.44,
+                357.12
+              ],
+              "text": "BATHROOM\nLAUNDRY ROOM\nPORCH"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                417.87,
+                140.09,
+                511.93,
+                154.41
+              ],
+              "text": "wash all bedding"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                417.87,
+                158.09,
+                556.08,
+                172.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                417.87,
+                176.09,
+                532.14,
+                190.41
+              ],
+              "text": "flip + rotate mattress"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                417.87,
+                194.09,
+                563.13,
+                208.41
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                417.87,
+                212.09,
+                552.36,
+                226.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                417.87,
+                230.09,
+                526.66,
+                244.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                417.87,
+                248.09,
+                561.44,
+                262.41
+              ],
+              "text": "change clothes for season"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                44.13,
+                370.65,
+                137.63,
+                384.97
+              ],
+              "text": "scrub tile + grout"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                44.13,
+                388.65,
+                182.35,
+                402.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                44.13,
+                406.65,
+                129.42,
+                420.97
+              ],
+              "text": "wash bath rugs"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                44.13,
+                424.65,
+                189.4,
+                438.97
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                44.13,
+                442.65,
+                178.62,
+                456.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                44.13,
+                460.65,
+                152.92,
+                474.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                44.13,
+                478.65,
+                158.62,
+                492.97
+              ],
+              "text": "wash shower curtain"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                44.13,
+                496.65,
+                148.54,
+                510.97
+              ],
+              "text": "clean shower + tub"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                228.45,
+                370.65,
+                372.61,
+                384.97
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                228.45,
+                388.65,
+                337.24,
+                402.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                228.45,
+                406.65,
+                366.66,
+                420.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                228.45,
+                424.65,
+                362.94,
+                438.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                228.45,
+                442.65,
+                301.05,
+                456.97
+              ],
+              "text": "clean washer"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                228.45,
+                460.65,
+                289.9,
+                474.97
+              ],
+              "text": "clean dryer"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                228.45,
+                478.65,
+                319.92,
+                492.97
+              ],
+              "text": "vacuum lint trap"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                228.45,
+                496.65,
+                359.56,
+                510.97
+              ],
+              "text": "clean under appliances"
+            },
+            {
+              "block_index": 36,
+              "bbox": [
+                63.87,
+                567.18,
+                180.73,
+                588.22
+              ],
+              "text": "PLAY ROOM"
+            },
+            {
+              "block_index": 37,
+              "bbox": [
+                46.7,
+                601.06,
+                190.86,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 38,
+              "bbox": [
+                46.7,
+                619.06,
+                155.49,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 39,
+              "bbox": [
+                46.7,
+                637.06,
+                184.92,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 40,
+              "bbox": [
+                46.7,
+                655.06,
+                181.19,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 41,
+              "bbox": [
+                46.7,
+                673.06,
+                111.64,
+                687.38
+              ],
+              "text": "donate toys"
+            },
+            {
+              "block_index": 42,
+              "bbox": [
+                46.7,
+                691.06,
+                145.87,
+                705.38
+              ],
+              "text": "launder cloth toys"
+            },
+            {
+              "block_index": 43,
+              "bbox": [
+                46.7,
+                709.06,
+                121.49,
+                723.38
+              ],
+              "text": "toss out trash"
+            },
+            {
+              "block_index": 44,
+              "bbox": [
+                46.7,
+                727.06,
+                120.25,
+                741.38
+              ],
+              "text": "organize toys"
+            },
+            {
+              "block_index": 45,
+              "bbox": [
+                240.05,
+                567.18,
+                377.79,
+                588.22
+              ],
+              "text": "DINING ROOM"
+            },
+            {
+              "block_index": 46,
+              "bbox": [
+                232.95,
+                601.06,
+                377.11,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 47,
+              "bbox": [
+                232.95,
+                619.06,
+                341.74,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 48,
+              "bbox": [
+                232.95,
+                637.06,
+                371.16,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 49,
+              "bbox": [
+                232.95,
+                655.06,
+                367.44,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 50,
+              "bbox": [
+                417.87,
+                370.65,
+                481.39,
+                384.97
+              ],
+              "text": "sweep floor"
+            },
+            {
+              "block_index": 51,
+              "bbox": [
+                417.87,
+                388.65,
+                474.59,
+                402.97
+              ],
+              "text": "wash floor"
+            },
+            {
+              "block_index": 52,
+              "bbox": [
+                417.87,
+                406.65,
+                499.9,
+                420.97
+              ],
+              "text": "clean windows"
+            },
+            {
+              "block_index": 53,
+              "bbox": [
+                417.87,
+                424.65,
+                507.43,
+                438.97
+              ],
+              "text": "wipe down door"
+            },
+            {
+              "block_index": 54,
+              "bbox": [
+                417.87,
+                442.65,
+                475.18,
+                456.97
+              ],
+              "text": "clean rugs"
+            },
+            {
+              "block_index": 55,
+              "bbox": [
+                417.87,
+                601.06,
+                512.69,
+                615.38
+              ],
+              "text": "check light bulbs"
+            },
+            {
+              "block_index": 56,
+              "bbox": [
+                417.87,
+                619.06,
+                479.96,
+                633.38
+              ],
+              "text": "wash floors"
+            },
+            {
+              "block_index": 57,
+              "bbox": [
+                417.87,
+                637.06,
+                535.8,
+                651.38
+              ],
+              "text": "donate unused items"
+            },
+            {
+              "block_index": 58,
+              "bbox": [
+                417.87,
+                655.06,
+                530.59,
+                669.38
+              ],
+              "text": "wash linens + towels"
+            },
+            {
+              "block_index": 59,
+              "bbox": [
+                417.87,
+                673.06,
+                504.96,
+                687.38
+              ],
+              "text": "spot clean walls"
+            },
+            {
+              "block_index": 60,
+              "bbox": [
+                417.87,
+                691.06,
+                494.27,
+                705.38
+              ],
+              "text": "dust furniture"
+            },
+            {
+              "block_index": 61,
+              "bbox": [
+                417.87,
+                709.06,
+                465.85,
+                723.38
+              ],
+              "text": "organize"
+            },
+            {
+              "block_index": 62,
+              "bbox": [
+                436.47,
+                567.18,
+                550.87,
+                588.22
+              ],
+              "text": "ALL ROOMS"
+            },
+            {
+              "block_index": 63,
+              "bbox": [
+                228.45,
+                140.09,
+                337.24,
+                154.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 64,
+              "bbox": [
+                228.45,
+                158.09,
+                347.25,
+                172.41
+              ],
+              "text": "clean TV + electronics"
+            },
+            {
+              "block_index": 65,
+              "bbox": [
+                228.45,
+                176.09,
+                358.21,
+                190.41
+              ],
+              "text": "wipe down lights + fans"
+            },
+            {
+              "block_index": 66,
+              "bbox": [
+                228.45,
+                194.09,
+                362.94,
+                208.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 67,
+              "bbox": [
+                228.45,
+                212.09,
+                366.66,
+                226.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 68,
+              "bbox": [
+                228.45,
+                230.09,
+                375.82,
+                244.41
+              ],
+              "text": "vacuum cushions + pillows"
+            },
+            {
+              "block_index": 69,
+              "bbox": [
+                228.45,
+                248.09,
+                310.53,
+                262.41
+              ],
+              "text": "vacuum couch"
+            },
+            {
+              "block_index": 70,
+              "bbox": [
+                228.45,
+                266.09,
+                307.71,
+                280.41
+              ],
+              "text": "wash blankets"
+            },
+            {
+              "block_index": 71,
+              "bbox": [
+                228.45,
+                284.09,
+                347.12,
+                298.41
+              ],
+              "text": "dust behind furniture"
+            },
+            {
+              "block_index": 72,
+              "bbox": [
+                181.43,
+                772.79,
+                430.57,
+                787.96
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 20,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "WINTER CLEANING LIST\nscrub + disinfect the sink\nclean garburator\nthrow out expired food\nwipe down cupboards\nclean coffee pot\nclean refrigerator\nclean oven\nclean microwave\nwipe down chairs\nKITCHEN\nLIVING ROOM\nBEDROOMS\nBATHROOM\nLAUNDRY ROOM\nPORCH clean walls + ceiling\nclean TV + electronics\nwipe down lights + fans\ndust + scrub baseboards\nwindows, curtains, blinds\nvacuum cushions + pillows\nvacuum couch\nwash blankets\ndust behind furniture\nwash all bedding\nwindows, curtains, blinds\nflip + rotate mattress\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nchange clothes for season\nscrub tile + grout\nwindows, curtains, blinds\nwash bath rugs\norganize drawers + closets\ndust + scrub baseboards\nclean walls + ceiling\nwash shower curtain\nclean shower + tub\nclean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\nclean washer\nclean dryer\nvacuum lint trap\nclean under appliances PLAY ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub baseboards\ndonate toys\nlaunder cloth toys\ntoss out trash\norganize toys\nDINING ROOM clean cupboards + shelves\nclean walls + ceiling\nwindows, curtains, blinds\ndust + scrub the baseboards\nsweep floor\nwash floor\nclean windows\nwipe down door\nclean rugs\ncheck light bulbs\nwash floors\ndonate unused items\nwash linens + towels\nspot clean walls\ndust furniture\norganize\nALL ROOMS WWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                85.12,
+                38.42,
+                526.88,
+                80.49
+              ],
+              "text": "WINTER CLEANING LIST"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                44.13,
+                140.09,
+                180.92,
+                154.41
+              ],
+              "text": "scrub + disinfect the sink"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                44.13,
+                158.09,
+                136.67,
+                172.41
+              ],
+              "text": "clean garburator"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                44.13,
+                176.09,
+                170.78,
+                190.41
+              ],
+              "text": "throw out expired food"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                44.13,
+                194.09,
+                167.16,
+                208.41
+              ],
+              "text": "wipe down cupboards"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                44.13,
+                212.09,
+                132.22,
+                226.41
+              ],
+              "text": "clean coffee pot"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                44.13,
+                230.09,
+                139.7,
+                244.41
+              ],
+              "text": "clean refrigerator"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                44.13,
+                248.09,
+                103.66,
+                262.41
+              ],
+              "text": "clean oven"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                44.13,
+                266.09,
+                137.58,
+                280.41
+              ],
+              "text": "clean microwave"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                44.13,
+                284.09,
+                140.91,
+                298.41
+              ],
+              "text": "wipe down chairs"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                81.46,
+                101.65,
+                549.84,
+                122.68
+              ],
+              "text": "KITCHEN\nLIVING ROOM\nBEDROOMS"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                67.89,
+                335.03,
+                531.44,
+                357.12
+              ],
+              "text": "BATHROOM\nLAUNDRY ROOM\nPORCH"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                228.45,
+                140.09,
+                337.24,
+                154.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                228.45,
+                158.09,
+                347.25,
+                172.41
+              ],
+              "text": "clean TV + electronics"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                228.45,
+                176.09,
+                358.21,
+                190.41
+              ],
+              "text": "wipe down lights + fans"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                228.45,
+                194.09,
+                362.94,
+                208.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                228.45,
+                212.09,
+                366.66,
+                226.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                228.45,
+                230.09,
+                375.82,
+                244.41
+              ],
+              "text": "vacuum cushions + pillows"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                228.45,
+                248.09,
+                310.53,
+                262.41
+              ],
+              "text": "vacuum couch"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                228.45,
+                266.09,
+                307.71,
+                280.41
+              ],
+              "text": "wash blankets"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                228.45,
+                284.09,
+                347.12,
+                298.41
+              ],
+              "text": "dust behind furniture"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                417.87,
+                140.09,
+                511.93,
+                154.41
+              ],
+              "text": "wash all bedding"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                417.87,
+                158.09,
+                556.08,
+                172.41
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                417.87,
+                176.09,
+                532.14,
+                190.41
+              ],
+              "text": "flip + rotate mattress"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                417.87,
+                194.09,
+                563.13,
+                208.41
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                417.87,
+                212.09,
+                552.36,
+                226.41
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                417.87,
+                230.09,
+                526.66,
+                244.41
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                417.87,
+                248.09,
+                561.44,
+                262.41
+              ],
+              "text": "change clothes for season"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                44.13,
+                370.65,
+                137.63,
+                384.97
+              ],
+              "text": "scrub tile + grout"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                44.13,
+                388.65,
+                182.35,
+                402.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                44.13,
+                406.65,
+                129.42,
+                420.97
+              ],
+              "text": "wash bath rugs"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                44.13,
+                424.65,
+                189.4,
+                438.97
+              ],
+              "text": "organize drawers + closets"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                44.13,
+                442.65,
+                178.62,
+                456.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                44.13,
+                460.65,
+                152.92,
+                474.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                44.13,
+                478.65,
+                158.62,
+                492.97
+              ],
+              "text": "wash shower curtain"
+            },
+            {
+              "block_index": 36,
+              "bbox": [
+                44.13,
+                496.65,
+                148.54,
+                510.97
+              ],
+              "text": "clean shower + tub"
+            },
+            {
+              "block_index": 37,
+              "bbox": [
+                228.45,
+                370.65,
+                372.61,
+                384.97
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 38,
+              "bbox": [
+                228.45,
+                388.65,
+                337.24,
+                402.97
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 39,
+              "bbox": [
+                228.45,
+                406.65,
+                366.66,
+                420.97
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 40,
+              "bbox": [
+                228.45,
+                424.65,
+                362.94,
+                438.97
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 41,
+              "bbox": [
+                228.45,
+                442.65,
+                301.05,
+                456.97
+              ],
+              "text": "clean washer"
+            },
+            {
+              "block_index": 42,
+              "bbox": [
+                228.45,
+                460.65,
+                289.9,
+                474.97
+              ],
+              "text": "clean dryer"
+            },
+            {
+              "block_index": 43,
+              "bbox": [
+                228.45,
+                478.65,
+                319.92,
+                492.97
+              ],
+              "text": "vacuum lint trap"
+            },
+            {
+              "block_index": 44,
+              "bbox": [
+                228.45,
+                496.65,
+                359.56,
+                510.97
+              ],
+              "text": "clean under appliances"
+            },
+            {
+              "block_index": 45,
+              "bbox": [
+                63.87,
+                567.18,
+                180.73,
+                588.22
+              ],
+              "text": "PLAY ROOM"
+            },
+            {
+              "block_index": 46,
+              "bbox": [
+                46.7,
+                601.06,
+                190.86,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 47,
+              "bbox": [
+                46.7,
+                619.06,
+                155.49,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 48,
+              "bbox": [
+                46.7,
+                637.06,
+                184.92,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 49,
+              "bbox": [
+                46.7,
+                655.06,
+                181.19,
+                669.38
+              ],
+              "text": "dust + scrub baseboards"
+            },
+            {
+              "block_index": 50,
+              "bbox": [
+                46.7,
+                673.06,
+                111.64,
+                687.38
+              ],
+              "text": "donate toys"
+            },
+            {
+              "block_index": 51,
+              "bbox": [
+                46.7,
+                691.06,
+                145.87,
+                705.38
+              ],
+              "text": "launder cloth toys"
+            },
+            {
+              "block_index": 52,
+              "bbox": [
+                46.7,
+                709.06,
+                121.49,
+                723.38
+              ],
+              "text": "toss out trash"
+            },
+            {
+              "block_index": 53,
+              "bbox": [
+                46.7,
+                727.06,
+                120.25,
+                741.38
+              ],
+              "text": "organize toys"
+            },
+            {
+              "block_index": 54,
+              "bbox": [
+                237.22,
+                567.18,
+                374.96,
+                588.22
+              ],
+              "text": "DINING ROOM"
+            },
+            {
+              "block_index": 55,
+              "bbox": [
+                232.95,
+                601.06,
+                377.11,
+                615.38
+              ],
+              "text": "clean cupboards + shelves"
+            },
+            {
+              "block_index": 56,
+              "bbox": [
+                232.95,
+                619.06,
+                341.74,
+                633.38
+              ],
+              "text": "clean walls + ceiling"
+            },
+            {
+              "block_index": 57,
+              "bbox": [
+                232.95,
+                637.06,
+                371.16,
+                651.38
+              ],
+              "text": "windows, curtains, blinds"
+            },
+            {
+              "block_index": 58,
+              "bbox": [
+                232.95,
+                655.06,
+                388.86,
+                669.38
+              ],
+              "text": "dust + scrub the baseboards"
+            },
+            {
+              "block_index": 59,
+              "bbox": [
+                417.87,
+                370.65,
+                481.39,
+                384.97
+              ],
+              "text": "sweep floor"
+            },
+            {
+              "block_index": 60,
+              "bbox": [
+                417.87,
+                388.65,
+                474.59,
+                402.97
+              ],
+              "text": "wash floor"
+            },
+            {
+              "block_index": 61,
+              "bbox": [
+                417.87,
+                406.65,
+                499.9,
+                420.97
+              ],
+              "text": "clean windows"
+            },
+            {
+              "block_index": 62,
+              "bbox": [
+                417.87,
+                424.65,
+                507.43,
+                438.97
+              ],
+              "text": "wipe down door"
+            },
+            {
+              "block_index": 63,
+              "bbox": [
+                417.87,
+                442.65,
+                475.18,
+                456.97
+              ],
+              "text": "clean rugs"
+            },
+            {
+              "block_index": 64,
+              "bbox": [
+                417.87,
+                601.06,
+                512.69,
+                615.38
+              ],
+              "text": "check light bulbs"
+            },
+            {
+              "block_index": 65,
+              "bbox": [
+                417.87,
+                619.06,
+                479.96,
+                633.38
+              ],
+              "text": "wash floors"
+            },
+            {
+              "block_index": 66,
+              "bbox": [
+                417.87,
+                637.06,
+                535.8,
+                651.38
+              ],
+              "text": "donate unused items"
+            },
+            {
+              "block_index": 67,
+              "bbox": [
+                417.87,
+                655.06,
+                530.59,
+                669.38
+              ],
+              "text": "wash linens + towels"
+            },
+            {
+              "block_index": 68,
+              "bbox": [
+                417.87,
+                673.06,
+                504.96,
+                687.38
+              ],
+              "text": "spot clean walls"
+            },
+            {
+              "block_index": 69,
+              "bbox": [
+                417.87,
+                691.06,
+                494.27,
+                705.38
+              ],
+              "text": "dust furniture"
+            },
+            {
+              "block_index": 70,
+              "bbox": [
+                417.87,
+                709.06,
+                465.85,
+                723.38
+              ],
+              "text": "organize"
+            },
+            {
+              "block_index": 71,
+              "bbox": [
+                436.47,
+                567.18,
+                550.87,
+                588.22
+              ],
+              "text": "ALL ROOMS"
+            },
+            {
+              "block_index": 72,
+              "bbox": [
+                181.43,
+                775.82,
+                430.57,
+                790.99
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 21,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "30 BAGS IN 30 DAYS\nDECLUTTER CHALLENGE\nDAY 1 KITCHEN CUPBOARD\nDAY 2 KITCHEN PANTRY\nDAY 3 KITCHEN DRAWERS\nDAY 4 UNDER KITCHEN SINK\nDAY 5 JUNK DRAWER\nDAY 6 CLEANING SUPPLIES\nDAY 7 FRIDGE AND FREEZER\nDAY 8 LINEN CLOSET\nDAY 9 BEDROOM CLOSET\nDAY 10 NIGHTSTANDS + DRAWERS\nDAY 11 SHOES\nDAY 12 MASTER BEDROOM\nDAY 13 GUEST BATHROOM\nDAY 14 MEDICINE CABINETS\nDAY 15 MAKEUP\nDAY 16 UNDER BEDS\nDAY 17 TOYS\nDAY 18 DESK DRAWERS\nDAY 19 TV CABINETS\nDAY 20 LAUNDRY ROOM\nDAY 21 PAPERS\nDAY 22 MAGAZINES AND BOOKS\nDAY 23 ARTS AND CRAFTS\nDAY 24 DECOR\nDAY 25 CAR\nDAY 26 GARAGE\nDAY 27 SHED\nDAY 28 BOARD + VIDEO GAMES\nDAY 29 PURSE\nDAY 30 ELECTRONICS\nWWW.APRETTYLIFEINTHESUBURBS.COM",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                76.71,
+                132.31,
+                532.45,
+                206.63
+              ],
+              "text": "30 BAGS IN 30 DAYS\nDECLUTTER CHALLENGE"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                64.18,
+                275.56,
+                253.68,
+                291.34
+              ],
+              "text": "DAY 1 KITCHEN CUPBOARD"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                64.18,
+                301.06,
+                231.54,
+                316.84
+              ],
+              "text": "DAY 2 KITCHEN PANTRY"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                64.18,
+                326.56,
+                246.89,
+                342.34
+              ],
+              "text": "DAY 3 KITCHEN DRAWERS"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                64.18,
+                352.06,
+                264.44,
+                367.84
+              ],
+              "text": "DAY 4 UNDER KITCHEN SINK"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                64.18,
+                377.56,
+                214.1,
+                393.34
+              ],
+              "text": "DAY 5 JUNK DRAWER"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                64.18,
+                403.06,
+                254.3,
+                418.84
+              ],
+              "text": "DAY 6 CLEANING SUPPLIES"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                64.18,
+                428.56,
+                265.32,
+                444.34
+              ],
+              "text": "DAY 7 FRIDGE AND FREEZER"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                64.18,
+                454.06,
+                210.96,
+                469.84
+              ],
+              "text": "DAY 8 LINEN CLOSET"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                64.18,
+                479.56,
+                241.54,
+                495.34
+              ],
+              "text": "DAY 9 BEDROOM CLOSET"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                64.18,
+                505.06,
+                303.63,
+                520.84
+              ],
+              "text": "DAY 10 NIGHTSTANDS + DRAWERS"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                64.18,
+                530.56,
+                159.17,
+                546.34
+              ],
+              "text": "DAY 11 SHOES"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                64.18,
+                556.06,
+                249.5,
+                571.84
+              ],
+              "text": "DAY 12 MASTER BEDROOM"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                64.18,
+                581.56,
+                246.88,
+                597.34
+              ],
+              "text": "DAY 13 GUEST BATHROOM"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                64.18,
+                607.06,
+                260.45,
+                622.84
+              ],
+              "text": "DAY 14 MEDICINE CABINETS"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                64.18,
+                632.56,
+                174.87,
+                648.34
+              ],
+              "text": "DAY 15 MAKEUP"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                356.79,
+                275.56,
+                500.35,
+                291.34
+              ],
+              "text": "DAY 16 UNDER BEDS"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                356.79,
+                301.06,
+                443.14,
+                316.84
+              ],
+              "text": "DAY 17 TOYS"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                356.79,
+                326.56,
+                521.35,
+                342.34
+              ],
+              "text": "DAY 18 DESK DRAWERS"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                356.79,
+                352.06,
+                499.03,
+                367.84
+              ],
+              "text": "DAY 19 TV CABINETS"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                356.79,
+                377.56,
+                526.78,
+                393.34
+              ],
+              "text": "DAY 20 LAUNDRY ROOM"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                356.79,
+                403.06,
+                462.74,
+                418.84
+              ],
+              "text": "DAY 21 PAPERS"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                356.79,
+                428.56,
+                582.54,
+                444.34
+              ],
+              "text": "DAY 22 MAGAZINES AND BOOKS"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                356.79,
+                454.06,
+                538.57,
+                469.84
+              ],
+              "text": "DAY 23 ARTS AND CRAFTS"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                356.79,
+                479.56,
+                460.48,
+                495.34
+              ],
+              "text": "DAY 24 DECOR"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                356.79,
+                505.06,
+                438.2,
+                520.84
+              ],
+              "text": "DAY 25 CAR"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                356.79,
+                530.56,
+                468.23,
+                546.34
+              ],
+              "text": "DAY 26 GARAGE"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                356.79,
+                556.06,
+                448.4,
+                571.84
+              ],
+              "text": "DAY 27 SHED"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                356.79,
+                581.56,
+                576.57,
+                597.34
+              ],
+              "text": "DAY 28 BOARD + VIDEO GAMES"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                356.79,
+                607.06,
+                456.8,
+                622.84
+              ],
+              "text": "DAY 29 PURSE"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                356.79,
+                632.56,
+                508.01,
+                648.34
+              ],
+              "text": "DAY 30 ELECTRONICS"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                181.43,
+                722.8,
+                430.57,
+                737.97
+              ],
+              "text": "WWW.APRETTYLIFEINTHESUBURBS.COM"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/cleaning_planner_printables_kit.json",
+    "title": "pdf_to_json_text_layout_v1",
+    "category": "ADHD Cleaning Decluttering and Organization",
+    "source_type": "reference",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Pick the smallest visible version.",
+      "Use a timer, body double, or transition cue.",
+      "Stop after one tiny step if energy drops."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

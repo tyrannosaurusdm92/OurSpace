@@ -1,0 +1,142 @@
+{
+  "id": "emotion-regulation-worksheet-8",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "worksheet",
+  "item_number": "8",
+  "title": "Problem Solving to Change Emotions",
+  "source_marker": "Emotion Regulation Worksheet 8 (Emotion Regulation Handout 12) (p. 1 of 2)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    313,
+    314
+  ],
+  "source_book_pages": [
+    "289",
+    "290"
+  ],
+  "related_references": [
+    "Emotion Regulation Handout 12"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Change",
+    "Emotions",
+    "Problem",
+    "Solving"
+  ],
+  "pages": [
+    {
+      "pdf_page": 313,
+      "book_page": "289",
+      "text": "289\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 8 (Emotion Regulation Handout 12) (p. 1 of 2)\nProblem Solving to Change Emotions\nDue Date: Name: Week Starting:\nSelect a prompting event that triggers a painful emotion. Select an event that can be changed. Turn\nthe event into a problem to be solved. Follow the steps below and describe what happened.\nEmotion Name: Intensity (0–100) Before: After:\n1. What is the problem? Describe the problem prompting your emotions. What makes the\nsituation a problem? 2. Check the facts to make sure you have the right problem. Describe what\nyou did to be sure of your facts.\n(See Emotion Regulation Worksheet 6 if you need help.) Rewrite the problem if needed to stick with the facts. 3. What is a realistic short-term goal of your problem solving? What has to\nhappen for you to think you have made progress? 4. Brainstorm solutions: List as many solutions and coping strategies as you can think of.\nDon’t evaluate! (continued on next page)"
+    },
+    {
+      "pdf_page": 314,
+      "book_page": "290",
+      "text": "290\nEmotion Regulation Worksheet 8 (p. 2 of 2)\n5. Which two ideas look best (are most likely to meet your goal, are possible to do)?\n1. 2.\nPros\nSolution 1 Solution 2 Cons\nSolution 1 Solution 2 6. Choose the solution to try; list the steps needed; check the steps you do and how well they\nwork.\nStep\nDescribe\n☑ Done\nWhat happened?\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n7. Did you reach your goal? If so, describe. If not, what can you do next? Is there now a new problem to be solved? If yes, describe, and problem-solve\nagain."
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 8 (Emotion Regulation Handout 12) (p. 1 of 2)\nProblem Solving to Change Emotions\nDue Date: Name: Week Starting:\nSelect a prompting event that triggers a painful emotion. Select an event that can be changed. Turn\nthe event into a problem to be solved. Follow the steps below and describe what happened.\nEmotion Name: Intensity (0–100) Before: After:\n1. What is the problem? Describe the problem prompting your emotions. What makes the\nsituation a problem? 2. Check the facts to make sure you have the right problem. Describe what\nyou did to be sure of your facts.\n(See Emotion Regulation Worksheet 6 if you need help.) Rewrite the problem if needed to stick with the facts. 3. What is a realistic short-term goal of your problem solving? What has to\nhappen for you to think you have made progress? 4. Brainstorm solutions: List as many solutions and coping strategies as you can think of.\nDon’t evaluate! (continued on next page) Emotion Regulation Worksheet 8 (p. 2 of 2)\n5. Which two ideas look best (are most likely to meet your goal, are possible to do)?\n1. 2.\nPros\nSolution 1 Solution 2 Cons\nSolution 1 Solution 2 6. Choose the solution to try; list the steps needed; check the steps you do and how well they\nwork.\nStep\nDescribe\n☑ Done\nWhat happened?\n1.\n2.\n3.\n4.\n5.\n6.\n7.\n7. Did you reach your goal? If so, describe. If not, what can you do next? Is there now a new problem to be solved? If yes, describe, and problem-solve\nagain.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/worksheets/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.json",
+  "html_path": "html/worksheets/emotion_regulation/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.json",
+    "title": "Problem Solving to Change Emotions",
+    "category": "DBT Emotion Regulation",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

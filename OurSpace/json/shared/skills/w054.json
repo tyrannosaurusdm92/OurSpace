@@ -1,0 +1,141 @@
+{
+  "id": "distress-tolerance-handout-11b",
+  "module": "Distress Tolerance",
+  "module_category": "Distress Tolerance Skills",
+  "item_type": "handout",
+  "item_number": "11b",
+  "title": "Practicing Radical Acceptance Step by Step \u0003  Observe that you are questioning or fighting reality (“It shouldn’t be this way”). \u0003",
+  "source_marker": "Distress Tolerance Handout 11b (Distress Tolerance Worksheets 9, 9a)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    368
+  ],
+  "source_book_pages": [
+    "344"
+  ],
+  "related_references": [
+    "Distress Tolerance Worksheets 9, 9a"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Acceptance",
+    "Observe",
+    "Practicing",
+    "Radical",
+    "Step",
+    "fighting",
+    "questioning",
+    "reality",
+    "shouldn",
+    "that",
+    "this"
+  ],
+  "pages": [
+    {
+      "pdf_page": 368,
+      "book_page": "344",
+      "text": "344\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nDistress Tolerance Handout 11b (Distress Tolerance Worksheets 9, 9a)\nPracticing Radical Acceptance Step by Step\n\u0003\n Observe that you are questioning or fighting reality (“It shouldn’t be this way”).\n\u0003\n Remind yourself that the unpleasant reality is just as it is and cannot be changed (“This is what\nhappened”).\n\u0003\n Remind yourself that there are causes for the reality. Acknowledge that some sort of history led\nup to this very moment. Consider how people’s lives have been shaped by a series of factors.\nNotice that given these causal factors and how history led up to this moment, this reality had to\noccur just this way (“This is how things happened”).\n\u0003\n Practice accepting with the whole self (mind, body, and spirit). Be creative in finding ways\nto involve your whole self. Use accepting self-talk—but also consider using relaxation;\nmindfulness of your breath; half-smiling and willing hands while thinking about what feels\nunacceptable; prayer; going to a place that helps bring you to acceptance; or imagery.\n\u0003\n Practice opposite action. List all the behaviors you would do if you did accept the facts. Then\nact as if you have already accepted the facts. Engage in the behaviors that you would do if you\nreally had accepted.\n\u0003\n Cope ahead with events that seem unacceptable. Imagine (in your mind’s eye) believing what\nyou don’t want to accept. Rehearse in your mind what you would do if you accepted what\nseems unacceptable.\n\u0003\n Attend to body sensations as you think about what you need to accept.\n\u0003\n Allow disappointment, sadness, or grief to arise within you.\n\u0003\n Acknowledge that life can be worth living even when there is pain.\n\u0003\n Do pros and cons if you find yourself resisting practicing acceptance."
+    }
+  ],
+  "full_text": "Distress Tolerance Handout 11b (Distress Tolerance Worksheets 9, 9a)\nPracticing Radical Acceptance Step by Step\n\u0003\n Observe that you are questioning or fighting reality (“It shouldn’t be this way”).\n\u0003\n Remind yourself that the unpleasant reality is just as it is and cannot be changed (“This is what\nhappened”).\n\u0003\n Remind yourself that there are causes for the reality. Acknowledge that some sort of history led\nup to this very moment. Consider how people’s lives have been shaped by a series of factors.\nNotice that given these causal factors and how history led up to this moment, this reality had to\noccur just this way (“This is how things happened”).\n\u0003\n Practice accepting with the whole self (mind, body, and spirit). Be creative in finding ways\nto involve your whole self. Use accepting self-talk—but also consider using relaxation;\nmindfulness of your breath; half-smiling and willing hands while thinking about what feels\nunacceptable; prayer; going to a place that helps bring you to acceptance; or imagery.\n\u0003\n Practice opposite action. List all the behaviors you would do if you did accept the facts. Then\nact as if you have already accepted the facts. Engage in the behaviors that you would do if you\nreally had accepted.\n\u0003\n Cope ahead with events that seem unacceptable. Imagine (in your mind’s eye) believing what\nyou don’t want to accept. Rehearse in your mind what you would do if you accepted what\nseems unacceptable.\n\u0003\n Attend to body sensations as you think about what you need to accept.\n\u0003\n Allow disappointment, sadness, or grief to arise within you.\n\u0003\n Acknowledge that life can be worth living even when there is pain.\n\u0003\n Do pros and cons if you find yourself resisting practicing acceptance.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/distress_tolerance/handouts/distress_tolerance_handout_11b_practicing_radical_acceptance_step_by_step_observe_that_you_are_questi.json",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_11b_practicing_radical_acceptance_step_by_step_observe_that_you_are_questi.json",
+    "title": "Practicing Radical Acceptance Step by Step \u0003  Observe that you are questioning or fighting reality (“It shouldn’t be this way”). \u0003",
+    "category": "DBT Distress Tolerance",
+    "source_type": "handout",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Take one breath.",
+      "Name one body sensation or one fact.",
+      "Choose one kind next step or stop for rest."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

@@ -1,0 +1,2042 @@
+{
+  "schema": "pdf_to_json_text_layout_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "group_type": "single_pdf_json",
+  "merge_policy": {
+    "threshold": "merge documents when TF-IDF cosine similarity >= 0.60 OR 5-token shingle containment of the smaller document >= 0.60",
+    "why_containment_is_used": "Containment catches shorter PDFs that are substantially embedded inside longer PDFs even when whole-document Jaccard/cosine is lower."
+  },
+  "source_document_count": 1,
+  "source_documents": [
+    {
+      "document_id": "10235_manage_your_life_25_clutter_busting_strategies_for_adults_with_adhd",
+      "source_index": 2,
+      "original_filename": "10235_Manage-Your-Life_25-clutter-busting-strategies-for-adults-with-adhd.pdf",
+      "source_relative_path": "adhd/10235_Manage-Your-Life_25-clutter-busting-strategies-for-adults-with-adhd.pdf",
+      "sha256": "e84d9b037db4d0e7b8301d8226136e3bd07b8e5a1c307a46ca26210383581911",
+      "title": "ADDITUDE",
+      "page_count": 10,
+      "character_count": 22387,
+      "word_count": 3804,
+      "link_count": 27,
+      "image_count": 1,
+      "form_field_count": 0,
+      "annotation_count": 0
+    }
+  ],
+  "within_group_similarity": [],
+  "documents": [
+    {
+      "document_id": "10235_manage_your_life_25_clutter_busting_strategies_for_adults_with_adhd",
+      "source_index": 2,
+      "original_filename": "10235_Manage-Your-Life_25-clutter-busting-strategies-for-adults-with-adhd.pdf",
+      "source_relative_path": "adhd/10235_Manage-Your-Life_25-clutter-busting-strategies-for-adults-with-adhd.pdf",
+      "sha256": "e84d9b037db4d0e7b8301d8226136e3bd07b8e5a1c307a46ca26210383581911",
+      "title": "ADDITUDE",
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Adobe InDesign CS5.5 (7.5)",
+        "producer": "Adobe PDF Library 9.9",
+        "creationDate": "D:20151020163544-04'00'",
+        "modDate": "D:20151023165238-04'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "page_count": 10,
+      "character_count": 22387,
+      "word_count": 3804,
+      "link_count": 27,
+      "image_count": 1,
+      "form_field_count": 0,
+      "annotation_count": 0,
+      "full_text": "ADDITUDE\nStrategies and Support for ADHD & LD Clutter- Busting Strategies for Adults with ADHD\nFrom the ADHD Experts at\n22 TERMS OF USE Copyright © 2015 by New Hope Media. All rights reserved. No part of this report may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, faxing, e-mailing, posting online, or by any information storage and retrieval system, without written permission from the Publisher. All trademarks and brands referred to herein are the prop-\nerty of their respective owners. All references to ADDitude magazine, ADDitudeMag.com, and ADDConnect.com are trademarks of New Hope Media.\nCONTACT INFORMATION New Hope Media – 646-366-0830 108 West 39th St, Suite 805 New York, NY 10018\nLEGAL NOTICES ADDitude does not provide medical advice, diagnosis or treatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or replace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant for questions about the health and education of you, your child, and family members. Do not disregard, avoid or de-\nlay obtaining medical or health related advice from your health-care professional because of something you have read here.\nIf you think you may have a medical emergency, call your doctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned in ADDitude publications or web sites. Reli-\nance on any information provided by ADDitude is solely at your own risk.\nA trusted source of advice and information for families touched by attention-deficit disorder— and a voice of inspiration to help people with ADHD find success at home, at school, and on the job.\nADDitudeMag.com\nADDITUDE\nStrategies and Support for ADHD & LD Founder: Ellen Kingsley (1951-2007) Editor In chief: Susan Caughman\nEditor: Wayne Kalyn\nstaff consulting creative Director: Susan Dazzo\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman\nASSISTANT editors: Devon Frye, Kimberly Horner, Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nDigital Marketing Manager: Kate Harmsworth\nAdvertising: Anne Mazza Circulation: Sue Sidler\nCopy Editor: Gene Jones\ncontributing Editors: Carol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nLarry Silver, M.D. (Health)\nAnn Dolin, M.Ed., and Sandra F. Rief, M.A. (Education) administrative assistant: Madalyn Baldanzi\nscientific advisory board Chairman: Larry Silver, M.D.\nGeorgetown University Medical School\nWashington, DC\nRussell Barkley, Ph.D.\nMedical University of South Carolina Charleston, SC\nCarol Brady, Ph.D.\nBaylor College of Medicine Houston, TX\nThomas E. Brown, Ph.D.\nYale University School of Medicine\nNew Haven, CT\nWilliam Dodson, M.D.\nADHD Treatment Center\nDenver, CO\nEdward M. Hallowell, M.D.\nThe Hallowell Center Sudbury, MA Peter Jaksa, Ph.D.\nADD Centers of America\nChicago, IL\nPeter Jensen, M.D.\nColumbia University College of Physicians and Surgeons\nNew York, NY\nHarold Koplewicz, M.D.\nNew York University Medical School\nNew York, NY\nMichele Novotni, Ph.D.\nWayne Counseling Center\nWayne, PA\nRoberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA Patricia Quinn, M.D.\nNational Center for Gender Issues and AD/HD\nWashington, DC ADDITUDE\nStrategies and Support for ADHD & LD 3\nfrom the editors of\nStandard advice for tackling clutter — “make your bed every day” or “match all your socks when the laundry is done” — doesn’t work for people with ADHD. Why? In most cases, you a tidy bedroom and folded clothes are good things, but you find it too overwhelming to focus on staying organized. And once clutter builds up, it can take on a life of its own, leaving you feeling helpless with no idea where to start.\nWhat can you do? Follow these clutter-busting strategies, of course! The key to ADHD-friendly organization is efficiency — get it done quickly and make it as simple as possible. To do this, professional organizer Susan Pinksy advises adults with ADHD to follow these four pillars of organization: Routine: Don’t reinvent the wheel every day. Setting up a clutter-cleaning schedule (and sticking to it!) is key to keeping your home organized for the long haul. Once you build a habit, clutter is easier to stay on top of. Structure: Establishing rules and easy-to-follow systems (car keys always go on the hook by the door, for example) helps control impulsive behav-\nior and keeps clutter corralled in certain areas as much as possible.\nBoundaries: Guard your space. Neatniks shouldn’t have to share space with the perpetually disorganized — and vice versa — and kitchen stuff shouldn’t overflow into the living room. If you find you’re constantly breaking your set boundaries, get rid of the excess.\nSupport: Don’t go it alone! When in doubt about how to move forward, reach out for help from someone who gets it.\nRead on for more specific strategies for managing clutter, geared toward an ADHD mind.\nCheck out “33 Chaos-\nBusting Strategies for Anyone with ADHD” at http://additu.de/clean-\nchaos\nClutter- Busting Strategies for Adults with ADHD\n22 ADDITUDE\nStrategies and Support for ADHD & LD 4\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD Routine 1. \u0007Do One Chore Per Day\nThe best way to make progress on clutter is not in one giant burst, but by scheduling 15 minutes of work each day. For a few minutes after dinner or before bed, eliminate clutter one square foot at a time. Pick one new mini-project each day. Weed out the clothes your kids have outgrown. Tame the pantry shelves. File your bills. Focusing on one unde-\nsirable task at a time will keep you from feeling overwhelmed. Plus, it lets you check things off your to-do list, which always feels good. 2. \u0007Finish Something, Anything, Early in the Day Starting your day by completing a clutter-busting chore — a small task or something larger that you worked on yesterday — gives you a sense of clo-\nsure, making the rest of the day meaningful. No matter how the day goes, you can say you finished something, which gives you a sense of satisfaction that will encourage you to keep tackling clutter the next day. 3. \u0007Put It on the Calendar\nIt’s not enough to write down a cleanup task on a to-do list. You have to enter it into your calendar. Assigning each task to a specific day increases your chances of getting them done. With only a vague to-do list, you have a 40 to 50 percent change of doing each task. Scheduling tasks increases your chanc-\nes of completing them by 70 percent or so. 4. \u0007Play It Loose with Deadlines\nSchedule more time than you think you’ll need to clean up clutter. Rather than trying to precisely estimate how long each task will take, just say, “Screw it. I’m going to need 30 percent more time for everything I plan, no matter what.” Just pick a number: 20 percent more, 50 percent more, and allot that. The worst that could happen is that you finish it early — and have some free time in your cleaner house! 5. \u0007Switch Up Your Cleaning Routine Every Three Months\nPeople with ADHD get bored with their routines more quickly than those without the condition. The higher boredom factor keeps them from tackling things they once completed with ease. A cleaning routine — whether it’s sort-\ning mail or doing the dishes — should be kept fresh, by changing it up every three months. This doesn’t mean a complete overhaul, just a tweak.\nFind out which organization products ADHD adults swear by, at http://additu.de/2q ADDITUDE\nStrategies and Support for ADHD & LD 5\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD 6. \u0007Follow the Two-Minute Rule\nYou hate wiping down the counter. Or sorting all your bills. Or filing last year’s taxes. But putting off these little tasks is often more emotionally exhausting and stressful — and results in much more clutter — than just biting the bullet and getting them done. Do yourself a favor and follow this rule of thumb: If you can complete the task in less than two minutes, do it now. You’ll free up mental space and confidence in yourself.\nStructure\n7. \u0007Create a Chore File Staying on top of chores is a major challenge for ADHD adults. Creating a weekly plan can keep you on track. Over the weekend, write down the chores that need to get done in the upcoming week on index cards. Arrange them in order of priority, and keep them in a single location. If you live with a spouse or partner, talk with each other and decide which of you will do what. 8. “Think Once”\nAlso known as “Think Once Really Hard and Then Don’t Think About It Again.” Take on a knotty, persistent problem — dealing with incoming mail, say — from all angles. You may spend a lot of time working through all the challenges and solutions to each problem, but, eventually, you can devise a workable system that will allow you to not think about the mail ever again. 9. Get a Grip\nIf a phone call or a request from your spouse distracts you from the clean-\ning task you’re working on, hold on to a physical artifact to remind you what you were doing, An unopened envelope, for instance, will remind you that you were sorting mail before the interruption, and will focus your at-\ntention more quickly.\n10. Simplify “Finishing Steps”\nFor those with ADHD, “finishing steps” are often the hardest. Everyone loves to pick out paint colors, but when it comes to cleaning the brushes after the room has been painted — the “finishing step” — we get bored and leave them in the corner (for weeks or months). To help with organization, make the “finishing steps” as easy as possible, so you can sprint through and get them over with. Throwing out garbage Looking for a coach to help you learn organizational skills? Start at directory.\nadditudemag.com ADDITUDE\nStrategies and Support for ADHD & LD 6\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD is another example of a finishing step. If your garbage is locked away under the sink, you may lose steam and just leave your garbage on the counter. If the garbage can is out in the open and visible, all you have to do is sweep the garbage from the counter into the can. Reduce “finishing steps” and stream-\nline systems so that every cleaning task is a short and workable sprint.\nBoundaries\n11. Stop the Clutter at the Source > Set a clutter rule: If you bring in two pairs of new shoes, you have to get rid of one old pair. The same rule applies to all household items.\n> If you’re a thrift store person or love yard sales, keep yourself from bringing clutter home by keeping your hands in your pockets. There is a connection between touching and buying an item. > If clutter tends to cover tables and dressers, make those surfaces less inviting. After you clean up your dining room table, set the table. It not only looks nice, but also eliminates the dining room table as a space waiting to be cluttered. Do the same thing with your bedside table — put photos or mementos on the table to “fill” the surface.\n12. Designate Junk Drawers\nFinding homes for items like unlabeled CDs and orphan screws can slow down de-cluttering efforts. To prevent this, designate at least one junk drawer in every room. If you don’t know where an item should go, put it in that drawer. Once the drawer is full, sort through it. Use what you can, and discard the rest. Then start the process anew.\n13. Manage the Mail\n>To cut off junk mail at its source, log on to catalogchoice.org and have them alert marketers to stop sending you stuff. > Have only one place for the day’s mail to land — maybe the dining room table. Yes, it piles up quickly, but at least you know where it will be when you decide to tackle it. > Don’t open junk mail. Each envelope can contain four to seven pieces of paper. Junk mail goes, unopened, right into the recycling bin.\nIs procrastination a problem for you? Download “Stop Procrastinating! 18 ADHD-Friendly Ways to Get Things Done” at http://additu.de/\nprocrastinate ADDITUDE\nStrategies and Support for ADHD & LD 7\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD 14. Keep Related Items Together\nKeep items that are used together near each other. That way, you don’t have to keep running around to get the things you need to do a job. (And are less likely to go out and purchase duplicates.) For example, keep wrapping paper, tape, scissors, and ribbons in the same closet so you have everything you need to wrap presents.\nSupport\n15. Enlist Help\nStop trying to be an ordinary person who keeps it together in the same way that non-ADHD people do. Help might mean another set of hands, someone to keep your morale up, or someone to function as a body double. A body double is somebody who is physically present as you do a task but doesn’t do the task with you. Your body double anchors you to the chore at hand.\n16. Auto-Pay Bills and Set Up Paperless Billing When Possible You’d be surprised (or maybe not) at how many people with ADHD have their power turned off because they’ve forgotten to pay the bill! In many cas-\nes, this is because the bill got lost in a mountain of paper clutter, and the due date slipped by unnoticed. Avoid late fees — plus the extra clutter of unpaid bill notices — by setting up your online banking account to send your bill to your email account and automatically pay your bills each month. If you’re intimidated by the thought, ask a technologically-savvy friend to help you for 30 minutes while you walk through the process of setting up auto-pay and paperless bills. It’s a small time investment that will pay off big, each and every month. 17. Go Professional If your clutter is completely overwhelming you, there is no shame in hiring a professional organizer. Don’t look at it as a long-term commitment — in many cases, just one session is all that’s needed to help you sort through the junk and learn good habits to stop clutter from building up again. the right mindset\n18. Allow Yourself to Be Wacky\nDon’t stress yourself out with what other people are doing — figure out Could your clutter problem be indicative of hoarding, a serious anxiety-related condition? Take a quick self-test at http://\nadditu.de/ns ADDITUDE\nStrategies and Support for ADHD & LD 8\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD what works for you. In some cases, this may be a little wacky to the outside observer. One woman said her neurotypical friends were exasperated at her refusal to file things alphabetically, saying it confused them. But for her, it made more sense to file things by general category. It looked strange to an outsider, but her desk was clear — and for her, that’s all that mattered.\n19. Don’t Worry About “Pretty” Remember, not everything is going to look pristine all the time. If it’s less daunting for you to just slip your shoes into your closet at the end of each day — without lining them up perfectly — don’t beat yourself up. Is it pretty? No. Is it efficient? Yes. Even if it’s not perfect, your home will look better a little organized than not at all. 20. Keep Calm and Carry On\nAs you start tackling clutter, do the first three things that worry you the most, to get them off your plate. The internal distraction of worry plays more on ADHDers than on other people and prevents them from getting things done. If you clean any small part of the larger mess that is stressing you out, chances are you’ll break the anxiety and move forward.\n21. Leave Room For Improvement\nAfter years of setbacks and an eternally-messy house, it sometimes feels easier to lower your expectations — or just quit trying altogether. But instead of saying, “I can’t,” we challenge you to instead tell yourself: “I can’t, yet.”\nFor example, “I can’t keep my living room clean” becomes “I can’t keep my living room clean, yet.” Saying this to yourself is a powerful reminder that you are on the path to improvement. Soon, you’ll start to believe that the best version of yourself is under development right now — and will come out with hard work and determination.\n22. Just Do It Don’t get overwhelmed about where or when to start a de-cluttering task. It doesn’t matter where you start; begin at any spot in any room. After you start, continue in some kind of logical order. If you start on the left side of the room, keep going to the left. If you start on the top shelf of a cabinet, work your way down. There is no ideal time to tackle clutter — even if you only manage a few minutes, you’ll be better off. For expert Q&As about organizational skills, time management, and more, check out http://\nadditu.de/org-qs 9\nADDitude Special Reports Available Now\nwww.adhdreports.com\n9 Conditions Often Diagnosed with ADHD\nDepression. Bipolar Disorder. Anxiety. OCD. And five more conditions that often show up alongside attention deficit. About 80 percent of individuals with ADHD are diagnosed with at least one other psychiatric condition at some time in their lives. This in-depth spe-\ncial report looks at the nine most common, outlining symptoms, treatment strategies, and differentiating features of each. Plus, strategies for living well with any mental health condition.\n>> Learn more about this special report: http://additu.de/related\nMindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green time, and mindful meditation.\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises—including some designed especially for kids—as well as the science behind each natural therapy.\n>> Learn more about this special report: http://additu.de/mindfulness\nADHD 101\nA complete overview of ADHD, outlining every step from diagnosis to treatment—all the way to living successfully with attention deficit. From the moment you suspect ADHD in yourself or your child, you have hundreds of questions. Which doctors can evaluate symptoms? What medi-\ncation side effects should you be prepared for? Can diet help? This compre-\nhensive eBook has over 100 pages of expert advice, personal stories, and more to help you become an ADHD expert. >> Learn More About This Special Report: http://additu.de/adhd-101 To purchase these or other ADDitude Special Reports, go to www.adhdreports.com\nMore ADDitude Downloadable Booklets\n73 ADHD-Friendly Ways to Organize Your Life Now\nAchieve less clutter, fewer hassles, and greater tranquility in your life.\nADHD Time Assessment Chart\nDo you spend your time wisely? Use this tool to find out.\nBoost Your Productivity At Work\nADHD can make any job more challenging. Keep up with this expert advice.\nYou Know You Have ADHD When…\nReal ADHDers share personal sto-\nries highlighting the lighter side of living with attention deficit.\nSmart Comebacks\nWitty responses to ADHD doubters.\nIt’s Not ADHD: 3 Common Diagnosis Mistakes\nDoctors are sometimes too quick to diagnose ADHD. Read up on common misdiagnoses.\nFind these and many more free ADHD resources online at:\nhttp://additu.de/ freedownloads 10\nFREE ADHD Webinar Replays from ADDitude:\n7 Fixes for Self-Defeating ADHD Behaviors\n>> http://additu.de/brown\nAre your bad habits setting you up for failure? Find out what behaviors to watch for, and seven simple changes that can help you reach your full poten-\ntial and put you on the path to success. Entrepreneur and ADHD coach Alan Brown teaches “fix-it” strategies that he used to cope with his own ADHD.\nOrganizing Solutions for People with ADHD\n>> http://additu.de/org-web Feeling lost in the mess of “stuff?” Susan Pinsky, a professional organizer who specializes in ADHD, discusses simple steps for reducing clutter, eliminat-\ning excess from your life, and why people with ADHD should aim for “good enough” instead of “perfect.” These simple, straightforward solutions will help you calm the chaos and conquer the clutter — for good.\nHealing the ADHD Brain: Interventions and Strategies that Work\n>> http://additu.de/healing\nThere’s no one-size-fits-all approach for treating ADHD. Here, Daniel G. Amen, M.D., explains treatment options ranging from medication and sup-\nplements to diet and exercise.\nSurvival Strategies for Moms with ADHD\n>>http://additu.de/adhd-moms Mothers with ADHD, especially those parenting ADHD children, often put the needs of others before themselves. Despite their good intentions, when moms leave their own ADHD untreated, the whole family can suffer. Ellen Littman, Ph.D., outlines how to let go of society’s expectations of being “perfect” and focus on your own accomplishments. After all, being a mom is a tough job!\nSmart Money Strategies for ADHD Adults\n>>http://additu.de/ta\nYou don’t need to be an investment banker to make financially sound deci-\nsions. In this audio presentation hosted by Stephanie Sarkis, Ph.D., you’ll learn how executive functions affect your ability to manage money, how to avoid impulsive purchases, and more. Save, spend, budget, and plan like the pros!\nFREE ADHD Newsletters from ADDitude\nSign up to receive criti-\ncal news and information about ADHD diagnosis and treatment, plus strategies for school, parenting, and living better with ADHD: http://additu.de/email\nAdult ADHD and LD Expert advice on managing your household, time, money, career, and relationships\nParenting ADHD and LD Children\nStrategies and support for par-\nents on behavior and discipline, time management, disorganiza-\ntion, and making friends.\nADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework, work with teachers, find the right schools, and much more.\nTreating ADHD\nTreatment options for attention deficit including medications, food, supplements, brain training, mindfulness and other alternative therapies.",
+      "pages": [
+        {
+          "page_number": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD Clutter- Busting Strategies for Adults with ADHD\nFrom the ADHD Experts at\n22",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                211.89,
+                690.85,
+                403.77,
+                742.24
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                143.6,
+                91.55,
+                478.94,
+                387.17
+              ],
+              "text": "Clutter-\nBusting\nStrategies for\nAdults with\nADHD"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                181.68,
+                663.02,
+                433.56,
+                686.88
+              ],
+              "text": "From the ADHD Experts at"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                121.68,
+                65.66,
+                274.14,
+                241.84
+              ],
+              "text": "22"
+            }
+          ],
+          "images": [
+            {
+              "block_index": 5,
+              "bbox": [
+                126.25,
+                395.4,
+                488.4,
+                637.47
+              ],
+              "width_px": 1998,
+              "height_px": 1471,
+              "extension": "jpeg",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            }
+          ],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "TERMS OF USE Copyright © 2015 by New Hope Media. All rights reserved. No part of this report may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, faxing, e-mailing, posting online, or by any information storage and retrieval system, without written permission from the Publisher. All trademarks and brands referred to herein are the prop-\nerty of their respective owners. All references to ADDitude magazine, ADDitudeMag.com, and ADDConnect.com are trademarks of New Hope Media.\nCONTACT INFORMATION New Hope Media – 646-366-0830 108 West 39th St, Suite 805 New York, NY 10018\nLEGAL NOTICES ADDitude does not provide medical advice, diagnosis or treatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or replace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant for questions about the health and education of you, your child, and family members. Do not disregard, avoid or de-\nlay obtaining medical or health related advice from your health-care professional because of something you have read here.\nIf you think you may have a medical emergency, call your doctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products, procedures, opinions, or other information that may be mentioned in ADDitude publications or web sites. Reli-\nance on any information provided by ADDitude is solely at your own risk.\nA trusted source of advice and information for families touched by attention-deficit disorder— and a voice of inspiration to help people with ADHD find success at home, at school, and on the job.\nADDitudeMag.com\nADDITUDE\nStrategies and Support for ADHD & LD Founder: Ellen Kingsley (1951-2007) Editor In chief: Susan Caughman\nEditor: Wayne Kalyn\nstaff consulting creative Director: Susan Dazzo\nconsulting art Director: Ron Anteroinen\nManaging Editor: Eve Gilman\nASSISTANT editors: Devon Frye, Kimberly Horner, Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams\nDigital Marketing Director: Anni Rodgers\nDigital Marketing Manager: Kate Harmsworth\nAdvertising: Anne Mazza Circulation: Sue Sidler\nCopy Editor: Gene Jones\ncontributing Editors: Carol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nLarry Silver, M.D. (Health)\nAnn Dolin, M.Ed., and Sandra F. Rief, M.A. (Education) administrative assistant: Madalyn Baldanzi\nscientific advisory board Chairman: Larry Silver, M.D.\nGeorgetown University Medical School\nWashington, DC\nRussell Barkley, Ph.D.\nMedical University of South Carolina Charleston, SC\nCarol Brady, Ph.D.\nBaylor College of Medicine Houston, TX\nThomas E. Brown, Ph.D.\nYale University School of Medicine\nNew Haven, CT\nWilliam Dodson, M.D.\nADHD Treatment Center\nDenver, CO\nEdward M. Hallowell, M.D.\nThe Hallowell Center Sudbury, MA Peter Jaksa, Ph.D.\nADD Centers of America\nChicago, IL\nPeter Jensen, M.D.\nColumbia University College of Physicians and Surgeons\nNew York, NY\nHarold Koplewicz, M.D.\nNew York University Medical School\nNew York, NY\nMichele Novotni, Ph.D.\nWayne Counseling Center\nWayne, PA\nRoberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA Patricia Quinn, M.D.\nNational Center for Gender Issues and AD/HD\nWashington, DC",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                56.88,
+                166.17,
+                132.99,
+                178.53
+              ],
+              "text": "TERMS OF USE"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                56.88,
+                182.22,
+                286.69,
+                253.57
+              ],
+              "text": "Copyright © 2015 by New Hope Media. All rights reserved.\nNo part of this report may be reproduced or transmitted\nin any form or by any means, electronic or mechanical,\nincluding photocopying, recording, faxing, e-mailing,\nposting online, or by any information storage and retrieval\nsystem, without written permission from the Publisher."
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                56.88,
+                265.02,
+                286.66,
+                312.37
+              ],
+              "text": "All trademarks and brands referred to herein are the prop-\nerty of their respective owners. All references to ADDitude\nmagazine, ADDitudeMag.com, and ADDConnect.com\nare trademarks of New Hope Media."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                56.88,
+                324.81,
+                183.57,
+                337.17
+              ],
+              "text": "CONTACT INFORMATION"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                56.88,
+                340.86,
+                191.55,
+                376.21
+              ],
+              "text": "New Hope Media – 646-366-0830\n108 West 39th St, Suite 805\nNew York, NY 10018"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                56.88,
+                385.05,
+                138.55,
+                397.41
+              ],
+              "text": "LEGAL NOTICES"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                56.88,
+                401.1,
+                286.65,
+                532.45
+              ],
+              "text": "ADDitude does not provide medical advice, diagnosis or\ntreatment. The information offered here is for informa-\ntional purposes only and is not intended to substitute or\nreplace professional medical advice, diagnosis, or treat-\nment. Always consult with your physician or other quali-\nfied health-care professional or educational consultant\nfor questions about the health and education of you, your\nchild, and family members. Do not disregard, avoid or de-\nlay obtaining medical or health related advice from your\nhealth-care professional because of something you have\nread here."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                56.88,
+                547.5,
+                286.69,
+                630.85
+              ],
+              "text": "If you think you may have a medical emergency, call your\ndoctor or 911 immediately. ADDitude does not recom-\nmend or endorse any specific tests, physicians, products,\nprocedures, opinions, or other information that may be\nmentioned in ADDitude publications or web sites. Reli-\nance on any information provided by ADDitude is solely at\nyour own risk."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                122.07,
+                98.17,
+                488.19,
+                119.64
+              ],
+              "text": "A trusted source of advice and information for families touched by attention-deficit disorder—\nand a voice of inspiration to help people with ADHD find success at home, at school, and on the job."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                174.05,
+                34.42,
+                443.07,
+                145.38
+              ],
+              "text": "ADDitudeMag.com\nADDITUDE\nStrategies and Support for ADHD & LD"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                361.73,
+                167.75,
+                522.21,
+                179.97
+              ],
+              "text": "Founder: Ellen Kingsley (1951-2007)"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                365.85,
+                185.22,
+                515.18,
+                197.44
+              ],
+              "text": "Editor In chief: Susan Caughman"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                394.54,
+                195.99,
+                486.49,
+                208.21
+              ],
+              "text": "Editor: Wayne Kalyn"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                352.79,
+                218.85,
+                528.45,
+                242.62
+              ],
+              "text": "staff\nconsulting creative Director: Susan Dazzo"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                357.38,
+                244.04,
+                523.85,
+                254.74
+              ],
+              "text": "consulting art Director: Ron Anteroinen"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                382.35,
+                256.16,
+                498.88,
+                266.85
+              ],
+              "text": "Managing Editor: Eve Gilman"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                317.35,
+                268.27,
+                563.88,
+                291.09
+              ],
+              "text": "ASSISTANT editors: Devon Frye, Kimberly Horner, Janice Rodden\nSocial Media editors: Rebecca Brown Wright, Penny Williams"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                347.71,
+                292.51,
+                533.52,
+                315.32
+              ],
+              "text": "Digital Marketing Director: Anni Rodgers\nDigital Marketing Manager: Kate Harmsworth"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                391.41,
+                316.74,
+                491.13,
+                327.44
+              ],
+              "text": "Advertising: Anne Mazza"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                392.26,
+                328.86,
+                488.96,
+                351.67
+              ],
+              "text": "Circulation: Sue Sidler\nCopy Editor: Gene Jones"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                341.71,
+                354.37,
+                540.99,
+                428.42
+              ],
+              "text": "contributing Editors:\nCarol Brady, Ph.D., and John Taylor, Ph.D. (Children)\nEdward M. Hallowell, M.D. (Life)\nSandy Maynard, M.S. (Coaching)\nMichele Novotni, Ph.D. (Adults)\nLarry Silver, M.D. (Health)\nAnn Dolin, M.Ed., and Sandra F. Rief, M.A. (Education)"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                353.2,
+                429.83,
+                528.03,
+                440.53
+              ],
+              "text": "administrative assistant: Madalyn Baldanzi"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                365.46,
+                464.54,
+                517.94,
+                476.9
+              ],
+              "text": "scientific advisory board"
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                334.71,
+                484.7,
+                425.04,
+                538.36
+              ],
+              "text": "Chairman:\nLarry Silver, M.D.\nGeorgetown University\nMedical School\nWashington, DC"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                333.86,
+                544.66,
+                422.98,
+                587.55
+              ],
+              "text": "Russell Barkley, Ph.D.\nMedical University of\nSouth Carolina\nCharleston, SC"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                328.59,
+                593.84,
+                429.69,
+                625.96
+              ],
+              "text": "Carol Brady, Ph.D.\nBaylor College of Medicine\nHouston, TX"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                329.13,
+                632.26,
+                427.69,
+                675.14
+              ],
+              "text": "Thomas E. Brown, Ph.D.\nYale University\nSchool of Medicine\nNew Haven, CT"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                331.97,
+                681.44,
+                424.82,
+                713.56
+              ],
+              "text": "William Dodson, M.D.\nADHD Treatment Center\nDenver, CO"
+            },
+            {
+              "block_index": 29,
+              "bbox": [
+                324.38,
+                719.85,
+                432.42,
+                751.97
+              ],
+              "text": "Edward M. Hallowell, M.D.\nThe Hallowell Center\nSudbury, MA"
+            },
+            {
+              "block_index": 30,
+              "bbox": [
+                465.5,
+                484.72,
+                539.67,
+                527.61
+              ],
+              "text": "Peter Jaksa, Ph.D.\nADD Centers of\nAmerica\nChicago, IL"
+            },
+            {
+              "block_index": 31,
+              "bbox": [
+                449.62,
+                533.91,
+                557.0,
+                576.8
+              ],
+              "text": "Peter Jensen, M.D.\nColumbia University College\nof Physicians and Surgeons\nNew York, NY"
+            },
+            {
+              "block_index": 32,
+              "bbox": [
+                454.64,
+                583.09,
+                550.54,
+                625.98
+              ],
+              "text": "Harold Koplewicz, M.D.\nNew York University\nMedical School\nNew York, NY"
+            },
+            {
+              "block_index": 33,
+              "bbox": [
+                453.98,
+                632.27,
+                551.21,
+                664.39
+              ],
+              "text": "Michele Novotni, Ph.D.\nWayne Counseling Center\nWayne, PA"
+            },
+            {
+              "block_index": 34,
+              "bbox": [
+                452.62,
+                670.69,
+                552.57,
+                702.8
+              ],
+              "text": "Roberto Olivardia, Ph.D.\nHarvard Medical School\nBoston, MA"
+            },
+            {
+              "block_index": 35,
+              "bbox": [
+                451.28,
+                709.1,
+                555.37,
+                751.99
+              ],
+              "text": "Patricia Quinn, M.D.\nNational Center for Gender\nIssues and AD/HD\nWashington, DC"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://www.ADDitudeMag.com",
+              "bbox": [
+                100.43,
+                289.02,
+                182.92,
+                300.59
+              ]
+            },
+            {
+              "uri": "http://www.ADDConnect.com",
+              "bbox": [
+                207.43,
+                289.02,
+                285.12,
+                300.59
+              ]
+            },
+            {
+              "uri": "http://www.ADDitudeMag.com",
+              "bbox": [
+                251.24,
+                129.98,
+                363.31,
+                145.38
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD 3\nfrom the editors of\nStandard advice for tackling clutter — “make your bed every day” or “match all your socks when the laundry is done” — doesn’t work for people with ADHD. Why? In most cases, you a tidy bedroom and folded clothes are good things, but you find it too overwhelming to focus on staying organized. And once clutter builds up, it can take on a life of its own, leaving you feeling helpless with no idea where to start.\nWhat can you do? Follow these clutter-busting strategies, of course! The key to ADHD-friendly organization is efficiency — get it done quickly and make it as simple as possible. To do this, professional organizer Susan Pinksy advises adults with ADHD to follow these four pillars of organization: Routine: Don’t reinvent the wheel every day. Setting up a clutter-cleaning schedule (and sticking to it!) is key to keeping your home organized for the long haul. Once you build a habit, clutter is easier to stay on top of. Structure: Establishing rules and easy-to-follow systems (car keys always go on the hook by the door, for example) helps control impulsive behav-\nior and keeps clutter corralled in certain areas as much as possible.\nBoundaries: Guard your space. Neatniks shouldn’t have to share space with the perpetually disorganized — and vice versa — and kitchen stuff shouldn’t overflow into the living room. If you find you’re constantly breaking your set boundaries, get rid of the excess.\nSupport: Don’t go it alone! When in doubt about how to move forward, reach out for help from someone who gets it.\nRead on for more specific strategies for managing clutter, geared toward an ADHD mind.\nCheck out “33 Chaos-\nBusting Strategies for Anyone with ADHD” at http://additu.de/clean-\nchaos\nClutter- Busting Strategies for Adults with ADHD\n22",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                727.38,
+                535.6,
+                761.0
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD\n3"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                36.0,
+                304.94,
+                419.75,
+                381.2
+              ],
+              "text": "Standard advice for tackling clutter — “make your bed every day” or “match all your\nsocks when the laundry is done” — doesn’t work for people with ADHD. Why? In\nmost cases, you a tidy bedroom and folded clothes are good things, but you find it\ntoo overwhelming to focus on staying organized. And once clutter builds up, it can\ntake on a life of its own, leaving you feeling helpless with no idea where to start."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                36.0,
+                394.34,
+                419.74,
+                455.6
+              ],
+              "text": "What can you do? Follow these clutter-busting strategies, of course! The key to\nADHD-friendly organization is efficiency — get it done quickly and make it as\nsimple as possible. To do this, professional organizer Susan Pinksy advises adults\nwith ADHD to follow these four pillars of organization:"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                59.4,
+                475.2,
+                392.88,
+                519.82
+              ],
+              "text": "Routine: Don’t reinvent the wheel every day. Setting up a clutter-cleaning\nschedule (and sticking to it!) is key to keeping your home organized for\nthe long haul. Once you build a habit, clutter is easier to stay on top of."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                59.4,
+                524.41,
+                391.2,
+                569.03
+              ],
+              "text": "Structure: Establishing rules and easy-to-follow systems (car keys always\ngo on the hook by the door, for example) helps control impulsive behav-\nior and keeps clutter corralled in certain areas as much as possible."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                59.4,
+                573.62,
+                385.08,
+                632.24
+              ],
+              "text": "Boundaries: Guard your space. Neatniks shouldn’t have to share space\nwith the perpetually disorganized — and vice versa — and kitchen stuff\nshouldn’t overflow into the living room. If you find you’re constantly\nbreaking your set boundaries, get rid of the excess."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                59.4,
+                636.84,
+                386.82,
+                668.45
+              ],
+              "text": "Support: Don’t go it alone! When in doubt about how to move forward,\nreach out for help from someone who gets it."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                36.0,
+                688.79,
+                415.32,
+                705.05
+              ],
+              "text": "Read on for more specific strategies for managing clutter, geared toward an ADHD mind."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                433.0,
+                381.9,
+                575.21,
+                451.94
+              ],
+              "text": "Check out “33 Chaos-\nBusting Strategies for\nAnyone with ADHD” at\nhttp://additu.de/clean-\nchaos"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                36.0,
+                4.82,
+                417.44,
+                297.59
+              ],
+              "text": "Clutter-\nBusting\nStrategies for\nAdults with\nADHD\n22"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additu.de/clean-chaos",
+              "bbox": [
+                431.0,
+                383.92,
+                578.0,
+                517.52
+              ]
+            },
+            {
+              "uri": "http://additu.de/clean-chaos",
+              "bbox": [
+                433.0,
+                422.9,
+                572.58,
+                438.92
+              ]
+            },
+            {
+              "uri": "http://additu.de/clean-chaos",
+              "bbox": [
+                433.0,
+                435.9,
+                469.11,
+                451.92
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD 4\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD Routine 1. \u0007Do One Chore Per Day\nThe best way to make progress on clutter is not in one giant burst, but by scheduling 15 minutes of work each day. For a few minutes after dinner or before bed, eliminate clutter one square foot at a time. Pick one new mini-project each day. Weed out the clothes your kids have outgrown. Tame the pantry shelves. File your bills. Focusing on one unde-\nsirable task at a time will keep you from feeling overwhelmed. Plus, it lets you check things off your to-do list, which always feels good. 2. \u0007Finish Something, Anything, Early in the Day Starting your day by completing a clutter-busting chore — a small task or something larger that you worked on yesterday — gives you a sense of clo-\nsure, making the rest of the day meaningful. No matter how the day goes, you can say you finished something, which gives you a sense of satisfaction that will encourage you to keep tackling clutter the next day. 3. \u0007Put It on the Calendar\nIt’s not enough to write down a cleanup task on a to-do list. You have to enter it into your calendar. Assigning each task to a specific day increases your chances of getting them done. With only a vague to-do list, you have a 40 to 50 percent change of doing each task. Scheduling tasks increases your chanc-\nes of completing them by 70 percent or so. 4. \u0007Play It Loose with Deadlines\nSchedule more time than you think you’ll need to clean up clutter. Rather than trying to precisely estimate how long each task will take, just say, “Screw it. I’m going to need 30 percent more time for everything I plan, no matter what.” Just pick a number: 20 percent more, 50 percent more, and allot that. The worst that could happen is that you finish it early — and have some free time in your cleaner house! 5. \u0007Switch Up Your Cleaning Routine Every Three Months\nPeople with ADHD get bored with their routines more quickly than those without the condition. The higher boredom factor keeps them from tackling things they once completed with ease. A cleaning routine — whether it’s sort-\ning mail or doing the dishes — should be kept fresh, by changing it up every three months. This doesn’t mean a complete overhaul, just a tweak.\nFind out which organization products ADHD adults swear by, at http://additu.de/2q",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                727.38,
+                535.6,
+                761.0
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD\n4"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                429.83,
+                637.37,
+                536.66,
+                713.14
+              ],
+              "text": "22 Clutter-\nBusting\nStrategies for\nAdults with\nADHD"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                87.12,
+                137.62,
+                110.0
+              ],
+              "text": "Routine"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                122.42,
+                413.16,
+                184.66
+              ],
+              "text": "1. \u0007Do One Chore Per Day\nThe best way to make progress on clutter is not in one giant burst, but by\nscheduling 15 minutes of work each day. For a few minutes after dinner or\nbefore bed, eliminate clutter one square foot at a time."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                190.6,
+                410.45,
+                251.86
+              ],
+              "text": "Pick one new mini-project each day. Weed out the clothes your kids have\noutgrown. Tame the pantry shelves. File your bills. Focusing on one unde-\nsirable task at a time will keep you from feeling overwhelmed. Plus, it lets\nyou check things off your to-do list, which always feels good."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                271.82,
+                362.44,
+                288.98
+              ],
+              "text": "2. \u0007Finish Something, Anything, Early in the Day"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                291.4,
+                416.75,
+                367.66
+              ],
+              "text": "Starting your day by completing a clutter-busting chore — a small task or\nsomething larger that you worked on yesterday — gives you a sense of clo-\nsure, making the rest of the day meaningful. No matter how the day goes,\nyou can say you finished something, which gives you a sense of satisfaction\nthat will encourage you to keep tackling clutter the next day."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                389.06,
+                417.82,
+                482.74
+              ],
+              "text": "3. \u0007Put It on the Calendar\nIt’s not enough to write down a cleanup task on a to-do list. You have to enter\nit into your calendar. Assigning each task to a specific day increases your\nchances of getting them done. With only a vague to-do list, you have a 40 to\n50 percent change of doing each task. Scheduling tasks increases your chanc-\nes of completing them by 70 percent or so."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                502.7,
+                416.98,
+                609.94
+              ],
+              "text": "4. \u0007Play It Loose with Deadlines\nSchedule more time than you think you’ll need to clean up clutter. Rather\nthan trying to precisely estimate how long each task will take, just say,\n“Screw it. I’m going to need 30 percent more time for everything I plan,\nno matter what.” Just pick a number: 20 percent more, 50 percent more,\nand allot that. The worst that could happen is that you finish it early — and\nhave some free time in your cleaner house!"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                629.9,
+                417.02,
+                722.14
+              ],
+              "text": "5. \u0007Switch Up Your Cleaning Routine Every Three Months\nPeople with ADHD get bored with their routines more quickly than those\nwithout the condition. The higher boredom factor keeps them from tackling\nthings they once completed with ease. A cleaning routine — whether it’s sort-\ning mail or doing the dishes — should be kept fresh, by changing it up every\nthree months. This doesn’t mean a complete overhaul, just a tweak."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                432.0,
+                329.18,
+                573.46,
+                384.22
+              ],
+              "text": "Find out which\norganization products\nADHD adults swear by,\nat http://additu.de/2q"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additu.de/2q",
+              "bbox": [
+                446.87,
+                368.18,
+                563.43,
+                384.2
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD 5\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD 6. \u0007Follow the Two-Minute Rule\nYou hate wiping down the counter. Or sorting all your bills. Or filing last year’s taxes. But putting off these little tasks is often more emotionally exhausting and stressful — and results in much more clutter — than just biting the bullet and getting them done. Do yourself a favor and follow this rule of thumb: If you can complete the task in less than two minutes, do it now. You’ll free up mental space and confidence in yourself.\nStructure\n7. \u0007Create a Chore File Staying on top of chores is a major challenge for ADHD adults. Creating a weekly plan can keep you on track. Over the weekend, write down the chores that need to get done in the upcoming week on index cards. Arrange them in order of priority, and keep them in a single location. If you live with a spouse or partner, talk with each other and decide which of you will do what. 8. “Think Once”\nAlso known as “Think Once Really Hard and Then Don’t Think About It Again.” Take on a knotty, persistent problem — dealing with incoming mail, say — from all angles. You may spend a lot of time working through all the challenges and solutions to each problem, but, eventually, you can devise a workable system that will allow you to not think about the mail ever again. 9. Get a Grip\nIf a phone call or a request from your spouse distracts you from the clean-\ning task you’re working on, hold on to a physical artifact to remind you what you were doing, An unopened envelope, for instance, will remind you that you were sorting mail before the interruption, and will focus your at-\ntention more quickly.\n10. Simplify “Finishing Steps”\nFor those with ADHD, “finishing steps” are often the hardest. Everyone loves to pick out paint colors, but when it comes to cleaning the brushes after the room has been painted — the “finishing step” — we get bored and leave them in the corner (for weeks or months). To help with organization, make the “finishing steps” as easy as possible, so you can sprint through and get them over with. Throwing out garbage Looking for a coach to help you learn organizational skills? Start at directory.\nadditudemag.com",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                727.38,
+                535.6,
+                761.0
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD\n5"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                429.83,
+                637.37,
+                536.66,
+                713.14
+              ],
+              "text": "22 Clutter-\nBusting\nStrategies for\nAdults with\nADHD"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                87.84,
+                416.9,
+                196.51
+              ],
+              "text": "6. \u0007Follow the Two-Minute Rule\nYou hate wiping down the counter. Or sorting all your bills. Or filing last\nyear’s taxes. But putting off these little tasks is often more emotionally\nexhausting and stressful — and results in much more clutter — than just\nbiting the bullet and getting them done. Do yourself a favor and follow this\nrule of thumb: If you can complete the task in less than two minutes, do it\nnow. You’ll free up mental space and confidence in yourself."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                213.17,
+                163.84,
+                236.05
+              ],
+              "text": "Structure"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                248.48,
+                419.69,
+                340.71
+              ],
+              "text": "7. \u0007Create a Chore File\nStaying on top of chores is a major challenge for ADHD adults. Creating a\nweekly plan can keep you on track. Over the weekend, write down the chores\nthat need to get done in the upcoming week on index cards. Arrange them in\norder of priority, and keep them in a single location. If you live with a spouse\nor partner, talk with each other and decide which of you will do what."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                360.68,
+                417.74,
+                452.91
+              ],
+              "text": "8. “Think Once”\nAlso known as “Think Once Really Hard and Then Don’t Think About It\nAgain.” Take on a knotty, persistent problem — dealing with incoming mail,\nsay — from all angles. You may spend a lot of time working through all the\nchallenges and solutions to each problem, but, eventually, you can devise a\nworkable system that will allow you to not think about the mail ever again."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                480.08,
+                418.46,
+                572.31
+              ],
+              "text": "9. Get a Grip\nIf a phone call or a request from your spouse distracts you from the clean-\ning task you’re working on, hold on to a physical artifact to remind you\nwhat you were doing, An unopened envelope, for instance, will remind you\nthat you were sorting mail before the interruption, and will focus your at-\ntention more quickly."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                599.48,
+                416.46,
+                676.72
+              ],
+              "text": "10. Simplify “Finishing Steps”\nFor those with ADHD, “finishing steps” are often the hardest. Everyone\nloves to pick out paint colors, but when it comes to cleaning the brushes\nafter the room has been painted — the “finishing step” — we get bored and\nleave them in the corner (for weeks or months)."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                682.65,
+                402.47,
+                713.91
+              ],
+              "text": "To help with organization, make the “finishing steps” as easy as possible,\nso you can sprint through and get them over with. Throwing out garbage"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                431.28,
+                329.18,
+                562.01,
+                397.22
+              ],
+              "text": "Looking for a coach\nto help you learn\norganizational skills?\nStart at directory.\nadditudemag.com"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://directory.additudemag.com",
+              "bbox": [
+                479.94,
+                368.18,
+                540.43,
+                384.2
+              ]
+            },
+            {
+              "uri": "http://directory.additudemag.com",
+              "bbox": [
+                431.28,
+                381.18,
+                545.25,
+                397.2
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD 6\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD is another example of a finishing step. If your garbage is locked away under the sink, you may lose steam and just leave your garbage on the counter. If the garbage can is out in the open and visible, all you have to do is sweep the garbage from the counter into the can. Reduce “finishing steps” and stream-\nline systems so that every cleaning task is a short and workable sprint.\nBoundaries\n11. Stop the Clutter at the Source > Set a clutter rule: If you bring in two pairs of new shoes, you have to get rid of one old pair. The same rule applies to all household items.\n> If you’re a thrift store person or love yard sales, keep yourself from bringing clutter home by keeping your hands in your pockets. There is a connection between touching and buying an item. > If clutter tends to cover tables and dressers, make those surfaces less inviting. After you clean up your dining room table, set the table. It not only looks nice, but also eliminates the dining room table as a space waiting to be cluttered. Do the same thing with your bedside table — put photos or mementos on the table to “fill” the surface.\n12. Designate Junk Drawers\nFinding homes for items like unlabeled CDs and orphan screws can slow down de-cluttering efforts. To prevent this, designate at least one junk drawer in every room. If you don’t know where an item should go, put it in that drawer. Once the drawer is full, sort through it. Use what you can, and discard the rest. Then start the process anew.\n13. Manage the Mail\n>To cut off junk mail at its source, log on to catalogchoice.org and have them alert marketers to stop sending you stuff. > Have only one place for the day’s mail to land — maybe the dining room table. Yes, it piles up quickly, but at least you know where it will be when you decide to tackle it. > Don’t open junk mail. Each envelope can contain four to seven pieces of paper. Junk mail goes, unopened, right into the recycling bin.\nIs procrastination a problem for you? Download “Stop Procrastinating! 18 ADHD-Friendly Ways to Get Things Done” at http://additu.de/\nprocrastinate",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                727.38,
+                535.6,
+                761.0
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD\n6"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                429.83,
+                637.37,
+                536.66,
+                713.14
+              ],
+              "text": "22 Clutter-\nBusting\nStrategies for\nAdults with\nADHD"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                86.78,
+                418.98,
+                163.04
+              ],
+              "text": "is another example of a finishing step. If your garbage is locked away under\nthe sink, you may lose steam and just leave your garbage on the counter. If\nthe garbage can is out in the open and visible, all you have to do is sweep the\ngarbage from the counter into the can. Reduce “finishing steps” and stream-\nline systems so that every cleaning task is a short and workable sprint."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                186.9,
+                175.86,
+                209.78
+              ],
+              "text": "Boundaries"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                221.21,
+                413.8,
+                268.44
+              ],
+              "text": "11. Stop the Clutter at the Source\n> Set a clutter rule: If you bring in two pairs of new shoes, you have to\nget rid of one old pair. The same rule applies to all household items."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                75.6,
+                274.38,
+                416.14,
+                320.64
+              ],
+              "text": "> If you’re a thrift store person or love yard sales, keep yourself from\nbringing clutter home by keeping your hands in your pockets. There is\na connection between touching and buying an item."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                75.6,
+                326.58,
+                419.63,
+                402.84
+              ],
+              "text": "> If clutter tends to cover tables and dressers, make those surfaces less\ninviting. After you clean up your dining room table, set the table. It not\nonly looks nice, but also eliminates the dining room table as a space\nwaiting to be cluttered. Do the same thing with your bedside table —\nput photos or mementos on the table to “fill” the surface."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                430.01,
+                416.38,
+                522.24
+              ],
+              "text": "12. Designate Junk Drawers\nFinding homes for items like unlabeled CDs and orphan screws can slow\ndown de-cluttering efforts. To prevent this, designate at least one junk\ndrawer in every room. If you don’t know where an item should go, put it in\nthat drawer. Once the drawer is full, sort through it. Use what you can, and\ndiscard the rest. Then start the process anew."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                542.35,
+                395.44,
+                590.44
+              ],
+              "text": "13. Manage the Mail\n>To cut off junk mail at its source, log on to catalogchoice.org and\nhave them alert marketers to stop sending you stuff."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                75.6,
+                596.38,
+                411.77,
+                642.64
+              ],
+              "text": "> Have only one place for the day’s mail to land — maybe the dining\nroom table. Yes, it piles up quickly, but at least you know where it will\nbe when you decide to tackle it."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                75.6,
+                648.58,
+                414.8,
+                679.84
+              ],
+              "text": "> Don’t open junk mail. Each envelope can contain four to seven\npieces of paper. Junk mail goes, unopened, right into the recycling bin."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                432.0,
+                310.46,
+                564.13,
+                417.52
+              ],
+              "text": "Is procrastination\na problem for you?\nDownload “Stop\nProcrastinating! 18\nADHD-Friendly Ways\nto Get Things Done”\nat http://additu.de/\nprocrastinate"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.catalogchoice.org/",
+              "bbox": [
+                287.83,
+                559.18,
+                371.86,
+                575.44
+              ]
+            },
+            {
+              "uri": "http://additu.de/procrastinate",
+              "bbox": [
+                446.87,
+                388.46,
+                548.45,
+                404.48
+              ]
+            },
+            {
+              "uri": "http://additu.de/procrastinate",
+              "bbox": [
+                432.0,
+                401.46,
+                515.71,
+                417.48
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 7,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD 7\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD 14. Keep Related Items Together\nKeep items that are used together near each other. That way, you don’t have to keep running around to get the things you need to do a job. (And are less likely to go out and purchase duplicates.) For example, keep wrapping paper, tape, scissors, and ribbons in the same closet so you have everything you need to wrap presents.\nSupport\n15. Enlist Help\nStop trying to be an ordinary person who keeps it together in the same way that non-ADHD people do. Help might mean another set of hands, someone to keep your morale up, or someone to function as a body double. A body double is somebody who is physically present as you do a task but doesn’t do the task with you. Your body double anchors you to the chore at hand.\n16. Auto-Pay Bills and Set Up Paperless Billing When Possible You’d be surprised (or maybe not) at how many people with ADHD have their power turned off because they’ve forgotten to pay the bill! In many cas-\nes, this is because the bill got lost in a mountain of paper clutter, and the due date slipped by unnoticed. Avoid late fees — plus the extra clutter of unpaid bill notices — by setting up your online banking account to send your bill to your email account and automatically pay your bills each month. If you’re intimidated by the thought, ask a technologically-savvy friend to help you for 30 minutes while you walk through the process of setting up auto-pay and paperless bills. It’s a small time investment that will pay off big, each and every month. 17. Go Professional If your clutter is completely overwhelming you, there is no shame in hiring a professional organizer. Don’t look at it as a long-term commitment — in many cases, just one session is all that’s needed to help you sort through the junk and learn good habits to stop clutter from building up again. the right mindset\n18. Allow Yourself to Be Wacky\nDon’t stress yourself out with what other people are doing — figure out Could your clutter problem be indicative of hoarding, a serious anxiety-related condition? Take a quick self-test at http://\nadditu.de/ns",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                727.38,
+                535.6,
+                761.0
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD\n7"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                429.83,
+                637.37,
+                536.66,
+                713.14
+              ],
+              "text": "22 Clutter-\nBusting\nStrategies for\nAdults with\nADHD"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                88.72,
+                415.74,
+                180.95
+              ],
+              "text": "14. Keep Related Items Together\nKeep items that are used together near each other. That way, you don’t have\nto keep running around to get the things you need to do a job. (And are less\nlikely to go out and purchase duplicates.) For example, keep wrapping paper,\ntape, scissors, and ribbons in the same closet so you have everything you\nneed to wrap presents."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                198.61,
+                139.76,
+                221.49
+              ],
+              "text": "Support"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                232.92,
+                417.88,
+                325.15
+              ],
+              "text": "15. Enlist Help\nStop trying to be an ordinary person who keeps it together in the same way\nthat non-ADHD people do. Help might mean another set of hands, someone\nto keep your morale up, or someone to function as a body double. A body\ndouble is somebody who is physically present as you do a task but doesn’t do\nthe task with you. Your body double anchors you to the chore at hand."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                345.12,
+                414.24,
+                467.35
+              ],
+              "text": "16. Auto-Pay Bills and Set Up Paperless Billing When\nPossible\nYou’d be surprised (or maybe not) at how many people with ADHD have\ntheir power turned off because they’ve forgotten to pay the bill! In many cas-\nes, this is because the bill got lost in a mountain of paper clutter, and the due\ndate slipped by unnoticed. Avoid late fees — plus the extra clutter of unpaid\nbill notices — by setting up your online banking account to send your bill to\nyour email account and automatically pay your bills each month."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                473.29,
+                415.03,
+                534.55
+              ],
+              "text": "If you’re intimidated by the thought, ask a technologically-savvy friend to\nhelp you for 30 minutes while you walk through the process of setting up\nauto-pay and paperless bills. It’s a small time investment that will pay off big,\neach and every month."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                554.52,
+                410.26,
+                631.75
+              ],
+              "text": "17. Go Professional\nIf your clutter is completely overwhelming you, there is no shame in hiring\na professional organizer. Don’t look at it as a long-term commitment — in\nmany cases, just one session is all that’s needed to help you sort through the\njunk and learn good habits to stop clutter from building up again."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                648.41,
+                238.06,
+                671.29
+              ],
+              "text": "the right mindset"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                682.72,
+                389.86,
+                714.95
+              ],
+              "text": "18. Allow Yourself to Be Wacky\nDon’t stress yourself out with what other people are doing — figure out"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                432.0,
+                291.74,
+                576.45,
+                385.8
+              ],
+              "text": "Could your clutter\nproblem be indicative\nof hoarding, a serious\nanxiety-related\ncondition? Take a quick\nself-test at http://\nadditu.de/ns"
+            }
+          ],
+          "images": [],
+          "links": [],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 8,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADDITUDE\nStrategies and Support for ADHD & LD 8\nfrom the editors of\n22 Clutter-\nBusting Strategies for Adults with ADHD what works for you. In some cases, this may be a little wacky to the outside observer. One woman said her neurotypical friends were exasperated at her refusal to file things alphabetically, saying it confused them. But for her, it made more sense to file things by general category. It looked strange to an outsider, but her desk was clear — and for her, that’s all that mattered.\n19. Don’t Worry About “Pretty” Remember, not everything is going to look pristine all the time. If it’s less daunting for you to just slip your shoes into your closet at the end of each day — without lining them up perfectly — don’t beat yourself up. Is it pretty? No. Is it efficient? Yes. Even if it’s not perfect, your home will look better a little organized than not at all. 20. Keep Calm and Carry On\nAs you start tackling clutter, do the first three things that worry you the most, to get them off your plate. The internal distraction of worry plays more on ADHDers than on other people and prevents them from getting things done. If you clean any small part of the larger mess that is stressing you out, chances are you’ll break the anxiety and move forward.\n21. Leave Room For Improvement\nAfter years of setbacks and an eternally-messy house, it sometimes feels easier to lower your expectations — or just quit trying altogether. But instead of saying, “I can’t,” we challenge you to instead tell yourself: “I can’t, yet.”\nFor example, “I can’t keep my living room clean” becomes “I can’t keep my living room clean, yet.” Saying this to yourself is a powerful reminder that you are on the path to improvement. Soon, you’ll start to believe that the best version of yourself is under development right now — and will come out with hard work and determination.\n22. Just Do It Don’t get overwhelmed about where or when to start a de-cluttering task. It doesn’t matter where you start; begin at any spot in any room. After you start, continue in some kind of logical order. If you start on the left side of the room, keep going to the left. If you start on the top shelf of a cabinet, work your way down. There is no ideal time to tackle clutter — even if you only manage a few minutes, you’ll be better off. For expert Q&As about organizational skills, time management, and more, check out http://\nadditu.de/org-qs",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                727.38,
+                535.6,
+                761.0
+              ],
+              "text": "ADDITUDE\nStrategies and Support for ADHD & LD\n8"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                431.28,
+                709.69,
+                489.99,
+                720.82
+              ],
+              "text": "from the editors of"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                429.83,
+                637.37,
+                536.66,
+                713.14
+              ],
+              "text": "22 Clutter-\nBusting\nStrategies for\nAdults with\nADHD"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                68.78,
+                419.16,
+                145.04
+              ],
+              "text": "what works for you. In some cases, this may be a little wacky to the outside\nobserver. One woman said her neurotypical friends were exasperated at her\nrefusal to file things alphabetically, saying it confused them. But for her, it\nmade more sense to file things by general category. It looked strange to an\noutsider, but her desk was clear — and for her, that’s all that mattered."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                165.01,
+                409.48,
+                257.24
+              ],
+              "text": "19. Don’t Worry About “Pretty”\nRemember, not everything is going to look pristine all the time. If it’s less\ndaunting for you to just slip your shoes into your closet at the end of each\nday — without lining them up perfectly — don’t beat yourself up. Is it\npretty? No. Is it efficient? Yes. Even if it’s not perfect, your home will look\nbetter a little organized than not at all."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                277.21,
+                410.65,
+                369.44
+              ],
+              "text": "20. Keep Calm and Carry On\nAs you start tackling clutter, do the first three things that worry you the\nmost, to get them off your plate. The internal distraction of worry plays\nmore on ADHDers than on other people and prevents them from getting\nthings done. If you clean any small part of the larger mess that is stressing\nyou out, chances are you’ll break the anxiety and move forward."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                389.41,
+                417.92,
+                451.64
+              ],
+              "text": "21. Leave Room For Improvement\nAfter years of setbacks and an eternally-messy house, it sometimes feels\neasier to lower your expectations — or just quit trying altogether. But instead\nof saying, “I can’t,” we challenge you to instead tell yourself: “I can’t, yet.”"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                457.58,
+                413.71,
+                533.84
+              ],
+              "text": "For example, “I can’t keep my living room clean” becomes “I can’t keep my\nliving room clean, yet.” Saying this to yourself is a powerful reminder that\nyou are on the path to improvement. Soon, you’ll start to believe that the\nbest version of yourself is under development right now — and will come\nout with hard work and determination."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                553.81,
+                414.12,
+                661.04
+              ],
+              "text": "22. Just Do It\nDon’t get overwhelmed about where or when to start a de-cluttering task.\nIt doesn’t matter where you start; begin at any spot in any room. After you\nstart, continue in some kind of logical order. If you start on the left side of\nthe room, keep going to the left. If you start on the top shelf of a cabinet,\nwork your way down. There is no ideal time to tackle clutter — even if you\nonly manage a few minutes, you’ll be better off."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                432.0,
+                311.9,
+                575.35,
+                379.94
+              ],
+              "text": "For expert Q&As about\norganizational skills,\ntime management, and\nmore, check out http://\nadditu.de/org-qs"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additu.de/org-qs",
+              "bbox": [
+                532.69,
+                350.9,
+                571.03,
+                366.92
+              ]
+            },
+            {
+              "uri": "http://additu.de/org-qs",
+              "bbox": [
+                432.0,
+                363.9,
+                535.62,
+                379.92
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 9,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "9\nADDitude Special Reports Available Now\nwww.adhdreports.com\n9 Conditions Often Diagnosed with ADHD\nDepression. Bipolar Disorder. Anxiety. OCD. And five more conditions that often show up alongside attention deficit. About 80 percent of individuals with ADHD are diagnosed with at least one other psychiatric condition at some time in their lives. This in-depth spe-\ncial report looks at the nine most common, outlining symptoms, treatment strategies, and differentiating features of each. Plus, strategies for living well with any mental health condition.\n>> Learn more about this special report: http://additu.de/related\nMindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green time, and mindful meditation.\nLearn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like yoga and deep breathing exercises—including some designed especially for kids—as well as the science behind each natural therapy.\n>> Learn more about this special report: http://additu.de/mindfulness\nADHD 101\nA complete overview of ADHD, outlining every step from diagnosis to treatment—all the way to living successfully with attention deficit. From the moment you suspect ADHD in yourself or your child, you have hundreds of questions. Which doctors can evaluate symptoms? What medi-\ncation side effects should you be prepared for? Can diet help? This compre-\nhensive eBook has over 100 pages of expert advice, personal stories, and more to help you become an ADHD expert. >> Learn More About This Special Report: http://additu.de/adhd-101 To purchase these or other ADDitude Special Reports, go to www.adhdreports.com\nMore ADDitude Downloadable Booklets\n73 ADHD-Friendly Ways to Organize Your Life Now\nAchieve less clutter, fewer hassles, and greater tranquility in your life.\nADHD Time Assessment Chart\nDo you spend your time wisely? Use this tool to find out.\nBoost Your Productivity At Work\nADHD can make any job more challenging. Keep up with this expert advice.\nYou Know You Have ADHD When…\nReal ADHDers share personal sto-\nries highlighting the lighter side of living with attention deficit.\nSmart Comebacks\nWitty responses to ADHD doubters.\nIt’s Not ADHD: 3 Common Diagnosis Mistakes\nDoctors are sometimes too quick to diagnose ADHD. Read up on common misdiagnoses.\nFind these and many more free ADHD resources online at:\nhttp://additu.de/ freedownloads",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                221.96,
+                744.93,
+                228.96,
+                761.0
+              ],
+              "text": "9"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                51.06,
+                310.12,
+                110.43
+              ],
+              "text": "ADDitude Special Reports\nAvailable Now\nwww.adhdreports.com"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                150.05,
+                403.23,
+                194.24
+              ],
+              "text": "9 Conditions Often Diagnosed with ADHD\nDepression. Bipolar Disorder. Anxiety. OCD. And five more conditions\nthat often show up alongside attention deficit."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                198.55,
+                419.74,
+                274.81
+              ],
+              "text": "About 80 percent of individuals with ADHD are diagnosed with at least one\nother psychiatric condition at some time in their lives. This in-depth spe-\ncial report looks at the nine most common, outlining symptoms, treatment\nstrategies, and differentiating features of each. Plus, strategies for living well\nwith any mental health condition."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                278.05,
+                374.29,
+                294.31
+              ],
+              "text": ">> Learn more about this special report: http://additu.de/related"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                316.05,
+                403.9,
+                360.24
+              ],
+              "text": "Mindfulness and Other Natural Treatments\nThe best non-medical treatments for ADHD, including exercise, green\ntime, and mindful meditation."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                364.55,
+                419.74,
+                425.81
+              ],
+              "text": "Learn how mindfulness works on ADHD brains, and how to begin practic-\ning it today. Plus, research the benefits of other alternative treatments like\nyoga and deep breathing exercises—including some designed especially for\nkids—as well as the science behind each natural therapy."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                429.05,
+                401.93,
+                445.31
+              ],
+              "text": ">> Learn more about this special report: http://additu.de/mindfulness"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                467.05,
+                402.05,
+                511.24
+              ],
+              "text": "ADHD 101\nA complete overview of ADHD, outlining every step from diagnosis to\ntreatment—all the way to living successfully with attention deficit."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                515.55,
+                419.72,
+                591.81
+              ],
+              "text": "From the moment you suspect ADHD in yourself or your child, you have\nhundreds of questions. Which doctors can evaluate symptoms? What medi-\ncation side effects should you be prepared for? Can diet help? This compre-\nhensive eBook has over 100 pages of expert advice, personal stories, and\nmore to help you become an ADHD expert."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                595.05,
+                395.71,
+                611.31
+              ],
+              "text": ">> Learn More About This Special Report: http://additu.de/adhd-101"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                54.0,
+                628.94,
+                413.09,
+                659.96
+              ],
+              "text": "To purchase these or other ADDitude Special Reports, go to\nwww.adhdreports.com"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                433.16,
+                69.62,
+                559.59,
+                121.13
+              ],
+              "text": "More ADDitude\nDownloadable\nBooklets"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                433.16,
+                128.81,
+                576.95,
+                192.0
+              ],
+              "text": "73 ADHD-Friendly Ways to\nOrganize Your Life Now\nAchieve less clutter, fewer\nhassles, and greater tranquility in\nyour life."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                433.16,
+                202.81,
+                566.68,
+                252.0
+              ],
+              "text": "ADHD Time Assessment\nChart\nDo you spend your time wisely?\nUse this tool to find out."
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                433.16,
+                262.81,
+                574.62,
+                324.0
+              ],
+              "text": "Boost Your Productivity At\nWork\nADHD can make any job more\nchallenging. Keep up with this\nexpert advice."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                433.16,
+                334.81,
+                577.18,
+                396.0
+              ],
+              "text": "You Know You Have ADHD\nWhen…\nReal ADHDers share personal sto-\nries highlighting the lighter side of\nliving with attention deficit."
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                433.16,
+                406.81,
+                575.1,
+                432.0
+              ],
+              "text": "Smart Comebacks\nWitty responses to ADHD doubters."
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                433.16,
+                442.81,
+                576.04,
+                504.0
+              ],
+              "text": "It’s Not ADHD: 3 Common\nDiagnosis Mistakes\nDoctors are sometimes too quick\nto diagnose ADHD. Read up on\ncommon misdiagnoses."
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                433.16,
+                543.98,
+                569.91,
+                611.33
+              ],
+              "text": "Find these and many\nmore free ADHD\nresources online at:\nhttp://additu.de/\nfreedownloads"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://www.adhdreports.com",
+              "bbox": [
+                54.0,
+                91.14,
+                212.58,
+                110.43
+              ]
+            },
+            {
+              "uri": "http://additu.de/related",
+              "bbox": [
+                249.49,
+                278.05,
+                374.28,
+                294.31
+              ]
+            },
+            {
+              "uri": "http://additu.de/mindfulness",
+              "bbox": [
+                249.49,
+                429.05,
+                401.92,
+                445.31
+              ]
+            },
+            {
+              "uri": "http://additu.de/adhd-101",
+              "bbox": [
+                259.5,
+                595.05,
+                393.61,
+                611.31
+              ]
+            },
+            {
+              "uri": "http://www.adhdreports.com",
+              "bbox": [
+                54.0,
+                643.94,
+                192.28,
+                659.96
+              ]
+            },
+            {
+              "uri": "http://additu.de/freedownloads",
+              "bbox": [
+                433.16,
+                584.61,
+                522.32,
+                598.33
+              ]
+            },
+            {
+              "uri": "http://additu.de/freedownloads",
+              "bbox": [
+                433.16,
+                597.61,
+                512.62,
+                611.33
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 10,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "10\nFREE ADHD Webinar Replays from ADDitude:\n7 Fixes for Self-Defeating ADHD Behaviors\n>> http://additu.de/brown\nAre your bad habits setting you up for failure? Find out what behaviors to watch for, and seven simple changes that can help you reach your full poten-\ntial and put you on the path to success. Entrepreneur and ADHD coach Alan Brown teaches “fix-it” strategies that he used to cope with his own ADHD.\nOrganizing Solutions for People with ADHD\n>> http://additu.de/org-web Feeling lost in the mess of “stuff?” Susan Pinsky, a professional organizer who specializes in ADHD, discusses simple steps for reducing clutter, eliminat-\ning excess from your life, and why people with ADHD should aim for “good enough” instead of “perfect.” These simple, straightforward solutions will help you calm the chaos and conquer the clutter — for good.\nHealing the ADHD Brain: Interventions and Strategies that Work\n>> http://additu.de/healing\nThere’s no one-size-fits-all approach for treating ADHD. Here, Daniel G. Amen, M.D., explains treatment options ranging from medication and sup-\nplements to diet and exercise.\nSurvival Strategies for Moms with ADHD\n>>http://additu.de/adhd-moms Mothers with ADHD, especially those parenting ADHD children, often put the needs of others before themselves. Despite their good intentions, when moms leave their own ADHD untreated, the whole family can suffer. Ellen Littman, Ph.D., outlines how to let go of society’s expectations of being “perfect” and focus on your own accomplishments. After all, being a mom is a tough job!\nSmart Money Strategies for ADHD Adults\n>>http://additu.de/ta\nYou don’t need to be an investment banker to make financially sound deci-\nsions. In this audio presentation hosted by Stephanie Sarkis, Ph.D., you’ll learn how executive functions affect your ability to manage money, how to avoid impulsive purchases, and more. Save, spend, budget, and plan like the pros!\nFREE ADHD Newsletters from ADDitude\nSign up to receive criti-\ncal news and information about ADHD diagnosis and treatment, plus strategies for school, parenting, and living better with ADHD: http://additu.de/email\nAdult ADHD and LD Expert advice on managing your household, time, money, career, and relationships\nParenting ADHD and LD Children\nStrategies and support for par-\nents on behavior and discipline, time management, disorganiza-\ntion, and making friends.\nADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework, work with teachers, find the right schools, and much more.\nTreating ADHD\nTreatment options for attention deficit including medications, food, supplements, brain training, mindfulness and other alternative therapies.",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                218.63,
+                744.93,
+                232.28,
+                761.0
+              ],
+              "text": "10"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                54.0,
+                50.89,
+                339.7,
+                94.0
+              ],
+              "text": "FREE ADHD Webinar Replays\nfrom ADDitude:"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                54.0,
+                124.48,
+                334.32,
+                142.21
+              ],
+              "text": "7 Fixes for Self-Defeating ADHD Behaviors"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                54.0,
+                146.09,
+                186.74,
+                159.82
+              ],
+              "text": ">> http://additu.de/brown"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                54.0,
+                163.99,
+                419.68,
+                225.25
+              ],
+              "text": "Are your bad habits setting you up for failure? Find out what behaviors to\nwatch for, and seven simple changes that can help you reach your full poten-\ntial and put you on the path to success. Entrepreneur and ADHD coach Alan\nBrown teaches “fix-it” strategies that he used to cope with his own ADHD."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                54.0,
+                235.28,
+                340.25,
+                253.01
+              ],
+              "text": "Organizing Solutions for People with ADHD"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                54.0,
+                256.89,
+                198.65,
+                270.62
+              ],
+              "text": ">> http://additu.de/org-web"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                54.0,
+                274.79,
+                419.76,
+                351.05
+              ],
+              "text": "Feeling lost in the mess of “stuff?” Susan Pinsky, a professional organizer who\nspecializes in ADHD, discusses simple steps for reducing clutter, eliminat-\ning excess from your life, and why people with ADHD should aim for “good\nenough” instead of “perfect.” These simple, straightforward solutions will help\nyou calm the chaos and conquer the clutter — for good."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                54.0,
+                361.08,
+                410.41,
+                394.81
+              ],
+              "text": "Healing the ADHD Brain: Interventions and Strategies\nthat Work"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                54.0,
+                398.69,
+                190.91,
+                412.42
+              ],
+              "text": ">> http://additu.de/healing"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                54.0,
+                416.59,
+                419.68,
+                462.85
+              ],
+              "text": "There’s no one-size-fits-all approach for treating ADHD. Here, Daniel G.\nAmen, M.D., explains treatment options ranging from medication and sup-\nplements to diet and exercise."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                54.0,
+                472.88,
+                322.85,
+                490.61
+              ],
+              "text": "Survival Strategies for Moms with ADHD"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                54.0,
+                494.49,
+                215.58,
+                508.22
+              ],
+              "text": ">>http://additu.de/adhd-moms"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                54.0,
+                512.39,
+                419.72,
+                588.65
+              ],
+              "text": "Mothers with ADHD, especially those parenting ADHD children, often put the\nneeds of others before themselves. Despite their good intentions, when moms\nleave their own ADHD untreated, the whole family can suffer. Ellen Littman,\nPh.D., outlines how to let go of society’s expectations of being “perfect” and\nfocus on your own accomplishments. After all, being a mom is a tough job!"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                54.0,
+                598.68,
+                327.31,
+                616.41
+              ],
+              "text": "Smart Money Strategies for ADHD Adults"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                54.0,
+                620.29,
+                161.74,
+                634.02
+              ],
+              "text": ">>http://additu.de/ta"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                54.0,
+                638.19,
+                419.68,
+                699.45
+              ],
+              "text": "You don’t need to be an investment banker to make financially sound deci-\nsions. In this audio presentation hosted by Stephanie Sarkis, Ph.D., you’ll learn\nhow executive functions affect your ability to manage money, how to avoid\nimpulsive purchases, and more. Save, spend, budget, and plan like the pros!"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                432.72,
+                69.48,
+                573.06,
+                210.37
+              ],
+              "text": "FREE ADHD\nNewsletters from\nADDitude\nSign up to receive criti-\ncal news and information\nabout ADHD diagnosis and\ntreatment, plus strategies\nfor school, parenting, and\nliving better with ADHD:\nhttp://additu.de/email"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                432.72,
+                221.64,
+                569.53,
+                270.86
+              ],
+              "text": "Adult ADHD and LD\nExpert advice on managing your\nhousehold, time, money, career,\nand relationships"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                432.72,
+                281.67,
+                566.78,
+                354.86
+              ],
+              "text": "Parenting ADHD and LD\nChildren\nStrategies and support for par-\nents on behavior and discipline,\ntime management, disorganiza-\ntion, and making friends."
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                432.72,
+                365.67,
+                573.47,
+                426.86
+              ],
+              "text": "ADHD and LD at School\nHow to get classroom accom-\nmodations, finish homework,\nwork with teachers, find the right\nschools, and much more."
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                432.72,
+                437.67,
+                577.22,
+                510.87
+              ],
+              "text": "Treating ADHD\nTreatment options for attention\ndeficit including medications,\nfood, supplements, brain training,\nmindfulness and other alternative\ntherapies."
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "http://additu.de/brown",
+              "bbox": [
+                67.78,
+                146.09,
+                186.74,
+                159.82
+              ]
+            },
+            {
+              "uri": "http://additu.de/org-web",
+              "bbox": [
+                67.78,
+                256.89,
+                198.4,
+                270.62
+              ]
+            },
+            {
+              "uri": "http://additu.de/healing",
+              "bbox": [
+                67.78,
+                398.69,
+                190.9,
+                412.42
+              ]
+            },
+            {
+              "uri": "http://additu.de/adhd-moms",
+              "bbox": [
+                65.81,
+                494.49,
+                213.49,
+                508.22
+              ]
+            },
+            {
+              "uri": "http://additu.de/ta",
+              "bbox": [
+                65.81,
+                620.29,
+                161.73,
+                634.02
+              ]
+            },
+            {
+              "uri": "http://additu.de/email",
+              "bbox": [
+                432.72,
+                196.67,
+                546.12,
+                210.4
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/10235_manage_your_life_25_clutter_busting_strategies_for_adults_with_adhd.json",
+    "title": "pdf_to_json_text_layout_v1",
+    "category": "ADHD Cleaning Decluttering and Organization",
+    "source_type": "reference",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Pick the smallest visible version.",
+      "Use a timer, body double, or transition cue.",
+      "Stop after one tiny step if energy drops."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

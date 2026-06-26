@@ -1,0 +1,285 @@
+{
+  "schema": "adhd_pdf_json_export_manifest_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "input_zip": "adhd.zip",
+  "input_zip_sha256": "11b9fde48deaf7e89c9d3d003f9dfc396848f907e716de387845822d69456145",
+  "pdf_count": 23,
+  "json_output_count": 22,
+  "merge_threshold": "60%",
+  "merged_pdf_groups_count": 1,
+  "outputs": [
+    {
+      "json_file": "json/10208_manage_your_life_adhd_time_assessment_c_bettertimemanagement_merged.json",
+      "group_type": "merged_similar_pdfs_json",
+      "source_document_count": 2,
+      "source_filenames": [
+        "10208_Manage-Your-Life_adhd-time-assessment-chart.pdf",
+        "BetterTimeManagement.pdf"
+      ]
+    },
+    {
+      "json_file": "json/10235_manage_your_life_25_clutter_busting_strategies_for_adults_with_adhd.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "10235_Manage-Your-Life_25-clutter-busting-strategies-for-adults-with-adhd.pdf"
+      ]
+    },
+    {
+      "json_file": "json/a_dopamine_menu_for_adhd_brains_1.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "A-Dopamine-Menu-for-ADHD-Brains-1.pdf"
+      ]
+    },
+    {
+      "json_file": "json/add_organization_hacks_real_life_tips_from_adhd_experts.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "ADD Organization Hacks_ Real-Life Tips from ADHD Experts.pdf"
+      ]
+    },
+    {
+      "json_file": "json/adhd_burnout_recovery_neurodivergent_insights.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "ADHD Burnout Recovery _ Neurodivergent Insights.pdf"
+      ]
+    },
+    {
+      "json_file": "json/adhd_workbook.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "ADHD-Workbook.pdf"
+      ]
+    },
+    {
+      "json_file": "json/adhd_self_help_resource_pack.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "ADHD_Self_Help_Resource_Pack.pdf"
+      ]
+    },
+    {
+      "json_file": "json/anger_management_steps_and_scripts.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Anger-Management-Steps-and-Scripts.pdf"
+      ]
+    },
+    {
+      "json_file": "json/cleaning_planner_printables_kit.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Cleaning-Planner-Printables-Kit.pdf"
+      ]
+    },
+    {
+      "json_file": "json/how_to_calm_down_14_relaxation_techniques_for_adhd_brains.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "How to Calm Down_ 14 Relaxation Techniques for ADHD Brains.pdf"
+      ]
+    },
+    {
+      "json_file": "json/how_to_control_anger_and_adhd_emotional_reactivity.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "How to Control Anger and ADHD Emotional Reactivity.pdf"
+      ]
+    },
+    {
+      "json_file": "json/how_to_create_an_adhd_cleaning_schedule_you_ll_actually_stick_to_adda_attention_deficit_di.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "How to Create an ADHD Cleaning Schedule You’ll Actually Stick To - ADDA - Attention Deficit Disorder Association.pdf"
+      ]
+    },
+    {
+      "json_file": "json/how_to_declutter_7_tips_for_adhd_adults.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "How to Declutter_ 7 Tips for ADHD Adults.pdf"
+      ]
+    },
+    {
+      "json_file": "json/how_to_tidy_up_like_a_pro_2.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "How-to-Tidy-Up-Like-a-Pro-2.pdf"
+      ]
+    },
+    {
+      "json_file": "json/overstimulated_by_life_20_ways_to_give_your_adhd_senses_a_break.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Overstimulated by Life_ 20 Ways to Give Your ADHD Senses a Break.pdf"
+      ]
+    },
+    {
+      "json_file": "json/printable_adhd_daily_cleaning_planner_free_pdf_download.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Printable ADHD Daily Cleaning Planner (Free PDF Download).pdf"
+      ]
+    },
+    {
+      "json_file": "json/the_professionals_who_diagnose_and_treat_adhd.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "The-Professionals-Who-Diagnose-and-Treat-ADHD.pdf"
+      ]
+    },
+    {
+      "json_file": "json/time_blindness_12_ways_to_stop_wasting_time_with_adhd.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Time Blindness_ 12 Ways to Stop Wasting Time with ADHD.pdf"
+      ]
+    },
+    {
+      "json_file": "json/time_management_skills_for_adhd_brains_practical_advice.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Time Management Skills for ADHD Brains_ Practical Advice.pdf"
+      ]
+    },
+    {
+      "json_file": "json/time_management_tips_for_adhd_brains.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "Time Management Tips for ADHD Brains.pdf"
+      ]
+    },
+    {
+      "json_file": "json/when_adhd_leads_to_lack_of_motivation_how_to_get_it_done.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "When ADHD Leads to Lack of Motivation_ How to Get It Done.pdf"
+      ]
+    },
+    {
+      "json_file": "json/pdf_adhd_organization_and_cleaning_made_easy_summary_papercuts_publishing.json",
+      "group_type": "single_pdf_json",
+      "source_document_count": 1,
+      "source_filenames": [
+        "[PDF] ADHD Organization and Cleaning Made Easy Summary - Papercuts Publishing.pdf"
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "yearly",
+    "source_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_manifest.json",
+    "title": "adhd_pdf_json_export_manifest_v1",
+    "category": "Source Manifests Readmes and Reports",
+    "source_type": "manifest_or_index",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Read one short section.",
+      "Choose one sentence or tool that fits today.",
+      "Use the low-spoon version; no full worksheet is required."
+    ],
+    "routine_integration": {
+      "routine_role": "yearly reference, review, or archive check",
+      "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+      "recommended_block": "yearly OurSpace maintenance and support refresh"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": false,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 1,
+      "gold": 0,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}

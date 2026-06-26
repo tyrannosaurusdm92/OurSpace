@@ -1,0 +1,2221 @@
+{
+  "schema": "pdf_to_json_text_layout_v1",
+  "created_at_utc": "2026-06-25T17:18:50.890535+00:00",
+  "group_type": "single_pdf_json",
+  "merge_policy": {
+    "threshold": "merge documents when TF-IDF cosine similarity >= 0.60 OR 5-token shingle containment of the smaller document >= 0.60",
+    "why_containment_is_used": "Containment catches shorter PDFs that are substantially embedded inside longer PDFs even when whole-document Jaccard/cosine is lower."
+  },
+  "source_document_count": 1,
+  "source_documents": [
+    {
+      "document_id": "how_to_declutter_7_tips_for_adhd_adults",
+      "source_index": 14,
+      "original_filename": "How to Declutter_ 7 Tips for ADHD Adults.pdf",
+      "source_relative_path": "adhd/How to Declutter_ 7 Tips for ADHD Adults.pdf",
+      "sha256": "36e39d2afb7ca005b95b646faf2772da567d8e9167c3ae71cc149dbd71fe6796",
+      "title": "How to Declutter: 7 Tips for ADHD Adults",
+      "page_count": 6,
+      "character_count": 9967,
+      "word_count": 1707,
+      "link_count": 68,
+      "image_count": 4,
+      "form_field_count": 0,
+      "annotation_count": 0
+    }
+  ],
+  "within_group_similarity": [],
+  "documents": [
+    {
+      "document_id": "how_to_declutter_7_tips_for_adhd_adults",
+      "source_index": 14,
+      "original_filename": "How to Declutter_ 7 Tips for ADHD Adults.pdf",
+      "source_relative_path": "adhd/How to Declutter_ 7 Tips for ADHD Adults.pdf",
+      "sha256": "36e39d2afb7ca005b95b646faf2772da567d8e9167c3ae71cc149dbd71fe6796",
+      "title": "How to Declutter: 7 Tips for ADHD Adults",
+      "pdf_metadata": {
+        "format": "PDF 1.4",
+        "title": "How to Declutter: 7 Tips for ADHD Adults",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "producer": "Skia/PDF m149",
+        "creationDate": "D:20260625142431+00'00'",
+        "modDate": "D:20260625142431+00'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "page_count": 6,
+      "character_count": 9967,
+      "word_count": 1707,
+      "link_count": 68,
+      "image_count": 4,
+      "form_field_count": 0,
+      "annotation_count": 0,
+      "full_text": "ADHD Adults > Home Organization\nCLUTTER\nHow to Declutter with an ADHD Brain: Organization Solutions\nfor Real Life\nIf your closet or pantry is bursting with unnecessary, unhelpful stuff, then you likely know how clutter can spark overwhelm, stress,\nguilt, and even shame. Learn how to declutter and stay organized with these ADHD-tested tips and solutions that actually work.\nUpdated on December 2, 2025\nClick to Add Comments\nBy Linda Roggli, PCC\n1 of 9\nUnderstanding the Burden of ADHD Clutter\nMore than half of adults with ADHD say disorganization is a serious problem, and 40% of women over the age of\n40 say disorganization is their most urgent ADHD issue. Our ADHD brains are prone to clutter for a number of\nreasons: poor working memory, weak impulse control, and access to services like Amazon that instantly fulfil\nour whims. When the sheer physical and emotional space consumed by clutter becomes unmanageable, it can\nget in the way of relationships, work, and mental health.\nHere, ADHD expert Linda Roggli shares 7 decluttering strategies and solution recommendations that work for\nADHD minds — and homes.\n2 of 9\nHow to Declutter Tip #1: Don’t Buy Stuff\nShopping acts as self-medication for ADHD brains; impulsive or big purchases can cause a dopamine rush.\nBefore clicking ‘Buy,’ be honest about your finances by asking yourself: Is this purchase realistic for my budget?\nAm I pretending that it will be “alright just this once?” Leave the item in your shopping cart for several days,\nand then reassess whether the desire to purchase remains high over time.\nAsk Yourself:\n1. Do I over-shop (even sales or thrift shops)?\n2. What are the real reasons I over-shop? Is it impulsivity? Do I need something\nnew to “feel alive?”\nADHD Science & Strategies\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n1/6 3. Could I better organize my stuff to find the things I already own? Could I see a\ntherapist to deal with “deserve it” issues?\n3 of 9\nHow to Declutter Tip #2: Heed the 80/20 Rule\nFollow the 80/20 rule, or the “Pareto Principle,” which says that 80% of the time we use 20% of what is stored in\nour files, closets, or drawers. The more stuff we keep in storage, the less it will be used (or even seen!). When\nweeding out these items that never get used, try not to spend too much time holding the objects; we “own”\nthings by touching them, so the longer you spend in physical contact with an otherwise forgotten item, the\nmore likely you are to keep it.\nAsk Yourself:\n1. What stops me from getting rid of stuff? ADHD minds are famous for repeating\nunhelpful stories like “I will give this to my children” or “I might need this\nsomeday.” What works of fiction am I repeating?\n2. What is one thing I can do to clear out the stuff I don’t need, want, or use? Can I\nmake one step forward?\n3. Where (or to whom) will I donate, sell, or give away/recycle stuff that is still\nusable but not part of my future?\n4. How will I better organize the things I’m keeping? Invest in the right kind of\nstorage. That might mean a laundry hamper, rolling drawers, or paper dividers.\n(#CommissionsEarned)\n[Use This Free Guide To Organize Everything Today]\n4 of 9\nHow to Declutter Tip #3: Think Once\nThink once, and then let it go. Ask yourself these quick questions to avoid getting stuck trying to create yet\nanother organizing system:\nHow often will I use this?\nWhere will I use this?\nWhat will I use this for?\nConsider recruiting a professional organizer, non-judgmental friend, online organizing group, or a coach to\nguide you through this process.\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n2/6 Ask Yourself\n1. What is one particularly “tangled knot” that most needs a think-once\nsolution?\n2. Solving which problem would most reduce my tension or frustration?\n3. How can I accept help without surrendering my own position?\n5 of 9\nHow to Declutter Tip #4: Compartmentalize\nDon’t purchase any new containers until you have first decluttered and removed unneeded items from your life.\nThen consider using creative “corrals” rather than buying new solutions: Office storage bins can double as\nholders for personal items like glasses, an empty makeup compartment can hold medication, old milk crates are\nperfect for winter boots.\nAsk Yourself:\n1. What stuff is running loose that needs to be compartmentalized?\n2. What containers do I have (or need) to corral those rascals?\n3. How can I make the system “mess proof?”\n6 of 9\nThe Organizing Products That Work Best for ADHD Brains\n1. Plastic storage bins hold items you decide to keep and can be stacked easily so\nthey don’t take up floor space. Buy for $39.99. (#CommissionsEarned)\n2. Flat sorting carts are great for organizing paper materials. The wheels make\nreorganizing quick and doable. Buy for $47.99. (#CommissionsEarned)\n3. Poly project view folders are good for keeping documents separate but easily\nreadable and findable. Buy for $6.53. (#CommissionsEarned)\n4. Super sticky post It notes are a “save your place” essential. Buy for $9.47\n(#CommissionsEarned)\n5. A stapler in the office and kitchen can help with keeping documents together.\nBuy for $11.80. (#CommissionsEarned)\n6. Desk drawer office organizers which would traditionally store pens and\nhighlighters can double as storage space for personal items like glasses. Buy\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n3/6 for $10.39. (#CommissionsEarned)\n7. A handbag with multiple pockets and compartments helps to minimize\nclutter. Buy for $17.90. (#CommissionsEarned)\n8. Transparent kitchen “snapwear” is another efficient form of office storage\n(and might help create space in your kitchen pantry! Buy for $13.79.\n(#CommissionsEarned)\n9. Rubbermaid drawer organizing containers solve the problem of overcrowded\ndrawers by designating specific places for each item. Buy for $14.00.\n(#CommissionsEarned)\n7 of 9\nHow to Declutter Tip # 5: Label Everything\nA “label gun” (#CommissionsEarned) is a helpful addition in any ADHD household. Put labels on pantries, in\ndrawers, outside of drawers. Labels can title objects and also provide directions.\nNext Steps:\n1. Ask yourself, what do I consistently lose or have to spend time figuring out\nover and over (e.g. which charger goes with each device)?\n2. Set a date to a) buy a labeler b) Find the one you already bought or c) ask for\nhelp to get started? _____________________\n[Take This Test: Is Your Clutter and Disorganization Out of Control?]\n8 of 9\nHow to Declutter Tip #6: Center Your Organization System Around Your\nADHD\nMold your organization solutions to you. Think functional, not fancy or fantasy. And convenience is key.\nRemember these universal rules for ADHD brains:\nFiles are piles turned sideways.\nWrite it down before you forget.\nAutomate everything possible.\nAsk Yourself:\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n4/6 1. Which ADHD ideas that already work for me can be used to get organized?\n2. What can I automate to make life easier? (e.g., packing lists, appointments, Rx\nrefills, recurring purchases, and birthdays.)\n9 of 9\nHow to Declutter Tip #7: Return Everything to Its Home\nIt takes more time to find stuff than it does to put it away. Individuals without ADHD spend roughly 23 weeks of\ntheir lives trying to find items; adults with ADHD spend two times that amount.\nAsk Yourself:\n1. What stops me from putting away the things I use or pull out?\n2. What destroys my good intentions? (e.g., busy, bored, don’t remember new\nsystem)\nThe best approach to decluttering your home is to adopt a beginner’s mindset. Getting organized takes time\nwhen it’s done right, and the work will be slow going at first. Expect breakdowns along the way. Embracing your\nADHD brain means cutting yourself some slack when you get emotional or frustrated.\nThe content for this slideshow came from Linda Roggli's webinar, \"Conquer Clutter, the ADD Way: 7 Practical\nSteps To Organizing A Messy House.\" You can watch the replay here. How To Declutter: Next Steps\nLearn: 17 Ways To Cut Back on Clutter\nRead: 10 Decluttering Tips\nDownload: Clean Up and Get Organized in One Weekend\nSUPPORT ADDITUDE\nThank you for reading ADDitude. To support our mission of providing ADHD education and support, please\nconsider subscribing. Your readership and support help make our content and outreach possible. Thank you.\n#CommissionsEarned As an Amazon Associate, ADDitude earns a commission from qualifying purchases made\nby ADDitude readers on the affiliate links we share. However, all products linked in the ADDitude Store have\nbeen independently selected by our editors and/or recommended by our readers. Prices are accurate and items in\nstock as of time of publication.\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n5/6 \n\n\nThe ADDITUDE Commitment\nADDitude collaborates closely with leading medical experts to publish accurate, clear, and authoritative content that millions of readers trust\nand share.\nREVIEW OUR EDITORIAL PROCESS\nMEET OUR MEDICAL ADVISORY PANEL\nADDitude verifies the factual accuracy of all new content.\nSources are cited for all scientific research and findings.\nContent is periodically reviewed and updated to reflect new health insights.\nWe strive to feature diverse voices and experiences.\nCopyright © 1998 - 2026 WebMD LLC. All rights reserved. Your use of this site is governed by our Terms of Use\nand Privacy Policy, and AI Policy. ADDitude does not provide medical advice, diagnosis, or treatment. The\nmaterial on this web site is provided for educational purposes only.\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n6/6",
+      "pages": [
+        {
+          "page_number": 1,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "ADHD Adults > Home Organization\nCLUTTER\nHow to Declutter with an ADHD Brain: Organization Solutions\nfor Real Life\nIf your closet or pantry is bursting with unnecessary, unhelpful stuff, then you likely know how clutter can spark overwhelm, stress,\nguilt, and even shame. Learn how to declutter and stay organized with these ADHD-tested tips and solutions that actually work.\nUpdated on December 2, 2025\nClick to Add Comments\nBy Linda Roggli, PCC\n1 of 9\nUnderstanding the Burden of ADHD Clutter\nMore than half of adults with ADHD say disorganization is a serious problem, and 40% of women over the age of\n40 say disorganization is their most urgent ADHD issue. Our ADHD brains are prone to clutter for a number of\nreasons: poor working memory, weak impulse control, and access to services like Amazon that instantly fulfil\nour whims. When the sheer physical and emotional space consumed by clutter becomes unmanageable, it can\nget in the way of relationships, work, and mental health.\nHere, ADHD expert Linda Roggli shares 7 decluttering strategies and solution recommendations that work for\nADHD minds — and homes.\n2 of 9\nHow to Declutter Tip #1: Don’t Buy Stuff\nShopping acts as self-medication for ADHD brains; impulsive or big purchases can cause a dopamine rush.\nBefore clicking ‘Buy,’ be honest about your finances by asking yourself: Is this purchase realistic for my budget?\nAm I pretending that it will be “alright just this once?” Leave the item in your shopping cart for several days,\nand then reassess whether the desire to purchase remains high over time.\nAsk Yourself:\n1. Do I over-shop (even sales or thrift shops)?\n2. What are the real reasons I over-shop? Is it impulsivity? Do I need something\nnew to “feel alive?”\nADHD Science & Strategies\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n1/6",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                55.12,
+                102.18,
+                216.45,
+                116.32
+              ],
+              "text": "ADHD Adults > Home Organization"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                55.12,
+                123.92,
+                97.14,
+                137.12
+              ],
+              "text": "CLUTTER"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.12,
+                142.88,
+                540.88,
+                186.18
+              ],
+              "text": "How to Declutter with an ADHD Brain: Organization Solutions\nfor Real Life"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                186.14,
+                541.67,
+                209.46
+              ],
+              "text": "If your closet or pantry is bursting with unnecessary, unhelpful stuff, then you likely know how clutter can spark overwhelm, stress,\nguilt, and even shame. Learn how to declutter and stay organized with these ADHD-tested tips and solutions that actually work."
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                219.2,
+                218.43,
+                359.94,
+                232.57
+              ],
+              "text": "Updated on December 2, 2025"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                248.44,
+                176.98,
+                263.53
+              ],
+              "text": "Click to Add Comments"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                106.88,
+                216.93,
+                202.7,
+                231.07
+              ],
+              "text": "By Linda Roggli, PCC"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                55.12,
+                278.42,
+                79.77,
+                291.62
+              ],
+              "text": "1 of 9"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                55.12,
+                298.01,
+                348.25,
+                318.75
+              ],
+              "text": "Understanding the Burden of ADHD Clutter"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                322.12,
+                552.99,
+                391.31
+              ],
+              "text": "More than half of adults with ADHD say disorganization is a serious problem, and 40% of women over the age of\n40 say disorganization is their most urgent ADHD issue. Our ADHD brains are prone to clutter for a number of\nreasons: poor working memory, weak impulse control, and access to services like Amazon that instantly fulfil\nour whims. When the sheer physical and emotional space consumed by clutter becomes unmanageable, it can\nget in the way of relationships, work, and mental health."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                55.12,
+                404.62,
+                544.39,
+                433.31
+              ],
+              "text": "Here, ADHD expert Linda Roggli shares 7 decluttering strategies and solution recommendations that work for\nADHD minds — and homes."
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                55.12,
+                540.17,
+                79.77,
+                553.37
+              ],
+              "text": "2 of 9"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                55.12,
+                559.76,
+                326.45,
+                580.5
+              ],
+              "text": "How to Declutter Tip #1: Don’t Buy Stuff"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                55.12,
+                583.88,
+                553.42,
+                639.56
+              ],
+              "text": "Shopping acts as self-medication for ADHD brains; impulsive or big purchases can cause a dopamine rush.\nBefore clicking ‘Buy,’ be honest about your finances by asking yourself: Is this purchase realistic for my budget?\nAm I pretending that it will be “alright just this once?” Leave the item in your shopping cart for several days,\nand then reassess whether the desire to purchase remains high over time."
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                55.12,
+                652.88,
+                115.89,
+                668.06
+              ],
+              "text": "Ask Yourself:"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                72.71,
+                681.0,
+                343.28,
+                701.24
+              ],
+              "text": "1. Do I over-shop (even sales or thrift shops)?"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                71.04,
+                702.75,
+                544.32,
+                722.99
+              ],
+              "text": "2. What are the real reasons I over-shop? Is it impulsivity? Do I need something"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                85.12,
+                720.75,
+                202.9,
+                740.99
+              ],
+              "text": "new to “feel alive?”"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                193.47,
+                52.22,
+                308.92,
+                66.14
+              ],
+              "text": "ADHD Science & Strategies"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                24.0,
+                15.26,
+                425.87,
+                24.19
+              ],
+              "text": "6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/how-to-declutter-adhd/\n1/6"
+            }
+          ],
+          "images": [
+            {
+              "block_index": 7,
+              "bbox": [
+                55.5,
+                209.25,
+                87.0,
+                240.75
+              ],
+              "width_px": 120,
+              "height_px": 120,
+              "extension": "png",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                130.5,
+                447.75,
+                482.25,
+                491.25
+              ],
+              "width_px": 800,
+              "height_px": 100,
+              "extension": "png",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            }
+          ],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/category/manage-adhd-life/",
+              "bbox": [
+                55.5,
+                102.0,
+                114.75,
+                116.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/category/manage-adhd-life/home-organization/",
+              "bbox": [
+                126.0,
+                102.0,
+                216.75,
+                116.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/category/manage-adhd-life/home-organization/clutter/",
+              "bbox": [
+                55.5,
+                123.75,
+                97.5,
+                137.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/reviews/slideshow/how-to-declutter-adhd/",
+              "bbox": [
+                55.5,
+                248.25,
+                177.0,
+                263.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/author/linda-roggli-pcc/",
+              "bbox": [
+                120.75,
+                216.75,
+                202.5,
+                231.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/slideshows/my-life-is-a-mess-adhd-organization-strategies/",
+              "bbox": [
+                234.0,
+                321.75,
+                304.5,
+                337.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/new-year-2026/",
+              "bbox": [
+                130.5,
+                480.75,
+                482.25,
+                496.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/new-year-2026/",
+              "bbox": [
+                130.5,
+                447.75,
+                482.25,
+                491.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/how-to-budget-money-adhd-finances/",
+              "bbox": [
+                375.75,
+                597.0,
+                553.5,
+                612.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/",
+              "bbox": [
+                55.5,
+                46.5,
+                558.0,
+                68.25
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 2,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "3. Could I better organize my stuff to find the things I already own? Could I see a\ntherapist to deal with “deserve it” issues?\n3 of 9\nHow to Declutter Tip #2: Heed the 80/20 Rule\nFollow the 80/20 rule, or the “Pareto Principle,” which says that 80% of the time we use 20% of what is stored in\nour files, closets, or drawers. The more stuff we keep in storage, the less it will be used (or even seen!). When\nweeding out these items that never get used, try not to spend too much time holding the objects; we “own”\nthings by touching them, so the longer you spend in physical contact with an otherwise forgotten item, the\nmore likely you are to keep it.\nAsk Yourself:\n1. What stops me from getting rid of stuff? ADHD minds are famous for repeating\nunhelpful stories like “I will give this to my children” or “I might need this\nsomeday.” What works of fiction am I repeating?\n2. What is one thing I can do to clear out the stuff I don’t need, want, or use? Can I\nmake one step forward?\n3. Where (or to whom) will I donate, sell, or give away/recycle stuff that is still\nusable but not part of my future?\n4. How will I better organize the things I’m keeping? Invest in the right kind of\nstorage. That might mean a laundry hamper, rolling drawers, or paper dividers.\n(#CommissionsEarned)\n[Use This Free Guide To Organize Everything Today]\n4 of 9\nHow to Declutter Tip #3: Think Once\nThink once, and then let it go. Ask yourself these quick questions to avoid getting stuck trying to create yet\nanother organizing system:\nHow often will I use this?\nWhere will I use this?\nWhat will I use this for?\nConsider recruiting a professional organizer, non-judgmental friend, online organizing group, or a coach to\nguide you through this process.\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n2/6",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                71.91,
+                27.0,
+                544.75,
+                47.24
+              ],
+              "text": "3. Could I better organize my stuff to find the things I already own? Could I see a"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                85.12,
+                45.0,
+                334.69,
+                65.24
+              ],
+              "text": "therapist to deal with “deserve it” issues?"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                55.12,
+                128.42,
+                79.77,
+                141.62
+              ],
+              "text": "3 of 9"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                148.01,
+                361.76,
+                168.75
+              ],
+              "text": "How to Declutter Tip #2: Heed the 80/20 Rule"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                55.12,
+                172.12,
+                554.61,
+                241.31
+              ],
+              "text": "Follow the 80/20 rule, or the “Pareto Principle,” which says that 80% of the time we use 20% of what is stored in\nour files, closets, or drawers. The more stuff we keep in storage, the less it will be used (or even seen!). When\nweeding out these items that never get used, try not to spend too much time holding the objects; we “own”\nthings by touching them, so the longer you spend in physical contact with an otherwise forgotten item, the\nmore likely you are to keep it."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                254.62,
+                115.89,
+                269.81
+              ],
+              "text": "Ask Yourself:"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                72.71,
+                282.75,
+                555.29,
+                302.99
+              ],
+              "text": "1. What stops me from getting rid of stuff? ADHD minds are famous for repeating"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                85.12,
+                300.75,
+                531.54,
+                338.99
+              ],
+              "text": "unhelpful stories like “I will give this to my children” or “I might need this\nsomeday.” What works of fiction am I repeating?"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                71.04,
+                339.75,
+                555.82,
+                359.99
+              ],
+              "text": "2. What is one thing I can do to clear out the stuff I don’t need, want, or use? Can I"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                85.12,
+                357.75,
+                227.31,
+                377.99
+              ],
+              "text": "make one step forward?"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                71.91,
+                379.5,
+                533.72,
+                399.74
+              ],
+              "text": "3. Where (or to whom) will I donate, sell, or give away/recycle stuff that is still"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                85.12,
+                397.5,
+                280.06,
+                417.74
+              ],
+              "text": "usable but not part of my future?"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                70.84,
+                419.25,
+                538.35,
+                439.49
+              ],
+              "text": "4. How will I better organize the things I’m keeping? Invest in the right kind of"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                85.12,
+                437.25,
+                556.86,
+                457.49
+              ],
+              "text": "storage. That might mean a laundry hamper, rolling drawers, or paper dividers."
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                85.12,
+                459.76,
+                179.64,
+                473.24
+              ],
+              "text": "(#CommissionsEarned)"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                53.86,
+                485.62,
+                287.92,
+                500.81
+              ],
+              "text": "[Use This Free Guide To Organize Everything Today]"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                55.12,
+                567.17,
+                79.77,
+                580.37
+              ],
+              "text": "4 of 9"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                55.12,
+                586.76,
+                301.22,
+                607.5
+              ],
+              "text": "How to Declutter Tip #3: Think Once"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                55.12,
+                610.88,
+                530.16,
+                639.56
+              ],
+              "text": "Think once, and then let it go. Ask yourself these quick questions to avoid getting stuck trying to create yet\nanother organizing system:"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                85.12,
+                652.88,
+                197.29,
+                668.06
+              ],
+              "text": "How often will I use this?"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                85.12,
+                669.38,
+                180.32,
+                684.56
+              ],
+              "text": "Where will I use this?"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                85.12,
+                686.62,
+                190.26,
+                701.81
+              ],
+              "text": "What will I use this for?"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                55.12,
+                715.12,
+                534.88,
+                743.81
+              ],
+              "text": "Consider recruiting a professional organizer, non-judgmental friend, online organizing group, or a coach to\nguide you through this process."
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                24.0,
+                15.26,
+                425.87,
+                24.19
+              ],
+              "text": "6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/how-to-declutter-adhd/\n2/6"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/declutter-home-organization-tips/",
+              "bbox": [
+                55.5,
+                198.75,
+                164.25,
+                214.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/what-is-adhd-symptoms-causes-treatments/",
+              "bbox": [
+                327.0,
+                282.75,
+                364.5,
+                303.0
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2JEyhWj",
+              "bbox": [
+                252.0,
+                437.25,
+                348.0,
+                457.5
+              ]
+            },
+            {
+              "uri": "https://amzn.to/36AWVQI",
+              "bbox": [
+                354.75,
+                437.25,
+                445.5,
+                457.5
+              ]
+            },
+            {
+              "uri": "https://amzn.to/37tMwVX",
+              "bbox": [
+                467.25,
+                437.25,
+                552.75,
+                457.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                85.5,
+                459.75,
+                180.0,
+                473.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/download/organization-for-adhd-get-your-life-in-order/?src=embed_link",
+              "bbox": [
+                59.25,
+                485.25,
+                281.25,
+                501.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/adhd-overwhelmed-professional-organizer/",
+              "bbox": [
+                151.5,
+                714.75,
+                252.0,
+                730.5
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 3,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "Ask Yourself\n1. What is one particularly “tangled knot” that most needs a think-once\nsolution?\n2. Solving which problem would most reduce my tension or frustration?\n3. How can I accept help without surrendering my own position?\n5 of 9\nHow to Declutter Tip #4: Compartmentalize\nDon’t purchase any new containers until you have first decluttered and removed unneeded items from your life.\nThen consider using creative “corrals” rather than buying new solutions: Office storage bins can double as\nholders for personal items like glasses, an empty makeup compartment can hold medication, old milk crates are\nperfect for winter boots.\nAsk Yourself:\n1. What stuff is running loose that needs to be compartmentalized?\n2. What containers do I have (or need) to corral those rascals?\n3. How can I make the system “mess proof?”\n6 of 9\nThe Organizing Products That Work Best for ADHD Brains\n1. Plastic storage bins hold items you decide to keep and can be stacked easily so\nthey don’t take up floor space. Buy for $39.99. (#CommissionsEarned)\n2. Flat sorting carts are great for organizing paper materials. The wheels make\nreorganizing quick and doable. Buy for $47.99. (#CommissionsEarned)\n3. Poly project view folders are good for keeping documents separate but easily\nreadable and findable. Buy for $6.53. (#CommissionsEarned)\n4. Super sticky post It notes are a “save your place” essential. Buy for $9.47\n(#CommissionsEarned)\n5. A stapler in the office and kitchen can help with keeping documents together.\nBuy for $11.80. (#CommissionsEarned)\n6. Desk drawer office organizers which would traditionally store pens and\nhighlighters can double as storage space for personal items like glasses. Buy\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n3/6",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                55.12,
+                27.38,
+                112.63,
+                42.56
+              ],
+              "text": "Ask Yourself"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                72.71,
+                55.5,
+                502.06,
+                75.74
+              ],
+              "text": "1. What is one particularly “tangled knot” that most needs a think-once"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                85.12,
+                73.5,
+                140.58,
+                93.74
+              ],
+              "text": "solution?"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                71.04,
+                95.25,
+                497.74,
+                115.49
+              ],
+              "text": "2. Solving which problem would most reduce my tension or frustration?"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                71.91,
+                117.0,
+                453.22,
+                137.24
+              ],
+              "text": "3. How can I accept help without surrendering my own position?"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                200.42,
+                79.77,
+                213.62
+              ],
+              "text": "5 of 9"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                55.12,
+                220.01,
+                351.83,
+                240.75
+              ],
+              "text": "How to Declutter Tip #4: Compartmentalize"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                55.12,
+                243.38,
+                556.5,
+                299.06
+              ],
+              "text": "Don’t purchase any new containers until you have first decluttered and removed unneeded items from your life.\nThen consider using creative “corrals” rather than buying new solutions: Office storage bins can double as\nholders for personal items like glasses, an empty makeup compartment can hold medication, old milk crates are\nperfect for winter boots."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                55.12,
+                312.38,
+                115.89,
+                327.56
+              ],
+              "text": "Ask Yourself:"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                72.71,
+                340.5,
+                471.72,
+                360.74
+              ],
+              "text": "1. What stuff is running loose that needs to be compartmentalized?"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                71.04,
+                362.25,
+                435.96,
+                382.49
+              ],
+              "text": "2. What containers do I have (or need) to corral those rascals?"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                71.91,
+                384.0,
+                338.34,
+                404.24
+              ],
+              "text": "3. How can I make the system “mess proof?”"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                467.42,
+                79.77,
+                480.62
+              ],
+              "text": "6 of 9"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                55.12,
+                487.01,
+                443.6,
+                507.75
+              ],
+              "text": "The Organizing Products That Work Best for ADHD Brains"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                72.71,
+                522.0,
+                549.12,
+                542.24
+              ],
+              "text": "1. Plastic storage bins hold items you decide to keep and can be stacked easily so"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                85.12,
+                540.0,
+                456.02,
+                560.24
+              ],
+              "text": "they don’t take up floor space. Buy for $39.99. (#CommissionsEarned)"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                71.04,
+                561.75,
+                537.61,
+                581.99
+              ],
+              "text": "2. Flat sorting carts are great for organizing paper materials. The wheels make"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                85.12,
+                579.75,
+                459.37,
+                599.99
+              ],
+              "text": "reorganizing quick and doable. Buy for $47.99. (#CommissionsEarned)"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                71.91,
+                601.5,
+                541.65,
+                621.74
+              ],
+              "text": "3. Poly project view folders are good for keeping documents separate but easily"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                85.12,
+                619.5,
+                399.51,
+                639.74
+              ],
+              "text": "readable and findable. Buy for $6.53. (#CommissionsEarned)"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                70.84,
+                641.25,
+                520.47,
+                661.49
+              ],
+              "text": "4. Super sticky post It notes are a “save your place” essential. Buy for $9.47"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                85.12,
+                663.76,
+                179.64,
+                677.24
+              ],
+              "text": "(#CommissionsEarned)"
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                71.86,
+                681.0,
+                549.45,
+                701.24
+              ],
+              "text": "5. A stapler in the office and kitchen can help with keeping documents together."
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                85.12,
+                699.0,
+                269.97,
+                719.24
+              ],
+              "text": "Buy for $11.80. (#CommissionsEarned)"
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                70.85,
+                720.0,
+                511.46,
+                740.24
+              ],
+              "text": "6. Desk drawer office organizers which would traditionally store pens and"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                85.12,
+                738.0,
+                538.1,
+                758.24
+              ],
+              "text": "highlighters can double as storage space for personal items like glasses. Buy"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                24.0,
+                15.26,
+                425.87,
+                24.19
+              ],
+              "text": "6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults"
+            },
+            {
+              "block_index": 28,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/how-to-declutter-adhd/\n3/6"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/how-to-get-organized-adhd-quarantine/",
+              "bbox": [
+                301.5,
+                243.0,
+                353.25,
+                258.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/adhd-medication-for-adults-and-children/",
+              "bbox": [
+                418.5,
+                270.0,
+                468.75,
+                285.75
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2JzRHf3",
+              "bbox": [
+                268.5,
+                540.0,
+                358.5,
+                560.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                361.5,
+                544.5,
+                456.0,
+                558.0
+              ]
+            },
+            {
+              "uri": "https://amzn.to/36xDl7N",
+              "bbox": [
+                271.5,
+                579.75,
+                362.25,
+                600.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                364.5,
+                584.25,
+                459.75,
+                597.75
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2JBKn2h",
+              "bbox": [
+                220.5,
+                619.5,
+                297.75,
+                639.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                305.25,
+                624.0,
+                399.75,
+                637.5
+              ]
+            },
+            {
+              "uri": "https://amzn.to/39ByfZY",
+              "bbox": [
+                441.0,
+                641.25,
+                520.5,
+                661.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                85.5,
+                663.75,
+                180.0,
+                677.25
+              ]
+            },
+            {
+              "uri": "https://amzn.to/3mAIVfj",
+              "bbox": [
+                85.5,
+                699.0,
+                172.5,
+                719.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                175.5,
+                703.5,
+                270.0,
+                717.0
+              ]
+            },
+            {
+              "uri": "https://amzn.to/39EvVkU",
+              "bbox": [
+                515.25,
+                738.0,
+                537.75,
+                758.25
+              ]
+            },
+            {
+              "uri": "https://amzn.to/39EvVkU",
+              "bbox": [
+                85.5,
+                762.75,
+                148.5,
+                763.88
+              ]
+            },
+            {
+              "uri": "https://amzn.to/39EvVkU",
+              "bbox": [
+                515.25,
+                738.0,
+                537.75,
+                758.25
+              ]
+            },
+            {
+              "uri": "https://amzn.to/39EvVkU",
+              "bbox": [
+                85.5,
+                762.75,
+                148.5,
+                763.88
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 4,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "for $10.39. (#CommissionsEarned)\n7. A handbag with multiple pockets and compartments helps to minimize\nclutter. Buy for $17.90. (#CommissionsEarned)\n8. Transparent kitchen “snapwear” is another efficient form of office storage\n(and might help create space in your kitchen pantry! Buy for $13.79.\n(#CommissionsEarned)\n9. Rubbermaid drawer organizing containers solve the problem of overcrowded\ndrawers by designating specific places for each item. Buy for $14.00.\n(#CommissionsEarned)\n7 of 9\nHow to Declutter Tip # 5: Label Everything\nA “label gun” (#CommissionsEarned) is a helpful addition in any ADHD household. Put labels on pantries, in\ndrawers, outside of drawers. Labels can title objects and also provide directions.\nNext Steps:\n1. Ask yourself, what do I consistently lose or have to spend time figuring out\nover and over (e.g. which charger goes with each device)?\n2. Set a date to a) buy a labeler b) Find the one you already bought or c) ask for\nhelp to get started? _____________________\n[Take This Test: Is Your Clutter and Disorganization Out of Control?]\n8 of 9\nHow to Declutter Tip #6: Center Your Organization System Around Your\nADHD\nMold your organization solutions to you. Think functional, not fancy or fantasy. And convenience is key.\nRemember these universal rules for ADHD brains:\nFiles are piles turned sideways.\nWrite it down before you forget.\nAutomate everything possible.\nAsk Yourself:\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n4/6",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                85.12,
+                27.0,
+                245.47,
+                47.24
+              ],
+              "text": "for $10.39. (#CommissionsEarned)"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                70.95,
+                48.75,
+                512.86,
+                68.99
+              ],
+              "text": "7. A handbag with multiple pockets and compartments helps to minimize"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                85.12,
+                66.75,
+                318.83,
+                86.99
+              ],
+              "text": "clutter. Buy for $17.90. (#CommissionsEarned)"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                70.91,
+                88.5,
+                532.04,
+                108.74
+              ],
+              "text": "8. Transparent kitchen “snapwear” is another efficient form of office storage"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                85.12,
+                106.5,
+                487.7,
+                126.74
+              ],
+              "text": "(and might help create space in your kitchen pantry! Buy for $13.79."
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                85.12,
+                129.01,
+                179.64,
+                142.49
+              ],
+              "text": "(#CommissionsEarned)"
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                70.8,
+                145.5,
+                544.48,
+                165.74
+              ],
+              "text": "9. Rubbermaid drawer organizing containers solve the problem of overcrowded"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                85.12,
+                163.5,
+                490.51,
+                183.74
+              ],
+              "text": "drawers by designating specific places for each item. Buy for $14.00."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                85.12,
+                186.01,
+                179.64,
+                199.49
+              ],
+              "text": "(#CommissionsEarned)"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                55.12,
+                264.92,
+                79.77,
+                278.12
+              ],
+              "text": "7 of 9"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                284.51,
+                342.11,
+                305.25
+              ],
+              "text": "How to Declutter Tip # 5: Label Everything"
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                55.12,
+                308.62,
+                529.33,
+                337.31
+              ],
+              "text": "A “label gun” (#CommissionsEarned) is a helpful addition in any ADHD household. Put labels on pantries, in\ndrawers, outside of drawers. Labels can title objects and also provide directions."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                350.62,
+                107.3,
+                365.81
+              ],
+              "text": "Next Steps:"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                72.71,
+                378.75,
+                529.03,
+                398.99
+              ],
+              "text": "1. Ask yourself, what do I consistently lose or have to spend time figuring out"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                85.12,
+                396.75,
+                425.12,
+                416.99
+              ],
+              "text": "over and over (e.g. which charger goes with each device)?"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                71.04,
+                418.5,
+                530.85,
+                438.74
+              ],
+              "text": "2. Set a date to a) buy a labeler b) Find the one you already bought or c) ask for"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                85.12,
+                436.5,
+                376.77,
+                456.74
+              ],
+              "text": "help to get started? _____________________"
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                53.86,
+                466.88,
+                361.98,
+                482.06
+              ],
+              "text": "[Take This Test: Is Your Clutter and Disorganization Out of Control?]"
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                55.12,
+                548.42,
+                79.77,
+                561.62
+              ],
+              "text": "8 of 9"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                55.12,
+                568.01,
+                536.78,
+                609.75
+              ],
+              "text": "How to Declutter Tip #6: Center Your Organization System Around Your\nADHD"
+            },
+            {
+              "block_index": 21,
+              "bbox": [
+                55.12,
+                613.12,
+                519.81,
+                641.81
+              ],
+              "text": "Mold your organization solutions to you. Think functional, not fancy or fantasy. And convenience is key.\nRemember these universal rules for ADHD brains:"
+            },
+            {
+              "block_index": 22,
+              "bbox": [
+                85.12,
+                655.12,
+                223.94,
+                670.31
+              ],
+              "text": "Files are piles turned sideways."
+            },
+            {
+              "block_index": 23,
+              "bbox": [
+                85.12,
+                672.38,
+                227.46,
+                687.56
+              ],
+              "text": "Write it down before you forget."
+            },
+            {
+              "block_index": 24,
+              "bbox": [
+                85.12,
+                689.62,
+                222.82,
+                704.81
+              ],
+              "text": "Automate everything possible."
+            },
+            {
+              "block_index": 25,
+              "bbox": [
+                55.12,
+                718.12,
+                115.89,
+                733.31
+              ],
+              "text": "Ask Yourself:"
+            },
+            {
+              "block_index": 26,
+              "bbox": [
+                24.0,
+                15.26,
+                425.87,
+                24.19
+              ],
+              "text": "6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults"
+            },
+            {
+              "block_index": 27,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/how-to-declutter-adhd/\n4/6"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://amzn.to/39EvVkU",
+              "bbox": [
+                85.5,
+                28.5,
+                148.5,
+                47.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                150.75,
+                31.5,
+                245.25,
+                45.0
+              ]
+            },
+            {
+              "uri": "https://amzn.to/33GLLrv",
+              "bbox": [
+                132.0,
+                66.75,
+                221.25,
+                87.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                224.25,
+                71.25,
+                318.75,
+                84.75
+              ]
+            },
+            {
+              "uri": "https://amzn.to/3lFM2kx",
+              "bbox": [
+                399.75,
+                106.5,
+                487.5,
+                126.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                85.5,
+                129.0,
+                180.0,
+                142.5
+              ]
+            },
+            {
+              "uri": "https://amzn.to/2Jw3k6R",
+              "bbox": [
+                400.5,
+                163.5,
+                490.5,
+                183.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                85.5,
+                186.0,
+                180.0,
+                199.5
+              ]
+            },
+            {
+              "uri": "https://amzn.to/36Ae6S6",
+              "bbox": [
+                69.75,
+                308.25,
+                110.25,
+                324.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/commissionsearned/",
+              "bbox": [
+                118.5,
+                309.75,
+                213.0,
+                323.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/household-cleaning-and-organization/",
+              "bbox": [
+                336.0,
+                308.25,
+                413.25,
+                324.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/screener-hoarding-spectrum-symptoms-test-adults/?src=embed_link",
+              "bbox": [
+                59.25,
+                466.5,
+                355.5,
+                482.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/helping-adhd-students-get-organized-for-school/",
+              "bbox": [
+                102.0,
+                612.75,
+                203.25,
+                628.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/stop-household-clutter/",
+              "bbox": [
+                436.5,
+                762.75,
+                517.5,
+                763.88
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 5,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "1. Which ADHD ideas that already work for me can be used to get organized?\n2. What can I automate to make life easier? (e.g., packing lists, appointments, Rx\nrefills, recurring purchases, and birthdays.)\n9 of 9\nHow to Declutter Tip #7: Return Everything to Its Home\nIt takes more time to find stuff than it does to put it away. Individuals without ADHD spend roughly 23 weeks of\ntheir lives trying to find items; adults with ADHD spend two times that amount.\nAsk Yourself:\n1. What stops me from putting away the things I use or pull out?\n2. What destroys my good intentions? (e.g., busy, bored, don’t remember new\nsystem)\nThe best approach to decluttering your home is to adopt a beginner’s mindset. Getting organized takes time\nwhen it’s done right, and the work will be slow going at first. Expect breakdowns along the way. Embracing your\nADHD brain means cutting yourself some slack when you get emotional or frustrated.\nThe content for this slideshow came from Linda Roggli's webinar, \"Conquer Clutter, the ADD Way: 7 Practical\nSteps To Organizing A Messy House.\" You can watch the replay here. How To Declutter: Next Steps\nLearn: 17 Ways To Cut Back on Clutter\nRead: 10 Decluttering Tips\nDownload: Clean Up and Get Organized in One Weekend\nSUPPORT ADDITUDE\nThank you for reading ADDitude. To support our mission of providing ADHD education and support, please\nconsider subscribing. Your readership and support help make our content and outreach possible. Thank you.\n#CommissionsEarned As an Amazon Associate, ADDitude earns a commission from qualifying purchases made\nby ADDitude readers on the affiliate links we share. However, all products linked in the ADDitude Store have\nbeen independently selected by our editors and/or recommended by our readers. Prices are accurate and items in\nstock as of time of publication.\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n5/6",
+          "text_blocks": [
+            {
+              "block_index": 1,
+              "bbox": [
+                72.71,
+                27.0,
+                523.26,
+                47.24
+              ],
+              "text": "1. Which ADHD ideas that already work for me can be used to get organized?"
+            },
+            {
+              "block_index": 2,
+              "bbox": [
+                71.04,
+                48.75,
+                552.26,
+                68.99
+              ],
+              "text": "2. What can I automate to make life easier? (e.g., packing lists, appointments, Rx"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                85.12,
+                66.75,
+                344.7,
+                86.99
+              ],
+              "text": "refills, recurring purchases, and birthdays.)"
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                55.12,
+                150.17,
+                79.77,
+                163.37
+              ],
+              "text": "9 of 9"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                55.12,
+                169.76,
+                429.92,
+                190.5
+              ],
+              "text": "How to Declutter Tip #7: Return Everything to Its Home"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                55.12,
+                193.12,
+                551.73,
+                221.81
+              ],
+              "text": "It takes more time to find stuff than it does to put it away. Individuals without ADHD spend roughly 23 weeks of\ntheir lives trying to find items; adults with ADHD spend two times that amount."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                55.12,
+                235.12,
+                115.89,
+                250.31
+              ],
+              "text": "Ask Yourself:"
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                72.71,
+                263.25,
+                451.72,
+                283.49
+              ],
+              "text": "1. What stops me from putting away the things I use or pull out?"
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                71.04,
+                285.0,
+                533.88,
+                305.24
+              ],
+              "text": "2. What destroys my good intentions? (e.g., busy, bored, don’t remember new"
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                85.12,
+                303.0,
+                132.88,
+                323.24
+              ],
+              "text": "system)"
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                55.12,
+                333.38,
+                554.17,
+                375.56
+              ],
+              "text": "The best approach to decluttering your home is to adopt a beginner’s mindset. Getting organized takes time\nwhen it’s done right, and the work will be slow going at first. Expect breakdowns along the way. Embracing your\nADHD brain means cutting yourself some slack when you get emotional or frustrated."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                53.86,
+                388.88,
+                543.59,
+                417.56
+              ],
+              "text": "The content for this slideshow came from Linda Roggli's webinar, \"Conquer Clutter, the ADD Way: 7 Practical\nSteps To Organizing A Messy House.\" You can watch the replay here."
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                55.12,
+                430.5,
+                321.31,
+                460.87
+              ],
+              "text": "How To Declutter: Next Steps"
+            },
+            {
+              "block_index": 14,
+              "bbox": [
+                85.12,
+                472.88,
+                253.47,
+                488.06
+              ],
+              "text": "Learn: 17 Ways To Cut Back on Clutter"
+            },
+            {
+              "block_index": 15,
+              "bbox": [
+                85.12,
+                490.12,
+                202.44,
+                505.31
+              ],
+              "text": "Read: 10 Decluttering Tips"
+            },
+            {
+              "block_index": 16,
+              "bbox": [
+                85.12,
+                507.38,
+                336.31,
+                522.56
+              ],
+              "text": "Download: Clean Up and Get Organized in One Weekend"
+            },
+            {
+              "block_index": 17,
+              "bbox": [
+                55.12,
+                543.38,
+                538.98,
+                585.56
+              ],
+              "text": "SUPPORT ADDITUDE\nThank you for reading ADDitude. To support our mission of providing ADHD education and support, please\nconsider subscribing. Your readership and support help make our content and outreach possible. Thank you."
+            },
+            {
+              "block_index": 18,
+              "bbox": [
+                55.12,
+                606.38,
+                557.05,
+                662.06
+              ],
+              "text": "#CommissionsEarned As an Amazon Associate, ADDitude earns a commission from qualifying purchases made\nby ADDitude readers on the affiliate links we share. However, all products linked in the ADDitude Store have\nbeen independently selected by our editors and/or recommended by our readers. Prices are accurate and items in\nstock as of time of publication."
+            },
+            {
+              "block_index": 19,
+              "bbox": [
+                24.0,
+                15.26,
+                425.87,
+                24.19
+              ],
+              "text": "6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults"
+            },
+            {
+              "block_index": 20,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/how-to-declutter-adhd/\n5/6"
+            }
+          ],
+          "images": [],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/stop-household-clutter/",
+              "bbox": [
+                436.5,
+                28.5,
+                517.5,
+                47.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/webinar/messy-house-adhd-organization-tips-podcast-281/",
+              "bbox": [
+                356.25,
+                388.5,
+                543.75,
+                404.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/webinar/messy-house-adhd-organization-tips-podcast-281/",
+              "bbox": [
+                55.5,
+                402.0,
+                213.0,
+                417.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/webinar/messy-house-adhd-organization-tips-podcast-281/",
+              "bbox": [
+                337.5,
+                402.0,
+                357.75,
+                417.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/declutter-home-organization-tips/?src=embed_link",
+              "bbox": [
+                117.0,
+                472.5,
+                253.5,
+                488.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/10-decluttering-tips/?src=embed_link",
+              "bbox": [
+                113.25,
+                489.75,
+                202.5,
+                505.5
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/download/get-organized-weekend/?src=embed_link",
+              "bbox": [
+                136.5,
+                507.0,
+                336.0,
+                522.75
+              ]
+            },
+            {
+              "uri": "http://additu.de/subscribe/",
+              "bbox": [
+                501.75,
+                556.5,
+                530.25,
+                572.25
+              ]
+            },
+            {
+              "uri": "http://additu.de/subscribe/",
+              "bbox": [
+                55.5,
+                570.0,
+                147.75,
+                585.75
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        },
+        {
+          "page_number": 6,
+          "width_pt": 612.0,
+          "height_pt": 792.0,
+          "text": "\n\n\nThe ADDITUDE Commitment\nADDitude collaborates closely with leading medical experts to publish accurate, clear, and authoritative content that millions of readers trust\nand share.\nREVIEW OUR EDITORIAL PROCESS\nMEET OUR MEDICAL ADVISORY PANEL\nADDitude verifies the factual accuracy of all new content.\nSources are cited for all scientific research and findings.\nContent is periodically reviewed and updated to reflect new health insights.\nWe strive to feature diverse voices and experiences.\nCopyright © 1998 - 2026 WebMD LLC. All rights reserved. Your use of this site is governed by our Terms of Use\nand Privacy Policy, and AI Policy. ADDitude does not provide medical advice, diagnosis, or treatment. The\nmaterial on this web site is provided for educational purposes only.\n6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults\nhttps://www.additudemag.com/slideshows/how-to-declutter-adhd/\n6/6",
+          "text_blocks": [
+            {
+              "block_index": 2,
+              "bbox": [
+                63.69,
+                52.77,
+                464.54,
+                113.57
+              ],
+              "text": "\n\n\nThe ADDITUDE Commitment"
+            },
+            {
+              "block_index": 3,
+              "bbox": [
+                43.5,
+                89.39,
+                567.34,
+                111.96
+              ],
+              "text": "ADDitude collaborates closely with leading medical experts to publish accurate, clear, and authoritative content that millions of readers trust\nand share."
+            },
+            {
+              "block_index": 4,
+              "bbox": [
+                212.85,
+                131.43,
+                399.14,
+                145.57
+              ],
+              "text": "REVIEW OUR EDITORIAL PROCESS"
+            },
+            {
+              "block_index": 5,
+              "bbox": [
+                202.7,
+                174.18,
+                409.28,
+                188.32
+              ],
+              "text": "MEET OUR MEDICAL ADVISORY PANEL"
+            },
+            {
+              "block_index": 6,
+              "bbox": [
+                84.75,
+                223.69,
+                367.87,
+                238.78
+              ],
+              "text": "ADDitude verifies the factual accuracy of all new content."
+            },
+            {
+              "block_index": 7,
+              "bbox": [
+                84.75,
+                274.69,
+                361.16,
+                289.78
+              ],
+              "text": "Sources are cited for all scientific research and findings."
+            },
+            {
+              "block_index": 8,
+              "bbox": [
+                84.75,
+                325.69,
+                460.91,
+                340.78
+              ],
+              "text": "Content is periodically reviewed and updated to reflect new health insights."
+            },
+            {
+              "block_index": 9,
+              "bbox": [
+                84.75,
+                376.69,
+                339.77,
+                391.78
+              ],
+              "text": "We strive to feature diverse voices and experiences."
+            },
+            {
+              "block_index": 11,
+              "bbox": [
+                28.5,
+                527.44,
+                566.09,
+                572.53
+              ],
+              "text": "Copyright © 1998 - 2026 WebMD LLC. All rights reserved. Your use of this site is governed by our Terms of Use\nand Privacy Policy, and AI Policy. ADDitude does not provide medical advice, diagnosis, or treatment. The\nmaterial on this web site is provided for educational purposes only."
+            },
+            {
+              "block_index": 12,
+              "bbox": [
+                24.0,
+                15.26,
+                425.87,
+                24.19
+              ],
+              "text": "6/25/26, 10:24 AM\nHow to Declutter: 7 Tips for ADHD Adults"
+            },
+            {
+              "block_index": 13,
+              "bbox": [
+                24.0,
+                768.26,
+                587.99,
+                777.19
+              ],
+              "text": "https://www.additudemag.com/slideshows/how-to-declutter-adhd/\n6/6"
+            }
+          ],
+          "images": [
+            {
+              "block_index": 1,
+              "bbox": [
+                130.5,
+                28.5,
+                482.25,
+                72.75
+              ],
+              "width_px": 800,
+              "height_px": 100,
+              "extension": "png",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            },
+            {
+              "block_index": 10,
+              "bbox": [
+                526.5,
+                504.75,
+                584.25,
+                516.75
+              ],
+              "width_px": 77,
+              "height_px": 16,
+              "extension": "png",
+              "note": "Image binary not embedded in JSON; location and metadata preserved."
+            }
+          ],
+          "links": [
+            {
+              "uri": "https://www.additudemag.com/tag/new-year-2026/",
+              "bbox": [
+                130.5,
+                62.25,
+                482.25,
+                78.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/tag/new-year-2026/",
+              "bbox": [
+                130.5,
+                28.5,
+                482.25,
+                72.75
+              ]
+            },
+            {
+              "uri": "https://www.facebook.com/sharer/sharer.php?u=https://www.additudemag.com/slideshows/how-to-declutter-adhd/",
+              "bbox": [
+                55.5,
+                92.25,
+                79.5,
+                117.0
+              ]
+            },
+            {
+              "uri": "https://twitter.com/intent/tweet/?text=How+to+Declutter+with+an+ADHD+Brain%3A+Organization+Solutions+for+Real+Life&url=https://www.additudemag.com/slideshows/how-to-declutter-adhd/&via=",
+              "bbox": [
+                84.0,
+                92.25,
+                108.0,
+                116.25
+              ]
+            },
+            {
+              "uri": "https://www.instagram.com/additudemag/",
+              "bbox": [
+                113.25,
+                92.25,
+                137.25,
+                117.0
+              ]
+            },
+            {
+              "uri": "https://pinterest.com/pin/create/button/?url=https://www.additudemag.com/slideshows/how-to-declutter-adhd/&media=https://i0.wp.com/www.additudemag.com/wp-content/uploads/2020/12/Slide-1-1-e1607368634616.jpg?resize=1280%2C720px&ssl=1&description=If%20your%20closet%20or%20pantry%20is%20bursting%20with%20unnecessary,%20unhelpful%20stuff,%20then%20you%20likely%20know%20how%20clutter%20can%20spark%20overwhelm,%20stress,%20guilt,%20and%20even%20shame.%20Learn%20how%20to%20declutter%20and%20stay%20organized%20with%20these%20ADHD-tested%20tips%20and%20solutions%20that%20actually%20work.%20%20",
+              "bbox": [
+                142.5,
+                92.25,
+                166.5,
+                117.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/editorial-process-standards/",
+              "bbox": [
+                201.0,
+                120.75,
+                411.75,
+                156.0
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/adhd-medical-advisory-panel/",
+              "bbox": [
+                190.5,
+                163.5,
+                422.25,
+                198.75
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/terms-and-conditions/",
+              "bbox": [
+                501.75,
+                527.25,
+                566.25,
+                542.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/contact-us/privacy-policy/",
+              "bbox": [
+                50.25,
+                542.25,
+                121.5,
+                557.25
+              ]
+            },
+            {
+              "uri": "https://www.additudemag.com/ai-policy/",
+              "bbox": [
+                148.5,
+                542.25,
+                193.5,
+                557.25
+              ]
+            }
+          ],
+          "form_fields": [],
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "weekly",
+    "source_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/how_to_declutter_7_tips_for_adhd_adults.json",
+    "title": "pdf_to_json_text_layout_v1",
+    "category": "ADHD Cleaning Decluttering and Organization",
+    "source_type": "reference",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Pick the smallest visible version.",
+      "Use a timer, body double, or transition cue.",
+      "Stop after one tiny step if energy drops."
+    ],
+    "routine_integration": {
+      "routine_role": "weekly reflection, planning, or repair tool",
+      "start_the_day_use": "only insert on expanded days into an empty/optional block",
+      "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": false,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": true,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 1,
+      "silver": 0,
+      "copper": 0
+    }
+  }
+}
