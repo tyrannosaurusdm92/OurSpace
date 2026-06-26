@@ -1,0 +1,93 @@
+{
+  "id": "emotion_regulation_worksheet_14b",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "worksheet",
+  "item_number": "14b",
+  "title": "Sleep Hygiene Practice Sheet",
+  "source_marker": "Emotion Regulation Worksheet 14b",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    331
+  ],
+  "source_book_pages": [
+    "307"
+  ],
+  "related_references": [],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Hygiene",
+    "Practice",
+    "Sheet",
+    "Sleep"
+  ],
+  "pages": [
+    {
+      "pdf_page": 331,
+      "book_page": "307",
+      "text": "307\nEmotion Regulation Worksheet 14b\nSleep Hygiene Practice Sheet\nDue Date:             Name:                                    Week Starting:\nIn the far left column, put down the days of the week. Then put times/hours in bed, and what you did in the 4 hours before bed, in the next\nthree columns. Along with describing the strategies you used, please rate your degree of rumination before and after using skills. Write in 0 if\nyou had no rumination. Finally, rate the overall usefulness of your strategies.\nDay\nTime\nto bed/\ntime up\nHours/\nminutes\nin bed\nduring the\nday\nFood, drink, exercise\nwithin 4 hours of bed\nStarting\nemotion/\nrumination\nintensity\n(0–100)\nDescribe strategies used to get to sleep (or\nback to sleep)\nEnding\nemotion/\nrumination\nintensity\n(0–100)\nUsefulness\nof\nstrategies\n(0–100)\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission to photocopy this worksheet is granted to purchasers of\nthis book for personal use only (see copyright page for details). Purchasers may download a larger version of this worksheet from www.guilford.com/dbt-worksheets."
+    }
+  ],
+  "full_text": "Emotion Regulation Worksheet 14b\nSleep Hygiene Practice Sheet\nDue Date:             Name:                                    Week Starting:\nIn the far left column, put down the days of the week. Then put times/hours in bed, and what you did in the 4 hours before bed, in the next\nthree columns. Along with describing the strategies you used, please rate your degree of rumination before and after using skills. Write in 0 if\nyou had no rumination. Finally, rate the overall usefulness of your strategies.\nDay\nTime\nto bed/\ntime up\nHours/\nminutes\nin bed\nduring the\nday\nFood, drink, exercise\nwithin 4 hours of bed\nStarting\nemotion/\nrumination\nintensity\n(0–100)\nDescribe strategies used to get to sleep (or\nback to sleep)\nEnding\nemotion/\nrumination\nintensity\n(0–100)\nUsefulness\nof\nstrategies\n(0–100)\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:\n\n\nHrs:\nMin:",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/worksheets/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.json",
+  "html_path": "html/worksheets/emotion_regulation/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.html",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Sleep Hygiene Practice Sheet",
+    "domain": "emotion_regulation",
+    "item_type": "worksheet",
+    "shared_facing_summary": "Emotion work starts with the body and access needs. Hunger, pain, oxygen, sleep attacks, MCAS reactions, trauma cues, and exhaustion count.",
+    "tiny_steps": [
+      "Name the emotion.",
+      "Check body basics: breathing, pain, food/water, meds, temperature, sensory load.",
+      "Lower the demand by one size.",
+      "Choose soothe, solve, pause, or ask for help."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use low-exertion regulation first.",
+      "Allow anger and grief without turning them into shame.",
+      "Track patterns without moral judgment."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not demand immediate calm during respiratory distress, pain flares, dissociation, or overload."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "emotion_regulation",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.json",
+    "shared_output_path": "shared/04_dbt_emotion_regulation/worksheets_json/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/04_dbt_emotion_regulation/worksheets_json/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.json"
+}

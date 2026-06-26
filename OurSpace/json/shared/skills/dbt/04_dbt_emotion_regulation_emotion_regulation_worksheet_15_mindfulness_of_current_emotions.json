@@ -1,0 +1,94 @@
+{
+  "id": "emotion_regulation_worksheet_15",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "worksheet",
+  "item_number": "15",
+  "title": "Mindfulness of Current Emotions",
+  "source_marker": "Emotion Regulation Worksheet 15   (Emotion Regulation Handouts 21, 22)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    335
+  ],
+  "source_book_pages": [
+    "311"
+  ],
+  "related_references": [
+    "Emotion Regulation Handouts 21, 22"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Current",
+    "Emotions",
+    "Mindfulness"
+  ],
+  "pages": [
+    {
+      "pdf_page": 335,
+      "book_page": "311",
+      "text": "311\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 15   (Emotion Regulation Handouts 21, 22)\nMindfulness of Current Emotions\nDue Date:             Name:                                    Week Starting:\nEmotion Name:                            Intensity (0–100) Before:        After:\nDescribe situation that prompts emotion. (Fill out Steps 1 and 2 on Emotion Regulation Worksheet\n5, if necessary.)\nWhen emotional intensity is extreme, go to crisis survival skills first and fill out Distress\nTolerance Worksheets 2–6. With any emotion, high or low, practice radical acceptance with mind-\nfulness of current emotions.\nCheck off any of the following that you did:\n\u0003\n Stepped back and just noticed the emotions I was experiencing.\n\u0003\n Experienced the emotion as waves, coming and going on the beach.\n\u0003\n Let go of judgments about my emotions.\n\u0003\n Noticed where in my body I was feeling the emotional sensations.\n\u0003\n Paid attention to the physical sensations of the emotions as much as I could.\n\u0003\n Observed how long it took the emotion to go away.\n\u0003\n Reminded myself that being critical of emotions does not work.\n\u0003\n Practiced willingness to have unwelcome emotions.\n\u0003\n Imagined my emotions as clouds in the sky, coming and going.\n\u0003\n Just noticed the action urge that went with my emotion.\n\u0003\n Got myself to avoid acting on my emotion.\n\u0003\n Reminded myself of times when I have felt different.\n\u0003\n Practiced radically accepting my emotion.\n\u0003\n Tried to love my emotions.\n\nOther:\nComments and descriptions of experiences:"
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 15   (Emotion Regulation Handouts 21, 22)\nMindfulness of Current Emotions\nDue Date:             Name:                                    Week Starting:\nEmotion Name:                            Intensity (0–100) Before:        After:\nDescribe situation that prompts emotion. (Fill out Steps 1 and 2 on Emotion Regulation Worksheet\n5, if necessary.)\nWhen emotional intensity is extreme, go to crisis survival skills first and fill out Distress\nTolerance Worksheets 2–6. With any emotion, high or low, practice radical acceptance with mind-\nfulness of current emotions.\nCheck off any of the following that you did:\n\u0003\n Stepped back and just noticed the emotions I was experiencing.\n\u0003\n Experienced the emotion as waves, coming and going on the beach.\n\u0003\n Let go of judgments about my emotions.\n\u0003\n Noticed where in my body I was feeling the emotional sensations.\n\u0003\n Paid attention to the physical sensations of the emotions as much as I could.\n\u0003\n Observed how long it took the emotion to go away.\n\u0003\n Reminded myself that being critical of emotions does not work.\n\u0003\n Practiced willingness to have unwelcome emotions.\n\u0003\n Imagined my emotions as clouds in the sky, coming and going.\n\u0003\n Just noticed the action urge that went with my emotion.\n\u0003\n Got myself to avoid acting on my emotion.\n\u0003\n Reminded myself of times when I have felt different.\n\u0003\n Practiced radically accepting my emotion.\n\u0003\n Tried to love my emotions.\n\nOther:\nComments and descriptions of experiences:",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/worksheets/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.json",
+  "html_path": "html/worksheets/emotion_regulation/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.html",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Mindfulness of Current Emotions",
+    "domain": "emotion_regulation",
+    "item_type": "worksheet",
+    "shared_facing_summary": "Emotion work starts with the body and access needs. Hunger, pain, oxygen, sleep attacks, MCAS reactions, trauma cues, and exhaustion count.",
+    "tiny_steps": [
+      "Name the emotion.",
+      "Check body basics: breathing, pain, food/water, meds, temperature, sensory load.",
+      "Lower the demand by one size.",
+      "Choose soothe, solve, pause, or ask for help."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Use low-exertion regulation first.",
+      "Allow anger and grief without turning them into shame.",
+      "Track patterns without moral judgment."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not demand immediate calm during respiratory distress, pain flares, dissociation, or overload."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "emotion_regulation",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.json",
+    "shared_output_path": "shared/04_dbt_emotion_regulation/worksheets_json/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/04_dbt_emotion_regulation/worksheets_json/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.json"
+}

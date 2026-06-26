@@ -1,0 +1,94 @@
+{
+  "id": "distress_tolerance_handout_15",
+  "module": "Distress Tolerance",
+  "module_category": "Distress Tolerance Skills",
+  "item_type": "handout",
+  "item_number": "15",
+  "title": "Mindfulness of Current Thoughts",
+  "source_marker": "Distress Tolerance Handout 15   (Distress Tolerance Worksheets 8, 8a, 12)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    374
+  ],
+  "source_book_pages": [
+    "350"
+  ],
+  "related_references": [
+    "Distress Tolerance Worksheets 8, 8a, 12"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Current",
+    "Mindfulness",
+    "Thoughts"
+  ],
+  "pages": [
+    {
+      "pdf_page": 374,
+      "book_page": "350",
+      "text": "350\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\n«\nDistress Tolerance Handout 15   (Distress Tolerance Worksheets 8, 8a, 12)\nMindfulness of Current Thoughts\n1.  Observe your thoughts.\n•• As waves, coming and going.\n•• Not suppressing thoughts.\n•• Not judging thoughts.\n•• Acknowledging their presence.\n•• Not keeping thoughts around.\n•• Not analyzing thoughts.\n•• Practicing willingness.\n•• Stepping back and observing\nthoughts as they run in and out of\nyour mind.\n2.  Adopt a curious mind.\n•• Ask, “Where do my thoughts come from?” Watch and see.\n•• Notice that every thought that comes also goes out of your mind.\n•• Observe but do not evaluate your thoughts. Let go of judgments.\n3.  Remember: You are not your thoughts.\n•• Do not necessarily act on thoughts.\n•• Remember times when you have had very different thoughts.\n•• Remind yourself that catastrophic thinking is “emotion mind.”\n•• Remember how you think when you are not feeling such intense suffering\nand pain.\n4.  Don’t block or suppress thoughts.\n•• Ask, “What sensations are these thoughts trying to avoid?” Turn your mind\nto the sensation. Then come back to the thought. Repeat several times.\n•• Step back; allow your thoughts to come and go as you observe your breath.\n•• Play with your thoughts: Repeat them out loud over and over as fast as\nyou can. Sing them. Imagine the thoughts as the words of a clown, as\nrecordings getting all tangled up; as cute animals you can cuddle up to; as\nbright colors running through your mind; as only sounds.\n•• Try loving your thoughts."
+    }
+  ],
+  "full_text": "«\nDistress Tolerance Handout 15   (Distress Tolerance Worksheets 8, 8a, 12)\nMindfulness of Current Thoughts\n1.  Observe your thoughts.\n•• As waves, coming and going.\n•• Not suppressing thoughts.\n•• Not judging thoughts.\n•• Acknowledging their presence.\n•• Not keeping thoughts around.\n•• Not analyzing thoughts.\n•• Practicing willingness.\n•• Stepping back and observing\nthoughts as they run in and out of\nyour mind.\n2.  Adopt a curious mind.\n•• Ask, “Where do my thoughts come from?” Watch and see.\n•• Notice that every thought that comes also goes out of your mind.\n•• Observe but do not evaluate your thoughts. Let go of judgments.\n3.  Remember: You are not your thoughts.\n•• Do not necessarily act on thoughts.\n•• Remember times when you have had very different thoughts.\n•• Remind yourself that catastrophic thinking is “emotion mind.”\n•• Remember how you think when you are not feeling such intense suffering\nand pain.\n4.  Don’t block or suppress thoughts.\n•• Ask, “What sensations are these thoughts trying to avoid?” Turn your mind\nto the sensation. Then come back to the thought. Repeat several times.\n•• Step back; allow your thoughts to come and go as you observe your breath.\n•• Play with your thoughts: Repeat them out loud over and over as fast as\nyou can. Sing them. Imagine the thoughts as the words of a clown, as\nrecordings getting all tangled up; as cute animals you can cuddle up to; as\nbright colors running through your mind; as only sounds.\n•• Try loving your thoughts.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/distress_tolerance/handouts/distress_tolerance_handout_15_mindfulness_of_current_thoughts.json",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Mindfulness of Current Thoughts",
+    "domain": "distress_tolerance",
+    "item_type": "handout",
+    "shared_facing_summary": "Distress tolerance means getting through the wave without adding harm. Use gentle, medically safer versions first.",
+    "tiny_steps": [
+      "Lower danger first.",
+      "Reduce stimulation.",
+      "Send a one-line safety/capacity message.",
+      "Choose one body-safe skill for 30 seconds.",
+      "Reassess before doing more."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Replace intense exercise with hand squeeze, paced exhale, safe fidget, weighted comfort if tolerated, or visual grounding.",
+      "Avoid cold shock/breath-holding/intense exercise unless already clinician-approved and safe that day.",
+      "Keep oxygen, rescue meds, allergy plan, mobility aids, and exit routes accessible."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not use crisis skills as punishment, sensory flooding, or exposure without consent."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "distress_tolerance",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_15_mindfulness_of_current_thoughts.json",
+    "shared_output_path": "shared/05_dbt_distress_tolerance/handouts_json/distress_tolerance_handout_15_mindfulness_of_current_thoughts.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/05_dbt_distress_tolerance/handouts_json/distress_tolerance_handout_15_mindfulness_of_current_thoughts.json"
+}

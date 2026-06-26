@@ -1,0 +1,99 @@
+# OurSpace shared life-filtered note
+
+This folder has been revised for William and Jasper together. Use the skills as flexible supports, not tests. The default version is tiny, seated/bed-level when possible, MCAS/respiratory-aware, trauma-informed, non-shaming, and caregiver-capacity-aware. Partial completion counts.
+
+Shared folder category: `04_dbt_emotion_regulation`
+
+---
+
+# 04 DBT Emotion Regulation
+
+DBT emotion regulation handouts, diaries, worksheet JSON, and printable worksheet HTML files.
+
+## Counts
+
+- HTML: 25
+- JSON: 55
+
+## Files
+
+- `handouts/json/emotion_regulation_handout_10_opposite_action.json`
+- `handouts/json/emotion_regulation_handout_11_figuring_out_opposite_actions_fear_fear_fits_the_facts_of_a_situation.json`
+- `handouts/json/emotion_regulation_handout_12_problem_solving.json`
+- `handouts/json/emotion_regulation_handout_13_reviewing_opposite_action_and_problem_solving_justifying_events_act_op.json`
+- `handouts/json/emotion_regulation_handout_14_overview_reducing_vulnerability_to_emotion_mind_building_a_life_worth.json`
+- `handouts/json/emotion_regulation_handout_15_accumulating_positive_emotions_short_term_accumulate_positive_emotions.json`
+- `handouts/json/emotion_regulation_handout_16_pleasant_events_list.json`
+- `handouts/json/emotion_regulation_handout_17_accumulating_positive_emotions_long_term_accumulate_positive_emotions.json`
+- `handouts/json/emotion_regulation_handout_18_values_and_priorities_list_in_my_own_wise_mind_i_believe_it_is_importa.json`
+- `handouts/json/emotion_regulation_handout_19_build_mastery_and_cope_ahead_build_mastery.json`
+- `handouts/json/emotion_regulation_handout_1_goals_of_emotion_regulation_understand_and_name_your_own_emotions.json`
+- `handouts/json/emotion_regulation_handout_20_taking_care_of_your_mind_by_taking_care_of_your_body_remember_these_as.json`
+- `handouts/json/emotion_regulation_handout_20a_nightmare_protocol_step_by_step.json`
+- `handouts/json/emotion_regulation_handout_20b_sleep_hygiene_protocol.json`
+- `handouts/json/emotion_regulation_handout_21_overview_managing_really_difficult_emotions_mindfulness_of_current_emo.json`
+- `handouts/json/emotion_regulation_handout_22_mindfulness_of_current_emotions_letting_go_of_emotional_suffering_obse.json`
+- `handouts/json/emotion_regulation_handout_23_managing_extreme_emotions_follow_these_suggestions_when_emotional_arou.json`
+- `handouts/json/emotion_regulation_handout_24_troubleshooting_emotion_regulation_skills_when_what_you_are_doing_isn.json`
+- `handouts/json/emotion_regulation_handout_25_review_of_skills_for_emotion_regulation_name_emotions.json`
+- `handouts/json/emotion_regulation_handout_2_overview_understanding_and_naming_emotions.json`
+- `handouts/json/emotion_regulation_handout_3_emotions_motivate_and_organize_us_for_action.json`
+- `handouts/json/emotion_regulation_handout_4_biology_biological_factors_can_make_emotion_regulation_harder_lack_of.json`
+- `handouts/json/emotion_regulation_handout_4a_myths_about_emotions.json`
+- `handouts/json/emotion_regulation_handout_5_model_for_describing_emotions.json`
+- `handouts/json/emotion_regulation_handout_6_guilt_words_guilt_culpability_remorse.json`
+- `handouts/json/emotion_regulation_handout_6_ways_to_describe_emotions_anger_words_anger_bitterness.json`
+- `handouts/json/emotion_regulation_handout_7_overview_changing_emotional_responses.json`
+- `handouts/json/emotion_regulation_handout_8_facts_many_emotions_and_actions_are_set_off_by_our_thoughts_and_interp.json`
+- `handouts/json/emotion_regulation_handout_8a_examples_of_emotions_that_fit_the_facts_fear.json`
+- `handouts/json/emotion_regulation_handout_9_opposite_action_and_problem_solving_deciding_which_to_use_opposite_act.json`
+- `worksheets/html/emotion_regulation_worksheet_10_pleasant_events_diary.html`
+- `worksheets/html/emotion_regulation_worksheet_11_getting_from_values_to_specific_action_steps.html`
+- `worksheets/html/emotion_regulation_worksheet_11a_getting_from_values_to_specific_action_steps.html`
+- `worksheets/html/emotion_regulation_worksheet_11b_diary_of_daily_actions_on_values_and_priorities.html`
+- `worksheets/html/emotion_regulation_worksheet_12_build_mastery_and_cope_ahead.html`
+- `worksheets/html/emotion_regulation_worksheet_13_putting_abc_skills_together_day_by_day.html`
+- `worksheets/html/emotion_regulation_worksheet_14_practicing_please_skills.html`
+- `worksheets/html/emotion_regulation_worksheet_14a_dream_rehearsal_and_relaxation_record.html`
+- `worksheets/html/emotion_regulation_worksheet_14a_target_nightmare_experience_forms_set_of_3.html`
+- `worksheets/html/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.html`
+- `worksheets/html/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_16_troubleshooting_emotion_regulation_skills.html`
+- `worksheets/html/emotion_regulation_worksheet_1_pros_and_cons_of_changing_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_2_figuring_out_what_my_emotions_are_doing_for_me.html`
+- `worksheets/html/emotion_regulation_worksheet_2a_example_figuring_out_what_my_emotions_are_doing_for_me.html`
+- `worksheets/html/emotion_regulation_worksheet_2b_emotion_diary.html`
+- `worksheets/html/emotion_regulation_worksheet_2c_example_emotion_diary.html`
+- `worksheets/html/emotion_regulation_worksheet_3_myths_about_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_4_observing_and_describing_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_4a_observing_and_describing_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_5_it_is_hard_to_problem_solve_an_emotional_situation_if_you_don_t_have_y.html`
+- `worksheets/html/emotion_regulation_worksheet_6_figuring_out_how_to_change_unwanted_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_7_opposite_action_to_change_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.html`
+- `worksheets/html/emotion_regulation_worksheet_9_steps_for_reducing_vulnerability_to_emotion_mind.html`
+- `worksheets/json/emotion_regulation_worksheet_10_pleasant_events_diary.json`
+- `worksheets/json/emotion_regulation_worksheet_11_getting_from_values_to_specific_action_steps.json`
+- `worksheets/json/emotion_regulation_worksheet_11a_getting_from_values_to_specific_action_steps.json`
+- `worksheets/json/emotion_regulation_worksheet_11b_diary_of_daily_actions_on_values_and_priorities.json`
+- `worksheets/json/emotion_regulation_worksheet_12_build_mastery_and_cope_ahead.json`
+- `worksheets/json/emotion_regulation_worksheet_13_putting_abc_skills_together_day_by_day.json`
+- `worksheets/json/emotion_regulation_worksheet_14_practicing_please_skills.json`
+- `worksheets/json/emotion_regulation_worksheet_14a_dream_rehearsal_and_relaxation_record.json`
+- `worksheets/json/emotion_regulation_worksheet_14a_target_nightmare_experience_forms_set_of_3.json`
+- `worksheets/json/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.json`
+- `worksheets/json/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_16_troubleshooting_emotion_regulation_skills.json`
+- `worksheets/json/emotion_regulation_worksheet_1_pros_and_cons_of_changing_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_2_figuring_out_what_my_emotions_are_doing_for_me.json`
+- `worksheets/json/emotion_regulation_worksheet_2a_example_figuring_out_what_my_emotions_are_doing_for_me.json`
+- `worksheets/json/emotion_regulation_worksheet_2b_emotion_diary.json`
+- `worksheets/json/emotion_regulation_worksheet_2c_example_emotion_diary.json`
+- `worksheets/json/emotion_regulation_worksheet_3_myths_about_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_4_observing_and_describing_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_4a_observing_and_describing_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_5_it_is_hard_to_problem_solve_an_emotional_situation_if_you_don_t_have_y.json`
+- `worksheets/json/emotion_regulation_worksheet_6_figuring_out_how_to_change_unwanted_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_7_opposite_action_to_change_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.json`
+- `worksheets/json/emotion_regulation_worksheet_9_steps_for_reducing_vulnerability_to_emotion_mind.json`

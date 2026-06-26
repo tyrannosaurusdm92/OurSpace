@@ -1,0 +1,97 @@
+{
+  "id": "distress_tolerance_worksheet_5a",
+  "module": "Distress Tolerance",
+  "module_category": "Distress Tolerance Skills",
+  "item_type": "worksheet",
+  "item_number": "5a",
+  "title": "Distracting with Wise Mind ACCEPTS",
+  "source_marker": "Distress Tolerance Worksheet 5a   (Distress Tolerance Handout 7)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    404
+  ],
+  "source_book_pages": [
+    "380"
+  ],
+  "related_references": [
+    "Distress Tolerance Handout 7"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "ACCEPTS",
+    "Distracting",
+    "Mind",
+    "Wise",
+    "with"
+  ],
+  "pages": [
+    {
+      "pdf_page": 404,
+      "book_page": "380",
+      "text": "380\nDistress Tolerance Worksheet 5a   (Distress Tolerance Handout 7)\nDistracting with Wise Mind ACCEPTS\nDue Date:             Name:                                    Week Starting:\nPractice each distraction skill twice, and describe your experience as follows:\nWhen did you practice this skill, and\nwhat did you do to practice?\nWhat was the crisis (what\nprompted needing the skill)?\nHow\nmuch time\npassed in\ndoing this\nskill?\nRate before/after skill use\nConclusions or questions\nabout this skills practice\nDistress tolerance\n(0 = I can’t stand it;\n5 = I can definitely\nsurvive)\nEmotion\nNegative\nemotion\nintensity\n(0–100)\nPositive\nemotion\nintensity\n(0–100)\nActivities:\n/\n/\n/\n/\n/\n/\nContributions:\n/\n/\n/\n/\n/\n/\nComparisons:\n/\n/\n/\n/\n/\n/\nEmotions:\n/\n/\n/\n/\n/\n/\nPushing away:\n/\n/\n/\n/\n/\n/\nThoughts:\n/\n/\n/\n/\n/\n/\nSensations:\n/\n/\n/\n/\n/\n/\nAdapted from an unpublished worksheet by Seth Axelrod, with his permission.\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission to photocopy this worksheet is granted to purchasers of\nthis book for personal use only (see copyright page for details). Purchasers may download a larger version of this worksheet from www.guilford.com/dbt-worksheets."
+    }
+  ],
+  "full_text": "Distress Tolerance Worksheet 5a   (Distress Tolerance Handout 7)\nDistracting with Wise Mind ACCEPTS\nDue Date:             Name:                                    Week Starting:\nPractice each distraction skill twice, and describe your experience as follows:\nWhen did you practice this skill, and\nwhat did you do to practice?\nWhat was the crisis (what\nprompted needing the skill)?\nHow\nmuch time\npassed in\ndoing this\nskill?\nRate before/after skill use\nConclusions or questions\nabout this skills practice\nDistress tolerance\n(0 = I can’t stand it;\n5 = I can definitely\nsurvive)\nEmotion\nNegative\nemotion\nintensity\n(0–100)\nPositive\nemotion\nintensity\n(0–100)\nActivities:\n/\n/\n/\n/\n/\n/\nContributions:\n/\n/\n/\n/\n/\n/\nComparisons:\n/\n/\n/\n/\n/\n/\nEmotions:\n/\n/\n/\n/\n/\n/\nPushing away:\n/\n/\n/\n/\n/\n/\nThoughts:\n/\n/\n/\n/\n/\n/\nSensations:\n/\n/\n/\n/\n/\n/\nAdapted from an unpublished worksheet by Seth Axelrod, with his permission.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/distress_tolerance/worksheets/distress_tolerance_worksheet_5a_distracting_with_wise_mind_accepts.json",
+  "html_path": "html/worksheets/distress_tolerance/distress_tolerance_worksheet_5a_distracting_with_wise_mind_accepts.html",
+  "ourspace_shared_life_filter": {
+    "revision_id": "ourspace_shared_life_filter_v1",
+    "title": "Distracting with Wise Mind ACCEPTS",
+    "domain": "distress_tolerance",
+    "item_type": "worksheet",
+    "shared_facing_summary": "Distress tolerance means getting through the wave without adding harm. Use gentle, medically safer versions first.",
+    "tiny_steps": [
+      "Lower danger first.",
+      "Reduce stimulation.",
+      "Send a one-line safety/capacity message.",
+      "Choose one body-safe skill for 30 seconds.",
+      "Reassess before doing more."
+    ],
+    "flare_day_versions": {
+      "minimum": "One breath, one label, one safe message, or one checkbox.",
+      "medium": "Two to five minutes with everything reachable from bed/chair.",
+      "full": "Use the original worksheet/handout when both bodies and brains have capacity."
+    },
+    "accessibility_modifications": [
+      "Replace intense exercise with hand squeeze, paced exhale, safe fidget, weighted comfort if tolerated, or visual grounding.",
+      "Avoid cold shock/breath-holding/intense exercise unless already clinician-approved and safe that day.",
+      "Keep oxygen, rescue meds, allergy plan, mobility aids, and exit routes accessible."
+    ],
+    "relationship_and_caregiver_notes": [
+      "William's needs and Jasper's capacity both count.",
+      "Ask before helping; ask before escalating; name the smallest next step.",
+      "Pause means pause, not abandonment. I am coming back. I care about us. I need a smaller next step.",
+      "What is needed, what capacity exists, what can be smaller, and what can wait?"
+    ],
+    "identity_and_trauma_filter": [
+      "Use William's masculine language and Jasper's they/them language.",
+      "Use consent-based, non-shaming, body-neutral language unless a person has explicitly chosen a term.",
+      "Do not turn symptoms, dysphoria, trauma responses, clutter, fatigue, or emotional intensity into moral failure."
+    ],
+    "avoid_or_adjust": [
+      "Do not use crisis skills as punishment, sensory flooding, or exposure without consent."
+    ],
+    "suggested_cadence": [
+      "daily_optional",
+      "flare_day_as_needed"
+    ],
+    "app_tags": [
+      "adhd_friendly",
+      "disability_first",
+      "distress_tolerance",
+      "shared",
+      "tiny_steps",
+      "trauma_informed"
+    ]
+  },
+  "ourspace_shared_revision_metadata": {
+    "source_path": "DBT+ADHD Skill Files/05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_5a_distracting_with_wise_mind_accepts.json",
+    "shared_output_path": "shared/05_dbt_distress_tolerance/worksheets_json/distress_tolerance_worksheet_5a_distracting_with_wise_mind_accepts.json",
+    "revised_at_utc": "2026-06-26T00:24:16Z",
+    "copyright_note": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits."
+  },
+  "shared_json_path": "shared/05_dbt_distress_tolerance/worksheets_json/distress_tolerance_worksheet_5a_distracting_with_wise_mind_accepts.json"
+}
