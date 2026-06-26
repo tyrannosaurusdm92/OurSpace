@@ -1,0 +1,4613 @@
+{
+  "schema_name": "ourspace_dbt_adhd_shared_kindness_cadence_library",
+  "schema_version": "3.0.0",
+  "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+  "profile": "shared",
+  "cadence": "weekly",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; rebuild as platinum, gold, silver, copper so copper/silver/gold are each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "kindness_pass_applied": true,
+  "profile_basis": {
+    "william": {
+      "main_doability_needs": [
+        "bed-level or seated options by default",
+        "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+        "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+        "partial completion and stopping before a crash count as success",
+        "no shame, no body blame, no pressure to push through pain or dysphoria"
+      ],
+      "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+    },
+    "jasper": {
+      "main_doability_needs": [
+        "ADHD transition support before task demands",
+        "caregiver burnout recovery treated as care, not avoidance",
+        "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+        "low-energy, one-field, one-minute versions allowed",
+        "no assumption that Jasper has unlimited caregiver capacity"
+      ],
+      "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+    },
+    "shared": {
+      "household_rules": [
+        "no hour block may hold more than two tasks/tools",
+        "skills may be used as one-breath or one-field versions",
+        "survival days load critical care first and skip optional worksheets",
+        "rest, boundaries, decompression, and asking for help count as care",
+        "skills are for support, not grades"
+      ]
+    }
+  },
+  "start_the_day_rule": "Only daily records are eligible for automatic Start the Day rotation. Weekly/monthly/yearly records may be manually or expanded-day scheduled. Every hour block remains capped at two items.",
+  "count": 91,
+  "records": [
+    {
+      "id": "shared-skill-426161ec50d7",
+      "profile": "shared",
+      "title": "Diary of Daily Actions on Values and Priorities",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_11b_diary_of_daily_actions_on_values_and_priorities.json",
+      "kindness_passed_file": "s/skills/w046.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-e6a8f0324076",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 10: Pleasant Events Diary",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_10_pleasant_events_diary.html",
+      "kindness_passed_file": "s/skills/w023.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-2b80cbaf50e9",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 11b: Diary of Daily Actions on Values and Priorities",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_11b_diary_of_daily_actions_on_values_and_priorities.html",
+      "kindness_passed_file": "s/skills/w026.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-1e39af3b3ca1",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 2b: Emotion Diary",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_2b_emotion_diary.html",
+      "kindness_passed_file": "s/skills/w038.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-336b23f231d5",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 2c: Example: Emotion Diary",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_2c_example_emotion_diary.html",
+      "kindness_passed_file": "s/skills/w039.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-d1e8e9bdd380",
+      "profile": "shared",
+      "title": "ADHD Decluttering Worksheet",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "html",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/html/how_to_declutter_7_tips_for_adhd_adults.html",
+      "kindness_passed_file": "s/skills/w084.html",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-407a2eea5ebc",
+      "profile": "shared",
+      "title": "Accumulating Positive Emotions: Long Term Accumulate positive emotions in the long term to build a “life worth living.” That is, make changes in your life so that positive events will occur in the future.",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_17_accumulating_positive_emotions_long_term_accumulate_positive_emotions.json",
+      "kindness_passed_file": "s/skills/w017.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-820d78abb8a7",
+      "profile": "shared",
+      "title": "Accumulating Positive Emotions: Short Term Accumulate positive emotions in the short term by doing these things. Build Positive Experiences Now",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_15_accumulating_positive_emotions_short_term_accumulate_positive_emotions.json",
+      "kindness_passed_file": "s/skills/w016.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-eb77c11ce9d2",
+      "profile": "shared",
+      "title": "Alternate Rebellion and Adaptive Denial Alternate Rebellion",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_21_alternate_rebellion_and_adaptive_denial_alternate_rebellion.json",
+      "kindness_passed_file": "s/skills/w055.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-e5a9b1eaf4ae",
+      "profile": "shared",
+      "title": "Build Mastery and Cope Ahead",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_12_build_mastery_and_cope_ahead.json",
+      "kindness_passed_file": "s/skills/w047.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-c65e8aebf1fd",
+      "profile": "shared",
+      "title": "Chain Analysis",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "handout",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_7_chain_analysis.json",
+      "kindness_passed_file": "s/skills/w003.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-9543af1c8318",
+      "profile": "shared",
+      "title": "Chain Analysis of Problem Behavior",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "worksheet",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/worksheets/json/general_worksheet_2_chain_analysis_of_problem_behavior.json",
+      "kindness_passed_file": "s/skills/w009.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-afea864e0b54",
+      "profile": "shared",
+      "title": "Chain Analysis, Step by Step",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "handout",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_7a_chain_analysis_step_by_step.json",
+      "kindness_passed_file": "s/skills/w004.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-198c8e1875ef",
+      "profile": "shared",
+      "title": "Cleaning Planner Printables Kit — Fillable HTML",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "html",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/html/cleaning_planner_printables_kit.html",
+      "kindness_passed_file": "s/skills/w083.html",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-dc09a10cd1d6",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 10: Turning the Mind, Willingness, Willfulness",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_10_turning_the_mind_willingness_willfulness.html",
+      "kindness_passed_file": "s/skills/w057.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-a2408b728c6b",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 11: Half-Smiling and Willing Hands",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_11_half_smiling_and_willing_hands.html",
+      "kindness_passed_file": "s/skills/w058.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-6397e5d94a57",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 11a: Practicing Half-Smiling and Willing Hands",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_11a_practicing_half_smiling_and_willing_hands.html",
+      "kindness_passed_file": "s/skills/w059.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3210f51235be",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 12: Mindfulness of Current Thoughts",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_12_mindfulness_of_current_thoughts.html",
+      "kindness_passed_file": "s/skills/w060.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-06285a4c4542",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 12a: Practicing Mindfulness of Thoughts",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_12a_practicing_mindfulness_of_thoughts.html",
+      "kindness_passed_file": "s/skills/w061.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-266f5d78ac67",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 15: From Clean Mind to Clear Mind",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_15_from_clean_mind_to_clear_mind.html",
+      "kindness_passed_file": "s/skills/w062.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-8201bbc8564f",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 16: Reinforcing Nonaddictive Behaviors",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_16_reinforcing_nonaddictive_behaviors.html",
+      "kindness_passed_file": "s/skills/w063.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-75cc3a7673c0",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 17: Burning Bridges and Building New Ones",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_17_burning_bridges_and_building_new_ones.html",
+      "kindness_passed_file": "s/skills/w064.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-aa4480158e5a",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 18: Practicing Alternate Rebellion and Adaptive Denial",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_18_practicing_alternate_rebellion_and_adaptive_denial.html",
+      "kindness_passed_file": "s/skills/w065.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-16c8a6df58f9",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 3: Pros and Cons of Acting on Crisis Urges",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_3_pros_and_cons_of_acting_on_crisis_urges.html",
+      "kindness_passed_file": "s/skills/w066.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-517026ad90c8",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 3a: Pros and Cons of Acting on Crisis Urges",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_3a_pros_and_cons_of_acting_on_crisis_urges.html",
+      "kindness_passed_file": "s/skills/w067.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-5b8d7f41b3cf",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 4: Changing Body Chemistry with TIP Skills",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_4_changing_body_chemistry_with_tip_skills.html",
+      "kindness_passed_file": "s/skills/w068.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-0b8a42c40661",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 4a: Paired Muscle Relaxation",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_4a_paired_muscle_relaxation.html",
+      "kindness_passed_file": "s/skills/w069.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-f99f1b784a06",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 4b: Effective Rethinking and Paired Relaxation",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_4b_effective_rethinking_and_paired_relaxation.html",
+      "kindness_passed_file": "s/skills/w070.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-07a3438860f2",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 6: Self-Soothing",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_6_self_soothing.html",
+      "kindness_passed_file": "s/skills/w071.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-49d6ff78b01f",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 6a: Self-Soothing",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_6a_self_soothing.html",
+      "kindness_passed_file": "s/skills/w072.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-1efcbf8bfd96",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 6b: Self-Soothing",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_6b_self_soothing.html",
+      "kindness_passed_file": "s/skills/w073.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-6d41045a63ea",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 6c: Body Scan Meditation, Step by Step",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_6c_body_scan_meditation_step_by_step.html",
+      "kindness_passed_file": "s/skills/w074.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b23f2aa74672",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 8: Reality Acceptance Skills",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_8_reality_acceptance_skills.html",
+      "kindness_passed_file": "s/skills/w075.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-d3bd8fe8aafc",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 8a: Reality Acceptance Skills",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_8a_reality_acceptance_skills.html",
+      "kindness_passed_file": "s/skills/w076.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4a4bce36a764",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 8b: Reality Acceptance Skills",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_8b_reality_acceptance_skills.html",
+      "kindness_passed_file": "s/skills/w077.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-831aeca74fcd",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 9: Radical Acceptance",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_9_radical_acceptance.html",
+      "kindness_passed_file": "s/skills/w078.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-dc6b8c7fa6ab",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 9a: Practicing Radical Acceptance",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_9a_practicing_radical_acceptance.html",
+      "kindness_passed_file": "s/skills/w079.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-773cd12dd94a",
+      "profile": "shared",
+      "title": "Dream Rehearsal and Relaxation Record",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_14a_dream_rehearsal_and_relaxation_record.json",
+      "kindness_passed_file": "s/skills/w050.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-8538f8d75619",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 11: Getting from Values to Specific Action Steps",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_11_getting_from_values_to_specific_action_steps.html",
+      "kindness_passed_file": "s/skills/w024.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-25a7afc8ddec",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 11a: Getting from Values to Specific Action Steps",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_11a_getting_from_values_to_specific_action_steps.html",
+      "kindness_passed_file": "s/skills/w025.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-e94e06cc55b0",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 12: Build Mastery and Cope Ahead",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_12_build_mastery_and_cope_ahead.html",
+      "kindness_passed_file": "s/skills/w027.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-79351876f836",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 13: Putting ABC Skills Together Day by Day",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_13_putting_abc_skills_together_day_by_day.html",
+      "kindness_passed_file": "s/skills/w028.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-351892826719",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 14: Practicing PLEASE Skills",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_14_practicing_please_skills.html",
+      "kindness_passed_file": "s/skills/w029.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4de1560c689d",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 14a: Dream Rehearsal and Relaxation Record",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_14a_dream_rehearsal_and_relaxation_record.html",
+      "kindness_passed_file": "s/skills/w030.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-dd6fe2211178",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 14a: Target Nightmare Experience Forms (Set of 3)",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_14a_target_nightmare_experience_forms_set_of_3.html",
+      "kindness_passed_file": "s/skills/w031.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-f71f62626a1d",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 14b: Sleep Hygiene Practice Sheet",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_14b_sleep_hygiene_practice_sheet.html",
+      "kindness_passed_file": "s/skills/w032.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-5ea7c462b281",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 15: Mindfulness of Current Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_15_mindfulness_of_current_emotions.html",
+      "kindness_passed_file": "s/skills/w033.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4e12a3dcf048",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 16: Troubleshooting Emotion Regulation Skills",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_16_troubleshooting_emotion_regulation_skills.html",
+      "kindness_passed_file": "s/skills/w034.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-819b595c2ac7",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 1: Pros and Cons of Changing Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_1_pros_and_cons_of_changing_emotions.html",
+      "kindness_passed_file": "s/skills/w035.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-1023190ddd5b",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 2: Figuring Out What My Emotions Are Doing for Me",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_2_figuring_out_what_my_emotions_are_doing_for_me.html",
+      "kindness_passed_file": "s/skills/w036.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-800113192ec8",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 2a: Example: Figuring Out What My Emotions Are Doing for Me",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_2a_example_figuring_out_what_my_emotions_are_doing_for_me.html",
+      "kindness_passed_file": "s/skills/w037.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-c68124731d0d",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 3: Myths about Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_3_myths_about_emotions.html",
+      "kindness_passed_file": "s/skills/w040.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-97057d8a8e3b",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 6: Figuring Out How to Change Unwanted Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_6_figuring_out_how_to_change_unwanted_emotions.html",
+      "kindness_passed_file": "s/skills/w041.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3c2b03d723a7",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 7: Opposite Action to Change Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_7_opposite_action_to_change_emotions.html",
+      "kindness_passed_file": "s/skills/w042.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-56abc36e3ed3",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 8: Problem Solving to Change Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.html",
+      "kindness_passed_file": "s/skills/w043.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-f723fa6a2646",
+      "profile": "shared",
+      "title": "Emotion Regulation Worksheet 9: Steps for Reducing Vulnerability to Emotion Mind",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/html/emotion_regulation_worksheet_9_steps_for_reducing_vulnerability_to_emotion_mind.html",
+      "kindness_passed_file": "s/skills/w044.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-ea3dbbad0e03",
+      "profile": "shared",
+      "title": "Example: Chain Analysis of Problem Behavior",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "worksheet",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/worksheets/json/general_worksheet_2a_example_chain_analysis_of_problem_behavior.json",
+      "kindness_passed_file": "s/skills/w010.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b30654ac39d4",
+      "profile": "shared",
+      "title": "General Worksheet 1: Pros and Cons of Using Skills",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "worksheet",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/worksheets/html/general_worksheet_1_pros_and_cons_of_using_skills.html",
+      "kindness_passed_file": "s/skills/w005.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-77418b438a73",
+      "profile": "shared",
+      "title": "General Worksheet 2: Chain Analysis of Problem Behavior",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "worksheet",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/worksheets/html/general_worksheet_2_chain_analysis_of_problem_behavior.html",
+      "kindness_passed_file": "s/skills/w006.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-520b5830703b",
+      "profile": "shared",
+      "title": "General Worksheet 2a: Example: Chain Analysis of Problem Behavior",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "worksheet",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/worksheets/html/general_worksheet_2a_example_chain_analysis_of_problem_behavior.html",
+      "kindness_passed_file": "s/skills/w007.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-9d5edb5c6be9",
+      "profile": "shared",
+      "title": "General Worksheet 3: Missing-Links Analysis",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "worksheet",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/worksheets/html/general_worksheet_3_missing_links_analysis.html",
+      "kindness_passed_file": "s/skills/w008.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-66b960769316",
+      "profile": "shared",
+      "title": "Getting from Values to Specific Action Steps",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_11a_getting_from_values_to_specific_action_steps.json",
+      "kindness_passed_file": "s/skills/w045.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4d4ae82b30fd",
+      "profile": "shared",
+      "title": "Goals of Emotion Regulation Understand and Name Your Own Emotions \u0003",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_1_goals_of_emotion_regulation_understand_and_name_your_own_emotions.json",
+      "kindness_passed_file": "s/skills/w018.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-9363cfd616e8",
+      "profile": "shared",
+      "title": "Guilt Words guilt culpability remorse",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_6_guilt_words_guilt_culpability_remorse.json",
+      "kindness_passed_file": "s/skills/w021.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-39cc593defb8",
+      "profile": "shared",
+      "title": "Half-Smiling and Willing Hands",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_11_half_smiling_and_willing_hands.json",
+      "kindness_passed_file": "s/skills/w080.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-1d68739eb5f4",
+      "profile": "shared",
+      "title": "Mindfulness Worksheet 10a: Analyzing Yourself on the Middle Path",
+      "cadence": "weekly",
+      "category": "DBT Mindfulness",
+      "source_type": "worksheet",
+      "original_relative_path": "02_DBT_Mindfulness/worksheets/html/mindfulness_worksheet_10a_analyzing_yourself_on_the_middle_path.html",
+      "kindness_passed_file": "s/skills/w011.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-918fa5c6c8b2",
+      "profile": "shared",
+      "title": "Mindfulness Worksheet 1: Pros and Cons of Practicing Mindfulness",
+      "cadence": "weekly",
+      "category": "DBT Mindfulness",
+      "source_type": "worksheet",
+      "original_relative_path": "02_DBT_Mindfulness/worksheets/html/mindfulness_worksheet_1_pros_and_cons_of_practicing_mindfulness.html",
+      "kindness_passed_file": "s/skills/w012.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4acef08929c6",
+      "profile": "shared",
+      "title": "Mindfulness Worksheet 7: Balancing Being Mind with Doing Mind",
+      "cadence": "weekly",
+      "category": "DBT Mindfulness",
+      "source_type": "worksheet",
+      "original_relative_path": "02_DBT_Mindfulness/worksheets/html/mindfulness_worksheet_7_balancing_being_mind_with_doing_mind.html",
+      "kindness_passed_file": "s/skills/w013.html",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7070f9e2876f",
+      "profile": "shared",
+      "title": "Mindfulness of Current Emotions: Letting Go of Emotional Suffering Observe Your Emotion",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_22_mindfulness_of_current_emotions_letting_go_of_emotional_suffering_obse.json",
+      "kindness_passed_file": "s/skills/w019.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Take one breath.",
+        "Name one body sensation or one fact.",
+        "Choose one kind next step or stop for rest."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7177bd7d7aad",
+      "profile": "shared",
+      "title": "Myths about Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_3_myths_about_emotions.json",
+      "kindness_passed_file": "s/skills/w051.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b19a6f7ccb88",
+      "profile": "shared",
+      "title": "Myths about Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_4a_myths_about_emotions.json",
+      "kindness_passed_file": "s/skills/w020.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7bc42e019dc9",
+      "profile": "shared",
+      "title": "Opposite Action to Change Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_7_opposite_action_to_change_emotions.json",
+      "kindness_passed_file": "s/skills/w052.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-6c9304e6398d",
+      "profile": "shared",
+      "title": "Overview: Analyzing Behavior",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "handout",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_6_overview_analyzing_behavior.json",
+      "kindness_passed_file": "s/skills/w002.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-70c55bfd3064",
+      "profile": "shared",
+      "title": "Overview: Changing Emotional Responses",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_7_overview_changing_emotional_responses.json",
+      "kindness_passed_file": "s/skills/w022.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-611197de0b48",
+      "profile": "shared",
+      "title": "Overview: Reducing Vulnerability to Emotion Mind— Building a Life Worth Living A way to remember these skills is to remember the term ABC PLEASE.",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_14_overview_reducing_vulnerability_to_emotion_mind_building_a_life_worth.json",
+      "kindness_passed_file": "s/skills/w015.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-d7586ae3fbe7",
+      "profile": "shared",
+      "title": "Practicing PLEASE Skills",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_14_practicing_please_skills.json",
+      "kindness_passed_file": "s/skills/w049.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-5c2dc2d3225e",
+      "profile": "shared",
+      "title": "Practicing Radical Acceptance",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_9a_practicing_radical_acceptance.json",
+      "kindness_passed_file": "s/skills/w082.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3b4131d031e5",
+      "profile": "shared",
+      "title": "Practicing Radical Acceptance Step by Step \u0003  Observe that you are questioning or fighting reality (“It shouldn’t be this way”). \u0003",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_11b_practicing_radical_acceptance_step_by_step_observe_that_you_are_questi.json",
+      "kindness_passed_file": "s/skills/w054.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Take one breath.",
+        "Name one body sensation or one fact.",
+        "Choose one kind next step or stop for rest."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7c5e7690c1ae",
+      "profile": "shared",
+      "title": "Printable ADHD Daily Cleaning Planner — Fillable HTML",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "html",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/html/printable_adhd_daily_cleaning_planner_free_pdf_download.html",
+      "kindness_passed_file": "s/skills/w085.html",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-6214e1659c53",
+      "profile": "shared",
+      "title": "Problem Solving",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "handout",
+      "original_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_12_problem_solving.json",
+      "kindness_passed_file": "s/skills/w014.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-1818d24d6279",
+      "profile": "shared",
+      "title": "Problem Solving to Change Emotions",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_8_problem_solving_to_change_emotions.json",
+      "kindness_passed_file": "s/skills/w053.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-aac0d8548d07",
+      "profile": "shared",
+      "title": "Putting ABC Skills Together Day by Day",
+      "cadence": "weekly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "worksheet",
+      "original_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_13_putting_abc_skills_together_day_by_day.json",
+      "kindness_passed_file": "s/skills/w048.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-2776997ad944",
+      "profile": "shared",
+      "title": "Reinforcing Nonaddictive Behaviors",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_16_reinforcing_nonaddictive_behaviors.json",
+      "kindness_passed_file": "s/skills/w081.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b6d9a69c2073",
+      "profile": "shared",
+      "title": "Skills Training Assumptions An assumption is a belief that cannot be proved, but we agree to abide by it anyway.",
+      "cadence": "weekly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "handout",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_4_skills_training_assumptions_an_assumption_is_a_belief_that_cannot_be_p.json",
+      "kindness_passed_file": "s/skills/w001.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-73e4cf69db60",
+      "profile": "shared",
+      "title": "TIP Skills: Changing Your Body Chemistry",
+      "cadence": "weekly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_6_tip_skills_changing_your_body_chemistry.json",
+      "kindness_passed_file": "s/skills/w056.json",
+      "tool_area": "DBT",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-15ca90f510c1",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "reference",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/10235_manage_your_life_25_clutter_busting_strategies_for_adults_with_adhd.json",
+      "kindness_passed_file": "s/skills/w086.json",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b405aae1c6b6",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "reference",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/add_organization_hacks_real_life_tips_from_adhd_experts.json",
+      "kindness_passed_file": "s/skills/w087.json",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-219dd8c5d5ad",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "reference",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/cleaning_planner_printables_kit.json",
+      "kindness_passed_file": "s/skills/w088.json",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7f2b677f3c8f",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "reference",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/how_to_declutter_7_tips_for_adhd_adults.json",
+      "kindness_passed_file": "s/skills/w089.json",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b4f3909bd597",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "reference",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/how_to_tidy_up_like_a_pro_2.json",
+      "kindness_passed_file": "s/skills/w090.json",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-2e33c85c014c",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "weekly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "reference",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/json/pdf_adhd_organization_and_cleaning_made_easy_summary_papercuts_publishing.json",
+      "kindness_passed_file": "s/skills/w091.json",
+      "tool_area": "ADHD",
+      "priority": "Medium",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": true,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "weekly reflection, planning, or repair tool",
+        "start_the_day_use": "only insert on expanded days into an empty/optional block",
+        "recommended_block": "weekly reset, conflict repair, cleaning/planning review, or emotion review"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 1,
+        "silver": 0,
+        "copper": 0
+      }
+    }
+  ]
+}

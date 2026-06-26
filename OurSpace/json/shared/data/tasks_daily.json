@@ -1,0 +1,382 @@
+{
+  "schema_name": "ourspace_tasks_by_cadence",
+  "schema_version": "2.0.0",
+  "generated_at_utc": "2026-06-25T20:52:40Z",
+  "profile": "shared",
+  "cadence": "daily",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; then rebuild as platinum, gold, silver, copper with copper/silver/gold each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "count": 13,
+  "records": [
+    {
+      "id": "shared-cat-food-and-water-check",
+      "profile": "shared",
+      "task": "Cat food and water check",
+      "category": "Cat care",
+      "room_or_area": "Cats",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Care for Harvey, Callie, and cat siblings as applicable.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-eat-meal-1",
+      "profile": "shared",
+      "task": "Eat meal 1",
+      "category": "Self-care",
+      "room_or_area": "Kitchen / Bedside",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Minimum food care.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-hydrate",
+      "profile": "shared",
+      "task": "Hydrate",
+      "category": "Self-care",
+      "room_or_area": "Self-care",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Water/body support.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-take-meds",
+      "profile": "shared",
+      "task": "Take meds",
+      "category": "Self-care",
+      "room_or_area": "Self-care",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Daily medication/routine support for either person.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-decompression-break",
+      "profile": "shared",
+      "task": "Decompression break",
+      "category": "Self-care",
+      "room_or_area": "Bedroom / Living room",
+      "respawn": "Daily",
+      "priority": "High",
+      "used_for": "Rest, sensory reset, or burnout prevention.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-dishes-kitchen-reset",
+      "profile": "shared",
+      "task": "Dishes / kitchen reset",
+      "category": "Chore",
+      "room_or_area": "Kitchen",
+      "respawn": "Daily / as able",
+      "priority": "High",
+      "used_for": "Kitchen maintenance, with low-spoon versions allowed.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily / as able"
+    },
+    {
+      "id": "shared-eat-meal-2",
+      "profile": "shared",
+      "task": "Eat meal 2",
+      "category": "Self-care",
+      "room_or_area": "Kitchen / Bedside",
+      "respawn": "Daily",
+      "priority": "High",
+      "used_for": "Second meal or safe snack support.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-hygiene-check",
+      "profile": "shared",
+      "task": "Hygiene check",
+      "category": "Self-care",
+      "room_or_area": "Bathroom / Bedroom",
+      "respawn": "Daily",
+      "priority": "High",
+      "used_for": "Basic hygiene, comfort, and dignity.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-shower-bathe-wash-up",
+      "profile": "shared",
+      "task": "Shower / bathe / wash-up",
+      "category": "Self-care",
+      "room_or_area": "Bathroom",
+      "respawn": "As needed / every 2 days",
+      "priority": "High",
+      "used_for": "Hygiene support with low-spoon alternatives allowed.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily",
+        "weekly"
+      ],
+      "cadence_split_source_respawn": "As needed / every 2 days"
+    },
+    {
+      "id": "shared-use-dbt-skill",
+      "profile": "shared",
+      "task": "Use DBT skill",
+      "category": "Mental health",
+      "room_or_area": "DBT",
+      "respawn": "Daily / as needed",
+      "priority": "High",
+      "used_for": "Emotion regulation and coping.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily / as needed"
+    },
+    {
+      "id": "shared-use-adhd-skills-support-chat",
+      "profile": "shared",
+      "task": "Use ADHD skill card",
+      "category": "Mental health",
+      "room_or_area": "ADHD skills",
+      "respawn": "Daily / as needed",
+      "priority": "High",
+      "used_for": "Support, reminders, grounding, and task initiation.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily / as needed"
+    },
+    {
+      "id": "shared-diary-card-daily-check-in",
+      "profile": "shared",
+      "task": "Diary card / daily check-in",
+      "category": "Mental health",
+      "room_or_area": "DBT Daily Cards",
+      "respawn": "Daily",
+      "priority": "Medium",
+      "used_for": "Mood, skill, pain, energy, or stress tracking.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily"
+    },
+    {
+      "id": "shared-journal-entry",
+      "profile": "shared",
+      "task": "Journal entry",
+      "category": "Mental health / writing",
+      "room_or_area": "DBT Journaling",
+      "respawn": "Daily / as needed",
+      "priority": "Medium",
+      "used_for": "Processing thoughts and feelings.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily"
+      ],
+      "cadence_split_source_respawn": "Daily / as needed"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schema_name": "ourspace_start_the_day_schedule_templates",
+  "schema_version": "3.0.0",
+  "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+  "trigger": "start_the_day_button_press",
+  "clock_model": {
+    "start_time": "runtime timestamp captured when button is pressed",
+    "assignment_rule": "scheduled_time = start_time + hour_offset_from_start_button hours",
+    "reason": "With disability, ADHD, chronic illness, and caregiver burnout, days do not start at the same clock time and do not need to line up between users."
+  },
+  "hard_limits": {
+    "max_items_per_hour_block": 2,
+    "do_not_force_all_daily_pool_items_into_one_day": true,
+    "partial_completion_counts": true,
+    "rest_blocks_are_real_tasks": true
+  },
+  "adaptive_modes": {
+    "survival_day": "Load only critical body care, medication/medical supports, food, hydration, cats, and one regulation skill.",
+    "standard_day": "Load the schedule template exactly as written, plus at most one optional choice-pool item every few hours.",
+    "expanded_day": "Allow weekly/monthly items to be inserted into empty or optional blocks, still capped at two items per hour."
+  },
+  "profile": "shared",
+  "hour_blocks": [
+    {
+      "hour_offset_from_start_button": 0,
+      "max_items_allowed_in_this_hour": 2,
+      "items": [
+        {
+          "id": "shared-start-day-check-in",
+          "title": "Shared start-day check-in",
+          "kind": "dbt_adhd_tool",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/skills",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts.",
+          "shared_skill_rotation": true,
+          "max_one_shared_skill_in_this_hour": true
+        },
+        {
+          "id": "shared-take-meds",
+          "title": "Take meds",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        }
+      ],
+      "energy_assumption": "very_low",
+      "notes": ""
+    },
+    {
+      "hour_offset_from_start_button": 1,
+      "max_items_allowed_in_this_hour": 2,
+      "items": [
+        {
+          "id": "shared-hydrate",
+          "title": "Hydrate",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        },
+        {
+          "id": "shared-cat-food-and-water-check",
+          "title": "Cat food and water check",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        }
+      ],
+      "energy_assumption": "low",
+      "notes": ""
+    },
+    {
+      "hour_offset_from_start_button": 2,
+      "max_items_allowed_in_this_hour": 2,
+      "items": [
+        {
+          "id": "shared-eat-meal-1",
+          "title": "Eat meal 1",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        },
+        {
+          "id": "shared-use-dbt-skill",
+          "title": "Use DBT skill",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/skills",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts.",
+          "shared_skill_rotation": true,
+          "max_one_shared_skill_in_this_hour": true
+        }
+      ],
+      "energy_assumption": "low",
+      "notes": ""
+    },
+    {
+      "hour_offset_from_start_button": 3,
+      "max_items_allowed_in_this_hour": 2,
+      "items": [
+        {
+          "id": "shared-decompression-break",
+          "title": "Decompression break",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        },
+        {
+          "id": "shared-hygiene-check",
+          "title": "Hygiene check",
+          "kind": "task",
+          "profile": "shared",
+          "optional": true,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        }
+      ],
+      "energy_assumption": "low",
+      "notes": ""
+    },
+    {
+      "hour_offset_from_start_button": 4,
+      "max_items_allowed_in_this_hour": 2,
+      "items": [
+        {
+          "id": "shared-dishes-kitchen-reset",
+          "title": "Dishes / kitchen reset",
+          "kind": "task",
+          "profile": "shared",
+          "optional": true,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        },
+        {
+          "id": "shared-rest-after-reset",
+          "title": "Rest after reset",
+          "kind": "self_care",
+          "profile": "shared",
+          "optional": false,
+          "source": "generated_schedule",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        }
+      ],
+      "energy_assumption": "variable",
+      "notes": ""
+    },
+    {
+      "hour_offset_from_start_button": 5,
+      "max_items_allowed_in_this_hour": 2,
+      "items": [
+        {
+          "id": "shared-eat-meal-2",
+          "title": "Eat meal 2",
+          "kind": "task",
+          "profile": "shared",
+          "optional": false,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        },
+        {
+          "id": "shared-diary-card-daily-check-in",
+          "title": "Diary card / daily check-in",
+          "kind": "task",
+          "profile": "shared",
+          "optional": true,
+          "source": "s/data/tasks_self_care.json",
+          "low_spoon_version": "Do the smallest safe version; partial completion counts."
+        }
+      ],
+      "energy_assumption": "low",
+      "notes": ""
+    }
+  ],
+  "shared_dbt_adhd_library": {
+    "location": "s/skills/",
+    "daily_rotation_source": "s/data/dbt_adhd_daily.json",
+    "rule": "Pick at most one shared daily DBT/ADHD skill for a Start the Day block, and never exceed two total items in that hour."
+  }
+}

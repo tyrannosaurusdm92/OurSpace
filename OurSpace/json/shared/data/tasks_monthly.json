@@ -1,0 +1,103 @@
+{
+  "schema_name": "ourspace_tasks_by_cadence",
+  "schema_version": "2.0.0",
+  "generated_at_utc": "2026-06-25T20:52:40Z",
+  "profile": "shared",
+  "cadence": "monthly",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; then rebuild as platinum, gold, silver, copper with copper/silver/gold each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "count": 0,
+  "records": [],
+  "tasks": [
+    {
+      "id": "shared-monthly-bathroom-reset-micro",
+      "title": "Bathroom reset — micro version",
+      "kind": "task",
+      "cadence": "monthly",
+      "category": "Chore",
+      "area": "Bathroom",
+      "priority": "High",
+      "notes": "Monthly reset is split across tiny bathroom zones.",
+      "tinySteps": [
+        "Pick only one zone: sink, shower shelf, toilet supplies, floor corner, or trash.",
+        "Use fragrance-safe products and ventilation.",
+        "Sit whenever possible; no twisting through scoliosis pain.",
+        "Leave the rest for another day."
+      ],
+      "rewardCopper": 260,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-monthly-accessibility-supplies-check",
+      "title": "Accessibility supplies check",
+      "kind": "task",
+      "cadence": "monthly",
+      "category": "Accessibility",
+      "area": "Household",
+      "priority": "High",
+      "notes": "Check supplies that keep the house easier and safer.",
+      "tinySteps": [
+        "Check wipes, gloves, masks, meds organizers, chargers, trash bags, and hydration supplies.",
+        "Add missing items to GiftLink or shopping list.",
+        "Move high-use items into reach zones.",
+        "Stop after the list; buying can be separate."
+      ],
+      "rewardCopper": 260,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-monthly-therapy-admin-light",
+      "title": "Therapy admin — light pass",
+      "kind": "task",
+      "cadence": "monthly",
+      "category": "Therapy",
+      "area": "Admin",
+      "priority": "High",
+      "notes": "One small admin pass for appointments, paperwork, or goals.",
+      "tinySteps": [
+        "Check upcoming therapy dates.",
+        "Write one therapy goal or one concern.",
+        "Save paperwork/photo/portal note if needed.",
+        "Schedule recovery time after hard calls."
+      ],
+      "rewardCopper": 260,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-monthly-deep-clean-plan-not-deep-clean",
+      "title": "Deep clean plan, not deep clean",
+      "kind": "task",
+      "cadence": "monthly",
+      "category": "Chore planning",
+      "area": "Household",
+      "priority": "Medium",
+      "notes": "Plan the next tiny cleaning steps without forcing a cleaning marathon.",
+      "tinySteps": [
+        "Name the one area causing the most stress.",
+        "Break it into five-minute pieces.",
+        "Assign only what each body can safely do.",
+        "Put the rest into weekly pulls."
+      ],
+      "rewardCopper": 180,
+      "origin": "shared"
+    }
+  ]
+}

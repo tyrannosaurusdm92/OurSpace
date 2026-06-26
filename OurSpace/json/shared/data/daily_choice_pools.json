@@ -1,0 +1,31 @@
+{
+  "schema_name": "ourspace_daily_choice_pools",
+  "profile": "shared",
+  "generated_at_utc": "2026-06-25T20:52:40Z",
+  "rule": "Shared choice pools are optional and should not duplicate person-specific tasks already loaded.",
+  "pools": {
+    "shared_household": [
+      "shared_dishes_kitchen_reset",
+      "shared_take_trash_out_replace_bag",
+      "shared_laundry_step"
+    ],
+    "shared_admin": [
+      "shared_grocery_delivery_order",
+      "shared_inventory_what_the_house_needs",
+      "shared_complete_1_paperwork_task"
+    ],
+    "shared_recovery": [
+      "shared_play_game_to_decompress",
+      "shared_watch_comfort_content",
+      "shared_journal_entry"
+    ]
+  },
+  "shared_dbt_adhd_library": {
+    "location": "s/skills/",
+    "daily_rotation_source": "s/data/dbt_adhd_daily.json",
+    "weekly_source": "s/data/dbt_adhd_weekly.json",
+    "monthly_source": "s/data/dbt_adhd_monthly.json",
+    "yearly_source": "s/data/dbt_adhd_yearly.json",
+    "rule": "Use at most one optional shared skill per available block; never more than two total items in an hour."
+  }
+}

@@ -1,0 +1,1413 @@
+{
+  "schema_name": "ourspace_dbt_adhd_shared_kindness_cadence_library",
+  "schema_version": "3.0.0",
+  "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+  "profile": "shared",
+  "cadence": "yearly",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; rebuild as platinum, gold, silver, copper so copper/silver/gold are each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "kindness_pass_applied": true,
+  "profile_basis": {
+    "william": {
+      "main_doability_needs": [
+        "bed-level or seated options by default",
+        "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+        "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+        "partial completion and stopping before a crash count as success",
+        "no shame, no body blame, no pressure to push through pain or dysphoria"
+      ],
+      "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+    },
+    "jasper": {
+      "main_doability_needs": [
+        "ADHD transition support before task demands",
+        "caregiver burnout recovery treated as care, not avoidance",
+        "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+        "low-energy, one-field, one-minute versions allowed",
+        "no assumption that Jasper has unlimited caregiver capacity"
+      ],
+      "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+    },
+    "shared": {
+      "household_rules": [
+        "no hour block may hold more than two tasks/tools",
+        "skills may be used as one-breath or one-field versions",
+        "survival days load critical care first and skip optional worksheets",
+        "rest, boundaries, decompression, and asking for help count as care",
+        "skills are for support, not grades"
+      ]
+    }
+  },
+  "start_the_day_rule": "Only daily records are eligible for automatic Start the Day rotation. Weekly/monthly/yearly records may be manually or expanded-day scheduled. Every hour block remains capped at two items.",
+  "count": 27,
+  "records": [
+    {
+      "id": "shared-skill-93915e5d2231",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT Diary Cards",
+      "source_type": "diary_card",
+      "original_relative_path": "06_DBT_Diary_Cards/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y006.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Mark only the fields that matter today.",
+        "Use checkboxes or one-word notes.",
+        "Treat the card as information, not a score."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-6d27c6ac2bb2",
+      "profile": "shared",
+      "title": "ADHD JSON + Fillable HTML Index",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "html",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_original_html_s/skills/index.html",
+      "kindness_passed_file": "s/skills/y017.html",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-c609f94338b7",
+      "profile": "shared",
+      "title": "DBT Skills Workbook - Fillable HTML Index",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "html",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/DBT_original_html_s/skills/index.html",
+      "kindness_passed_file": "s/skills/y022.html",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-670c3a907f08",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "ADHD Time Management and Planning",
+      "source_type": "readme",
+      "original_relative_path": "08_ADHD_Time_Management_and_Planning/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y008.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-abbbf914cee4",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "ADHD Motivation Dopamine and Task Initiation",
+      "source_type": "readme",
+      "original_relative_path": "10_ADHD_Motivation_Dopamine_and_Task_Initiation/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y010.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-d0750c78f92c",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "ADHD Burnout Sensory and Self Help",
+      "source_type": "readme",
+      "original_relative_path": "12_ADHD_Burnout_Sensory_and_Self_Help/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y012.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-6be219d78418",
+      "profile": "shared",
+      "title": "pdf_to_json_text_layout_v1",
+      "cadence": "yearly",
+      "category": "ADHD General Reference and Diagnosis",
+      "source_type": "reference",
+      "original_relative_path": "13_ADHD_General_Reference_and_Diagnosis/json/the_professionals_who_diagnose_and_treat_adhd.json",
+      "kindness_passed_file": "s/skills/y013.json",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-04f3cce60c4f",
+      "profile": "shared",
+      "title": "Adhd Html Generation Manifest",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_html_generation_manifest.json",
+      "kindness_passed_file": "s/skills/y015.json",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-19d8490d45df",
+      "profile": "shared",
+      "title": "Adhd Readme",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "readme",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_s/skills/README.md",
+      "kindness_passed_file": "s/skills/y018.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-ac46bc78ffd1",
+      "profile": "shared",
+      "title": "Adhd Readme Html Export",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "readme",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_README_HTML_EXPORT.md",
+      "kindness_passed_file": "s/skills/y019.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-401f1270d1ed",
+      "profile": "shared",
+      "title": "DBT+ADHD Skill Files",
+      "cadence": "yearly",
+      "category": "combined manifest.json",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "combined_manifest.json",
+      "kindness_passed_file": "s/skills/y026.json",
+      "tool_area": "DBT / ADHD reference",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3e28d4981df1",
+      "profile": "shared",
+      "title": "Dbt Manifest",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/DBT_manifest.json",
+      "kindness_passed_file": "s/skills/y021.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-badf544ec9bb",
+      "profile": "shared",
+      "title": "Dbt Readme",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "readme",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/DBT_s/skills/README.md",
+      "kindness_passed_file": "s/skills/y023.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3c04a76cc2f2",
+      "profile": "shared",
+      "title": "Dbt Validation Report",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/DBT_validation_report.json",
+      "kindness_passed_file": "s/skills/y024.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-8ec9a00bfd09",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "s/skills/README.md",
+      "source_type": "readme",
+      "original_relative_path": "s/skills/README.md",
+      "kindness_passed_file": "s/skills/y027.md",
+      "tool_area": "DBT / ADHD reference",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-16deff2f6768",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "readme",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y001.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-74bfa9dac389",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT Mindfulness",
+      "source_type": "readme",
+      "original_relative_path": "02_DBT_Mindfulness/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y002.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Take one breath.",
+        "Name one body sensation or one fact.",
+        "Choose one kind next step or stop for rest."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4af2ef99facf",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT Interpersonal Effectiveness",
+      "source_type": "readme",
+      "original_relative_path": "03_DBT_Interpersonal_Effectiveness/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y003.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-07df31908c47",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT Emotion Regulation",
+      "source_type": "readme",
+      "original_relative_path": "04_DBT_Emotion_Regulation/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y004.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-64eea389adb4",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "readme",
+      "original_relative_path": "05_DBT_Distress_Tolerance/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y005.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-4106a9f6e097",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "DBT Indexes and Compact Exports",
+      "source_type": "readme",
+      "original_relative_path": "07_DBT_Indexes_and_Compact_Exports/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y007.md",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7cdd5749781e",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "ADHD Cleaning Decluttering and Organization",
+      "source_type": "readme",
+      "original_relative_path": "09_ADHD_Cleaning_Decluttering_and_Organization/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y009.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7e7fad181c88",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "ADHD Emotion Regulation Anger and Calming",
+      "source_type": "readme",
+      "original_relative_path": "11_ADHD_Emotion_Regulation_Anger_and_Calming/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y011.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-fc5c4ab6284a",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "ADHD General Reference and Diagnosis",
+      "source_type": "readme",
+      "original_relative_path": "13_ADHD_General_Reference_and_Diagnosis/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y014.md",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Pick the smallest visible version.",
+        "Use a timer, body double, or transition cue.",
+        "Stop after one tiny step if energy drops."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-e0520eb01f78",
+      "profile": "shared",
+      "title": "Readme",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "readme",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/s/skills/README.md",
+      "kindness_passed_file": "s/skills/y025.md",
+      "tool_area": "DBT / ADHD reference",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-edebf54b0c7e",
+      "profile": "shared",
+      "title": "adhd_pdf_json_export_manifest_v1",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_manifest.json",
+      "kindness_passed_file": "s/skills/y016.json",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-cfaad92c0fcc",
+      "profile": "shared",
+      "title": "pdf_similarity_report_v1",
+      "cadence": "yearly",
+      "category": "Source Manifests Readmes and Reports",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "99_Source_Manifests_Readmes_and_Reports/ADHD_similarity_report.json",
+      "kindness_passed_file": "s/skills/y020.json",
+      "tool_area": "ADHD",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "yearly reference, review, or archive check",
+        "start_the_day_use": "not auto-loaded; use for annual care-plan / docs review",
+        "recommended_block": "yearly OurSpace maintenance and support refresh"
+      },
+      "currency_suggestion": {
+        "platinum": 1,
+        "gold": 0,
+        "silver": 0,
+        "copper": 0
+      }
+    }
+  ]
+}

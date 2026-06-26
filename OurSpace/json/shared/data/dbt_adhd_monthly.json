@@ -1,0 +1,1613 @@
+{
+  "schema_name": "ourspace_dbt_adhd_shared_kindness_cadence_library",
+  "schema_version": "3.0.0",
+  "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+  "profile": "shared",
+  "cadence": "monthly",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; rebuild as platinum, gold, silver, copper so copper/silver/gold are each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "kindness_pass_applied": true,
+  "profile_basis": {
+    "william": {
+      "main_doability_needs": [
+        "bed-level or seated options by default",
+        "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+        "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+        "partial completion and stopping before a crash count as success",
+        "no shame, no body blame, no pressure to push through pain or dysphoria"
+      ],
+      "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+    },
+    "jasper": {
+      "main_doability_needs": [
+        "ADHD transition support before task demands",
+        "caregiver burnout recovery treated as care, not avoidance",
+        "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+        "low-energy, one-field, one-minute versions allowed",
+        "no assumption that Jasper has unlimited caregiver capacity"
+      ],
+      "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+    },
+    "shared": {
+      "household_rules": [
+        "no hour block may hold more than two tasks/tools",
+        "skills may be used as one-breath or one-field versions",
+        "survival days load critical care first and skip optional worksheets",
+        "rest, boundaries, decompression, and asking for help count as care",
+        "skills are for support, not grades"
+      ]
+    }
+  },
+  "start_the_day_rule": "Only daily records are eligible for automatic Start the Day rotation. Weekly/monthly/yearly records may be manually or expanded-day scheduled. Every hour block remains capped at two items.",
+  "count": 31,
+  "records": [
+    {
+      "id": "shared-skill-4b1acdabb33c",
+      "profile": "shared",
+      "title": "Common Addictions In case you thought you had no addictions, here is a list. You are addicted when you are unable to stop a behavior pattern or use of substances, despite negative consequences and despite your best efforts to stop.",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_16a_common_addictions_in_case_you_thought_you_had_no_addictions_here_is_a.json",
+      "kindness_passed_file": "s/skills/m010.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7e2e85cedf9c",
+      "profile": "shared",
+      "title": "Behavior Patterns Characteristic of Addict Mind and of Clean Mind Addict Mind \u0003",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_18a_behavior_patterns_characteristic_of_addict_mind_and_of_clean_mind_addi.json",
+      "kindness_passed_file": "s/skills/m011.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-99b45fe995ef",
+      "profile": "shared",
+      "title": "Biosocial Theory",
+      "cadence": "monthly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "handout",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_5_biosocial_theory.json",
+      "kindness_passed_file": "s/skills/m002.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-94b71e0baacc",
+      "profile": "shared",
+      "title": "Body Scan Meditation Step by Step Sit on a chair, or lie on your back on the floor with legs uncrossed. Put your arms in a comfortable position by your side, on your abdomen, or (if sitting) put them on your thighs palms up. Open your eyes partially to let light in. If you are lying on the floor, put a cushion under your knees if need",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_8a_body_scan_meditation_step_by_step_sit_on_a_chair_or_lie_on_your_back_o.json",
+      "kindness_passed_file": "s/skills/m017.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-2a4645f747b6",
+      "profile": "shared",
+      "title": "Body Scan Meditation, Step by Step",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_6c_body_scan_meditation_step_by_step.json",
+      "kindness_passed_file": "s/skills/m027.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-f840fe071290",
+      "profile": "shared",
+      "title": "Burning Bridges and Building New Ones Burning Bridges Accept at the most radical level that you are not going to engage in addictive behavior again, and then move actively to cut off all addictive behavior options.",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_20_burning_bridges_and_building_new_ones_burning_bridges_accept_at_the_mo.json",
+      "kindness_passed_file": "s/skills/m014.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-827a0fc1eb26",
+      "profile": "shared",
+      "title": "Changing Body Chemistry with TIP Skills",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_4_changing_body_chemistry_with_tip_skills.json",
+      "kindness_passed_file": "s/skills/m024.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7b0b4a477c93",
+      "profile": "shared",
+      "title": "Community Reinforcement Community reinforcement means replacing addiction reinforcers with abstinence reinforcers. Reinforcing Abstinence Is Critical",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_19_community_reinforcement_community_reinforcement_means_replacing_addict.json",
+      "kindness_passed_file": "s/skills/m012.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-f6013a00b362",
+      "profile": "shared",
+      "title": "DBT+ADHD Skill Files",
+      "cadence": "monthly",
+      "category": "s/skills/index.html",
+      "source_type": "html",
+      "original_relative_path": "s/skills/index.html",
+      "kindness_passed_file": "s/skills/m031.html",
+      "tool_area": "DBT / ADHD reference",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-bd7bf9cf6f8c",
+      "profile": "shared",
+      "title": "Distress Tolerance Worksheet 13: Skills When the Crisis Is Addiction",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/html/distress_tolerance_worksheet_13_skills_when_the_crisis_is_addiction.html",
+      "kindness_passed_file": "s/skills/m018.html",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-9c7c1c80d394",
+      "profile": "shared",
+      "title": "Effective Rethinking and Paired Relaxation, Step by Step",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_6c_effective_rethinking_and_paired_relaxation_step_by_step.json",
+      "kindness_passed_file": "s/skills/m015.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b9915b31575f",
+      "profile": "shared",
+      "title": "From Clean Mind to Clear Mind",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_15_from_clean_mind_to_clear_mind.json",
+      "kindness_passed_file": "s/skills/m022.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-dc6fb3ae0b60",
+      "profile": "shared",
+      "title": "Goals of Distress Tolerance Survive Crisis Situations Without Making Them Worse Accept Reality",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_1_goals_of_distress_tolerance_survive_crisis_situations_without_making_t.json",
+      "kindness_passed_file": "s/skills/m013.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-09ebffc26cfa",
+      "profile": "shared",
+      "title": "Goals of Mindfulness Practice Reduce Suffering and Increase Happiness \u0003  Reduce pain, tension, and stress.",
+      "cadence": "monthly",
+      "category": "DBT Mindfulness",
+      "source_type": "handout",
+      "original_relative_path": "02_DBT_Mindfulness/handouts/json/mindfulness_handout_1_goals_of_mindfulness_practice_reduce_suffering_and_increase_happiness.json",
+      "kindness_passed_file": "s/skills/m003.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Take one breath.",
+        "Name one body sensation or one fact.",
+        "Choose one kind next step or stop for rest."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-70f33aaa3f8e",
+      "profile": "shared",
+      "title": "Goals of Mindfulness Practice: A Spiritual Perspective",
+      "cadence": "monthly",
+      "category": "DBT Mindfulness",
+      "source_type": "handout",
+      "original_relative_path": "02_DBT_Mindfulness/handouts/json/mindfulness_handout_7_goals_of_mindfulness_practice_a_spiritual_perspective.json",
+      "kindness_passed_file": "s/skills/m005.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Take one breath.",
+        "Name one body sensation or one fact.",
+        "Choose one kind next step or stop for rest."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-5b67cb5e4acb",
+      "profile": "shared",
+      "title": "Half-Smiling and Willing Hands Accepting reality with your body. Half-Smiling 1st. Relax your face from the top of your head down to your chin and jaw.",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_14_half_smiling_and_willing_hands_accepting_reality_with_your_body_half_s.json",
+      "kindness_passed_file": "s/skills/m007.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3d0a737e1603",
+      "profile": "shared",
+      "title": "Mindfulness Definitions",
+      "cadence": "monthly",
+      "category": "DBT Mindfulness",
+      "source_type": "handout",
+      "original_relative_path": "02_DBT_Mindfulness/handouts/json/mindfulness_handout_1a_mindfulness_definitions.json",
+      "kindness_passed_file": "s/skills/m004.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Take one breath.",
+        "Name one body sensation or one fact.",
+        "Choose one kind next step or stop for rest."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-0af1814fd7d9",
+      "profile": "shared",
+      "title": "Overview:",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_16_overview.json",
+      "kindness_passed_file": "s/skills/m009.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-3c197af2bfad",
+      "profile": "shared",
+      "title": "Overview: Introduction to Skills Training Guidelines for Skills Training Skills Training Assumptions",
+      "cadence": "monthly",
+      "category": "DBT General Orientation and Analyzing Behavior",
+      "source_type": "handout",
+      "original_relative_path": "01_DBT_General_Orientation_and_Analyzing_Behavior/handouts/json/general_handout_2_overview_introduction_to_skills_training_guidelines_for_skills_trainin.json",
+      "kindness_passed_file": "s/skills/m001.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-fbf09642e961",
+      "profile": "shared",
+      "title": "Overview: Reality Acceptance Skills These are skills for how to live a life that is not the life you want. Radical Acceptance",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_10_overview_reality_acceptance_skills_these_are_skills_for_how_to_live_a.json",
+      "kindness_passed_file": "s/skills/m006.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-5ea9afc80a49",
+      "profile": "shared",
+      "title": "Paired Muscle Relaxation",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_4a_paired_muscle_relaxation.json",
+      "kindness_passed_file": "s/skills/m025.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-f336ec79e225",
+      "profile": "shared",
+      "title": "Practicing Alternate Rebellion and Adaptive Denial",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_18_practicing_alternate_rebellion_and_adaptive_denial.json",
+      "kindness_passed_file": "s/skills/m023.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-a23a5a1686da",
+      "profile": "shared",
+      "title": "Practicing Half-Smiling and Willing Hands",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_11a_practicing_half_smiling_and_willing_hands.json",
+      "kindness_passed_file": "s/skills/m019.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-7f2272b129fc",
+      "profile": "shared",
+      "title": "Practicing Half-Smiling and Willing Hands",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_14a_practicing_half_smiling_and_willing_hands.json",
+      "kindness_passed_file": "s/skills/m008.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-be52dab140e8",
+      "profile": "shared",
+      "title": "Practicing Mindfulness of Thoughts",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_12a_practicing_mindfulness_of_thoughts.json",
+      "kindness_passed_file": "s/skills/m020.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-8c1765571f44",
+      "profile": "shared",
+      "title": "Reality Acceptance Skills",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_8_reality_acceptance_skills.json",
+      "kindness_passed_file": "s/skills/m028.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-fb2895921258",
+      "profile": "shared",
+      "title": "Reality Acceptance Skills",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_8a_reality_acceptance_skills.json",
+      "kindness_passed_file": "s/skills/m029.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-89a5ab0d1d08",
+      "profile": "shared",
+      "title": "Self-Soothing",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_6a_self_soothing.json",
+      "kindness_passed_file": "s/skills/m026.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-5c98a07f246c",
+      "profile": "shared",
+      "title": "Self-Soothing A way to remember these skills is to think of soothing each of your five senses. With Vision: \u0003",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "handout",
+      "original_relative_path": "05_DBT_Distress_Tolerance/handouts/json/distress_tolerance_handout_8_self_soothing_a_way_to_remember_these_skills_is_to_think_of_soothing_e.json",
+      "kindness_passed_file": "s/skills/m016.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-0697347e9ef7",
+      "profile": "shared",
+      "title": "Skills When the Crisis Is Addiction",
+      "cadence": "monthly",
+      "category": "DBT Distress Tolerance",
+      "source_type": "worksheet",
+      "original_relative_path": "05_DBT_Distress_Tolerance/worksheets/json/distress_tolerance_worksheet_13_skills_when_the_crisis_is_addiction.json",
+      "kindness_passed_file": "s/skills/m021.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Open the file without requiring completion.",
+        "Fill one field, circle one option, or read one prompt.",
+        "Stop, save, or print; partial completion counts."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    },
+    {
+      "id": "shared-skill-b64e11405d91",
+      "profile": "shared",
+      "title": "All Items Compact",
+      "cadence": "monthly",
+      "category": "DBT Indexes and Compact Exports",
+      "source_type": "manifest_or_index",
+      "original_relative_path": "07_DBT_Indexes_and_Compact_Exports/json/all_items_compact.json",
+      "kindness_passed_file": "s/skills/m030.json",
+      "tool_area": "DBT",
+      "priority": "Low",
+      "why_it_exists": "Shared DBT/ADHD support file made more doable through the OurSpace kindness pass.",
+      "tiny_steps": [
+        "Read one short section.",
+        "Choose one sentence or tool that fits today.",
+        "Use the low-spoon version; no full worksheet is required."
+      ],
+      "completion_rules": {
+        "partial_completion_counts": true,
+        "can_be_paused_and_resumed": true,
+        "no_shame_if_skipped": true,
+        "low_spoon_version_required": true,
+        "can_be_done_separately_by_william_and_jasper": true,
+        "can_be_done_together_only_if_both_people_have_capacity": true
+      },
+      "schedule_policy": {
+        "start_the_day_eligible": false,
+        "expanded_day_eligible": false,
+        "max_items_per_hour_block": 2,
+        "do_not_force_into_day": true,
+        "do_not_stack_with": [
+          "appointment",
+          "heavy_chore",
+          "conflict_repair",
+          "hygiene_overload",
+          "caregiver_overload"
+        ]
+      },
+      "routine_integration": {
+        "routine_role": "monthly review or larger pattern tool",
+        "start_the_day_use": "not auto-loaded on survival days; use as a scheduled monthly review item",
+        "recommended_block": "monthly support audit or household reset"
+      },
+      "currency_suggestion": {
+        "platinum": 0,
+        "gold": 3,
+        "silver": 0,
+        "copper": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,594 @@
+{
+  "schema_name": "shared_tasks_self_care",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-25T00:00:00-04:00",
+  "language_rules": {
+    "allowed_person_labels": [
+      "Jasper",
+      "William",
+      "shared"
+    ],
+    "note": "This export intentionally uses names only and avoids the removed family-role labels."
+  },
+  "description": "Shared tasks, chores, self-care, cat care, admin, and decompression tasks both people can use.",
+  "count": 24,
+  "records": [
+    {
+      "id": "shared-take-meds",
+      "profile": "shared",
+      "task": "Take meds",
+      "category": "Self-care",
+      "room_or_area": "Self-care",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Daily medication/routine support for either person.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-hydrate",
+      "profile": "shared",
+      "task": "Hydrate",
+      "category": "Self-care",
+      "room_or_area": "Self-care",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Water/body support.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-eat-meal-1",
+      "profile": "shared",
+      "task": "Eat meal 1",
+      "category": "Self-care",
+      "room_or_area": "Kitchen / Bedside",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Minimum food care.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-eat-meal-2",
+      "profile": "shared",
+      "task": "Eat meal 2",
+      "category": "Self-care",
+      "room_or_area": "Kitchen / Bedside",
+      "respawn": "Daily",
+      "priority": "High",
+      "used_for": "Second meal or safe snack support.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-hygiene-check",
+      "profile": "shared",
+      "task": "Hygiene check",
+      "category": "Self-care",
+      "room_or_area": "Bathroom / Bedroom",
+      "respawn": "Daily",
+      "priority": "High",
+      "used_for": "Basic hygiene, comfort, and dignity.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-shower-bathe-wash-up",
+      "profile": "shared",
+      "task": "Shower / bathe / wash-up",
+      "category": "Self-care",
+      "room_or_area": "Bathroom",
+      "respawn": "As needed / every 2 days",
+      "priority": "High",
+      "used_for": "Hygiene support with low-spoon alternatives allowed.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-decompression-break",
+      "profile": "shared",
+      "task": "Decompression break",
+      "category": "Self-care",
+      "room_or_area": "Bedroom / Living room",
+      "respawn": "Daily",
+      "priority": "High",
+      "used_for": "Rest, sensory reset, or burnout prevention.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-use-dbt-skill",
+      "profile": "shared",
+      "task": "Use DBT skill",
+      "category": "Mental health",
+      "room_or_area": "DBT",
+      "respawn": "Daily / as needed",
+      "priority": "High",
+      "used_for": "Emotion regulation and coping.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-use-adhd-skills-support-chat",
+      "profile": "shared",
+      "task": "Use ADHD skill card",
+      "category": "Mental health",
+      "room_or_area": "ADHD skills",
+      "respawn": "Daily / as needed",
+      "priority": "High",
+      "used_for": "Support, reminders, grounding, and task initiation.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-diary-card-daily-check-in",
+      "profile": "shared",
+      "task": "Diary card / daily check-in",
+      "category": "Mental health",
+      "room_or_area": "DBT Daily Cards",
+      "respawn": "Daily",
+      "priority": "Medium",
+      "used_for": "Mood, skill, pain, energy, or stress tracking.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-journal-entry",
+      "profile": "shared",
+      "task": "Journal entry",
+      "category": "Mental health / writing",
+      "room_or_area": "DBT Journaling",
+      "respawn": "Daily / as needed",
+      "priority": "Medium",
+      "used_for": "Processing thoughts and feelings.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-go-to-doctor-appointment",
+      "profile": "shared",
+      "task": "Go to doctor / appointment",
+      "category": "Medical admin",
+      "room_or_area": "Medical",
+      "respawn": "As needed",
+      "priority": "Very High",
+      "used_for": "Healthcare access and follow-through.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 1
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-make-important-phone-call",
+      "profile": "shared",
+      "task": "Make important phone call",
+      "category": "Admin",
+      "room_or_area": "Admin",
+      "respawn": "As needed",
+      "priority": "High",
+      "used_for": "Life admin and communication.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-complete-1-paperwork-task",
+      "profile": "shared",
+      "task": "Complete 1 paperwork task",
+      "category": "Admin",
+      "room_or_area": "Admin",
+      "respawn": "As needed",
+      "priority": "High",
+      "used_for": "Forms, benefits, housing, medical, or household paperwork.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-grocery-delivery-order",
+      "profile": "shared",
+      "task": "Grocery delivery order",
+      "category": "Shopping",
+      "room_or_area": "Kitchen / Shopping",
+      "respawn": "Weekly",
+      "priority": "High",
+      "used_for": "Household food restock.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-inventory-what-the-house-needs",
+      "profile": "shared",
+      "task": "Inventory what the house needs",
+      "category": "Shopping",
+      "room_or_area": "Kitchen / Whole home",
+      "respawn": "Weekly",
+      "priority": "Medium",
+      "used_for": "Prevent running out of important supplies.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-dishes-kitchen-reset",
+      "profile": "shared",
+      "task": "Dishes / kitchen reset",
+      "category": "Chore",
+      "room_or_area": "Kitchen",
+      "respawn": "Daily / as able",
+      "priority": "High",
+      "used_for": "Kitchen maintenance, with low-spoon versions allowed.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-take-trash-out-replace-bag",
+      "profile": "shared",
+      "task": "Take trash out + replace bag",
+      "category": "Chore",
+      "room_or_area": "Whole home",
+      "respawn": "As needed",
+      "priority": "High",
+      "used_for": "Trash maintenance and sanitation.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-laundry-step",
+      "profile": "shared",
+      "task": "Laundry step",
+      "category": "Chore",
+      "room_or_area": "Bedroom / Laundry",
+      "respawn": "Weekly",
+      "priority": "Medium",
+      "used_for": "Start, switch, fold, sort, or put away one manageable step.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-cat-food-and-water-check",
+      "profile": "shared",
+      "task": "Cat food and water check",
+      "category": "Cat care",
+      "room_or_area": "Cats",
+      "respawn": "Daily",
+      "priority": "Critical",
+      "used_for": "Care for Harvey, Callie, and cat siblings as applicable.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 2,
+        "gold": 1,
+        "platinum": 2
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-cat-supply-inventory",
+      "profile": "shared",
+      "task": "Cat supply inventory",
+      "category": "Cat care / shopping",
+      "room_or_area": "Cats",
+      "respawn": "Weekly",
+      "priority": "Medium",
+      "used_for": "Track litter, food, treats, and care supplies.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-play-game-to-decompress",
+      "profile": "shared",
+      "task": "Play game to decompress",
+      "category": "Hobby / decompression",
+      "room_or_area": "Games",
+      "respawn": "As needed",
+      "priority": "Gentle",
+      "used_for": "Regulated rest and recovery.",
+      "currency_suggestion": {
+        "copper": 3,
+        "silver": 0,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-watch-comfort-content",
+      "profile": "shared",
+      "task": "Watch comfort content",
+      "category": "Hobby / serotonin",
+      "room_or_area": "Serotonin",
+      "respawn": "As needed",
+      "priority": "Gentle",
+      "used_for": "Mood boost and decompression.",
+      "currency_suggestion": {
+        "copper": 3,
+        "silver": 0,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    },
+    {
+      "id": "shared-add-shop-link-past-order-favorite-store",
+      "profile": "shared",
+      "task": "Add shop link / past order / favorite store",
+      "category": "Shopping",
+      "room_or_area": "Store",
+      "respawn": "As needed",
+      "priority": "Gentle",
+      "used_for": "Store management for rewards and wish items.",
+      "currency_suggestion": {
+        "copper": 3,
+        "silver": 0,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      }
+    }
+  ],
+  "currency_rules": {
+    "exchange_rates": {
+      "copper_per_silver": 10,
+      "silver_per_gold": 10,
+      "gold_per_platinum": 10
+    },
+    "display_rules": {
+      "copper_min": 0,
+      "copper_max": 9,
+      "silver_min": 0,
+      "silver_max": 9,
+      "gold_min": 0,
+      "gold_max": 9,
+      "platinum_min": 0,
+      "platinum_max": null
+    },
+    "normalization": "Carry overflow upward so lower denominations stay from 0 through 9; platinum has no upper limit."
+  },
+  "split_metadata": {
+    "category": "shared",
+    "source_file": "shared_tasks_self_care.json",
+    "cleaned_at_utc": "2026-06-25T20:15:41+00:00",
+    "family_title_scrub_applied": true,
+    "currency_normalization_applied": true
+  }
+}

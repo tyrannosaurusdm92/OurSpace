@@ -1,0 +1,30 @@
+{
+  "schema_name": "ourspace_self_care_by_cadence",
+  "schema_version": "2.0.0",
+  "generated_at_utc": "2026-06-25T20:52:40Z",
+  "profile": "shared",
+  "cadence": "yearly",
+  "selection_rule": "Subset of tasks that directly support body care, mental health, access, medical needs, relationship/social care, decompression, or low-spoon regulation.",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; then rebuild as platinum, gold, silver, copper with copper/silver/gold each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "count": 0,
+  "records": []
+}

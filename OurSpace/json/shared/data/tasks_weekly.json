@@ -1,0 +1,276 @@
+{
+  "schema_name": "ourspace_tasks_by_cadence",
+  "schema_version": "2.0.0",
+  "generated_at_utc": "2026-06-25T20:52:40Z",
+  "profile": "shared",
+  "cadence": "weekly",
+  "currency_rules": {
+    "exchange_rates": {
+      "10 copper": "1 silver",
+      "10 silver": "1 gold",
+      "10 gold": "1 platinum"
+    },
+    "limits": {
+      "copper_max": 9,
+      "silver_max": 9,
+      "gold_max": 9,
+      "platinum_max": null
+    },
+    "normalization_formula": "total_copper = copper + 10*silver + 100*gold + 1000*platinum; then rebuild as platinum, gold, silver, copper with copper/silver/gold each 0-9.",
+    "required_display_order": [
+      "platinum",
+      "gold",
+      "silver",
+      "copper"
+    ]
+  },
+  "count": 5,
+  "records": [
+    {
+      "id": "shared-grocery-delivery-order",
+      "profile": "shared",
+      "task": "Grocery delivery order",
+      "category": "Shopping",
+      "room_or_area": "Kitchen / Shopping",
+      "respawn": "Weekly",
+      "priority": "High",
+      "used_for": "Household food restock.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "weekly"
+      ],
+      "cadence_split_source_respawn": "Weekly"
+    },
+    {
+      "id": "shared-shower-bathe-wash-up",
+      "profile": "shared",
+      "task": "Shower / bathe / wash-up",
+      "category": "Self-care",
+      "room_or_area": "Bathroom",
+      "respawn": "As needed / every 2 days",
+      "priority": "High",
+      "used_for": "Hygiene support with low-spoon alternatives allowed.",
+      "currency_suggestion": {
+        "copper": 0,
+        "silver": 3,
+        "gold": 1,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "daily",
+        "weekly"
+      ],
+      "cadence_split_source_respawn": "As needed / every 2 days"
+    },
+    {
+      "id": "shared-cat-supply-inventory",
+      "profile": "shared",
+      "task": "Cat supply inventory",
+      "category": "Cat care / shopping",
+      "room_or_area": "Cats",
+      "respawn": "Weekly",
+      "priority": "Medium",
+      "used_for": "Track litter, food, treats, and care supplies.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "weekly"
+      ],
+      "cadence_split_source_respawn": "Weekly"
+    },
+    {
+      "id": "shared-inventory-what-the-house-needs",
+      "profile": "shared",
+      "task": "Inventory what the house needs",
+      "category": "Shopping",
+      "room_or_area": "Kitchen / Whole home",
+      "respawn": "Weekly",
+      "priority": "Medium",
+      "used_for": "Prevent running out of important supplies.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "weekly"
+      ],
+      "cadence_split_source_respawn": "Weekly"
+    },
+    {
+      "id": "shared-laundry-step",
+      "profile": "shared",
+      "task": "Laundry step",
+      "category": "Chore",
+      "room_or_area": "Bedroom / Laundry",
+      "respawn": "Weekly",
+      "priority": "Medium",
+      "used_for": "Start, switch, fold, sort, or put away one manageable step.",
+      "currency_suggestion": {
+        "copper": 5,
+        "silver": 2,
+        "gold": 0,
+        "platinum": 0
+      },
+      "completion_rules": {
+        "allow_partial_completion": true,
+        "lock_until_respawn": true,
+        "show_on_daily_schedule_when_due": true,
+        "can_be_added_to_today": true,
+        "person_specific_notes_allowed": true
+      },
+      "cadence_tags": [
+        "weekly"
+      ],
+      "cadence_split_source_respawn": "Weekly"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "shared-weekly-clean-shower-tiny-steps",
+      "title": "Clean shower — tiny steps",
+      "kind": "task",
+      "cadence": "weekly",
+      "category": "Chore",
+      "area": "Bathroom",
+      "priority": "High",
+      "notes": "Break into one micro-step at a time; stop before pain, dizziness, MCAS symptoms, or breathing strain spikes.",
+      "tinySteps": [
+        "Choose one piece only: spray, rinse, wipe, or put supplies away.",
+        "Use ventilation/mask or unscented cleaner; Jasper avoids triggers.",
+        "William can do reachable planning/checkoff from wheelchair or bed if useful.",
+        "Pause between steps; finishing later still counts."
+      ],
+      "rewardCopper": 180,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-weekly-clean-toilet-tiny-steps",
+      "title": "Clean toilet — tiny steps",
+      "kind": "task",
+      "cadence": "weekly",
+      "category": "Chore",
+      "area": "Bathroom",
+      "priority": "High",
+      "notes": "A small sanitation pass counts; do not turn this into a full bathroom reset.",
+      "tinySteps": [
+        "Gather one safe cleaner and gloves.",
+        "Do bowl, seat, or outside surfaces as separate steps.",
+        "Sit, brace, or ask for help before bending/twisting.",
+        "Stop when symptoms say stop."
+      ],
+      "rewardCopper": 180,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-weekly-therapy-support-check",
+      "title": "Therapy support check",
+      "kind": "task",
+      "cadence": "weekly",
+      "category": "Therapy",
+      "area": "Mental health",
+      "priority": "High",
+      "notes": "Make therapy easier, not bigger.",
+      "tinySteps": [
+        "Check date/time for therapy or therapy homework.",
+        "Write one sentence about what needs support.",
+        "Put meds, water, stim/comfort item, and charger within reach.",
+        "Afterward, schedule a decompression block."
+      ],
+      "rewardCopper": 180,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-weekly-trash-one-bag",
+      "title": "Trash — one bag or one bin",
+      "kind": "task",
+      "cadence": "weekly",
+      "category": "Chore",
+      "area": "Household",
+      "priority": "Medium",
+      "notes": "Only one small trash step is required.",
+      "tinySteps": [
+        "Tie one bag or empty one small bin.",
+        "Use wheelchair-accessible route or handoff.",
+        "Replace liner only if that is safe today.",
+        "Wash hands or sanitize afterward."
+      ],
+      "rewardCopper": 120,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-weekly-laundry-one-step",
+      "title": "Laundry — one tiny step",
+      "kind": "task",
+      "cadence": "weekly",
+      "category": "Chore",
+      "area": "Clothes / bedding",
+      "priority": "Medium",
+      "notes": "Any single laundry step counts.",
+      "tinySteps": [
+        "Choose one: gather, start washer, move to dryer, fold five items, or put away five items.",
+        "Use baskets at reachable height.",
+        "No stairs/heavy loads without help.",
+        "Stop at one step if bodies are done."
+      ],
+      "rewardCopper": 120,
+      "origin": "shared"
+    },
+    {
+      "id": "shared-weekly-safe-food-plan",
+      "title": "Safe food plan",
+      "kind": "task",
+      "cadence": "weekly",
+      "category": "Food / MCAS",
+      "area": "Kitchen",
+      "priority": "High",
+      "notes": "Plan a few low-effort safe options for both bodies.",
+      "tinySteps": [
+        "List two safe foods and one backup drink.",
+        "Check for trigger foods/smells before ordering or cooking.",
+        "Put easy items within reach.",
+        "Save one emergency fallback option."
+      ],
+      "rewardCopper": 180,
+      "origin": "shared"
+    }
+  ]
+}
