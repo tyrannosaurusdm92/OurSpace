@@ -1,4 +1,4 @@
-const OURSPACE_CACHE = 'ourspace-pwa-v10-mobile-cloud-auth';
+const OURSPACE_CACHE = 'ourspace-pwa-v11-cross-device-design-media';
 const CORE_ASSETS = [
   "./ourspace.html",
   "./OurSpace.html",
@@ -10,6 +10,10 @@ const CORE_ASSETS = [
   "./assets/ourspace-embedded-catalogs.js",
   "./assets/ourspace-user-core.js",
   "./assets/ourspace-user.css",
+  "./diary_cards/william_dbt_disability_guilt_diary_card.html",
+  "./diary_cards/jasper_dbt_adhd_caregiver_diary_card.html",
+  "./json/william/data/positive_messages.json",
+  "./json/jasper/data/positive_messages.json",
   "./assets/ourspace-auth.js",
   "./assets/ourspace-auth.css",
   "./assets/legacy-portal-storage.js",

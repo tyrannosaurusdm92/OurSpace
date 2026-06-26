@@ -37,3 +37,12 @@ Validated locally after patch:
 - Backend sessions are per-device tokens; signout sends only the current token.
 
 Live backend note: I attempted to open the Apps Script URL from the sandbox web tool, but the request timed out there. The app files were therefore validated statically and patched to use POST, GET, JSONP, and opaque write fallbacks for mobile browser differences.
+
+
+## 2026-06-26 Cross-device design/media/diary patch
+- JavaScript syntax checked for william.html and jasper.html.
+- Service worker syntax checked.
+- Manifest JSON and all app JSON files checked.
+- Backend URL remains locked to the requested Apps Script URL.
+- Positive message and marquee JSON has character-specific/Onyx-related entries filtered out for user-facing display.
+- Diary card files are present under diary_cards/ and referenced from both home pages.

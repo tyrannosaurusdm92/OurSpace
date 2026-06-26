@@ -1007,94 +1007,139 @@
       return window.location.hash.toLowerCase() === "#admin";
     }
 
+function getClientId() {
+      const key = "ourspace.client.id.v1";
+      try {
+        let id = localStorage.getItem(key);
+        if (!id) {
+          id = "client_" + Math.random().toString(36).slice(2) + "_" + Date.now().toString(36);
+          localStorage.setItem(key, id);
+        }
+        return id;
+      } catch (_error) {
+        return "client_ephemeral_" + Math.random().toString(36).slice(2);
+      }
+    }
 
-    function backendJsonp(action, payload = {}, timeoutMs = 12000) {
+    async function fetchWithTimeout(url, options = {}, timeoutMs = 12000) {
+      if (!window.AbortController) return fetch(url, options);
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+      try { return await fetch(url, { ...options, signal: controller.signal }); }
+      finally { clearTimeout(timer); }
+    }
+
+    function backendJSONP(action, body, timeoutMs = 12000) {
       return new Promise((resolve, reject) => {
         const callbackName = '__ourspace_jsonp_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2);
-        const script = document.createElement('script');
-        const timer = window.setTimeout(() => {
-          cleanup();
-          reject(new Error('Backend did not answer. Check the Apps Script deployment and redeploy the included backend if this is a new URL.'));
-        }, timeoutMs);
-        function cleanup() {
-          window.clearTimeout(timer);
-          try { delete window[callbackName]; } catch (_error) { window[callbackName] = undefined; }
-          script.remove();
-        }
-        window[callbackName] = (data) => { cleanup(); resolve(data || {}); };
-        const params = new URLSearchParams();
-        const body = {
-          app: 'OurSpace',
-          source: 'OurSpace',
-          action,
-          authAction: action,
-          timestamp: new Date().toISOString(),
-          ...payload
-        };
+        const query = new URLSearchParams();
         Object.entries(body).forEach(([key, value]) => {
           if (value === undefined || value === null) return;
-          params.set(key, typeof value === 'object' ? JSON.stringify(value) : String(value));
+          query.set(key, typeof value === 'object' ? JSON.stringify(value) : String(value));
         });
-        params.set('callback', callbackName);
-        script.onerror = () => { cleanup(); reject(new Error('Backend script request failed.')); };
-        script.src = BACKEND_URL + '?' + params.toString();
+        query.set('action', action);
+        query.set('callback', callbackName);
+        query.set('_', Date.now().toString());
+        let script = document.createElement('script');
+        let timer = null;
+        const cleanup = () => {
+          if (timer) clearTimeout(timer);
+          try { delete window[callbackName]; } catch (_error) { window[callbackName] = undefined; }
+          if (script && script.parentNode) script.parentNode.removeChild(script);
+          script = null;
+        };
+        window[callbackName] = (data) => {
+          cleanup();
+          if (data && (data.ok === false || data.success === false || data.error)) {
+            reject(new Error(data.error || data.message || 'The backend rejected this request.'));
+            return;
+          }
+          resolve(data || { ok: true });
+        };
+        script.onerror = () => { cleanup(); reject(new Error('Backend JSONP request failed.')); };
+        timer = setTimeout(() => { cleanup(); reject(new Error('Backend request timed out.')); }, timeoutMs);
+        script.src = BACKEND_URL + '?' + query.toString();
         document.head.appendChild(script);
       });
     }
 
     async function backend(action, payload = {}, options = { tolerateOpaque: false }) {
       const body = {
-        app: "OurSpace",
+        app: 'OurSpace',
         action,
         authAction: action,
-        source: "OurSpace",
+        source: 'OurSpace',
+        clientId: getClientId(),
+        userAgent: navigator.userAgent || '',
         timestamp: new Date().toISOString(),
         ...payload
       };
 
-      const parseBackendText = async (response) => {
+      const parseBackendResponse = async (response) => {
         const text = await response.text();
         let data = {};
         try { data = text ? JSON.parse(text) : {}; } catch (_error) { data = { raw: text }; }
-        if (!response.ok) throw new Error(data.message || data.error || "The backend rejected this request.");
-        if (data.ok === false || data.success === false || data.error) throw new Error(data.message || data.error || "The backend rejected this request.");
+        if (!response.ok) throw new Error(data.message || data.error || 'The backend rejected this request.');
+        if (data.ok === false || data.success === false || data.error) throw new Error(data.message || data.error || 'The backend rejected this request.');
         return data;
       };
 
+      const params = () => {
+        const query = new URLSearchParams();
+        Object.entries(body).forEach(([key, value]) => {
+          if (value === undefined || value === null) return;
+          query.set(key, typeof value === 'object' ? JSON.stringify(value) : String(value));
+        });
+        return query;
+      };
+
+      let firstError = null;
       try {
-        return await parseBackendText(await fetch(BACKEND_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
+        const response = await fetchWithTimeout(BACKEND_URL, {
+          method: 'POST',
+          redirect: 'follow',
+          cache: 'no-store',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify(body)
-        }));
-      } catch (postError) {
-        try {
-          const data = await backendJsonp(action, body);
-          if (data.ok === false || data.success === false || data.error) throw new Error(data.message || data.error || "The backend rejected this request.");
-          return data;
-        } catch (jsonpError) {
-          if (options.tolerateOpaque) {
-            try {
-              await fetch(BACKEND_URL, {
-                method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "text/plain;charset=utf-8" },
-                body: JSON.stringify(body)
-              });
-              return { ok: true, opaque: true, message: "Request sent to backend." };
-            } catch (_opaqueError) {
-              return { ok: false, error: jsonpError.message || postError.message || "Backend unavailable." };
-            }
+        });
+        return await parseBackendResponse(response);
+      } catch (error) {
+        firstError = error;
+      }
+
+      try {
+        const response = await fetchWithTimeout(`${BACKEND_URL}?${params().toString()}`, {
+          method: 'GET',
+          redirect: 'follow',
+          cache: 'no-store'
+        });
+        return await parseBackendResponse(response);
+      } catch (_getError) {}
+
+      try {
+        return await backendJSONP(action, body);
+      } catch (jsonpError) {
+        if (options.tolerateOpaque) {
+          try {
+            await fetchWithTimeout(BACKEND_URL, {
+              method: 'POST',
+              mode: 'no-cors',
+              cache: 'no-store',
+              headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+              body: JSON.stringify(body)
+            }, 8000);
+            return { ok: true, opaque: true, message: 'Request sent to backend.' };
+          } catch (_opaqueError) {
+            return { ok: false, error: jsonpError.message || firstError?.message || String(jsonpError) };
           }
-          throw new Error((jsonpError && jsonpError.message) || (postError && postError.message) || "Backend unavailable.");
         }
+        throw (jsonpError || firstError);
       }
     }
 
     function profileFromBackend(data) {
-      const profile = data?.profile || data?.profileKey || data?.user?.profile || data?.user?.profileKey || data?.user?.ProfileKey || data?.session?.profileKey;
-      const clean = String(profile || '').toLowerCase();
-      return PROFILE_KEYS.includes(clean) ? clean : "";
+      const profile = data?.profile || data?.profileKey || data?.user?.profile || data?.user?.profileKey || data?.user?.profile_key || data?.session?.profileKey;
+      return PROFILE_KEYS.includes(profile) ? profile : "";
     }
 
     function saveSession(session, remember) {
@@ -1233,8 +1278,10 @@
         email: normalizeEmail(email),
         profile,
         admin,
-        backendUserId: backendData.userId || backendData.id || backendData.user?.id || backendData.user?.userId || "",
-        token: backendData.token || backendData.sessionToken || backendData.session?.token || "",
+        backendUserId: backendData.userId || backendData.id || backendData.user?.userId || backendData.user?.id || "",
+        token: backendData.sessionToken || backendData.token || backendData.session?.sessionToken || backendData.session?.token || "",
+        expiresAt: backendData.expiresAt || backendData.session?.expiresAt || "",
+        clientId: getClientId(),
         signedInAt: new Date().toISOString()
       };
       saveSession(session, remember);
@@ -1258,24 +1305,24 @@
       try {
         let backendData = {};
         try {
-          backendData = await backend("signin", { identifier: email, email, password, remember });
-        } catch (backendError) {
+          backendData = await backend("auth.signin", { identifier: email, email, password, remember });
+        } catch (error) {
           const localUser = findUser(email);
-          if (!localUser) throw backendError;
+          if (!localUser) throw error;
           const passwordHash = await sha256(password);
           if (localUser.passwordHash && localUser.passwordHash !== passwordHash) {
             throw new Error("That password does not match this OurSpace account.");
           }
-          // Upgrade older browser-only accounts into the shared backend when possible.
           try {
-            backendData = await backend("signup", {
+            backendData = await backend("auth.signup", {
               email,
               username: email,
               displayName: localUser.profile === "jasper" ? "Jasper" : "William",
               profileKey: localUser.profile,
-              password
+              password,
+              remember
             });
-          } catch (_upgradeError) {
+          } catch (_migrationError) {
             backendData = { ok: true, localFallback: true, profile: localUser.profile };
           }
         }
@@ -1284,18 +1331,25 @@
         const profile = profileFromBackend(backendData) || localUser?.profile || "";
 
         if (!profile) {
-          pendingSignup = { email, password, passwordHash: await sha256(password), remember, fromSignIn: true };
+          pendingSignup = {
+            email,
+            password,
+            passwordHash: await sha256(password),
+            remember,
+            fromSignIn: true
+          };
           showPanel("claim");
-          setStatus("Choose William or Jasper once for this account.", "good");
+          setStatus("Choose William or Jasper to finish this account.", "good");
           return;
         }
 
         if (!localUser) {
           upsertLocalUser({ email, passwordHash: await sha256(password), profile });
         }
+
         await completeSignIn({ email, profile, remember, backendData });
       } catch (error) {
-        setStatus(error.message || "Sign in failed. Please try again.", "bad");
+        setStatus((error.message || "Sign in failed. Please try again.") + " If this says failed to fetch on mobile, reload once after uploading this fixed build.", "bad");
       } finally {
         setBusy(form, false);
       }
@@ -1317,8 +1371,12 @@
         setStatus("The passwords do not match.", "bad");
         return;
       }
-      if (password.length < 8) {
-        setStatus("Please use at least 8 characters for the password.", "bad");
+      if (password.length < 6) {
+        setStatus("Please use at least 6 characters for the password.", "bad");
+        return;
+      }
+      if (!findUser(email) && getUsers().length >= USER_LIMIT) {
+        setStatus("OurSpace only allows William and Jasper accounts.", "bad");
         return;
       }
 
@@ -1326,7 +1384,7 @@
       try {
         pendingSignup = { email, password, passwordHash: await sha256(password), remember: true, fromSignIn: false };
         showPanel("claim");
-        setStatus("Choose William or Jasper to finish account setup.", "good");
+        setStatus("Choose William or Jasper to finish this account.", "good");
       } catch (error) {
         setStatus(error.message || "Sign up failed. Please try again.", "bad");
       } finally {
@@ -1345,36 +1403,39 @@
       }
 
       try {
-        const displayName = profile === "jasper" ? "Jasper" : "William";
-        let backendData = {};
-        try {
-          backendData = await backend("signup", {
-            email: pendingSignup.email,
-            username: pendingSignup.email,
-            displayName,
-            profileKey: profile,
-            password: pendingSignup.password
-          });
-        } catch (signupError) {
-          // If the account already exists in the backend, sign into it instead of blocking this device.
-          backendData = await backend("signin", {
-            identifier: pendingSignup.email,
-            email: pendingSignup.email,
-            profileKey: profile,
-            password: pendingSignup.password
-          });
-        }
-
-        const profileFromServer = profileFromBackend(backendData) || profile;
         const user = upsertLocalUser({
           email: pendingSignup.email,
           passwordHash: pendingSignup.passwordHash,
-          profile: profileFromServer
+          profile
         });
+
+        let backendData = {};
+        try {
+          backendData = await backend("auth.signup", {
+            email: user.email,
+            username: user.email,
+            displayName: profile === "jasper" ? "Jasper" : "William",
+            profileKey: profile,
+            password: pendingSignup.password,
+            remember: pendingSignup.remember
+          });
+        } catch (signupError) {
+          try {
+            backendData = await backend("auth.signin", {
+              identifier: user.email,
+              email: user.email,
+              profileKey: profile,
+              password: pendingSignup.password,
+              remember: pendingSignup.remember
+            });
+          } catch (_signinError) {
+            throw signupError;
+          }
+        }
 
         await completeSignIn({
           email: user.email,
-          profile: profileFromServer,
+          profile: profileFromBackend(backendData) || profile,
           remember: pendingSignup.remember,
           backendData
         });
@@ -1397,7 +1458,12 @@
 
       setBusy(form, true);
       try {
-        await backend("requestPasswordReset", { identifier: email, email, delivery: "email", subject: "OurSpace password reset" }, { tolerateOpaque: true });
+        await backend("requestPasswordReset", {
+          email,
+          delivery: "email",
+          aliases: ["forgot", "resetPassword", "sendPasswordReset"],
+          subject: "OurSpace password reset"
+        }, { tolerateOpaque: true });
         setStatus("Password reset request sent to the backend for email delivery.", "good");
       } catch (error) {
         setStatus(error.message || "The reset email could not be requested.", "bad");
@@ -1409,7 +1475,7 @@
     async function onSignOut() {
       const session = currentSession;
       try {
-        await backend("signout", { email: session?.email || "", profile: session?.profile || "", sessionToken: session?.token || "" }, { tolerateOpaque: true });
+        await backend("auth.signout", { sessionToken: session?.token || session?.sessionToken || "", email: session?.email || "", profile: session?.profile || "" }, { tolerateOpaque: true });
       } catch (_error) {
         // Still clear the local screen state so private pages re-hide.
       }

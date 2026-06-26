@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jasper&#x27;s DBT + ADHD Caregiver Diary Card</title>
+<style id="sheet-css">
+/* OurSpace DBT Diary Card Module
+   This file is designed to work standalone or be copied into a preexisting page as a module.
+   Core readability follows the Lightest Background + Darkest Text / Darkest Background + Lightest Text rule. */
+html, body { margin:0; padding:0; min-height:0; background:transparent; }
+body { font-family: Arial, Helvetica, sans-serif; }
+.dbt-diary-module, .dbt-diary-module * { box-sizing:border-box; }
+.dbt-diary-module {
+  --module-lightest:#F7FFFF;
+  --canvas-lightest:#D9F5F5;
+  --panel-lightest:#F7FFFF;
+  --nav-lightest:#EFFBFF;
+  --button-lightest:#ECFFFF;
+  --form-lightest:#E6FFFF;
+  --status-lightest:#FFFFFF;
+  --text-lightest:#FFFFFF;
+  --text-darkest:#0A2A2E;
+  --ui-darkest:#001E24;
+  --nav-darkest:#03161A;
+  --form-darkest:#00242B;
+  --border-dark:#003C42;
+  --accent:#00FFFF;
+  --accent-2:#00D9D9;
+  --accent-soft:#D9FFFF;
+  --focus-accent:var(--accent);
+  --shadow:0 14px 32px rgba(0, 30, 36, .18);
+  --radius:18px;
+  width:100%;
+  max-width:100%;
+  margin:0 auto;
+  padding:clamp(.75rem, 1.4vw, 1.25rem);
+  border:2px solid var(--ui-darkest);
+  border-radius:var(--radius);
+  color:var(--text-darkest);
+  background:var(--panel-lightest);
+  line-height:1.45;
+  font-size:15px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.dbt-diary-module.theme-jasper {
+  --module-lightest:#FFF8ED;
+  --canvas-lightest:#E8DCC7;
+  --panel-lightest:#FFF8ED;
+  --nav-lightest:#FFF8ED;
+  --button-lightest:#FFF9E6;
+  --form-lightest:#FFF8EE;
+  --status-lightest:#FFFDF8;
+  --text-lightest:#FFFDF8;
+  --text-darkest:#2D1606;
+  --ui-darkest:#2A1304;
+  --nav-darkest:#240E02;
+  --form-darkest:#2B1202;
+  --border-dark:#4A2305;
+  --accent:#FFB347;
+  --accent-2:#FFE39A;
+  --accent-soft:#FFF3D6;
+  --magic:#2FBED8;
+  --focus-accent:var(--magic);
+  --shadow:0 14px 32px rgba(42, 19, 4, .18);
+}
+.dbt-diary-module button,
+.dbt-diary-module input,
+.dbt-diary-module textarea,
+.dbt-diary-module select { font:inherit; }
+.dbt-diary-module button {
+  min-height:46px;
+  border:2px solid var(--ui-darkest);
+  background:var(--button-lightest);
+  color:var(--ui-darkest);
+  border-radius:14px;
+  padding:.85rem 1.05rem;
+  cursor:pointer;
+  box-shadow:0 3px 0 var(--ui-darkest);
+  line-height:1.25;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  text-align:center;
+}
+.dbt-diary-module button:first-of-type {
+  background:var(--ui-darkest);
+  color:var(--text-lightest);
+}
+.dbt-diary-module button:hover,
+.dbt-diary-module button:focus-visible {
+  outline:3px solid var(--focus-accent);
+  outline-offset:2px;
+  transform:translateY(-1px);
+}
+.dbt-diary-module input,
+.dbt-diary-module textarea,
+.dbt-diary-module select {
+  width:100%;
+  min-height:42px;
+  border:2px solid var(--form-darkest);
+  border-radius:12px;
+  padding:.62rem .7rem;
+  background:var(--form-lightest);
+  color:var(--form-darkest);
+  line-height:1.3;
+}
+.dbt-diary-module input:focus,
+.dbt-diary-module textarea:focus,
+.dbt-diary-module select:focus {
+  outline:3px solid var(--focus-accent);
+  outline-offset:1px;
+}
+.dbt-diary-module textarea { resize:vertical; min-height:72px; }
+.dbt-diary-module small,
+.dbt-diary-module .scale { color:inherit; font-weight:600; }
+.dbt-module-topbar {
+  display:grid;
+  grid-template-columns:minmax(280px, 1fr) minmax(280px, 440px);
+  gap:1rem;
+  align-items:stretch;
+  margin-bottom:1rem;
+}
+.dbt-title-card,
+.dbt-controls,
+.dbt-side-menu,
+.dbt-sheet {
+  border:2px solid var(--ui-darkest);
+  border-radius:var(--radius);
+  background:var(--panel-lightest);
+  color:var(--text-darkest);
+  box-shadow:var(--shadow);
+}
+.dbt-title-card { padding:1rem 1.1rem; border-left:9px solid var(--accent); }
+.dbt-title-card h1 { margin:0 0 .35rem; font-size:clamp(1.35rem, 2.4vw, 2.15rem); line-height:1.12; color:var(--text-darkest); overflow-wrap:anywhere; }
+.dbt-title-card p { margin:.25rem 0 .7rem; color:var(--text-darkest); font-weight:700; }
+.dbt-note {
+  background:var(--status-lightest);
+  color:var(--text-darkest);
+  border:2px solid var(--ui-darkest);
+  border-left:9px solid var(--accent);
+  border-radius:14px;
+  padding:.8rem .95rem;
+  line-height:1.45;
+}
+.dbt-chip-row { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:.8rem; }
+.dbt-chip {
+  display:inline-flex;
+  align-items:center;
+  min-height:34px;
+  border:2px solid var(--ui-darkest);
+  border-left:8px solid var(--accent);
+  background:var(--status-lightest);
+  color:var(--ui-darkest);
+  border-radius:999px;
+  padding:.42rem .75rem;
+  font-size:.92rem;
+  font-weight:800;
+  line-height:1.25;
+  overflow-wrap:anywhere;
+}
+.dbt-controls {
+  display:flex;
+  flex-wrap:wrap;
+  gap:.75rem;
+  align-content:flex-start;
+  padding:1rem;
+}
+.dbt-controls button { flex:1 1 150px; }
+.dbt-status {
+  width:100%;
+  min-height:40px;
+  display:flex;
+  align-items:center;
+  border:2px solid var(--ui-darkest);
+  border-left:8px solid var(--accent);
+  border-radius:14px;
+  background:var(--status-lightest);
+  color:var(--ui-darkest);
+  padding:.55rem .75rem;
+  font-size:.92rem;
+  font-weight:700;
+}
+.dbt-layout {
+  display:grid;
+  grid-template-columns:minmax(520px, 620px) minmax(0, 1fr);
+  gap:1rem;
+  align-items:start;
+  width:100%;
+}
+.dbt-side-menu {
+  position:sticky;
+  top:.75rem;
+  max-height:calc(100vh - 1.5rem);
+  overflow:auto;
+  background:var(--nav-lightest);
+  color:var(--nav-darkest);
+}
+.dbt-side-header {
+  padding:1rem 1.1rem;
+  border-bottom:2px solid var(--nav-darkest);
+  background:var(--nav-darkest);
+  color:var(--text-lightest);
+}
+.dbt-side-header h2 { margin:0; font-size:1.25rem; line-height:1.2; }
+.dbt-side-header p { margin:.45rem 0 0; color:var(--text-lightest); line-height:1.35; }
+.dbt-side-body { padding:.85rem; overflow:auto; }
+.dbt-skill-table {
+  width:100%;
+  min-width:630px;
+  border-collapse:collapse;
+  table-layout:fixed;
+  font-size:.92rem;
+  color:var(--nav-darkest);
+}
+.dbt-skill-table th,
+.dbt-skill-table td {
+  border:2px solid var(--nav-darkest);
+  padding:.55rem .45rem;
+  vertical-align:middle;
+  text-align:center;
+  background:var(--nav-lightest);
+  color:var(--nav-darkest);
+  overflow-wrap:anywhere;
+  word-break:normal;
+  hyphens:auto;
+}
+.dbt-skill-table th:first-child,
+.dbt-skill-table td:first-child { text-align:left; width:44%; padding-left:.75rem; }
+.dbt-skill-table th {
+  position:sticky;
+  top:0;
+  z-index:2;
+  background:var(--nav-darkest);
+  color:var(--text-lightest);
+  line-height:1.2;
+}
+.dbt-skill-table input[type="checkbox"] {
+  width:24px;
+  min-width:24px;
+  height:24px;
+  min-height:24px;
+  padding:0;
+  accent-color:var(--accent);
+  cursor:pointer;
+}
+.dbt-sheet { overflow:auto; background:var(--panel-lightest); color:var(--text-darkest); }
+.dbt-sheet-header {
+  display:grid;
+  grid-template-columns:minmax(260px, 1.15fr) minmax(280px, .95fr) minmax(260px, .9fr);
+  border-bottom:2px solid var(--ui-darkest);
+}
+.dbt-sheet-header > div { padding:1rem; border-right:2px solid var(--ui-darkest); }
+.dbt-sheet-header > div:last-child { border-right:0; }
+.dbt-sheet-header h2 { margin:0 0 .35rem; font-size:1.55rem; line-height:1.15; color:var(--text-darkest); overflow-wrap:anywhere; }
+.dbt-meta-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:.75rem; }
+.dbt-meta-grid label,
+.dbt-prompt-list label { display:grid; gap:.35rem; font-weight:800; }
+.dbt-day-grid {
+  display:grid;
+  grid-template-columns:104px repeat(var(--cols), minmax(102px, 118px));
+  border-bottom:2px solid var(--ui-darkest);
+  width:max-content;
+  min-width:100%;
+  overflow:visible;
+}
+.dbt-grid-row { display:contents; }
+.dbt-cell {
+  border-right:2px solid var(--ui-darkest);
+  border-bottom:2px solid var(--ui-darkest);
+  min-height:56px;
+  padding:.48rem;
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+  flex-direction:column;
+  gap:.35rem;
+  background:var(--panel-lightest);
+  color:var(--text-darkest);
+  overflow-wrap:anywhere;
+  word-break:normal;
+  hyphens:auto;
+}
+.dbt-cell.dbt-header {
+  background:var(--ui-darkest);
+  color:var(--text-lightest);
+  font-weight:900;
+  text-align:center;
+  justify-content:center;
+  font-size:.86rem;
+  line-height:1.2;
+  padding:.62rem .42rem;
+}
+.dbt-cell.dbt-day {
+  background:var(--status-lightest);
+  color:var(--ui-darkest);
+  font-weight:900;
+  text-align:center;
+  align-items:center;
+}
+.dbt-cell input,
+.dbt-cell select { min-width:86px; text-align:center; padding:.46rem .42rem; }
+.dbt-cell textarea { min-width:112px; min-height:62px; font-size:.9rem; padding:.52rem; }
+.dbt-scale { display:block; margin-top:.2rem; font-size:.76rem; color:inherit; font-weight:800; }
+.dbt-sections {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  border-bottom:2px solid var(--ui-darkest);
+}
+.dbt-section { padding:1rem; border-right:2px solid var(--ui-darkest); }
+.dbt-section:last-child { border-right:0; }
+.dbt-section h3 { margin:.1rem 0 .75rem; font-size:1.05rem; color:var(--text-darkest); }
+.dbt-prompt-list { display:grid; gap:.9rem; }
+.dbt-used-skills { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:.7rem; font-size:.92rem; }
+.dbt-used-skills div {
+  background:var(--status-lightest);
+  color:var(--ui-darkest);
+  border:2px solid var(--ui-darkest);
+  border-left:7px solid var(--accent);
+  border-radius:12px;
+  padding:.55rem .65rem;
+  font-weight:700;
+  overflow-wrap:anywhere;
+}
+.dbt-footer-fields {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1rem;
+  padding:1.2rem;
+  border-top:2px solid var(--ui-darkest);
+  background:var(--panel-lightest);
+}
+.dbt-session-line {
+  display:grid;
+  grid-template-columns:minmax(260px, 1fr) minmax(130px, .34fr) minmax(130px, .34fr);
+  gap:1rem;
+  align-items:end;
+  border:2px solid var(--ui-darkest);
+  border-left:9px solid var(--accent);
+  border-radius:14px;
+  background:var(--status-lightest);
+  color:var(--text-darkest);
+  padding:1rem;
+}
+.dbt-session-line span {
+  font-weight:900;
+  color:var(--text-darkest);
+  overflow-wrap:anywhere;
+  line-height:1.25;
+  padding:.3rem 0;
+}
+.dbt-session-input {
+  display:grid;
+  gap:.35rem;
+  min-width:0;
+  font-weight:900;
+  color:var(--text-darkest);
+}
+.dbt-session-input b {
+  display:block;
+  font-size:.82rem;
+  line-height:1.1;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:var(--text-darkest);
+}
+.dbt-session-input input {
+  min-width:0;
+  width:100%;
+  text-align:center;
+}
+.dbt-disclaimer {
+  padding:.9rem 1rem;
+  background:var(--ui-darkest);
+  color:var(--text-lightest);
+  font-size:.9rem;
+  line-height:1.45;
+  border-top:2px solid var(--ui-darkest);
+}
+.theme-jasper .dbt-chip,
+.theme-jasper .dbt-note,
+.theme-jasper .dbt-status,
+.theme-jasper .dbt-used-skills div { border-left-color:var(--accent); }
+.theme-jasper .dbt-title-card { border-left-color:var(--accent); }
+.theme-william .dbt-title-card,
+.theme-william .dbt-note,
+.theme-william .dbt-chip,
+.theme-william .dbt-status,
+.theme-william .dbt-used-skills div { border-left-color:var(--accent); }
+.dbt-print-note { display:none; }
+.dbt-diary-module::-webkit-scrollbar,
+.dbt-side-menu::-webkit-scrollbar,
+.dbt-sheet::-webkit-scrollbar,
+.dbt-side-body::-webkit-scrollbar { width:14px; height:14px; }
+.dbt-diary-module::-webkit-scrollbar-track,
+.dbt-side-menu::-webkit-scrollbar-track,
+.dbt-sheet::-webkit-scrollbar-track,
+.dbt-side-body::-webkit-scrollbar-track { background:var(--accent-soft); }
+.dbt-diary-module::-webkit-scrollbar-thumb,
+.dbt-side-menu::-webkit-scrollbar-thumb,
+.dbt-sheet::-webkit-scrollbar-thumb,
+.dbt-side-body::-webkit-scrollbar-thumb { background:var(--ui-darkest); border:3px solid var(--accent-soft); border-radius:999px; }
+@media(max-width:1300px){
+  .dbt-module-topbar { grid-template-columns:1fr; }
+  .dbt-layout { grid-template-columns:1fr; }
+  .dbt-side-menu { position:static; max-height:46vh; }
+  .dbt-side-body { overflow:auto; }
+  .dbt-sheet-header { grid-template-columns:1fr; }
+  .dbt-sheet-header > div { border-right:0; border-bottom:2px solid var(--ui-darkest); }
+  .dbt-sheet-header > div:last-child { border-bottom:0; }
+}
+@media(max-width:760px){
+  .dbt-diary-module { padding:.65rem; border-radius:14px; font-size:14px; }
+  .dbt-title-card, .dbt-controls, .dbt-side-menu, .dbt-sheet { border-radius:14px; }
+  .dbt-controls button { flex:1 1 100%; }
+  .dbt-meta-grid, .dbt-sections, .dbt-footer-fields, .dbt-used-skills { grid-template-columns:1fr; }
+  .dbt-section { border-right:0; border-bottom:2px solid var(--ui-darkest); }
+  .dbt-section:last-child { border-bottom:0; }
+  .dbt-session-line {
+    grid-template-columns:1fr;
+    gap:.75rem;
+    align-items:stretch;
+  }
+  .dbt-side-menu { max-height:52vh; }
+}
+@media print{
+  html, body { background:white!important; }
+  .dbt-diary-module { box-shadow:none; border-radius:0; border:0; padding:0; }
+  .dbt-controls { display:none!important; }
+  .dbt-layout { grid-template-columns:1fr; }
+  .dbt-side-menu { position:static; max-height:none; overflow:visible; page-break-after:always; }
+  .dbt-sheet { box-shadow:none; border-radius:0; }
+  .dbt-print-note { display:block; }
+}
+</style>
+</head>
+<body>
+<section class="dbt-diary-module theme-jasper" data-save data-storage-key="ourspace_dbt_diary_jasper_v2" data-file-base="jasper_dbt_adhd_caregiver_diary_card" aria-label="Jasper&#x27;s DBT + ADHD Caregiver Diary Card">
+  <div class="dbt-module-topbar">
+    <div class="dbt-title-card">
+      <h1>Jasper&#x27;s DBT + ADHD Caregiver Diary Card</h1>
+      <p>ADHD-friendly, caregiver-burnout-aware weekly diary card</p>
+      <div class="dbt-note">This sheet focuses on ADHD load, caregiver burnout, sensory/body limits, resentment warnings, repair, and sustainable boundaries.</div>
+      <div class="dbt-chip-row"><span class="dbt-chip">ADHD load</span><span class="dbt-chip">Caregiver burnout</span><span class="dbt-chip">People-pleasing</span><span class="dbt-chip">Sensory overwhelm</span><span class="dbt-chip">Pain + fatigue</span><span class="dbt-chip">Boundaries</span></div>
+    </div>
+    <div class="dbt-controls" aria-label="Save and export controls">
+      <button type="button" onclick="saveBrowser()">Save to Browser</button>
+      <button type="button" onclick="loadBrowser()">Load Saved</button>
+      <button type="button" onclick="exportTxt()">Export TXT</button>
+      <button type="button" onclick="savePng()">Save PNG</button>
+      <button type="button" onclick="window.print()">Print</button>
+      <button type="button" onclick="clearSheet()">Clear Sheet</button>
+      <div id="status" class="dbt-status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="dbt-layout">
+    <aside class="dbt-side-menu" aria-label="DBT skills side menu">
+      <div class="dbt-side-header">
+        <h2>DBT Skills Side Menu</h2>
+        <p>The PDF's first table is moved here so the diary-card table stays the main working sheet.</p>
+      </div>
+      <div class="dbt-side-body"><table class="dbt-skill-table"><thead><tr><th>Skill</th><th>Mon</th><th>Tues</th><th>Wed</th><th>Thurs</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead><tbody><tr><td class="dbt-skill-name" data-skill="wise_mind">Wise Mind</td><td><input aria-label="Wise Mind Mon" name="skill_wise_mind_Mon" type="checkbox"></td><td><input aria-label="Wise Mind Tues" name="skill_wise_mind_Tues" type="checkbox"></td><td><input aria-label="Wise Mind Wed" name="skill_wise_mind_Wed" type="checkbox"></td><td><input aria-label="Wise Mind Thurs" name="skill_wise_mind_Thurs" type="checkbox"></td><td><input aria-label="Wise Mind Fri" name="skill_wise_mind_Fri" type="checkbox"></td><td><input aria-label="Wise Mind Sat" name="skill_wise_mind_Sat" type="checkbox"></td><td><input aria-label="Wise Mind Sun" name="skill_wise_mind_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="observe__just_notice___urge_surf">Observe: just notice / urge surf</td><td><input aria-label="Observe: just notice / urge surf Mon" name="skill_observe__just_notice___urge_surf_Mon" type="checkbox"></td><td><input aria-label="Observe: just notice / urge surf Tues" name="skill_observe__just_notice___urge_surf_Tues" type="checkbox"></td><td><input aria-label="Observe: just notice / urge surf Wed" name="skill_observe__just_notice___urge_surf_Wed" type="checkbox"></td><td><input aria-label="Observe: just notice / urge surf Thurs" name="skill_observe__just_notice___urge_surf_Thurs" type="checkbox"></td><td><input aria-label="Observe: just notice / urge surf Fri" name="skill_observe__just_notice___urge_surf_Fri" type="checkbox"></td><td><input aria-label="Observe: just notice / urge surf Sat" name="skill_observe__just_notice___urge_surf_Sat" type="checkbox"></td><td><input aria-label="Observe: just notice / urge surf Sun" name="skill_observe__just_notice___urge_surf_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="describe__put_words_on_it">Describe: put words on it</td><td><input aria-label="Describe: put words on it Mon" name="skill_describe__put_words_on_it_Mon" type="checkbox"></td><td><input aria-label="Describe: put words on it Tues" name="skill_describe__put_words_on_it_Tues" type="checkbox"></td><td><input aria-label="Describe: put words on it Wed" name="skill_describe__put_words_on_it_Wed" type="checkbox"></td><td><input aria-label="Describe: put words on it Thurs" name="skill_describe__put_words_on_it_Thurs" type="checkbox"></td><td><input aria-label="Describe: put words on it Fri" name="skill_describe__put_words_on_it_Fri" type="checkbox"></td><td><input aria-label="Describe: put words on it Sat" name="skill_describe__put_words_on_it_Sat" type="checkbox"></td><td><input aria-label="Describe: put words on it Sun" name="skill_describe__put_words_on_it_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="participate__enter_into_the_experience">Participate: enter into the experience</td><td><input aria-label="Participate: enter into the experience Mon" name="skill_participate__enter_into_the_experience_Mon" type="checkbox"></td><td><input aria-label="Participate: enter into the experience Tues" name="skill_participate__enter_into_the_experience_Tues" type="checkbox"></td><td><input aria-label="Participate: enter into the experience Wed" name="skill_participate__enter_into_the_experience_Wed" type="checkbox"></td><td><input aria-label="Participate: enter into the experience Thurs" name="skill_participate__enter_into_the_experience_Thurs" type="checkbox"></td><td><input aria-label="Participate: enter into the experience Fri" name="skill_participate__enter_into_the_experience_Fri" type="checkbox"></td><td><input aria-label="Participate: enter into the experience Sat" name="skill_participate__enter_into_the_experience_Sat" type="checkbox"></td><td><input aria-label="Participate: enter into the experience Sun" name="skill_participate__enter_into_the_experience_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="nonjudgmental_stance">Nonjudgmental stance</td><td><input aria-label="Nonjudgmental stance Mon" name="skill_nonjudgmental_stance_Mon" type="checkbox"></td><td><input aria-label="Nonjudgmental stance Tues" name="skill_nonjudgmental_stance_Tues" type="checkbox"></td><td><input aria-label="Nonjudgmental stance Wed" name="skill_nonjudgmental_stance_Wed" type="checkbox"></td><td><input aria-label="Nonjudgmental stance Thurs" name="skill_nonjudgmental_stance_Thurs" type="checkbox"></td><td><input aria-label="Nonjudgmental stance Fri" name="skill_nonjudgmental_stance_Fri" type="checkbox"></td><td><input aria-label="Nonjudgmental stance Sat" name="skill_nonjudgmental_stance_Sat" type="checkbox"></td><td><input aria-label="Nonjudgmental stance Sun" name="skill_nonjudgmental_stance_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="one_mindfully__in_this_moment">One-mindfully: in this moment</td><td><input aria-label="One-mindfully: in this moment Mon" name="skill_one_mindfully__in_this_moment_Mon" type="checkbox"></td><td><input aria-label="One-mindfully: in this moment Tues" name="skill_one_mindfully__in_this_moment_Tues" type="checkbox"></td><td><input aria-label="One-mindfully: in this moment Wed" name="skill_one_mindfully__in_this_moment_Wed" type="checkbox"></td><td><input aria-label="One-mindfully: in this moment Thurs" name="skill_one_mindfully__in_this_moment_Thurs" type="checkbox"></td><td><input aria-label="One-mindfully: in this moment Fri" name="skill_one_mindfully__in_this_moment_Fri" type="checkbox"></td><td><input aria-label="One-mindfully: in this moment Sat" name="skill_one_mindfully__in_this_moment_Sat" type="checkbox"></td><td><input aria-label="One-mindfully: in this moment Sun" name="skill_one_mindfully__in_this_moment_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="effectiveness__focus_on_what_works">Effectiveness: focus on what works</td><td><input aria-label="Effectiveness: focus on what works Mon" name="skill_effectiveness__focus_on_what_works_Mon" type="checkbox"></td><td><input aria-label="Effectiveness: focus on what works Tues" name="skill_effectiveness__focus_on_what_works_Tues" type="checkbox"></td><td><input aria-label="Effectiveness: focus on what works Wed" name="skill_effectiveness__focus_on_what_works_Wed" type="checkbox"></td><td><input aria-label="Effectiveness: focus on what works Thurs" name="skill_effectiveness__focus_on_what_works_Thurs" type="checkbox"></td><td><input aria-label="Effectiveness: focus on what works Fri" name="skill_effectiveness__focus_on_what_works_Fri" type="checkbox"></td><td><input aria-label="Effectiveness: focus on what works Sat" name="skill_effectiveness__focus_on_what_works_Sat" type="checkbox"></td><td><input aria-label="Effectiveness: focus on what works Sun" name="skill_effectiveness__focus_on_what_works_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="objective_effectiveness__dear_man">Objective effectiveness: DEAR MAN</td><td><input aria-label="Objective effectiveness: DEAR MAN Mon" name="skill_objective_effectiveness__dear_man_Mon" type="checkbox"></td><td><input aria-label="Objective effectiveness: DEAR MAN Tues" name="skill_objective_effectiveness__dear_man_Tues" type="checkbox"></td><td><input aria-label="Objective effectiveness: DEAR MAN Wed" name="skill_objective_effectiveness__dear_man_Wed" type="checkbox"></td><td><input aria-label="Objective effectiveness: DEAR MAN Thurs" name="skill_objective_effectiveness__dear_man_Thurs" type="checkbox"></td><td><input aria-label="Objective effectiveness: DEAR MAN Fri" name="skill_objective_effectiveness__dear_man_Fri" type="checkbox"></td><td><input aria-label="Objective effectiveness: DEAR MAN Sat" name="skill_objective_effectiveness__dear_man_Sat" type="checkbox"></td><td><input aria-label="Objective effectiveness: DEAR MAN Sun" name="skill_objective_effectiveness__dear_man_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="relationship_effectiveness__give">Relationship effectiveness: GIVE</td><td><input aria-label="Relationship effectiveness: GIVE Mon" name="skill_relationship_effectiveness__give_Mon" type="checkbox"></td><td><input aria-label="Relationship effectiveness: GIVE Tues" name="skill_relationship_effectiveness__give_Tues" type="checkbox"></td><td><input aria-label="Relationship effectiveness: GIVE Wed" name="skill_relationship_effectiveness__give_Wed" type="checkbox"></td><td><input aria-label="Relationship effectiveness: GIVE Thurs" name="skill_relationship_effectiveness__give_Thurs" type="checkbox"></td><td><input aria-label="Relationship effectiveness: GIVE Fri" name="skill_relationship_effectiveness__give_Fri" type="checkbox"></td><td><input aria-label="Relationship effectiveness: GIVE Sat" name="skill_relationship_effectiveness__give_Sat" type="checkbox"></td><td><input aria-label="Relationship effectiveness: GIVE Sun" name="skill_relationship_effectiveness__give_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="self_respect_effectiveness__fast">Self-respect effectiveness: FAST</td><td><input aria-label="Self-respect effectiveness: FAST Mon" name="skill_self_respect_effectiveness__fast_Mon" type="checkbox"></td><td><input aria-label="Self-respect effectiveness: FAST Tues" name="skill_self_respect_effectiveness__fast_Tues" type="checkbox"></td><td><input aria-label="Self-respect effectiveness: FAST Wed" name="skill_self_respect_effectiveness__fast_Wed" type="checkbox"></td><td><input aria-label="Self-respect effectiveness: FAST Thurs" name="skill_self_respect_effectiveness__fast_Thurs" type="checkbox"></td><td><input aria-label="Self-respect effectiveness: FAST Fri" name="skill_self_respect_effectiveness__fast_Fri" type="checkbox"></td><td><input aria-label="Self-respect effectiveness: FAST Sat" name="skill_self_respect_effectiveness__fast_Sat" type="checkbox"></td><td><input aria-label="Self-respect effectiveness: FAST Sun" name="skill_self_respect_effectiveness__fast_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="reduce_vulnerability__abc_please">Reduce vulnerability: ABC PLEASE</td><td><input aria-label="Reduce vulnerability: ABC PLEASE Mon" name="skill_reduce_vulnerability__abc_please_Mon" type="checkbox"></td><td><input aria-label="Reduce vulnerability: ABC PLEASE Tues" name="skill_reduce_vulnerability__abc_please_Tues" type="checkbox"></td><td><input aria-label="Reduce vulnerability: ABC PLEASE Wed" name="skill_reduce_vulnerability__abc_please_Wed" type="checkbox"></td><td><input aria-label="Reduce vulnerability: ABC PLEASE Thurs" name="skill_reduce_vulnerability__abc_please_Thurs" type="checkbox"></td><td><input aria-label="Reduce vulnerability: ABC PLEASE Fri" name="skill_reduce_vulnerability__abc_please_Fri" type="checkbox"></td><td><input aria-label="Reduce vulnerability: ABC PLEASE Sat" name="skill_reduce_vulnerability__abc_please_Sat" type="checkbox"></td><td><input aria-label="Reduce vulnerability: ABC PLEASE Sun" name="skill_reduce_vulnerability__abc_please_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="accumulate_positive_emotions">Accumulate positive emotions</td><td><input aria-label="Accumulate positive emotions Mon" name="skill_accumulate_positive_emotions_Mon" type="checkbox"></td><td><input aria-label="Accumulate positive emotions Tues" name="skill_accumulate_positive_emotions_Tues" type="checkbox"></td><td><input aria-label="Accumulate positive emotions Wed" name="skill_accumulate_positive_emotions_Wed" type="checkbox"></td><td><input aria-label="Accumulate positive emotions Thurs" name="skill_accumulate_positive_emotions_Thurs" type="checkbox"></td><td><input aria-label="Accumulate positive emotions Fri" name="skill_accumulate_positive_emotions_Fri" type="checkbox"></td><td><input aria-label="Accumulate positive emotions Sat" name="skill_accumulate_positive_emotions_Sat" type="checkbox"></td><td><input aria-label="Accumulate positive emotions Sun" name="skill_accumulate_positive_emotions_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="check_the_facts">Check the facts</td><td><input aria-label="Check the facts Mon" name="skill_check_the_facts_Mon" type="checkbox"></td><td><input aria-label="Check the facts Tues" name="skill_check_the_facts_Tues" type="checkbox"></td><td><input aria-label="Check the facts Wed" name="skill_check_the_facts_Wed" type="checkbox"></td><td><input aria-label="Check the facts Thurs" name="skill_check_the_facts_Thurs" type="checkbox"></td><td><input aria-label="Check the facts Fri" name="skill_check_the_facts_Fri" type="checkbox"></td><td><input aria-label="Check the facts Sat" name="skill_check_the_facts_Sat" type="checkbox"></td><td><input aria-label="Check the facts Sun" name="skill_check_the_facts_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="opposite_to_emotion_action">Opposite-to-emotion action</td><td><input aria-label="Opposite-to-emotion action Mon" name="skill_opposite_to_emotion_action_Mon" type="checkbox"></td><td><input aria-label="Opposite-to-emotion action Tues" name="skill_opposite_to_emotion_action_Tues" type="checkbox"></td><td><input aria-label="Opposite-to-emotion action Wed" name="skill_opposite_to_emotion_action_Wed" type="checkbox"></td><td><input aria-label="Opposite-to-emotion action Thurs" name="skill_opposite_to_emotion_action_Thurs" type="checkbox"></td><td><input aria-label="Opposite-to-emotion action Fri" name="skill_opposite_to_emotion_action_Fri" type="checkbox"></td><td><input aria-label="Opposite-to-emotion action Sat" name="skill_opposite_to_emotion_action_Sat" type="checkbox"></td><td><input aria-label="Opposite-to-emotion action Sun" name="skill_opposite_to_emotion_action_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="distract_safely">Distract safely</td><td><input aria-label="Distract safely Mon" name="skill_distract_safely_Mon" type="checkbox"></td><td><input aria-label="Distract safely Tues" name="skill_distract_safely_Tues" type="checkbox"></td><td><input aria-label="Distract safely Wed" name="skill_distract_safely_Wed" type="checkbox"></td><td><input aria-label="Distract safely Thurs" name="skill_distract_safely_Thurs" type="checkbox"></td><td><input aria-label="Distract safely Fri" name="skill_distract_safely_Fri" type="checkbox"></td><td><input aria-label="Distract safely Sat" name="skill_distract_safely_Sat" type="checkbox"></td><td><input aria-label="Distract safely Sun" name="skill_distract_safely_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="self_soothe">Self-soothe</td><td><input aria-label="Self-soothe Mon" name="skill_self_soothe_Mon" type="checkbox"></td><td><input aria-label="Self-soothe Tues" name="skill_self_soothe_Tues" type="checkbox"></td><td><input aria-label="Self-soothe Wed" name="skill_self_soothe_Wed" type="checkbox"></td><td><input aria-label="Self-soothe Thurs" name="skill_self_soothe_Thurs" type="checkbox"></td><td><input aria-label="Self-soothe Fri" name="skill_self_soothe_Fri" type="checkbox"></td><td><input aria-label="Self-soothe Sat" name="skill_self_soothe_Sat" type="checkbox"></td><td><input aria-label="Self-soothe Sun" name="skill_self_soothe_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="improve_the_moment">Improve the moment</td><td><input aria-label="Improve the moment Mon" name="skill_improve_the_moment_Mon" type="checkbox"></td><td><input aria-label="Improve the moment Tues" name="skill_improve_the_moment_Tues" type="checkbox"></td><td><input aria-label="Improve the moment Wed" name="skill_improve_the_moment_Wed" type="checkbox"></td><td><input aria-label="Improve the moment Thurs" name="skill_improve_the_moment_Thurs" type="checkbox"></td><td><input aria-label="Improve the moment Fri" name="skill_improve_the_moment_Fri" type="checkbox"></td><td><input aria-label="Improve the moment Sat" name="skill_improve_the_moment_Sat" type="checkbox"></td><td><input aria-label="Improve the moment Sun" name="skill_improve_the_moment_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="tip__temperature__intense_sensation__paced_breat">TIP: temperature, intense sensation, paced breathing / PMR</td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Mon" name="skill_tip__temperature__intense_sensation__paced_breat_Mon" type="checkbox"></td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Tues" name="skill_tip__temperature__intense_sensation__paced_breat_Tues" type="checkbox"></td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Wed" name="skill_tip__temperature__intense_sensation__paced_breat_Wed" type="checkbox"></td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Thurs" name="skill_tip__temperature__intense_sensation__paced_breat_Thurs" type="checkbox"></td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Fri" name="skill_tip__temperature__intense_sensation__paced_breat_Fri" type="checkbox"></td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Sat" name="skill_tip__temperature__intense_sensation__paced_breat_Sat" type="checkbox"></td><td><input aria-label="TIP: temperature, intense sensation, paced breathing / PMR Sun" name="skill_tip__temperature__intense_sensation__paced_breat_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="pros_and_cons">Pros and cons</td><td><input aria-label="Pros and cons Mon" name="skill_pros_and_cons_Mon" type="checkbox"></td><td><input aria-label="Pros and cons Tues" name="skill_pros_and_cons_Tues" type="checkbox"></td><td><input aria-label="Pros and cons Wed" name="skill_pros_and_cons_Wed" type="checkbox"></td><td><input aria-label="Pros and cons Thurs" name="skill_pros_and_cons_Thurs" type="checkbox"></td><td><input aria-label="Pros and cons Fri" name="skill_pros_and_cons_Fri" type="checkbox"></td><td><input aria-label="Pros and cons Sat" name="skill_pros_and_cons_Sat" type="checkbox"></td><td><input aria-label="Pros and cons Sun" name="skill_pros_and_cons_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="radical_acceptance">Radical acceptance</td><td><input aria-label="Radical acceptance Mon" name="skill_radical_acceptance_Mon" type="checkbox"></td><td><input aria-label="Radical acceptance Tues" name="skill_radical_acceptance_Tues" type="checkbox"></td><td><input aria-label="Radical acceptance Wed" name="skill_radical_acceptance_Wed" type="checkbox"></td><td><input aria-label="Radical acceptance Thurs" name="skill_radical_acceptance_Thurs" type="checkbox"></td><td><input aria-label="Radical acceptance Fri" name="skill_radical_acceptance_Fri" type="checkbox"></td><td><input aria-label="Radical acceptance Sat" name="skill_radical_acceptance_Sat" type="checkbox"></td><td><input aria-label="Radical acceptance Sun" name="skill_radical_acceptance_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="building_structure___work">Building structure / Work</td><td><input aria-label="Building structure / Work Mon" name="skill_building_structure___work_Mon" type="checkbox"></td><td><input aria-label="Building structure / Work Tues" name="skill_building_structure___work_Tues" type="checkbox"></td><td><input aria-label="Building structure / Work Wed" name="skill_building_structure___work_Wed" type="checkbox"></td><td><input aria-label="Building structure / Work Thurs" name="skill_building_structure___work_Thurs" type="checkbox"></td><td><input aria-label="Building structure / Work Fri" name="skill_building_structure___work_Fri" type="checkbox"></td><td><input aria-label="Building structure / Work Sat" name="skill_building_structure___work_Sat" type="checkbox"></td><td><input aria-label="Building structure / Work Sun" name="skill_building_structure___work_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="building_structure___love">Building structure / Love</td><td><input aria-label="Building structure / Love Mon" name="skill_building_structure___love_Mon" type="checkbox"></td><td><input aria-label="Building structure / Love Tues" name="skill_building_structure___love_Tues" type="checkbox"></td><td><input aria-label="Building structure / Love Wed" name="skill_building_structure___love_Wed" type="checkbox"></td><td><input aria-label="Building structure / Love Thurs" name="skill_building_structure___love_Thurs" type="checkbox"></td><td><input aria-label="Building structure / Love Fri" name="skill_building_structure___love_Fri" type="checkbox"></td><td><input aria-label="Building structure / Love Sat" name="skill_building_structure___love_Sat" type="checkbox"></td><td><input aria-label="Building structure / Love Sun" name="skill_building_structure___love_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="building_structure___time">Building structure / Time</td><td><input aria-label="Building structure / Time Mon" name="skill_building_structure___time_Mon" type="checkbox"></td><td><input aria-label="Building structure / Time Tues" name="skill_building_structure___time_Tues" type="checkbox"></td><td><input aria-label="Building structure / Time Wed" name="skill_building_structure___time_Wed" type="checkbox"></td><td><input aria-label="Building structure / Time Thurs" name="skill_building_structure___time_Thurs" type="checkbox"></td><td><input aria-label="Building structure / Time Fri" name="skill_building_structure___time_Fri" type="checkbox"></td><td><input aria-label="Building structure / Time Sat" name="skill_building_structure___time_Sat" type="checkbox"></td><td><input aria-label="Building structure / Time Sun" name="skill_building_structure___time_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="building_structure___place">Building structure / Place</td><td><input aria-label="Building structure / Place Mon" name="skill_building_structure___place_Mon" type="checkbox"></td><td><input aria-label="Building structure / Place Tues" name="skill_building_structure___place_Tues" type="checkbox"></td><td><input aria-label="Building structure / Place Wed" name="skill_building_structure___place_Wed" type="checkbox"></td><td><input aria-label="Building structure / Place Thurs" name="skill_building_structure___place_Thurs" type="checkbox"></td><td><input aria-label="Building structure / Place Fri" name="skill_building_structure___place_Fri" type="checkbox"></td><td><input aria-label="Building structure / Place Sat" name="skill_building_structure___place_Sat" type="checkbox"></td><td><input aria-label="Building structure / Place Sun" name="skill_building_structure___place_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="adhd_tiny_next_step">ADHD tiny next step</td><td><input aria-label="ADHD tiny next step Mon" name="skill_adhd_tiny_next_step_Mon" type="checkbox"></td><td><input aria-label="ADHD tiny next step Tues" name="skill_adhd_tiny_next_step_Tues" type="checkbox"></td><td><input aria-label="ADHD tiny next step Wed" name="skill_adhd_tiny_next_step_Wed" type="checkbox"></td><td><input aria-label="ADHD tiny next step Thurs" name="skill_adhd_tiny_next_step_Thurs" type="checkbox"></td><td><input aria-label="ADHD tiny next step Fri" name="skill_adhd_tiny_next_step_Fri" type="checkbox"></td><td><input aria-label="ADHD tiny next step Sat" name="skill_adhd_tiny_next_step_Sat" type="checkbox"></td><td><input aria-label="ADHD tiny next step Sun" name="skill_adhd_tiny_next_step_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="body_double___co_regulate">Body double / co-regulate</td><td><input aria-label="Body double / co-regulate Mon" name="skill_body_double___co_regulate_Mon" type="checkbox"></td><td><input aria-label="Body double / co-regulate Tues" name="skill_body_double___co_regulate_Tues" type="checkbox"></td><td><input aria-label="Body double / co-regulate Wed" name="skill_body_double___co_regulate_Wed" type="checkbox"></td><td><input aria-label="Body double / co-regulate Thurs" name="skill_body_double___co_regulate_Thurs" type="checkbox"></td><td><input aria-label="Body double / co-regulate Fri" name="skill_body_double___co_regulate_Fri" type="checkbox"></td><td><input aria-label="Body double / co-regulate Sat" name="skill_body_double___co_regulate_Sat" type="checkbox"></td><td><input aria-label="Body double / co-regulate Sun" name="skill_body_double___co_regulate_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="timer_reset__2__5__or_10_minutes">Timer reset: 2, 5, or 10 minutes</td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Mon" name="skill_timer_reset__2__5__or_10_minutes_Mon" type="checkbox"></td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Tues" name="skill_timer_reset__2__5__or_10_minutes_Tues" type="checkbox"></td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Wed" name="skill_timer_reset__2__5__or_10_minutes_Wed" type="checkbox"></td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Thurs" name="skill_timer_reset__2__5__or_10_minutes_Thurs" type="checkbox"></td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Fri" name="skill_timer_reset__2__5__or_10_minutes_Fri" type="checkbox"></td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Sat" name="skill_timer_reset__2__5__or_10_minutes_Sat" type="checkbox"></td><td><input aria-label="Timer reset: 2, 5, or 10 minutes Sun" name="skill_timer_reset__2__5__or_10_minutes_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="externalize_memory__write_it_down">Externalize memory: write it down</td><td><input aria-label="Externalize memory: write it down Mon" name="skill_externalize_memory__write_it_down_Mon" type="checkbox"></td><td><input aria-label="Externalize memory: write it down Tues" name="skill_externalize_memory__write_it_down_Tues" type="checkbox"></td><td><input aria-label="Externalize memory: write it down Wed" name="skill_externalize_memory__write_it_down_Wed" type="checkbox"></td><td><input aria-label="Externalize memory: write it down Thurs" name="skill_externalize_memory__write_it_down_Thurs" type="checkbox"></td><td><input aria-label="Externalize memory: write it down Fri" name="skill_externalize_memory__write_it_down_Fri" type="checkbox"></td><td><input aria-label="Externalize memory: write it down Sat" name="skill_externalize_memory__write_it_down_Sat" type="checkbox"></td><td><input aria-label="Externalize memory: write it down Sun" name="skill_externalize_memory__write_it_down_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="transition_bridge__pause__name__next">Transition bridge: pause, name, next</td><td><input aria-label="Transition bridge: pause, name, next Mon" name="skill_transition_bridge__pause__name__next_Mon" type="checkbox"></td><td><input aria-label="Transition bridge: pause, name, next Tues" name="skill_transition_bridge__pause__name__next_Tues" type="checkbox"></td><td><input aria-label="Transition bridge: pause, name, next Wed" name="skill_transition_bridge__pause__name__next_Wed" type="checkbox"></td><td><input aria-label="Transition bridge: pause, name, next Thurs" name="skill_transition_bridge__pause__name__next_Thurs" type="checkbox"></td><td><input aria-label="Transition bridge: pause, name, next Fri" name="skill_transition_bridge__pause__name__next_Fri" type="checkbox"></td><td><input aria-label="Transition bridge: pause, name, next Sat" name="skill_transition_bridge__pause__name__next_Sat" type="checkbox"></td><td><input aria-label="Transition bridge: pause, name, next Sun" name="skill_transition_bridge__pause__name__next_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="caregiver_boundary__i_can_help_with_one_thing_no">Caregiver boundary: I can help with one thing now</td><td><input aria-label="Caregiver boundary: I can help with one thing now Mon" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Mon" type="checkbox"></td><td><input aria-label="Caregiver boundary: I can help with one thing now Tues" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Tues" type="checkbox"></td><td><input aria-label="Caregiver boundary: I can help with one thing now Wed" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Wed" type="checkbox"></td><td><input aria-label="Caregiver boundary: I can help with one thing now Thurs" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Thurs" type="checkbox"></td><td><input aria-label="Caregiver boundary: I can help with one thing now Fri" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Fri" type="checkbox"></td><td><input aria-label="Caregiver boundary: I can help with one thing now Sat" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Sat" type="checkbox"></td><td><input aria-label="Caregiver boundary: I can help with one thing now Sun" name="skill_caregiver_boundary__i_can_help_with_one_thing_no_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="ask_for_backup_before_resentment_builds">Ask for backup before resentment builds</td><td><input aria-label="Ask for backup before resentment builds Mon" name="skill_ask_for_backup_before_resentment_builds_Mon" type="checkbox"></td><td><input aria-label="Ask for backup before resentment builds Tues" name="skill_ask_for_backup_before_resentment_builds_Tues" type="checkbox"></td><td><input aria-label="Ask for backup before resentment builds Wed" name="skill_ask_for_backup_before_resentment_builds_Wed" type="checkbox"></td><td><input aria-label="Ask for backup before resentment builds Thurs" name="skill_ask_for_backup_before_resentment_builds_Thurs" type="checkbox"></td><td><input aria-label="Ask for backup before resentment builds Fri" name="skill_ask_for_backup_before_resentment_builds_Fri" type="checkbox"></td><td><input aria-label="Ask for backup before resentment builds Sat" name="skill_ask_for_backup_before_resentment_builds_Sat" type="checkbox"></td><td><input aria-label="Ask for backup before resentment builds Sun" name="skill_ask_for_backup_before_resentment_builds_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="low_demand_restart_after_task_paralysis">Low-demand restart after task paralysis</td><td><input aria-label="Low-demand restart after task paralysis Mon" name="skill_low_demand_restart_after_task_paralysis_Mon" type="checkbox"></td><td><input aria-label="Low-demand restart after task paralysis Tues" name="skill_low_demand_restart_after_task_paralysis_Tues" type="checkbox"></td><td><input aria-label="Low-demand restart after task paralysis Wed" name="skill_low_demand_restart_after_task_paralysis_Wed" type="checkbox"></td><td><input aria-label="Low-demand restart after task paralysis Thurs" name="skill_low_demand_restart_after_task_paralysis_Thurs" type="checkbox"></td><td><input aria-label="Low-demand restart after task paralysis Fri" name="skill_low_demand_restart_after_task_paralysis_Fri" type="checkbox"></td><td><input aria-label="Low-demand restart after task paralysis Sat" name="skill_low_demand_restart_after_task_paralysis_Sat" type="checkbox"></td><td><input aria-label="Low-demand restart after task paralysis Sun" name="skill_low_demand_restart_after_task_paralysis_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="sensory_reset__lights__sound__texture__temperatu">Sensory reset: lights, sound, texture, temperature</td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Mon" name="skill_sensory_reset__lights__sound__texture__temperatu_Mon" type="checkbox"></td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Tues" name="skill_sensory_reset__lights__sound__texture__temperatu_Tues" type="checkbox"></td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Wed" name="skill_sensory_reset__lights__sound__texture__temperatu_Wed" type="checkbox"></td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Thurs" name="skill_sensory_reset__lights__sound__texture__temperatu_Thurs" type="checkbox"></td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Fri" name="skill_sensory_reset__lights__sound__texture__temperatu_Fri" type="checkbox"></td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Sat" name="skill_sensory_reset__lights__sound__texture__temperatu_Sat" type="checkbox"></td><td><input aria-label="Sensory reset: lights, sound, texture, temperature Sun" name="skill_sensory_reset__lights__sound__texture__temperatu_Sun" type="checkbox"></td></tr><tr><td class="dbt-skill-name" data-skill="repair_without_over_explaining">Repair without over-explaining</td><td><input aria-label="Repair without over-explaining Mon" name="skill_repair_without_over_explaining_Mon" type="checkbox"></td><td><input aria-label="Repair without over-explaining Tues" name="skill_repair_without_over_explaining_Tues" type="checkbox"></td><td><input aria-label="Repair without over-explaining Wed" name="skill_repair_without_over_explaining_Wed" type="checkbox"></td><td><input aria-label="Repair without over-explaining Thurs" name="skill_repair_without_over_explaining_Thurs" type="checkbox"></td><td><input aria-label="Repair without over-explaining Fri" name="skill_repair_without_over_explaining_Fri" type="checkbox"></td><td><input aria-label="Repair without over-explaining Sat" name="skill_repair_without_over_explaining_Sat" type="checkbox"></td><td><input aria-label="Repair without over-explaining Sun" name="skill_repair_without_over_explaining_Sun" type="checkbox"></td></tr></tbody></table></div>
+    </aside>
+
+    <main class="dbt-sheet" aria-label="Fillable diary card sheet">
+      <div class="dbt-sheet-header">
+        <div>
+          <h2>Dialectical Behavior Therapy Diary Card</h2>
+          <strong>Jasper / Squishy</strong><br>
+          <small>Caregiving counts as real labor. Rest is not quitting; rest protects love.</small>
+        </div>
+        <div class="dbt-meta-grid">
+          <label>Week of <input name="week_of" placeholder="date"></label>
+          <label>Filled in session? <select name="filled_in_session"><option></option><option>Y</option><option>N</option></select></label>
+          <label>How often? <select name="fill_frequency"><option></option><option>Daily</option><option>2-3x</option><option>Once</option><option>Other</option></select></label>
+          <label>Support person / context <input name="support_notes" placeholder="optional"></label>
+        </div>
+        <div class="dbt-note">Use 0 = none/low, 5 = highest for urges, emotions, and body pain. Use the skill scale at the bottom for Skills Helped.</div>
+      </div>
+      <div class="dbt-day-grid" style="--cols:30"><div class="dbt-cell dbt-header">Day</div><div class="dbt-cell dbt-header">Date</div><div class="dbt-cell dbt-header">Avoid / freeze<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">People-please / overfunction<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Snap / lash out<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Doomscroll / numb out<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Unsafe / S-H urge<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Sad / grief<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Shame<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Guilt<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Anger / irritability<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Fear / anxiety<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Overwhelm<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Rejection sensitivity<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Resentment<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Lonely / unseen<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Joy / connection<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Physical pain<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Fatigue / low spoons<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Joints / EDS ache<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Ankle / legs / veins<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Head / neck / back<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Hormonal / metabolic<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Sensory overload<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Allergy / mast-cell trigger<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Skills helped 0-7<span class="dbt-scale">0-7</span></div><div class="dbt-cell dbt-header">Caregiver load 0-5<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Task paralysis 0-5<span class="dbt-scale">0-5</span></div><div class="dbt-cell dbt-header">Boundary used?</div><div class="dbt-cell dbt-header">Repair / ask for help</div><div class="dbt-cell dbt-header">Notes / trigger / repair</div><div class="dbt-grid-row" data-day-row="Mon"><div class="dbt-cell dbt-day">Mon</div><div class="dbt-cell"><input type="text" name="Mon_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Mon_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Mon_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Mon_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Mon_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Mon_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div><div class="dbt-grid-row" data-day-row="Tues"><div class="dbt-cell dbt-day">Tues</div><div class="dbt-cell"><input type="text" name="Tues_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Tues_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Tues_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Tues_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Tues_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Tues_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div><div class="dbt-grid-row" data-day-row="Wed"><div class="dbt-cell dbt-day">Wed</div><div class="dbt-cell"><input type="text" name="Wed_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Wed_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Wed_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Wed_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Wed_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Wed_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div><div class="dbt-grid-row" data-day-row="Thurs"><div class="dbt-cell dbt-day">Thurs</div><div class="dbt-cell"><input type="text" name="Thurs_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Thurs_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Thurs_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Thurs_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Thurs_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Thurs_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div><div class="dbt-grid-row" data-day-row="Fri"><div class="dbt-cell dbt-day">Fri</div><div class="dbt-cell"><input type="text" name="Fri_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Fri_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Fri_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Fri_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Fri_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Fri_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div><div class="dbt-grid-row" data-day-row="Sat"><div class="dbt-cell dbt-day">Sat</div><div class="dbt-cell"><input type="text" name="Sat_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Sat_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Sat_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sat_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Sat_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Sat_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div><div class="dbt-grid-row" data-day-row="Sun"><div class="dbt-cell dbt-day">Sun</div><div class="dbt-cell"><input type="text" name="Sun_date" data-label="Date" placeholder="/" /></div><div class="dbt-cell"><select name="Sun_urge_avoid" data-label="Avoid / freeze"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_urge_people_please" data-label="People-please / overfunction"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_urge_snap" data-label="Snap / lash out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_urge_doom" data-label="Doomscroll / numb out"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_urge_unsafe" data-label="Unsafe / S-H urge"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_sad_grief" data-label="Sad / grief"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_shame" data-label="Shame"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_guilt" data-label="Guilt"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_anger" data-label="Anger / irritability"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_fear_anx" data-label="Fear / anxiety"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_overwhelm" data-label="Overwhelm"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_rejection" data-label="Rejection sensitivity"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_resentment" data-label="Resentment"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_lonely" data-label="Lonely / unseen"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_emotion_joy" data-label="Joy / connection"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_pain" data-label="Physical pain"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_fatigue" data-label="Fatigue / low spoons"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_joint" data-label="Joints / EDS ache"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_ankle_leg" data-label="Ankle / legs / veins"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_head_neck" data-label="Head / neck / back"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_hormone" data-label="Hormonal / metabolic"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_sensory" data-label="Sensory overload"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_body_mast_cell" data-label="Allergy / mast-cell trigger"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_action_skills" data-label="Skills helped 0-7"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select></div><div class="dbt-cell"><select name="Sun_action_care_load" data-label="Caregiver load 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_action_task_paralysis" data-label="Task paralysis 0-5"><option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div><div class="dbt-cell"><select name="Sun_action_boundary" data-label="Boundary used?"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><select name="Sun_action_repair" data-label="Repair / ask for help"><option value=""></option><option>Y</option><option>N</option><option>partial</option></select></div><div class="dbt-cell"><textarea name="Sun_notes" data-label="Notes / trigger / repair" placeholder="tiny note"></textarea></div></div></div>
+      <div class="dbt-sections">
+        <section class="dbt-section">
+          <h3>Caregiver burnout + ADHD reflection</h3>
+          <div class="dbt-prompt-list"><label>What actually had to be done today, and what could wait without shame?<textarea name="reflection_1" data-reflection data-label="What actually had to be done today, and what could wait without shame?"></textarea></label><label>What did my brain/body need to make the next step smaller?<textarea name="reflection_2" data-reflection data-label="What did my brain/body need to make the next step smaller?"></textarea></label><label>Where did I overfunction, people-please, or ignore resentment?<textarea name="reflection_3" data-reflection data-label="Where did I overfunction, people-please, or ignore resentment?"></textarea></label><label>One boundary, backup request, or sensory reset that would protect tomorrow:<textarea name="reflection_4" data-reflection data-label="One boundary, backup request, or sensory reset that would protect tomorrow:"></textarea></label></div>
+        </section>
+        <section class="dbt-section">
+          <h3>*USED SKILLS scale</h3>
+          <div class="dbt-used-skills">
+      <div>0 = Not thought about or used</div><div>1 = Thought about, did not want to use</div>
+      <div>2 = Thought about, wanted to use</div><div>3 = Tried, could not use yet</div>
+      <div>4 = Tried, used, did not help</div><div>5 = Tried, used, helped</div>
+      <div>6 = Used without planning, did not help</div><div>7 = Used without planning, helped</div>
+    </div>
+          <h3 style="margin-top:1rem">Apparently small but important things</h3>
+          <textarea name="small_important_behaviors" data-reflection data-label="Apparently small but important things" placeholder="Examples: skipped food, noise overload, over-apologized, pushed past pain, forgot meds, avoided asking, changed plans, rested on purpose"></textarea>
+          <h3 style="margin-top:1rem">What made coping harder or easier?</h3>
+          <textarea name="coping_doors" data-reflection data-label="What made coping harder or easier" placeholder="Triggers, access barriers, supports, repair attempts, boundaries, sensory/body needs"></textarea>
+        </section>
+      </div>
+      <div class="dbt-footer-fields">
+        <div class="dbt-session-line"><span>Unsafe urge (0-5)</span><label class="dbt-session-input"><b>Before</b><input name="unsafe_before" placeholder="0-5"></label><label class="dbt-session-input"><b>After</b><input name="unsafe_after" placeholder="0-5"></label></div>
+        <div class="dbt-session-line"><span>Quit/escape urge (0-5)</span><label class="dbt-session-input"><b>Before</b><input name="quit_before" placeholder="0-5"></label><label class="dbt-session-input"><b>After</b><input name="quit_after" placeholder="0-5"></label></div>
+        <div class="dbt-session-line"><span>Caregiver guilt / resentment (0-5)</span><label class="dbt-session-input"><b>Before</b><input name="help_guilt_before" placeholder="0-5"></label><label class="dbt-session-input"><b>After</b><input name="help_guilt_after" placeholder="0-5"></label></div>
+      </div>
+      <div class="dbt-disclaimer">Private browser storage stays on this device/browser unless you export it. This sheet is a support and tracking tool, not emergency, medical, or mental-health care. For immediate danger or medical emergency, use local emergency/crisis services.</div>
+    </main>
+  </div>
+</section>
+<script>
+function formElements(){return Array.from(document.querySelectorAll('.dbt-diary-module[data-save] input,.dbt-diary-module[data-save] textarea,.dbt-diary-module[data-save] select'));}
+function getModule(){return document.querySelector('.dbt-diary-module[data-save]');}
+function getKey(){return getModule().dataset.storageKey;}
+function serializeForm(){
+  const data={_savedAt:new Date().toISOString()};
+  formElements().forEach(el=>{
+    if(!el.name) return;
+    if(el.type==='checkbox') data[el.name]=el.checked;
+    else data[el.name]=el.value;
+  });
+  return data;
+}
+function applyData(data){
+  if(!data) return;
+  formElements().forEach(el=>{
+    if(!el.name || !(el.name in data)) return;
+    if(el.type==='checkbox') el.checked=!!data[el.name];
+    else el.value=data[el.name];
+  });
+  updateStatus(data._savedAt ? 'Loaded saved browser copy from '+new Date(data._savedAt).toLocaleString()+'.' : 'Loaded saved browser copy.');
+}
+function updateStatus(msg){const s=document.getElementById('status'); if(s) s.textContent=msg || '';}
+function saveBrowser(){
+  localStorage.setItem(getKey(), JSON.stringify(serializeForm()));
+  updateStatus('Saved to this browser at '+new Date().toLocaleString()+'.');
+}
+function loadBrowser(){
+  const raw=localStorage.getItem(getKey());
+  if(!raw){updateStatus('No saved browser copy found for this sheet yet.'); return;}
+  try{applyData(JSON.parse(raw));}catch(e){updateStatus('Saved browser copy could not be loaded.');}
+}
+function clearSheet(){
+  if(!confirm('Clear this visible sheet? Browser saved copy will stay unless you save again.')) return;
+  formElements().forEach(el=>{ if(el.type==='checkbox') el.checked=false; else el.value=''; });
+  updateStatus('Sheet cleared. Use Save to Browser if you want the blank copy saved.');
+}
+function exportTxt(){
+  const data=serializeForm();
+  const lines=[];
+  lines.push(document.querySelector('.dbt-title-card h1').textContent.trim());
+  lines.push('Exported: '+new Date().toLocaleString());
+  lines.push('');
+  ['week_of','filled_in_session','fill_frequency','support_notes'].forEach(k=>{ if(data[k]) lines.push(k.replaceAll('_',' ')+': '+data[k]); });
+  lines.push('');
+  lines.push('SKILLS SIDE MENU');
+  document.querySelectorAll('.dbt-skill-name').forEach(skill=>{
+    const slug=skill.dataset.skill;
+    const used=[];
+    ['Mon','Tues','Wed','Thurs','Fri','Sat','Sun'].forEach(d=>{ if(data[`skill_${slug}_${d}`]) used.push(d); });
+    if(used.length) lines.push('- '+skill.textContent.trim()+': '+used.join(', '));
+  });
+  lines.push('');
+  lines.push('DAILY CARD');
+  document.querySelectorAll('[data-day-row]').forEach(row=>{
+    const d=row.dataset.dayRow;
+    lines.push(''); lines.push(d+':');
+    Array.from(row.querySelectorAll('input, textarea, select')).forEach(el=>{
+      const label=el.dataset.label || el.name;
+      const val=el.type==='checkbox' ? (el.checked?'yes':'') : el.value;
+      if(val) lines.push('  '+label+': '+val);
+    });
+  });
+  lines.push(''); lines.push('REFLECTIONS');
+  document.querySelectorAll('[data-reflection]').forEach(el=>{
+    if(el.value) lines.push((el.dataset.label||el.name)+': '+el.value);
+  });
+  const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=(getModule().dataset.fileBase||'diary-card')+'_'+new Date().toISOString().slice(0,10)+'.txt';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  updateStatus('TXT exported.');
+}
+function syncCloneFormValues(root){
+  root.querySelectorAll('input, textarea, select').forEach((el)=>{
+    if(el.tagName==='TEXTAREA') el.textContent=el.value;
+    if(el.tagName==='SELECT') Array.from(el.options).forEach(opt=>{ if(opt.value===el.value) opt.setAttribute('selected','selected'); else opt.removeAttribute('selected'); });
+    if(el.tagName==='INPUT'){
+      if(el.type==='checkbox') { if(el.checked) el.setAttribute('checked','checked'); else el.removeAttribute('checked'); }
+      else el.setAttribute('value', el.value || '');
+    }
+  });
+}
+function savePng(){
+  saveBrowser();
+  const target=getModule();
+  const clone=target.cloneNode(true);
+  syncCloneFormValues(clone);
+  const controls=clone.querySelector('.dbt-controls');
+  if(controls) controls.remove();
+  const side=clone.querySelector('.dbt-side-menu');
+  if(side){side.style.position='static'; side.style.maxHeight='none'; side.style.overflow='visible';}
+  clone.setAttribute('xmlns','http://www.w3.org/1999/xhtml');
+  clone.style.width=Math.max(target.scrollWidth, 1200)+'px';
+  clone.style.maxWidth='none';
+  clone.style.boxShadow='none';
+  clone.style.borderRadius='0';
+  clone.style.margin='0';
+  const measureBox=document.createElement('div');
+  measureBox.style.cssText='position:fixed;left:-100000px;top:0;visibility:hidden;pointer-events:none;width:max-content;height:auto;overflow:visible;';
+  measureBox.appendChild(clone);
+  document.body.appendChild(measureBox);
+  const w=Math.max(clone.scrollWidth, target.scrollWidth, 1200);
+  const h=Math.max(clone.scrollHeight, target.scrollHeight, 900);
+  const css=document.querySelector('#sheet-css').textContent;
+  const html=`<div xmlns="http://www.w3.org/1999/xhtml"><style>${css}</style>${clone.outerHTML}</div>`;
+  measureBox.remove();
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><foreignObject width="100%" height="100%">${html}</foreignObject></svg>`;
+  const img=new Image();
+  const blob=new Blob([svg],{type:'image/svg+xml;charset=utf-8'});
+  const url=URL.createObjectURL(blob);
+  img.onload=()=>{
+    const canvas=document.createElement('canvas');
+    canvas.width=w*2; canvas.height=h*2;
+    const ctx=canvas.getContext('2d');
+    ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.scale(2,2); ctx.drawImage(img,0,0);
+    URL.revokeObjectURL(url);
+    canvas.toBlob((png)=>{
+      if(!png){updateStatus('PNG export was blocked by this browser. TXT export still works.'); return;}
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(png);
+      a.download=(getModule().dataset.fileBase||'diary-card')+'_'+new Date().toISOString().slice(0,10)+'.png';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+      updateStatus('PNG saved.');
+    },'image/png');
+  };
+  img.onerror=()=>{URL.revokeObjectURL(url); updateStatus('PNG export failed in this browser. Try TXT export or Print to PDF.');};
+  img.src=url;
+}
+function wireAutosave(){
+  formElements().forEach(el=>el.addEventListener('input',()=>{
+    clearTimeout(window.__saveTimer);
+    window.__saveTimer=setTimeout(()=>{localStorage.setItem(getKey(), JSON.stringify(serializeForm())); updateStatus('Autosaved in this browser.');},500);
+  }));
+  loadBrowser();
+}
+document.addEventListener('DOMContentLoaded', wireAutosave);
+</script>
+</body>
+</html>
