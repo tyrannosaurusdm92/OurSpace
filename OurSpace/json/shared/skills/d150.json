@@ -1,0 +1,135 @@
+{
+  "id": "emotion-regulation-handout-8a",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "handout",
+  "item_number": "8a",
+  "title": "Examples of Emotions That Fit the Facts Fear",
+  "source_marker": "Emotion Regulation Handout 8a (Emotion Regulation Worksheet 5)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    253
+  ],
+  "source_book_pages": [
+    "229"
+  ],
+  "related_references": [
+    "Emotion Regulation Worksheet 5"
+  ],
+  "is_example": false,
+  "fillable_html_created": false,
+  "keywords": [
+    "Emotions",
+    "Examples",
+    "Facts",
+    "Fear",
+    "That"
+  ],
+  "pages": [
+    {
+      "pdf_page": 253,
+      "book_page": "229",
+      "text": "229\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission\nto photocopy this handout is granted to purchasers of this book for personal use only (see copyright page for details).\nEmotion Regulation Handout 8a (Emotion Regulation Worksheet 5)\nExamples of Emotions That Fit the Facts\nFear\n1. There is a threat to your life or that of someone you care about.\n2. There is a threat to your health or that of someone you care about.\n3. There is a threat to your well-being or that of someone you care about.\n4. Other:\nAnger\n1. An important goal is blocked or a desired activity is interrupted or prevented.\n2. You or someone you care about is attacked or hurt by others.\n3. You or someone you care about is insulted or threatened by others.\n4. The integrity or status of your social group is offended or threatened.\n5. Other:\nDisgust\n1. Something you are in contact with could poison or contaminate you.\n2. Somebody whom you deeply dislike is touching you or someone you care about.\n3. You are around a person or group whose behavior or thinking could seriously\ndamage or harmfully influence you or the group you are part of.\n4. Other:\nEnvy\n1. Another person or group gets or has things you don’t have that you want or need.\n2. Other:\nJealousy\n1. A very important and desired relationship or object in your life is in danger of\nbeing damaged or lost.\n2. Someone is threatening to take a valued relationship or object away from you.\n3. Other:\nLove\n1. Loving a person, animal, or object enhances quality of life for you or for those you\ncare about.\n2. Loving a person, animal, or object increases your chances of attaining your own\npersonal goals.\n3. Other:\nSadness\n1. You have lost something or someone permanently.\n2. Things are not the way you wanted or expected and hoped them to be.\n3. Other:\nShame\n1. You will be rejected by a person or group you care about if characteristics of\nyourself or of your behavior are made public.\n2. Other:\nGuilt\n1. Your own behavior violates your own values or moral code.\n2. Other:\nIntensity and duration of an emotion are justified by:\n1. How likely it is that the expected outcomes will occur.\n2. How great and/or important the outcomes are.\n3. How effective the emotion is in your life now."
+    }
+  ],
+  "full_text": "Emotion Regulation Handout 8a (Emotion Regulation Worksheet 5)\nExamples of Emotions That Fit the Facts\nFear\n1. There is a threat to your life or that of someone you care about.\n2. There is a threat to your health or that of someone you care about.\n3. There is a threat to your well-being or that of someone you care about.\n4. Other:\nAnger\n1. An important goal is blocked or a desired activity is interrupted or prevented.\n2. You or someone you care about is attacked or hurt by others.\n3. You or someone you care about is insulted or threatened by others.\n4. The integrity or status of your social group is offended or threatened.\n5. Other:\nDisgust\n1. Something you are in contact with could poison or contaminate you.\n2. Somebody whom you deeply dislike is touching you or someone you care about.\n3. You are around a person or group whose behavior or thinking could seriously\ndamage or harmfully influence you or the group you are part of.\n4. Other:\nEnvy\n1. Another person or group gets or has things you don’t have that you want or need.\n2. Other:\nJealousy\n1. A very important and desired relationship or object in your life is in danger of\nbeing damaged or lost.\n2. Someone is threatening to take a valued relationship or object away from you.\n3. Other:\nLove\n1. Loving a person, animal, or object enhances quality of life for you or for those you\ncare about.\n2. Loving a person, animal, or object increases your chances of attaining your own\npersonal goals.\n3. Other:\nSadness\n1. You have lost something or someone permanently.\n2. Things are not the way you wanted or expected and hoped them to be.\n3. Other:\nShame\n1. You will be rejected by a person or group you care about if characteristics of\nyourself or of your behavior are made public.\n2. Other:\nGuilt\n1. Your own behavior violates your own values or moral code.\n2. Other:\nIntensity and duration of an emotion are justified by:\n1. How likely it is that the expected outcomes will occur.\n2. How great and/or important the outcomes are.\n3. How effective the emotion is in your life now.",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/handouts/emotion_regulation_handout_8a_examples_of_emotions_that_fit_the_facts_fear.json",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "04_DBT_Emotion_Regulation/handouts/json/emotion_regulation_handout_8a_examples_of_emotions_that_fit_the_facts_fear.json",
+    "title": "Examples of Emotions That Fit the Facts Fear",
+    "category": "DBT Emotion Regulation",
+    "source_type": "handout",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Read one short section.",
+      "Choose one sentence or tool that fits today.",
+      "Use the low-spoon version; no full worksheet is required."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}

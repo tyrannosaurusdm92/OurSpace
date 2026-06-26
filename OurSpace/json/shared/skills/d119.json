@@ -1,0 +1,133 @@
+{
+  "id": "interpersonal-effectiveness-worksheet-13",
+  "module": "Interpersonal Effectiveness",
+  "module_category": "Interpersonal Effectiveness Skills",
+  "item_type": "worksheet",
+  "item_number": "13",
+  "title": "Self-Validation and Self-Respect",
+  "source_marker": "Interpersonal Effectiveness Worksheet 13 (I. E. Handout 19)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    217
+  ],
+  "source_book_pages": [
+    "193"
+  ],
+  "related_references": [
+    "I. E. Handout 19"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Self-Respect",
+    "Self-Validation"
+  ],
+  "pages": [
+    {
+      "pdf_page": 217,
+      "book_page": "193",
+      "text": "193\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nInterpersonal Effectiveness Worksheet 13 (I. E. Handout 19)\nSelf-Validation and Self-Respect\nDue Date: Name: Week Starting:\nFill out this sheet whenever you practice your self-validation skills and whenever you have an oppor-\ntunity to practice even if you don’t (or almost don’t) do anything to practice. Write on the back of this\nsheet if you need more room.\nList one self-invalidating and two self-validating statements you made.\n1.\n2.\n3.\nDescribe a situation where you felt invalidated in the past week: Check each strategy you used during the week:\n\u0003\n Checked all the facts to see if my responses are valid or invalid.\n\u0003\n Checked it out with someone I could trust to validate the valid.\n\u0003\n Acknowledged when my responses didn’t make sense and were not valid.\n\u0003\n Worked to change invalid thinking, comments, or actions. (Stopped blaming.)\n\u0003\n Dropped judgmental self-statements. (Practiced opposite action.)\n\u0003\n Reminded myself that all behavior is caused and that I am doing my best.\n\u0003\n Was compassionate toward myself. Practiced self-soothing.\n\u0003\n Admitted that it hurts to be invalidated by others, even if they are right.\n\u0003\n Acknowledged when my reactions make sense and are valid in a situation.\n\u0003\n Remembered that being invalidated, even when my response is actually valid, is rarely a\ncomplete catastrophe.\n\u0003\n Described my experiences and actions in a supportive environment.\n\u0003\n Grieved traumatic invalidation in my life and the harm it has created.\n\u0003\n Practiced radical acceptance of the invalidating person(s) in my life.\n\u0003\n What was the outcome?"
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nInterpersonal Effectiveness Worksheet 13 (I. E. Handout 19)\nSelf-Validation and Self-Respect\nDue Date: Name: Week Starting:\nFill out this sheet whenever you practice your self-validation skills and whenever you have an oppor-\ntunity to practice even if you don’t (or almost don’t) do anything to practice. Write on the back of this\nsheet if you need more room.\nList one self-invalidating and two self-validating statements you made.\n1.\n2.\n3.\nDescribe a situation where you felt invalidated in the past week: Check each strategy you used during the week:\n\u0003\n Checked all the facts to see if my responses are valid or invalid.\n\u0003\n Checked it out with someone I could trust to validate the valid.\n\u0003\n Acknowledged when my responses didn’t make sense and were not valid.\n\u0003\n Worked to change invalid thinking, comments, or actions. (Stopped blaming.)\n\u0003\n Dropped judgmental self-statements. (Practiced opposite action.)\n\u0003\n Reminded myself that all behavior is caused and that I am doing my best.\n\u0003\n Was compassionate toward myself. Practiced self-soothing.\n\u0003\n Admitted that it hurts to be invalidated by others, even if they are right.\n\u0003\n Acknowledged when my reactions make sense and are valid in a situation.\n\u0003\n Remembered that being invalidated, even when my response is actually valid, is rarely a\ncomplete catastrophe.\n\u0003\n Described my experiences and actions in a supportive environment.\n\u0003\n Grieved traumatic invalidation in my life and the harm it has created.\n\u0003\n Practiced radical acceptance of the invalidating person(s) in my life.\n\u0003\n What was the outcome?",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/interpersonal_effectiveness/worksheets/interpersonal_effectiveness_worksheet_13_self_validation_and_self_respect.json",
+  "html_path": "html/worksheets/interpersonal_effectiveness/interpersonal_effectiveness_worksheet_13_self_validation_and_self_respect.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "03_DBT_Interpersonal_Effectiveness/worksheets/json/interpersonal_effectiveness_worksheet_13_self_validation_and_self_respect.json",
+    "title": "Self-Validation and Self-Respect",
+    "category": "DBT Interpersonal Effectiveness",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}

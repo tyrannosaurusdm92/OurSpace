@@ -1,0 +1,135 @@
+{
+  "id": "emotion-regulation-worksheet-2",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "worksheet",
+  "item_number": "2",
+  "title": "Figuring Out What My Emotions Are Doing for Me",
+  "source_marker": "Emotion Regulation Worksheet 2 (Emotion Regulation Handout 3)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    299
+  ],
+  "source_book_pages": [
+    "275"
+  ],
+  "related_references": [
+    "Emotion Regulation Handout 3"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Doing",
+    "Emotions",
+    "Figuring",
+    "What"
+  ],
+  "pages": [
+    {
+      "pdf_page": 299,
+      "book_page": "275",
+      "text": "275\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 2 (Emotion Regulation Handout 3)\nFiguring Out What My Emotions Are Doing for Me\nDue Date: Name: Week Starting:\nSelect a current or recent emotional reaction and fill out as much of this sheet as you can. If the\nprompting event for the emotion you are working on is another emotion that occurred first (for exam-\nple, feeling afraid prompted getting angry at yourself), then fill out a second worksheet for that first\nemotion. Write on the back of the sheet if you need more room. Remember to use your describe\nskills for each question.\nEmotion Name: Intensity (0–100):\nDescribe Prompting Event\nWhat happened to prompt this emotion?\nDescribe Motivation to Action\nWhat action was my emotion motivating and preparing me to do? (Was there a problem my\nemotion was getting me to solve, overcome, or avoid?) What function or goal did my emotion\nserve?\nDescribe Communication to Others\nWhat was my facial expression? Posture? Gestures? Words? Actions?\nWhat message did my emotion send to others (even if I didn’t intend to send the message)?\nHow did my emotion influence others (even if I didn’t intend to influence them)? What did others\ndo or say as a result of my emotional expression or actions?\nDescribe Communication to Myself\nWhat did my emotion say to me?\nWhat facts could I check out to be sure the message my emotions were sending to me was\ncorrect?\nWhat facts did I check out?"
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 2 (Emotion Regulation Handout 3)\nFiguring Out What My Emotions Are Doing for Me\nDue Date: Name: Week Starting:\nSelect a current or recent emotional reaction and fill out as much of this sheet as you can. If the\nprompting event for the emotion you are working on is another emotion that occurred first (for exam-\nple, feeling afraid prompted getting angry at yourself), then fill out a second worksheet for that first\nemotion. Write on the back of the sheet if you need more room. Remember to use your describe\nskills for each question.\nEmotion Name: Intensity (0–100):\nDescribe Prompting Event\nWhat happened to prompt this emotion?\nDescribe Motivation to Action\nWhat action was my emotion motivating and preparing me to do? (Was there a problem my\nemotion was getting me to solve, overcome, or avoid?) What function or goal did my emotion\nserve?\nDescribe Communication to Others\nWhat was my facial expression? Posture? Gestures? Words? Actions?\nWhat message did my emotion send to others (even if I didn’t intend to send the message)?\nHow did my emotion influence others (even if I didn’t intend to influence them)? What did others\ndo or say as a result of my emotional expression or actions?\nDescribe Communication to Myself\nWhat did my emotion say to me?\nWhat facts could I check out to be sure the message my emotions were sending to me was\ncorrect?\nWhat facts did I check out?",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/worksheets/emotion_regulation_worksheet_2_figuring_out_what_my_emotions_are_doing_for_me.json",
+  "html_path": "html/worksheets/emotion_regulation/emotion_regulation_worksheet_2_figuring_out_what_my_emotions_are_doing_for_me.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_2_figuring_out_what_my_emotions_are_doing_for_me.json",
+    "title": "Figuring Out What My Emotions Are Doing for Me",
+    "category": "DBT Emotion Regulation",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}

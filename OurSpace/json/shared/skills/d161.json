@@ -1,0 +1,135 @@
+{
+  "id": "emotion-regulation-worksheet-1",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "worksheet",
+  "item_number": "1",
+  "title": "Pros and Cons of Changing Emotions",
+  "source_marker": "Emotion Regulation Worksheet 1 (Emotion Regulation Handout 1)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    295
+  ],
+  "source_book_pages": [
+    "271"
+  ],
+  "related_references": [
+    "Emotion Regulation Handout 1"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Changing",
+    "Cons",
+    "Emotions",
+    "Pros"
+  ],
+  "pages": [
+    {
+      "pdf_page": 295,
+      "book_page": "271",
+      "text": "271\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permis-\nsion to photocopy this worksheet is granted to purchasers of this book for personal use only (see copyright page for details). Purchasers may\ndownload a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 1 (Emotion Regulation Handout 1)\nPros and Cons of Changing Emotions\nDue Date: Name: Week Starting:\nEmotion Name: Intensity (0–100) Before: After:\nFill this worksheet out when you are experiencing difficulties with:\n•• Trying to decide whether to work on changing ineffective emotions.\n•• Feeling willful/saying no to letting go of emotion mind.\n•• Deciding whether to work on reducing your emotional reactions to specific events.\n•• Feeling threatened whenever you think of letting go of emotions.\n•• Not in the mood for being effective.\nWhen filling out this worksheet, think about these questions:\n•• Is living in emotion mind in your best interest (i.e., effective) or not in your best interest (i.e.,\nineffective)?\n•• Will refusing to regulate your own emotions create a new problem for you?\n•• Is reducing immediate high emotions likely to increase your freedom or decrease it?\n•• Is being attached to your emotions about a situation useful or not?\n•• Is working to reduce your emotion really too much work?\nMake a list of the pros and cons of changing the emotion you are having difficulty with.\nMake another list of the pros and cons of not changing your emotion.\nPros\nStay in emotion mind, acting emotionally Regulate emotions and emotion actions Cons\nStay in emotion mind, acting emotionally Regulate emotions and emotion actions What did you decide to do about your emotion?\nIs this the best decision (in Wise Mind)?"
+    }
+  ],
+  "full_text": "download a larger version of this worksheet from www.guilford.com/dbt-worksheets.\nEmotion Regulation Worksheet 1 (Emotion Regulation Handout 1)\nPros and Cons of Changing Emotions\nDue Date: Name: Week Starting:\nEmotion Name: Intensity (0–100) Before: After:\nFill this worksheet out when you are experiencing difficulties with:\n•• Trying to decide whether to work on changing ineffective emotions.\n•• Feeling willful/saying no to letting go of emotion mind.\n•• Deciding whether to work on reducing your emotional reactions to specific events.\n•• Feeling threatened whenever you think of letting go of emotions.\n•• Not in the mood for being effective.\nWhen filling out this worksheet, think about these questions:\n•• Is living in emotion mind in your best interest (i.e., effective) or not in your best interest (i.e.,\nineffective)?\n•• Will refusing to regulate your own emotions create a new problem for you?\n•• Is reducing immediate high emotions likely to increase your freedom or decrease it?\n•• Is being attached to your emotions about a situation useful or not?\n•• Is working to reduce your emotion really too much work?\nMake a list of the pros and cons of changing the emotion you are having difficulty with.\nMake another list of the pros and cons of not changing your emotion.\nPros\nStay in emotion mind, acting emotionally Regulate emotions and emotion actions Cons\nStay in emotion mind, acting emotionally Regulate emotions and emotion actions What did you decide to do about your emotion?\nIs this the best decision (in Wise Mind)?",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/worksheets/emotion_regulation_worksheet_1_pros_and_cons_of_changing_emotions.json",
+  "html_path": "html/worksheets/emotion_regulation/emotion_regulation_worksheet_1_pros_and_cons_of_changing_emotions.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_1_pros_and_cons_of_changing_emotions.json",
+    "title": "Pros and Cons of Changing Emotions",
+    "category": "DBT Emotion Regulation",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}

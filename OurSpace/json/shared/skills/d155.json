@@ -1,0 +1,134 @@
+{
+  "id": "emotion-regulation-worksheet-10",
+  "module": "Emotion Regulation",
+  "module_category": "Emotion Regulation Skills",
+  "item_type": "worksheet",
+  "item_number": "10",
+  "title": "Pleasant Events Diary",
+  "source_marker": "Emotion Regulation Worksheet 10 (Emotion Regulation Handouts 15, 16)",
+  "source_pdf": "DBT Skills Workbook.pdf",
+  "source_pdf_pages": [
+    319
+  ],
+  "source_book_pages": [
+    "295"
+  ],
+  "related_references": [
+    "Emotion Regulation Handouts 15, 16"
+  ],
+  "is_example": false,
+  "fillable_html_created": true,
+  "keywords": [
+    "Diary",
+    "Events",
+    "Pleasant"
+  ],
+  "pages": [
+    {
+      "pdf_page": 319,
+      "book_page": "295",
+      "text": "295\nEmotion Regulation Worksheet 10 (Emotion Regulation Handouts 15, 16)\nPleasant Events Diary\nDue Date: Name: Week Starting:\nAccumulating pleasant events can take planning. For each day of the week, write down at least one pleasant activity or event that is possible\nfor you. In the next column, write down for each day the pleasant event or activity that you actually engaged in. Fill out an Observing and\nDescribing Emotions worksheet (Emotion Regulation Worksheet 4 or 4a) if necessary, plus this diary sheet.\nDay\nof\nweek\nPleasant event(s) planned\nPleasant event(s) I\nactually did\nMindfulness\nof pleasant\nevent (0–5)\nLetting go\nof worries\n(0–5)\nPleasant\nexperience\n(0–100)\nComments\nFrom DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Copyright 2015 by Marsha M. Linehan. Permission to photocopy this worksheet is granted to purchasers of\nthis book for personal use only (see copyright page for details). Purchasers may download a larger version of this worksheet from www.guilford.com/dbt-worksheets."
+    }
+  ],
+  "full_text": "Emotion Regulation Worksheet 10 (Emotion Regulation Handouts 15, 16)\nPleasant Events Diary\nDue Date: Name: Week Starting:\nAccumulating pleasant events can take planning. For each day of the week, write down at least one pleasant activity or event that is possible\nfor you. In the next column, write down for each day the pleasant event or activity that you actually engaged in. Fill out an Observing and\nDescribing Emotions worksheet (Emotion Regulation Worksheet 4 or 4a) if necessary, plus this diary sheet.\nDay\nof\nweek\nPleasant event(s) planned\nPleasant event(s) I\nactually did\nMindfulness\nof pleasant\nevent (0–5)\nLetting go\nof worries\n(0–5)\nPleasant\nexperience\n(0–100)\nComments",
+  "copyright_notice": "Extracted from user-provided PDF: DBT Skills Training Handouts and Worksheets, Second Edition by Marsha M. Linehan. Respect source copyright and purchaser-use limits.",
+  "created_at": "2026-06-25T17:33:54",
+  "json_path": "json/items/emotion_regulation/worksheets/emotion_regulation_worksheet_10_pleasant_events_diary.json",
+  "html_path": "html/worksheets/emotion_regulation/emotion_regulation_worksheet_10_pleasant_events_diary.html",
+  "ourspace_kindness_pass": {
+    "schema_name": "ourspace_dbt_adhd_kindness_pass",
+    "schema_version": "1.0.0",
+    "generated_at_utc": "2026-06-25T21:00:29.329839+00:00",
+    "shared_library": true,
+    "routine_cadence": "daily",
+    "source_relative_path": "04_DBT_Emotion_Regulation/worksheets/json/emotion_regulation_worksheet_10_pleasant_events_diary.json",
+    "title": "Pleasant Events Diary",
+    "category": "DBT Emotion Regulation",
+    "source_type": "worksheet",
+    "disability_profile_basis": {
+      "william": {
+        "main_doability_needs": [
+          "bed-level or seated options by default",
+          "oxygen/breathing, pain, vertigo, fatigue, mobility, and recovery time respected",
+          "ADHD/autism supports: transitions, low-stimulation starts, tiny visible steps",
+          "partial completion and stopping before a crash count as success",
+          "no shame, no body blame, no pressure to push through pain or dysphoria"
+        ],
+        "care_language": "direct, validating, masculine, autonomy-preserving, privacy-respecting"
+      },
+      "jasper": {
+        "main_doability_needs": [
+          "ADHD transition support before task demands",
+          "caregiver burnout recovery treated as care, not avoidance",
+          "protected rest, boundaries, decompression, sensory needs, and people-pleasing checks",
+          "low-energy, one-field, one-minute versions allowed",
+          "no assumption that Jasper has unlimited caregiver capacity"
+        ],
+        "care_language": "they/them, body-neutral, consent-based, non-shaming, burnout-aware"
+      },
+      "shared": {
+        "household_rules": [
+          "no hour block may hold more than two tasks/tools",
+          "skills may be used as one-breath or one-field versions",
+          "survival days load critical care first and skip optional worksheets",
+          "rest, boundaries, decompression, and asking for help count as care",
+          "skills are for support, not grades"
+        ]
+      }
+    },
+    "universal_kindness_rules": [
+      "This is a support tool, not a test.",
+      "One line, one checkbox, one breath, or one tiny step counts.",
+      "Skipping a skill because the body is unsafe, exhausted, dysregulated, or overloaded is allowed.",
+      "Do not stack this with more than one other task inside the same hour.",
+      "Survival-day version always wins over perfection."
+    ],
+    "william_accessibility_adaptations": [
+      "Use bed-level, seated, voice-note, or caregiver-assisted versions when needed.",
+      "Avoid pain escalation, respiratory strain, unsafe transfers, and dysphoria-triggering language.",
+      "Break worksheets into one-field chunks; stopping before a crash is success."
+    ],
+    "jasper_accessibility_adaptations": [
+      "Start with transition support before expecting focus.",
+      "Protect caregiver burnout recovery; rest and boundaries are valid completion.",
+      "Use body-doubling, timers, low-stimulation versions, and one-minute starts."
+    ],
+    "tiny_steps": [
+      "Open the file without requiring completion.",
+      "Fill one field, circle one option, or read one prompt.",
+      "Stop, save, or print; partial completion counts."
+    ],
+    "routine_integration": {
+      "routine_role": "small daily support option",
+      "start_the_day_use": "eligible as a rotating daily skill, never more than one DBT/ADHD skill in an hour block",
+      "recommended_block": "after body check or before decompression"
+    },
+    "completion_rules": {
+      "partial_completion_counts": true,
+      "can_be_paused_and_resumed": true,
+      "no_shame_if_skipped": true,
+      "low_spoon_version_required": true,
+      "can_be_done_separately_by_william_and_jasper": true,
+      "can_be_done_together_only_if_both_people_have_capacity": true
+    },
+    "schedule_policy": {
+      "start_the_day_eligible": true,
+      "expanded_day_eligible": true,
+      "max_items_per_hour_block": 2,
+      "do_not_force_into_day": false,
+      "do_not_stack_with": [
+        "appointment",
+        "heavy_chore",
+        "conflict_repair",
+        "hygiene_overload",
+        "caregiver_overload"
+      ]
+    },
+    "currency_suggestion": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 3,
+      "copper": 0
+    }
+  }
+}
