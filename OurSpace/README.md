@@ -9,5 +9,9 @@ The app includes:
 - backend action access on the Sync page, excluding reserved backend module until it is ready
 
 
-## Mobile sign-in fix
-This build points to the new Apps Script backend URL and includes JSONP fallback support for mobile browsers. For full cross-device sign-in, deploy the included `backend/OurSpace_Unified_Merged_Backend.gs` to the Apps Script web app if the currently deployed backend does not already include the JSONP callback patch.
+Backend locked frontend URL: https://script.google.com/macros/s/AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA/exec
+Mobile sign-in patch: simple POST + GET fallback, per-device session tokens.
+
+
+## 2026-06-26 mobile backend patch
+Use the locked backend URL only. Upload all files in this folder to `LifeHelpers/OurSpace/`, including lowercase `ourspace.html`. The app now signs in through the backend so the same William/Jasper account can be used on phone, laptop, tablet, and desktop without signing out elsewhere.

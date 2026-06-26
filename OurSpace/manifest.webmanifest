@@ -2,7 +2,7 @@
   "name": "OurSpace",
   "short_name": "OurSpace",
   "id": "/LifeHelpers/OurSpace/ourspace.html",
-  "start_url": "/LifeHelpers/OurSpace/ourspace.html?v=10",
+  "start_url": "/LifeHelpers/OurSpace/ourspace.html",
   "scope": "/LifeHelpers/OurSpace/",
   "display": "standalone",
   "display_override": [

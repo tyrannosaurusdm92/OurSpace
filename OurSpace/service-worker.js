@@ -1,4 +1,4 @@
-const OURSPACE_CACHE = 'ourspace-pwa-v10-mobile-backend';
+const OURSPACE_CACHE = 'ourspace-pwa-v10-mobile-cloud-auth';
 const CORE_ASSETS = [
   "./ourspace.html",
   "./OurSpace.html",

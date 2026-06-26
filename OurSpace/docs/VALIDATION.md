@@ -13,10 +13,27 @@ Checks performed in the sandbox:
 Browser rendering is not available in this sandbox environment, so device-mode testing is represented by static responsive CSS checks plus syntax/cache/manifest validation.
 
 
-## 2026-06-25 mobile/backend auth patch
-- Updated all frontend backend URLs to the new Apps Script deployment.
-- Changed signup flow so the backend account is created only after William/Jasper profile selection, matching backend requirements.
-- Changed signin flow to use the backend as the shared source of truth, with local browser records only as fallback/migration.
-- Sessions are per device/browser and are not globally invalidated, so William and Jasper can stay signed in on phones, tablets, and computers at the same time.
-- Added JSONP GET fallback support in the included Apps Script backend and frontend callers for mobile browsers that block readable cross-origin Apps Script fetches.
-- Bumped PWA cache to force mobile installs to refresh stale service-worker files.
+## 2026-06-26 mobile/backend sign-in patch
+- Locked frontend backend URL to `https://script.google.com/macros/s/AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA/exec`.
+- Changed frontend backend calls from JSON POST to simple `text/plain` POST with GET fallback to reduce mobile browser/CORS/preflight failures.
+- Fixed login-page JavaScript duplicate `const password` declaration.
+- Moved server-side account creation to the profile-claim step so signup sends `profileKey` and creates the real backend account instead of only a browser-local account.
+- Sign-in now uses backend `auth.signin` and stores the returned session token per device.
+- Backend sessions are per-device tokens; the frontend does not sign out other devices, and sign-out only invalidates the current device token.
+- Existing browser-local accounts can migrate to the backend on the next successful sign-in from that browser.
+
+## 2026-06-26 mobile backend + multi-device pass
+
+Validated locally after patch:
+
+- `OurSpace.html`, `ourspace.html`, `william.html`, and `jasper.html` inline JavaScript syntax passes `node --check` after script extraction.
+- `assets/*.js` and `service-worker.js` pass `node --check`.
+- Included `backend/OurSpace_Unified_Merged_Backend.gs` passes JavaScript syntax check when copied to `.js` for parser validation.
+- All `.json` files and `manifest.webmanifest` parse successfully.
+- `ourspace.html` is present for the published GitHub Pages route.
+- Service worker cache bumped to `ourspace-pwa-v10-mobile-cloud-auth`.
+- Only the locked backend URL is present in code/docs.
+- Frontend uses backend auth/session tokens and no longer requires a device-local desktop account before phone/tablet login.
+- Backend sessions are per-device tokens; signout sends only the current token.
+
+Live backend note: I attempted to open the Apps Script URL from the sandbox web tool, but the request timed out there. The app files were therefore validated statically and patched to use POST, GET, JSONP, and opaque write fallbacks for mobile browser differences.

@@ -457,6 +457,7 @@ function uid(){return 'id_'+Date.now().toString(36)+'_'+Math.random().toString(3
 function esc(s){return String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
 function readJSON(key,fallback){try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback));}catch(e){return fallback;}}
 function writeJSON(key,value){localStorage.setItem(key,JSON.stringify(value));}
+function getClientId(){const key='ourspace.client.id.v1';try{let id=localStorage.getItem(key); if(!id){id='client_'+Math.random().toString(36).slice(2)+'_'+Date.now().toString(36); localStorage.setItem(key,id);} return id;}catch(e){return 'client_ephemeral_'+Math.random().toString(36).slice(2);}}
 function readSession(){try{return JSON.parse(sessionStorage.getItem(SESSION_KEY)||localStorage.getItem(SESSION_KEY)||localStorage.getItem(LEGACY_SESSION_KEY)||'null');}catch(e){return null;}}
 function writeSession(session, remember=false){const raw=JSON.stringify(session); if(remember){localStorage.setItem(SESSION_KEY,raw); sessionStorage.removeItem(SESSION_KEY);}else{sessionStorage.setItem(SESSION_KEY,raw); localStorage.removeItem(SESSION_KEY);} localStorage.removeItem(LEGACY_SESSION_KEY);}
 function clearSession(){sessionStorage.removeItem(SESSION_KEY); localStorage.removeItem(SESSION_KEY); localStorage.removeItem(LEGACY_SESSION_KEY); localStorage.removeItem(LEGACY_LOGIN_KEY);}
@@ -491,13 +492,54 @@ function addCurrency(w,reason){state.wallet.copper+=ledgerAmountToCopper(w); nor
 function spendCurrency(total,reason){const current=currencyToCopper(state.wallet); if(current<total) return false; syncCurrencyLedger('spend',copperToCurrency(total),reason); state.wallet=copperToCurrency(current-total); saveState(); renderCurrency(); return true;}
 
 let deferredInstallPrompt=null;
-
-function backendJsonp(action,data={},timeoutMs=12000){return new Promise((resolve,reject)=>{const cb='__ourspace_jsonp_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2);const script=document.createElement('script');const timer=setTimeout(()=>{cleanup();reject(new Error('Backend did not answer. Redeploy the included backend if this Apps Script URL is new.'));},timeoutMs);function cleanup(){clearTimeout(timer);try{delete window[cb];}catch(e){window[cb]=undefined;}script.remove();}window[cb]=(payload)=>{cleanup();resolve(payload||{});};const params=new URLSearchParams();const payload={app:'OurSpace',source:'OurSpace',action,authAction:action,profileKey:PROFILE_ID,profile:PROFILE_ID,sessionToken:activeSessionToken(),clientId:'ourspace-'+PROFILE_ID,updatedAt:new Date().toISOString(),data};const merged=Object.assign({},payload,data||{},data&&data.__raw?data.__raw:{});Object.entries(merged).forEach(([k,v])=>{if(v===undefined||v===null)return;params.set(k,typeof v==='object'?JSON.stringify(v):String(v));});params.set('callback',cb);script.onerror=()=>{cleanup();reject(new Error('Backend script request failed.'));};script.src=BACKEND_URL+'?'+params.toString();document.head.appendChild(script);});}
-function activeSessionToken(){return activeSession?.token||activeSession?.sessionToken||readSession()?.token||readSession()?.sessionToken||'';}
+function activeSessionToken(){const s=activeSession||readSession()||{}; return s.token||s.sessionToken||s.session?.token||s.session?.sessionToken||'';}
 function isStandaloneDisplay(){return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true;}
 function setInstallStatus(text){const el=$('installAppStatus'); if(el)el.textContent=text||'';}
 function updateInstallButton(){[$('installAppButton'),$('installAppTop')].filter(Boolean).forEach(b=>{b.hidden=isStandaloneDisplay();});}
-async function backendAction(action,data={},opts={}){const payload={app:'OurSpace',source:'OurSpace',action,authAction:action,profileKey:PROFILE_ID,profile:PROFILE_ID,sessionToken:activeSessionToken(),clientId:'ourspace-'+PROFILE_ID,updatedAt:new Date().toISOString(),data}; const merged=Object.assign({},payload,data||{},data&&data.__raw?data.__raw:{}); const parse=async(response)=>{const text=await response.text(); let parsed={}; try{parsed=text?JSON.parse(text):{};}catch(e){parsed={raw:text};} if(!response.ok||parsed.ok===false||parsed.error)throw new Error(parsed.error||parsed.message||'Backend rejected the request.'); return parsed;}; try{return await parse(await fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(merged)}));}catch(postError){try{const parsed=await backendJsonp(action,data); if(parsed.ok===false||parsed.error)throw new Error(parsed.error||parsed.message||'Backend rejected the request.'); return parsed;}catch(jsonpError){try{await fetch(BACKEND_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(merged)}); if(opts.tolerateOpaque!==false)return{ok:true,opaque:true,message:'Sent to backend.'};}catch(e){} if(opts.tolerateOpaque)return{ok:false,error:jsonpError.message||postError.message||String(jsonpError||postError)}; throw new Error(jsonpError.message||postError.message||'Backend unavailable.');}}}
+async function backendAction(action, data = {}, opts = {}) {
+  const payload = { app:'OurSpace', source:'OurSpace', action, authAction:action, profileKey:PROFILE_ID, profile:PROFILE_ID, sessionToken:activeSessionToken(), clientId:getClientId(), userAgent:navigator.userAgent||'', updatedAt:new Date().toISOString(), data };
+  const merged = Object.assign({}, payload, data || {}, data && data.__raw ? data.__raw : {});
+  const parse = async (response) => {
+    const text = await response.text();
+    let parsed = {};
+    try { parsed = text ? JSON.parse(text) : {}; } catch(e) { parsed = { raw:text }; }
+    if (!response.ok || parsed.ok === false || parsed.success === false || parsed.error) throw new Error(parsed.error || parsed.message || 'Backend rejected the request.');
+    return parsed;
+  };
+  const params = () => { const q = new URLSearchParams(); Object.entries(merged).forEach(([k,v]) => { if (v === undefined || v === null) return; q.set(k, typeof v === 'object' ? JSON.stringify(v) : String(v)); }); return q; };
+  const timedFetch = async (url, options = {}, timeoutMs = 12000) => {
+    if (!window.AbortController) return fetch(url, options);
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try { return await fetch(url, { ...options, signal: controller.signal }); }
+    finally { clearTimeout(timer); }
+  };
+  const jsonp = () => new Promise((resolve, reject) => {
+    const cb = '__ourspace_jsonp_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2);
+    const q = params(); q.set('action', action); q.set('callback', cb); q.set('_', Date.now().toString());
+    let script = document.createElement('script');
+    let timer = null;
+    const cleanup = () => { if (timer) clearTimeout(timer); try { delete window[cb]; } catch(e) { window[cb] = undefined; } if (script && script.parentNode) script.parentNode.removeChild(script); script = null; };
+    window[cb] = (data) => { cleanup(); if (data && (data.ok === false || data.success === false || data.error)) reject(new Error(data.error || data.message || 'Backend rejected the request.')); else resolve(data || {ok:true}); };
+    script.onerror = () => { cleanup(); reject(new Error('Backend JSONP request failed.')); };
+    timer = setTimeout(() => { cleanup(); reject(new Error('Backend request timed out.')); }, 12000);
+    script.src = BACKEND_URL + '?' + q.toString();
+    document.head.appendChild(script);
+  });
+  let firstError = null;
+  try { const response = await timedFetch(BACKEND_URL, { method:'POST', redirect:'follow', cache:'no-store', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(merged) }); return await parse(response); }
+  catch(error) { firstError = error; }
+  try { const response = await timedFetch(BACKEND_URL + '?' + params().toString(), { method:'GET', redirect:'follow', cache:'no-store' }); return await parse(response); }
+  catch(_getError) {}
+  try { return await jsonp(); }
+  catch(getError) {
+    if (opts.tolerateOpaque !== false) {
+      try { await timedFetch(BACKEND_URL, { method:'POST', mode:'no-cors', cache:'no-store', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(merged) }, 8000); return { ok:true, opaque:true, message:'Sent to backend.' }; }
+      catch(e) { return { ok:false, error:getError.message || firstError?.message || String(getError) }; }
+    }
+    throw (firstError || getError);
+  }
+}
 function defaultPayloadFor(action){const base={profileKey:PROFILE_ID,sessionToken:activeSessionToken()}; const store={profileKey:PROFILE_ID,catalog:storeProducts()}; const events=state.events||[]; const sampleEvent=events[0]||{title:'',date:todayStr(),start:'09:00',end:'09:30',recurrence:'none'}; const maps={
 'profile.save':{...base,profile:{profileKey:PROFILE_ID,siteName:state.siteName,profileName:state.profileName,status:state.status,profileImageSaved:!!state.profileImage}},
 'preference.set':{...base,key:'homeEdits',value:state.homeEdits||{}},'preference.get':{...base,key:'homeEdits'},'preference.list':base,
@@ -582,11 +624,31 @@ async function routeGift(item){if(!item)return; const box=$('receiptBox'); if(bo
 function renderCurrency(){normalizeCurrency(); const text=currencyText(state.wallet); ['storeCurrency','gameCurrency'].forEach(id=>{const el=$(id); if(el)el.innerHTML=text.split(' · ').map(x=>`<span class="coin">${x}</span>`).join('');}); saveState();}
 function messageThread(){return readJSON(MESSAGE_THREAD_KEY,[]);}
 function saveMessageThread(items){writeJSON(MESSAGE_THREAD_KEY,items.slice(-300));}
-function initMessenger(){ $('messageName').value=PROFILE_LABEL; $('messageName').readOnly=true; $('messageTarget').value=PARTNER_LABEL; $('messageTarget').readOnly=true; $('toggleMessages').addEventListener('click',()=>{const p=$('messagePanel'); p.classList.toggle('open'); $('toggleMessages').textContent=p.classList.contains('open')?'Close':'Open'; renderMessages(true);}); $('sendMessage').addEventListener('click',sendMessage); $('messageText').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); sendMessage();}}); $('clearMessages').addEventListener('click',()=>{saveMessageThread(messageThread().filter(m=>!((m.from===PROFILE_ID&&m.to===PARTNER_ID)||(m.from===PARTNER_ID&&m.to===PROFILE_ID)))); renderMessages();}); window.addEventListener('storage',e=>{if(e.key===MESSAGE_THREAD_KEY)renderMessages();}); renderMessages();}
-function sendMessage(){const text=$('messageText').value.trim(); if(!text)return; const items=messageThread(); items.push({id:uid(),from:PROFILE_ID,to:PARTNER_ID,text,time:new Date().toISOString(),readBy:{[PROFILE_ID]:true}}); saveMessageThread(items); if(typeof backendAction==='function')backendAction('message.send',{fromProfile:PROFILE_ID,toProfile:PARTNER_ID,channelId:'tin-can-main',text},{tolerateOpaque:true}).catch(()=>{}); $('messageText').value=''; renderMessages();}
-function renderMessages(mark){const log=$('messageLog'); if(!log)return; let items=messageThread(); if(mark){let changed=false; items.forEach(m=>{if(m.to===PROFILE_ID){m.readBy=m.readBy||{}; if(!m.readBy[PROFILE_ID]){m.readBy[PROFILE_ID]=true; changed=true;}}}); if(changed)saveMessageThread(items);} const visible=items.filter(m=>(m.from===PROFILE_ID&&m.to===PARTNER_ID)||(m.from===PARTNER_ID&&m.to===PROFILE_ID)); log.innerHTML=''; if(!visible.length){log.innerHTML='<div class="empty">No messages.</div>'; return;} visible.slice(-100).forEach(m=>{const div=document.createElement('div'); div.className='message-entry '+(m.from===PROFILE_ID?'me':''); const name=m.from===PROFILE_ID?PROFILE_LABEL:PARTNER_LABEL; const to=m.to===PROFILE_ID?PROFILE_LABEL:PARTNER_LABEL; div.innerHTML=`<strong>${esc(name)} → ${esc(to)}</strong><span>${esc(m.text)}</span><div class="tiny">${esc(new Date(m.time).toLocaleString())}</div>`; log.appendChild(div);}); log.scrollTop=log.scrollHeight;}
-function openModal(id){$(id).classList.add('open');}
-function closeModals(){document.querySelectorAll('.modal').forEach(m=>m.classList.remove('open'));}
+function mergeBackendMessages(messages){
+  if(!Array.isArray(messages)||!messages.length)return false;
+  const local=messageThread();
+  const seen=new Set(local.map(m=>m.backendId||m.id||[m.from,m.to,m.time,m.text].join('|')));
+  let changed=false;
+  messages.forEach(m=>{
+    const item={id:m.messageId||m.id||uid(),backendId:m.messageId||m.id||'',from:m.fromProfile||m.from||m.authorId||'william',to:m.toProfile||m.to||m.recipientId||'jasper',text:m.text||'',time:m.createdAt||m.time||new Date().toISOString(),readBy:{}};
+    const key=item.backendId||[item.from,item.to,item.time,item.text].join('|');
+    if(!seen.has(key)){seen.add(key);local.push(item);changed=true;}
+  });
+  if(changed)saveMessageThread(local.sort((a,b)=>String(a.time).localeCompare(String(b.time))));
+  return changed;
+}
+let backendMessageSyncing=false;
+async function syncBackendMessages(){
+  if(backendMessageSyncing)return;
+  backendMessageSyncing=true;
+  try{
+    const data=await backendAction('message.list',{channelId:'tin-can-main',limit:300,profileKey:PROFILE_ID},{tolerateOpaque:false});
+    if(mergeBackendMessages(data.messages||data.rows||[]))renderMessages(false);
+  }catch(e){}finally{backendMessageSyncing=false;}
+}
+function initMessenger(){ $('messageName').value=PROFILE_LABEL; $('messageName').readOnly=true; $('messageTarget').value=PARTNER_LABEL; $('messageTarget').readOnly=true; $('toggleMessages').addEventListener('click',()=>{const p=$('messagePanel'); p.classList.toggle('open'); $('toggleMessages').textContent=p.classList.contains('open')?'Close':'Open'; renderMessages(true); syncBackendMessages();}); $('sendMessage').addEventListener('click',sendMessage); $('messageText').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); sendMessage();}}); $('clearMessages').addEventListener('click',()=>{saveMessageThread(messageThread().filter(m=>!((m.from===PROFILE_ID&&m.to===PARTNER_ID)||(m.from===PARTNER_ID&&m.to===PROFILE_ID)))); renderMessages();}); window.addEventListener('storage',e=>{if(e.key===MESSAGE_THREAD_KEY)renderMessages();}); renderMessages(); syncBackendMessages(); setInterval(syncBackendMessages,15000);}
+async function sendMessage(){const text=$('messageText').value.trim(); if(!text)return; const item={id:uid(),from:PROFILE_ID,to:PARTNER_ID,text,time:new Date().toISOString(),readBy:{[PROFILE_ID]:true}}; const items=messageThread(); items.push(item); saveMessageThread(items); $('messageText').value=''; renderMessages(); try{const result=await backendAction('message.send',{fromProfile:PROFILE_ID,toProfile:PARTNER_ID,channelId:'tin-can-main',text},{tolerateOpaque:true}); if(result&&result.messageId){item.backendId=result.messageId; item.id=result.messageId; saveMessageThread(messageThread().map(m=>m.time===item.time&&m.text===item.text?item:m));}}catch(e){}}
+function renderMessages(mark){const log=$('messageLog'); if(!log)return; let items=messageThread(); if(mark){let changed=false; items.forEach(m=>{if(m.to===PROFILE_ID){m.readBy=m.readBy||{}; if(!m.readBy[PROFILE_ID]){m.readBy[PROFILE_ID]=true; changed=true;}}}); if(changed)saveMessageThread(items);} const visible=items.filter(m=>(m.from===PROFILE_ID&&m.to===PARTNER_ID)||(m.from===PARTNER_ID&&m.to===PROFILE_ID)).sort((a,b)=>String(a.time).localeCompare(String(b.time))).slice(-80); log.innerHTML=visible.map(m=>`<div class="msg ${m.from===PROFILE_ID?'me':'them'}"><b>${m.from===PROFILE_ID?PROFILE_LABEL:PARTNER_LABEL}</b><span>${esc(m.text)}</span><time>${new Date(m.time).toLocaleString()}</time></div>`).join('')||'<p class="tiny">No messages yet.</p>'; log.scrollTop=log.scrollHeight;}
 function initModals(){document.querySelectorAll('[data-close-modal]').forEach(b=>b.addEventListener('click',closeModals)); document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModals();})); document.querySelectorAll('[data-bg-open]').forEach(b=>b.addEventListener('click',()=>{$('bgPageKey').value=b.dataset.bgOpen; $('bgModalTitle').textContent='Change '+b.dataset.bgOpen+' background'; $('bgUrl').value=state.backgrounds[b.dataset.bgOpen]||''; openModal('bgModal');})); $('applyBgUrl').addEventListener('click',()=>{const key=$('bgPageKey').value; state.backgrounds[key]=$('bgUrl').value.trim(); saveState(); if(currentPage===key)applyPageBackground(); closeModals();}); $('clearBg').addEventListener('click',()=>{const key=$('bgPageKey').value; delete state.backgrounds[key]; saveState(); if(currentPage===key)applyPageBackground(); closeModals();}); $('bgUpload').addEventListener('change',e=>{const key=$('bgPageKey').value; const f=e.target.files[0]; if(!f)return; if(!f.type.startsWith('image/'))return; fileToDataURL(f,src=>{state.backgrounds[key]=src; saveState(); if(currentPage===key)applyPageBackground(); closeModals();}); e.target.value='';});}
 function boot(){initNav(); initHome(); initHomeEvents(); initDaily(); initCalendar(); initWellness(); initGames(); initStore(); initMessenger(); initModals(); initInstall(); initBackendTools(); renderCurrency(); setPage('home'); if('serviceWorker' in navigator)navigator.serviceWorker.register('./service-worker.js').catch(()=>{});}
 boot();

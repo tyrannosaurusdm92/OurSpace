@@ -29,6 +29,8 @@
  *   4. Deploy as Web app: Execute as Me; access Anyone with the link.
  */
 
+var OURSPACE_JSONP_CALLBACK = '';
+
 var OURSPACE_MERGED_BACKEND = Object.freeze({
   appName: 'OurSpace Unified Backend',
   version: '2026-06-25.unified.backend',
@@ -108,6 +110,8 @@ function OURSPACE_ADD_DEMO_LINK_OPTIONAL() {
 }
 
 function doGet(e) {
+  var cb = String((e && e.parameter && (e.parameter.callback || e.parameter.jsonp)) || '');
+  OURSPACE_JSONP_CALLBACK = cb.replace(/[^A-Za-z0-9_.$]/g, '');
   return ourspace_dispatchGet_(e);
 }
 
@@ -342,25 +346,23 @@ const SITE_HEADERS = {
 };
 
 function site_doGet(e) {
-  var callback = e && e.parameter && e.parameter.callback;
   try {
     var payload = site_parseRequest_(e);
     var action = String(payload.action || 'health').trim();
-    return site_jsonResponse_(site_route_(action, payload), callback);
+    return site_jsonResponse_(site_route_(action, payload));
   } catch (err) {
-    return site_jsonResponse_(site_fail_(err), callback);
+    return site_jsonResponse_(site_fail_(err));
   }
 }
 
 function site_doPost(e) {
-  var callback = e && e.parameter && e.parameter.callback;
   try {
     var payload = site_parseRequest_(e);
     var action = String(payload.action || '').trim();
-    if (!action) return site_jsonResponse_({ ok:false, error:'Missing action.' }, callback);
-    return site_jsonResponse_(site_route_(action, payload), callback);
+    if (!action) return site_jsonResponse_({ ok:false, error:'Missing action.' });
+    return site_jsonResponse_(site_route_(action, payload));
   } catch (err) {
-    return site_jsonResponse_(site_fail_(err), callback);
+    return site_jsonResponse_(site_fail_(err));
   }
 }
 
@@ -378,8 +380,6 @@ function site_route_(action, payload) {
     case 'bootstrap': return site_authBootstrap_(payload);
     case 'requestPasswordReset': return site_passwordResetRequest_(payload);
     case 'resetPassword': return site_passwordResetComplete_(payload);
-    case 'forgotPassword': return site_passwordResetRequest_(payload);
-    case 'claimProfile': return site_authSignup_(payload);
 
     case 'auth.signup': return site_authSignup_(payload);
     case 'auth.signin': return site_authSignin_(payload);
@@ -724,7 +724,6 @@ function site_seedDefaultChannels_() {
     ['care-line','Care Line','care'],
     ['store-line','Store / Rewards','store'],
     ['dbt-line','DBT / Grounding','dbt'],
-    ['onyx-line','Onyx Alerts','onyx'],
     ['media-line','Photos / Videos / GIFs','media']
   ].forEach(function(c){ site_appendRow_('MessengerChannels', { ChannelId:c[0], Name:c[1], Kind:c[2], ProfileA:'william', ProfileB:'jasper', Json:'{}', Active:'true', CreatedAt:now, UpdatedAt:now }); });
 }
@@ -1175,11 +1174,10 @@ function site_parseRequest_(e) {
   return p;
 }
 
-function site_jsonResponse_(obj, callback) {
+function site_jsonResponse_(obj) {
   var text = JSON.stringify(obj);
-  callback = String(callback || '').replace(/[^A-Za-z0-9_.$]/g, '');
-  if (callback) {
-    return ContentService.createTextOutput(callback + '(' + text + ');').setMimeType(ContentService.MimeType.JAVASCRIPT);
+  if (OURSPACE_JSONP_CALLBACK) {
+    return ContentService.createTextOutput(OURSPACE_JSONP_CALLBACK + '(' + text + ');').setMimeType(ContentService.MimeType.JAVASCRIPT);
   }
   return ContentService.createTextOutput(text).setMimeType(ContentService.MimeType.JSON);
 }
@@ -1353,17 +1351,16 @@ function link_OURSPACE_ADD_DEMO_LINK_OPTIONAL() {
  * Public/private Web App GET entry.
  */
 function link_doGet(e) {
-  var callback = e && e.parameter && e.parameter.callback;
   try {
     var action = String((e && e.parameter && e.parameter.action) || '').trim();
 
     if (action === 'health') {
-      return link_json_({ ok: true, app: OURSPACE_BACKEND.appName, version: OURSPACE_BACKEND.version }, callback);
+      return link_json_({ ok: true, app: OURSPACE_BACKEND.appName, version: OURSPACE_BACKEND.version });
     }
 
     if (action === 'publicLinks') {
       var shareIdJson = String((e && e.parameter && (e.parameter.share_id || e.parameter.shareId)) || '');
-      return link_json_(link_getPublicLinksResponse_(shareIdJson), callback);
+      return link_json_(link_getPublicLinksResponse_(shareIdJson));
     }
 
     if (action === 'share') {
@@ -1371,30 +1368,9 @@ function link_doGet(e) {
       return link_html_(link_renderPublicSharePage_(shareId));
     }
 
-    // JSONP GET fallback for static-site frontends where Apps Script CORS blocks readable POST.
-    // Private actions still require the same member token/passcode checks as POST.
-    if (callback && OURSPACE_LINK_SHARE_ACTIONS.indexOf(action) >= 0) {
-      var payload = link_parsePayload_(e);
-      if (action === 'login') return link_json_(link_handleLogin_(payload), callback);
-      if (action === 'logout') return link_json_(link_handleLogout_(payload), callback);
-      if (action === 'publicPurchaseRequest') return link_json_(link_handlePublicPurchaseRequest_(payload, e), callback);
-      var member = link_requireMember_(payload);
-      if (action === 'whoami') return link_json_({ ok: true, member: link_publicMember_(member), publicShareUrl: link_publicShareUrl_() }, callback);
-      if (action === 'getPublicShareUrl') return link_json_({ ok: true, publicShareUrl: link_publicShareUrl_(), shareId: link_getOrCreateShareId_() }, callback);
-      if (action === 'rotateShareId') return link_json_(link_rotateShareId_(member), callback);
-      if (action === 'savePrivateAddress') return link_json_(link_savePrivateAddress_(member, payload.address || payload), callback);
-      if (action === 'getMyPrivateAddress') return link_json_(link_getPrivateAddress_(member), callback);
-      if (action === 'upsertPublicLink') return link_json_(link_upsertPublicLink_(member, payload.link || payload), callback);
-      if (action === 'deletePublicLink') return link_json_(link_deletePublicLink_(member, payload.itemId || payload.id), callback);
-      if (action === 'listMyLinks') return link_json_(link_listLinksForPrivateMember_(member), callback);
-      if (action === 'listPurchaseRequests') return link_json_(link_listPurchaseRequests_(member), callback);
-      if (action === 'updatePurchaseRequestStatus') return link_json_(link_updatePurchaseRequestStatus_(member, payload.requestId, payload.status), callback);
-      return link_json_({ ok: false, error: 'Unknown action.' }, callback);
-    }
-
+    // There is deliberately no private-page GET route.
     return link_html_(link_renderLockedPage_('This OurSpace backend only exposes the shared links page.'));
   } catch (err) {
-    if (callback) return link_json_({ ok:false, error: link_safeError_(err) }, callback);
     return link_html_(link_renderErrorPage_(err));
   }
 }
@@ -2125,15 +2101,12 @@ function link_isProbablyFormPost_(e) {
   return type.indexOf('application/x-www-form-urlencoded') > -1 || type.indexOf('multipart/form-data') > -1;
 }
 
-function link_json_(obj, callback) {
+function link_json_(obj) {
   var text = JSON.stringify(obj, null, 2);
-  callback = String(callback || '').replace(/[^A-Za-z0-9_.$]/g, '');
-  if (callback) {
-    return ContentService.createTextOutput(callback + '(' + text + ');')
-      .setMimeType(ContentService.MimeType.JAVASCRIPT);
+  if (OURSPACE_JSONP_CALLBACK) {
+    return ContentService.createTextOutput(OURSPACE_JSONP_CALLBACK + '(' + text + ');').setMimeType(ContentService.MimeType.JAVASCRIPT);
   }
-  return ContentService.createTextOutput(text)
-    .setMimeType(ContentService.MimeType.JSON);
+  return ContentService.createTextOutput(text).setMimeType(ContentService.MimeType.JSON);
 }
 
 function link_html_(markup) {
@@ -2264,9 +2237,9 @@ function link_escAttr_(value) {
  * multiple separate projects/sites. The backend stores each project separately in the same spreadsheet.
  *
  * Current deployed web app URL embedded in the frontend:
- * https://script.google.com/macros/s/AKfycbzL5BoWZsDaTQGzLE-AvoubKyVsEanUGNSwrNyKP7wEw3pK4-2KOw2LVfKejtwyNnvK/exec
+ * https://script.google.com/macros/s/AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA/exec
  * Deployment ID:
- * AKfycbzL5BoWZsDaTQGzLE-AvoubKyVsEanUGNSwrNyKP7wEw3pK4-2KOw2LVfKejtwyNnvK
+ * AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA
  *
  * Important architecture note:
  * - Google Apps Script can store messages/files/events, authenticate sessions, enforce the 10-person cap,
