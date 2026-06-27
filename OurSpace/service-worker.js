@@ -1,4 +1,4 @@
-const OURSPACE_CACHE = 'ourspace-20260626-appearance-upload-diary-stable-v1';
+const OURSPACE_CACHE = 'ourspace-20260626-extensive-audit-fixes-v2';
 const CORE_ASSETS = [
   "./ourspace.html",
   "./OurSpace.html",
@@ -11,13 +11,15 @@ const CORE_ASSETS = [
   "./assets/ourspace-user-core.js",
   "./assets/ourspace-user.css",
   "./assets/ourspace-auth.js",
-  "./assets/ourspace-auth.css",  "./json/shared/positive_messages.json",
+  "./assets/ourspace-auth.css",
+  "./json/shared/positive_messages.json",
   "./assets/ourspace-positive-messages.js",
   "./assets/ourspace-revision-20260626.js",
   "./assets/ourspace-revision-20260626.css",
-  "./assets/fonts/love-ya-like-a-sister/LoveYaLikeASister.ttf",
   "./assets/ourspace-brand-font.js",
   "./assets/ourspace-brand-font.css",
+  "./assets/ourspace-extensive-audit-fixes.css",
+  "./assets/ourspace-extensive-audit-fixes.js",
   "./assets/legacy-portal-storage.js",
   "./assets/legacy-ourspace-allowed-games.js",
   "./assets/legacy-ourspace-currency-core.js",

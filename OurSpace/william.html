@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="OurSpace">
 <title>OurSpace — William</title>
 <style id="baseStyle">
-@font-face{font-family:'OurSpaceBrand';src:url('./assets/fonts/love-ya-like-a-sister/LoveYaLikeASister.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=IM+Fell+English+SC&display=swap");
 
 :root{
   --ink:#172033;
@@ -157,6 +157,7 @@ small,.tiny{color:var(--muted)}
 <link rel="apple-touch-icon" href="./assets/icons/ourspace-icon-180.png">
 <meta name="msapplication-config" content="./browserconfig.xml">
   <link rel="stylesheet" href="./assets/ourspace-brand-font.css">
+  <link rel="stylesheet" href="./assets/ourspace-extensive-audit-fixes.css">
 
 <style id="sheet-css">
 
@@ -670,7 +671,7 @@ body { font-family: Arial, Helvetica, sans-serif; }
 </section>
 
 <section class="page" id="page-daily" data-page="daily">
-  <div class="page-toolbar"><div><h1 class="page-title">Daily</h1></div><button class="bg-button" data-bg-open="daily">Change Daily Background</button></div>
+  <div class="page-toolbar"><div><h1 class="page-title">Daily</h1></div><button class="bg-button os-appearance-button" type="button">Appearance</button></div>
 <section class="os-page-positive-single" data-positive-page="daily">
     <p class="os-positive-affirmation">Asking for help is not failing. It is using the support that makes life more possible.</p>
     <div class="os-positive-marquee" aria-label="Positive marquee"><span>✦ Your worth is not measured by chores, productivity, pain tolerance, or how much your body can do today ✦</span></div>
@@ -702,7 +703,7 @@ body { font-family: Arial, Helvetica, sans-serif; }
 </section>
 
 <section class="page" id="page-calendar" data-page="calendar">
-  <div class="page-toolbar"><div><h1 class="page-title">Calendar</h1></div><button class="bg-button" data-bg-open="calendar">Change Calendar Background</button></div>
+  <div class="page-toolbar"><div><h1 class="page-title">Calendar</h1></div><button class="bg-button os-appearance-button" type="button">Appearance</button></div>
 <section class="os-page-positive-single" data-positive-page="calendar">
     <p class="os-positive-affirmation">Your oxygen, chair, tools, reminders, and support needs are access, not weakness.</p>
     <div class="os-positive-marquee" aria-label="Positive marquee"><span>✦ Rest is care ✦ Stopping before you crash is care ✦ Letting the day be smaller is care ✦</span></div>
@@ -722,7 +723,7 @@ body { font-family: Arial, Helvetica, sans-serif; }
 </section>
 
 <section class="page" id="page-dbt" data-page="dbt" data-dbt-hardwired="1">
-  <div class="page-toolbar"><div><h1 class="page-title">DBT / ADHD</h1></div><button class="bg-button" data-bg-open="dbt" type="button">Change DBT / ADHD Background</button></div>
+  <div class="page-toolbar"><div><h1 class="page-title">DBT / ADHD</h1></div><button class="bg-button os-appearance-button" type="button">Appearance</button></div>
 <section class="os-page-positive-single" data-positive-page="dbt">
     <p class="os-positive-affirmation">Data is for kindness, not punishment. Tracking is information, not a grade.</p>
     <div class="os-positive-marquee" aria-label="Positive marquee"><span>✦ Food, water, oxygen, meds-as-prescribed, rest, bathroom needs, and decompression are all real care ✦</span></div>
@@ -948,7 +949,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 </section>
 
 <section class="page" id="page-games" data-page="games">
-  <div class="page-toolbar"><div><h1 class="page-title">Games</h1></div><button class="bg-button" data-bg-open="games">Change Games Background</button></div>
+  <div class="page-toolbar"><div><h1 class="page-title">Games</h1></div><button class="bg-button os-appearance-button" type="button">Appearance</button></div>
 <section class="os-page-positive-single" data-positive-page="games">
     <p class="os-positive-affirmation">You are a man in every room, in every body state, and in every kind of care.</p>
     <div class="os-positive-marquee" aria-label="Positive marquee"><span>✦ Play is regulation too ✦ Fun, music, dice, games, fantasy worlds, and small joys do not need to be earned first ✦</span></div>
@@ -963,7 +964,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 </section>
 
 <section class="page" id="page-store" data-page="store">
-  <div class="page-toolbar"><div><h1 class="page-title">Store</h1></div><button class="bg-button" data-bg-open="store">Change Store Background</button></div>
+  <div class="page-toolbar"><div><h1 class="page-title">Store</h1></div><button class="bg-button os-appearance-button" type="button">Appearance</button></div>
 <section class="os-page-positive-single" data-positive-page="store">
     <p class="os-positive-affirmation">You are loved as you are, not as a task list.</p>
     <div class="os-positive-marquee" aria-label="Positive marquee"><span>✦ Comfort is not selfish ✦ Safe snacks, soft spaces, nerdy treasures, and reachable joy count ✦</span></div>
@@ -977,7 +978,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 </section>
 
 <section class="page" id="page-sync" data-page="sync">
-  <div class="page-toolbar"><div><h1 class="page-title">Sync</h1></div><button class="bg-button" data-bg-open="sync">Change Sync Background</button></div>
+  <div class="page-toolbar"><div><h1 class="page-title">Sync</h1></div><button class="bg-button os-appearance-button" type="button">Appearance</button></div>
 <section class="os-page-positive-single" data-positive-page="sync">
     <p class="os-positive-affirmation">Your needs are real before they become emergencies.</p>
     <div class="os-positive-marquee" aria-label="Positive marquee"><span>✦ The schedule is here to support you, not control you ✦ Breaks, rescheduling, and bed-level options are allowed ✦</span></div>
@@ -1337,5 +1338,6 @@ boot();
 <script src="./assets/ourspace-positive-messages.js"></script>
 <script src="./assets/ourspace-revision-20260626.js"></script>
   <script src="./assets/ourspace-brand-font.js"></script>
+  <script src="./assets/ourspace-extensive-audit-fixes.js"></script>
 </body>
 </html>

@@ -1,19 +1,4 @@
-
-/* OurSpace font placeholders. Add real font files to these folders later. */
-@font-face{
-  font-family:"love-ya-like-a-sister";
-  src:url("fonts/love-ya-like-a-sister/love-ya-like-a-sister.woff2") format("woff2"),
-      url("fonts/love-ya-like-a-sister/love-ya-like-a-sister.woff") format("woff"),
-      url("fonts/love-ya-like-a-sister/love-ya-like-a-sister.ttf") format("truetype");
-  font-display:swap;
-}
-@font-face{
-  font-family:"morris-roman";
-  src:url("fonts/morris-roman/morris-roman.woff2") format("woff2"),
-      url("fonts/morris-roman/morris-roman.woff") format("woff"),
-      url("fonts/morris-roman/morris-roman.ttf") format("truetype");
-  font-display:swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=IM+Fell+English+SC&display=swap");
 
 :root{
   --bg:#090b10;--panel:#121923;--panel-2:#192233;--card:#151f2b;--text:#f7f9ff;--muted:#b9c4d4;--line:rgba(255,255,255,.14);
