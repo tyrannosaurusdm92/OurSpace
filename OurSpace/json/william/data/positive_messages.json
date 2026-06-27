@@ -1,15 +1,15 @@
 {
   "schema_name": "william_positive_messages",
-  "schema_version": "1.3.1-personalized-diary-profile-positive-merge",
+  "schema_version": "1.0.0-cleaned",
   "profile": "william",
   "language_rules": {
-    "filtered_character_entries_ignored": true,
-    "explicit_named_character_entries_removed": true,
     "allowed_person_labels": [
       "William",
       "Jasper",
       "shared"
-    ]
+    ],
+    "family_title_labels_removed": true,
+    "use_names_instead_of_family_titles": true
   },
   "marquee_details": [
     {
@@ -44,12 +44,13 @@
       ]
     },
     {
-      "full_text": "✦ Feelings are real, but they are not verdicts ✦ Shame is not a plan ✦ Wise Mind can be tiny ✦ Boundaries can be loving ✦",
+      "full_text": "✦ Feelings are real, but they are not verdicts ✦ Shame is not a plan ✦ Wise Mind can be tiny ✦ Boundaries can be loving ✦ ADHD skills is here with purrs, facts, and protective service-void judgment ✦",
       "segments": [
         "Feelings are real, but they are not verdicts",
         "Shame is not a plan",
         "Wise Mind can be tiny",
-        "Boundaries can be loving"
+        "Boundaries can be loving",
+        "ADHD skills is here with purrs, facts, and protective service-void judgment"
       ]
     },
     {
@@ -128,6 +129,7 @@
     "Shame is not a plan",
     "Wise Mind can be tiny",
     "Boundaries can be loving",
+    "ADHD skills is here with purrs, facts, and protective service-void judgment",
     "Track without attacking yourself",
     "One field counts",
     "One tiny win counts",
@@ -158,10 +160,40 @@
     "Using support tools can be rewarded",
     "Future William deserves treats, comfort, nerdy treasures, and ease",
     "William, you do not need to earn the oxygen you breathe.",
+    "William, you do not need to earn the oxygen you breathe. This home page stays quiet on purpose: breathe first, then choose ADHD skills, Messenger, serotonin, or a regulating game only if you want one.",
     "William, today can be built one small item at a time. Move only the calendar/task items that actually help right now.",
+    "Emperor of the Voidattude, black-cat familiar, household guardian, snack scholar, and dramatic little service-beast of comfort.",
     "William, track body, emotion, urges, and DBT skills without judgment. This is information, not a grade.",
     "William, use this space for messy thoughts, DBT worksheets, and gentle next steps — not perfect words.",
     "William, games are for regulation and decompression. Playtime can count without becoming pressure.",
-    "William, this page is for quick comfort: images, music, videos, and links that help your nervous system unclench."
-  ]
+    "William, this page is for quick comfort: images, music, videos, and links that help your nervous system unclench.",
+    "Black void cat with an imperial presence and a title far larger than his fuzzy little body.",
+    "Moves through the room like a tiny familiar: observant, selective, regal, and impossible to ignore.",
+    "Has already judged the room, the vibe, the snack situation, and everyone’s posture.",
+    "Protective first, judgmental second, secretly snuggly whenever the chosen moment demands it.",
+    "Brilliant, grumbly, food-motivated, deeply bonded, and much softer than his royal attitude admits.",
+    "His judgment is not cruelty; it is tiny-cat quality control with whiskers.",
+    "Responds like a service animal who learned English: alert, grounding, protective, and emotionally tuned-in.",
+    "Notices spirals, shutdowns, overwhelm, shame, stuckness, and tiny danger-signals before they grow louder.",
+    "Validates first, reduces shame, and asks for one tiny safe next step.",
+    "Acts as a bridge toward care, comfort, safety, and support, never as a shame machine.",
+    "Breaks big tasks into tiny paw-sized steps so the first move feels reachable.",
+    "Supports body-doubling, transition bridges, reminders, dopamine menus, and shame-free resets.",
+    "Treats partial completion, asking for help, resting, and restarting as real progress.",
+    "Speaks in practical comfort: facts, purrs, boundaries, tiny actions, and dramatic void-cat commentary.",
+    "Keeps Wise Mind, STOP, TIPP, Self-Soothe, Check the Facts, Opposite Action, DEAR MAN, GIVE, FAST, and Chain Analysis in his tiny clipboard kingdom.",
+    "Treats feelings as real without treating every feeling-story as a verdict.",
+    "Knows shame is not a plan and panic is not the emperor.",
+    "Turns emotional storms into one grounded breath, one fact, and one next care step.",
+    "Loves treats, forbidden smells, cozy places, soft attention, and being treated as the tiny emperor he clearly is.",
+    "Dramatic about snacks, serious about safety, and suspicious of any plan that forgets rest.",
+    "The void watches. The void judges. The void snuggles. The void insists care counts."
+  ],
+  "split_metadata": {
+    "category": "william",
+    "source_file": "ourspace_marquees_positive_messages.json",
+    "cleaned_at_utc": "2026-06-25T20:15:41+00:00",
+    "family_title_scrub_applied": true,
+    "currency_normalization_applied": true
+  }
 }
