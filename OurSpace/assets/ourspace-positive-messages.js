@@ -16,23 +16,19 @@ window.OURSPACE_POSITIVE_MESSAGES = {
       {
         "full_text": "✦ Rest is care ✦ Stopping before you crash is care ✦ Letting the day be smaller is care ✦",
         "segments": [
-          "Rest is care",
-          "Stopping before you crash is care",
-          "Letting the day be smaller is care"
+          "Rest is care ✦ Stopping before you crash is care ✦ Letting the day be smaller is care"
         ]
       },
       {
         "full_text": "✦ Partial completion is still progress ✦ One field, one sentence, one tiny win, one next step — it all counts ✦",
         "segments": [
-          "Partial completion is still progress",
-          "One field, one sentence, one tiny win, one next step — it all counts"
+          "Partial completion is still progress ✦ One field, one sentence, one tiny win, one next step — it all counts"
         ]
       },
       {
         "full_text": "✦ The schedule is here to support you, not control you ✦ Breaks, rescheduling, and bed-level options are allowed ✦",
         "segments": [
-          "The schedule is here to support you, not control you",
-          "Breaks, rescheduling, and bed-level options are allowed"
+          "The schedule is here to support you, not control you ✦ Breaks, rescheduling, and bed-level options are allowed"
         ]
       },
       {
@@ -50,15 +46,13 @@ window.OURSPACE_POSITIVE_MESSAGES = {
       {
         "full_text": "✦ Play is regulation too ✦ Fun, music, dice, games, fantasy worlds, and small joys do not need to be earned first ✦",
         "segments": [
-          "Play is regulation too",
-          "Fun, music, dice, games, fantasy worlds, and small joys do not need to be earned first"
+          "Play is regulation too ✦ Fun, music, dice, games, fantasy worlds, and small joys do not need to be earned first"
         ]
       },
       {
         "full_text": "✦ Comfort is not selfish ✦ Safe snacks, soft spaces, nerdy treasures, and reachable joy count ✦",
         "segments": [
-          "Comfort is not selfish",
-          "Safe snacks, soft spaces, nerdy treasures, and reachable joy count"
+          "Comfort is not selfish ✦ Safe snacks, soft spaces, nerdy treasures, and reachable joy count"
         ]
       }
     ],
@@ -97,15 +91,13 @@ window.OURSPACE_POSITIVE_MESSAGES = {
       {
         "full_text": "✦ Partial completion is still progress ✦ One field, one sentence, one tiny win, one next step — it all counts ✦",
         "segments": [
-          "Partial completion is still progress",
-          "One field, one sentence, one tiny win, one next step — it all counts"
+          "Partial completion is still progress ✦ One field, one sentence, one tiny win, one next step — it all counts"
         ]
       },
       {
         "full_text": "✦ The schedule is here to support you, not corner you ✦ The old plan can expire without you being a failure ✦",
         "segments": [
-          "The schedule is here to support you, not corner you",
-          "The old plan can expire without you being a failure"
+          "The schedule is here to support you, not corner you ✦ The old plan can expire without you being a failure"
         ]
       },
       {
@@ -123,8 +115,7 @@ window.OURSPACE_POSITIVE_MESSAGES = {
       {
         "full_text": "✦ Play is regulation too ✦ Fun, comfort, rewards, soft blankets, safe snacks, and small joys do not need to be earned first ✦",
         "segments": [
-          "Play is regulation too",
-          "Fun, comfort, rewards, soft blankets, safe snacks, and small joys do not need to be earned first"
+          "Play is regulation too ✦ Fun, comfort, rewards, soft blankets, safe snacks, and small joys do not need to be earned first"
         ]
       },
       {
@@ -144,21 +135,6 @@ window.OURSPACE_POSITIVE_MESSAGES = {
       "You do not have to explain your pain perfectly for it to be real.",
       "Boundaries are not abandonment. You can be gentle and still say no.",
       "You deserve softness that does not ask you to perform before you receive it."
-    ]
-  },
-  "shared": {
-    "marquee_details": [
-      {
-        "full_text": "✦ Soft starts count ✦ Tiny steps count ✦ Care counts ✦",
-        "segments": [
-          "Soft starts count",
-          "Tiny steps count",
-          "Care counts"
-        ]
-      }
-    ],
-    "positive_affirmations": [
-      "Care counts here."
     ]
   }
 };

@@ -1,4 +1,4 @@
-const OURSPACE_CACHE = 'ourspace-pwa-v14-diary-direct-positive-static';
+const OURSPACE_CACHE = 'ourspace-20260626-appearance-upload-diary-stable-v1';
 const CORE_ASSETS = [
   "./ourspace.html",
   "./OurSpace.html",
@@ -11,15 +11,10 @@ const CORE_ASSETS = [
   "./assets/ourspace-user-core.js",
   "./assets/ourspace-user.css",
   "./assets/ourspace-auth.js",
-  "./assets/ourspace-auth.css",
-  "./json/shared/positive_messages.json",
+  "./assets/ourspace-auth.css",  "./json/shared/positive_messages.json",
   "./assets/ourspace-positive-messages.js",
-  "./assets/ourspace-positive-global.js",
-  "./assets/ourspace-diary-cards-embedded.js",
   "./assets/ourspace-revision-20260626.js",
-  "./assets/ourspace-diary-direct-fix.js",
   "./assets/ourspace-revision-20260626.css",
-  "./assets/ourspace-diary-direct-fix.css",
   "./assets/fonts/love-ya-like-a-sister/LoveYaLikeASister.ttf",
   "./assets/ourspace-brand-font.js",
   "./assets/ourspace-brand-font.css",
