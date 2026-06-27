@@ -38,21 +38,12 @@ Validated locally after patch:
 
 Live backend note: I attempted to open the Apps Script URL from the sandbox web tool, but the request timed out there. The app files were therefore validated statically and patched to use POST, GET, JSONP, and opaque write fallbacks for mobile browser differences.
 
-
-## 2026-06-26 Sync / Diary / Readability Validation
-
-- Backend URL check: all detected Apps Script URLs point to the locked backend.
-- JSON validation: all JSON files parse successfully.
-- JavaScript validation: inline scripts, service worker, asset JS files, and embedded diary card scripts pass `node --check`.
-- Service worker cache validation: every listed cache path exists.
-- Route validation: `ourspace.html`, `OurSpace.html`, `william.html`, and `jasper.html` are present.
-- Button audit:
-  - `william.html`: 82 buttons, no static ID buttons missing handlers.
-  - `jasper.html`: 82 buttons, no static ID buttons missing handlers.
-- Sync features present:
-  - profile state pull/push/sync controls
-  - background/profile/gallery/music upload persistence hooks
-  - diary card iframe-to-parent sync hooks
-  - positive message/marquee import hooks
-  - currency labels display as PP / GP / SP / CP
-- Rendered browser smoke test note: Playwright was installed in the sandbox, but its Chromium browser binary was not available, so live viewport rendering could not be executed here. Static syntax, path, button, JSON, service-worker, and package integrity checks were completed instead.
+## Restart revision validation — 2026-06-26
+- Verified zip source was patched from the uploaded full app bundle.
+- Verified service worker cache paths exist.
+- Verified JSON files parse successfully.
+- Verified new revision JavaScript parses with Node.
+- Verified inline JavaScript in `william.html`, `jasper.html`, `OurSpace.html`, and `ourspace.html` parses with Node.
+- Verified the old layout-code UI text is not present in William/Jasper page HTML.
+- Verified positive message JSON was imported with Onyx entries filtered out.
+- Verified personalized diary card HTML files are present under `modules/diary/`.
