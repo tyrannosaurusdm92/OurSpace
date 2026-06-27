@@ -284,10 +284,57 @@
       return this.getEntry(this.selectedEntryId);
     }
 
+    createEntryFromText(options) {
+      const data = options || {};
+      const ts = nowIso();
+      const entry = {
+        id: uid('entry'),
+        title: cleanName(data.title, 'Untitled entry'),
+        folderId: data.folderId || 'folder_unfiled',
+        categoryIds: Array.isArray(data.categoryIds) ? data.categoryIds : [],
+        content: safeText(data.content || data.text || ''),
+        sourceType: data.sourceType || 'manual',
+        sourceName: data.sourceName || '',
+        createdAt: ts,
+        updatedAt: ts,
+        pinned: false
+      };
+      this.state.entries.unshift(entry);
+      this.selectedEntryId = entry.id;
+      this.touch();
+      return entry;
+    }
+
+    insertAccessibilityText(options) {
+      const data = options || {};
+      const mode = data.mode || 'new';
+      const text = safeText(data.text || data.content || '');
+      if (mode === 'new' || !this.currentEntry()) {
+        const entry = this.createEntryFromText({
+          title: data.title || 'Scanned page',
+          content: text,
+          sourceType: 'ocr',
+          sourceName: data.sourceName || 'accessibility scan'
+        });
+        this.status(`Created OCR entry: ${entry.title}`, 'good');
+        return entry;
+      }
+      const entry = this.currentEntry();
+      if (mode === 'replace') entry.content = text;
+      else entry.content = `${entry.content || ''}${entry.content ? '\n\n' : ''}${text}`;
+      entry.sourceName = entry.sourceName || data.sourceName || '';
+      entry.updatedAt = nowIso();
+      this.touch();
+      this.status(mode === 'replace' ? 'Replaced current entry with scanned text.' : 'Appended scanned text to current entry.', 'good');
+      return entry;
+    }
+
     touch() {
       this.saveLocal();
       this.refresh();
       this.scheduleBackendSave();
+      this.root.dispatchEvent(new CustomEvent('ourspace-journal-state-changed', { detail: { instance: this } }));
+      document.dispatchEvent(new CustomEvent('ourspace-journal-state-changed', { detail: { instance: this } }));
     }
 
     addFolder() {
@@ -584,10 +631,16 @@
   }
 
   function mount(root, options) {
-    return new OurSpaceJournalModule(root, options || {});
+    const instance = new OurSpaceJournalModule(root, options || {});
+    instance.root.__ourspaceJournalInstance = instance;
+    window.OurSpaceJournalInstances = window.OurSpaceJournalInstances || [];
+    if (!window.OurSpaceJournalInstances.includes(instance)) window.OurSpaceJournalInstances.push(instance);
+    instance.root.dispatchEvent(new CustomEvent('ourspace-journal-mounted', { detail: { instance } }));
+    document.dispatchEvent(new CustomEvent('ourspace-journal-mounted-global', { detail: { instance } }));
+    return instance;
   }
 
-  window.OurSpaceJournal = { mount, BackendAdapter, DEFAULT_BACKEND_URL };
+  window.OurSpaceJournal = { mount, BackendAdapter, DEFAULT_BACKEND_URL, OurSpaceJournalModule };
 
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-ourspace-journal-auto]').forEach((el) => {
