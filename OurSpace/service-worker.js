@@ -1,4 +1,4 @@
-const OURSPACE_CACHE = 'ourspace-pwa-v12-diary-brandfont-fixed';
+const OURSPACE_CACHE = 'ourspace-pwa-v13-diary-integrated-positive';
 const CORE_ASSETS = [
   "./ourspace.html",
   "./OurSpace.html",
@@ -12,10 +12,10 @@ const CORE_ASSETS = [
   "./assets/ourspace-user.css",
   "./assets/ourspace-auth.js",
   "./assets/ourspace-auth.css",
-  "./modules/diary/jasper_dbt_adhd_caregiver_diary_card.html",
-  "./modules/diary/william_dbt_disability_guilt_diary_card.html",
   "./json/shared/positive_messages.json",
   "./assets/ourspace-positive-messages.js",
+  "./assets/ourspace-positive-global.js",
+  "./assets/ourspace-diary-cards-embedded.js",
   "./assets/ourspace-revision-20260626.js",
   "./assets/ourspace-revision-20260626.css",
   "./assets/fonts/love-ya-like-a-sister/LoveYaLikeASister.ttf",

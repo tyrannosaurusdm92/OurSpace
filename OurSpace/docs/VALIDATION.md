@@ -47,3 +47,21 @@ Live backend note: I attempted to open the Apps Script URL from the sandbox web 
 - Verified the old layout-code UI text is not present in William/Jasper page HTML.
 - Verified positive message JSON was imported with Onyx entries filtered out.
 - Verified personalized diary card HTML files are present under `modules/diary/`.
+
+
+## 2026-06-26 Diary full integration + clean positive messages
+
+Validated after the diary/positive-message patch:
+
+- `william.html` and `jasper.html` no longer contain the visible Mood Tracker module.
+- DBT / ADHD page order is now Saved DBT / ADHD Entries, Diary Cards, Skill Menu.
+- Diary cards are embedded through `assets/ourspace-diary-cards-embedded.js`; runtime no longer fetches or iframes `modules/diary/*.html`.
+- Standalone runtime diary-card HTML files were removed from `modules/diary/`.
+- Clean William/Jasper positive affirmations and marquees were written into `assets/ourspace-positive-messages.js` and profile JSON files.
+- Positive affirmation + marquee blocks are injected into every in-app page.
+- Login/home route receives the same positive-message banner through `assets/ourspace-positive-global.js`.
+- Service-worker cache bumped to `ourspace-pwa-v13-diary-integrated-positive`.
+- Checked JavaScript syntax for new/revised assets and inline page scripts.
+- Parsed all JSON files successfully.
+- Checked service-worker cached paths; no missing files.
+- Confirmed runtime files no longer contain the removed/corrupted Onyx phrases or Mood Tracker labels.

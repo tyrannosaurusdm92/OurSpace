@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#00ffff">
-<meta name="application-name" content="OurSpace">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="OurSpace">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#00ffff" name="theme-color"/>
+<meta content="OurSpace" name="application-name"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="OurSpace" name="apple-mobile-web-app-title"/>
 <title>OurSpace — William</title>
 <style id="baseStyle">
 @font-face{font-family:'OurSpaceBrand';src:url('./assets/fonts/love-ya-like-a-sister/LoveYaLikeASister.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
@@ -149,163 +150,151 @@ small,.tiny{color:var(--muted)}
 .install-actions{align-items:center}
 
 </style>
-<link rel="stylesheet" href="./assets/ourspace-revision-20260626.css">
-
-<link rel="manifest" href="./manifest.webmanifest">
-<meta name="theme-color" content="#00ffff">
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" href="./assets/icons/ourspace-icon-180.png">
-<meta name="msapplication-config" content="./browserconfig.xml">
-  <link rel="stylesheet" href="./assets/ourspace-brand-font.css">
+<link href="./assets/ourspace-revision-20260626.css" rel="stylesheet"/>
+<link href="./manifest.webmanifest" rel="manifest"/>
+<meta content="#00ffff" name="theme-color"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<link href="./assets/icons/ourspace-icon-180.png" rel="apple-touch-icon"/>
+<meta content="./browserconfig.xml" name="msapplication-config"/>
+<link href="./assets/ourspace-brand-font.css" rel="stylesheet"/>
 </head>
-<body data-ourspace-user="william" data-ourspace-partner="jasper">
+<body data-ourspace-partner="jasper" data-ourspace-user="william">
 <header class="app-top">
-  <div class="top-inner">
-    <div class="brand"><strong id="appTitle">OurSpace</strong><span id="userLine">Signed in</span></div>
-    <nav class="main-nav" aria-label="Main pages">
-      <button data-page-link="home" class="active">Home</button>
-      <button data-page-link="daily">Daily</button>
-      <button data-page-link="calendar">Calendar</button>
-      <button data-page-link="dbt">DBT / ADHD</button>
-      <button data-page-link="games">Games</button>
-      <button data-page-link="store">Store</button>
-      <button data-page-link="sync">Sync</button>
-      <button id="installAppTop" type="button" class="install-pill">Install</button>
-      <button id="returnHomepage" type="button">Sign out</button>
-    </nav>
-  </div>
+<div class="top-inner">
+<div class="brand"><strong id="appTitle">OurSpace</strong><span id="userLine">Signed in</span></div>
+<nav aria-label="Main pages" class="main-nav">
+<button class="active" data-page-link="home">Home</button>
+<button data-page-link="daily">Daily</button>
+<button data-page-link="calendar">Calendar</button>
+<button data-page-link="dbt">DBT / ADHD</button>
+<button data-page-link="games">Games</button>
+<button data-page-link="store">Store</button>
+<button data-page-link="sync">Sync</button>
+<button class="install-pill" id="installAppTop" type="button">Install</button>
+<button id="returnHomepage" type="button">Sign out</button>
+</nav>
+</div>
 </header>
-
 <main>
-<section class="page active" id="page-home" data-page="home">
-  <div class="home-retro-bg">
-    <div class="retro-top">
-      <div><div class="retro-logo" id="homeSiteName">OurSpace</div><small id="homeStatus"></small></div>
-      <div class="row"><button id="openHomeSettings">Edit home</button><button class="os-appearance-button" type="button">Appearance</button></div>
-    </div>
-    <div class="retro-nav">
-      <button data-jump="home-gallery">Gallery</button><button data-jump="home-music">Music</button><button data-jump="home-journal-big">Journal</button>
-    </div>
-    <div class="retro-layout">
-      <aside>
-        <section class="retro-panel">
-          <div class="heading">Profile Image</div>
-          <div class="body">
-            <div class="avatar-box"><img id="profileImage" alt="profile image"><div id="profilePlaceholder">Upload an image</div></div>
-            <label for="profileImageInput">Upload image</label><input id="profileImageInput" type="file" accept="image/*">
-            <div class="row"><button id="clearProfileImage">Clear</button></div>
-          </div>
-        </section>
-        <section class="retro-panel" id="home-music">
-          <div class="heading">Music Player</div>
-          <div class="body">
-            <label for="musicUpload">Upload MP3 files</label><input id="musicUpload" type="file" accept="audio/mpeg,.mp3" multiple>
-            <audio id="musicPlayer" controls preload="metadata" style="width:100%;margin-top:.5rem"></audio>
-            <div class="row"><button id="prevTrack">Previous</button><button id="nextTrack">Next</button><button id="clearTracks" class="danger">Clear</button></div>
-            <ol class="playlist" id="playlist"></ol>
-          </div>
-        </section>
-      </aside>
-      <section>
-        <div class="retro-module-grid">
-          <section class="retro-panel wide" id="home-gallery"><div class="heading">Gallery</div><div class="body"><label for="galleryUpload">Upload gallery media</label><input id="galleryUpload" type="file" accept="image/*,video/*" multiple><div class="gallery-grid" id="galleryGrid"></div><div class="row"><button id="clearGallery" class="danger">Clear gallery</button></div></div></section>
-          <section class="retro-panel wide os-journal-big" id="home-journal-big"><div class="heading">Journal Entry</div><div class="body"><label for="homeJournalEntry">Entry</label><textarea id="homeJournalEntry"></textarea><div class="row"><button id="saveHomeJournal" class="primary" type="button">Save journal entry</button><button id="clearHomeJournalDraft" type="button">Clear draft</button></div><div class="os-journal-list" id="homeJournalList"></div></div></section>
-        </div>
-      </section>
-    </div>
-  </div>
+<section class="page active" data-page="home" id="page-home">
+<div class="home-retro-bg">
+<div class="retro-top">
+<div><div class="retro-logo" id="homeSiteName">OurSpace</div><small id="homeStatus"></small></div>
+<div class="row"><button id="openHomeSettings">Edit home</button><button class="os-appearance-button" type="button">Appearance</button></div>
+</div>
+<div class="retro-nav">
+<button data-jump="home-gallery">Gallery</button><button data-jump="home-music">Music</button><button data-jump="home-journal-big">Journal</button>
+</div>
+<div class="retro-layout">
+<aside>
+<section class="retro-panel">
+<div class="heading">Profile Image</div>
+<div class="body">
+<div class="avatar-box"><img alt="profile image" id="profileImage"/><div id="profilePlaceholder">Upload an image</div></div>
+<label for="profileImageInput">Upload image</label><input accept="image/*" id="profileImageInput" type="file"/>
+<div class="row"><button id="clearProfileImage">Clear</button></div>
+</div>
 </section>
-
-<section class="page" id="page-daily" data-page="daily">
-  <div class="page-toolbar"><div><h1 class="page-title">Daily</h1></div><button class="bg-button" data-bg-open="daily">Change Daily Background</button></div>
-  <div class="daily-layout">
-    <aside class="grid">
-      <section class="card"><div class="card-head"><h2>Day Setup</h2></div><div class="card-body">
-        <label for="dailyDate">Schedule date</label><input type="date" id="dailyDate"><label for="startDayTime">Start time</label><input type="time" id="startDayTime">
-        <div class="row" style="margin-top:.5rem"><button id="startDay" class="primary">Start the day</button><button id="clearToday" class="danger">Clear this day</button></div>
-        <p class="today-focus" id="dailySummary">Choose a date to begin.</p>
-      </div></section>
-      <section class="card"><div class="card-head"><h2>Create Item</h2></div><div class="card-body">
-        <label for="newItemTitle">Title</label><input id="newItemTitle" placeholder="Task, appointment, birthday, anniversary, event...">
-        <div class="grid two"><div><label for="newItemType">Type</label><select id="newItemType"><option value="task">Task</option><option value="self-care">Self-care</option><option value="appointment">Appointment</option><option value="birthday">Birthday</option><option value="anniversary">Anniversary</option><option value="event">Event</option></select></div><div><label for="newItemRecurrence">Repeat / bucket</label><select id="newItemRecurrence"><option value="none">One time</option><option value="daily">Daily item</option><option value="weekly">Weekly item</option><option value="monthly">Monthly item</option><option value="annual">Annual item</option></select></div></div>
-        <div class="grid two"><div><label for="newItemStart">Start</label><input id="newItemStart" type="time" value="09:00"></div><div><label for="newItemEnd">End</label><input id="newItemEnd" type="time" value="10:00"></div></div>
-        <label for="newItemNotes">Notes</label><textarea id="newItemNotes" placeholder="Optional notes"></textarea>
-        <div class="row"><button id="addDailyItem" class="good">Add to schedule</button><button id="addCalendarOnly" class="warn">Save as calendar item</button></div>
-      </div></section>
-      <section class="card"><div class="card-head"><h2>Add from Annual / Monthly / Weekly</h2></div><div class="card-body">
-        <label for="pullFilter">Show items</label><select id="pullFilter"><option value="all">All matching saved items</option><option value="annual">Annual</option><option value="monthly">Monthly</option><option value="weekly">Weekly</option><option value="daily">Daily</option></select>
-        <label for="pullSelect">Choose saved item</label><select id="pullSelect"></select>
-        <div class="grid two"><div><label for="pullStart">Start</label><input id="pullStart" type="time" value="10:00"></div><div><label for="pullEnd">End</label><input id="pullEnd" type="time" value="11:00"></div></div>
-        <button id="pullToToday" class="primary" style="margin-top:.6rem">Add selected item to this day</button>
-      </div></section>
-      <section class="card"><div class="card-head"><h2>Kindness Quick Adds</h2></div><div class="card-body"><div class="quick-kind"><button class="kind-button" data-quick="Drink water" data-type="self-care">Drink water<small>small body care</small></button><button class="kind-button" data-quick="Take meds" data-type="self-care">Take meds<small>as directed</small></button><button class="kind-button" data-quick="Rest break" data-type="self-care">Rest break<small>protected pause</small></button><button class="kind-button" data-quick="Tidy one surface" data-type="task">Tidy one surface<small>tiny task</small></button></div></div></section>
-    </aside>
-    <section class="card"><div class="card-head"><h2 id="dailyHourTitle">Hourly Day</h2><div class="row"><button id="exportDaily">Export day JSON</button></div></div><div class="card-body"><div class="day-hours" id="dailyHours"></div><label for="dailyExportBox">Day export / notes</label><textarea id="dailyExportBox"></textarea></div></section>
-  </div>
+<section class="retro-panel" id="home-music">
+<div class="heading">Music Player</div>
+<div class="body">
+<label for="musicUpload">Upload MP3 files</label><input accept="audio/mpeg,.mp3" id="musicUpload" multiple="" type="file"/>
+<audio controls="" id="musicPlayer" preload="metadata" style="width:100%;margin-top:.5rem"></audio>
+<div class="row"><button id="prevTrack">Previous</button><button id="nextTrack">Next</button><button class="danger" id="clearTracks">Clear</button></div>
+<ol class="playlist" id="playlist"></ol>
+</div>
 </section>
-
-<section class="page" id="page-calendar" data-page="calendar">
-  <div class="page-toolbar"><div><h1 class="page-title">Calendar</h1></div><button class="bg-button" data-bg-open="calendar">Change Calendar Background</button></div>
-  <div class="grid two">
-    <section class="card"><div class="card-head"><h2>Calendar Controls</h2></div><div class="card-body">
-      <div class="grid three"><div><label for="calYear">Year</label><input id="calYear" type="number" min="1900" max="2200"></div><div><label for="calStart">30 / 7 day start</label><input id="calStart" type="date"></div><div><label for="calDay">Day view date</label><input id="calDay" type="date"></div></div>
-      <div class="calendar-tabs"><button data-cal-view="annual" class="active">Annual</button><button data-cal-view="thirty">30 Day</button><button data-cal-view="week">7 Day</button><button data-cal-view="day">Day / Hours</button></div>
-    </div></section>
-    <section class="card"><div class="card-head"><h2>Create Calendar Event</h2></div><div class="card-body">
-      <div class="grid two"><div><label for="calTitle">Title</label><input id="calTitle" placeholder="Appointment, birthday, anniversary, event..."></div><div><label for="calType">Type</label><select id="calType"><option value="event">Event</option><option value="appointment">Appointment</option><option value="birthday">Birthday</option><option value="anniversary">Anniversary</option><option value="task">Task</option><option value="self-care">Self-care</option></select></div></div>
-      <div class="grid four"><div><label for="calDate">Date</label><input id="calDate" type="date"></div><div><label for="calStartTime">Start</label><input id="calStartTime" type="time" value="09:00"></div><div><label for="calEndTime">End</label><input id="calEndTime" type="time" value="10:00"></div><div><label for="calRepeat">Repeat</label><select id="calRepeat"><option value="none">One time</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="annual">Annual</option></select></div></div>
-      <label for="calNotes">Notes</label><textarea id="calNotes"></textarea><div class="row"><button id="saveCalEvent" class="good">Save event</button><button id="clearAllEvents" class="danger">Clear all events</button></div>
-    </div></section>
-  </div>
-  <section class="card"><div class="card-head"><h2 id="calendarViewTitle">Annual Calendar</h2></div><div class="card-body"><div id="calendarOutput"></div></div></section>
+</aside>
+<section>
+<div class="retro-module-grid">
+<section class="retro-panel wide" id="home-gallery"><div class="heading">Gallery</div><div class="body"><label for="galleryUpload">Upload gallery media</label><input accept="image/*,video/*" id="galleryUpload" multiple="" type="file"/><div class="gallery-grid" id="galleryGrid"></div><div class="row"><button class="danger" id="clearGallery">Clear gallery</button></div></div></section>
+<section class="retro-panel wide os-journal-big" id="home-journal-big"><div class="heading">Journal Entry</div><div class="body"><label for="homeJournalEntry">Entry</label><textarea id="homeJournalEntry"></textarea><div class="row"><button class="primary" id="saveHomeJournal" type="button">Save journal entry</button><button id="clearHomeJournalDraft" type="button">Clear draft</button></div><div class="os-journal-list" id="homeJournalList"></div></div></section>
+</div>
 </section>
-
-<section class="page" id="page-dbt" data-page="dbt">
-  <div class="page-toolbar"><div><h1 class="page-title">DBT / ADHD</h1></div><button class="bg-button" data-bg-open="dbt">Change DBT / ADHD Background</button></div>
-  <div class="grid two">
-    <section class="card"><div class="card-head"><h2>Skill Menu</h2></div><div class="card-body"><div class="grid two" id="skillCards"></div></div></section>
-    <section class="card"><div class="card-head"><h2>Mood Tracker</h2></div><div class="card-body"><label for="moodDate">Date</label><input id="moodDate" type="date"><label for="moodScore">Mood / energy score</label><input id="moodScore" type="range" min="1" max="10" value="5"><div class="row"><span class="pill">Score: <strong id="moodScoreLabel">5</strong></span></div><label for="moodTags">Tags</label><input id="moodTags" placeholder="overwhelmed, focused, tired, hopeful..."><label for="moodNotes">Notes</label><textarea id="moodNotes"></textarea><button id="saveMood" class="good">Save mood entry</button></div></section>
-    <section class="card"><div class="card-head"><h2>Journal</h2></div><div class="card-body"><label for="journalPrompt">Prompt</label><select id="journalPrompt"><option>What would make today easier?</option><option>What emotion needs kindness?</option><option>What is one tiny next step?</option><option>What helped, even a little?</option></select><label for="journalEntry">Entry</label><textarea id="journalEntry"></textarea><button id="saveJournal" class="primary">Save journal entry</button></div></section>
-    <section class="card"><div class="card-head"><h2>Diary Card</h2></div><div class="card-body"><div class="grid two"><div><label for="diarySkill">Skill used</label><input id="diarySkill" placeholder="STOP, PLEASE, Pomodoro..."></div><div><label for="diaryIntensity">Intensity</label><select id="diaryIntensity"><option>Low</option><option>Medium</option><option>High</option><option>Emergency</option></select></div></div><label for="diaryResult">What happened?</label><textarea id="diaryResult"></textarea><button id="saveDiary" class="good">Save diary card</button></div></section>
-  </div>
-  <section class="card"><div class="card-head"><h2>Saved DBT / ADHD Entries</h2><button id="clearWellness" class="danger">Clear entries</button></div><div class="card-body"><div class="scrollbox" id="wellnessLog"></div></div></section>
+</div>
+</div>
 </section>
-
-<section class="page" id="page-games" data-page="games">
-  <div class="page-toolbar"><div><h1 class="page-title">Games</h1></div><button class="bg-button" data-bg-open="games">Change Games Background</button></div>
-  <div class="game-launcher">
-    <aside class="grid">
-      <section class="card"><div class="card-head"><h2>Load a Game</h2></div><div class="card-body"><label for="gameSelect">Game</label><select id="gameSelect"></select><div class="row" style="margin-top:.6rem"><button id="loadGame" class="primary">Load game</button><button id="fullscreenGame">Fullscreen</button></div></div></section>
-      <section class="card"><div class="card-head"><h2>Game Rewards</h2></div><div class="card-body"><p class="currency-line" id="gameCurrency"></p><div class="row"><button id="minuteReward" class="good">Add minute fallback reward</button><button id="clearRewardFeed" class="danger">Clear feed</button></div><div class="reward-feed" id="rewardFeed"></div></div></section>
-    </aside>
-    <section class="card"><div class="card-head"><h2 id="gameTitle">Game Viewer</h2></div><div class="card-body"><iframe id="gameFrame" class="game-frame" title="Game viewer"></iframe></div></section>
-  </div>
+<section class="page" data-page="daily" id="page-daily">
+<div class="page-toolbar"><div><h1 class="page-title">Daily</h1></div><button class="bg-button" data-bg-open="daily">Change Daily Background</button></div>
+<div class="daily-layout">
+<aside class="grid">
+<section class="card"><div class="card-head"><h2>Day Setup</h2></div><div class="card-body">
+<label for="dailyDate">Schedule date</label><input id="dailyDate" type="date"/><label for="startDayTime">Start time</label><input id="startDayTime" type="time"/>
+<div class="row" style="margin-top:.5rem"><button class="primary" id="startDay">Start the day</button><button class="danger" id="clearToday">Clear this day</button></div>
+<p class="today-focus" id="dailySummary">Choose a date to begin.</p>
+</div></section>
+<section class="card"><div class="card-head"><h2>Create Item</h2></div><div class="card-body">
+<label for="newItemTitle">Title</label><input id="newItemTitle" placeholder="Task, appointment, birthday, anniversary, event..."/>
+<div class="grid two"><div><label for="newItemType">Type</label><select id="newItemType"><option value="task">Task</option><option value="self-care">Self-care</option><option value="appointment">Appointment</option><option value="birthday">Birthday</option><option value="anniversary">Anniversary</option><option value="event">Event</option></select></div><div><label for="newItemRecurrence">Repeat / bucket</label><select id="newItemRecurrence"><option value="none">One time</option><option value="daily">Daily item</option><option value="weekly">Weekly item</option><option value="monthly">Monthly item</option><option value="annual">Annual item</option></select></div></div>
+<div class="grid two"><div><label for="newItemStart">Start</label><input id="newItemStart" type="time" value="09:00"/></div><div><label for="newItemEnd">End</label><input id="newItemEnd" type="time" value="10:00"/></div></div>
+<label for="newItemNotes">Notes</label><textarea id="newItemNotes" placeholder="Optional notes"></textarea>
+<div class="row"><button class="good" id="addDailyItem">Add to schedule</button><button class="warn" id="addCalendarOnly">Save as calendar item</button></div>
+</div></section>
+<section class="card"><div class="card-head"><h2>Add from Annual / Monthly / Weekly</h2></div><div class="card-body">
+<label for="pullFilter">Show items</label><select id="pullFilter"><option value="all">All matching saved items</option><option value="annual">Annual</option><option value="monthly">Monthly</option><option value="weekly">Weekly</option><option value="daily">Daily</option></select>
+<label for="pullSelect">Choose saved item</label><select id="pullSelect"></select>
+<div class="grid two"><div><label for="pullStart">Start</label><input id="pullStart" type="time" value="10:00"/></div><div><label for="pullEnd">End</label><input id="pullEnd" type="time" value="11:00"/></div></div>
+<button class="primary" id="pullToToday" style="margin-top:.6rem">Add selected item to this day</button>
+</div></section>
+<section class="card"><div class="card-head"><h2>Kindness Quick Adds</h2></div><div class="card-body"><div class="quick-kind"><button class="kind-button" data-quick="Drink water" data-type="self-care">Drink water<small>small body care</small></button><button class="kind-button" data-quick="Take meds" data-type="self-care">Take meds<small>as directed</small></button><button class="kind-button" data-quick="Rest break" data-type="self-care">Rest break<small>protected pause</small></button><button class="kind-button" data-quick="Tidy one surface" data-type="task">Tidy one surface<small>tiny task</small></button></div></div></section>
+</aside>
+<section class="card"><div class="card-head"><h2 id="dailyHourTitle">Hourly Day</h2><div class="row"><button id="exportDaily">Export day JSON</button></div></div><div class="card-body"><div class="day-hours" id="dailyHours"></div><label for="dailyExportBox">Day export / notes</label><textarea id="dailyExportBox"></textarea></div></section>
+</div>
 </section>
-
-<section class="page" id="page-store" data-page="store">
-  <div class="page-toolbar"><div><h1 class="page-title">Store</h1></div><button class="bg-button" data-bg-open="store">Change Store Background</button></div>
-  <section class="card giftlink-top"><div class="card-head"><h2>Wishlist / GiftLink</h2></div><div class="card-body"><div class="grid two"><div><label for="giftLinkTitle">Item</label><input id="giftLinkTitle"></div><div><label for="giftLinkStore">Store</label><input id="giftLinkStore"></div></div><label for="giftLinkUrl">Link</label><input id="giftLinkUrl" inputmode="url"><label for="giftLinkNotes">Notes</label><textarea id="giftLinkNotes"></textarea><div class="row"><button id="addGiftLink" class="primary">Save wishlist link</button></div><div id="giftLinkList" class="scrollbox"></div></div></section>
-  <section class="card"><div class="card-head"><h2>Wallet</h2><div class="currency-line" id="storeCurrency"></div></div><div class="card-body"><div class="row"><button id="normalizeWallet">Normalize coins</button><button id="resetWallet" class="danger">Reset wallet</button></div></div></section>
-  <div class="grid two">
-    <section class="card"><div class="card-head"><h2>Items</h2></div><div class="card-body"><label for="storeAisleFilter">Aisle</label><select id="storeAisleFilter"><option value="all">Show all</option></select><div class="store-grid" id="storeItems"></div></div></section>
-    <section class="card"><div class="card-head"><h2>Cart / Checkout</h2></div><div class="card-body"><div id="cartLines" class="scrollbox"></div><p><strong>Total:</strong> <span id="cartTotal"></span></p><label for="checkoutNote">Checkout note</label><textarea id="checkoutNote"></textarea><div class="row"><button id="checkoutCart" class="primary">Checkout with earned currency</button><button id="clearCart" class="danger">Clear cart</button></div><label for="receiptBox">Receipt / GiftLink status</label><textarea id="receiptBox" readonly></textarea></div></section>
-  </div>
+<section class="page" data-page="calendar" id="page-calendar">
+<div class="page-toolbar"><div><h1 class="page-title">Calendar</h1></div><button class="bg-button" data-bg-open="calendar">Change Calendar Background</button></div>
+<div class="grid two">
+<section class="card"><div class="card-head"><h2>Calendar Controls</h2></div><div class="card-body">
+<div class="grid three"><div><label for="calYear">Year</label><input id="calYear" max="2200" min="1900" type="number"/></div><div><label for="calStart">30 / 7 day start</label><input id="calStart" type="date"/></div><div><label for="calDay">Day view date</label><input id="calDay" type="date"/></div></div>
+<div class="calendar-tabs"><button class="active" data-cal-view="annual">Annual</button><button data-cal-view="thirty">30 Day</button><button data-cal-view="week">7 Day</button><button data-cal-view="day">Day / Hours</button></div>
+</div></section>
+<section class="card"><div class="card-head"><h2>Create Calendar Event</h2></div><div class="card-body">
+<div class="grid two"><div><label for="calTitle">Title</label><input id="calTitle" placeholder="Appointment, birthday, anniversary, event..."/></div><div><label for="calType">Type</label><select id="calType"><option value="event">Event</option><option value="appointment">Appointment</option><option value="birthday">Birthday</option><option value="anniversary">Anniversary</option><option value="task">Task</option><option value="self-care">Self-care</option></select></div></div>
+<div class="grid four"><div><label for="calDate">Date</label><input id="calDate" type="date"/></div><div><label for="calStartTime">Start</label><input id="calStartTime" type="time" value="09:00"/></div><div><label for="calEndTime">End</label><input id="calEndTime" type="time" value="10:00"/></div><div><label for="calRepeat">Repeat</label><select id="calRepeat"><option value="none">One time</option><option value="daily">Daily</option><option value="weekly">Weekly</option><option value="monthly">Monthly</option><option value="annual">Annual</option></select></div></div>
+<label for="calNotes">Notes</label><textarea id="calNotes"></textarea><div class="row"><button class="good" id="saveCalEvent">Save event</button><button class="danger" id="clearAllEvents">Clear all events</button></div>
+</div></section>
+</div>
+<section class="card"><div class="card-head"><h2 id="calendarViewTitle">Annual Calendar</h2></div><div class="card-body"><div id="calendarOutput"></div></div></section>
 </section>
-
-<section class="page" id="page-sync" data-page="sync">
-  <div class="page-toolbar"><div><h1 class="page-title">Sync</h1></div><button class="bg-button" data-bg-open="sync">Change Sync Background</button></div>
-  <div class="grid two">
-    <section class="card"><div class="card-head"><h2>Install App</h2></div><div class="card-body">
-      <div class="row"><button id="installAppButton" class="primary" type="button">Install app</button><button id="recordInstallButton" type="button">Record install</button></div>
-      <p id="installAppStatus" class="tiny"></p>
-    </div></section>
-    <section class="card"><div class="card-head"><h2>Backend Status</h2></div><div class="card-body">
-      <div class="row"><button data-backend-preset="health" class="primary">Health</button><button data-backend-preset="actions">Actions</button><button data-backend-preset="pwa.manifest.hints">PWA hints</button></div>
-      <label for="backendStatusBox">Status</label><textarea id="backendStatusBox" readonly></textarea>
-    </div></section>
-  </div>
-  <section class="card"><div class="card-head"><h2>Backend Actions</h2></div><div class="card-body">
-    <div class="grid two"><div><label for="backendActionSelect">Action</label><select id="backendActionSelect"><option value="setup">setup</option>
+<section class="page" data-page="dbt" id="page-dbt">
+<div class="page-toolbar"><div><h1 class="page-title">DBT / ADHD</h1></div><button class="bg-button" data-bg-open="dbt">Change DBT / ADHD Background</button></div>
+<section class="card"><div class="card-head"><h2>Saved DBT / ADHD Entries</h2><button class="danger" id="clearWellnessNew" type="button">Clear entries</button></div><div class="card-body"><div class="scrollbox" id="wellnessLogNew"></div><div class="scrollbox" hidden="" id="wellnessLog"></div></div></section>
+<section class="card os-diary-only-card"><div class="card-head"><h2>Diary Cards</h2></div><div class="card-body"><div class="os-diary-card-mount" id="diaryCardMountNew"><div class="empty">Loading personalized diary card…</div></div></div></section>
+<section class="card"><div class="card-head"><h2>Skill Menu</h2></div><div class="card-body"><div class="grid two" id="skillCardsNew"></div><div class="grid two" hidden="" id="skillCards"></div></div></section>
+</section>
+<section class="page" data-page="games" id="page-games">
+<div class="page-toolbar"><div><h1 class="page-title">Games</h1></div><button class="bg-button" data-bg-open="games">Change Games Background</button></div>
+<div class="game-launcher">
+<aside class="grid">
+<section class="card"><div class="card-head"><h2>Load a Game</h2></div><div class="card-body"><label for="gameSelect">Game</label><select id="gameSelect"></select><div class="row" style="margin-top:.6rem"><button class="primary" id="loadGame">Load game</button><button id="fullscreenGame">Fullscreen</button></div></div></section>
+<section class="card"><div class="card-head"><h2>Game Rewards</h2></div><div class="card-body"><p class="currency-line" id="gameCurrency"></p><div class="row"><button class="good" id="minuteReward">Add minute fallback reward</button><button class="danger" id="clearRewardFeed">Clear feed</button></div><div class="reward-feed" id="rewardFeed"></div></div></section>
+</aside>
+<section class="card"><div class="card-head"><h2 id="gameTitle">Game Viewer</h2></div><div class="card-body"><iframe class="game-frame" id="gameFrame" title="Game viewer"></iframe></div></section>
+</div>
+</section>
+<section class="page" data-page="store" id="page-store">
+<div class="page-toolbar"><div><h1 class="page-title">Store</h1></div><button class="bg-button" data-bg-open="store">Change Store Background</button></div>
+<section class="card giftlink-top"><div class="card-head"><h2>Wishlist / GiftLink</h2></div><div class="card-body"><div class="grid two"><div><label for="giftLinkTitle">Item</label><input id="giftLinkTitle"/></div><div><label for="giftLinkStore">Store</label><input id="giftLinkStore"/></div></div><label for="giftLinkUrl">Link</label><input id="giftLinkUrl" inputmode="url"/><label for="giftLinkNotes">Notes</label><textarea id="giftLinkNotes"></textarea><div class="row"><button class="primary" id="addGiftLink">Save wishlist link</button></div><div class="scrollbox" id="giftLinkList"></div></div></section>
+<section class="card"><div class="card-head"><h2>Wallet</h2><div class="currency-line" id="storeCurrency"></div></div><div class="card-body"><div class="row"><button id="normalizeWallet">Normalize coins</button><button class="danger" id="resetWallet">Reset wallet</button></div></div></section>
+<div class="grid two">
+<section class="card"><div class="card-head"><h2>Items</h2></div><div class="card-body"><label for="storeAisleFilter">Aisle</label><select id="storeAisleFilter"><option value="all">Show all</option></select><div class="store-grid" id="storeItems"></div></div></section>
+<section class="card"><div class="card-head"><h2>Cart / Checkout</h2></div><div class="card-body"><div class="scrollbox" id="cartLines"></div><p><strong>Total:</strong> <span id="cartTotal"></span></p><label for="checkoutNote">Checkout note</label><textarea id="checkoutNote"></textarea><div class="row"><button class="primary" id="checkoutCart">Checkout with earned currency</button><button class="danger" id="clearCart">Clear cart</button></div><label for="receiptBox">Receipt / GiftLink status</label><textarea id="receiptBox" readonly=""></textarea></div></section>
+</div>
+</section>
+<section class="page" data-page="sync" id="page-sync">
+<div class="page-toolbar"><div><h1 class="page-title">Sync</h1></div><button class="bg-button" data-bg-open="sync">Change Sync Background</button></div>
+<div class="grid two">
+<section class="card"><div class="card-head"><h2>Install App</h2></div><div class="card-body">
+<div class="row"><button class="primary" id="installAppButton" type="button">Install app</button><button id="recordInstallButton" type="button">Record install</button></div>
+<p class="tiny" id="installAppStatus"></p>
+</div></section>
+<section class="card"><div class="card-head"><h2>Backend Status</h2></div><div class="card-body">
+<div class="row"><button class="primary" data-backend-preset="health">Health</button><button data-backend-preset="actions">Actions</button><button data-backend-preset="pwa.manifest.hints">PWA hints</button></div>
+<label for="backendStatusBox">Status</label><textarea id="backendStatusBox" readonly=""></textarea>
+</div></section>
+</div>
+<section class="card"><div class="card-head"><h2>Backend Actions</h2></div><div class="card-body">
+<div class="grid two"><div><label for="backendActionSelect">Action</label><select id="backendActionSelect"><option value="setup">setup</option>
 <option value="health">health</option>
 <option value="actions">actions</option>
 <option value="signup">signup</option>
@@ -391,30 +380,24 @@ small,.tiny{color:var(--muted)}
 <option value="updatePurchaseRequestStatus">updatePurchaseRequestStatus</option>
 <option value="publicPurchaseRequest">publicPurchaseRequest</option>
 <option value="publicLinks">publicLinks</option>
-<option value="share">share</option></select></div><div><label for="backendSessionToken">Session token</label><input id="backendSessionToken" autocomplete="off"></div></div>
-    <label for="backendPayloadBox">Payload JSON</label><textarea id="backendPayloadBox" spellcheck="false"></textarea>
-    <div class="row"><button id="fillBackendPayload" type="button">Fill payload</button><button id="sendBackendAction" class="primary" type="button">Send</button><button id="syncLocalState" class="good" type="button">Sync local state</button></div>
-    <label for="backendResultBox">Backend result</label><textarea id="backendResultBox" readonly></textarea>
-  </div></section>
-  <section class="card"><div class="card-head"><h2>GiftLink Backend</h2></div><div class="card-body">
-    <div class="grid two"><div><label for="giftBackendEmail">Private email</label><input id="giftBackendEmail" type="email" autocomplete="username"></div><div><label for="giftBackendPasscode">Private passcode</label><input id="giftBackendPasscode" type="password" autocomplete="current-password"></div></div>
-    <div class="row"><button id="giftBackendLogin" class="primary" type="button">Connect GiftLink</button><button id="giftBackendShareUrl" type="button">Get share URL</button><button id="giftBackendList" type="button">List links</button><button id="giftBackendRotate" class="warn" type="button">Rotate share ID</button></div>
-    <div class="grid two"><div><label for="giftPrivateName">Address name</label><input id="giftPrivateName"></div><div><label for="giftPrivateNote">Address note</label><input id="giftPrivateNote"></div></div>
-    <label for="giftPrivateAddress">Private delivery address</label><textarea id="giftPrivateAddress"></textarea>
-    <div class="row"><button id="giftBackendSaveAddress" type="button">Save private address</button><button id="giftBackendRequests" type="button">Purchase requests</button></div>
-    <label for="giftBackendOutput">GiftLink result</label><textarea id="giftBackendOutput" readonly></textarea>
-  </div></section>
+<option value="share">share</option></select></div><div><label for="backendSessionToken">Session token</label><input autocomplete="off" id="backendSessionToken"/></div></div>
+<label for="backendPayloadBox">Payload JSON</label><textarea id="backendPayloadBox" spellcheck="false"></textarea>
+<div class="row"><button id="fillBackendPayload" type="button">Fill payload</button><button class="primary" id="sendBackendAction" type="button">Send</button><button class="good" id="syncLocalState" type="button">Sync local state</button></div>
+<label for="backendResultBox">Backend result</label><textarea id="backendResultBox" readonly=""></textarea>
+</div></section>
+<section class="card"><div class="card-head"><h2>GiftLink Backend</h2></div><div class="card-body">
+<div class="grid two"><div><label for="giftBackendEmail">Private email</label><input autocomplete="username" id="giftBackendEmail" type="email"/></div><div><label for="giftBackendPasscode">Private passcode</label><input autocomplete="current-password" id="giftBackendPasscode" type="password"/></div></div>
+<div class="row"><button class="primary" id="giftBackendLogin" type="button">Connect GiftLink</button><button id="giftBackendShareUrl" type="button">Get share URL</button><button id="giftBackendList" type="button">List links</button><button class="warn" id="giftBackendRotate" type="button">Rotate share ID</button></div>
+<div class="grid two"><div><label for="giftPrivateName">Address name</label><input id="giftPrivateName"/></div><div><label for="giftPrivateNote">Address note</label><input id="giftPrivateNote"/></div></div>
+<label for="giftPrivateAddress">Private delivery address</label><textarea id="giftPrivateAddress"></textarea>
+<div class="row"><button id="giftBackendSaveAddress" type="button">Save private address</button><button id="giftBackendRequests" type="button">Purchase requests</button></div>
+<label for="giftBackendOutput">GiftLink result</label><textarea id="giftBackendOutput" readonly=""></textarea>
+</div></section>
 </section>
-
 </main>
-
-<div class="message-dock" id="messageDock"><section class="message-panel" id="messagePanel"><div class="message-head"><strong>Daily Messenger</strong><button id="toggleMessages">Open</button></div><div class="message-body"><div class="message-log" id="messageLog"></div><div class="grid two"><div><label for="messageName">Name</label><input id="messageName" placeholder="William"></div><div><label for="messageTarget">To</label><input id="messageTarget" placeholder="Jasper"></div></div><label for="messageText">Message</label><input id="messageText" placeholder="Type a short note"><div class="row"><button id="sendMessage" class="primary">Send</button><button id="clearMessages" class="danger">Clear messages</button></div></div></section></div>
-
-<section class="modal" id="homeSettingsModal"><div class="modal-card"><header><h2>Home Settings</h2><button data-close-modal>Close</button></header><main><div class="grid two"><div><label for="siteNameInput">Site name</label><input id="siteNameInput" value="OurSpace"></div><div><label for="profileNameInput">Profile name</label><input id="profileNameInput" value="William"></div></div><label for="statusInput">Home status line</label><input id="statusInput" value=""><button id="saveHomeSettings" class="primary" style="margin-top:.7rem">Save home settings</button></main></div></section>
-
-<section class="modal" id="bgModal"><div class="modal-card"><header><h2 id="bgModalTitle">Change Background</h2><button data-close-modal>Close</button></header><main><input type="hidden" id="bgPageKey"><label for="bgUrl">Image URL</label><input id="bgUrl" placeholder="https://example.com/background.jpg"><div class="row" style="margin-top:.6rem"><button id="applyBgUrl" class="primary">Use URL</button><button id="clearBg" class="danger">Clear this page background</button></div><label for="bgUpload">Or upload image</label><input id="bgUpload" type="file" accept="image/*"></main></div></section>
-
-
+<div class="message-dock" id="messageDock"><section class="message-panel" id="messagePanel"><div class="message-head"><strong>Daily Messenger</strong><button id="toggleMessages">Open</button></div><div class="message-body"><div class="message-log" id="messageLog"></div><div class="grid two"><div><label for="messageName">Name</label><input id="messageName" placeholder="William"/></div><div><label for="messageTarget">To</label><input id="messageTarget" placeholder="Jasper"/></div></div><label for="messageText">Message</label><input id="messageText" placeholder="Type a short note"/><div class="row"><button class="primary" id="sendMessage">Send</button><button class="danger" id="clearMessages">Clear messages</button></div></div></section></div>
+<section class="modal" id="homeSettingsModal"><div class="modal-card"><header><h2>Home Settings</h2><button data-close-modal="">Close</button></header><main><div class="grid two"><div><label for="siteNameInput">Site name</label><input id="siteNameInput" value="OurSpace"/></div><div><label for="profileNameInput">Profile name</label><input id="profileNameInput" value="William"/></div></div><label for="statusInput">Home status line</label><input id="statusInput" value=""/><button class="primary" id="saveHomeSettings" style="margin-top:.7rem">Save home settings</button></main></div></section>
+<section class="modal" id="bgModal"><div class="modal-card"><header><h2 id="bgModalTitle">Change Background</h2><button data-close-modal="">Close</button></header><main><input id="bgPageKey" type="hidden"/><label for="bgUrl">Image URL</label><input id="bgUrl" placeholder="https://example.com/background.jpg"/><div class="row" style="margin-top:.6rem"><button class="primary" id="applyBgUrl">Use URL</button><button class="danger" id="clearBg">Clear this page background</button></div><label for="bgUpload">Or upload image</label><input accept="image/*" id="bgUpload" type="file"/></main></div></section>
 <script src="./assets/ourspace-embedded-catalogs.js"></script>
 <script src="./assets/ourspace-data-catalogs.js"></script>
 <script>
@@ -592,7 +575,7 @@ function renderThirty(){const start=$('calStart').value||todayStr(); $('calendar
 function renderWeek(){const start=$('calStart').value||todayStr(); $('calendarViewTitle').textContent='Full 7 Day Calendar · starting '+dateLabel(start); const out=$('calendarOutput'); out.innerHTML='<div class="week-grid" id="weekGrid"></div>'; const grid=$('weekGrid'); for(let i=0;i<7;i++)grid.appendChild(dayCard(addDays(start,i)));}
 function dayCard(date){const card=document.createElement('div'); card.className='day-card '+(date===todayStr()?'today':''); card.innerHTML=`<h4>${dateLabel(date)}</h4>`; const evs=eventsForDate(date); if(!evs.length)card.innerHTML+='<div class="empty">No items</div>'; evs.forEach(e=>{const div=document.createElement('div'); div.className='item'; div.innerHTML=`<strong>${esc(e.title)}</strong><div class="meta">${esc(e.start)}–${esc(e.end)} · ${esc(e.type)}</div>`; card.appendChild(div);}); card.addEventListener('click',()=>{$('calDay').value=date; calendarView='day'; document.querySelectorAll('[data-cal-view]').forEach(b=>b.classList.toggle('active',b.dataset.calView==='day')); renderCalendar();}); return card;}
 function renderCalDay(){const date=$('calDay').value||todayStr(); $('calendarViewTitle').textContent='Full Day Calendar · '+dateLabel(date); const out=$('calendarOutput'); out.innerHTML='<div class="day-hours" id="calDayHours"></div>'; renderHourGrid('calDayHours',date,true);}
-function initWellness(){ $('moodDate').value=todayStr(); $('moodScore').addEventListener('input',e=>$('moodScoreLabel').textContent=e.target.value); $('saveMood').addEventListener('click',()=>{state.wellness.unshift({id:uid(),kind:'Mood',date:$('moodDate').value,score:$('moodScore').value,tags:$('moodTags').value,notes:$('moodNotes').value}); saveState(); renderWellness();}); $('saveJournal').addEventListener('click',()=>{state.wellness.unshift({id:uid(),kind:'Journal',date:todayStr(),prompt:$('journalPrompt').value,notes:$('journalEntry').value}); $('journalEntry').value=''; saveState(); renderWellness();}); $('saveDiary').addEventListener('click',()=>{state.wellness.unshift({id:uid(),kind:'Diary Card',date:todayStr(),skill:$('diarySkill').value,intensity:$('diaryIntensity').value,notes:$('diaryResult').value}); $('diaryResult').value=''; saveState(); renderWellness();}); $('clearWellness').addEventListener('click',()=>{state.wellness=[]; saveState(); renderWellness();}); renderSkillCards(); renderWellness();}
+function initWellness(){ try{ if(typeof renderWellness==='function') renderWellness(); }catch(e){ console.warn('Wellness init skipped after diary integration', e); } }
 function renderSkillCards(){const host=$('skillCards'); host.innerHTML=''; const skills=catalogRows('skill','all'); if(!skills.length){host.innerHTML='<div class="empty">No skills found.</div>'; return;} skills.forEach(s=>{const card=document.createElement('div'); card.className='item'; const steps=(s.tinySteps||[]).slice(0,3).map(x=>`<li>${esc(x)}</li>`).join(''); card.innerHTML=`<strong>${esc(s.title)}</strong><div class="meta">${esc(s.toolArea||'DBT / ADHD')} · ${esc(s.cadence||'')}</div>${steps?`<ul>${steps}</ul>`:''}<div class="actions">${s.path?`<a class="button" href="${esc(s.path)}" target="_blank" rel="noopener noreferrer">Open</a>`:''}<button data-skill-journal="${esc(s.title)}" class="primary">Use</button><button data-skill-done="${esc(s.id)}" class="good">Done</button></div>`; host.appendChild(card);}); host.querySelectorAll('[data-skill-journal]').forEach(b=>b.addEventListener('click',()=>{$('diarySkill').value=b.dataset.skillJournal; $('diaryResult').focus();})); host.querySelectorAll('[data-skill-done]').forEach(b=>b.addEventListener('click',()=>{const skill=skills.find(s=>s.id===b.dataset.skillDone); addCurrency(copperToCurrency(skill?.rewardCopper||100),'Completed skill: '+(skill?.title||'Skill')); b.disabled=true; b.textContent='Done';}));}
 function renderWellness(){const host=$('wellnessLog'); if(!host)return; host.innerHTML=''; if(!state.wellness.length){host.innerHTML='<div class="empty">No entries.</div>'; return;} state.wellness.forEach(e=>{const div=document.createElement('div'); div.className='item'; div.innerHTML=`<strong>${esc(e.kind)} · ${esc(e.date)}</strong><div class="meta">${esc(e.score?('Score '+e.score):e.skill||e.prompt||'')}</div><p>${esc(e.notes||e.tags||'')}</p>`; host.appendChild(div);});}
 function manifestGames(){const hiddenLegacyBotTerm='on'+'yx'; const hiddenLegacyBotRe=new RegExp(hiddenLegacyBotTerm,'i'); const base=(CATALOG.games&&CATALOG.games.length?CATALOG.games:(window.OURSPACE_EMBEDDED_GAMES||[])).filter(g=>!(hiddenLegacyBotRe.test(JSON.stringify(g||{})))); return base;}
@@ -645,9 +628,9 @@ function boot(){initNav(); initHome(); initHomeEvents(); initDaily(); initCalend
 boot();
 })();
 </script>
-
 <script src="./assets/ourspace-positive-messages.js"></script>
+<script src="./assets/ourspace-diary-cards-embedded.js"></script>
 <script src="./assets/ourspace-revision-20260626.js"></script>
-  <script src="./assets/ourspace-brand-font.js"></script>
+<script src="./assets/ourspace-brand-font.js"></script>
 </body>
 </html>

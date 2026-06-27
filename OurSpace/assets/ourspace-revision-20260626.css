@@ -104,3 +104,81 @@ label,small,.tiny,.meta,.pill,.coin,.currency-line,.cart-line,.product p,.produc
   margin:0;
 }
 .os-dbt-frame{display:none !important;}
+
+
+/* Full-width integrated diary card layout */
+.os-diary-only-card,
+#page-dbt .os-diary-only-card,
+#page-dbt #diaryCardMountNew,
+#page-dbt .os-integrated-diary-card{
+  width:100% !important;
+  max-width:none !important;
+}
+#page-dbt .os-diary-only-card .card-body{
+  overflow:visible !important;
+}
+#diaryCardMountNew{
+  display:block;
+  overflow:visible;
+}
+#diaryCardMountNew .dbt-diary-module{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  overflow:visible !important;
+}
+#diaryCardMountNew .dbt-layout{
+  width:100% !important;
+  grid-template-columns:minmax(360px, 520px) minmax(0, 1fr) !important;
+}
+#diaryCardMountNew .dbt-sheet,
+#diaryCardMountNew .dbt-side-menu{
+  min-width:0 !important;
+}
+@media (max-width:900px){
+  #diaryCardMountNew .dbt-layout,
+  #diaryCardMountNew .dbt-module-topbar{
+    grid-template-columns:1fr !important;
+  }
+  #diaryCardMountNew .dbt-side-menu{
+    position:relative !important;
+    top:auto !important;
+    max-height:none !important;
+  }
+}
+
+/* Positive affirmation + marquee on every app page */
+.os-page-positive{
+  margin:.85rem 0 1rem;
+  border:2px solid var(--os-module-border, #111827);
+  border-radius:18px;
+  background:var(--os-module-bg, rgba(255,255,255,.94));
+  color:var(--os-body-text, #000);
+  overflow:hidden;
+}
+.os-page-marquee{
+  white-space:nowrap;
+  overflow:hidden;
+  background:var(--os-nav-bg, #111827);
+  color:#fff;
+  padding:.55rem 0;
+  font-weight:800;
+}
+.os-page-marquee span{
+  display:inline-block;
+  padding-left:100%;
+  animation:osMarqueeSlide 28s linear infinite;
+}
+.os-page-affirmation{
+  padding:.75rem 1rem;
+  font-weight:800;
+  color:var(--os-body-text, #000);
+  text-shadow:-1px -1px 0 var(--os-outline,#fff),1px -1px 0 var(--os-outline,#fff),-1px 1px 0 var(--os-outline,#fff),1px 1px 0 var(--os-outline,#fff);
+}
+@keyframes osMarqueeSlide{
+  from{transform:translateX(0);}
+  to{transform:translateX(-100%);}
+}
+@media (prefers-reduced-motion: reduce){
+  .os-page-marquee span{animation:none; padding-left:1rem;}
+}

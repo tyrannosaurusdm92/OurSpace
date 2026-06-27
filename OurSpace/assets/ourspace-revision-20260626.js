@@ -90,54 +90,131 @@ function enhanceHome(){const home=$('page-home'); if(!home)return; const nav=hom
 function homeJournal(){return safeJSON(HOME_JOURNAL_KEY,[]);}
 function saveHomeJournal(){const box=$('homeJournalEntry'); const text=box?.value.trim(); if(!text)return; const rows=homeJournal(); rows.unshift({id:'hj_'+Date.now().toString(36),profile,text,createdAt:new Date().toISOString()}); writeJSON(HOME_JOURNAL_KEY,rows.slice(0,200)); box.value=''; renderHomeJournal(); scheduleSync('home-journal');}
 function renderHomeJournal(){const host=$('homeJournalList'); if(!host)return; const rows=homeJournal(); host.innerHTML=rows.length?rows.slice(0,12).map(r=>`<div class="item"><strong>${new Date(r.createdAt).toLocaleString()}</strong><p>${esc(r.text)}</p></div>`).join(''):'<div class="empty">No journal entries yet.</div>';}
-function addPositiveMessages(home){const data=(window.OURSPACE_POSITIVE_MESSAGES||{})[profile]||{}; if(!data.positive_affirmations?.length)return; if(!$('osAffirmationBox')){const box=document.createElement('div'); box.id='osAffirmationBox'; box.className='os-affirmation'; const top=home.querySelector('.retro-top'); top?.insertAdjacentElement('afterend',box);} if(!$('osMarqueeBox')){const mw=document.createElement('div'); mw.id='osMarqueeBox'; mw.className='os-marquee-wrap'; mw.innerHTML='<span class="os-marquee-text" id="osMarqueeText"></span>'; home.querySelector('.retro-nav')?.insertAdjacentElement('afterend',mw);} let idx=0; const affirm=data.positive_affirmations; const marquees=data.marquee_details||[]; const render=()=>{if($('osAffirmationBox'))$('osAffirmationBox').textContent=affirm[idx%affirm.length]; if($('osMarqueeText'))$('osMarqueeText').textContent=(marquees[idx%Math.max(1,marquees.length)]?.full_text)||affirm.slice(idx,idx+5).join(' ✦ '); idx++;}; render(); setInterval(render,15000);}
-function combinedWellness(){return safeJSON(WELLNESS_KEY,[]);}
-function saveCombinedEntry(kind){const rows=combinedWellness(); let row={id:'well_'+Date.now().toString(36),kind,date:new Date().toISOString().slice(0,10),createdAt:new Date().toISOString()}; if(kind==='Mood'){row.score=$('moodScoreNew')?.value||''; row.tags=$('moodTagsNew')?.value||''; row.notes=$('moodNotesNew')?.value||'';} else {row.prompt=$('journalPromptNew')?.value||''; row.notes=$('journalEntryNew')?.value||''; if($('journalEntryNew'))$('journalEntryNew').value='';} rows.unshift(row); writeJSON(WELLNESS_KEY,rows.slice(0,300)); renderCombinedEntries(); scheduleSync('wellness');}
-function renderCombinedEntries(){const host=$('wellnessLogNew'); if(!host)return; const rows=combinedWellness(); host.innerHTML=rows.length?rows.map(e=>`<div class="item"><strong>${esc(e.kind)} · ${esc(e.date)}</strong><div class="meta">${esc(e.score?('Score '+e.score):e.prompt||e.tags||'')}</div><p>${esc(e.notes||'')}</p></div>`).join(''):'<div class="empty">No entries yet.</div>';}
 
-async function loadDiaryCardNew(diaryFile){
-  const host=$('diaryCardMountNew');
-  if(!host)return;
-  host.innerHTML='<div class="empty">Loading personalized diary card…</div>';
-  const path='modules/diary/'+diaryFile;
-  try{
-    const response=await fetch(path,{cache:'no-store'});
-    if(!response.ok) throw new Error('HTTP '+response.status);
-    const html=await response.text();
-    const doc=new DOMParser().parseFromString(html,'text/html');
-    const style=doc.querySelector('#sheet-css')||doc.querySelector('style');
-    const module=doc.querySelector('.dbt-diary-module');
-    if(!module) throw new Error('Diary module markup not found.');
-    host.innerHTML='';
-    if(style){
-      const styleEl=document.createElement('style');
-      styleEl.className='os-inline-diary-style';
-      styleEl.textContent=style.textContent;
-      host.appendChild(styleEl);
+function addPositiveMessages(){
+  addPositiveToAllPages();
+}
+function addPositiveToAllPages(){
+  const allData=window.OURSPACE_POSITIVE_MESSAGES||{};
+  const data=allData[profile]||allData.shared||{};
+  const affirm=(data.positive_affirmations||[]).filter(Boolean);
+  const marquees=(data.marquee_details||[]).map(m=>m.full_text||m).filter(Boolean);
+  if(!affirm.length && !marquees.length)return;
+  document.querySelectorAll('.page').forEach((page,pageIndex)=>{
+    const pageName=page.dataset.page||page.id?.replace(/^page-/,'')||String(pageIndex);
+    let box=page.querySelector(':scope > .os-page-positive');
+    if(!box){
+      box=document.createElement('section');
+      box.className='os-page-positive';
+      box.dataset.positivePage=pageName;
+      box.innerHTML='<div class="os-page-marquee" aria-live="polite"><span></span></div><div class="os-page-affirmation" aria-live="polite"></div>';
+      const toolbar=page.querySelector(':scope > .page-toolbar, :scope > header, :scope > .retro-top');
+      if(toolbar) toolbar.insertAdjacentElement('afterend',box);
+      else page.prepend(box);
     }
-    host.appendChild(module.cloneNode(true));
-    doc.querySelectorAll('script').forEach((oldScript,idx)=>{
-      const script=document.createElement('script');
-      script.className='os-inline-diary-script';
-      script.textContent=oldScript.textContent+'\n;try{ if(typeof wireAutosave==="function") wireAutosave(); }catch(e){ console.warn("Diary autosave hook skipped", e); }';
-      host.appendChild(script);
-    });
-    const moduleEl=host.querySelector('.dbt-diary-module');
-    if(moduleEl){
-      moduleEl.dataset.ourspaceEmbedded='true';
-      moduleEl.addEventListener('input',()=>scheduleSync('diary-card'),true);
-      moduleEl.addEventListener('change',()=>scheduleSync('diary-card'),true);
-    }
-    if(window.OurSpaceBrandFont?.schedule) window.OurSpaceBrandFont.schedule();
-  }catch(err){
-    host.innerHTML=`<div class="item"><strong>Diary card could not load here.</strong><p>${esc(err.message||err)}</p><p><a class="button" href="${esc(path)}" target="_blank" rel="noopener noreferrer">Open diary card directly</a></p></div>`;
+    const offset=pageIndex*2;
+    const render=()=>{
+      const now=Math.floor(Date.now()/15000)+offset;
+      const affirmText=affirm[now%Math.max(1,affirm.length)]||'';
+      const marqueeText=marquees[now%Math.max(1,marquees.length)]||affirmText;
+      const affirmEl=box.querySelector('.os-page-affirmation');
+      const marqueeEl=box.querySelector('.os-page-marquee span');
+      if(affirmEl) affirmEl.textContent=affirmText;
+      if(marqueeEl) marqueeEl.textContent=marqueeText;
+    };
+    render();
+  });
+  if(!window.__ourspacePositiveTicker){
+    window.__ourspacePositiveTicker=setInterval(addPositiveToAllPages,15000);
   }
 }
+function combinedWellness(){return safeJSON(WELLNESS_KEY,[]);}
 
-function enhanceDBT(){const page=$('page-dbt'); if(!page)return; const diaryFile=profile==='jasper'?'jasper_dbt_adhd_caregiver_diary_card.html':'william_dbt_disability_guilt_diary_card.html'; page.innerHTML=`<div class="page-toolbar"><div><h1 class="page-title">DBT / ADHD</h1></div><button class="bg-button" data-bg-open="dbt" type="button">Change DBT / ADHD Background</button></div><section class="card"><div class="card-head"><h2>Saved DBT / ADHD Entries</h2><button id="clearWellnessNew" class="danger" type="button">Clear entries</button></div><div class="card-body"><div class="scrollbox" id="wellnessLogNew"></div></div></section><section class="card"><div class="card-head"><h2>Mood Tracker + Diary Cards</h2></div><div class="card-body"><div class="grid two"><div><label for="moodDateNew">Date</label><input id="moodDateNew" type="date"><label for="moodScoreNew">Mood / energy score</label><input id="moodScoreNew" type="range" min="1" max="10" value="5"><div class="row"><span class="pill">Score: <strong id="moodScoreLabelNew">5</strong></span></div><label for="moodTagsNew">Tags</label><input id="moodTagsNew"><label for="moodNotesNew">Notes</label><textarea id="moodNotesNew"></textarea><button id="saveMoodNew" class="good" type="button">Save mood entry</button><label for="journalPromptNew">Prompt</label><select id="journalPromptNew"><option>What would make today easier?</option><option>What emotion needs kindness?</option><option>What is one tiny next step?</option><option>What helped, even a little?</option></select><label for="journalEntryNew">Journal</label><textarea id="journalEntryNew"></textarea><button id="saveJournalNew" class="primary" type="button">Save journal entry</button></div><div class="os-diary-card-mount" id="diaryCardMountNew" data-diary-file="${diaryFile}"><div class="empty">Loading personalized diary card…</div></div></div></div></section><section class="card"><div class="card-head"><h2>Skill Menu</h2></div><div class="card-body"><div class="grid two" id="skillCardsNew"></div></div></section>`;
-  $('moodDateNew').value=new Date().toISOString().slice(0,10); $('moodScoreNew').addEventListener('input',e=>$('moodScoreLabelNew').textContent=e.target.value); $('saveMoodNew').addEventListener('click',()=>saveCombinedEntry('Mood')); $('saveJournalNew').addEventListener('click',()=>saveCombinedEntry('Journal')); $('clearWellnessNew').addEventListener('click',()=>{writeJSON(WELLNESS_KEY,[]); renderCombinedEntries(); scheduleSync('wellness-clear');}); renderCombinedEntries(); renderSkillMenuNew(); loadDiaryCardNew(diaryFile); addAppearanceButtons(); document.querySelectorAll('[data-bg-open]').forEach(b=>{if(!b.dataset.osBgBound){b.dataset.osBgBound='1'; b.addEventListener('click',()=>openAppearanceEditor(b.dataset.bgOpen||getPage()));}});
+function saveCombinedEntry(kind){
+  const rows=combinedWellness();
+  const row={id:'well_'+Date.now().toString(36),kind:kind||'Entry',date:new Date().toISOString().slice(0,10),createdAt:new Date().toISOString(),notes:''};
+  rows.unshift(row);
+  writeJSON(WELLNESS_KEY,rows.slice(0,300));
+  renderCombinedEntries();
+  scheduleSync('wellness');
 }
-function renderSkillMenuNew(){const host=$('skillCardsNew'); if(!host)return; const cat=window.OURSPACE_DATA_CATALOGS||{}; const pack=cat.skills?.shared||{}; const skills=[...(pack.all||[]),...(pack.daily||[]),...(pack.weekly||[]),...(pack.monthly||[]),...(pack.yearly||[])]; const seen=new Set(); const rows=skills.filter(s=>{const txt=JSON.stringify(s||{}).toLowerCase(); if(txt.includes('onyx'))return false; const k=s.id||s.title; if(seen.has(k))return false; seen.add(k); return true;}); host.innerHTML=rows.length?rows.slice(0,100).map(s=>`<div class="item"><strong>${esc(s.title||'Skill')}</strong><div class="meta">${esc(s.toolArea||s.category||'DBT / ADHD')} · ${esc(s.cadence||'')}</div>${Array.isArray(s.tinySteps)?'<ul>'+s.tinySteps.slice(0,3).map(x=>`<li>${esc(x)}</li>`).join('')+'</ul>':''}<div class="actions">${s.path?`<a class="button" target="_blank" rel="noopener noreferrer" href="${esc(s.path)}">Open</a>`:''}<button type="button" data-skill-note="${esc(s.title||'Skill')}" class="primary">Use</button></div></div>`).join(''):'<div class="empty">No skills found.</div>'; host.querySelectorAll('[data-skill-note]').forEach(b=>b.addEventListener('click',()=>{const area=$('journalEntryNew'); if(area){area.value=(area.value?area.value+'\n':'')+'Skill used: '+b.dataset.skillNote; area.focus();}}));}
+
+function renderCombinedEntries(){
+  const host=$('wellnessLogNew');
+  if(!host)return;
+  const rows=combinedWellness().filter(e=>e && e.kind!=='Mood');
+  const diaryKey='ourspace_dbt_diary_'+profile+'_v2';
+  const diary=safeJSON(diaryKey,null);
+  const cards=[];
+  if(diary && diary._savedAt){
+    cards.push(`<div class="item"><strong>Diary card saved</strong><div class="meta">${esc(new Date(diary._savedAt).toLocaleString())}</div></div>`);
+  }
+  if(rows.length){
+    cards.push(...rows.map(e=>`<div class="item"><strong>${esc(e.kind||'Entry')} · ${esc(e.date||'')}</strong><div class="meta">${esc(e.prompt||e.tags||'')}</div><p>${esc(e.notes||'')}</p></div>`));
+  }
+  host.innerHTML=cards.length?cards.join(''):'<div class="empty">No saved entries yet.</div>';
+}
+
+async 
+function loadDiaryCardNew(){
+  const host=$('diaryCardMountNew');
+  if(!host)return;
+  const data=(window.OURSPACE_DIARY_CARDS||{})[profile];
+  if(!data){
+    host.innerHTML='<div class="empty">Diary card is not available.</div>';
+    return;
+  }
+  host.innerHTML='';
+  const styleEl=document.createElement('style');
+  styleEl.id='sheet-css';
+  styleEl.className='os-inline-diary-style';
+  styleEl.textContent=data.style||'';
+  host.appendChild(styleEl);
+  const wrap=document.createElement('div');
+  wrap.className='os-integrated-diary-card';
+  wrap.innerHTML=data.html||'';
+  host.appendChild(wrap);
+  const moduleEl=host.querySelector('.dbt-diary-module');
+  if(moduleEl){
+    moduleEl.dataset.ourspaceEmbedded='true';
+    moduleEl.addEventListener('input',()=>{renderCombinedEntries(); scheduleSync('diary-card');},true);
+    moduleEl.addEventListener('change',()=>{renderCombinedEntries(); scheduleSync('diary-card');},true);
+  }
+  (data.scripts||[]).forEach((scriptText,idx)=>{
+    const script=document.createElement('script');
+    script.className='os-inline-diary-script';
+    script.textContent=String(scriptText||'')+'\n;try{ if(typeof wireAutosave==="function") wireAutosave(); }catch(e){ console.warn("Diary autosave hook skipped", e); }';
+    host.appendChild(script);
+  });
+  renderCombinedEntries();
+  if(window.OurSpaceBrandFont?.schedule) window.OurSpaceBrandFont.schedule();
+}
+
+
+function enhanceDBT(){
+  const page=$('page-dbt');
+  if(!page)return;
+  page.innerHTML=`<div class="page-toolbar"><div><h1 class="page-title">DBT / ADHD</h1></div><button class="bg-button" data-bg-open="dbt" type="button">Change DBT / ADHD Background</button></div>
+  <section class="card"><div class="card-head"><h2>Saved DBT / ADHD Entries</h2><button id="clearWellnessNew" class="danger" type="button">Clear entries</button></div><div class="card-body"><div class="scrollbox" id="wellnessLogNew"></div></div></section>
+  <section class="card os-diary-only-card"><div class="card-head"><h2>Diary Cards</h2></div><div class="card-body"><div class="os-diary-card-mount" id="diaryCardMountNew"><div class="empty">Loading personalized diary card…</div></div></div></section>
+  <section class="card"><div class="card-head"><h2>Skill Menu</h2></div><div class="card-body"><div class="grid two" id="skillCardsNew"></div></div></section>`;
+  const clear=$('clearWellnessNew');
+  if(clear) clear.addEventListener('click',()=>{
+    writeJSON(WELLNESS_KEY,[]);
+    localStorage.removeItem('ourspace_dbt_diary_'+profile+'_v2');
+    renderCombinedEntries();
+    const moduleEl=document.querySelector('#diaryCardMountNew .dbt-diary-module');
+    if(moduleEl) moduleEl.querySelectorAll('input,textarea,select').forEach(el=>{if(el.type==='checkbox')el.checked=false; else el.value='';});
+    scheduleSync('wellness-clear');
+  });
+  renderCombinedEntries();
+  renderSkillMenuNew();
+  loadDiaryCardNew();
+  addPositiveToAllPages();
+  addAppearanceButtons();
+  document.querySelectorAll('[data-bg-open]').forEach(b=>{if(!b.dataset.osBgBound){b.dataset.osBgBound='1'; b.addEventListener('click',()=>openAppearanceEditor(b.dataset.bgOpen||getPage()));}});
+}
+function renderSkillMenuNew(){const host=$('skillCardsNew'); if(!host)return; const cat=window.OURSPACE_DATA_CATALOGS||{}; const pack=cat.skills?.shared||{}; const skills=[...(pack.all||[]),...(pack.daily||[]),...(pack.weekly||[]),...(pack.monthly||[]),...(pack.yearly||[])]; const seen=new Set(); const rows=skills.filter(s=>{const txt=JSON.stringify(s||{}).toLowerCase(); if(txt.includes('onyx'))return false; const k=s.id||s.title; if(seen.has(k))return false; seen.add(k); return true;}); host.innerHTML=rows.length?rows.slice(0,100).map(s=>`<div class="item"><strong>${esc(s.title||'Skill')}</strong><div class="meta">${esc(s.toolArea||s.category||'DBT / ADHD')} · ${esc(s.cadence||'')}</div>${Array.isArray(s.tinySteps)?'<ul>'+s.tinySteps.slice(0,3).map(x=>`<li>${esc(x)}</li>`).join('')+'</ul>':''}<div class="actions">${s.path?`<a class="button" target="_blank" rel="noopener noreferrer" href="${esc(s.path)}">Open</a>`:''}<button type="button" data-skill-note="${esc(s.title||'Skill')}" class="primary">Use</button></div></div>`).join(''):'<div class="empty">No skills found.</div>'; host.querySelectorAll('[data-skill-note]').forEach(b=>b.addEventListener('click',()=>{const rows=combinedWellness(); rows.unshift({id:'skill_'+Date.now().toString(36),kind:'Skill',date:new Date().toISOString().slice(0,10),prompt:b.dataset.skillNote,notes:'Used from Skill Menu.',createdAt:new Date().toISOString()}); writeJSON(WELLNESS_KEY,rows.slice(0,300)); renderCombinedEntries(); scheduleSync('skill-used'); const status=document.querySelector('#diaryCardMountNew #status'); if(status) status.textContent='Skill noted: '+b.dataset.skillNote;}));}
 function patchUploads(){const bind=(id,kind,update)=>{const el=$(id); if(!el||el.dataset.osUploadBound)return; el.dataset.osUploadBound='1'; el.addEventListener('change',e=>{[...e.target.files].forEach(f=>{if(!f)return; uploadMedia(f,kind).then(url=>{if(url)update(url,f); scheduleSync(kind+'-upload');});});},true);}; bind('profileImageInput','profile-image',(url,f)=>{const s=safeJSON(STORE_KEY,{}); s.profileImage=url; writeJSON(STORE_KEY,s); const img=$('profileImage'); if(img){img.src=url;img.style.display='block';} const ph=$('profilePlaceholder'); if(ph)ph.style.display='none';}); bind('musicUpload','music',(url,f)=>{const s=safeJSON(STORE_KEY,{}); s.musicTracks=Array.isArray(s.musicTracks)?s.musicTracks:[]; if(!s.musicTracks.some(t=>t.src===url||t.remoteUrl===url)){s.musicTracks.push({name:f.name,src:url,remoteUrl:url}); writeJSON(STORE_KEY,s);}}); bind('galleryUpload','gallery',(url,f)=>{const s=safeJSON(STORE_KEY,{}); s.gallery=Array.isArray(s.gallery)?s.gallery:[]; if(!s.gallery.some(t=>t.src===url)){s.gallery.push({type:f.type.startsWith('video/')?'video':'image',src:url,name:f.name,remoteUrl:url}); writeJSON(STORE_KEY,s);}}); bind('bgUpload','background',(url,f)=>{const s=safeJSON(STORE_KEY,{}); const key=$('bgPageKey')?.value||getPage(); s.backgrounds=s.backgrounds||{}; s.backgrounds[key]=url; writeJSON(STORE_KEY,s); document.documentElement.style.setProperty('--page-bg-image',cssUrl(url));});}
 function disableCustomGameCode(){['customGameUrl','loadCustomGame','customGameFile'].forEach(id=>{const el=$(id); if(el){const wrap=el.closest('label')||el; if(id==='customGameUrl'||id==='customGameFile'){const lab=document.querySelector('label[for="'+id+'"]'); if(lab)lab.style.display='none';} el.style.display='none'; el.disabled=true;}});}
 let muteStorage=false,syncTimer=null,pullTimer=null;
@@ -149,6 +226,6 @@ async function pullSync(){if(!sessionToken())return; try{const data=await backen
 function setSyncStatus(text){['backendStatusBox','appearanceSyncStatus','osSyncStatus'].forEach(id=>{const el=$(id); if(!el)return; if(el.tagName==='TEXTAREA')el.value=text; else el.textContent=text;});}
 function patchStorageSync(){const original=Storage.prototype.setItem; if(Storage.prototype.__ourspaceRevisionPatched)return; Storage.prototype.__ourspaceRevisionPatched=true; Storage.prototype.setItem=function(key,value){let v=value; try{if(key===STORE_KEY){const obj=JSON.parse(value); obj.__updatedAt=new Date().toISOString(); obj.__deviceId=deviceId; v=JSON.stringify(obj);}}catch(e){} const out=original.call(this,key,v); if(String(key).includes(profile)||key===STORE_KEY||key===APPEARANCE_KEY||key===HOME_JOURNAL_KEY||key===WELLNESS_KEY||String(key).includes('ourspace_private_william_jasper_messages'))scheduleSync('storage:'+key); return out;};}
 function addSyncPanel(){const page=$('page-sync'); if(!page||$('osSyncStatus'))return; const sec=document.createElement('section'); sec.className='card'; sec.innerHTML='<div class="card-head"><h2>Cross-device Sync</h2></div><div class="card-body"><div class="row"><button id="osPushSync" type="button" class="primary">Sync now</button><button id="osPullSync" type="button">Pull latest</button></div><div class="os-sync-status" id="osSyncStatus">Ready.</div></div>'; page.prepend(sec); $('osPushSync').addEventListener('click',()=>pushSync('manual')); $('osPullSync').addEventListener('click',()=>pullSync());}
-function initRevision(){document.querySelectorAll('script[src*="ourspace-data-catalogs"],script[src*="ourspace-embedded-catalogs"]').forEach(()=>{}); removeCustomCodeUI(); enhanceHome(); enhanceDBT(); buildAppearanceModal(); addAppearanceButtons(); applyAppearance(getPage()); patchUploads(); disableCustomGameCode(); patchStorageSync(); addSyncPanel(); document.querySelectorAll('[data-page-link]').forEach(b=>b.addEventListener('click',()=>setTimeout(()=>{applyAppearance(getPage()); addAppearanceButtons(); patchUploads(); disableCustomGameCode();},50))); document.querySelectorAll('[data-bg-open]').forEach(b=>{if(!b.dataset.osBgBound){b.dataset.osBgBound='1'; b.addEventListener('click',()=>openAppearanceEditor(b.dataset.bgOpen||getPage()));}}); pullSync(); clearInterval(pullTimer); pullTimer=setInterval(pullSync,20000); scheduleSync('revision-load');}
+function initRevision(){document.querySelectorAll('script[src*="ourspace-data-catalogs"],script[src*="ourspace-embedded-catalogs"]').forEach(()=>{}); removeCustomCodeUI(); enhanceHome(); enhanceDBT(); addPositiveToAllPages(); buildAppearanceModal(); addAppearanceButtons(); applyAppearance(getPage()); patchUploads(); disableCustomGameCode(); patchStorageSync(); addSyncPanel(); document.querySelectorAll('[data-page-link]').forEach(b=>b.addEventListener('click',()=>setTimeout(()=>{applyAppearance(getPage()); addAppearanceButtons(); patchUploads(); disableCustomGameCode(); addPositiveToAllPages();},50))); document.querySelectorAll('[data-bg-open]').forEach(b=>{if(!b.dataset.osBgBound){b.dataset.osBgBound='1'; b.addEventListener('click',()=>openAppearanceEditor(b.dataset.bgOpen||getPage()));}}); pullSync(); clearInterval(pullTimer); pullTimer=setInterval(pullSync,20000); scheduleSync('revision-load');}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initRevision,0)); else setTimeout(initRevision,0);
 })();
