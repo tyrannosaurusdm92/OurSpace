@@ -1,0 +1,43 @@
+{
+  "name": "OurSpace Media Player Module",
+  "version": "1.0.0",
+  "createdFor": "OurSpace",
+  "backendUrl": "https://script.google.com/macros/s/AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA/exec",
+  "runtimeFiles": [
+    "home-media-module.html",
+    "global-bridge-snippet.html",
+    "media-player-demo.html",
+    "css/ourspace-media-player.css",
+    "js/ourspace-media-player.js"
+  ],
+  "optionalBackendFiles": [
+    "backend/google-apps-script-media-contract.gs"
+  ],
+  "documentation": [
+    "docs/README.md",
+    "docs/INTEGRATION.md",
+    "docs/BACKEND_CONTRACT.md",
+    "docs/AUDIT.md",
+    "docs/UNUSED_CODE_AUDIT.md",
+    "docs/LICENSES.md",
+    "docs/TEST_REPORT.md",
+    "docs/MANIFEST.json"
+  ],
+  "features": {
+    "multipleUploads": true,
+    "folderUploads": true,
+    "folderCreation": true,
+    "playlistCreation": true,
+    "play": true,
+    "pause": true,
+    "stop": true,
+    "shuffle": true,
+    "rewind5Seconds": true,
+    "fastForward5Seconds": true,
+    "download": true,
+    "miniPlayer": true,
+    "gameAutoPauseHooks": true,
+    "localIndexedDbStorage": true,
+    "appsScriptBackendSync": true
+  }
+}

@@ -1,4 +1,4 @@
-const OURSPACE_CACHE = 'ourspace-20260627-module-replacements-v1';
+const OURSPACE_CACHE = 'ourspace-20260627-home-modules-dbt-layout-v1';
 const CORE_ASSETS = [
   "./ourspace.html",
   "./OurSpace.html",
@@ -20,6 +20,13 @@ const CORE_ASSETS = [
   "./assets/ourspace-brand-font.css",
   "./assets/ourspace-extensive-audit-fixes.css",
   "./assets/ourspace-extensive-audit-fixes.js",
+  "./assets/js/docx-lite-reader.js",
+  "./assets/js/journal-module.js",
+  "./assets/css/journal-module.css",
+  "./js/ourspace-visual-player.js",
+  "./css/ourspace-visual-player.css",
+  "./js/ourspace-media-player.js",
+  "./css/ourspace-media-player.css",
   "./assets/legacy-portal-storage.js",
   "./assets/legacy-ourspace-allowed-games.js",
   "./assets/legacy-ourspace-currency-core.js",
@@ -31,14 +38,7 @@ const CORE_ASSETS = [
   "./assets/icons/ourspace-icon-180.png",
   "./assets/icons/ourspace-icon-192.png",
   "./assets/icons/ourspace-icon-512.png",
-  "./assets/icons/ourspace-icon-384.png",
-  "./assets/modules/journal/assets/js/journal-module.js",
-  "./assets/modules/journal/assets/js/docx-lite-reader.js",
-  "./assets/modules/journal/assets/css/journal-module.css",
-  "./assets/modules/visual/js/ourspace-visual-player.js",
-  "./assets/modules/visual/css/ourspace-visual-player.css",
-  "./assets/modules/media/js/ourspace-media-player.js",
-  "./assets/modules/media/css/ourspace-media-player.css"
+  "./assets/icons/ourspace-icon-384.png"
 ];
 
 self.addEventListener('install', event => {
