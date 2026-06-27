@@ -1,0 +1,8 @@
+<!-- OurSpace Visual Player global bridge: place before </body> on pages that need API access without showing the full module. -->
+<link rel="stylesheet" href="css/ourspace-visual-player.css">
+<script src="js/ourspace-visual-player.js" defer></script>
+<script>
+  window.addEventListener('ourspace:game-loaded', function(){
+    if (window.OurSpaceVisualPlayer) window.OurSpaceVisualPlayer.pause();
+  });
+</script>

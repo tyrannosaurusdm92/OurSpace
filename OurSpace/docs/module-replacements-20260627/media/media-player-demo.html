@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OurSpace Media Player Demo</title>
+  <link rel="stylesheet" href="css/ourspace-media-player.css">
+  <style>
+    body{margin:0;min-height:100vh;background:linear-gradient(135deg,#001e24,#062d34 55%,#2b1400);color:white;font-family:Arial, sans-serif;padding:20px;box-sizing:border-box}.demo-wrap{max-width:1100px;margin:0 auto}.demo-nav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}.demo-nav button{border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.35);color:white;border-radius:999px;padding:10px 14px;cursor:pointer}.demo-page{display:none;border:1px solid rgba(255,255,255,.25);border-radius:24px;padding:18px;background:rgba(255,255,255,.08);min-height:180px}.demo-page.is-on{display:block}
+  </style>
+</head>
+<body data-page="Home">
+  <main class="demo-wrap">
+    <h1>OurSpace Media Player Demo</h1>
+    <nav class="demo-nav" aria-label="Demo pages">
+      <button data-demo-page="Home">Home</button>
+      <button data-demo-page="Daily">Daily</button>
+      <button data-demo-page="Calendar">Calendar</button>
+      <button data-demo-page="DBT / ADHD">DBT / ADHD</button>
+      <button data-demo-page="Games">Games</button>
+      <button data-demo-page="Store">Store</button>
+      <button data-demo-page="Sync">Sync</button>
+    </nav>
+    <section class="demo-page is-on" data-page-panel="Home">
+      <section id="ourspace-media-module" class="osm-card" aria-label="OurSpace music and media player"></section>
+    </section>
+    <section class="demo-page" data-page-panel="Daily"><h2>Daily</h2><p>The player keeps going while this page is shown because the audio engine lives in the shared shell.</p></section>
+    <section class="demo-page" data-page-panel="Calendar"><h2>Calendar</h2><p>Calendar page placeholder.</p></section>
+    <section class="demo-page" data-page-panel="DBT / ADHD"><h2>DBT / ADHD</h2><p>DBT / ADHD page placeholder.</p></section>
+    <section class="demo-page" data-page-panel="Games"><h2>Games</h2><p>Opening this page simulates a loaded game and auto-pauses music.</p><canvas width="320" height="140" data-ourspace-game style="width:100%;max-width:320px;background:#111;border:1px solid #00ffff;border-radius:12px"></canvas></section>
+    <section class="demo-page" data-page-panel="Store"><h2>Store</h2><p>Store page placeholder.</p></section>
+    <section class="demo-page" data-page-panel="Sync"><h2>Sync</h2><p>Sync page placeholder.</p></section>
+  </main>
+  <script src="js/ourspace-media-player.js" defer></script>
+  <script>
+    document.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-demo-page]');
+      if (!button) return;
+      const page = button.dataset.demoPage;
+      document.body.dataset.page = page;
+      document.querySelectorAll('[data-page-panel]').forEach(panel => panel.classList.toggle('is-on', panel.dataset.pagePanel === page));
+      if (page === 'Games') window.OurSpaceMedia?.gameLoaded?.('demo-game');
+      else window.OurSpaceMedia?.resumeAfterGame?.('demo-game');
+    });
+  </script>
+</body>
+</html>

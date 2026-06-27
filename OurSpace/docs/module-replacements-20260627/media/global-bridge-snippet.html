@@ -1,0 +1,12 @@
+<!-- Add this to Daily, Calendar, DBT / ADHD, Games, Store, and Sync pages when the full Home module is not present. -->
+<link rel="stylesheet" href="css/ourspace-media-player.css">
+<script src="js/ourspace-media-player.js" defer></script>
+
+<!-- Optional Games-page hook: call this when a game iframe/canvas is created or focused. -->
+<script>
+  window.addEventListener('ourspace:page-ready', function () {
+    if (document.body?.dataset?.page === 'Games') {
+      window.OurSpaceMedia?.watchGames?.();
+    }
+  });
+</script>

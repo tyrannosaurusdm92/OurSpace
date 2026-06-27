@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OurSpace Visual Player Demo</title>
+  <link rel="stylesheet" href="css/ourspace-visual-player.css">
+  <style>
+    body{margin:0;min-height:100vh;background:linear-gradient(135deg,#001E24,#062D34 55%,#1d1205);color:#F2FFFF;font-family:Inter,Arial,sans-serif;padding:18px;}
+    .demo-shell{max-width:1240px;margin:0 auto;}
+    .demo-header{border:1px solid rgba(0,255,255,.32);border-radius:22px;background:rgba(0,30,36,.78);padding:18px;margin-bottom:18px;}
+    .demo-header h1{margin:0 0 6px;font-size:clamp(1.6rem,4vw,2.6rem);}
+    .demo-header p{margin:0;color:#B9E8EA;}
+  </style>
+</head>
+<body data-profile="shared">
+  <div class="demo-shell">
+    <header class="demo-header">
+      <h1>OurSpace Visual Player</h1>
+      <p>Upload photos/videos, create folders and playlists, play slideshows/videos, skip ±5 seconds, stop, pause, and download.</p>
+    </header>
+    <section data-ourspace-visual-player data-profile="shared"></section>
+  </div>
+  <script src="js/ourspace-visual-player.js" defer></script>
+</body>
+</html>

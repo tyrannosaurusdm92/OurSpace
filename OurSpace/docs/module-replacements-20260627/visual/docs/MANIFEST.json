@@ -1,0 +1,45 @@
+{
+  "name": "OurSpace Visual Player Module",
+  "version": "1.0.0",
+  "created": "2026-06-27",
+  "backendUrl": "https://script.google.com/macros/s/AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA/exec",
+  "entrypoints": [
+    "visual-player-demo.html",
+    "home-visual-module.html",
+    "global-visual-bridge-snippet.html"
+  ],
+  "assets": [
+    "css/ourspace-visual-player.css",
+    "js/ourspace-visual-player.js"
+  ],
+  "features": [
+    "folders",
+    "playlists",
+    "photo upload",
+    "video upload",
+    "play",
+    "pause",
+    "stop",
+    "previous",
+    "next",
+    "shuffle",
+    "rewind 5 seconds",
+    "fast forward 5 seconds",
+    "download",
+    "IndexedDB storage",
+    "Apps Script sync queue"
+  ],
+  "sourceProjectsReviewed": [
+    "memoirsofher-main.zip",
+    "VideoGallerySite-main.zip",
+    "Lx-Gallery-master.zip",
+    "gogallery-master.zip",
+    "eleventy-photo-gallery-main.zip",
+    "django-photo-gallery-master.zip",
+    "jekyll-photos-master.zip",
+    "ozio-master.zip",
+    "vimeography-master.zip",
+    "Video_Gallery_Laravel-master.zip"
+  ],
+  "copiedThirdPartySource": false
+}

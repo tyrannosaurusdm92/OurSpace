@@ -1,0 +1,163 @@
+[
+  {
+    "repo": "100-days-of-code-master",
+    "top_folder": "100-days-of-code-master",
+    "file_count": 104,
+    "size_mb": 0.28,
+    "license": "Unknown / no top-level license found",
+    "license_file": "",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "log-template reference only; not used"
+    ]
+  },
+  {
+    "repo": "BulletJournal-master",
+    "top_folder": "BulletJournal-master",
+    "file_count": 1423,
+    "size_mb": 47.39,
+    "license": "GPL family",
+    "license_file": "LICENSE",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "organization/notebook/category concept; no code copied due GPL/full-stack size"
+    ]
+  },
+  {
+    "repo": "Journal-AWS-Amplify-Tutorial-master",
+    "top_folder": "Journal-AWS-Amplify-Tutorial-master",
+    "file_count": 411,
+    "size_mb": 21.55,
+    "license": "MIT",
+    "license_file": "LICENSE",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "cloud sync concept; no code copied"
+    ]
+  },
+  {
+    "repo": "JournalBook-master",
+    "top_folder": "JournalBook-master",
+    "file_count": 75,
+    "size_mb": 6.01,
+    "license": "MIT",
+    "license_file": "LICENSE",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "offline-first local persistence idea",
+      "simple daily entry navigation concept"
+    ]
+  },
+  {
+    "repo": "journal-master",
+    "top_folder": "journal-master",
+    "file_count": 718,
+    "size_mb": 112.78,
+    "license": "Unknown / no top-level license found",
+    "license_file": "",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "content archive/blog reference; not used for app module"
+    ]
+  },
+  {
+    "repo": "journalApp-master",
+    "top_folder": "journalApp-master",
+    "file_count": 49,
+    "size_mb": 0.13,
+    "license": "Unknown / no top-level license found",
+    "license_file": "",
+    "readme": "",
+    "used_code": false,
+    "concepts_kept": [
+      "server-side journaling app reference; no code copied"
+    ]
+  },
+  {
+    "repo": "journiv-app-main",
+    "top_folder": "journiv-app-main",
+    "file_count": 455,
+    "size_mb": 59.15,
+    "license": "PolyForm Noncommercial 1.0.0",
+    "license_file": "LICENSE.md",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "mood/media-rich private journal feature awareness; no code copied due license"
+    ]
+  },
+  {
+    "repo": "mini-diary-master",
+    "top_folder": "mini-diary-master",
+    "file_count": 197,
+    "size_mb": 2.59,
+    "license": "MIT",
+    "license_file": "LICENSE.md",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "small private diary concept",
+      "plain export/download workflow idea"
+    ]
+  },
+  {
+    "repo": "open-journalism-master",
+    "top_folder": "open-journalism-master",
+    "file_count": 14,
+    "size_mb": 4.04,
+    "license": "Unknown / no top-level license found",
+    "license_file": "",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "not a journaling app; not used"
+    ]
+  },
+  {
+    "repo": "rednotebook-master",
+    "top_folder": "rednotebook-master",
+    "file_count": 246,
+    "size_mb": 4.98,
+    "license": "GPL family",
+    "license_file": "LICENSE",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "export/readable journal archive concept",
+      "tag/search concept"
+    ]
+  },
+  {
+    "repo": "sol-journal-master",
+    "top_folder": "sol-journal-master",
+    "file_count": 66,
+    "size_mb": 0.79,
+    "license": "MIT",
+    "license_file": "LICENSE",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "PWA/offline sync concept",
+      "minimal responsive journaling layout idea"
+    ]
+  },
+  {
+    "repo": "tui-journal-main",
+    "top_folder": "tui-journal-main",
+    "file_count": 81,
+    "size_mb": 2.43,
+    "license": "MIT",
+    "license_file": "LICENSE",
+    "readme": "README.md",
+    "used_code": false,
+    "concepts_kept": [
+      "folder/tag/search workflow concept",
+      "local JSON backend concept"
+    ]
+  }
+]

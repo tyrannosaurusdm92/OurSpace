@@ -1,0 +1,37 @@
+{
+  "module": "OurSpace Journaling Module",
+  "version": "1.0.0",
+  "created": "2026-06-27",
+  "backendUrl": "https://script.google.com/macros/s/AKfycbwL1e8Gv-o0wC8kAhseMwoNhs97OBvCfCB5FV4zwNnCRa9jYWbYwm2B-wYwUOjlnjg_vA/exec",
+  "entrypoint": "journal-module.html",
+  "assets": [
+    "assets/css/journal-module.css",
+    "assets/js/docx-lite-reader.js",
+    "assets/js/journal-module.js"
+  ],
+  "features": [
+    "folder creation",
+    "category creation",
+    "manual journal entries",
+    "TXT upload/read",
+    "DOCX upload/read",
+    "name and save",
+    "download single entry as TXT",
+    "download/import whole journal as JSON",
+    "localStorage safety save",
+    "Google Apps Script sync adapter"
+  ],
+  "thirdPartyCodeCopied": false,
+  "docs": [
+    "docs/audits/source-repo-audit.md",
+    "docs/licenses/license-notes.md",
+    "docs/licenses/generated-module-license.md",
+    "docs/manifests/module-manifest.json",
+    "docs/manifests/source-repo-manifest.json",
+    "docs/readmes/README.md",
+    "docs/readmes/INTEGRATION.md",
+    "docs/readmes/BACKEND_CONTRACT.md",
+    "docs/readmes/APP_SCRIPT_JOURNAL_HANDLER.md",
+    "docs/readmes/UNUSED_CODE.md"
+  ]
+}
